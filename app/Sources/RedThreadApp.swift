@@ -4,6 +4,7 @@ import SwiftData
 @main
 struct RedThreadApp: App {
     @StateObject private var graph = GraphStore()
+    @StateObject private var app = AppModel()
     let container: ModelContainer
 
     init() {
@@ -12,17 +13,17 @@ struct RedThreadApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ReadingCompanionView()
+            RootView()
                 .environmentObject(graph)
+                .environmentObject(app)
                 .tint(Palette.gold)
                 .preferredColorScheme(.light)
         }
         .modelContainer(container)
     }
 
-    /// Study notes sync via CloudKit's private database (the user's own iCloud —
-    /// never our servers). Falls back to a local-only store when CloudKit is
-    /// unavailable (unsigned build / simulator / no iCloud account) so the app
+    /// Study notes/bookmarks sync via CloudKit's private database (the user's own
+    /// iCloud). Falls back to local-only when CloudKit is unavailable so the app
     /// always runs.
     static func makeContainer() -> ModelContainer {
         let schema = Schema([Note.self, Bookmark.self])
@@ -32,6 +33,26 @@ struct RedThreadApp: App {
         } catch {
             let local = ModelConfiguration(schema: schema)
             return try! ModelContainer(for: schema, configurations: local)
+        }
+    }
+}
+
+/// Explore is the home — the graph is the product. Read is the reading companion
+/// you enter with a §. You holds the personal layer (trail, bookmarks, settings).
+struct RootView: View {
+    @EnvironmentObject private var app: AppModel
+
+    var body: some View {
+        TabView(selection: $app.tab) {
+            ExploreView()
+                .tabItem { Label("Explore", systemImage: "point.3.filled.connected.trianglepath.dotted") }
+                .tag(0)
+            ReferenceView()
+                .tabItem { Label("Read", systemImage: "book") }
+                .tag(1)
+            LibraryView()
+                .tabItem { Label("You", systemImage: "bookmark") }
+                .tag(2)
         }
     }
 }
