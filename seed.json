@@ -322,6 +322,46 @@
       "id": "paracelsus",
       "type": "Figure",
       "label": "Paracelsus"
+    },
+    {
+      "id": "the-opus",
+      "type": "Operation",
+      "label": "The alchemical opus (opus alchymicum)"
+    },
+    {
+      "id": "squaring-of-the-circle",
+      "type": "Motif",
+      "label": "Squaring of the Circle"
+    },
+    {
+      "id": "hierosgamos",
+      "type": "Operation",
+      "label": "Hierosgamos (sacred marriage / chymical wedding)"
+    },
+    {
+      "id": "filius-philosophorum",
+      "type": "Figure",
+      "label": "Filius Philosophorum"
+    },
+    {
+      "id": "divine-child",
+      "type": "Motif",
+      "label": "The Divine Child"
+    },
+    {
+      "id": "the-vessel",
+      "type": "Symbol",
+      "label": "The Hermetic Vessel (vas Hermetis)"
+    },
+    {
+      "id": "the-mass",
+      "type": "Motif",
+      "label": "The Mass"
+    },
+    {
+      "id": "peregrinatio",
+      "type": "Motif",
+      "label": "Peregrinatio (the journey)"
     }
   ],
   "edges": [
@@ -1684,6 +1724,309 @@
           "confidence": "high",
           "verified": false,
           "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "the-opus",
+      "relation": "symbolizes",
+      "object": "individuation",
+      "references": [
+        {
+          "volume": 12,
+          "paragraph": 40,
+          "quote": "the symbolism of alchemy expresses ... the so-called individuation process",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "the-opus",
+      "relation": "is-projection-of",
+      "object": "the-unconscious",
+      "references": [
+        {
+          "volume": 12,
+          "paragraph": 346,
+          "quote": "what he was in reality experiencing was his own unconscious",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        },
+        {
+          "volume": 12,
+          "paragraph": 394,
+          "quote": "everything unconscious, once it was activated, was projected into matter",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "lapis",
+      "relation": "symbolizes",
+      "object": "christ",
+      "layer": "amplification",
+      "kind": "parallel",
+      "references": [
+        {
+          "volume": 12,
+          "paragraph": 451,
+          "quote": "the coveted substance, the lapis , that he likens to Christ",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-reports-parallel"
+        },
+        {
+          "volume": 12,
+          "paragraph": 480,
+          "quote": "the lapis -Christ identity",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-reports-parallel"
+        },
+        {
+          "volume": 12,
+          "paragraph": 173,
+          "quote": "Christ Pantokrator is an imago lapidis",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-reports-parallel"
+        }
+      ]
+    },
+    {
+      "subject": "christ",
+      "relation": "symbolizes",
+      "object": "the-self",
+      "references": [
+        {
+          "volume": 12,
+          "paragraph": 452,
+          "quote": "Christ as a symbol of the self",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "lapis",
+      "relation": "composed-of",
+      "object": "four-elements",
+      "references": [
+        {
+          "volume": 12,
+          "paragraph": 457,
+          "quote": "symbolized by the four elements, just like the lapis",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "lapis",
+      "relation": "symbolizes",
+      "object": "anthropos",
+      "layer": "amplification",
+      "kind": "parallel",
+      "references": [
+        {
+          "volume": 12,
+          "paragraph": 335,
+          "quote": "filius macrocosmi , a figure we can only compare with the Gnostic Anthropos",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-reports-parallel"
+        }
+      ]
+    },
+    {
+      "subject": "squaring-of-the-circle",
+      "relation": "symbolizes",
+      "object": "the-opus",
+      "references": [
+        {
+          "volume": 12,
+          "paragraph": 165,
+          "quote": "It is a symbol of the opus alchymicum",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "squaring-of-the-circle",
+      "relation": "leads-to",
+      "object": "the-unconscious",
+      "references": [
+        {
+          "volume": 12,
+          "paragraph": 167,
+          "quote": "the squaring of the circle is a stage on the way to the unconscious",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "mandala",
+      "relation": "symbolizes",
+      "object": "the-self",
+      "references": [
+        {
+          "volume": 12,
+          "paragraph": 247,
+          "quote": "that obscure thing we call the mandala or \"self\"",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "hierosgamos",
+      "relation": "symbolizes",
+      "object": "union-of-opposites",
+      "references": [
+        {
+          "volume": 12,
+          "paragraph": 43,
+          "quote": "the union of opposites in the archetypal form of the hierosgamos",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "filius-philosophorum",
+      "relation": "symbolizes",
+      "object": "divine-child",
+      "layer": "amplification",
+      "kind": "image",
+      "references": [
+        {
+          "volume": 12,
+          "paragraph": 215,
+          "quote": "filius philosophorum = archetype of the divine child",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "the-vessel",
+      "relation": "produces",
+      "object": "filius-philosophorum",
+      "references": [
+        {
+          "volume": 12,
+          "paragraph": 338,
+          "quote": "matrix or uterus from which the filius philosophorum ... is to be born",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "the-vessel",
+      "relation": "symbolizes",
+      "object": "mercurius",
+      "references": [
+        {
+          "volume": 12,
+          "paragraph": 338,
+          "quote": "the vas is the water ... none other than the Mercurius of the philosophers",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-quotes-source",
+          "source": "unnamed alchemical texts"
+        }
+      ]
+    },
+    {
+      "subject": "mercurius",
+      "relation": "symbolizes",
+      "object": "hermes",
+      "layer": "amplification",
+      "kind": "image",
+      "references": [
+        {
+          "volume": 12,
+          "paragraph": 172,
+          "quote": "Mercurius also takes on the significance of Hermes, god of revelation",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "mercurius",
+      "relation": "is-a",
+      "object": "psychopomp",
+      "layer": "amplification",
+      "kind": "image",
+      "references": [
+        {
+          "volume": 12,
+          "paragraph": 409,
+          "quote": "as Mercurius, possesses the Hermetic dual significance of redeeming psychopomp",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "the-opus",
+      "relation": "parallels",
+      "object": "the-mass",
+      "layer": "amplification",
+      "kind": "parallel",
+      "references": [
+        {
+          "volume": 12,
+          "paragraph": 490,
+          "quote": "the analogy between the opus and the Mass",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-reports-parallel"
+        },
+        {
+          "volume": 12,
+          "paragraph": 480,
+          "quote": "expounded the alchemical process in the form of a Mass",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-reports-parallel"
+        }
+      ]
+    },
+    {
+      "subject": "the-opus",
+      "relation": "symbolized-by",
+      "object": "peregrinatio",
+      "layer": "amplification",
+      "kind": "image",
+      "references": [
+        {
+          "volume": 12,
+          "paragraph": 457,
+          "quote": "Maier imagined the opus as a wandering or odyssey",
+          "confidence": "medium",
+          "verified": false,
+          "claim_type": "jung-quotes-source",
+          "source": "Michael Maier"
         }
       ]
     }
