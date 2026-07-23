@@ -362,6 +362,16 @@
       "id": "peregrinatio",
       "type": "Motif",
       "label": "Peregrinatio (the journey)"
+    },
+    {
+      "id": "sapientia",
+      "type": "Concept",
+      "label": "Sapientia / Wisdom"
+    },
+    {
+      "id": "rex-marinus",
+      "type": "Figure",
+      "label": "Rex marinus (King of the Sea)"
     }
   ],
   "edges": [
@@ -2027,6 +2037,331 @@
           "verified": false,
           "claim_type": "jung-quotes-source",
           "source": "Michael Maier"
+        }
+      ]
+    },
+    {
+      "subject": "rex-regina",
+      "relation": "symbolizes",
+      "object": "consciousness",
+      "references": [
+        {
+          "volume": 14,
+          "paragraph": 424,
+          "quote": "the king stands first of all for Sol, whom we have interpreted as consciousness",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "rex-regina",
+      "relation": "renewed-through",
+      "object": "the-unconscious",
+      "references": [
+        {
+          "volume": 14,
+          "paragraph": 471,
+          "quote": "the king constantly needs the renewal that begins with a descent into his own darkness",
+          "confidence": "medium",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "rex-regina",
+      "relation": "amplified-by",
+      "object": "rex-marinus",
+      "layer": "amplification",
+      "kind": "image",
+      "references": [
+        {
+          "volume": 14,
+          "paragraph": 105,
+          "quote": "Thus the rex marinus says",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-quotes-source",
+          "source": "Visio Arislei"
+        }
+      ]
+    },
+    {
+      "subject": "rex-regina",
+      "relation": "renewed-as",
+      "object": "anthropos",
+      "references": [
+        {
+          "volume": 14,
+          "paragraph": 443,
+          "quote": "the filius regius into the rearisen Primordial Man, who is the cosmos",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "anthropos",
+      "relation": "is-psychic-analogue-of",
+      "object": "the-self",
+      "references": [
+        {
+          "volume": 14,
+          "paragraph": 619,
+          "quote": "Adam Kadmon is not merely the universal soul or, psychologically, the self",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        },
+        {
+          "volume": 14,
+          "paragraph": 548,
+          "quote": "the more comprehensive, supra-ordinate totality which we know as the self",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "anthropos",
+      "relation": "symbolizes",
+      "object": "prima-materia",
+      "references": [
+        {
+          "volume": 14,
+          "paragraph": 552,
+          "quote": "why it was that Adam should have been selected as a symbol for the prima materia",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "christ",
+      "relation": "is-a",
+      "object": "anthropos",
+      "references": [
+        {
+          "volume": 14,
+          "paragraph": 565,
+          "quote": "The second Adam is Christ",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        },
+        {
+          "volume": 14,
+          "paragraph": 484,
+          "quote": "The worm therefore signifies the second Adam, Christ",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "coniunctio",
+      "relation": "produces",
+      "object": "anthropos",
+      "references": [
+        {
+          "volume": 14,
+          "paragraph": 44,
+          "quote": "the invisible centre, is Adam Kadmon...the product of the conjunction of sun and moon",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        },
+        {
+          "volume": 14,
+          "paragraph": 631,
+          "quote": "the coniunctio symbolizes the production of the hermaphroditic second Adam",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "luna",
+      "relation": "symbolizes",
+      "object": "the-unconscious",
+      "references": [
+        {
+          "volume": 14,
+          "paragraph": 159,
+          "quote": "the moon is a favourite symbol for certain aspects of the unconscious—though only, of course, in a man",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        },
+        {
+          "volume": 14,
+          "paragraph": 172,
+          "quote": "the union of consciousness (Sol) with its feminine counterpart the unconscious (Luna)",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "luna",
+      "relation": "symbolizes",
+      "object": "the-vessel",
+      "references": [
+        {
+          "volume": 14,
+          "paragraph": 154,
+          "quote": "the moon is a vessel of the sun: she is a universal receptacle",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "luna",
+      "relation": "correlated-with",
+      "object": "venus",
+      "references": [
+        {
+          "volume": 14,
+          "paragraph": 171,
+          "quote": "Luna has an affinity with Venus",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-quotes-source",
+          "source": "Pico della Mirandola"
+        }
+      ]
+    },
+    {
+      "subject": "prima-materia",
+      "relation": "amplified-by",
+      "object": "luna",
+      "layer": "amplification",
+      "kind": "image",
+      "references": [
+        {
+          "volume": 14,
+          "paragraph": 14,
+          "quote": "synonyms such as mater...Luna",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "salt",
+      "relation": "symbolizes",
+      "object": "sapientia",
+      "references": [
+        {
+          "volume": 14,
+          "paragraph": 324,
+          "quote": "made possible by the sal: sapientia equation",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "dove",
+      "relation": "symbolizes",
+      "object": "sapientia",
+      "references": [
+        {
+          "volume": 14,
+          "paragraph": 205,
+          "quote": "the doves are emblems...of the Holy Ghost and Sapientia",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "luna",
+      "relation": "correlated-with",
+      "object": "sapientia",
+      "references": [
+        {
+          "volume": 14,
+          "paragraph": 164,
+          "quote": "in my sister the moon the degree of your wisdom increases",
+          "confidence": "medium",
+          "verified": false,
+          "claim_type": "jung-quotes-source",
+          "source": "Rosarium philosophorum"
+        }
+      ]
+    },
+    {
+      "subject": "union-of-opposites",
+      "relation": "symbolizes",
+      "object": "the-self",
+      "references": [
+        {
+          "volume": 14,
+          "paragraph": 4,
+          "quote": "The pairs of opposites constitute the phenomenology of the paradoxical self",
+          "confidence": "medium",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "quaternity",
+      "relation": "symbolizes",
+      "object": "anthropos",
+      "references": [
+        {
+          "volume": 14,
+          "paragraph": 8,
+          "quote": "The double quaternio or ogdoad stands for a totality...the mystical Adam and bisexual Original Man",
+          "confidence": "medium",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "sulphur",
+      "relation": "symbolizes",
+      "object": "the-self",
+      "references": [
+        {
+          "volume": 14,
+          "paragraph": 145,
+          "quote": "The common denominator of these two...conceptions is the self",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "salt",
+      "relation": "symbolizes",
+      "object": "union-of-opposites",
+      "references": [
+        {
+          "volume": 14,
+          "paragraph": 326,
+          "quote": "salt contains in itself the element of water and fire, and by this is one out of two",
+          "confidence": "medium",
+          "verified": false,
+          "claim_type": "jung-quotes-source",
+          "source": "St. Hilary"
         }
       ]
     }
