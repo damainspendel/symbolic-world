@@ -1,6 +1,5 @@
 import SwiftUI
 import SwiftData
-import CloudKit
 import UniformTypeIdentifiers
 
 struct SettingsView: View {
@@ -64,26 +63,20 @@ struct SettingsView: View {
             .toolbar {
                 ToolbarItem(placement: .confirmationAction) { Button("Done") { dismiss() } }
             }
-            .task { await refreshSyncStatus() }
+            .onAppear { updateSyncStatus() }
             .fileImporter(isPresented: $importing, allowedContentTypes: [.json]) { result in
                 importNotes(result)
             }
         }
     }
 
-    private func refreshSyncStatus() async {
-        do {
-            switch try await CKContainer.default().accountStatus() {
-            case .available: syncStatus = "Signed in — syncing"
-            case .noAccount: syncStatus = "No iCloud account (local only)"
-            case .restricted: syncStatus = "Restricted"
-            case .temporarilyUnavailable: syncStatus = "Temporarily unavailable"
-            case .couldNotDetermine: syncStatus = "Unknown"
-            @unknown default: syncStatus = "Unknown"
-            }
-        } catch {
-            syncStatus = "Local only"
-        }
+    /// iCloud sign-in check via the ubiquity token — safe on any build (no
+    /// CloudKit entitlement required, so it can't raise the CKContainer
+    /// exception that crashes unsigned/simulator builds).
+    private func updateSyncStatus() {
+        syncStatus = FileManager.default.ubiquityIdentityToken != nil
+            ? "Signed in to iCloud — syncing"
+            : "Not signed in — notes stay local"
     }
 
     private func importNotes(_ result: Result<URL, Error>) {
