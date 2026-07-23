@@ -4,3 +4,9 @@ data/
 *.epub
 
 .DS_Store
+
+# Xcode / SwiftPM build artifacts (project regenerated from project.yml via xcodegen)
+app/build/
+app/Speculum.xcodeproj/
+DerivedData/
+*.xcuserstate
