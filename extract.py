@@ -28,6 +28,8 @@ VOLUME_RANGES = {
     13: (678, 719),
     14: (756, 773),
     "9ii": (468, 490),   # Aion (CW 9, Part II) — chapters I–XIV; biblio/index excluded
+    "9i": (421, 445),    # Archetypes & the Collective Unconscious; biblio/index excluded
+    16: (825, 859),      # The Practice of Psychotherapy (incl. Psychology of the Transference)
 }
 
 # A numbered paragraph opens with a bracketed superscript marker, e.g.
