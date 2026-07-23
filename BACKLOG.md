@@ -17,6 +17,11 @@ always come first; nothing here may compromise the trust model (every canonical 
   reference chrome (title + sidebar toggle) when `mode == .explore`, or give Explore its
   own toolbar context. *(Added 2026-07-23.)*
 
+- **Bidirectional selection (Reference → Explore).** Selecting a claim/node in Reference
+  should highlight — and centre — the corresponding node/edge in the Explore graph.
+  Selection currently flows only Explore → Reference; make it symmetric so switching to
+  Explore lands on (and highlights) what you were reading. *(Added 2026-07-23.)*
+
 - **App icon — Tenets-family style.** Design a Red Thread app icon consistent with the
   Tenets app family's visual identity ⚠ *(match the real suite's icon language — corner
   radius, palette, motif treatment)*. Motif candidates: a red thread / Ariadne's thread,
