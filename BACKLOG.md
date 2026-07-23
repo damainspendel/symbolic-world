@@ -4,6 +4,24 @@ Ideas parked for later, not yet scheduled. The canonical graph and its § discip
 always come first; nothing here may compromise the trust model (every canonical edge
 §-anchored + independently verified).
 
+## App
+
+- **Explore node card collides with the bottom control bar.** The selected-node card
+  (bottom of Explore) overlaps the floating Mode / search / settings pill — they sit on
+  top of each other. Fix: lift the card above the control bar (bottom inset), or dock the
+  card to a side, so the two never overlap. *(Added 2026-07-23.)*
+
+- **Reference toolbar title ("Around §N") leaks into Explore.** Because both views are
+  kept alive (so Explore keeps its layout), the Reference NavigationSplitView's window
+  toolbar/title still shows in Explore mode, where it's meaningless. Fix: suppress the
+  reference chrome (title + sidebar toggle) when `mode == .explore`, or give Explore its
+  own toolbar context. *(Added 2026-07-23.)*
+
+- **App icon — Tenets-family style.** Design a Red Thread app icon consistent with the
+  Tenets app family's visual identity ⚠ *(match the real suite's icon language — corner
+  radius, palette, motif treatment)*. Motif candidates: a red thread / Ariadne's thread,
+  a labyrinth, or a single luminous node-and-edge. macOS + iOS sizes.
+
 ## Features
 
 - **User-contributed amplifications.** Let people add their own amplifications — the
