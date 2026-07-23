@@ -1,0 +1,6 @@
+# Raw copyrighted corpus — stays local, never published.
+# Only derived triples + § citations leave this machine.
+data/
+*.epub
+
+.DS_Store

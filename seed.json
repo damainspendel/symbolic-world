@@ -1,0 +1,775 @@
+{
+  "_about": "JungKG seed graph v1 — Jung's alchemy, grounded in Collected Works paragraphs.",
+  "_citation_key": "Every § anchor was located in the actual text (see extract.py). 'verified' = human sign-off (Damian), starts false. 'confidence' = machine read (high/medium/low). 'claim_type' = provenance: jung-asserts (his own claim) | jung-reports-parallel (a cross-tradition parallel he draws) | jung-quotes-source (he quotes a named source, given in 'source'). Quotes kept <=15 words, safe to publish.",
+  "nodes": [
+    {
+      "id": "individuation",
+      "type": "Concept",
+      "label": "Individuation"
+    },
+    {
+      "id": "the-self",
+      "type": "Concept",
+      "label": "The Self"
+    },
+    {
+      "id": "the-unconscious",
+      "type": "Concept",
+      "label": "The unconscious"
+    },
+    {
+      "id": "consciousness",
+      "type": "Concept",
+      "label": "Consciousness (ego, diurnal psyche)"
+    },
+    {
+      "id": "union-of-opposites",
+      "type": "Concept",
+      "label": "Union of opposites"
+    },
+    {
+      "id": "quaternity",
+      "type": "Concept",
+      "label": "The quaternity"
+    },
+    {
+      "id": "nigredo",
+      "type": "Operation",
+      "label": "Nigredo",
+      "latin": "nigredo",
+      "color_phase": "black"
+    },
+    {
+      "id": "albedo",
+      "type": "Operation",
+      "label": "Albedo",
+      "latin": "albedo",
+      "color_phase": "white"
+    },
+    {
+      "id": "rubedo",
+      "type": "Operation",
+      "label": "Rubedo",
+      "latin": "rubedo",
+      "color_phase": "red"
+    },
+    {
+      "id": "coniunctio",
+      "type": "Operation",
+      "label": "Coniunctio"
+    },
+    {
+      "id": "lapis",
+      "type": "Symbol",
+      "label": "Lapis philosophorum"
+    },
+    {
+      "id": "ouroboros",
+      "type": "Symbol",
+      "label": "Uroboros"
+    },
+    {
+      "id": "sol",
+      "type": "Symbol",
+      "label": "Sol"
+    },
+    {
+      "id": "luna",
+      "type": "Symbol",
+      "label": "Luna"
+    },
+    {
+      "id": "rebis",
+      "type": "Symbol",
+      "label": "Rebis / Hermaphrodite"
+    },
+    {
+      "id": "mercurius",
+      "type": "Figure",
+      "label": "Mercurius"
+    },
+    {
+      "id": "prima-materia",
+      "type": "Substance",
+      "label": "Prima materia"
+    },
+    {
+      "id": "axiom-of-maria",
+      "type": "Concept",
+      "label": "Axiom of Maria Prophetissa"
+    },
+    {
+      "id": "rex-regina",
+      "type": "Motif",
+      "label": "Rex & Regina",
+      "tradition": "Alchemy · royal marriage"
+    },
+    {
+      "id": "shulamite",
+      "type": "Motif",
+      "label": "The Shulamite",
+      "tradition": "Song of Songs"
+    },
+    {
+      "id": "tifereth-malchuth",
+      "type": "Motif",
+      "label": "Tifereth & Malchuth",
+      "tradition": "Kabbalah"
+    },
+    {
+      "id": "anthropos",
+      "type": "Motif",
+      "label": "Anthropos / Adam Kadmon",
+      "tradition": "Gnostic-Kabbalistic"
+    },
+    {
+      "id": "the-ego",
+      "type": "Concept",
+      "label": "The ego"
+    },
+    {
+      "id": "the-shadow",
+      "type": "Concept",
+      "label": "The shadow"
+    },
+    {
+      "id": "anima",
+      "type": "Figure",
+      "label": "Anima"
+    },
+    {
+      "id": "animus",
+      "type": "Figure",
+      "label": "Animus"
+    },
+    {
+      "id": "collective-unconscious",
+      "type": "Concept",
+      "label": "The collective unconscious"
+    },
+    {
+      "id": "christ",
+      "type": "Figure",
+      "label": "Christ (as symbol)"
+    },
+    {
+      "id": "antichrist",
+      "type": "Figure",
+      "label": "Antichrist"
+    },
+    {
+      "id": "wholeness",
+      "type": "Concept",
+      "label": "Wholeness / totality"
+    },
+    {
+      "id": "mandala",
+      "type": "Symbol",
+      "label": "Mandala"
+    },
+    {
+      "id": "god-image",
+      "type": "Concept",
+      "label": "God-image (imago Dei)"
+    },
+    {
+      "id": "indivisible-point",
+      "type": "Motif",
+      "label": "The indivisible point",
+      "tradition": "Gnostic · Monoïmos / Naassene"
+    }
+  ],
+  "edges": [
+    {
+      "subject": "coniunctio",
+      "relation": "unites",
+      "object": "union-of-opposites",
+      "references": [
+        {
+          "volume": 14,
+          "paragraph": 1,
+          "quote": "factors which come together in the coniunctio are conceived as opposites",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "nigredo",
+      "relation": "begins-from",
+      "object": "prima-materia",
+      "references": [
+        {
+          "volume": 12,
+          "paragraph": 334,
+          "quote": "The nigredo or blackness is the initial state",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "coniunctio",
+      "relation": "produces",
+      "object": "nigredo",
+      "references": [
+        {
+          "volume": 12,
+          "paragraph": 334,
+          "quote": "a union of opposites... followed by the death of the product",
+          "confidence": "medium",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "lapis",
+      "relation": "is-goal-of",
+      "object": "coniunctio",
+      "references": [
+        {
+          "volume": 12,
+          "paragraph": 335,
+          "quote": "the philosophers' stone, which, as hermaphrodite, contains both",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "lapis",
+      "relation": "symbolizes",
+      "object": "the-self",
+      "references": [
+        {
+          "volume": 12,
+          "paragraph": 247,
+          "quote": "that obscure thing we call the mandala or 'self'",
+          "confidence": "medium",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        },
+        {
+          "volume": "9ii",
+          "paragraph": 426,
+          "quote": "the Rebis or Lapis Philosophorum... a symbol of the self",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "axiom-of-maria",
+      "relation": "prefigures",
+      "object": "quaternity",
+      "references": [
+        {
+          "volume": 12,
+          "paragraph": 26,
+          "quote": "One becomes two, two becomes three, and out of the third comes the one as the fourth",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "mercurius",
+      "relation": "personifies",
+      "object": "the-unconscious",
+      "references": [
+        {
+          "volume": 13,
+          "paragraph": 289,
+          "quote": "Mercurius in a predominantly unfavourable light... the unconscious",
+          "confidence": "medium",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "sol",
+      "relation": "is-psychic-analogue-of",
+      "object": "consciousness",
+      "references": [
+        {
+          "volume": 14,
+          "paragraph": 121,
+          "quote": "Sol corresponds psychologically to consciousness, the diurnal side of the psyche",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "luna",
+      "relation": "is-psychic-analogue-of",
+      "object": "the-unconscious",
+      "references": [
+        {
+          "volume": 14,
+          "paragraph": 127,
+          "quote": "consciousness and unconsciousness, whose symbols are Sol and Luna",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "prima-materia",
+      "relation": "is-psychic-analogue-of",
+      "object": "the-unconscious",
+      "references": [
+        {
+          "volume": 12,
+          "paragraph": 431,
+          "quote": "autonomy and everlastingness of the prima materia",
+          "confidence": "medium",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "coniunctio",
+      "relation": "prefigures",
+      "object": "individuation",
+      "references": [
+        {
+          "volume": 14,
+          "paragraph": 664,
+          "quote": "a mental union was... merely the first stage of the procedure",
+          "confidence": "medium",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "nigredo",
+      "relation": "precedes",
+      "object": "albedo",
+      "references": []
+    },
+    {
+      "subject": "albedo",
+      "relation": "precedes",
+      "object": "rubedo",
+      "references": []
+    },
+    {
+      "subject": "sol",
+      "relation": "opposes",
+      "object": "luna",
+      "references": [
+        {
+          "volume": 14,
+          "paragraph": 127,
+          "quote": "the primary pair of opposites, consciousness and unconsciousness, whose symbols are Sol and Luna",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "ouroboros",
+      "relation": "symbolizes",
+      "object": "union-of-opposites",
+      "references": [
+        {
+          "volume": 12,
+          "paragraph": 460,
+          "quote": "compounded of opposites and is at the same time their uniting symbol",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "coniunctio",
+      "relation": "amplified-by",
+      "object": "rex-regina",
+      "layer": "amplification",
+      "kind": "image",
+      "references": [
+        {
+          "volume": 14,
+          "paragraph": 2,
+          "quote": "the masculine-feminine opposition is personified as King and Queen",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "nigredo",
+      "relation": "amplified-by",
+      "object": "shulamite",
+      "layer": "amplification",
+      "kind": "parallel",
+      "references": [
+        {
+          "volume": 14,
+          "paragraph": 592,
+          "quote": "Sulamith (the Shulamite) and Eve... contaminated into a single figure",
+          "confidence": "medium",
+          "verified": false,
+          "claim_type": "jung-reports-parallel"
+        }
+      ]
+    },
+    {
+      "subject": "coniunctio",
+      "relation": "amplified-by",
+      "object": "tifereth-malchuth",
+      "layer": "amplification",
+      "kind": "parallel",
+      "references": [
+        {
+          "volume": 14,
+          "paragraph": 18,
+          "quote": "Malchuth is Domina, the Mistress... The Sefira Tifereth is the King",
+          "confidence": "medium",
+          "verified": false,
+          "claim_type": "jung-quotes-source",
+          "source": "Knorr von Rosenroth, Kabbala Denudata"
+        }
+      ]
+    },
+    {
+      "subject": "rebis",
+      "relation": "amplified-by",
+      "object": "anthropos",
+      "layer": "amplification",
+      "kind": "parallel",
+      "references": [
+        {
+          "volume": 14,
+          "paragraph": 652,
+          "quote": "Adam Kadmon, as a personification of the whole 'inverted tree,' is androgynous",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-reports-parallel"
+        }
+      ]
+    },
+    {
+      "subject": "the-ego",
+      "relation": "subordinate-to",
+      "object": "the-self",
+      "references": [
+        {
+          "volume": "9ii",
+          "paragraph": 9,
+          "quote": "The ego is, by definition, subordinate to the self",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "the-shadow",
+      "relation": "challenges",
+      "object": "the-ego",
+      "references": [
+        {
+          "volume": "9ii",
+          "paragraph": 14,
+          "quote": "The shadow is a moral problem that challenges the whole ego-personality",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "anima",
+      "relation": "personifies",
+      "object": "collective-unconscious",
+      "references": [
+        {
+          "volume": "9ii",
+          "paragraph": 40,
+          "quote": "anima and animus... personify those of its contents",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "animus",
+      "relation": "personifies",
+      "object": "collective-unconscious",
+      "references": [
+        {
+          "volume": "9ii",
+          "paragraph": 40,
+          "quote": "anima and animus... personify those of its contents",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "christ",
+      "relation": "symbolizes",
+      "object": "the-self",
+      "references": [
+        {
+          "volume": "9ii",
+          "paragraph": 123,
+          "quote": "the traditional Christ-image... the archetype of the self",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "antichrist",
+      "relation": "corresponds-to",
+      "object": "the-shadow",
+      "references": [
+        {
+          "volume": "9ii",
+          "paragraph": 76,
+          "quote": "the Antichrist would correspond to the shadow of the self",
+          "confidence": "medium",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "the-self",
+      "relation": "includes",
+      "object": "the-shadow",
+      "references": [
+        {
+          "volume": "9ii",
+          "paragraph": 76,
+          "quote": "In the empirical self, light and shadow form a paradoxical unity",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "individuation",
+      "relation": "is-a",
+      "object": "coniunctio",
+      "bridge": true,
+      "references": [
+        {
+          "volume": "9ii",
+          "paragraph": 117,
+          "quote": "individuation is a 'mysterium coniunctionis'",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "the-self",
+      "relation": "symbolized-by",
+      "object": "quaternity",
+      "bridge": true,
+      "references": [
+        {
+          "volume": "9ii",
+          "paragraph": 117,
+          "quote": "the self... symbolized by the marriage quaternio",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "the-ego",
+      "relation": "centre-of",
+      "object": "consciousness",
+      "references": [
+        {
+          "volume": "9ii",
+          "paragraph": 11,
+          "quote": "the point of reference for the field of consciousness",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "the-shadow",
+      "relation": "precedes",
+      "object": "anima",
+      "references": [
+        {
+          "volume": "9ii",
+          "paragraph": 42,
+          "quote": "the integration of the shadow... without it a recognition of anima and animus is impossible",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "the-shadow",
+      "relation": "precedes",
+      "object": "animus",
+      "references": [
+        {
+          "volume": "9ii",
+          "paragraph": 42,
+          "quote": "the integration of the shadow... without it a recognition of anima and animus is impossible",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "the-self",
+      "relation": "is",
+      "object": "wholeness",
+      "references": [
+        {
+          "volume": "9ii",
+          "paragraph": 117,
+          "quote": "the psychological self. Being a totality",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "wholeness",
+      "relation": "symbolized-by",
+      "object": "mandala",
+      "references": [
+        {
+          "volume": "9ii",
+          "paragraph": 59,
+          "quote": "wholeness... anticipated by the psyche in the form of... mandala symbols",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "wholeness",
+      "relation": "is-psychic-analogue-of",
+      "object": "god-image",
+      "references": [
+        {
+          "volume": "9ii",
+          "paragraph": 60,
+          "quote": "their symbols can no longer be distinguished from the imago Dei",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "christ",
+      "relation": "is-a",
+      "object": "god-image",
+      "references": [
+        {
+          "volume": "9ii",
+          "paragraph": 71,
+          "quote": "the God-image which is Christ",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-quotes-source",
+          "source": "St. Augustine"
+        }
+      ]
+    },
+    {
+      "subject": "christ",
+      "relation": "lacks",
+      "object": "the-shadow",
+      "references": [
+        {
+          "volume": "9ii",
+          "paragraph": 79,
+          "quote": "the Christian image of the self—Christ—lacks the shadow that properly belongs to it",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "rebis",
+      "relation": "symbolizes",
+      "object": "the-self",
+      "references": [
+        {
+          "volume": "9ii",
+          "paragraph": 426,
+          "quote": "the Rebis or Lapis Philosophorum... a symbol of the self",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "the-self",
+      "relation": "amplified-by",
+      "object": "anthropos",
+      "layer": "amplification",
+      "kind": "parallel",
+      "references": [
+        {
+          "volume": "9ii",
+          "paragraph": 310,
+          "quote": "every king carries the symbol of the self... show him as the cosmic Anthropos",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "the-self",
+      "relation": "amplified-by",
+      "object": "indivisible-point",
+      "layer": "amplification",
+      "kind": "parallel",
+      "references": [
+        {
+          "volume": "9ii",
+          "paragraph": 340,
+          "quote": "objective symbols of the self... the Naassene conception of the... indivisible point",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    }
+  ]
+}

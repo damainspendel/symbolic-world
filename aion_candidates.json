@@ -1,0 +1,42 @@
+{
+  "_about": "Track-1 (spine) mining TRIAL on Aion (CW 9ii). Candidate edges proposed by the extractor pass, NOT yet verified. Purpose: measure precision against independent Fable 5 review before trusting automated mining to scale. Two edges are cross-volume bridges into the existing alchemy graph (individuation→coniunctio, the-self→quaternity).",
+
+  "new_nodes": [
+    {"id": "the-ego",                "type": "Concept", "label": "The ego"},
+    {"id": "the-shadow",             "type": "Concept", "label": "The shadow"},
+    {"id": "anima",                  "type": "Figure",  "label": "Anima"},
+    {"id": "animus",                 "type": "Figure",  "label": "Animus"},
+    {"id": "collective-unconscious", "type": "Concept", "label": "The collective unconscious"},
+    {"id": "christ",                 "type": "Figure",  "label": "Christ (as symbol)"},
+    {"id": "antichrist",             "type": "Figure",  "label": "Antichrist"}
+  ],
+
+  "candidate_edges": [
+    {"subject": "the-ego", "relation": "subordinate-to", "object": "the-self",
+     "references": [{"volume": "9ii", "paragraph": 9, "quote": "The ego is, by definition, subordinate to the self", "confidence": "high", "verified": false, "claim_type": "jung-asserts"}]},
+
+    {"subject": "the-shadow", "relation": "challenges", "object": "the-ego",
+     "references": [{"volume": "9ii", "paragraph": 14, "quote": "The shadow is a moral problem that challenges the whole ego-personality", "confidence": "high", "verified": false, "claim_type": "jung-asserts"}]},
+
+    {"subject": "anima", "relation": "personifies", "object": "collective-unconscious",
+     "references": [{"volume": "9ii", "paragraph": 40, "quote": "anima and animus... personify those of its contents", "confidence": "high", "verified": false, "claim_type": "jung-asserts"}]},
+
+    {"subject": "animus", "relation": "personifies", "object": "collective-unconscious",
+     "references": [{"volume": "9ii", "paragraph": 40, "quote": "anima and animus... personify those of its contents", "confidence": "high", "verified": false, "claim_type": "jung-asserts"}]},
+
+    {"subject": "christ", "relation": "symbolizes", "object": "the-self",
+     "references": [{"volume": "9ii", "paragraph": 123, "quote": "the traditional Christ-image... the archetype of the self", "confidence": "high", "verified": false, "claim_type": "jung-asserts"}]},
+
+    {"subject": "antichrist", "relation": "symbolizes", "object": "the-shadow",
+     "references": [{"volume": "9ii", "paragraph": 76, "quote": "the Antichrist would correspond to the shadow of the self", "confidence": "medium", "verified": false, "claim_type": "jung-asserts"}]},
+
+    {"subject": "the-self", "relation": "includes", "object": "the-shadow",
+     "references": [{"volume": "9ii", "paragraph": 117, "quote": "Being a totality, it must by definition include the light and dark aspects", "confidence": "high", "verified": false, "claim_type": "jung-asserts"}]},
+
+    {"subject": "individuation", "relation": "is-a", "object": "coniunctio", "bridge": true,
+     "references": [{"volume": "9ii", "paragraph": 117, "quote": "individuation is a 'mysterium coniunctionis'", "confidence": "high", "verified": false, "claim_type": "jung-asserts"}]},
+
+    {"subject": "the-self", "relation": "symbolized-by", "object": "quaternity", "bridge": true,
+     "references": [{"volume": "9ii", "paragraph": 117, "quote": "the self... symbolized by the marriage quaternio", "confidence": "high", "verified": false, "claim_type": "jung-asserts"}]}
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "_about": "Depth-first Aion mining, batch 2 — the Self-complex (Ego, Shadow, Syzygy, Self, Christ, God-image). Candidates pending Fable 5 review. Applies the new rule: object term must appear literally in the anchor paragraph.",
+
+  "new_nodes": [
+    {"id": "wholeness", "type": "Concept", "label": "Wholeness / totality"},
+    {"id": "mandala",   "type": "Symbol",  "label": "Mandala"},
+    {"id": "god-image", "type": "Concept", "label": "God-image (imago Dei)"}
+  ],
+
+  "candidate_edges": [
+    {"subject": "the-ego", "relation": "centre-of", "object": "consciousness",
+     "references": [{"volume": "9ii", "paragraph": 11, "quote": "the point of reference for the field of consciousness", "confidence": "high", "verified": false, "claim_type": "jung-asserts"}]},
+
+    {"subject": "the-shadow", "relation": "precedes", "object": "anima",
+     "references": [{"volume": "9ii", "paragraph": 42, "quote": "the integration of the shadow... without it a recognition of anima and animus is impossible", "confidence": "high", "verified": false, "claim_type": "jung-asserts"}]},
+
+    {"subject": "the-shadow", "relation": "precedes", "object": "animus",
+     "references": [{"volume": "9ii", "paragraph": 42, "quote": "the integration of the shadow... without it a recognition of anima and animus is impossible", "confidence": "high", "verified": false, "claim_type": "jung-asserts"}]},
+
+    {"subject": "the-self", "relation": "is", "object": "wholeness",
+     "references": [{"volume": "9ii", "paragraph": 117, "quote": "the psychological self. Being a totality", "confidence": "high", "verified": false, "claim_type": "jung-asserts"}]},
+
+    {"subject": "wholeness", "relation": "symbolized-by", "object": "mandala",
+     "references": [{"volume": "9ii", "paragraph": 59, "quote": "wholeness... anticipated by the psyche in the form of... mandala symbols", "confidence": "high", "verified": false, "claim_type": "jung-asserts"}]},
+
+    {"subject": "wholeness", "relation": "is-psychic-analogue-of", "object": "god-image",
+     "references": [{"volume": "9ii", "paragraph": 60, "quote": "their symbols can no longer be distinguished from the imago Dei", "confidence": "high", "verified": false, "claim_type": "jung-asserts"}]},
+
+    {"subject": "christ", "relation": "is-a", "object": "god-image",
+     "references": [{"volume": "9ii", "paragraph": 71, "quote": "the God-image which is Christ", "confidence": "high", "verified": false, "claim_type": "jung-quotes-source", "source": "St. Augustine"}]},
+
+    {"subject": "christ", "relation": "lacks", "object": "the-shadow",
+     "references": [{"volume": "9ii", "paragraph": 75, "quote": "the doctrine of the privatio boni, wholeness seemed guaranteed in the figure of Christ", "confidence": "medium", "verified": false, "claim_type": "jung-asserts"}]}
+  ]
+}

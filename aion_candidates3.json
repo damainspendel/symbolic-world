@@ -1,0 +1,21 @@
+{
+  "_about": "Aion depth pass, batch 3 — chapters XIII (Gnostic Symbols of the Self) & XIV (Structure and Dynamics of the Self). Object term appears inside every quote (batch-3 rule). One candidate ADDS a corroborating reference to the existing lapis→the-self edge rather than duplicating it.",
+
+  "new_nodes": [
+    {"id": "indivisible-point", "type": "Motif", "label": "The indivisible point", "tradition": "Gnostic · Monoïmos / Naassene"}
+  ],
+
+  "candidate_edges": [
+    {"subject": "lapis", "relation": "symbolizes", "object": "the-self", "corroborates": true,
+     "references": [{"volume": "9ii", "paragraph": 426, "quote": "the Rebis or Lapis Philosophorum... a symbol of the self", "confidence": "high", "verified": false, "claim_type": "jung-asserts"}]},
+
+    {"subject": "rebis", "relation": "symbolizes", "object": "the-self",
+     "references": [{"volume": "9ii", "paragraph": 426, "quote": "the Rebis or Lapis Philosophorum... a symbol of the self", "confidence": "high", "verified": false, "claim_type": "jung-asserts"}]},
+
+    {"subject": "the-self", "relation": "amplified-by", "object": "anthropos", "layer": "amplification", "kind": "parallel",
+     "references": [{"volume": "9ii", "paragraph": 310, "quote": "every king carries the symbol of the self... show him as the cosmic Anthropos", "confidence": "high", "verified": false, "claim_type": "jung-asserts"}]},
+
+    {"subject": "the-self", "relation": "amplified-by", "object": "indivisible-point", "layer": "amplification", "kind": "parallel",
+     "references": [{"volume": "9ii", "paragraph": 340, "quote": "objective symbols of the self... the Naassene conception of the... indivisible point", "confidence": "high", "verified": false, "claim_type": "jung-asserts"}]}
+  ]
+}
