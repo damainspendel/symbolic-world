@@ -3,12 +3,13 @@ import SwiftData
 
 struct ReadingCompanionView: View {
     @EnvironmentObject private var graph: GraphStore
-    @State private var volume = "14"
-    @State private var paragraph = 18
+    @AppStorage("lastVolume") private var volume = "14"
+    @AppStorage("lastParagraph") private var paragraph = 18
     @State private var trail: [Position] = [Position(volume: "14", paragraph: 18)]
     @State private var selectedID: GEdge.ID?
     @State private var mode: Mode = .reference
     @State private var showSettings = false
+    @State private var showSearch = false
 
     enum Mode: String, CaseIterable { case reference = "Reference", explore = "Explore" }
     struct Position: Hashable { let volume: String; let paragraph: Int }
@@ -30,6 +31,8 @@ struct ReadingCompanionView: View {
                 }
                 .pickerStyle(.segmented)
                 .frame(maxWidth: 240)
+                Button { showSearch = true } label: { Image(systemName: "magnifyingglass") }
+                    .buttonStyle(.plain)
                 Button { showSettings = true } label: { Image(systemName: "gearshape") }
                     .buttonStyle(.plain)
             }
@@ -38,6 +41,7 @@ struct ReadingCompanionView: View {
             .padding(.bottom, 12)
         }
         .sheet(isPresented: $showSettings) { SettingsView() }
+        .sheet(isPresented: $showSearch) { SearchView(volume: $volume, paragraph: $paragraph) }
     }
 
     private var nearby: [GEdge] {
@@ -91,7 +95,14 @@ private struct SidebarView: View {
     @Binding var paragraph: Int
     let trail: [ReadingCompanionView.Position]
     @Environment(\.modelContext) private var context
-    @Query(sort: \Bookmark.created, order: .reverse) private var bookmarks: [Bookmark]
+    @Query(sort: [SortDescriptor(\Bookmark.volume), SortDescriptor(\Bookmark.paragraph)]) private var bookmarks: [Bookmark]
+
+    private func bookmarkHere() {
+        let label = graph.edgesNear(volume: volume, paragraph: paragraph).first
+            .map { graph.label($0.subject) } ?? "CW \(volume) §\(paragraph)"
+        context.insert(Bookmark(label: label, volume: volume, paragraph: paragraph))
+        try? context.save()
+    }
 
     var body: some View {
         List {
@@ -108,6 +119,11 @@ private struct SidebarView: View {
                         Button { paragraph += 1 } label: { Image(systemName: "chevron.right") }
                     }
                     .buttonStyle(.bordered)
+                    Button { bookmarkHere() } label: {
+                        Label("Bookmark §\(paragraph)", systemImage: "bookmark")
+                    }
+                    .buttonStyle(.bordered)
+                    .font(.caption)
                 }
                 .padding(.vertical, 4)
             }
