@@ -1,4 +1,4 @@
-name: Speculum
+name: RedThread
 options:
   bundleIdPrefix: com.jungkg
   deploymentTarget:
@@ -9,14 +9,15 @@ options:
 settings:
   base:
     SWIFT_VERSION: "5.0"
+    SWIFT_DEFAULT_ACTOR_ISOLATION: nonisolated
     GENERATE_INFOPLIST_FILE: YES
     MARKETING_VERSION: "0.1"
     CURRENT_PROJECT_VERSION: "1"
     CODE_SIGN_STYLE: Automatic
-    INFOPLIST_KEY_CFBundleDisplayName: Speculum
+    INFOPLIST_KEY_CFBundleDisplayName: Red Thread
 
 targets:
-  Speculum:
+  RedThread:
     type: application
     platform: [iOS, macOS]
     deploymentTarget:
@@ -26,7 +27,7 @@ targets:
       - path: Sources
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.jungkg.speculum
+        PRODUCT_BUNDLE_IDENTIFIER: com.jungkg.redthread
         INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
         INFOPLIST_KEY_UILaunchScreen_Generation: YES
         INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.reference

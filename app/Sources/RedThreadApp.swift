@@ -2,12 +2,12 @@ import SwiftUI
 import SwiftData
 
 @main
-struct SpeculumApp: App {
+struct RedThreadApp: App {
     @StateObject private var graph = GraphStore()
     let container: ModelContainer
 
     init() {
-        container = SpeculumApp.makeContainer()
+        container = RedThreadApp.makeContainer()
     }
 
     var body: some Scene {
@@ -15,6 +15,7 @@ struct SpeculumApp: App {
             ReadingCompanionView()
                 .environmentObject(graph)
                 .tint(Palette.gold)
+                .preferredColorScheme(.dark)
         }
         .modelContainer(container)
     }
@@ -24,7 +25,7 @@ struct SpeculumApp: App {
     /// unavailable (unsigned build / simulator / no iCloud account) so the app
     /// always runs.
     static func makeContainer() -> ModelContainer {
-        let schema = Schema([Note.self])
+        let schema = Schema([Note.self, Bookmark.self])
         do {
             let cloud = ModelConfiguration(schema: schema, cloudKitDatabase: .automatic)
             return try ModelContainer(for: schema, configurations: cloud)

@@ -106,3 +106,19 @@ The alchemy trio (CW 12/13/14) is the spine. Expansions share its vocabulary
    CW paragraph numbers, so `§X → §Y` inter-volume links are mechanically
    extractable. This is the layer that makes it feel like one connected mind.
 4. **Development** — how a concept (coniunctio, Self) evolves across the decades.
+
+## Testing
+
+Two layers, both worth automating early:
+
+- **Graph-integrity tests (highest value — they protect the trust model).** A test
+  suite over `seed.json` that asserts: every reference's (volume, §) exists in the
+  corpus; every quote string actually appears in that paragraph's text; no edge points
+  at an undefined node; amplification edges carry a `kind`; interpretive edges carry a
+  `claim_type`; the §→page concordance resolves for every cited paragraph. This turns
+  "the graph is honest" from a promise into a CI check, and it's the natural home for a
+  **Fable 5 verification pass in CI** on any newly added edges.
+- **App tests.** Unit tests for `GraphStore` (JSON decode incl. mixed int/string volume
+  codes; `edgesNear` window logic; page lookup) and a few UI smoke tests (reading
+  companion renders, mode toggle, add-note round-trips through SwiftData). Run under
+  `xcodebuild test` on the simulator.

@@ -7,6 +7,6 @@ data/
 
 # Xcode / SwiftPM build artifacts (project regenerated from project.yml via xcodegen)
 app/build/
-app/Speculum.xcodeproj/
+app/RedThread.xcodeproj/
 DerivedData/
 *.xcuserstate

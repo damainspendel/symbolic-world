@@ -24,3 +24,19 @@ final class Note {
         "- \(body)  \n  — *Collected Works, vol. \(volume), §\(paragraph)*"
     }
 }
+
+/// A bookmarked node/claim, anchored to a paragraph. Syncs via CloudKit too.
+@Model
+final class Bookmark {
+    var id: UUID = UUID()
+    var label: String = ""
+    var volume: String = ""
+    var paragraph: Int = 0
+    var created: Date = Date()
+
+    init(label: String, volume: String, paragraph: Int) {
+        self.label = label
+        self.volume = volume
+        self.paragraph = paragraph
+    }
+}

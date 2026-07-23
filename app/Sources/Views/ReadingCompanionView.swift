@@ -7,8 +7,33 @@ struct ReadingCompanionView: View {
     @State private var paragraph = 18
     @State private var trail: [Position] = [Position(volume: "14", paragraph: 18)]
     @State private var selectedID: GEdge.ID?
+    @State private var mode: Mode = .reference
+    @State private var showSettings = false
 
+    enum Mode: String, CaseIterable { case reference = "Reference", explore = "Explore" }
     struct Position: Hashable { let volume: String; let paragraph: Int }
+
+    var body: some View {
+        ZStack {
+            if mode == .reference { referenceBody }
+            else { ExploreView(volume: $volume, paragraph: $paragraph, selectedID: $selectedID) }
+        }
+        .overlay(alignment: .bottom) {
+            HStack(spacing: 10) {
+                Picker("Mode", selection: $mode) {
+                    ForEach(Mode.allCases, id: \.self) { Text($0.rawValue).tag($0) }
+                }
+                .pickerStyle(.segmented)
+                .frame(maxWidth: 240)
+                Button { showSettings = true } label: { Image(systemName: "gearshape") }
+                    .buttonStyle(.plain)
+            }
+            .padding(8)
+            .background(.regularMaterial, in: Capsule())
+            .padding(.bottom, 12)
+        }
+        .sheet(isPresented: $showSettings) { SettingsView() }
+    }
 
     private var nearby: [GEdge] {
         graph.edgesNear(volume: volume, paragraph: paragraph)
@@ -17,10 +42,10 @@ struct ReadingCompanionView: View {
         nearby.first { $0.id == selectedID }
     }
 
-    var body: some View {
+    private var referenceBody: some View {
         NavigationSplitView {
             SidebarView(volume: $volume, paragraph: $paragraph, trail: trail)
-                .navigationTitle("Speculum")
+                .navigationTitle("Red Thread")
         } content: {
             List(selection: $selectedID) {
                 Section {
@@ -49,7 +74,6 @@ struct ReadingCompanionView: View {
         .onChange(of: paragraph) { _, newValue in
             let pos = Position(volume: volume, paragraph: newValue)
             if trail.last != pos { trail.append(pos); trail = trail.suffix(6) }
-            selectedID = nil
         }
     }
 }
@@ -61,12 +85,8 @@ private struct SidebarView: View {
     @Binding var volume: String
     @Binding var paragraph: Int
     let trail: [ReadingCompanionView.Position]
-
-    private let bookmarks: [(String, String, Int, Color)] = [
-        ("Sol & Luna", "14", 121, Palette.gold),
-        ("The Shulamite", "14", 592, Palette.motif),
-        ("The Self", "9ii", 117, .blue)
-    ]
+    @Environment(\.modelContext) private var context
+    @Query(sort: \Bookmark.created, order: .reverse) private var bookmarks: [Bookmark]
 
     var body: some View {
         List {
@@ -77,8 +97,6 @@ private struct SidebarView: View {
                         .foregroundStyle(Palette.gold)
                     Text("Mysterium Coniunctionis")
                         .font(.subheadline).italic().foregroundStyle(.secondary)
-                    Stepper("Paragraph §\(paragraph)", value: $paragraph, in: 1...792)
-                        .labelsHidden()
                     HStack {
                         Button { paragraph = max(1, paragraph - 1) } label: { Image(systemName: "chevron.left") }
                         Text("§\(paragraph)").font(.system(.body, design: .monospaced)).monospacedDigit()
@@ -101,17 +119,23 @@ private struct SidebarView: View {
             }
 
             Section("Bookmarks") {
-                ForEach(bookmarks, id: \.0) { bm in
+                if bookmarks.isEmpty {
+                    Text("No bookmarks yet").font(.caption).foregroundStyle(.secondary)
+                }
+                ForEach(bookmarks) { bm in
                     Button {
-                        volume = bm.1; paragraph = bm.2
+                        volume = bm.volume; paragraph = bm.paragraph
                     } label: {
                         HStack {
-                            Circle().fill(bm.3).frame(width: 8, height: 8)
-                            Text(bm.0)
+                            Image(systemName: "bookmark.fill").foregroundStyle(Palette.gold).font(.caption)
+                            Text(bm.label)
+                            Spacer()
+                            Text("§\(bm.paragraph)").font(.system(.caption2, design: .monospaced)).foregroundStyle(.secondary)
                         }
                     }
                     .buttonStyle(.plain)
                 }
+                .onDelete { offsets in offsets.map { bookmarks[$0] }.forEach(context.delete) }
             }
         }
     }
@@ -212,6 +236,11 @@ private struct DetailView: View {
                         Label(openLabel(r), systemImage: "book")
                     }
                     .buttonStyle(.borderedProminent)
+
+                    Button { addBookmark(r) } label: {
+                        Label("Bookmark this", systemImage: "bookmark")
+                    }
+                    .buttonStyle(.bordered)
                 }
 
                 Divider()
@@ -254,6 +283,11 @@ private struct DetailView: View {
         context.insert(Note(body: text, volume: r.volume.raw, paragraph: r.paragraph))
         try? context.save()
         draft = ""
+    }
+
+    private func addBookmark(_ r: GRef) {
+        context.insert(Bookmark(label: graph.label(edge.subject), volume: r.volume.raw, paragraph: r.paragraph))
+        try? context.save()
     }
 
     private var kindLabel: String {

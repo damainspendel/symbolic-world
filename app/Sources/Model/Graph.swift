@@ -23,6 +23,12 @@ struct GNode: Codable, Identifiable, Hashable {
     let type: String
     let label: String
     var tradition: String?
+    var colorPhase: String?
+
+    enum CodingKeys: String, CodingKey {
+        case id, type, label, tradition
+        case colorPhase = "color_phase"
+    }
 }
 
 struct GRef: Codable, Hashable {
