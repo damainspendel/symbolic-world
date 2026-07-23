@@ -372,6 +372,21 @@
       "id": "rex-marinus",
       "type": "Figure",
       "label": "Rex marinus (King of the Sea)"
+    },
+    {
+      "id": "archetype",
+      "type": "Concept",
+      "label": "Archetype (archetype-as-such)"
+    },
+    {
+      "id": "great-mother",
+      "type": "Archetype",
+      "label": "Mother Archetype / Great Mother"
+    },
+    {
+      "id": "rebirth",
+      "type": "Archetype",
+      "label": "Rebirth / Renovatio"
     }
   ],
   "edges": [
@@ -701,6 +716,14 @@
           "confidence": "high",
           "verified": false,
           "claim_type": "jung-asserts"
+        },
+        {
+          "volume": "9i",
+          "paragraph": 439,
+          "quote": "The anima ... personifies the collective unconscious",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
         }
       ]
     },
@@ -850,6 +873,14 @@
           "volume": "9ii",
           "paragraph": 117,
           "quote": "the psychological self. Being a totality",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        },
+        {
+          "volume": "9i",
+          "paragraph": 278,
+          "quote": "I have called this wholeness that transcends consciousness the ... self",
           "confidence": "high",
           "verified": false,
           "claim_type": "jung-asserts"
@@ -1897,6 +1928,14 @@
           "confidence": "high",
           "verified": false,
           "claim_type": "jung-asserts"
+        },
+        {
+          "volume": "9i",
+          "paragraph": 572,
+          "quote": "The mandala, though only a symbol of the self as the psychic totality",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
         }
       ]
     },
@@ -2362,6 +2401,336 @@
           "verified": false,
           "claim_type": "jung-quotes-source",
           "source": "St. Hilary"
+        }
+      ]
+    },
+    {
+      "subject": "collective-unconscious",
+      "relation": "contains",
+      "object": "archetype",
+      "references": [
+        {
+          "volume": "9i",
+          "paragraph": 4,
+          "quote": "The contents of the collective unconscious, on the other hand, are known as archetypes",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "archetype",
+      "relation": "correlate-of",
+      "object": "collective-unconscious",
+      "references": [
+        {
+          "volume": "9i",
+          "paragraph": 89,
+          "quote": "the archetype ... an indispensable correlate of the idea of the collective unconscious",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "collective-unconscious",
+      "relation": "inherited-not-acquired",
+      "object": "archetype",
+      "references": [
+        {
+          "volume": "9i",
+          "paragraph": 90,
+          "quote": "collective unconscious does not develop individually but is inherited ... pre-existent forms, the archetypes",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "great-mother",
+      "relation": "presides-over",
+      "object": "rebirth",
+      "references": [
+        {
+          "volume": "9i",
+          "paragraph": 158,
+          "quote": "The place of magic transformation and rebirth ... are presided over by the mother",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "great-mother",
+      "relation": "contains",
+      "object": "union-of-opposites",
+      "references": [
+        {
+          "volume": "9i",
+          "paragraph": 189,
+          "quote": "transforms her into a ... Great Mother ... the opposites contained in this image split apart",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "anima",
+      "relation": "appears-alongside",
+      "object": "great-mother",
+      "references": [
+        {
+          "volume": "9i",
+          "paragraph": 162,
+          "quote": "side by side with the mother archetype, a significant role is played by ... the anima",
+          "confidence": "medium",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "anima",
+      "relation": "is-a",
+      "object": "archetype",
+      "references": [
+        {
+          "volume": "9i",
+          "paragraph": 58,
+          "quote": "she is yet only one archetype among many",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "the-shadow",
+      "relation": "first-stage-of",
+      "object": "individuation",
+      "references": [
+        {
+          "volume": "9i",
+          "paragraph": 61,
+          "quote": "the encounter with the shadow is the ... apprentice-piece in the individual's development",
+          "confidence": "medium",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "the-self",
+      "relation": "first-met-as",
+      "object": "the-shadow",
+      "references": [
+        {
+          "volume": "9i",
+          "paragraph": 45,
+          "quote": "The meeting with oneself is, at first, the meeting with one's own shadow",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "trickster",
+      "relation": "personifies",
+      "object": "the-shadow",
+      "references": [
+        {
+          "volume": "9i",
+          "paragraph": 484,
+          "quote": "The trickster is a collective shadow figure",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "trickster",
+      "relation": "preserves",
+      "object": "the-shadow",
+      "references": [
+        {
+          "volume": "9i",
+          "paragraph": 470,
+          "quote": "Radin's trickster cycle preserves the shadow in its pristine mythological form",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "trickster",
+      "relation": "forerunner-of",
+      "object": "christ",
+      "references": [
+        {
+          "volume": "9i",
+          "paragraph": 472,
+          "quote": "He is a forerunner of the saviour",
+          "confidence": "medium",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "divine-child",
+      "relation": "prefigures",
+      "object": "the-self",
+      "references": [
+        {
+          "volume": "9i",
+          "paragraph": 282,
+          "quote": "child ... fates may be regarded as illustrating ... genesis of the ... self",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "divine-child",
+      "relation": "appears-as-centre-of",
+      "object": "mandala",
+      "references": [
+        {
+          "volume": "9i",
+          "paragraph": 270,
+          "quote": "Sometimes the child appears ... as the centre of a mandala",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "divine-child",
+      "relation": "unites",
+      "object": "union-of-opposites",
+      "references": [
+        {
+          "volume": "9i",
+          "paragraph": 292,
+          "quote": "The hermaphrodite means nothing less than a union of the strongest and most striking opposites",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "divine-child",
+      "relation": "aims-at",
+      "object": "the-self",
+      "references": [
+        {
+          "volume": "9i",
+          "paragraph": 286,
+          "quote": "the most pregnant with the future, signifying a higher stage of self-realization",
+          "confidence": "medium",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "divine-child",
+      "relation": "is-symbolic",
+      "object": "wholeness",
+      "references": [
+        {
+          "volume": "9i",
+          "paragraph": 280,
+          "quote": "the child motif appears in the form of a unity ... complete synthesis of the personality",
+          "confidence": "medium",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "christ",
+      "relation": "undergoes",
+      "object": "rebirth",
+      "references": [
+        {
+          "volume": "9i",
+          "paragraph": 93,
+          "quote": "It is an idea that underlies all rebirth mysteries ... Christ himself is ... twiceborn",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "the-self",
+      "relation": "goal-of",
+      "object": "individuation",
+      "references": [
+        {
+          "volume": "9i",
+          "paragraph": 278,
+          "quote": "The goal of the individuation process is the synthesis of the self",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "the-self",
+      "relation": "includes",
+      "object": "the-ego",
+      "references": [
+        {
+          "volume": "9i",
+          "paragraph": 248,
+          "quote": "the self ... a centre, neither of which coincides with the ego but includes it",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "mandala",
+      "relation": "symbolizes",
+      "object": "individuation",
+      "references": [
+        {
+          "volume": "9i",
+          "paragraph": 73,
+          "quote": "the mandala is a symbol of individuation",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "mandala",
+      "relation": "is",
+      "object": "god-image",
+      "references": [
+        {
+          "volume": "9i",
+          "paragraph": 572,
+          "quote": "The mandala ... at the same time a God-image",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
         }
       ]
     }
