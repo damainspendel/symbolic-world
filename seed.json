@@ -177,6 +177,21 @@
       "type": "Motif",
       "label": "The indivisible point",
       "tradition": "Gnostic · Monoïmos / Naassene"
+    },
+    {
+      "id": "unus-mundus",
+      "type": "Concept",
+      "label": "Unus mundus"
+    },
+    {
+      "id": "sulphur",
+      "type": "Substance",
+      "label": "Sulphur"
+    },
+    {
+      "id": "salt",
+      "type": "Substance",
+      "label": "Salt (Sal)"
     }
   ],
   "edges": [
@@ -766,6 +781,82 @@
           "paragraph": 340,
           "quote": "objective symbols of the self... the Naassene conception of the... indivisible point",
           "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "coniunctio",
+      "relation": "culminates-in",
+      "object": "unus-mundus",
+      "references": [
+        {
+          "volume": 14,
+          "paragraph": 760,
+          "quote": "the union of the whole man with the unus mundus",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-quotes-source",
+          "source": "Gerhard Dorn"
+        }
+      ]
+    },
+    {
+      "subject": "mercurius",
+      "relation": "mediates",
+      "object": "coniunctio",
+      "references": [
+        {
+          "volume": 14,
+          "paragraph": 659,
+          "quote": "not just the medium of conjunction but also that which is to be united",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "sulphur",
+      "relation": "generates",
+      "object": "sol",
+      "references": [
+        {
+          "volume": 14,
+          "paragraph": 134,
+          "quote": "the prima materia of Sol... Sol therefore derives from sulphur",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "salt",
+      "relation": "correlated-with",
+      "object": "luna",
+      "references": [
+        {
+          "volume": 14,
+          "paragraph": 240,
+          "quote": "salt... correlated with the feminine, lunar side",
+          "confidence": "medium",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "salt",
+      "relation": "symbolizes",
+      "object": "the-self",
+      "references": [
+        {
+          "volume": 14,
+          "paragraph": 329,
+          "quote": "which in many patients' drawings represents the centre and hence the self",
+          "confidence": "medium",
           "verified": false,
           "claim_type": "jung-asserts"
         }

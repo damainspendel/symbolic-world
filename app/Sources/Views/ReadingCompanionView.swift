@@ -15,8 +15,13 @@ struct ReadingCompanionView: View {
 
     var body: some View {
         ZStack {
-            if mode == .reference { referenceBody }
-            else { ExploreView(volume: $volume, paragraph: $paragraph, selectedID: $selectedID) }
+            // Both stay alive so Explore keeps its layout/zoom when you switch back.
+            referenceBody
+                .opacity(mode == .reference ? 1 : 0)
+                .allowsHitTesting(mode == .reference)
+            ExploreView(volume: $volume, paragraph: $paragraph, selectedID: $selectedID)
+                .opacity(mode == .explore ? 1 : 0)
+                .allowsHitTesting(mode == .explore)
         }
         .overlay(alignment: .bottom) {
             HStack(spacing: 10) {

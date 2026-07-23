@@ -107,6 +107,36 @@ The alchemy trio (CW 12/13/14) is the spine. Expansions share its vocabulary
    extractable. This is the layer that makes it feel like one connected mind.
 4. **Development** — how a concept (coniunctio, Self) evolves across the decades.
 
+## Settings & bookmarks — Elena-first (revised after Fable 5 review)
+
+Fable 5's verdict: the first draft managed bookmarks but *forgot reading*. It matched the
+Tenets family instead of Elena's Sunday-morning loop (open → oriented → read → capture in
+2s → retrieve by symbol). Restructured around that loop. Visual/settings polish can still
+echo Tenets ⚠ *(confirm against the real suite)*, but the feature set below is Elena's, not
+the family's.
+
+**Add (highest priority — these were missing):**
+- **Resume position.** Auto-save last-read § per volume; restore on launch ("You were at CW
+  14 §182"). The single most important "keep me oriented" feature. Replaces any "default
+  volume" setting.
+- **Search my own notes + bookmark labels.** §-anchored results, one tap to jump. Turns
+  bookmarks from write-only into recall ("green lion" → her §182 note).
+- **One-gesture capture** of the current § from Reference (inline label edit, no navigation).
+- **Fast §/volume jump** field (keyboard-first on macOS) — her most frequent action.
+
+**Keep (simple bookmark model):** `Bookmark = { volume, §, label, optional note, dates }`,
+SwiftData+CloudKit, **sidebar as the sole home** (quick-jump *and* manage). Auto-sorted by §,
+auto-grouped by volume. Rename + swipe-delete-with-undo + jump-to-and-return.
+
+**Cut / defer:** manual reorder and folders (canonical § order *is* the organization);
+bookmark management inside Settings; per-note local-only toggle; JSON import (defer);
+node/claim bookmarks as a distinct type — **fold them into §-bookmarks** (bookmarking a
+node/claim captures its anchoring § and prefills the label).
+
+**Settings, trimmed:** (1) iCloud — status, last-synced, sync-now; (2) Data — export
+Markdown+JSON (ordered by vol/§, zero CW text), what-syncs explainer; (3) Reading —
+light/dark, text size; (4) About — version, copyright note, acknowledgements.
+
 ## Testing
 
 Two layers, both worth automating early:

@@ -15,7 +15,7 @@ struct RedThreadApp: App {
             ReadingCompanionView()
                 .environmentObject(graph)
                 .tint(Palette.gold)
-                .preferredColorScheme(.dark)
+                .preferredColorScheme(.light)
         }
         .modelContainer(container)
     }

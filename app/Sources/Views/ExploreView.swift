@@ -16,7 +16,7 @@ struct ExploreView: View {
     @State private var offset: CGSize = .zero
     @State private var lastOffset: CGSize = .zero
 
-    private static let ground = Color(red: 0.055, green: 0.067, blue: 0.086)
+    private static let ground = Color(red: 0.949, green: 0.953, blue: 0.937)  // light vellum
 
     var body: some View {
         GeometryReader { geo in
@@ -103,7 +103,7 @@ struct ExploreView: View {
     private func zoomButton(_ icon: String, _ action: @escaping () -> Void) -> some View {
         Button(action: action) {
             Image(systemName: icon).font(.title3).frame(width: 40, height: 40)
-                .background(.black.opacity(0.45), in: Circle()).foregroundStyle(.white)
+                .background(.regularMaterial, in: Circle()).foregroundStyle(.primary)
         }
         .buttonStyle(.plain)
     }
@@ -127,10 +127,10 @@ struct ExploreView: View {
             Text(node.type.uppercased())
                 .font(.system(size: 10, weight: .semibold, design: .monospaced))
                 .foregroundStyle(Palette.gold)
-            Text(node.label).font(.title3.weight(.semibold)).foregroundStyle(.white)
-            Divider().overlay(Color.white.opacity(0.15))
+            Text(node.label).font(.title3.weight(.semibold)).foregroundStyle(.primary)
+            Divider().overlay(Color.primary.opacity(0.12))
             Text("\(touching.count) connection\(touching.count == 1 ? "" : "s") — tap to walk")
-                .font(.caption).foregroundStyle(.white.opacity(0.5))
+                .font(.caption).foregroundStyle(.secondary)
             ForEach(touching) { e in
                 let otherId = e.subject == node.id ? e.object : e.subject
                 Button {
@@ -141,7 +141,7 @@ struct ExploreView: View {
                         Text(e.subject == node.id
                              ? "\(e.relation) → \(graph.label(otherId))"
                              : "\(graph.label(otherId)) → \(e.relation)")
-                            .font(.callout).foregroundStyle(.white.opacity(0.85))
+                            .font(.callout).foregroundStyle(.primary)
                         Spacer()
                         if let r = e.primaryRef {
                             Text("CW \(r.volume.display) §\(r.paragraph)")
@@ -155,8 +155,8 @@ struct ExploreView: View {
         }
         .padding(16)
         .frame(maxWidth: 460, alignment: .leading)
-        .background(.black.opacity(0.55), in: RoundedRectangle(cornerRadius: 14))
-        .overlay(RoundedRectangle(cornerRadius: 14).stroke(Color.white.opacity(0.12)))
+        .background(.regularMaterial, in: RoundedRectangle(cornerRadius: 14))
+        .overlay(RoundedRectangle(cornerRadius: 14).stroke(Color.primary.opacity(0.12)))
     }
 }
 
@@ -186,7 +186,7 @@ private func drawGraph(_ ctx: inout GraphicsContext, layout: ForceLayout, select
         ctx.stroke(Circle().path(in: rect), with: .color(n.ring.opacity(active ? 1 : 0.25)), lineWidth: 1.5)
         let text = Text(n.label)
             .font(.system(size: 9, weight: selIdx == i ? .semibold : .regular))
-            .foregroundColor(.white.opacity(active ? 0.9 : 0.25))
+            .foregroundColor(.black.opacity(active ? 0.82 : 0.28))
         ctx.draw(text, at: CGPoint(x: n.x, y: n.y + r + 8), anchor: .top)
     }
 }
