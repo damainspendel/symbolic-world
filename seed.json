@@ -99,12 +99,6 @@
    "label": "Axiom of Maria Prophetissa"
   },
   {
-   "id": "rex-regina",
-   "type": "Motif",
-   "label": "Rex & Regina",
-   "tradition": "Alchemy · royal marriage"
-  },
-  {
    "id": "shulamite",
    "type": "Motif",
    "label": "The Shulamite",
@@ -380,12 +374,12 @@
   },
   {
    "id": "great-mother",
-   "type": "Archetype",
+   "type": "Figure",
    "label": "Mother Archetype / Great Mother"
   },
   {
    "id": "rebirth",
-   "type": "Archetype",
+   "type": "Motif",
    "label": "Rebirth / Renovatio"
   },
   {
@@ -405,7 +399,7 @@
   },
   {
    "id": "the-hero",
-   "type": "Archetype",
+   "type": "Figure",
    "label": "The Hero"
   },
   {
@@ -425,7 +419,7 @@
   },
   {
    "id": "dual-mother",
-   "type": "Archetype",
+   "type": "Figure",
    "label": "The Dual Mother"
   },
   {
@@ -552,6 +546,16 @@
    "id": "quintessence",
    "type": "Substance",
    "label": "Quintessence (quinta essentia)"
+  },
+  {
+   "id": "rex",
+   "type": "Figure",
+   "label": "Rex (the King)"
+  },
+  {
+   "id": "regina",
+   "type": "Figure",
+   "label": "Regina (the Queen)"
   }
  ],
  "edges": [
@@ -798,7 +802,32 @@
   {
    "subject": "coniunctio",
    "relation": "amplified-by",
-   "object": "rex-regina",
+   "object": "rex",
+   "layer": "amplification",
+   "kind": "image",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 2,
+     "quote": "the masculine-feminine opposition is personified as King and Queen",
+     "confidence": "high",
+     "verified": false,
+     "claim_type": "jung-asserts"
+    },
+    {
+     "volume": 16,
+     "paragraph": 410,
+     "quote": "King and Queen, bridegroom and bride, approach one another...betrothal or marriage",
+     "confidence": "high",
+     "verified": false,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "coniunctio",
+   "relation": "amplified-by",
+   "object": "regina",
    "layer": "amplification",
    "kind": "image",
    "references": [
@@ -1445,7 +1474,7 @@
    ]
   },
   {
-   "subject": "rex-regina",
+   "subject": "rex",
    "relation": "amplified-by",
    "object": "lion",
    "layer": "amplification",
@@ -1462,7 +1491,7 @@
    ]
   },
   {
-   "subject": "rex-regina",
+   "subject": "rex",
    "relation": "renewed-as",
    "object": "lapis",
    "references": [
@@ -1478,7 +1507,7 @@
    ]
   },
   {
-   "subject": "rex-regina",
+   "subject": "rex",
    "relation": "dissolves-into",
    "object": "prima-materia",
    "references": [
@@ -2295,7 +2324,7 @@
    ]
   },
   {
-   "subject": "rex-regina",
+   "subject": "rex",
    "relation": "symbolizes",
    "object": "consciousness",
    "references": [
@@ -2310,7 +2339,7 @@
    ]
   },
   {
-   "subject": "rex-regina",
+   "subject": "rex",
    "relation": "renewed-through",
    "object": "the-unconscious",
    "references": [
@@ -2325,7 +2354,7 @@
    ]
   },
   {
-   "subject": "rex-regina",
+   "subject": "rex",
    "relation": "amplified-by",
    "object": "rex-marinus",
    "layer": "amplification",
@@ -2343,7 +2372,7 @@
    ]
   },
   {
-   "subject": "rex-regina",
+   "subject": "rex",
    "relation": "renewed-as",
    "object": "anthropos",
    "references": [
@@ -4313,7 +4342,7 @@
   {
    "subject": "aqua-permanens",
    "relation": "renews",
-   "object": "rex-regina",
+   "object": "rex",
    "references": [
     {
      "volume": 14,
@@ -4357,7 +4386,7 @@
    ]
   },
   {
-   "subject": "rex-regina",
+   "subject": "regina",
    "relation": "amplified-by",
    "object": "green-lion",
    "references": [
@@ -4684,6 +4713,21 @@
      "volume": 14,
      "paragraph": 486,
      "quote": "they projected the Passion as an unconscious premise into the chemical transformations",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "rex",
+   "relation": "synonym-of",
+   "object": "sol",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 501,
+     "quote": "the king is essentially synonymous with the sun",
      "confidence": "high",
      "verified": true,
      "claim_type": "jung-asserts"
