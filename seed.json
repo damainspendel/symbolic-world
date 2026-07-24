@@ -507,6 +507,51 @@
    "id": "aqua-permanens",
    "type": "Substance",
    "label": "Aqua permanens (permanent water)"
+  },
+  {
+   "id": "filius-regius",
+   "type": "Figure",
+   "label": "Filius Regius (King's Son)"
+  },
+  {
+   "id": "solificatio",
+   "type": "Operation",
+   "label": "Solificatio"
+  },
+  {
+   "id": "holy-ghost",
+   "type": "Figure",
+   "label": "Holy Ghost (Paraclete)"
+  },
+  {
+   "id": "anima-mundi",
+   "type": "Figure",
+   "label": "Anima Mundi"
+  },
+  {
+   "id": "phoenix",
+   "type": "Symbol",
+   "label": "Phoenix"
+  },
+  {
+   "id": "worm",
+   "type": "Symbol",
+   "label": "Worm (vermis)"
+  },
+  {
+   "id": "the-passion",
+   "type": "Motif",
+   "label": "The Passion"
+  },
+  {
+   "id": "true-man",
+   "type": "Figure",
+   "label": "True Man (chen-yen)"
+  },
+  {
+   "id": "quintessence",
+   "type": "Substance",
+   "label": "Quintessence (quinta essentia)"
   }
  ],
  "edges": [
@@ -4327,6 +4372,323 @@
    ],
    "layer": "amplification",
    "kind": "image"
+  },
+  {
+   "subject": "solificatio",
+   "relation": "produces",
+   "object": "rubedo",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 441,
+     "quote": "attained his redness ( rubedo ) through the solificatio",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "filius-regius",
+   "relation": "transforms-into",
+   "object": "anthropos",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 443,
+     "quote": "make the filius regius into the rearisen Primordial Man, who is the cosmos.",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "filius-regius",
+   "relation": "armed-with",
+   "object": "four-elements",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 450,
+     "quote": "God gives the four elements as the weapons with which he shall conquer the world.",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "anima-mundi",
+   "relation": "is-feminine-half-of",
+   "object": "mercurius",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 450,
+     "quote": "The anima mundi is the feminine half of Mercurius.",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "filius-regius",
+   "relation": "is-analogue-of",
+   "object": "christ",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 460,
+     "quote": "it is a splendid living likeness of our Saviour Jesus Christ",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-quotes-source",
+     "source": "Khunrath"
+    }
+   ]
+  },
+  {
+   "subject": "lion",
+   "relation": "symbolizes",
+   "object": "the-devil",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 467,
+     "quote": "he is an allegory of the devil",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "filius-regius",
+   "relation": "identical-to",
+   "object": "mercurius",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 473,
+     "quote": "the filius regius is identical with Mercurius",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "phoenix",
+   "relation": "symbolizes",
+   "object": "christ",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 474,
+     "quote": "in Christian hermeneutics the phoenix is made an allegory of Christ",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-reports-parallel"
+    }
+   ]
+  },
+  {
+   "subject": "phoenix",
+   "relation": "symbolizes",
+   "object": "rebirth",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 474,
+     "quote": "indeed, it is renewal itself.",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "mercurius",
+   "relation": "symbolized-by",
+   "object": "ouroboros",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 480,
+     "quote": "This Mercurius duplex, who ascends and descends, is the uroboros",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "anthropos",
+   "relation": "corresponds-to",
+   "object": "true-man",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 490,
+     "quote": "He corresponds to the chên-yên (true man) of Chinese alchemy.",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "true-man",
+   "relation": "produced-by",
+   "object": "the-opus",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 490,
+     "quote": "The chên-yên is the product of the opus.",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "true-man",
+   "relation": "corresponds-to",
+   "object": "the-self",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 492,
+     "quote": "his own self, which is the “true man.”",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "dragon",
+   "relation": "transforms-into",
+   "object": "lion",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 493,
+     "quote": "the dragon destroyed itself ... and changed into the lion",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "luna",
+   "relation": "personifies",
+   "object": "anima",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 498,
+     "quote": "made mother Luna visible ... It is primarily the feminine element in man, the anima",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "filius-regius",
+   "relation": "embodies",
+   "object": "union-of-opposites",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 441,
+     "quote": "In him all opposites are fused together.",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "the-opus",
+   "relation": "continues-doctrine-of",
+   "object": "holy-ghost",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 444,
+     "quote": "medieval alchemy ... was in the last resort a continuation of the doctrine of the Holy Ghost",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "quintessence",
+   "relation": "corresponds-to",
+   "object": "luna",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 452,
+     "quote": "Her position corresponds on the one hand to that of Luna",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "filius-regius",
+   "relation": "synonym-of",
+   "object": "rebis",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 472,
+     "quote": "as a designation for the “Hermaphrodite of nature,” i.e., the arcane substance.",
+     "confidence": "medium",
+     "verified": true,
+     "claim_type": "jung-quotes-source",
+     "source": "Khunrath"
+    }
+   ]
+  },
+  {
+   "subject": "worm",
+   "relation": "symbolizes",
+   "object": "christ",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 484,
+     "quote": "The worm therefore signifies the second Adam, Christ.",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-reports-parallel"
+    }
+   ]
+  },
+  {
+   "subject": "the-passion",
+   "relation": "projected-into",
+   "object": "the-opus",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 486,
+     "quote": "they projected the Passion as an unconscious premise into the chemical transformations",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
   }
  ]
 }
