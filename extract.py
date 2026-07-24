@@ -24,6 +24,7 @@ import zipfile
 # Body-text file ranges per alchemy volume (front-matter, bibliography and
 # index deliberately excluded — they cite [§] numbers and would create noise).
 VOLUME_RANGES = {
+    8: (370, 393),       # Structure & Dynamics of the Psyche (§1-997, incl. Synchronicity)
     12: (638, 660),
     13: (678, 719),
     14: (756, 773),
