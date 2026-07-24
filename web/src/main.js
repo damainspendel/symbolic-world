@@ -3,7 +3,7 @@ import atlas from './atlas.json'
 import './style.css'
 
 const LAYER = { spine: '#d9b25f', amplification: '#b48ad0', bridge: '#5ec8be', structural: '#5a636e' }
-const VOL_LABEL = { '5': 'CW 5 · Symbols of Transformation', '9i': 'CW 9i · Archetypes', '9ii': 'CW 9ii · Aion', '11': 'CW 11 · Psychology & Religion', '12': 'CW 12 · Psychology & Alchemy', '13': 'CW 13 · Alchemical Studies', '14': 'CW 14 · Mysterium', '16': 'CW 16 · Practice of Psychotherapy' }
+const VOL_LABEL = { '5': 'CW 5 · Symbols of Transformation', '8': 'CW 8 · Structure & Dynamics of the Psyche', '9i': 'CW 9i · Archetypes', '9ii': 'CW 9ii · Aion', '11': 'CW 11 · Psychology & Religion', '12': 'CW 12 · Psychology & Alchemy', '13': 'CW 13 · Alchemical Studies', '14': 'CW 14 · Mysterium', '16': 'CW 16 · Practice of Psychotherapy' }
 // sort key: numeric by volume, with 9i before 9ii
 const volKey = v => { const m = String(v).match(/^(\d+)(i*)$/); return m ? parseInt(m[1], 10) + (m[2] === 'ii' ? 0.2 : m[2] === 'i' ? 0.1 : 0) : 999 }
 const esc = s => String(s).replace(/[&<>]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]))

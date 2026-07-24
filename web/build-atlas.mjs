@@ -23,19 +23,21 @@ for (const e of seed.edges) {
 const deg = id => nbr.get(id).size
 
 // --- regions = curated domains keyed off node type (stable & meaningful) ---
+// Region ids are namespaced ('dom-…') so a compound region parent can never
+// collide with a real node id (e.g. the CW8 concept node 'psyche').
 const DOMAIN = {
-  Concept:   { id: 'psyche',  label: 'The Psyche',           color: '#8fb7c9' },
-  Archetype: { id: 'psyche',  label: 'The Psyche',           color: '#8fb7c9' },
-  Operation: { id: 'opus',    label: 'The Opus',             color: '#cf9a6a' },
-  Substance: { id: 'materia', label: 'The Materia',          color: '#86a86d' },
-  Symbol:    { id: 'symbols', label: 'The Symbols',          color: '#d9b25f' },
-  Figure:    { id: 'figures', label: 'The Figures',          color: '#d0685a' },
-  Motif:     { id: 'motifs',  label: 'Motifs & Traditions',  color: '#b48ad0' }
+  Concept:   { id: 'dom-psyche',  label: 'The Psyche',           color: '#8fb7c9' },
+  Archetype: { id: 'dom-psyche',  label: 'The Psyche',           color: '#8fb7c9' },
+  Operation: { id: 'dom-opus',    label: 'The Opus',             color: '#cf9a6a' },
+  Substance: { id: 'dom-materia', label: 'The Materia',          color: '#86a86d' },
+  Symbol:    { id: 'dom-symbols', label: 'The Symbols',          color: '#d9b25f' },
+  Figure:    { id: 'dom-figures', label: 'The Figures',          color: '#d0685a' },
+  Motif:     { id: 'dom-motifs',  label: 'Motifs & Traditions',  color: '#b48ad0' }
 }
 const nodeCluster = new Map()
 const sizes = new Map()
 for (const n of seed.nodes) {
-  const d = DOMAIN[n.type] || { id: 'other', label: 'Other', color: '#888' }
+  const d = DOMAIN[n.type] || { id: 'dom-other', label: 'Other', color: '#888' }
   nodeCluster.set(n.id, d.id)
   sizes.set(d.id, (sizes.get(d.id) || 0) + 1)
 }
