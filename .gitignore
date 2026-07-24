@@ -10,3 +10,11 @@ app/build/
 app/RedThread.xcodeproj/
 DerivedData/
 *.xcuserstate
+
+# Web app build artifacts (data synced from seed.json on build)
+web/node_modules/
+web/dist/
+web/src/graph.json
+web/src/pages.json
+web/public/graph.json
+web/public/pages.json

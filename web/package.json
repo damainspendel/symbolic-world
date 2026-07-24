@@ -1,0 +1,22 @@
+{
+  "name": "the-symbolic-world",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "sync": "cp ../seed.json src/graph.json && cp ../app/Sources/Resources/pages.json src/pages.json",
+    "predev": "npm run sync",
+    "prebuild": "npm run sync",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "cytoscape": "^3.30.2",
+    "cytoscape-fcose": "^2.2.0"
+  },
+  "devDependencies": {
+    "vite": "^5.4.10",
+    "vite-plugin-singlefile": "^2.0.3"
+  }
+}

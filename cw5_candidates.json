@@ -1,0 +1,417 @@
+{
+  "_about": "CW 5 (Symbols of Transformation) candidate edges - libido as psychic energy; the hero & hero-myth; the sun as libido/hero symbol; the dual/terrible mother; battle for deliverance from the mother; incest as symbolic longing for rebirth; the sacrifice; the night sea journey; transformation/rebirth of libido; the tree of life; serpent/dragon. Object term (or noted near-form) appears in every quote. Pending reviewer verification.",
+  "new_nodes": [
+    {
+      "id": "libido",
+      "type": "Concept",
+      "label": "Libido (psychic energy)"
+    },
+    {
+      "id": "psychic-energy",
+      "type": "Concept",
+      "label": "Psychic energy"
+    },
+    {
+      "id": "the-hero",
+      "type": "Archetype",
+      "label": "The Hero"
+    },
+    {
+      "id": "the-sacrifice",
+      "type": "Motif",
+      "label": "The Sacrifice"
+    },
+    {
+      "id": "incest",
+      "type": "Motif",
+      "label": "Incest (symbolic)"
+    },
+    {
+      "id": "night-sea-journey",
+      "type": "Motif",
+      "label": "The Night Sea Journey"
+    },
+    {
+      "id": "dual-mother",
+      "type": "Archetype",
+      "label": "The Dual Mother"
+    }
+  ],
+  "candidate_edges": [
+    {
+      "subject": "libido",
+      "relation": "is",
+      "object": "psychic-energy",
+      "references": [
+        {
+          "volume": 5,
+          "paragraph": 194,
+          "quote": "It allowed me to identify “psychic energy” with “libido.”",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        },
+        {
+          "volume": 5,
+          "paragraph": 197,
+          "quote": "understand it as an energy-value which is able to communicate itself to any field",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts",
+          "object_term_note": "near-form: 'energy-value' = psychic energy"
+        }
+      ]
+    },
+    {
+      "subject": "libido",
+      "relation": "stored-in",
+      "object": "the-unconscious",
+      "references": [
+        {
+          "volume": 5,
+          "paragraph": 130,
+          "quote": "the energy which belongs to the archetype, to the unconscious",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "psychic-energy",
+      "relation": "produces",
+      "object": "god-image",
+      "references": [
+        {
+          "volume": 5,
+          "paragraph": 129,
+          "quote": "psychic energy or libido creates the God-image by making use of archetypal patterns",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts",
+          "object_term_note": "'God-image' = god-image"
+        }
+      ]
+    },
+    {
+      "subject": "libido",
+      "relation": "symbolized-by",
+      "object": "sol",
+      "references": [
+        {
+          "volume": 5,
+          "paragraph": 297,
+          "quote": "The psychic life-force, the libido, symbolizes itself in the sun",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts",
+          "object_term_note": "'the sun' = sol"
+        }
+      ]
+    },
+    {
+      "subject": "sol",
+      "relation": "symbolizes",
+      "object": "psychic-energy",
+      "references": [
+        {
+          "volume": 5,
+          "paragraph": 296,
+          "quote": "The sun comparison tells us over and over again that the dynamic of the gods is psychic energy",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "the-hero",
+      "relation": "symbolizes",
+      "object": "libido",
+      "references": [
+        {
+          "volume": 5,
+          "paragraph": 251,
+          "quote": "The finest of all symbols of the libido is the human figure, conceived as a demon or hero",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "the-hero",
+      "relation": "personifies",
+      "object": "libido",
+      "references": [
+        {
+          "volume": 5,
+          "paragraph": 388,
+          "quote": "They are, in fact, personifications of the libido",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "the-hero",
+      "relation": "symbolized-by",
+      "object": "sol",
+      "references": [
+        {
+          "volume": 5,
+          "paragraph": 297,
+          "quote": "personifies itself in figures of heroes with solar attributes",
+          "confidence": "medium",
+          "verified": false,
+          "claim_type": "jung-asserts",
+          "object_term_note": "near-form: 'solar attributes' = sol/sun"
+        }
+      ]
+    },
+    {
+      "subject": "the-hero",
+      "relation": "has",
+      "object": "dual-mother",
+      "references": [
+        {
+          "volume": 5,
+          "paragraph": 494,
+          "quote": "his birth is a rebirth from the mother-wife. That is why the hero so often has two mothers",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts",
+          "object_term_note": "near-form: 'two mothers'/'dual mother' = the Dual Mother"
+        }
+      ]
+    },
+    {
+      "subject": "dual-mother",
+      "relation": "aspect-of",
+      "object": "great-mother",
+      "references": [
+        {
+          "volume": 5,
+          "paragraph": 352,
+          "quote": "the most frightful danger—the “Terrible Mother.”",
+          "confidence": "medium",
+          "verified": false,
+          "claim_type": "jung-asserts",
+          "object_term_note": "the twofold mother (supreme goal + Terrible Mother) is an aspect of the great-mother"
+        }
+      ]
+    },
+    {
+      "subject": "great-mother",
+      "relation": "symbolizes",
+      "object": "rebirth",
+      "references": [
+        {
+          "volume": 5,
+          "paragraph": 577,
+          "quote": "the cavern of death and rebirth ... related to the subterranean mother of death",
+          "confidence": "medium",
+          "verified": false,
+          "claim_type": "jung-asserts",
+          "object_term_note": "the mother's cavern = place of rebirth"
+        }
+      ]
+    },
+    {
+      "subject": "the-hero",
+      "relation": "delivered-from",
+      "object": "great-mother",
+      "references": [
+        {
+          "volume": 5,
+          "paragraph": 553,
+          "quote": "the son tears himself loose from the mother, from the domestic hearth, to rise through battle",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts",
+          "object_term_note": "'the mother' = great-mother; deliverance through battle"
+        }
+      ]
+    },
+    {
+      "subject": "great-mother",
+      "relation": "amplified-by",
+      "object": "dragon",
+      "layer": "amplification",
+      "kind": "image",
+      "references": [
+        {
+          "volume": 5,
+          "paragraph": 395,
+          "quote": "the dragon represents the negative mother-imago and thus expresses resistance to incest",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts",
+          "object_term_note": "negative mother-imago = great-mother"
+        }
+      ]
+    },
+    {
+      "subject": "the-hero",
+      "relation": "battles",
+      "object": "dragon",
+      "references": [
+        {
+          "volume": 5,
+          "paragraph": 380,
+          "quote": "the hero sets free those who had previously been devoured by the whale-dragon",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-quotes-source",
+          "source": "Frobenius"
+        }
+      ]
+    },
+    {
+      "subject": "incest",
+      "relation": "expresses",
+      "object": "rebirth",
+      "references": [
+        {
+          "volume": 5,
+          "paragraph": 312,
+          "quote": "it is the longing to attain rebirth through a return to the womb",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts",
+          "object_term_note": "the incestuous longing to return to the womb = longing for rebirth"
+        }
+      ]
+    },
+    {
+      "subject": "incest",
+      "relation": "committed-by",
+      "object": "the-hero",
+      "references": [
+        {
+          "volume": 5,
+          "paragraph": 390,
+          "quote": "it is the god or the hero who commits incest",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "the-hero",
+      "relation": "undergoes",
+      "object": "the-sacrifice",
+      "references": [
+        {
+          "volume": 5,
+          "paragraph": 461,
+          "quote": "the hero Chiwantopel is not yet fatally poisoned and ready for death through self-sacrifice",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts",
+          "object_term_note": "'self-sacrifice' = the-sacrifice"
+        }
+      ]
+    },
+    {
+      "subject": "the-sacrifice",
+      "relation": "transforms",
+      "object": "libido",
+      "references": [
+        {
+          "volume": 5,
+          "paragraph": 671,
+          "quote": "the instinctive desire, or libido, is given up in order that it may be regained in new form",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts",
+          "object_term_note": "sacrifice = giving up libido so that it is regained/reborn"
+        }
+      ]
+    },
+    {
+      "subject": "the-sacrifice",
+      "relation": "prefigures",
+      "object": "christ",
+      "references": [
+        {
+          "volume": 5,
+          "paragraph": 638,
+          "quote": "the sacrificial death and resurrection of Christ, conceived as the self-sacrifice of the sun",
+          "confidence": "medium",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "night-sea-journey",
+      "relation": "symbolizes",
+      "object": "rebirth",
+      "references": [
+        {
+          "volume": 5,
+          "paragraph": 312,
+          "quote": "The middle section, the night sea journey in the ark",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts",
+          "object_term_note": "context (§312): the night sea journey = longing to attain rebirth"
+        }
+      ]
+    },
+    {
+      "subject": "night-sea-journey",
+      "relation": "amplified-by",
+      "object": "sol",
+      "layer": "amplification",
+      "kind": "image",
+      "references": [
+        {
+          "volume": 5,
+          "paragraph": 308,
+          "quote": "All these sea-going gods are solar figures ... for the “night sea journey”",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-quotes-source",
+          "source": "Frobenius",
+          "object_term_note": "'solar figures' = sol/sun"
+        }
+      ]
+    },
+    {
+      "subject": "philosophical-tree",
+      "relation": "symbolizes",
+      "object": "great-mother",
+      "references": [
+        {
+          "volume": 5,
+          "paragraph": 396,
+          "quote": "The tree entwined by the snake may therefore be taken as the symbol of the mother",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts",
+          "object_term_note": "'the mother' = great-mother"
+        }
+      ]
+    },
+    {
+      "subject": "philosophical-tree",
+      "relation": "prefigures",
+      "object": "the-sacrifice",
+      "references": [
+        {
+          "volume": 5,
+          "paragraph": 349,
+          "quote": "the Cross is the Tree of Life and at the same time a Tree of Death",
+          "confidence": "medium",
+          "verified": false,
+          "claim_type": "jung-asserts",
+          "object_term_note": "the tree/cross as site of the sacrificial hanged-god death"
+        }
+      ]
+    }
+  ]
+}
