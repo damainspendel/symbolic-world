@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
-    "sync": "cp ../seed.json src/graph.json && cp ../app/Sources/Resources/pages.json src/pages.json",
+    "sync": "node build-atlas.mjs",
     "predev": "npm run sync",
     "prebuild": "npm run sync",
     "dev": "vite",
