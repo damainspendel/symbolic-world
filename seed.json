@@ -851,6 +851,46 @@
    "id": "the-christian-standpoint",
    "type": "Motif",
    "label": "The Christian standpoint"
+  },
+  {
+   "id": "fishes-eyes",
+   "type": "Symbol",
+   "label": "Fishes' eyes (oculi piscium)"
+  },
+  {
+   "id": "splinter-psyche",
+   "type": "Concept",
+   "label": "Splinter psyche / autonomous complex"
+  },
+  {
+   "id": "archeus",
+   "type": "Concept",
+   "label": "Archeus (invisible sun in man)"
+  },
+  {
+   "id": "proteus",
+   "type": "Figure",
+   "label": "Proteus (sea god)"
+  },
+  {
+   "id": "aelia-laelia-inscription",
+   "type": "Motif",
+   "label": "Aelia-Laelia-Crispis Inscription (Enigma of Bologna)"
+  },
+  {
+   "id": "cadmus",
+   "type": "Figure",
+   "label": "Cadmus"
+  },
+  {
+   "id": "privatio-boni",
+   "type": "Concept",
+   "label": "Privatio boni"
+  },
+  {
+   "id": "oak",
+   "type": "Symbol",
+   "label": "Oak (feminine tree-numen)"
   }
  ],
  "edges": [
@@ -6888,6 +6928,312 @@
      "confidence": "high",
      "verified": true,
      "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "scintilla",
+   "relation": "designated-as",
+   "object": "fishes-eyes",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 45,
+     "quote": "They are then called “oculi piscium” (fishes’ eyes).",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-reports-parallel"
+    }
+   ]
+  },
+  {
+   "subject": "fishes-eyes",
+   "relation": "symbolizes",
+   "object": "sol",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 45,
+     "quote": "the fishes’ eyes meant the seven eyes or the one eye of God, which is the sun",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-reports-parallel"
+    }
+   ]
+  },
+  {
+   "subject": "fishes-eyes",
+   "relation": "compose",
+   "object": "filius-philosophorum",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 46,
+     "quote": "the fishes’ eyes are tiny soul-sparks from which the shining figure of the filius is put together",
+     "confidence": "medium",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "quintessence",
+   "relation": "designated-as",
+   "object": "caelum",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 46,
+     "quote": "the alchemists called their quinta essentia “coelum.”",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-reports-parallel"
+    }
+   ]
+  },
+  {
+   "subject": "scintilla",
+   "relation": "aggregate-into",
+   "object": "gold",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 47,
+     "quote": "In alchemy the scintillulae are put together to form the gold (Sol)",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-reports-parallel"
+    }
+   ]
+  },
+  {
+   "subject": "scintilla",
+   "relation": "is-psychic-analogue-of",
+   "object": "splinter-psyche",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 47,
+     "quote": "other, “unconscious” complexes may possess, as splinter psyches, a certain luminosity of their own",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "scintilla",
+   "relation": "associated-with",
+   "object": "anthropos",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 50,
+     "quote": "The scintilla is associated with the doctrine of the Anthropos",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-reports-parallel",
+     "source": "Khunrath"
+    }
+   ]
+  },
+  {
+   "subject": "mercurius",
+   "relation": "manifests-as",
+   "object": "proteus",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 50,
+     "quote": "our Catholick Mercury ... is beyond doubt Proteus, the sea god",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-quotes-source",
+     "source": "Khunrath"
+    }
+   ]
+  },
+  {
+   "subject": "sol",
+   "relation": "manifests-as",
+   "object": "archeus",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 49,
+     "quote": "there is in man an “invisible sun,” which he identifies with the Archeus",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-reports-parallel",
+     "source": "Dorn"
+    }
+   ]
+  },
+  {
+   "subject": "aelia-laelia-inscription",
+   "relation": "symbolizes",
+   "object": "arcane-substance",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 57,
+     "quote": "Maier obviously has in mind the tincture, the arcane substance",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-reports-parallel",
+     "source": "Michael Maier"
+    }
+   ]
+  },
+  {
+   "subject": "aelia-laelia-inscription",
+   "relation": "symbolizes",
+   "object": "lapis",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 59,
+     "quote": "explained by Maier as a reference to the lapis, which “is found everywhere.”",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-reports-parallel",
+     "source": "Michael Maier"
+    }
+   ]
+  },
+  {
+   "subject": "aelia-laelia-inscription",
+   "relation": "personifies",
+   "object": "anima",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 70,
+     "quote": "Aelia is Agatho’s anima, projected into a “Junonian oak.”",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "aelia-laelia-inscription",
+   "relation": "springs-from",
+   "object": "collective-unconscious",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 88,
+     "quote": "the inscription itself seems to be a fantasy sprung from that same paradoxical massa confusa of the collective unconscious",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "oak",
+   "relation": "symbolizes",
+   "object": "the-vessel",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 75,
+     "quote": "as the trough it is the vessel, and as the protecting tree it is the mother",
+     "confidence": "medium",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "cadmus",
+   "relation": "corresponds-to",
+   "object": "mercurius",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 87,
+     "quote": "Cadmus is interpreted alchemically as Mercurius in his masculine form (Sol)",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-reports-parallel"
+    }
+   ]
+  },
+  {
+   "subject": "the-christian-standpoint",
+   "relation": "formulates",
+   "object": "privatio-boni",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 86,
+     "quote": "forced the Church to take an important step: the formulation of the doctrine of the privatio boni",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "lapis",
+   "relation": "equivalent-of",
+   "object": "the-whole-man",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 86,
+     "quote": "recognized as an equivalent of the homo totus",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "coniunctio",
+   "relation": "orders",
+   "object": "the-unconscious",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 88,
+     "quote": "The contradictoriness of the unconscious is resolved by the archetype of the nuptial coniunctio, by which the chaos becomes ordered",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "the-opus",
+   "relation": "culminates-in",
+   "object": "hierosgamos",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 104,
+     "quote": "endeavours to unite the opposites culminate in the “chymical marriage,” the supreme act of union",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "rex-marinus",
+   "relation": "generates-through",
+   "object": "brain",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 105,
+     "quote": "I have borne a son and a daughter in my brain",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-quotes-source",
+     "source": "Visio Arislei"
     }
    ]
   }
