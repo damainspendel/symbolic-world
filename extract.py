@@ -31,6 +31,7 @@ VOLUME_RANGES = {
     "9i": (421, 445),    # Archetypes & the Collective Unconscious; biblio/index excluded
     16: (825, 859),      # The Practice of Psychotherapy (incl. Psychology of the Transference)
     5: (202, 218),       # Symbols of Transformation; biblio/index excluded
+    11: (602, 619),      # Psychology and Religion: West and East (Trinity, Mass, Answer to Job)
 }
 
 # A numbered paragraph opens with a bracketed superscript marker, e.g.
