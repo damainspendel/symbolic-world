@@ -53,6 +53,7 @@ const cy = cytoscape({
 
 // ---- selection / neighborhood highlight ----
 function selectNode(node) {
+  hideAbout()
   cy.$(':selected').unselect(); node.select()
   cy.elements().addClass('faded'); cy.nodes('[kind = "region"]').removeClass('faded')
   const hood = node.closedNeighborhood()
@@ -65,6 +66,13 @@ function clearSelection() {
 }
 cy.on('tap', 'node[kind != "region"]', e => selectNode(e.target))
 cy.on('tap', e => { if (e.target === cy) clearSelection() })
+
+// ---- about / how-it-works panel (shares the right slot with the detail panel) ----
+const aboutEl = document.getElementById('about'), aboutOpenEl = document.getElementById('about-open')
+function hideAbout() { aboutEl.classList.add('hidden'); aboutOpenEl.classList.remove('hidden') }
+function showAbout() { clearSelection(); aboutEl.classList.remove('hidden'); aboutOpenEl.classList.add('hidden') }
+document.getElementById('about-min').addEventListener('click', hideAbout)
+aboutOpenEl.addEventListener('click', showAbout)
 
 function renderPanel(node) {
   const p = document.getElementById('panel'); const id = node.id()

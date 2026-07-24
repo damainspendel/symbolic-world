@@ -67,7 +67,40 @@ body {
 .prov { font: 0.55rem var(--mono); color: #9ec9c3; }
 .pageref { font: 0.55rem var(--mono); color: var(--ink-faint); }
 
+/* About / how-it-works panel (right side, minimizable) */
+#about {
+  position: fixed; right: 1rem; top: 4.4rem; bottom: 1rem; width: 340px; z-index: 11;
+  overflow-y: auto; background: var(--surface); border: 1px solid var(--hairline);
+  border-radius: 12px; padding: 1.1rem 1.2rem 1.3rem; backdrop-filter: blur(8px); color: var(--ink);
+}
+#about.hidden { display: none; }
+#about-min {
+  position: absolute; top: 0.7rem; right: 0.8rem; width: 26px; height: 26px;
+  background: transparent; border: 1px solid var(--hairline); border-radius: 6px;
+  color: var(--ink-faint); font-size: 1rem; line-height: 1; cursor: pointer;
+}
+#about-min:hover { border-color: var(--gold); color: #fff; }
+.about-eyebrow { font: 0.55rem var(--mono); letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold-dim); }
+#about h2 { color: #f0ead8; font-size: 1.35rem; margin: 0.25rem 0 0.6rem; }
+#about h3 { color: var(--gold); font-size: 0.82rem; font-weight: 600; letter-spacing: 0.02em; margin: 1rem 0 0.35rem; }
+#about p { font-size: 0.86rem; line-height: 1.55; color: var(--ink); margin-bottom: 0.5rem; }
+#about em { color: #e8e2d0; font-style: italic; }
+#about ul { list-style: none; margin: 0.2rem 0; }
+#about li { font-size: 0.84rem; line-height: 1.5; color: var(--ink); padding-left: 0.9rem; position: relative; margin: 0.32rem 0; }
+#about li::before { content: "◇"; position: absolute; left: 0; color: var(--gold-dim); font-size: 0.7rem; top: 0.15rem; }
+#about b { color: #e8e2d0; font-weight: 600; }
+.tag { font: 0.6rem var(--mono); color: #9ec9c3; background: rgba(158,201,195,0.08); padding: 0.05rem 0.3rem; border-radius: 4px; white-space: nowrap; }
+#about-open {
+  position: fixed; right: 1rem; top: 4.4rem; z-index: 11;
+  width: 34px; height: 34px; border-radius: 999px;
+  background: var(--surface); border: 1px solid var(--hairline); backdrop-filter: blur(6px);
+  color: var(--gold); font-size: 1rem; cursor: pointer;
+}
+#about-open:hover { border-color: var(--gold); color: #fff; }
+#about-open.hidden { display: none; }
+
 @media (max-width: 680px) {
-  #panel { width: auto; left: 1rem; right: 1rem; top: auto; height: 46%; }
+  #panel, #about { width: auto; left: 1rem; right: 1rem; top: auto; height: 46%; bottom: 1rem; }
+  #about-open { top: auto; bottom: 1rem; }
   #filters { max-width: 150px; }
 }
