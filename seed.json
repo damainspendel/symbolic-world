@@ -831,6 +831,26 @@
    "id": "shadow-confrontation",
    "type": "Operation",
    "label": "Confrontation with the shadow"
+  },
+  {
+   "id": "mundus-archetypus",
+   "type": "Concept",
+   "label": "Mundus archetypus (archetypal world of the Schoolmen)"
+  },
+  {
+   "id": "corpus-glorificationis",
+   "type": "Symbol",
+   "label": "Corpus glorificationis (resurrected body)"
+  },
+  {
+   "id": "the-whole-man",
+   "type": "Concept",
+   "label": "The whole man (totus homo)"
+  },
+  {
+   "id": "the-christian-standpoint",
+   "type": "Motif",
+   "label": "The Christian standpoint"
   }
  ],
  "edges": [
@@ -6623,6 +6643,248 @@
      "volume": 14,
      "paragraph": 748,
      "quote": "the archetype of the Anthropos ... down to the figure of the homunculus in Faust",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "lapis",
+   "relation": "is-goal-of",
+   "object": "the-opus",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 759,
+     "quote": "The production of the lapis was the goal of alchemy in general.",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "the-whole-man",
+   "relation": "unites-with",
+   "object": "unus-mundus",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 760,
+     "quote": "the third and highest degree of conjunction was the union of the whole man with the unus mundus",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-reports-parallel",
+     "source": "Dorn"
+    }
+   ]
+  },
+  {
+   "subject": "unus-mundus",
+   "relation": "corresponds-to",
+   "object": "mundus-archetypus",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 761,
+     "quote": "This potential world is the “mundus archetypus” of the Schoolmen",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-reports-parallel",
+     "source": "Schoolmen"
+    }
+   ]
+  },
+  {
+   "subject": "the-opus",
+   "relation": "spiritualizes",
+   "object": "the-body",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 763,
+     "quote": "there can be no doubt about its tendency to spiritualize the",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "the-opus",
+   "relation": "concretizes",
+   "object": "spirit",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 764,
+     "quote": "By sublimating matter he concretized spirit.",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "anima-mundi",
+   "relation": "imprisoned-in",
+   "object": "matter",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 764,
+     "quote": "the anima mundi , entered into material things and was caught there",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-reports-parallel"
+    }
+   ]
+  },
+  {
+   "subject": "caelum",
+   "relation": "symbolizes",
+   "object": "the-self",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 765,
+     "quote": "Dorn’s caelum ... For the psychologist it is the self",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "caelum",
+   "relation": "symbolizes",
+   "object": "corpus-glorificationis",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 763,
+     "quote": "It represents nothing less than a corpus glorificationis , the resurrected body",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-reports-parallel"
+    }
+   ]
+  },
+  {
+   "subject": "the-christian-standpoint",
+   "relation": "corresponds-to",
+   "object": "unio-mentalis",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 773,
+     "quote": "the Christian standpoint would correspond to the “ unio mentalis in the overcoming of the body",
+     "confidence": "medium",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "the-self",
+   "relation": "defeats",
+   "object": "the-ego",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 778,
+     "quote": "the experience of the self is always a defeat for the ego.",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "squaring-of-the-circle",
+   "relation": "symbolizes",
+   "object": "the-self",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 776,
+     "quote": "portrays the self as a concentric structure, often in the form of a squaring of the circle",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "active-imagination",
+   "relation": "realizes",
+   "object": "unio-mentalis",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 753,
+     "quote": "This is where insight, the unio mentalis , begins to become real.",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "the-hero",
+   "relation": "attains",
+   "object": "unio-mentalis",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 756,
+     "quote": "and attained what the alchemists called the unio mentalis.",
+     "confidence": "medium",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "consciousness",
+   "relation": "integrates",
+   "object": "the-unconscious",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 779,
+     "quote": "the integration of the unconscious with consciousness, whereby both are altered",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "god-image",
+   "relation": "originates-in",
+   "object": "psychoid",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 787,
+     "quote": "when we talk of God or gods we are speaking of debatable images from the psychoid realm",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "the-opus",
+   "relation": "reconciles",
+   "object": "the-opposites",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 790,
+     "quote": "It was a work of reconciliation between apparently incompatible opposites",
      "confidence": "high",
      "verified": true,
      "claim_type": "jung-asserts"
