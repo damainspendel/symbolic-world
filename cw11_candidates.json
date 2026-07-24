@@ -1,0 +1,371 @@
+{
+  "new_nodes": [
+    {
+      "id": "the-trinity",
+      "type": "Motif",
+      "label": "The Trinity"
+    },
+    {
+      "id": "the-devil",
+      "type": "Figure",
+      "label": "The Devil / Satan"
+    },
+    {
+      "id": "yahweh",
+      "type": "Figure",
+      "label": "Yahweh"
+    },
+    {
+      "id": "sophia-wisdom",
+      "type": "Figure",
+      "label": "Sophia (Wisdom)"
+    },
+    {
+      "id": "mary",
+      "type": "Figure",
+      "label": "Mary (the Virgin / Theotokos)"
+    },
+    {
+      "id": "the-assumption",
+      "type": "Motif",
+      "label": "The Assumption of Mary"
+    }
+  ],
+  "candidate_edges": [
+    {
+      "subject": "the-trinity",
+      "relation": "transforms",
+      "object": "quaternity",
+      "references": [
+        {
+          "volume": 11,
+          "paragraph": 107,
+          "quote": "transforms it into a quaternity, which is at the same time a unity",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "the-trinity",
+      "relation": "lacks",
+      "object": "the-devil",
+      "references": [
+        {
+          "volume": 11,
+          "paragraph": 103,
+          "quote": "the evil principle is absent from the Trinity ... existence on its own as the devil",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "the-trinity",
+      "relation": "expresses",
+      "object": "god-image",
+      "references": [
+        {
+          "volume": 11,
+          "paragraph": 283,
+          "quote": "reverted to the archaic triad in order to construct its trinitarian God-image",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "quaternity",
+      "relation": "includes",
+      "object": "the-devil",
+      "references": [
+        {
+          "volume": 11,
+          "paragraph": 104,
+          "quote": "The inclusion of the devil in the quaternity",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "quaternity",
+      "relation": "includes",
+      "object": "the-body",
+      "references": [
+        {
+          "volume": 11,
+          "paragraph": 107,
+          "quote": "The fourth constituent ... the earth or the body",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "the-self",
+      "relation": "equivalent-to",
+      "object": "god-image",
+      "references": [
+        {
+          "volume": 11,
+          "paragraph": 231,
+          "quote": "one can never distinguish empirically between a symbol of the self and a God-image",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "the-self",
+      "relation": "is",
+      "object": "union-of-opposites",
+      "references": [
+        {
+          "volume": 11,
+          "paragraph": 283,
+          "quote": "the self is by definition a complexio oppositorum",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ],
+      "object_term_note": "union-of-opposites appears as 'complexio oppositorum'"
+    },
+    {
+      "subject": "christ",
+      "relation": "symbolizes",
+      "object": "the-self",
+      "references": [
+        {
+          "volume": 11,
+          "paragraph": 231,
+          "quote": "In this way Christ realized the idea of the self",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "christ",
+      "relation": "lacks",
+      "object": "the-shadow",
+      "references": [
+        {
+          "volume": 11,
+          "paragraph": 283,
+          "quote": "the Christ figure wholly lacks a dark side",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ],
+      "object_term_note": "the-shadow appears as Christ's missing 'dark side'"
+    },
+    {
+      "subject": "the-devil",
+      "relation": "battles",
+      "object": "christ",
+      "references": [
+        {
+          "volume": 11,
+          "paragraph": 250,
+          "quote": "the Cross ... a symbol of Christ's struggle with the devil",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "the-devil",
+      "relation": "manifests-as",
+      "object": "antichrist",
+      "references": [
+        {
+          "volume": 11,
+          "paragraph": 654,
+          "quote": "to become incarnate in his turn as the dark God ... the figure of the Antichrist",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "the-mass",
+      "relation": "symbolizes",
+      "object": "individuation",
+      "references": [
+        {
+          "volume": 11,
+          "paragraph": 414,
+          "quote": "we can speak of the Mass as the rite of the individuation process",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "the-mass",
+      "relation": "comprises",
+      "object": "the-sacrifice",
+      "references": [
+        {
+          "volume": 11,
+          "paragraph": 146,
+          "quote": "This is especially evident in the sacrifice of the Mass",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "the-mass",
+      "relation": "transforms",
+      "object": "christ",
+      "references": [
+        {
+          "volume": 11,
+          "paragraph": 322,
+          "quote": "the transubstantiation of the bread and wine into the body and blood of Christ",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "the-mass",
+      "relation": "unites",
+      "object": "christ",
+      "references": [
+        {
+          "volume": 11,
+          "paragraph": 413,
+          "quote": "participation mystique ... of priest and congregation with Christ",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "individuation",
+      "relation": "leads-to",
+      "object": "wholeness",
+      "references": [
+        {
+          "volume": 11,
+          "paragraph": 233,
+          "quote": "he is on the way towards realizing his wholeness",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "yahweh",
+      "relation": "is",
+      "object": "union-of-opposites",
+      "references": [
+        {
+          "volume": 11,
+          "paragraph": 567,
+          "quote": "Yahweh ... is an antinomy—a totality of inner opposites",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ],
+      "object_term_note": "union-of-opposites appears as 'totality of inner opposites'"
+    },
+    {
+      "subject": "yahweh",
+      "relation": "draws-knowledge-from",
+      "object": "sophia-wisdom",
+      "references": [
+        {
+          "volume": 11,
+          "paragraph": 617,
+          "quote": "Self-reflection becomes an imperative necessity, and for this Wisdom is needed",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ],
+      "object_term_note": "sophia-wisdom appears as 'Wisdom'"
+    },
+    {
+      "subject": "sophia-wisdom",
+      "relation": "prefigures",
+      "object": "the-trinity",
+      "references": [
+        {
+          "volume": 11,
+          "paragraph": 193,
+          "quote": "the Logos and Sophia ... a clear prefiguration of the post-Christian Trinity",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "sophia-wisdom",
+      "relation": "is",
+      "object": "psychopomp",
+      "references": [
+        {
+          "volume": 11,
+          "paragraph": 613,
+          "quote": "As a psychopomp she leads the way to God",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "the-assumption",
+      "relation": "leads-to",
+      "object": "quaternity",
+      "references": [
+        {
+          "volume": 11,
+          "paragraph": 252,
+          "quote": "The Assumptio Mariae paves the way ... also for the quaternity",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "mary",
+      "relation": "aspect-of",
+      "object": "the-trinity",
+      "references": [
+        {
+          "volume": 11,
+          "paragraph": 240,
+          "quote": "The Mother of God ... a symbol of mankind's essential participation in the Trinity",
+          "confidence": "medium",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ],
+      "object_term_note": "subject Mary appears as 'The Mother of God'"
+    }
+  ]
+}
