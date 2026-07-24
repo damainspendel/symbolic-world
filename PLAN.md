@@ -1,8 +1,45 @@
 # JungKG — project plan
 
-A knowledge graph of Jung's alchemical thought where **every interpretive edge is
-anchored to a Collected Works paragraph (§)** and **no edge is trusted until an
-independent agent has read the source**. Scope for v1: CW 12, 13, 14.
+**The Symbolic World** — a grounded, explorable atlas of Jung's symbolic world, where
+**every interpretive edge is anchored to a Collected Works paragraph (§)** and **no edge
+is trusted until an independent agent has read the source**. The graph *is* the product.
+
+## Status & direction (current — supersedes stale details below)
+
+- **Coverage: 6 volumes, 83 nodes / 180 edges**, every edge §-anchored, Fable-5-verified,
+  integrity-tested. Volumes: CW 12 (24), CW 13 (24), CW 14 (53), Aion 9ii (~24),
+  CW 9i Archetypes (25), CW 16 Transference (19), CW 5 Symbols of Transformation (22).
+  It is no longer an alchemy graph — it spans alchemy, the Self-complex, the archetypes,
+  the clinical dimension, and the mythological layer. CW 11 (Religion) is mining.
+- **Web-first (the pivot).** The primary product is now a **web app on a real graph
+  engine (Vite + Cytoscape.js)** — organic layout, drag, zoom, volume/layer filters,
+  search, citation detail. Reason: the graph *is* the value, and the web is the better
+  vehicle (shareable by URL, richer rendering at density, minutes-not-builds iteration).
+  The native macOS/iOS app (SwiftUI, Explore-first 3-tab) is **paused, not deleted** —
+  it's committed and revivable.
+- **The mining pipeline is a proven machine** (~6 min/batch): background propose →
+  local pre-check → **Fable 5 gate** → merge with fixes → `test_graph.py` → rebuild
+  viz + web + app data. Zero fabrications have survived the gate across ~10 batches.
+
+## Roadmap
+
+- **Content — remaining volumes** (one corpus-extension each, then mine): CW 11 (Religion:
+  Trinity / Mass / Answer to Job) *in progress* → CW 8 (synchronicity, the psychoid) →
+  CW 7 (Two Essays: persona, anima/animus) → CW 6 (Types: the definitions glossary) →
+  CW 10. Then depth passes on the thin volumes.
+- **Web features** — "open the paragraph in your Bollingen copy"; a cluster / neighborhood
+  focus mode to tame density; a friendlier visual design pass; mobile polish; the T4
+  cross-reference layer (footnote §→§ links) once mined.
+- **Publishing** — deploy the web app to a permanent URL (GitHub Pages / Netlify); and
+  publish the graph as **data** (Wikibase / Neo4j + a queryable, citable endpoint) — the
+  content is the moat. *(Investigate options + effort.)*
+- **Marketing / positioning** — to be developed (audience: serious Jung readers, students,
+  analysts-in-training, comparative-religion scholars; the wedge pitch is "finish
+  *Mysterium* / never lose the thread").
+
+---
+*Historical detail below (phases 0–6, native-app design, personas) predates the web-first
+pivot; kept for the reasoning, not as current instruction.*
 
 ## The verification principle (applies to every phase)
 
