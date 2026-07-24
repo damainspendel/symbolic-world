@@ -556,6 +556,111 @@
    "id": "regina",
    "type": "Figure",
    "label": "Regina (the Queen)"
+  },
+  {
+   "id": "logos",
+   "type": "Concept",
+   "label": "Logos"
+  },
+  {
+   "id": "diana",
+   "type": "Figure",
+   "label": "Diana (Luna as nymph)"
+  },
+  {
+   "id": "winged-youth",
+   "type": "Figure",
+   "label": "Winged Youth (adolescens alatus)"
+  },
+  {
+   "id": "eagle",
+   "type": "Symbol",
+   "label": "Eagle (aquila)"
+  },
+  {
+   "id": "thief",
+   "type": "Figure",
+   "label": "The Thief (fur)"
+  },
+  {
+   "id": "arsenic",
+   "type": "Substance",
+   "label": "Arsenic (arsenicum)"
+  },
+  {
+   "id": "psyche",
+   "type": "Concept",
+   "label": "The psyche"
+  },
+  {
+   "id": "instinct",
+   "type": "Concept",
+   "label": "Instinct"
+  },
+  {
+   "id": "spirit",
+   "type": "Concept",
+   "label": "Spirit"
+  },
+  {
+   "id": "psychoid",
+   "type": "Concept",
+   "label": "The psychoid"
+  },
+  {
+   "id": "will",
+   "type": "Concept",
+   "label": "Will (freedom of choice)"
+  },
+  {
+   "id": "pattern-of-behaviour",
+   "type": "Concept",
+   "label": "Pattern of behaviour"
+  },
+  {
+   "id": "numinosity",
+   "type": "Concept",
+   "label": "Numinosity"
+  },
+  {
+   "id": "archetypal-image",
+   "type": "Concept",
+   "label": "Archetypal image"
+  },
+  {
+   "id": "collective-consciousness",
+   "type": "Concept",
+   "label": "Collective consciousness"
+  },
+  {
+   "id": "mass-psyche",
+   "type": "Concept",
+   "label": "Mass psyche / mass man"
+  },
+  {
+   "id": "matter",
+   "type": "Concept",
+   "label": "Matter"
+  },
+  {
+   "id": "rabid-dog",
+   "type": "Symbol",
+   "label": "Rabid dog (canis rabidus)"
+  },
+  {
+   "id": "true-sulphur",
+   "type": "Substance",
+   "label": "True sulphur (spiritual)"
+  },
+  {
+   "id": "salt-water",
+   "type": "Substance",
+   "label": "Salt-water (aqua salsa)"
+  },
+  {
+   "id": "one-scintilla-monad",
+   "type": "Symbol",
+   "label": "One Scintilla / Monad"
   }
  ],
  "edges": [
@@ -4729,6 +4834,625 @@
      "paragraph": 501,
      "quote": "the king is essentially synonymous with the sun",
      "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "bitch",
+   "relation": "symbolizes",
+   "object": "the-vessel",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 181,
+     "quote": "She is the vessel which must be broken asunder in order to extract the precious content",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "dove",
+   "relation": "heralds",
+   "object": "hierosgamos",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 185,
+     "quote": "The appearance of a pair of doves points to the imminent marriage of the filius regius",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "lapis",
+   "relation": "amplified-by",
+   "object": "shulamite",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 185,
+     "quote": "the lapis in its dark, feminine form appears instead of the dog and is compared to the Shulamite",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-reports-parallel",
+     "source": "Abraham Eleazar"
+    }
+   ]
+  },
+  {
+   "subject": "winged-youth",
+   "relation": "is-analogue-of",
+   "object": "sol",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 200,
+     "quote": "the winged youth is Sol, the filius solis, lapis, aurum philosophicum",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "winged-youth",
+   "relation": "unites-with",
+   "object": "luna",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 200,
+     "quote": "he will become real only if he can unite with Luna, the “mother of mortal bodies.”",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "diana",
+   "relation": "personifies",
+   "object": "anima",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 193,
+     "quote": "Diana as the numen and nymph of this spring is an excellent formulation of the figure we know as the anima",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "diana",
+   "relation": "is-analogue-of",
+   "object": "luna",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 200,
+     "quote": "The nymph of the spring is in the last analysis Luna, the mother-beloved",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "thief",
+   "relation": "personifies",
+   "object": "the-shadow",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 203,
+     "quote": "in reality it is merely the ego with its shadow where the abysmal depths of human nature begin to appear",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "luna",
+   "relation": "prefigures",
+   "object": "the-self",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 217,
+     "quote": "The moon with her antithetical nature is, in a sense, a prototype of individuation, a prefiguration of the self",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "luna",
+   "relation": "mother-of",
+   "object": "sol",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 219,
+     "quote": "Luna is really the mother of the sun",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "the-unconscious",
+   "relation": "gives-birth-to",
+   "object": "consciousness",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 219,
+     "quote": "the unconscious is pregnant with consciousness and gives birth to it",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "logos",
+   "relation": "is-equivalent-of",
+   "object": "sol",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 226,
+     "quote": "Logos and Eros are intellectually formulated intuitive equivalents of the archetypal images of Sol and Luna",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "eros",
+   "relation": "is-equivalent-of",
+   "object": "luna",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 226,
+     "quote": "Logos and Eros are intellectually formulated intuitive equivalents of the archetypal images of Sol and Luna",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "sol-niger",
+   "relation": "corresponds-to",
+   "object": "animus",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 232,
+     "quote": "The dark sun of feminine psychology is connected with the father-imago, since the father is the first carrier of the animus-image",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "salt",
+   "relation": "conquers",
+   "object": "sulphur",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 235,
+     "quote": "sulphur is the true black devil of hell, who can be conquered by no element save by salt alone",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-quotes-source",
+     "source": "Glauber"
+    }
+   ]
+  },
+  {
+   "subject": "salt",
+   "relation": "corresponds-to",
+   "object": "lapis",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 235,
+     "quote": "Salt by contrast is a “light” substance, similar to the lapis",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "rabid-dog",
+   "relation": "transforms-into",
+   "object": "eagle",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 183,
+     "quote": "the dark, dangerous, rabid dog changes into an eagle at the time of the plenilunium",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "winged-youth",
+   "relation": "personifies",
+   "object": "true-sulphur",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 196,
+     "quote": "the winged youth, who represents the other aspect, or personifies the “true sulphur",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "rabid-dog",
+   "relation": "is-dark-aspect-of",
+   "object": "diana",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 188,
+     "quote": "the rabid dog, who is none other than the vindictive and treacherous aspect of Diana as the new moon",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "thief",
+   "relation": "identical-to",
+   "object": "rabid-dog",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 187,
+     "quote": "That the dog and the thief are identical",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "arsenic",
+   "relation": "mediates",
+   "object": "coniunctio",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 195,
+     "quote": "arsenic is defined as an “hermaphrodite, the means whereby Sulphur and Mercury are united.",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-quotes-source",
+     "source": "Ruland, Lexicon alchemiae"
+    }
+   ]
+  },
+  {
+   "subject": "salt-water",
+   "relation": "synonym-of",
+   "object": "aqua-permanens",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 240,
+     "quote": "salt-water and sea-water are synonyms for the aqua permanens",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-reports-parallel",
+     "source": "Turba Philosophorum"
+    }
+   ]
+  },
+  {
+   "subject": "instinct",
+   "relation": "polarizes-with",
+   "object": "will",
+   "references": [
+    {
+     "volume": 8,
+     "paragraph": 380,
+     "quote": "psyche is essentially conflict between blind instinct and will",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "will",
+   "relation": "presupposes",
+   "object": "consciousness",
+   "references": [
+    {
+     "volume": 8,
+     "paragraph": 380,
+     "quote": "we can hardly conceive of will and freedom of choice without consciousness",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "the-unconscious",
+   "relation": "includes",
+   "object": "psychoid",
+   "references": [
+    {
+     "volume": 8,
+     "paragraph": 382,
+     "quote": "we must also include in the unconscious the psychoid functions that are not capable of consciousness",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "archetype",
+   "relation": "polarizes-with",
+   "object": "instinct",
+   "references": [
+    {
+     "volume": 8,
+     "paragraph": 406,
+     "quote": "Archetype and instinct are the most polar opposites imaginable",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "archetype",
+   "relation": "is-authentic-element-of",
+   "object": "spirit",
+   "references": [
+    {
+     "volume": 8,
+     "paragraph": 406,
+     "quote": "the archetype represents the authentic element of spirit",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "archetype",
+   "relation": "is-image-of",
+   "object": "instinct",
+   "references": [
+    {
+     "volume": 8,
+     "paragraph": 415,
+     "quote": "the archetype as an image of instinct is a spiritual goal",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "archetype",
+   "relation": "is",
+   "object": "pattern-of-behaviour",
+   "references": [
+    {
+     "volume": 8,
+     "paragraph": 435,
+     "quote": "Archetypes are typical forms of behaviour",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "consciousness",
+   "relation": "checks",
+   "object": "instinct",
+   "references": [
+    {
+     "volume": 8,
+     "paragraph": 412,
+     "quote": "consciousness enables him to adapt in an orderly way and to check the instincts",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "consciousness",
+   "relation": "continuous-with",
+   "object": "the-unconscious",
+   "references": [
+    {
+     "volume": 8,
+     "paragraph": 397,
+     "quote": "conscious and unconscious have no clear demarcations",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "lumen-naturae",
+   "relation": "illuminates",
+   "object": "consciousness",
+   "references": [
+    {
+     "volume": 8,
+     "paragraph": 389,
+     "quote": "the lumen naturae which illuminates consciousness",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "archetype",
+   "relation": "carries",
+   "object": "numinosity",
+   "references": [
+    {
+     "volume": 8,
+     "paragraph": 405,
+     "quote": "the archetypes have, when they appear, a distinctly numinous character",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "archetypal-image",
+   "relation": "distinct-from",
+   "object": "archetype",
+   "references": [
+    {
+     "volume": 8,
+     "paragraph": 417,
+     "quote": "should not be confused with the archetype as such",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "collective-consciousness",
+   "relation": "polarizes-with",
+   "object": "collective-unconscious",
+   "references": [
+    {
+     "volume": 8,
+     "paragraph": 423,
+     "quote": "between collective consciousness and the collective unconscious there is an almost unbridgeable gulf",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "archetype",
+   "relation": "defends-against",
+   "object": "mass-psyche",
+   "references": [
+    {
+     "volume": 8,
+     "paragraph": 426,
+     "quote": "an effective defence against the brute force of collective consciousness and the mass psyche",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "will",
+   "relation": "subordinates-to",
+   "object": "the-self",
+   "references": [
+    {
+     "volume": 8,
+     "paragraph": 430,
+     "quote": "the will, as disposable energy, gradually subordinates itself to the stronger factor ... I call the self",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "archetype",
+   "relation": "is-a",
+   "object": "psychoid",
+   "references": [
+    {
+     "volume": 8,
+     "paragraph": 417,
+     "quote": "The archetype as such is a psychoid factor",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "instinct",
+   "relation": "bridges",
+   "object": "matter",
+   "references": [
+    {
+     "volume": 8,
+     "paragraph": 420,
+     "quote": "with its psychoid nature, forms the bridge to matter in general",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "one-scintilla-monad",
+   "relation": "symbolizes",
+   "object": "the-self",
+   "references": [
+    {
+     "volume": 8,
+     "paragraph": 388,
+     "quote": "the One Scintilla or Monad is to be regarded as a symbol of the self",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "archetype",
+   "relation": "transcends",
+   "object": "psyche",
+   "references": [
+    {
+     "volume": 8,
+     "paragraph": 420,
+     "quote": "the position of the archetype would be located beyond the psychic sphere",
+     "confidence": "medium",
      "verified": true,
      "claim_type": "jung-asserts"
     }
