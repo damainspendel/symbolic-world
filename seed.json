@@ -661,6 +661,36 @@
    "id": "one-scintilla-monad",
    "type": "Symbol",
    "label": "One Scintilla / Monad"
+  },
+  {
+   "id": "adam",
+   "type": "Figure",
+   "label": "Adam"
+  },
+  {
+   "id": "the-statue",
+   "type": "Symbol",
+   "label": "The Statue (statua)"
+  },
+  {
+   "id": "old-adam",
+   "type": "Motif",
+   "label": "The Old Adam (vetus Adam)"
+  },
+  {
+   "id": "lilith",
+   "type": "Figure",
+   "label": "Lilith"
+  },
+  {
+   "id": "pan-ku",
+   "type": "Figure",
+   "label": "P'an Ku"
+  },
+  {
+   "id": "malchuth",
+   "type": "Motif",
+   "label": "Malchuth (Kingdom)"
   }
  ],
  "edges": [
@@ -5453,6 +5483,340 @@
      "paragraph": 420,
      "quote": "the position of the archetype would be located beyond the psychic sphere",
      "confidence": "medium",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "adam",
+   "relation": "symbolizes",
+   "object": "the-self",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 558,
+     "quote": "he is a symbol of the self, and hence a visualization of the",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "adam",
+   "relation": "identified-with",
+   "object": "prima-materia",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 570,
+     "quote": "either is the prima materia and the arcane substance itself",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-reports-parallel",
+     "source": "alchemical tradition"
+    }
+   ]
+  },
+  {
+   "subject": "adam",
+   "relation": "synonym-of",
+   "object": "mercurius",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 565,
+     "quote": "readily lent itself as a biblical synonym for the alchemical Mercurius",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "adam",
+   "relation": "prefigures",
+   "object": "christ",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 565,
+     "quote": "The second Adam is Christ",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "adam",
+   "relation": "embodies",
+   "object": "quaternity",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 555,
+     "quote": "Adam would then be a quaternarius, as he was composed of red, black, white, and green dust",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "adam",
+   "relation": "personifies",
+   "object": "psyche",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 557,
+     "quote": "he is the psyche par excellence",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "quaternity",
+   "relation": "corresponds-to",
+   "object": "consciousness",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 557,
+     "quote": "the four are the four orienting functions of consciousness",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "adam",
+   "relation": "is-analogue-of",
+   "object": "anthropos",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 590,
+     "quote": "Adam is the homo maximus , the Anthropos, from whom the macrocosm arose",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "adam",
+   "relation": "embodies",
+   "object": "rebis",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 587,
+     "quote": "Adam's dual nature is reflected in his hermaphroditism",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "adam",
+   "relation": "embodies",
+   "object": "sapientia",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 570,
+     "quote": "The Lord endowed Adam with great wisdom, and such marvellous insight",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-quotes-source",
+     "source": "Gloria mundi"
+    }
+   ]
+  },
+  {
+   "subject": "adam",
+   "relation": "connected-to",
+   "object": "the-devil",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 589,
+     "quote": "inner connection with Satan is likewise suggested in Rabbinic tradition",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-reports-parallel",
+     "source": "Rabbinic tradition"
+    }
+   ]
+  },
+  {
+   "subject": "the-statue",
+   "relation": "symbolizes",
+   "object": "lapis",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 559,
+     "quote": "the statue evidently denotes the end-product of the process, the lapis Philosophorum",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "the-statue",
+   "relation": "symbolizes",
+   "object": "anthropos",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 567,
+     "quote": "the statue or pillar is either the perfect Primordial Man",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "the-statue",
+   "relation": "corresponds-to",
+   "object": "tifereth-malchuth",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 568,
+     "quote": "when she is united with Tifereth",
+     "confidence": "medium",
+     "verified": true,
+     "claim_type": "jung-quotes-source",
+     "source": "Zohar"
+    }
+   ]
+  },
+  {
+   "subject": "the-statue",
+   "relation": "symbolizes",
+   "object": "the-body",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 569,
+     "quote": "The statue stands for the inert materiality of Adam, who still needs an animating soul",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "lilith",
+   "relation": "is-aspect-of",
+   "object": "adam",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 589,
+     "quote": "The daemonic Lilith seems to be a certain aspect of Adam",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "old-adam",
+   "relation": "corresponds-to",
+   "object": "the-shadow",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 602,
+     "quote": "corresponds to the primitive man, the",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "old-adam",
+   "relation": "contaminated-with",
+   "object": "anthropos",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 600,
+     "quote": "= Adam Kadmon the author has contaminated two opposites",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "shulamite",
+   "relation": "personifies",
+   "object": "anima",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 592,
+     "quote": "Psychologically this dark figure is the unconscious anima",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "shulamite",
+   "relation": "corresponds-to",
+   "object": "malchuth",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 592,
+     "quote": "The black Shulamite in our text corresponds to Malchuth as a widow",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "pan-ku",
+   "relation": "is-analogue-of",
+   "object": "anthropos",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 573,
+     "quote": "thus proved to be a real homo maximus and Anthropos",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-reports-parallel"
+    }
+   ]
+  },
+  {
+   "subject": "anthropos",
+   "relation": "embodies",
+   "object": "union-of-opposites",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 605,
+     "quote": "In the idea of the homo maximus the Above and Below of creation are reunited",
+     "confidence": "high",
      "verified": true,
      "claim_type": "jung-asserts"
     }
