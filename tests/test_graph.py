@@ -59,6 +59,11 @@ def main():
     check(len(node_ids) == len(set(node_ids)), "duplicate node ids present")
     ids = set(node_ids)
 
+    # Volumes that carry print-page anchors in the epub. Some volumes (e.g. CW 5)
+    # have none in this digitization — § citations still work, "open p.X" just
+    # falls back to §-only there, so we don't require a page for those volumes.
+    vols_with_pages = {k[0] for k in pages}
+
     edges = seed["edges"]
     for e in edges:
         tag = f"{e['subject']} --{e['relation']}--> {e['object']}"
@@ -78,7 +83,8 @@ def main():
                     fails.append(f"[quote] not found in CW{r['volume']} §{r['paragraph']}: '{frag.strip()}'  ({tag})")
             if e["relation"] not in STRUCTURAL:
                 check(r.get("claim_type") in CLAIM_TYPES, f"[provenance] bad/missing claim_type: {tag}")
-            check(key in pages, f"[page] no page for CW{r['volume']} §{r['paragraph']}  ({tag})")
+            if str(r["volume"]) in vols_with_pages:
+                check(key in pages, f"[page] no page for CW{r['volume']} §{r['paragraph']}  ({tag})")
 
     total_refs = sum(len(e.get("references", [])) for e in edges)
     print(f"checked: {len(seed['nodes'])} nodes, {len(edges)} edges, {total_refs} references")
