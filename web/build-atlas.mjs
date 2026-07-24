@@ -60,13 +60,13 @@ function layoutCluster(ids, edges, rad) {
   const c = cytoscape({ headless: true, elements: els })
   c.layout({ name: 'fcose', quality: 'proof', randomize: true, animate: false,
     boundingBox: { x1: 0, y1: 0, w: rad * 2, h: rad * 2 },
-    nodeRepulsion: 5500, idealEdgeLength: 62, nodeSeparation: 46, numIter: 1800, packComponents: true, gravity: 0.55 }).run()
+    nodeRepulsion: 9000, idealEdgeLength: 95, nodeSeparation: 90, numIter: 2000, packComponents: true, gravity: 0.45 }).run()
   const out = {}
   for (const id of ids) { const p = c.getElementById(id).position(); out[id] = { x: p.x, y: p.y } }
   c.destroy()
   return out
 }
-const CX = 950, CY = 720, RING = 780
+const CX = 1150, CY = 900, RING = 1080
 const anchors = {}
 clusters.forEach((c, i) => {
   const a = (i / clusters.length) * 2 * Math.PI - Math.PI / 2
@@ -77,7 +77,7 @@ for (const c of clusters) {
   const ids = seed.nodes.filter(n => nodeCluster.get(n.id) === c.id).map(n => n.id)
   const idSet = new Set(ids)
   const edges = seed.edges.filter(e => idSet.has(e.subject) && idSet.has(e.object)).map(e => ({ s: e.subject, t: e.object }))
-  const rad = Math.max(150, 46 * Math.sqrt(ids.length))
+  const rad = Math.max(190, 66 * Math.sqrt(ids.length))
   const local = layoutCluster(ids, edges, rad)
   const a = anchors[c.id]
   for (const id of ids) pos[id] = { x: Math.round(a.x + local[id].x - rad), y: Math.round(a.y + local[id].y - rad) }

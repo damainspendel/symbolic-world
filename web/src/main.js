@@ -11,7 +11,7 @@ const page = (v, p) => atlas.pages[`${v}:${p}`]
 
 const cy = cytoscape({
   container: document.getElementById('cy'),
-  minZoom: 0.12, maxZoom: 4, wheelSensitivity: 0.25,
+  minZoom: 0.06, maxZoom: 12, wheelSensitivity: 0.45,
   elements: [
     ...atlas.clusters.map(c => ({ data: { id: c.id, label: c.label, kind: 'region', color: c.color } })),
     ...atlas.nodes.map(n => ({ data: { id: n.id, label: n.label, type: n.type, tradition: n.tradition, color: n.color, parent: n.cluster }, position: { x: n.x, y: n.y } })),
