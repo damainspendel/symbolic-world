@@ -3,7 +3,9 @@ import atlas from './atlas.json'
 import './style.css'
 
 const LAYER = { spine: '#d9b25f', amplification: '#b48ad0', bridge: '#5ec8be', structural: '#5a636e' }
-const VOL_LABEL = { '12': 'CW 12', '13': 'CW 13', '14': 'CW 14', '9ii': 'Aion', '9i': 'CW 9i', '16': 'CW 16', '5': 'CW 5', '11': 'CW 11' }
+const VOL_LABEL = { '5': 'CW 5 · Symbols of Transformation', '9i': 'CW 9i · Archetypes', '9ii': 'CW 9ii · Aion', '11': 'CW 11 · Psychology & Religion', '12': 'CW 12 · Psychology & Alchemy', '13': 'CW 13 · Alchemical Studies', '14': 'CW 14 · Mysterium', '16': 'CW 16 · Practice of Psychotherapy' }
+// sort key: numeric by volume, with 9i before 9ii
+const volKey = v => { const m = String(v).match(/^(\d+)(i*)$/); return m ? parseInt(m[1], 10) + (m[2] === 'ii' ? 0.2 : m[2] === 'i' ? 0.1 : 0) : 999 }
 const esc = s => String(s).replace(/[&<>]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]))
 
 const labelOf = id => (atlas.nodes.find(n => n.id === id) || {}).label || id
@@ -22,7 +24,7 @@ const cy = cytoscape({
     { selector: 'node[kind = "region"]', style: {
       'background-color': 'data(color)', 'background-opacity': 0.06,
       'border-color': 'data(color)', 'border-opacity': 0.38, 'border-width': 1.5,
-      'shape': 'round-rectangle', 'padding': '38px',
+      'shape': 'round-rectangle', 'padding': '80px',
       'label': 'data(label)', 'text-valign': 'top', 'text-halign': 'center', 'text-margin-y': 10,
       'font-family': 'Iowan Old Style, Palatino, Georgia, serif', 'font-size': 26, 'font-style': 'italic',
       'color': 'data(color)', 'text-opacity': 0.85, 'min-zoomed-font-size': 5, 'events': 'no', 'z-compound-depth': 'bottom'
@@ -90,7 +92,7 @@ function renderPanel(node) {
 }
 
 // ---- filters ----
-const volumes = [...new Set(atlas.edges.flatMap(e => e.volumes))].sort()
+const volumes = [...new Set(atlas.edges.flatMap(e => e.volumes))].sort((a, b) => volKey(a) - volKey(b))
 const activeVol = new Set(volumes)
 const activeLayer = new Set(['spine', 'amplification', 'bridge', 'structural'])
 function applyFilters() {

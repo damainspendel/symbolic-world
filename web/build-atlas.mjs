@@ -4,10 +4,7 @@
 //   node → { id, label, type, color, cluster, x, y }
 //   edge → { id, source, target, relation, layer, volumes, refs }
 //   clusters → [{ id, label, color, size }]
-import cytoscape from 'cytoscape'
-import fcose from 'cytoscape-fcose'
 import { readFileSync, writeFileSync } from 'fs'
-cytoscape.use(fcose)
 
 const here = (p) => new URL(p, import.meta.url)
 const seed = JSON.parse(readFileSync(here('../seed.json')))
@@ -52,21 +49,14 @@ for (const n of seed.nodes) {
 }
 clusters.sort((a, b) => b.size - a.size)
 
-// --- stable regional layout: anchor each region on a ring, then run a LOCAL
-//     force layout inside each region using only its intra-region edges, so the
-//     six domains occupy distinct, non-overlapping territories every time ---
-function layoutCluster(ids, edges, rad) {
-  const els = [...ids.map(id => ({ data: { id } })), ...edges.map((e, i) => ({ data: { id: 'le' + i, source: e.s, target: e.t } }))]
-  const c = cytoscape({ headless: true, elements: els })
-  c.layout({ name: 'fcose', quality: 'proof', randomize: true, animate: false,
-    boundingBox: { x1: 0, y1: 0, w: rad * 2, h: rad * 2 },
-    nodeRepulsion: 9000, idealEdgeLength: 95, nodeSeparation: 90, numIter: 2000, packComponents: true, gravity: 0.45 }).run()
-  const out = {}
-  for (const id of ids) { const p = c.getElementById(id).position(); out[id] = { x: p.x, y: p.y } }
-  c.destroy()
-  return out
-}
-const CX = 1150, CY = 900, RING = 1080
+// --- stable regional layout: anchor each region on a ring, then place its nodes
+//     on a phyllotaxis (sunflower) spiral. Deterministic and force-free, so
+//     spacing is guaranteed even for nodes whose only links cross regions
+//     (a force layout collapses those into a corner). Highest-degree nodes sit
+//     at each region's centre; SPREAD sets the minimum gap between nodes. ---
+const GOLDEN = Math.PI * (3 - Math.sqrt(5))
+const SPREAD = 125
+const CX = 2050, CY = 1650, RING = 2100
 const anchors = {}
 clusters.forEach((c, i) => {
   const a = (i / clusters.length) * 2 * Math.PI - Math.PI / 2
@@ -75,12 +65,13 @@ clusters.forEach((c, i) => {
 let pos = {}
 for (const c of clusters) {
   const ids = seed.nodes.filter(n => nodeCluster.get(n.id) === c.id).map(n => n.id)
-  const idSet = new Set(ids)
-  const edges = seed.edges.filter(e => idSet.has(e.subject) && idSet.has(e.object)).map(e => ({ s: e.subject, t: e.object }))
-  const rad = Math.max(190, 66 * Math.sqrt(ids.length))
-  const local = layoutCluster(ids, edges, rad)
+    .sort((x, y) => deg(y) - deg(x))   // hubs first -> centre
   const a = anchors[c.id]
-  for (const id of ids) pos[id] = { x: Math.round(a.x + local[id].x - rad), y: Math.round(a.y + local[id].y - rad) }
+  ids.forEach((id, i) => {
+    const r = SPREAD * Math.sqrt(i + 0.5)
+    const th = i * GOLDEN
+    pos[id] = { x: Math.round(a.x + r * Math.cos(th)), y: Math.round(a.y + r * Math.sin(th)) }
+  })
 }
 
 const atlasNodes = seed.nodes.map(n => ({
