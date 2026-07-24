@@ -452,6 +452,41 @@
       "id": "the-assumption",
       "type": "Motif",
       "label": "The Assumption of Mary"
+    },
+    {
+      "id": "scintilla",
+      "type": "Symbol",
+      "label": "Scintilla (soul-spark)"
+    },
+    {
+      "id": "caelum",
+      "type": "Substance",
+      "label": "Caelum (Dorn's heaven / quintessence)"
+    },
+    {
+      "id": "leviathan",
+      "type": "Symbol",
+      "label": "Leviathan"
+    },
+    {
+      "id": "orphan",
+      "type": "Motif",
+      "label": "The Orphan (orphanus)"
+    },
+    {
+      "id": "widow",
+      "type": "Motif",
+      "label": "The Widow (vidua)"
+    },
+    {
+      "id": "eros",
+      "type": "Concept",
+      "label": "Eros (relating principle)"
+    },
+    {
+      "id": "bitterness",
+      "type": "Concept",
+      "label": "Bitterness (amaritudo)"
     }
   ],
   "edges": [
@@ -3699,6 +3734,278 @@
           "confidence": "high",
           "verified": false,
           "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "archetype",
+      "relation": "amplified-by",
+      "object": "scintilla",
+      "layer": "amplification",
+      "kind": "image",
+      "references": [
+        {
+          "volume": 14,
+          "paragraph": 700,
+          "quote": "In the unconscious are hidden those ... sparks of light ... the archetypes",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "indivisible-point",
+      "relation": "identical-to",
+      "object": "scintilla",
+      "references": [
+        {
+          "volume": 14,
+          "paragraph": 42,
+          "quote": "The point is identical with the ... scintilla, the \"little soul-spark\"",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "salt",
+      "relation": "amplified-by",
+      "object": "scintilla",
+      "layer": "amplification",
+      "kind": "image",
+      "references": [
+        {
+          "volume": 14,
+          "paragraph": 328,
+          "quote": "salt ... the spark of the anima mundi",
+          "confidence": "medium",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "lapis",
+      "relation": "amplified-by",
+      "object": "orphan",
+      "layer": "amplification",
+      "kind": "image",
+      "references": [
+        {
+          "volume": 14,
+          "paragraph": 13,
+          "quote": "Hermes Trismegistus called the stone 'orphan'",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-quotes-source",
+          "source": "Dorn (quoting Hermes Trismegistus)"
+        }
+      ]
+    },
+    {
+      "subject": "prima-materia",
+      "relation": "amplified-by",
+      "object": "widow",
+      "layer": "amplification",
+      "kind": "image",
+      "references": [
+        {
+          "volume": 14,
+          "paragraph": 14,
+          "quote": "a vidua (widow) as the prima materia",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "tifereth-malchuth",
+      "relation": "amplified-by",
+      "object": "widow",
+      "layer": "amplification",
+      "kind": "parallel",
+      "references": [
+        {
+          "volume": 14,
+          "paragraph": 607,
+          "quote": "Malchuth became a widow",
+          "confidence": "medium",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "salt",
+      "relation": "symbolizes",
+      "object": "eros",
+      "references": [
+        {
+          "volume": 14,
+          "paragraph": 333,
+          "quote": "Confirmation of our interpretation of salt as Eros",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "salt",
+      "relation": "symbolizes",
+      "object": "bitterness",
+      "references": [
+        {
+          "volume": 14,
+          "paragraph": 330,
+          "quote": "the most outstanding properties of salt are bitterness and wisdom",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "salt",
+      "relation": "derives-from",
+      "object": "mercurius",
+      "references": [
+        {
+          "volume": 14,
+          "paragraph": 322,
+          "quote": "the notion that salt comes from Mercurius",
+          "confidence": "medium",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "leviathan",
+      "relation": "symbolizes",
+      "object": "the-unconscious",
+      "layer": "amplification",
+      "kind": "image",
+      "references": [
+        {
+          "volume": 14,
+          "paragraph": 277,
+          "quote": "the unconscious is portrayed as a great animal, for instance Leviathan",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "leviathan",
+      "relation": "symbolizes",
+      "object": "the-devil",
+      "layer": "amplification",
+      "kind": "parallel",
+      "references": [
+        {
+          "volume": 14,
+          "paragraph": 255,
+          "quote": "There dwells Leviathan ... who in the language of the Fathers signifies the devil",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-reports-parallel"
+        }
+      ]
+    },
+    {
+      "subject": "caelum",
+      "relation": "corresponds-to",
+      "object": "lapis",
+      "references": [
+        {
+          "volume": 14,
+          "paragraph": 765,
+          "quote": "Dorn's caelum, which corresponded to the stone",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "caelum",
+      "relation": "unites-with",
+      "object": "unus-mundus",
+      "references": [
+        {
+          "volume": 14,
+          "paragraph": 767,
+          "quote": "the union of the alchemically produced caelum with the unus mundus",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "incest",
+      "relation": "symbolizes",
+      "object": "union-of-opposites",
+      "references": [
+        {
+          "volume": 14,
+          "paragraph": 106,
+          "quote": "incest, into a symbol of the union of opposites",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "incest",
+      "relation": "corresponds-to",
+      "object": "hierosgamos",
+      "references": [
+        {
+          "volume": 14,
+          "paragraph": 107,
+          "quote": "Incest was the hierosgamos of the gods",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "axiom-of-maria",
+      "relation": "concerns",
+      "object": "god-image",
+      "references": [
+        {
+          "volume": 14,
+          "paragraph": 269,
+          "quote": "axiom of Maria ... is concerned with the God-image",
+          "confidence": "high",
+          "verified": false,
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "christ",
+      "relation": "amplified-by",
+      "object": "salt",
+      "layer": "amplification",
+      "kind": "parallel",
+      "references": [
+        {
+          "volume": 14,
+          "paragraph": 323,
+          "quote": "Christ is the salt of wisdom",
+          "confidence": "medium",
+          "verified": false,
+          "claim_type": "jung-reports-parallel"
         }
       ]
     }
