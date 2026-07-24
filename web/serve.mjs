@@ -5,9 +5,12 @@
 import { createServer } from 'http'
 import { readFileSync, existsSync, statSync } from 'fs'
 import { extname, join, normalize } from 'path'
+import { fileURLToPath } from 'url'
 
 const PORT = Number(process.argv[2] || process.env.PORT || 8788)
-const ROOT = new URL('./dist/', import.meta.url).pathname
+// fileURLToPath (not URL.pathname) so paths with spaces — e.g. ~/Library/
+// "Application Support" — decode correctly instead of keeping %20.
+const ROOT = fileURLToPath(new URL('./dist/', import.meta.url))
 const MIME = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.svg': 'image/svg+xml', '.png': 'image/png', '.ico': 'image/x-icon' }
 
 createServer((req, res) => {

@@ -18,3 +18,7 @@ web/src/graph.json
 web/src/pages.json
 web/public/graph.json
 web/public/pages.json
+
+# runtime artifacts
+web/serve.log
+*.log
