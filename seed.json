@@ -691,6 +691,86 @@
    "id": "malchuth",
    "type": "Motif",
    "label": "Malchuth (Kingdom)"
+  },
+  {
+   "id": "parvati",
+   "type": "Figure",
+   "label": "Parvati (mountain dweller)"
+  },
+  {
+   "id": "benedicta-viriditas",
+   "type": "Symbol",
+   "label": "Benedicta viriditas (blessed greenness)"
+  },
+  {
+   "id": "brain",
+   "type": "Symbol",
+   "label": "Brain (cerebrum)"
+  },
+  {
+   "id": "ignis-gehennalis",
+   "type": "Symbol",
+   "label": "Ignis gehennalis (central fire)"
+  },
+  {
+   "id": "son-of-man",
+   "type": "Figure",
+   "label": "Son of Man (filius hominis)"
+  },
+  {
+   "id": "yesod",
+   "type": "Motif",
+   "label": "Yesod (Foundation)"
+  },
+  {
+   "id": "sapphire",
+   "type": "Substance",
+   "label": "Sapphire (lapis sapphireus)"
+  },
+  {
+   "id": "eve",
+   "type": "Figure",
+   "label": "Eve"
+  },
+  {
+   "id": "geryon",
+   "type": "Figure",
+   "label": "Geryon"
+  },
+  {
+   "id": "the-sea",
+   "type": "Symbol",
+   "label": "The Sea (mare)"
+  },
+  {
+   "id": "synchronicity",
+   "type": "Concept",
+   "label": "Synchronicity"
+  },
+  {
+   "id": "balsam",
+   "type": "Substance",
+   "label": "Balsam (elixir vitae)"
+  },
+  {
+   "id": "mary",
+   "type": "Figure",
+   "label": "Mary (Mother of God)"
+  },
+  {
+   "id": "arcane-substance",
+   "type": "Substance",
+   "label": "Arcane substance (arcanum)"
+  },
+  {
+   "id": "communion-both-kinds",
+   "type": "Motif",
+   "label": "Communion in both kinds"
+  },
+  {
+   "id": "the-opposites",
+   "type": "Concept",
+   "label": "The opposites"
   }
  ],
  "edges": [
@@ -5816,6 +5896,341 @@
      "volume": 14,
      "paragraph": 605,
      "quote": "In the idea of the homo maximus the Above and Below of creation are reunited",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "shulamite",
+   "relation": "is-analogue-of",
+   "object": "parvati",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 622,
+     "quote": "a strange parallel in Parvati",
+     "confidence": "medium",
+     "verified": true,
+     "claim_type": "jung-reports-parallel"
+    }
+   ]
+  },
+  {
+   "subject": "benedicta-viriditas",
+   "relation": "corresponds-to",
+   "object": "anima-mundi",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 623,
+     "quote": "might be called the Soul of the World",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-quotes-source",
+     "source": "Mylius"
+    }
+   ]
+  },
+  {
+   "subject": "brain",
+   "relation": "synonym-of",
+   "object": "arcane-substance",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 626,
+     "quote": "the brain is a synonym for the arcane substance",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-reports-parallel",
+     "source": "Rosarium philosophorum (Hermes quotation)"
+    }
+   ]
+  },
+  {
+   "subject": "coniunctio",
+   "relation": "corresponds-to",
+   "object": "communion-both-kinds",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 631,
+     "quote": "the equivalent of the coniunctio is the mixing of substances",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "ignis-gehennalis",
+   "relation": "contains",
+   "object": "mercurius",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 632,
+     "quote": "in it dwells the Mercurial serpent",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-reports-parallel"
+    }
+   ]
+  },
+  {
+   "subject": "ignis-gehennalis",
+   "relation": "manifests-as",
+   "object": "the-devil",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 632,
+     "quote": "it is also Lucifer, the most beautiful of God’s angels",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "son-of-man",
+   "relation": "is-analogue-of",
+   "object": "mercurius",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 634,
+     "quote": "illustration of the “fils de l’homme ” (= Mercurius)",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "yesod",
+   "relation": "corresponds-to",
+   "object": "mercurius",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 634,
+     "quote": "Alchemically he corresponds to the spiritus vegetativus , Mercurius",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "yesod",
+   "relation": "unites",
+   "object": "tifereth-malchuth",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 635,
+     "quote": "in Yesod is accomplished the mystery of the “unitio” ... of the upper, Tifereth, and the lower, Malchuth",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "sapphire",
+   "relation": "synonym-of",
+   "object": "arcane-substance",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 641,
+     "quote": "as a synonym for the arcane substance",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-reports-parallel",
+     "source": "Paracelsus"
+    }
+   ]
+  },
+  {
+   "subject": "lapis",
+   "relation": "symbolizes",
+   "object": "matter",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 643,
+     "quote": "It represents feminine matter",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "nigredo",
+   "relation": "corresponds-to",
+   "object": "the-unconscious",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 646,
+     "quote": "The nigredo corresponds to the darkness of the unconscious",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "shulamite",
+   "relation": "transforms-into",
+   "object": "sophia-wisdom",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 648,
+     "quote": "the Shulamite will become Sophia",
+     "confidence": "medium",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "eve",
+   "relation": "corresponds-to",
+   "object": "malchuth",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 652,
+     "quote": "She appears chiefly as the “lower,” as Malchuth",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "geryon",
+   "relation": "is-analogue-of",
+   "object": "anthropos",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 653,
+     "quote": "Geryon corresponds to the cosmogonic Adam Kadmon",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "sulphur",
+   "relation": "polarizes-with",
+   "object": "salt",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 656,
+     "quote": "an active principle (sulphur) and a passive (salt)",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "aqua-permanens",
+   "relation": "mediates",
+   "object": "coniunctio",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 658,
+     "quote": "aqua permanens or spiritual water ... which are likewise media of conjunction",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "the-sea",
+   "relation": "unites",
+   "object": "the-opposites",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 658,
+     "quote": "The “marvels” of this sea are that it mitigates and unites the opposites",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-quotes-source",
+     "source": "Tractatus Micreris"
+    }
+   ]
+  },
+  {
+   "subject": "synchronicity",
+   "relation": "corresponds-to",
+   "object": "unus-mundus",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 662,
+     "quote": "synchronicity is its para-psychological equivalent",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "balsam",
+   "relation": "synonym-of",
+   "object": "arcane-substance",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 663,
+     "quote": "Mercurius usually stands for the arcane substance, whose synonyms are ... Dorn identifies the latter with the “balsam”",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-quotes-source",
+     "source": "Dorn"
+    }
+   ]
+  },
+  {
+   "subject": "mary",
+   "relation": "personifies",
+   "object": "the-body",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 664,
+     "quote": "the Mother of God represents the body",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "quintessence",
+   "relation": "corresponds-to",
+   "object": "god-image",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 681,
+     "quote": "it consists in the imago Dei imprinted in man. This imago is the true quintessence",
      "confidence": "high",
      "verified": true,
      "claim_type": "jung-asserts"
