@@ -7236,6 +7236,293 @@
      "source": "Visio Arislei"
     }
    ]
+  },
+  {
+   "subject": "sol",
+   "relation": "contains",
+   "object": "sulphur",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 110,
+     "quote": "it contains an active sulphur of a red colour, hot and dry.",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "sulphur",
+   "relation": "associated-with",
+   "object": "the-devil",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 110,
+     "quote": "like the alchemical sulphur, is closely connected with the devil.",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "sol-niger",
+   "relation": "coincides-with",
+   "object": "nigredo",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 113,
+     "quote": "a Sol niger, a black sun, which coincides with the nigredo and putrefactio",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "sol",
+   "relation": "corresponds-to",
+   "object": "lumen-naturae",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 116,
+     "quote": "the alchemical Sol ... is in many respects equal to the lumen naturae",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "sol",
+   "relation": "masculine-half-of",
+   "object": "mercurius",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 117,
+     "quote": "Sol is regarded as the masculine and active half of Mercurius",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "luna",
+   "relation": "borrows-light-from",
+   "object": "sol",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 117,
+     "quote": "The passive part therefore bears the name of Luna, because she borrows her light from the sun.",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "sol",
+   "relation": "father-of",
+   "object": "mercurius",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 121,
+     "quote": "Sol is the father of Mercurius",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-quotes-source",
+     "source": "Tabula Smaragdina"
+    }
+   ]
+  },
+  {
+   "subject": "sol",
+   "relation": "symbolizes",
+   "object": "the-ego",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 129,
+     "quote": "The refulgent body of the sun is the ego and its field of consciousness",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "sol",
+   "relation": "symbolizes",
+   "object": "god-image",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 130,
+     "quote": "the most important was its frequent use as a God-image",
+     "confidence": "medium",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "sulphur",
+   "relation": "companion-of",
+   "object": "luna",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 134,
+     "quote": "sulphur was the “companion of Luna.”",
+     "confidence": "medium",
+     "verified": true,
+     "claim_type": "jung-reports-parallel"
+    }
+   ]
+  },
+  {
+   "subject": "sulphur",
+   "relation": "corresponds-to",
+   "object": "lumen-naturae",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 137,
+     "quote": "is equated with the light of nature, the supreme source of knowledge",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-reports-parallel",
+     "source": "Dorn"
+    }
+   ]
+  },
+  {
+   "subject": "sulphur",
+   "relation": "consumes",
+   "object": "sol",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 138,
+     "quote": "Sulphur blackens the sun and consumes it.",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-reports-parallel"
+    }
+   ]
+  },
+  {
+   "subject": "sulphur",
+   "relation": "inner-fire-of",
+   "object": "mercurius",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 140,
+     "quote": "Being the inner fire of Mercurius",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "sulphur",
+   "relation": "corresponds-to",
+   "object": "eros",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 140,
+     "quote": "This might well be a description of Eros.",
+     "confidence": "medium",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "sulphur",
+   "relation": "synonym-of",
+   "object": "arcane-substance",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 143,
+     "quote": "sulphur was one of the many synonyms for the mysterious transformative substance",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-reports-parallel"
+    }
+   ]
+  },
+  {
+   "subject": "dragon",
+   "relation": "parallels",
+   "object": "christ",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 141,
+     "quote": "the dragon is clearly the filius macrocosmi and, as such, a parallel figure to Christ",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-reports-parallel"
+    }
+   ]
+  },
+  {
+   "subject": "sulphur",
+   "relation": "parallels",
+   "object": "christ",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 145,
+     "quote": "sulphur as the arcane substance was set on a par with Christ",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-reports-parallel"
+    }
+   ]
+  },
+  {
+   "subject": "luna",
+   "relation": "is-shadow-of",
+   "object": "sol",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 172,
+     "quote": "Luna is the “shadow of the sun, and with corruptible bodies she is consumed",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-quotes-source"
+    }
+   ]
+  },
+  {
+   "subject": "sol",
+   "relation": "symbolizes",
+   "object": "spirit",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 175,
+     "quote": "if Sol is the spirit and Luna the body",
+     "confidence": "medium",
+     "verified": true,
+     "claim_type": "jung-reports-parallel"
+    }
+   ]
   }
  ]
 }
