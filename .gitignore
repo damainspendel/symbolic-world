@@ -22,3 +22,4 @@ web/public/pages.json
 # runtime artifacts
 web/serve.log
 *.log
+__pycache__/
