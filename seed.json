@@ -891,6 +891,41 @@
    "id": "oak",
    "type": "Symbol",
    "label": "Oak (feminine tree-numen)"
+  },
+  {
+   "id": "ash",
+   "type": "Substance",
+   "label": "Ash (cinis / avis Hermetis)"
+  },
+  {
+   "id": "red-sea",
+   "type": "Symbol",
+   "label": "The Red Sea (mare rubrum)"
+  },
+  {
+   "id": "chariot",
+   "type": "Symbol",
+   "label": "The Chariot (currus / Merkabah)"
+  },
+  {
+   "id": "paradise",
+   "type": "Symbol",
+   "label": "Paradise (Garden of Eden)"
+  },
+  {
+   "id": "ortus",
+   "type": "Symbol",
+   "label": "Ortus (four-coloured beast)"
+  },
+  {
+   "id": "ascent-descent",
+   "type": "Motif",
+   "label": "Ascent and Descent"
+  },
+  {
+   "id": "baptism",
+   "type": "Motif",
+   "label": "Baptism"
   }
  ],
  "edges": [
@@ -7521,6 +7556,315 @@
      "confidence": "medium",
      "verified": true,
      "claim_type": "jung-reports-parallel"
+    }
+   ]
+  },
+  {
+   "subject": "salt",
+   "relation": "is",
+   "object": "arcane-substance",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 240,
+     "quote": "It is clear from this that salt is an arcane substance.",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "salt",
+   "relation": "symbolized-by",
+   "object": "ouroboros",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 244,
+     "quote": "our salt, that is, our earth ... a dragon that eats his own tail",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-quotes-source",
+     "source": "Mylius"
+    }
+   ]
+  },
+  {
+   "subject": "salt",
+   "relation": "associated-with",
+   "object": "albedo",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 244,
+     "quote": "salt is constantly associated with the albedo",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "salt",
+   "relation": "essential-to",
+   "object": "the-opus",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 244,
+     "quote": "without salt the opus will not succeed",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-reports-parallel",
+     "source": "alchemical tradition"
+    }
+   ]
+  },
+  {
+   "subject": "salt",
+   "relation": "derives-from",
+   "object": "the-sea",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 245,
+     "quote": "salt is bitter because it comes from the “mineral of the sea",
+     "confidence": "medium",
+     "verified": true,
+     "claim_type": "jung-reports-parallel",
+     "source": "Rosarium"
+    }
+   ]
+  },
+  {
+   "subject": "salt",
+   "relation": "regarded-as",
+   "object": "spirit",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 246,
+     "quote": "parallel of salt because salt is a spirit",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-reports-parallel",
+     "source": "alchemical tradition"
+    }
+   ]
+  },
+  {
+   "subject": "salt",
+   "relation": "synonym-of",
+   "object": "ash",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 241,
+     "quote": "ash,” the “diadem of thy heart",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-reports-parallel",
+     "source": "Mylius"
+    }
+   ]
+  },
+  {
+   "subject": "ash",
+   "relation": "symbolizes",
+   "object": "spirit",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 247,
+     "quote": "the ash is the spirit that dwells in the glorified body",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "the-sea",
+   "relation": "associated-with",
+   "object": "bitterness",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 245,
+     "quote": "Inseparable from salt and sea is the quality of amaritudo",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "the-sea",
+   "relation": "synonym-of",
+   "object": "prima-materia",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 246,
+     "quote": "the best known synonyms for the latter are the “chaos” and the “sea",
+     "confidence": "medium",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "the-sea",
+   "relation": "domain-of",
+   "object": "the-devil",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 255,
+     "quote": "The devil surrounds the seas and the ocean on all sides",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-quotes-source",
+     "source": "St. Jerome"
+    }
+   ]
+  },
+  {
+   "subject": "red-sea",
+   "relation": "signifies",
+   "object": "baptism",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 256,
+     "quote": "The Red Sea signifies baptism",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-quotes-source",
+     "source": "St. Augustine"
+    }
+   ]
+  },
+  {
+   "subject": "chariot",
+   "relation": "symbolizes",
+   "object": "the-self",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 261,
+     "quote": "can be understood in this sense as a symbol of the self.",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "chariot",
+   "relation": "embodies",
+   "object": "quaternity",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 272,
+     "quote": "the quaternity embodied in it is the vehicle or throne",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "quaternity",
+   "relation": "is-foundation-of",
+   "object": "god-image",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 273,
+     "quote": "the true psychological foundation of the God-concept",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "paradise",
+   "relation": "symbolizes",
+   "object": "the-self",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 276,
+     "quote": "a symbol of totality and—from the psychological point of view—of the self",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "ortus",
+   "relation": "symbolizes",
+   "object": "quaternity",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 282,
+     "quote": "The Ortus is the alchemical ... which represents the living quaternity in its first synthesis",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "ortus",
+   "relation": "identified-with",
+   "object": "phoenix",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 281,
+     "quote": "Maier does not hesitate to identify the Ortus with the phoenix",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-reports-parallel",
+     "source": "Maier"
+    }
+   ]
+  },
+  {
+   "subject": "ascent-descent",
+   "relation": "unites",
+   "object": "the-opposites",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 288,
+     "quote": "the purpose of the ascent and descent is to unite the powers of Above and Below",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-reports-parallel",
+     "source": "Tabula Smaragdina"
+    }
+   ]
+  },
+  {
+   "subject": "ascent-descent",
+   "relation": "corresponds-to",
+   "object": "ouroboros",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 296,
+     "quote": "It corresponds to the struggle between the winged and the wingless dragon, i.e., the uroboros",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
     }
    ]
   }
