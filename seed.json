@@ -941,6 +941,16 @@
    "id": "ego-inflation",
    "type": "Concept",
    "label": "Ego-inflation (hypertrophy)"
+  },
+  {
+   "id": "ancient-of-days",
+   "type": "Figure",
+   "label": "Ancient of Days (Antiquus dierum)"
+  },
+  {
+   "id": "dominant-of-consciousness",
+   "type": "Concept",
+   "label": "Dominant of consciousness (ruling idea)"
   }
  ],
  "edges": [
@@ -8208,6 +8218,309 @@
      "volume": 14,
      "paragraph": 365,
      "quote": "the king personifies a hypertrophy of the ego",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "rex",
+   "relation": "destined-for",
+   "object": "wholeness",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 373,
+     "quote": "the king is destined for “rotundity,” i.e., wholeness",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "rex",
+   "relation": "identified-with",
+   "object": "ancient-of-days",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 374,
+     "quote": "to identify the king with the “Ancient of Days”",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-reports-parallel",
+     "source": "Ripley, Cantilena"
+    }
+   ]
+  },
+  {
+   "subject": "regina",
+   "relation": "renews",
+   "object": "rex",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 400,
+     "quote": "her attempt to rejuvenate the old king and to give him immortality",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "regina",
+   "relation": "adopts",
+   "object": "rex",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 435,
+     "quote": "a “tutelary madonna” who adopts the king as her son",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "cauda-pavonis",
+   "relation": "heralds",
+   "object": "filius-regius",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 397,
+     "quote": "the end of the work announced by the cauda pavonis was the birth of the filius regius",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "lapis",
+   "relation": "corresponds-to",
+   "object": "anthropos",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 397,
+     "quote": "the lapis was brought into more or less clear connection with the ancient idea of the Anthropos",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "benedicta-viriditas",
+   "relation": "symbolizes",
+   "object": "holy-ghost",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 391,
+     "quote": "the “blessed greenness,” both of which symbolize the Holy Ghost",
+     "confidence": "medium",
+     "verified": true,
+     "claim_type": "jung-reports-parallel",
+     "source": "Khunrath"
+    }
+   ]
+  },
+  {
+   "subject": "phoenix",
+   "relation": "synonym-of",
+   "object": "lapis",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 396,
+     "quote": "more especially as a synonym for the lapis",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-reports-parallel"
+    }
+   ]
+  },
+  {
+   "subject": "human-blood",
+   "relation": "synonym-of",
+   "object": "aqua-permanens",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 401,
+     "quote": "one of the best-known synonyms for the aqua permanens",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "prima-materia",
+   "relation": "identical-to",
+   "object": "the-vessel",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 402,
+     "quote": "the prima materia and the vessel were identical",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-reports-parallel"
+    }
+   ]
+  },
+  {
+   "subject": "green-lion",
+   "relation": "synonym-of",
+   "object": "dragon",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 408,
+     "quote": "the green lion, I say, who in truth is the Babylonish dragon",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-quotes-source",
+     "source": "Introitus apertus"
+    }
+   ]
+  },
+  {
+   "subject": "venus",
+   "relation": "personifies",
+   "object": "anima",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 416,
+     "quote": "Venus appears as the feminine aspect of the king, or as we should say, his anima",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "filius-regius",
+   "relation": "born-of",
+   "object": "meretrix",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 420,
+     "quote": "The stone, the filius regius, is the son of this whore",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "rex",
+   "relation": "personifies",
+   "object": "dominant-of-consciousness",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 424,
+     "quote": "he represents a dominant of consciousness, such as a generally accepted principle",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "regina",
+   "relation": "gains-knowledge-of",
+   "object": "collective-unconscious",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 428,
+     "quote": "her consciousness is enriched by a knowledge of the collective unconscious",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "regina",
+   "relation": "identified-with",
+   "object": "mary",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 429,
+     "quote": "identification of the queen with the mother of God",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-reports-parallel"
+    }
+   ]
+  },
+  {
+   "subject": "rex",
+   "relation": "renewed-by",
+   "object": "holy-ghost",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 432,
+     "quote": "the rebirth of the king is a gift of the Holy Ghost or of Sapientia",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "rubedo",
+   "relation": "produces",
+   "object": "lapis",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 434,
+     "quote": "the work is completed, and the lapis ... has taken shape",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "rex",
+   "relation": "attains",
+   "object": "corpus-glorificationis",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 436,
+     "quote": "This gives the king immortality in a divine and incorruptible body",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "quintessence",
+   "relation": "produced-from",
+   "object": "four-elements",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 439,
+     "quote": "The One born of the Four is the Quinta Essentia",
      "confidence": "high",
      "verified": true,
      "claim_type": "jung-asserts"
