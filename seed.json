@@ -961,6 +961,11 @@
    "id": "filius-unius-diei",
    "type": "Motif",
    "label": "Filius unius diei (Son of one day)"
+  },
+  {
+   "id": "unconsciousness",
+   "type": "Concept",
+   "label": "Unconsciousness (initial state)"
   }
  ],
  "edges": [
@@ -989,8 +994,10 @@
      "paragraph": 334,
      "quote": "The nigredo or blackness is the initial state",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-reports-parallel",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -1004,8 +1011,10 @@
      "paragraph": 334,
      "quote": "a union of opposites... followed by the death of the product",
      "confidence": "medium",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-reports-parallel",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     },
     {
      "volume": 16,
@@ -1027,8 +1036,10 @@
      "paragraph": 335,
      "quote": "the philosophers' stone, which, as hermaphrodite, contains both",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-reports-parallel",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -1042,8 +1053,10 @@
      "paragraph": 247,
      "quote": "that obscure thing we call the mandala or 'self'",
      "confidence": "medium",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     },
     {
      "volume": "9ii",
@@ -1065,8 +1078,10 @@
      "paragraph": 26,
      "quote": "One becomes two, two becomes three, and out of the third comes the one as the fourth",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -1133,8 +1148,10 @@
      "paragraph": 431,
      "quote": "autonomy and everlastingness of the prima materia",
      "confidence": "medium",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -1199,8 +1216,10 @@
      "paragraph": 460,
      "quote": "compounded of opposites and is at the same time their uniting symbol",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -1354,8 +1373,10 @@
      "paragraph": 439,
      "quote": "The anima ... personifies the collective unconscious",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -1400,8 +1421,10 @@
      "paragraph": 452,
      "quote": "Christ as a symbol of the self",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -1530,8 +1553,10 @@
      "paragraph": 278,
      "quote": "I have called this wholeness that transcends consciousness the ... self",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -2068,7 +2093,7 @@
   },
   {
    "subject": "mercurius",
-   "relation": "unites",
+   "relation": "embodies",
    "object": "union-of-opposites",
    "references": [
     {
@@ -2076,8 +2101,10 @@
      "paragraph": 284,
      "quote": "Mercurius consists of all conceivable opposites",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -2091,8 +2118,10 @@
      "paragraph": 296,
      "quote": "Mercurius as the lapis is a symbolic expression ... the self",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -2106,8 +2135,10 @@
      "paragraph": 284,
      "quote": "he represents on the one hand the self and on the other the individuation process",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -2121,8 +2152,10 @@
      "paragraph": 284,
      "quote": "because of the limitless number of his names, also the collective unconscious",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -2136,8 +2169,10 @@
      "paragraph": 284,
      "quote": "He is the devil, a redeeming psychopomp, an evasive trickster",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -2151,8 +2186,10 @@
      "paragraph": 251,
      "quote": "the elusive Mercurius who evades every grasp—a real trickster",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -2166,8 +2203,10 @@
      "paragraph": 267,
      "quote": "Mercurius, following the tradition of Hermes, is many-sided, changeable, and deceitful",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -2183,8 +2222,11 @@
      "paragraph": 315,
      "quote": "Mercurius is symbolized by the tree as well as by the dragon",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-reports-parallel",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25",
+     "source": "alchemical tradition"
     }
    ]
   },
@@ -2198,9 +2240,11 @@
      "paragraph": 282,
      "quote": "Mercurius, it is generally affirmed, is the arcanum, the prima materia",
      "confidence": "medium",
-     "verified": false,
+     "verified": true,
      "claim_type": "jung-quotes-source",
-     "source": "alchemists"
+     "source": "alchemists",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -2214,16 +2258,21 @@
      "paragraph": 303,
      "quote": "Mercurius, that two-faced god, comes as the lumen naturae",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     },
     {
      "volume": 13,
      "paragraph": 256,
      "quote": "it relates Mercurius to the lumen naturae",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-reports-parallel",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25",
+     "source": "alchemical treatises (CW13 §256)"
     }
    ]
   },
@@ -2237,8 +2286,10 @@
      "paragraph": 304,
      "quote": "the tree ... the self depicted as a process of growth",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -2252,8 +2303,10 @@
      "paragraph": 288,
      "quote": "the individuation process ... the commonest alchemical symbol for this is the tree",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -2267,8 +2320,10 @@
      "paragraph": 458,
      "quote": "the tree can be interpreted as the Anthropos or self",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -2284,8 +2339,11 @@
      "paragraph": 315,
      "quote": "Mercurius is symbolized by the tree as well as by the dragon",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-reports-parallel",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25",
+     "source": "alchemical tradition"
     }
    ]
   },
@@ -2299,8 +2357,10 @@
      "paragraph": 33,
      "quote": "The golden flower is a mandala symbol I have often met with",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -2314,9 +2374,11 @@
      "paragraph": 33,
      "quote": "The golden flower is the light, and the light of heaven is the Tao",
      "confidence": "medium",
-     "verified": false,
+     "verified": true,
      "claim_type": "jung-quotes-source",
-     "source": "The Secret of the Golden Flower"
+     "source": "The Secret of the Golden Flower",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -2330,8 +2392,10 @@
      "paragraph": 31,
      "quote": "union of opposites ... symbols appear that are chiefly of the mandala type",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -2345,9 +2409,11 @@
      "paragraph": 38,
      "quote": "The sun-wheel begins to turn ... the Tao begins to work and takes the lead",
      "confidence": "medium",
-     "verified": false,
+     "verified": true,
      "claim_type": "jung-quotes-source",
-     "source": "The Secret of the Golden Flower"
+     "source": "The Secret of the Golden Flower",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -2361,9 +2427,11 @@
      "paragraph": 96,
      "quote": "the vessel which the demiurge sent down to earth filled with Nous",
      "confidence": "high",
-     "verified": false,
+     "verified": true,
      "claim_type": "jung-quotes-source",
-     "source": "Corpus Hermeticum (Poimandres)"
+     "source": "Corpus Hermeticum (Poimandres)",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -2379,8 +2447,10 @@
      "paragraph": 111,
      "quote": "The homunculus therefore stands for the uroboros, which devours itself and gives birth",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -2394,16 +2464,18 @@
      "paragraph": 134,
      "quote": "the lapis consists of body, soul, and spirit, is a living being, a homunculus",
      "confidence": "high",
-     "verified": false,
+     "verified": true,
      "claim_type": "jung-quotes-source",
-     "source": "alchemists"
+     "source": "alchemists",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
   {
    "subject": "dragon",
    "relation": "symbolizes",
-   "object": "the-unconscious",
+   "object": "unconsciousness",
    "layer": "amplification",
    "kind": "image",
    "references": [
@@ -2412,8 +2484,10 @@
      "paragraph": 118,
      "quote": "The dragon, or serpent, represents the initial state of unconsciousness",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -2427,8 +2501,10 @@
      "paragraph": 148,
      "quote": "the \"light of nature\" was a second, independent source of knowledge for Paracelsus",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -2442,8 +2518,10 @@
      "paragraph": 40,
      "quote": "the symbolism of alchemy expresses ... the so-called individuation process",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     },
     {
      "volume": 14,
@@ -2467,16 +2545,20 @@
      "paragraph": 346,
      "quote": "what he was in reality experiencing was his own unconscious",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     },
     {
      "volume": 12,
      "paragraph": 394,
      "quote": "everything unconscious, once it was activated, was projected into matter",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -2492,16 +2574,21 @@
      "paragraph": 451,
      "quote": "the coveted substance, the lapis , that he likens to Christ",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-reports-parallel"
+     "verified": true,
+     "claim_type": "jung-reports-parallel",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     },
     {
      "volume": 12,
      "paragraph": 480,
      "quote": "the lapis -Christ identity",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-reports-parallel"
+     "verified": true,
+     "claim_type": "jung-quotes-source",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25",
+     "source": "Nicholas Melchior (Melchior Cibinensis)"
     },
     {
      "volume": 12,
@@ -2523,8 +2610,10 @@
      "paragraph": 457,
      "quote": "symbolized by the four elements, just like the lapis",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -2540,8 +2629,10 @@
      "paragraph": 335,
      "quote": "filius macrocosmi , a figure we can only compare with the Gnostic Anthropos",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-reports-parallel"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -2555,8 +2646,10 @@
      "paragraph": 165,
      "quote": "It is a symbol of the opus alchymicum",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -2570,8 +2663,10 @@
      "paragraph": 167,
      "quote": "the squaring of the circle is a stage on the way to the unconscious",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -2585,16 +2680,20 @@
      "paragraph": 247,
      "quote": "that obscure thing we call the mandala or \"self\"",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     },
     {
      "volume": "9i",
      "paragraph": 572,
      "quote": "The mandala, though only a symbol of the self as the psychic totality",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -2608,8 +2707,10 @@
      "paragraph": 43,
      "quote": "the union of opposites in the archetypal form of the hierosgamos",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -2625,8 +2726,10 @@
      "paragraph": 215,
      "quote": "filius philosophorum = archetype of the divine child",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -2640,8 +2743,10 @@
      "paragraph": 338,
      "quote": "matrix or uterus from which the filius philosophorum ... is to be born",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-reports-parallel",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -2655,15 +2760,17 @@
      "paragraph": 338,
      "quote": "the vas is the water ... none other than the Mercurius of the philosophers",
      "confidence": "high",
-     "verified": false,
+     "verified": true,
      "claim_type": "jung-quotes-source",
-     "source": "unnamed alchemical texts"
+     "source": "unnamed alchemical texts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
   {
    "subject": "mercurius",
-   "relation": "symbolizes",
+   "relation": "is-identified-with",
    "object": "hermes",
    "layer": "amplification",
    "kind": "image",
@@ -2673,8 +2780,10 @@
      "paragraph": 172,
      "quote": "Mercurius also takes on the significance of Hermes, god of revelation",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -2690,8 +2799,10 @@
      "paragraph": 409,
      "quote": "as Mercurius, possesses the Hermetic dual significance of redeeming psychopomp",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -2707,16 +2818,21 @@
      "paragraph": 490,
      "quote": "the analogy between the opus and the Mass",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-reports-parallel"
+     "verified": true,
+     "claim_type": "jung-reports-parallel",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     },
     {
      "volume": 12,
      "paragraph": 480,
      "quote": "expounded the alchemical process in the form of a Mass",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-reports-parallel"
+     "verified": true,
+     "claim_type": "jung-quotes-source",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25",
+     "source": "Nicholas Melchior (Melchior Cibinensis)"
     }
    ]
   },
@@ -2732,9 +2848,11 @@
      "paragraph": 457,
      "quote": "Maier imagined the opus as a wandering or odyssey",
      "confidence": "medium",
-     "verified": false,
+     "verified": true,
      "claim_type": "jung-quotes-source",
-     "source": "Michael Maier"
+     "source": "Michael Maier",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -3073,8 +3191,20 @@
      "paragraph": 4,
      "quote": "The contents of the collective unconscious, on the other hand, are known as archetypes",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
+    },
+    {
+     "volume": "9i",
+     "paragraph": 90,
+     "quote": "collective unconscious does not develop individually but is inherited ... pre-existent forms, the archetypes",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -3088,8 +3218,10 @@
      "paragraph": 89,
      "quote": "the archetype ... an indispensable correlate of the idea of the collective unconscious",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -3103,8 +3235,10 @@
      "paragraph": 90,
      "quote": "collective unconscious does not develop individually but is inherited ... pre-existent forms, the archetypes",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -3118,8 +3252,10 @@
      "paragraph": 158,
      "quote": "The place of magic transformation and rebirth ... are presided over by the mother",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     },
     {
      "volume": 5,
@@ -3141,8 +3277,10 @@
      "paragraph": 189,
      "quote": "transforms her into a ... Great Mother ... the opposites contained in this image split apart",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -3156,8 +3294,10 @@
      "paragraph": 162,
      "quote": "side by side with the mother archetype, a significant role is played by ... the anima",
      "confidence": "medium",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -3171,8 +3311,10 @@
      "paragraph": 58,
      "quote": "she is yet only one archetype among many",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -3186,14 +3328,16 @@
      "paragraph": 61,
      "quote": "the encounter with the shadow is the ... apprentice-piece in the individual's development",
      "confidence": "medium",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
   {
-   "subject": "the-self",
-   "relation": "first-met-as",
+   "subject": "self-knowledge",
+   "relation": "begins-with",
    "object": "the-shadow",
    "references": [
     {
@@ -3201,8 +3345,10 @@
      "paragraph": 45,
      "quote": "The meeting with oneself is, at first, the meeting with one's own shadow",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -3216,8 +3362,10 @@
      "paragraph": 484,
      "quote": "The trickster is a collective shadow figure",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -3246,8 +3394,10 @@
      "paragraph": 472,
      "quote": "He is a forerunner of the saviour",
      "confidence": "medium",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -3261,8 +3411,10 @@
      "paragraph": 282,
      "quote": "child ... fates may be regarded as illustrating ... genesis of the ... self",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -3276,8 +3428,10 @@
      "paragraph": 270,
      "quote": "Sometimes the child appears ... as the centre of a mandala",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -3288,11 +3442,13 @@
    "references": [
     {
      "volume": "9i",
-     "paragraph": 292,
-     "quote": "The hermaphrodite means nothing less than a union of the strongest and most striking opposites",
+     "paragraph": 278,
+     "quote": "It is therefore a symbol which unites the opposites",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -3306,8 +3462,10 @@
      "paragraph": 286,
      "quote": "the most pregnant with the future, signifying a higher stage of self-realization",
      "confidence": "medium",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -3321,8 +3479,10 @@
      "paragraph": 280,
      "quote": "the child motif appears in the form of a unity ... complete synthesis of the personality",
      "confidence": "medium",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -3336,8 +3496,11 @@
      "paragraph": 93,
      "quote": "It is an idea that underlies all rebirth mysteries ... Christ himself is ... twiceborn",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-reports-parallel",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25",
+     "source": "Christian rebirth mysteries"
     }
    ]
   },
@@ -3351,8 +3514,10 @@
      "paragraph": 278,
      "quote": "The goal of the individuation process is the synthesis of the self",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -3366,8 +3531,10 @@
      "paragraph": 248,
      "quote": "the self ... a centre, neither of which coincides with the ego but includes it",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -3381,8 +3548,10 @@
      "paragraph": 73,
      "quote": "the mandala is a symbol of individuation",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -3396,8 +3565,10 @@
      "paragraph": 572,
      "quote": "The mandala ... at the same time a God-image",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -7077,6 +7248,16 @@
      "confidence": "high",
      "verified": true,
      "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
+    },
+    {
+     "volume": 12,
+     "paragraph": 335,
+     "quote": "the philosophers' stone, which, as hermaphrodite, contains both",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-reports-parallel",
      "verified_by": "claude-fable-5",
      "verified_date": "2026-07-25"
     }
