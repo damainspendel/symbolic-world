@@ -971,6 +971,11 @@
    "id": "shadow-of-the-self",
    "type": "Concept",
    "label": "Shadow of the Self (dark half of totality)"
+  },
+  {
+   "id": "tree",
+   "type": "Symbol",
+   "label": "The Tree (mythological)"
   }
  ],
  "edges": [
@@ -3309,8 +3314,10 @@
      "paragraph": 577,
      "quote": "the cavern of death and rebirth ... related to the subterranean mother of death",
      "confidence": "medium",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -3856,22 +3863,26 @@
      "paragraph": 194,
      "quote": "It allowed me to identify “psychic energy” with “libido.”",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     },
     {
      "volume": 5,
      "paragraph": 197,
      "quote": "understand it as an energy-value which is able to communicate itself to any field",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
   {
    "subject": "libido",
-   "relation": "stored-in",
+   "relation": "belongs-to",
    "object": "the-unconscious",
    "references": [
     {
@@ -3879,8 +3890,10 @@
      "paragraph": 130,
      "quote": "the energy which belongs to the archetype, to the unconscious",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -3894,8 +3907,10 @@
      "paragraph": 129,
      "quote": "psychic energy or libido creates the God-image by making use of archetypal patterns",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -3909,8 +3924,10 @@
      "paragraph": 297,
      "quote": "The psychic life-force, the libido, symbolizes itself in the sun",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -3924,8 +3941,10 @@
      "paragraph": 296,
      "quote": "The sun comparison tells us over and over again that the dynamic of the gods is psychic energy",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -3939,8 +3958,10 @@
      "paragraph": 251,
      "quote": "The finest of all symbols of the libido is the human figure, conceived as a demon or hero",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -3954,8 +3975,10 @@
      "paragraph": 388,
      "quote": "They are, in fact, personifications of the libido",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -3971,8 +3994,10 @@
      "paragraph": 297,
      "quote": "personifies itself in figures of heroes with solar attributes",
      "confidence": "medium",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -3986,8 +4011,10 @@
      "paragraph": 494,
      "quote": "his birth is a rebirth from the mother-wife. That is why the hero so often has two mothers",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -4001,8 +4028,10 @@
      "paragraph": 553,
      "quote": "the son tears himself loose from the mother, from the domestic hearth, to rise through battle",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -4018,8 +4047,10 @@
      "paragraph": 395,
      "quote": "the dragon represents the negative mother-imago and thus expresses resistance to incest",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -4033,9 +4064,11 @@
      "paragraph": 380,
      "quote": "the hero sets free those who had previously been devoured by the whale-dragon",
      "confidence": "high",
-     "verified": false,
+     "verified": true,
      "claim_type": "jung-quotes-source",
-     "source": "Frobenius"
+     "source": "Frobenius",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -4049,8 +4082,10 @@
      "paragraph": 312,
      "quote": "it is the longing to attain rebirth through a return to the womb",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -4064,8 +4099,10 @@
      "paragraph": 390,
      "quote": "it is the god or the hero who commits incest",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -4079,8 +4116,10 @@
      "paragraph": 461,
      "quote": "the hero Chiwantopel is not yet fatally poisoned and ready for death through self-sacrifice",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -4094,14 +4133,16 @@
      "paragraph": 671,
      "quote": "the instinctive desire, or libido, is given up in order that it may be regained in new form",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
   {
    "subject": "the-sacrifice",
-   "relation": "prefigures",
+   "relation": "amplified-by",
    "object": "christ",
    "references": [
     {
@@ -4109,10 +4150,14 @@
      "paragraph": 638,
      "quote": "the sacrificial death and resurrection of Christ, conceived as the self-sacrifice of the sun",
      "confidence": "medium",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
-   ]
+   ],
+   "layer": "amplification",
+   "kind": "image"
   },
   {
    "subject": "night-sea-journey",
@@ -4124,8 +4169,10 @@
      "paragraph": 312,
      "quote": "The middle section, the night sea journey in the ark ... it is the longing to attain rebirth through a return to the womb",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -4141,14 +4188,16 @@
      "paragraph": 308,
      "quote": "All these sea-going gods are solar figures ... for the “night sea journey”",
      "confidence": "high",
-     "verified": false,
+     "verified": true,
      "claim_type": "jung-quotes-source",
-     "source": "Frobenius"
+     "source": "Frobenius",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
   {
-   "subject": "philosophical-tree",
+   "subject": "tree",
    "relation": "symbolizes",
    "object": "great-mother",
    "references": [
@@ -4157,15 +4206,17 @@
      "paragraph": 396,
      "quote": "The tree entwined by the snake may therefore be taken as the symbol of the mother",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
   {
    "subject": "the-sacrifice",
    "relation": "amplified-by",
-   "object": "philosophical-tree",
+   "object": "tree",
    "layer": "amplification",
    "kind": "image",
    "references": [
@@ -4174,8 +4225,10 @@
      "paragraph": 349,
      "quote": "the Cross is the Tree of Life and at the same time a Tree of Death",
      "confidence": "medium",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
