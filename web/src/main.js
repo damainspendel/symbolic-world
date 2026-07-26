@@ -83,7 +83,7 @@ function renderPanel(node) {
       ? `<span class="rel">${esc(e.data('relation'))} →</span> ${esc(labelOf(other))}`
       : `${esc(labelOf(other))} <span class="rel">→ ${esc(e.data('relation'))}</span>`
     const r = (e.data('refs') || [])[0]
-    const cite = r ? `CW ${r.volume} §${r.paragraph}` : ''
+    const cite = r ? `CW ${r.volume} §${r.paragraph}${r.verified ? ' <span class="vcheck" title="Independently verified against the source paragraph">✓</span>' : ''}` : ''
     const pg = r ? page(r.volume, r.paragraph) : null
     const q = r ? `<blockquote>${esc(r.quote)}</blockquote>` : ''
     const prov = r && r.claim_type ? `<span class="prov">${esc(r.claim_type)}${r.source ? ' · ' + esc(r.source) : ''}</span>` : ''
