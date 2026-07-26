@@ -11,6 +11,9 @@ Asserts, over seed.json + data/paragraphs.jsonl:
   5. interpretive (non-structural) edges carry a `claim_type` on each reference
   6. the §->page concordance resolves for every cited paragraph
   7. node ids are unique
+  8. every reference marked verified:true carries gate provenance (verified_by)
+  9. every edge has at least one reference
+ 10. (warn only) one-off relation strings are listed for vocabulary review
 """
 import json
 import re
@@ -69,9 +72,15 @@ def main():
         tag = f"{e['subject']} --{e['relation']}--> {e['object']}"
         check(e["subject"] in ids, f"[node] undefined subject: {tag}")
         check(e["object"] in ids, f"[node] undefined object: {tag}")
+        # Structural scaffolding (stage ordering, aliases) may be citation-free;
+        # every interpretive edge must carry at least one reference.
+        if e["relation"] not in STRUCTURAL:
+            check(len(e.get("references", [])) > 0, f"[refs] interpretive edge has no references: {tag}")
         if e.get("layer") == "amplification":
             check(e.get("kind") in {"image", "parallel"}, f"[kind] amplification missing kind: {tag}")
         for r in e.get("references", []):
+            if r.get("verified"):
+                check(r.get("verified_by"), f"[provenance] verified ref missing verified_by: {tag}")
             key = (str(r["volume"]), r["paragraph"])
             if key not in corpus:
                 fails.append(f"[corpus] §missing: CW{r['volume']} §{r['paragraph']}  ({tag})")
@@ -87,7 +96,16 @@ def main():
                 check(key in pages, f"[page] no page for CW{r['volume']} §{r['paragraph']}  ({tag})")
 
     total_refs = sum(len(e.get("references", [])) for e in edges)
-    print(f"checked: {len(seed['nodes'])} nodes, {len(edges)} edges, {total_refs} references")
+    verified_refs = sum(1 for e in edges for r in e.get("references", []) if r.get("verified"))
+    print(f"checked: {len(seed['nodes'])} nodes, {len(edges)} edges, {total_refs} references ({verified_refs} verified)")
+
+    # Vocabulary review (warn-only): relations used by exactly one edge tend to
+    # be one-off phrasings worth consolidating; not a failure.
+    from collections import Counter
+    rel_counts = Counter(e["relation"] for e in edges)
+    singles = sorted(r for r, c in rel_counts.items() if c == 1)
+    if singles:
+        print(f"note: {len(singles)} single-use relations (vocabulary review candidates)")
     if fails:
         print(f"\nFAILED ({len(fails)}):")
         for f in fails:

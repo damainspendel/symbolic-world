@@ -2451,7 +2451,9 @@
      "quote": "in his art and its allegories the drama of his own soul, his individuation process, is played out",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -4528,7 +4530,9 @@
      "confidence": "high",
      "verified": true,
      "claim_type": "jung-quotes-source",
-     "source": "Khunrath"
+     "source": "Khunrath",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -4544,7 +4548,9 @@
      "confidence": "medium",
      "verified": true,
      "claim_type": "jung-quotes-source",
-     "source": "Ripley (in Maier)"
+     "source": "Ripley (in Maier)",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -4559,7 +4565,9 @@
      "quote": "The peacock is an allusion to the cauda pavonis...before the albedo",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -4574,7 +4582,9 @@
      "quote": "The peacock is an allusion to the cauda pavonis...indicating something like totality",
      "confidence": "medium",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -4589,7 +4599,9 @@
      "quote": "raven...is the traditional name for the nigredo",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ],
    "layer": "amplification",
@@ -4606,7 +4618,9 @@
      "quote": "the raven is an allegory of the devil",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-reports-parallel"
+     "claim_type": "jung-reports-parallel",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ],
    "layer": "amplification",
@@ -4624,7 +4638,9 @@
      "confidence": "high",
      "verified": true,
      "claim_type": "jung-quotes-source",
-     "source": "Kalid, Liber secretorum (Hermes)"
+     "source": "Kalid, Liber secretorum (Hermes)",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ],
    "layer": "amplification",
@@ -4641,7 +4657,9 @@
      "quote": "universal Mercurius...is none other than the...unus mundus",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -4656,7 +4674,9 @@
      "quote": "mandala symbolism is the psychological equivalent of the unus mundus",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -4671,7 +4691,9 @@
      "quote": "the dragon makes it clear that he is the chthonic forerunner of the self",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -4686,7 +4708,9 @@
      "quote": "Adam Kadmon...is himself the process of transformation...The alchemical formula for this is the Axiom of Maria",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -4701,7 +4725,9 @@
      "quote": "She is the sacred harlot ( meretrix )",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ],
    "layer": "amplification",
@@ -4718,7 +4744,9 @@
      "quote": "Adam Kadmon appears here in the classic form of the son-lover",
      "confidence": "medium",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -4733,7 +4761,9 @@
      "quote": "In the heat of the nigredo the...anima media natura holds dominion...Wisdom of the Old Testament",
      "confidence": "medium",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -4748,7 +4778,9 @@
      "quote": "green lion there was also...Both were Mercurius",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -4763,7 +4795,9 @@
      "quote": "renewing his kingly power...This aqua permanens was then used to revive or reanimate",
      "confidence": "medium",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -4778,7 +4812,9 @@
      "quote": "the Western equivalent...namely the union of yang and yin in tao",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -4794,7 +4830,9 @@
      "confidence": "high",
      "verified": true,
      "claim_type": "jung-asserts",
-     "source": "Dorn"
+     "source": "Dorn",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -4809,7 +4847,9 @@
      "quote": "The blood of the green lion drunk by the queen",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ],
    "layer": "amplification",
@@ -4826,7 +4866,9 @@
      "quote": "attained his redness ( rubedo ) through the solificatio",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -4841,7 +4883,9 @@
      "quote": "make the filius regius into the rearisen Primordial Man, who is the cosmos.",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -4856,7 +4900,9 @@
      "quote": "God gives the four elements as the weapons with which he shall conquer the world.",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -4871,7 +4917,9 @@
      "quote": "The anima mundi is the feminine half of Mercurius.",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -4887,7 +4935,9 @@
      "confidence": "high",
      "verified": true,
      "claim_type": "jung-quotes-source",
-     "source": "Khunrath"
+     "source": "Khunrath",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -4902,7 +4952,9 @@
      "quote": "he is an allegory of the devil",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -4917,7 +4969,9 @@
      "quote": "the filius regius is identical with Mercurius",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -4932,7 +4986,9 @@
      "quote": "in Christian hermeneutics the phoenix is made an allegory of Christ",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-reports-parallel"
+     "claim_type": "jung-reports-parallel",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -4947,7 +5003,9 @@
      "quote": "indeed, it is renewal itself.",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -4962,7 +5020,9 @@
      "quote": "This Mercurius duplex, who ascends and descends, is the uroboros",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -4977,7 +5037,9 @@
      "quote": "He corresponds to the chên-yên (true man) of Chinese alchemy.",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -4992,7 +5054,9 @@
      "quote": "The chên-yên is the product of the opus.",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -5007,7 +5071,9 @@
      "quote": "his own self, which is the “true man.”",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -5022,7 +5088,9 @@
      "quote": "the dragon destroyed itself ... and changed into the lion",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -5037,7 +5105,9 @@
      "quote": "made mother Luna visible ... It is primarily the feminine element in man, the anima",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -5052,7 +5122,9 @@
      "quote": "In him all opposites are fused together.",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -5067,7 +5139,9 @@
      "quote": "medieval alchemy ... was in the last resort a continuation of the doctrine of the Holy Ghost",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -5082,7 +5156,9 @@
      "quote": "Her position corresponds on the one hand to that of Luna",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -5098,7 +5174,9 @@
      "confidence": "medium",
      "verified": true,
      "claim_type": "jung-quotes-source",
-     "source": "Khunrath"
+     "source": "Khunrath",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -5113,7 +5191,9 @@
      "quote": "The worm therefore signifies the second Adam, Christ.",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-reports-parallel"
+     "claim_type": "jung-reports-parallel",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -5128,7 +5208,9 @@
      "quote": "they projected the Passion as an unconscious premise into the chemical transformations",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -5143,7 +5225,9 @@
      "quote": "the king is essentially synonymous with the sun",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -5158,7 +5242,9 @@
      "quote": "She is the vessel which must be broken asunder in order to extract the precious content",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -5173,7 +5259,9 @@
      "quote": "The appearance of a pair of doves points to the imminent marriage of the filius regius",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -5189,7 +5277,9 @@
      "confidence": "high",
      "verified": true,
      "claim_type": "jung-reports-parallel",
-     "source": "Abraham Eleazar"
+     "source": "Abraham Eleazar",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -5204,7 +5294,9 @@
      "quote": "the winged youth is Sol, the filius solis, lapis, aurum philosophicum",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -5219,7 +5311,9 @@
      "quote": "he will become real only if he can unite with Luna, the “mother of mortal bodies.”",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -5234,7 +5328,9 @@
      "quote": "Diana as the numen and nymph of this spring is an excellent formulation of the figure we know as the anima",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -5249,7 +5345,9 @@
      "quote": "The nymph of the spring is in the last analysis Luna, the mother-beloved",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -5264,7 +5362,9 @@
      "quote": "in reality it is merely the ego with its shadow where the abysmal depths of human nature begin to appear",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -5279,7 +5379,9 @@
      "quote": "The moon with her antithetical nature is, in a sense, a prototype of individuation, a prefiguration of the self",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -5294,7 +5396,9 @@
      "quote": "Luna is really the mother of the sun",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -5309,7 +5413,9 @@
      "quote": "the unconscious is pregnant with consciousness and gives birth to it",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -5324,7 +5430,9 @@
      "quote": "Logos and Eros are intellectually formulated intuitive equivalents of the archetypal images of Sol and Luna",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -5339,7 +5447,9 @@
      "quote": "Logos and Eros are intellectually formulated intuitive equivalents of the archetypal images of Sol and Luna",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -5354,7 +5464,9 @@
      "quote": "The dark sun of feminine psychology is connected with the father-imago, since the father is the first carrier of the animus-image",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -5370,7 +5482,9 @@
      "confidence": "high",
      "verified": true,
      "claim_type": "jung-quotes-source",
-     "source": "Glauber"
+     "source": "Glauber",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -5385,7 +5499,9 @@
      "quote": "Salt by contrast is a “light” substance, similar to the lapis",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -5400,7 +5516,9 @@
      "quote": "the dark, dangerous, rabid dog changes into an eagle at the time of the plenilunium",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -5415,7 +5533,9 @@
      "quote": "the winged youth, who represents the other aspect, or personifies the “true sulphur",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -5430,7 +5550,9 @@
      "quote": "the rabid dog, who is none other than the vindictive and treacherous aspect of Diana as the new moon",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -5445,7 +5567,9 @@
      "quote": "That the dog and the thief are identical",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -5461,7 +5585,9 @@
      "confidence": "high",
      "verified": true,
      "claim_type": "jung-quotes-source",
-     "source": "Ruland, Lexicon alchemiae"
+     "source": "Ruland, Lexicon alchemiae",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -5477,7 +5603,9 @@
      "confidence": "high",
      "verified": true,
      "claim_type": "jung-reports-parallel",
-     "source": "Turba Philosophorum"
+     "source": "Turba Philosophorum",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -5492,7 +5620,9 @@
      "quote": "psyche is essentially conflict between blind instinct and will",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -5507,7 +5637,9 @@
      "quote": "we can hardly conceive of will and freedom of choice without consciousness",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -5522,7 +5654,9 @@
      "quote": "we must also include in the unconscious the psychoid functions that are not capable of consciousness",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -5537,7 +5671,9 @@
      "quote": "Archetype and instinct are the most polar opposites imaginable",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -5552,7 +5688,9 @@
      "quote": "the archetype represents the authentic element of spirit",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -5567,7 +5705,9 @@
      "quote": "the archetype as an image of instinct is a spiritual goal",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -5582,7 +5722,9 @@
      "quote": "Archetypes are typical forms of behaviour",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -5597,7 +5739,9 @@
      "quote": "consciousness enables him to adapt in an orderly way and to check the instincts",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -5612,7 +5756,9 @@
      "quote": "conscious and unconscious have no clear demarcations",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -5627,7 +5773,9 @@
      "quote": "the lumen naturae which illuminates consciousness",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -5642,7 +5790,9 @@
      "quote": "the archetypes have, when they appear, a distinctly numinous character",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -5657,7 +5807,9 @@
      "quote": "should not be confused with the archetype as such",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -5672,7 +5824,9 @@
      "quote": "between collective consciousness and the collective unconscious there is an almost unbridgeable gulf",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -5687,7 +5841,9 @@
      "quote": "an effective defence against the brute force of collective consciousness and the mass psyche",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -5702,7 +5858,9 @@
      "quote": "the will, as disposable energy, gradually subordinates itself to the stronger factor ... I call the self",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -5717,7 +5875,9 @@
      "quote": "The archetype as such is a psychoid factor",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -5732,7 +5892,9 @@
      "quote": "with its psychoid nature, forms the bridge to matter in general",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -5747,7 +5909,9 @@
      "quote": "the One Scintilla or Monad is to be regarded as a symbol of the self",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -5762,7 +5926,9 @@
      "quote": "the position of the archetype would be located beyond the psychic sphere",
      "confidence": "medium",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -5777,7 +5943,9 @@
      "quote": "he is a symbol of the self, and hence a visualization of the",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -5793,7 +5961,9 @@
      "confidence": "high",
      "verified": true,
      "claim_type": "jung-reports-parallel",
-     "source": "alchemical tradition"
+     "source": "alchemical tradition",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -5808,7 +5978,9 @@
      "quote": "readily lent itself as a biblical synonym for the alchemical Mercurius",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -5823,7 +5995,9 @@
      "quote": "The second Adam is Christ",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -5838,7 +6012,9 @@
      "quote": "Adam would then be a quaternarius, as he was composed of red, black, white, and green dust",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -5853,7 +6029,9 @@
      "quote": "he is the psyche par excellence",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -5868,7 +6046,9 @@
      "quote": "the four are the four orienting functions of consciousness",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -5883,7 +6063,9 @@
      "quote": "Adam is the homo maximus , the Anthropos, from whom the macrocosm arose",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -5898,7 +6080,9 @@
      "quote": "Adam's dual nature is reflected in his hermaphroditism",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -5914,7 +6098,9 @@
      "confidence": "high",
      "verified": true,
      "claim_type": "jung-quotes-source",
-     "source": "Gloria mundi"
+     "source": "Gloria mundi",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -5930,7 +6116,9 @@
      "confidence": "high",
      "verified": true,
      "claim_type": "jung-reports-parallel",
-     "source": "Rabbinic tradition"
+     "source": "Rabbinic tradition",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -5945,7 +6133,9 @@
      "quote": "the statue evidently denotes the end-product of the process, the lapis Philosophorum",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -5960,7 +6150,9 @@
      "quote": "the statue or pillar is either the perfect Primordial Man",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -5976,7 +6168,9 @@
      "confidence": "medium",
      "verified": true,
      "claim_type": "jung-quotes-source",
-     "source": "Zohar"
+     "source": "Zohar",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -5991,7 +6185,9 @@
      "quote": "The statue stands for the inert materiality of Adam, who still needs an animating soul",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -6006,7 +6202,9 @@
      "quote": "The daemonic Lilith seems to be a certain aspect of Adam",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -6021,7 +6219,9 @@
      "quote": "corresponds to the primitive man, the",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -6036,7 +6236,9 @@
      "quote": "= Adam Kadmon the author has contaminated two opposites",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -6051,7 +6253,9 @@
      "quote": "Psychologically this dark figure is the unconscious anima",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -6066,7 +6270,9 @@
      "quote": "The black Shulamite in our text corresponds to Malchuth as a widow",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -6081,7 +6287,9 @@
      "quote": "thus proved to be a real homo maximus and Anthropos",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-reports-parallel"
+     "claim_type": "jung-reports-parallel",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -6096,7 +6304,9 @@
      "quote": "In the idea of the homo maximus the Above and Below of creation are reunited",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -6111,7 +6321,9 @@
      "quote": "a strange parallel in Parvati",
      "confidence": "medium",
      "verified": true,
-     "claim_type": "jung-reports-parallel"
+     "claim_type": "jung-reports-parallel",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -6127,7 +6339,9 @@
      "confidence": "high",
      "verified": true,
      "claim_type": "jung-quotes-source",
-     "source": "Mylius"
+     "source": "Mylius",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -6143,7 +6357,9 @@
      "confidence": "high",
      "verified": true,
      "claim_type": "jung-reports-parallel",
-     "source": "Rosarium philosophorum (Hermes quotation)"
+     "source": "Rosarium philosophorum (Hermes quotation)",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -6158,7 +6374,9 @@
      "quote": "the equivalent of the coniunctio is the mixing of substances",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -6173,7 +6391,9 @@
      "quote": "in it dwells the Mercurial serpent",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-reports-parallel"
+     "claim_type": "jung-reports-parallel",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -6188,7 +6408,9 @@
      "quote": "it is also Lucifer, the most beautiful of God’s angels",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -6203,7 +6425,9 @@
      "quote": "illustration of the “fils de l’homme ” (= Mercurius)",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -6218,7 +6442,9 @@
      "quote": "Alchemically he corresponds to the spiritus vegetativus , Mercurius",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -6233,7 +6459,9 @@
      "quote": "in Yesod is accomplished the mystery of the “unitio” ... of the upper, Tifereth, and the lower, Malchuth",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -6249,7 +6477,9 @@
      "confidence": "high",
      "verified": true,
      "claim_type": "jung-reports-parallel",
-     "source": "Paracelsus"
+     "source": "Paracelsus",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -6264,7 +6494,9 @@
      "quote": "It represents feminine matter",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -6279,7 +6511,9 @@
      "quote": "The nigredo corresponds to the darkness of the unconscious",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -6294,7 +6528,9 @@
      "quote": "the Shulamite will become Sophia",
      "confidence": "medium",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -6309,7 +6545,9 @@
      "quote": "She appears chiefly as the “lower,” as Malchuth",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -6324,7 +6562,9 @@
      "quote": "Geryon corresponds to the cosmogonic Adam Kadmon",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -6339,7 +6579,9 @@
      "quote": "an active principle (sulphur) and a passive (salt)",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -6354,7 +6596,9 @@
      "quote": "aqua permanens or spiritual water ... which are likewise media of conjunction",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -6370,7 +6614,9 @@
      "confidence": "high",
      "verified": true,
      "claim_type": "jung-quotes-source",
-     "source": "Tractatus Micreris"
+     "source": "Tractatus Micreris",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -6385,7 +6631,9 @@
      "quote": "synchronicity is its para-psychological equivalent",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -6401,7 +6649,9 @@
      "confidence": "high",
      "verified": true,
      "claim_type": "jung-quotes-source",
-     "source": "Dorn"
+     "source": "Dorn",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -6416,7 +6666,9 @@
      "quote": "the Mother of God represents the body",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -6431,7 +6683,9 @@
      "quote": "it consists in the imago Dei imprinted in man. This imago is the true quintessence",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -6446,7 +6700,9 @@
      "quote": "The Chelidonia, a synonym for the philosophical gold",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-reports-parallel"
+     "claim_type": "jung-reports-parallel",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -6461,7 +6717,9 @@
      "quote": "the image of the self (the golden quaternity) draws a quintessence out of the chthonic spirit",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -6476,7 +6734,9 @@
      "quote": "the lily was conceived to be Mercurius and the quintessence itself",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-reports-parallel"
+     "claim_type": "jung-reports-parallel",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -6491,7 +6751,9 @@
      "quote": "Ros marinus (sea-dew) was for the alchemist a welcome analogy for the aqua permanens",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-reports-parallel"
+     "claim_type": "jung-reports-parallel",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -6506,7 +6768,9 @@
      "quote": "a synonym for the red tincture, a preliminary stage of the lapis",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-reports-parallel"
+     "claim_type": "jung-reports-parallel",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -6521,7 +6785,9 @@
      "quote": "the celestial balsam or life principle, which is identical with the God-image",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -6536,7 +6802,9 @@
      "quote": "a representation of the individuation process ... or what we today call active imagination",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -6551,7 +6819,9 @@
      "quote": "the alchemical operation seems to us the equivalent of the psychological process of active imagination",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -6566,7 +6836,9 @@
      "quote": "Confrontation with the shadow produces at first a dead balance ... the alchemists called this stage nigredo",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -6581,7 +6853,9 @@
      "quote": "The unio mentalis ... means knowledge of oneself",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -6596,7 +6870,9 @@
      "quote": "regarded the self as a substance ... This view fully accords with the Indian idea of purusha-atman",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-reports-parallel"
+     "claim_type": "jung-reports-parallel",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -6611,7 +6887,9 @@
      "quote": "corresponds to Dorn's substantia coelestis , that is, to knowledge of the inner light—the self or imago Dei",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -6627,7 +6905,9 @@
      "confidence": "high",
      "verified": true,
      "claim_type": "jung-reports-parallel",
-     "source": "Albertus Magnus"
+     "source": "Albertus Magnus",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -6642,7 +6922,9 @@
      "quote": "the matrix and \"nurse of all things\" makes it an unsurpassable analogy of the unconscious",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -6658,7 +6940,9 @@
      "confidence": "high",
      "verified": true,
      "claim_type": "jung-reports-parallel",
-     "source": "Albertus Magnus"
+     "source": "Albertus Magnus",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -6673,7 +6957,9 @@
      "quote": "The alchemical interpretation of him as Mercurius",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-reports-parallel"
+     "claim_type": "jung-reports-parallel",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -6688,7 +6974,9 @@
      "quote": "the dying and resurgent God-man and hence a parallel to Christ",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-reports-parallel"
+     "claim_type": "jung-reports-parallel",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -6703,7 +6991,9 @@
      "quote": "the self or imago Dei which is here united with its chthonic counterpart, the feminine spirit of the unconscious",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -6718,7 +7008,9 @@
      "quote": "she was very distinctly prefigured in the Sophia of the Old Testament",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -6733,7 +7025,9 @@
      "quote": "the treasure-house of the archetypes, the \"gazophylacium\" of the alchemists, and the collective unconscious",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -6748,7 +7042,9 @@
      "quote": "identify this anima mundi with the Biblical imago Dei",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-reports-parallel"
+     "claim_type": "jung-reports-parallel",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -6763,7 +7059,9 @@
      "quote": "the archetype of the Anthropos ... down to the figure of the homunculus in Faust",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -6778,7 +7076,9 @@
      "quote": "The production of the lapis was the goal of alchemy in general.",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -6794,7 +7094,9 @@
      "confidence": "high",
      "verified": true,
      "claim_type": "jung-reports-parallel",
-     "source": "Dorn"
+     "source": "Dorn",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -6810,7 +7112,9 @@
      "confidence": "high",
      "verified": true,
      "claim_type": "jung-reports-parallel",
-     "source": "Schoolmen"
+     "source": "Schoolmen",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -6825,7 +7129,9 @@
      "quote": "there can be no doubt about its tendency to spiritualize the",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -6840,7 +7146,9 @@
      "quote": "By sublimating matter he concretized spirit.",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -6855,7 +7163,9 @@
      "quote": "the anima mundi , entered into material things and was caught there",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-reports-parallel"
+     "claim_type": "jung-reports-parallel",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -6870,7 +7180,9 @@
      "quote": "Dorn’s caelum ... For the psychologist it is the self",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -6885,7 +7197,9 @@
      "quote": "It represents nothing less than a corpus glorificationis , the resurrected body",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-reports-parallel"
+     "claim_type": "jung-reports-parallel",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -6900,7 +7214,9 @@
      "quote": "the Christian standpoint would correspond to the “ unio mentalis in the overcoming of the body",
      "confidence": "medium",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -6915,7 +7231,9 @@
      "quote": "the experience of the self is always a defeat for the ego.",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -6930,7 +7248,9 @@
      "quote": "portrays the self as a concentric structure, often in the form of a squaring of the circle",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -6945,7 +7265,9 @@
      "quote": "This is where insight, the unio mentalis , begins to become real.",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -6960,7 +7282,9 @@
      "quote": "and attained what the alchemists called the unio mentalis.",
      "confidence": "medium",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -6975,7 +7299,9 @@
      "quote": "the integration of the unconscious with consciousness, whereby both are altered",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -6990,7 +7316,9 @@
      "quote": "when we talk of God or gods we are speaking of debatable images from the psychoid realm",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -7005,7 +7333,9 @@
      "quote": "It was a work of reconciliation between apparently incompatible opposites",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -7020,7 +7350,9 @@
      "quote": "They are then called “oculi piscium” (fishes’ eyes).",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-reports-parallel"
+     "claim_type": "jung-reports-parallel",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -7035,7 +7367,9 @@
      "quote": "the fishes’ eyes meant the seven eyes or the one eye of God, which is the sun",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-reports-parallel"
+     "claim_type": "jung-reports-parallel",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -7050,7 +7384,9 @@
      "quote": "the fishes’ eyes are tiny soul-sparks from which the shining figure of the filius is put together",
      "confidence": "medium",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -7065,7 +7401,9 @@
      "quote": "the alchemists called their quinta essentia “coelum.”",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-reports-parallel"
+     "claim_type": "jung-reports-parallel",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -7080,7 +7418,9 @@
      "quote": "In alchemy the scintillulae are put together to form the gold (Sol)",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-reports-parallel"
+     "claim_type": "jung-reports-parallel",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -7095,7 +7435,9 @@
      "quote": "other, “unconscious” complexes may possess, as splinter psyches, a certain luminosity of their own",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -7111,7 +7453,9 @@
      "confidence": "high",
      "verified": true,
      "claim_type": "jung-reports-parallel",
-     "source": "Khunrath"
+     "source": "Khunrath",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -7127,7 +7471,9 @@
      "confidence": "high",
      "verified": true,
      "claim_type": "jung-quotes-source",
-     "source": "Khunrath"
+     "source": "Khunrath",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -7143,7 +7489,9 @@
      "confidence": "high",
      "verified": true,
      "claim_type": "jung-reports-parallel",
-     "source": "Dorn"
+     "source": "Dorn",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -7159,7 +7507,9 @@
      "confidence": "high",
      "verified": true,
      "claim_type": "jung-reports-parallel",
-     "source": "Michael Maier"
+     "source": "Michael Maier",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -7175,7 +7525,9 @@
      "confidence": "high",
      "verified": true,
      "claim_type": "jung-reports-parallel",
-     "source": "Michael Maier"
+     "source": "Michael Maier",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -7190,7 +7542,9 @@
      "quote": "Aelia is Agatho’s anima, projected into a “Junonian oak.”",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -7205,7 +7559,9 @@
      "quote": "the inscription itself seems to be a fantasy sprung from that same paradoxical massa confusa of the collective unconscious",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -7220,7 +7576,9 @@
      "quote": "as the trough it is the vessel, and as the protecting tree it is the mother",
      "confidence": "medium",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -7235,7 +7593,9 @@
      "quote": "Cadmus is interpreted alchemically as Mercurius in his masculine form (Sol)",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-reports-parallel"
+     "claim_type": "jung-reports-parallel",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -7250,7 +7610,9 @@
      "quote": "forced the Church to take an important step: the formulation of the doctrine of the privatio boni",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -7265,7 +7627,9 @@
      "quote": "recognized as an equivalent of the homo totus",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -7280,7 +7644,9 @@
      "quote": "The contradictoriness of the unconscious is resolved by the archetype of the nuptial coniunctio, by which the chaos becomes ordered",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -7295,7 +7661,9 @@
      "quote": "endeavours to unite the opposites culminate in the “chymical marriage,” the supreme act of union",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -7311,7 +7679,9 @@
      "confidence": "high",
      "verified": true,
      "claim_type": "jung-quotes-source",
-     "source": "Visio Arislei"
+     "source": "Visio Arislei",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -7326,7 +7696,9 @@
      "quote": "it contains an active sulphur of a red colour, hot and dry.",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -7341,7 +7713,9 @@
      "quote": "like the alchemical sulphur, is closely connected with the devil.",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -7356,7 +7730,9 @@
      "quote": "a Sol niger, a black sun, which coincides with the nigredo and putrefactio",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -7371,7 +7747,9 @@
      "quote": "the alchemical Sol ... is in many respects equal to the lumen naturae",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -7386,7 +7764,9 @@
      "quote": "Sol is regarded as the masculine and active half of Mercurius",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -7401,7 +7781,9 @@
      "quote": "The passive part therefore bears the name of Luna, because she borrows her light from the sun.",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -7417,7 +7799,9 @@
      "confidence": "high",
      "verified": true,
      "claim_type": "jung-quotes-source",
-     "source": "Tabula Smaragdina"
+     "source": "Tabula Smaragdina",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -7432,7 +7816,9 @@
      "quote": "The refulgent body of the sun is the ego and its field of consciousness",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -7447,7 +7833,9 @@
      "quote": "the most important was its frequent use as a God-image",
      "confidence": "medium",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -7462,7 +7850,9 @@
      "quote": "sulphur was the “companion of Luna.”",
      "confidence": "medium",
      "verified": true,
-     "claim_type": "jung-reports-parallel"
+     "claim_type": "jung-reports-parallel",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -7478,7 +7868,9 @@
      "confidence": "high",
      "verified": true,
      "claim_type": "jung-reports-parallel",
-     "source": "Dorn"
+     "source": "Dorn",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -7493,7 +7885,9 @@
      "quote": "Sulphur blackens the sun and consumes it.",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-reports-parallel"
+     "claim_type": "jung-reports-parallel",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -7508,7 +7902,9 @@
      "quote": "Being the inner fire of Mercurius",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -7523,7 +7919,9 @@
      "quote": "This might well be a description of Eros.",
      "confidence": "medium",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -7538,7 +7936,9 @@
      "quote": "sulphur was one of the many synonyms for the mysterious transformative substance",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-reports-parallel"
+     "claim_type": "jung-reports-parallel",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -7553,7 +7953,9 @@
      "quote": "the dragon is clearly the filius macrocosmi and, as such, a parallel figure to Christ",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-reports-parallel"
+     "claim_type": "jung-reports-parallel",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -7568,7 +7970,9 @@
      "quote": "sulphur as the arcane substance was set on a par with Christ",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-reports-parallel"
+     "claim_type": "jung-reports-parallel",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -7583,7 +7987,9 @@
      "quote": "Luna is the “shadow of the sun, and with corruptible bodies she is consumed",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-quotes-source"
+     "claim_type": "jung-quotes-source",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -7598,7 +8004,9 @@
      "quote": "if Sol is the spirit and Luna the body",
      "confidence": "medium",
      "verified": true,
-     "claim_type": "jung-reports-parallel"
+     "claim_type": "jung-reports-parallel",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -7613,7 +8021,9 @@
      "quote": "It is clear from this that salt is an arcane substance.",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -7629,7 +8039,9 @@
      "confidence": "high",
      "verified": true,
      "claim_type": "jung-quotes-source",
-     "source": "Mylius"
+     "source": "Mylius",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -7644,7 +8056,9 @@
      "quote": "salt is constantly associated with the albedo",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -7660,7 +8074,9 @@
      "confidence": "high",
      "verified": true,
      "claim_type": "jung-reports-parallel",
-     "source": "alchemical tradition"
+     "source": "alchemical tradition",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     },
     {
      "volume": 14,
@@ -7669,7 +8085,9 @@
      "confidence": "high",
      "verified": true,
      "claim_type": "jung-quotes-source",
-     "source": "Khunrath"
+     "source": "Khunrath",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -7685,7 +8103,9 @@
      "confidence": "medium",
      "verified": true,
      "claim_type": "jung-reports-parallel",
-     "source": "Rosarium"
+     "source": "Rosarium",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -7701,7 +8121,9 @@
      "confidence": "high",
      "verified": true,
      "claim_type": "jung-reports-parallel",
-     "source": "alchemical tradition"
+     "source": "alchemical tradition",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -7717,7 +8139,9 @@
      "confidence": "high",
      "verified": true,
      "claim_type": "jung-reports-parallel",
-     "source": "Mylius"
+     "source": "Mylius",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -7732,7 +8156,9 @@
      "quote": "the ash is the spirit that dwells in the glorified body",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -7747,7 +8173,9 @@
      "quote": "Inseparable from salt and sea is the quality of amaritudo",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -7762,7 +8190,9 @@
      "quote": "the best known synonyms for the latter are the “chaos” and the “sea",
      "confidence": "medium",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -7778,7 +8208,9 @@
      "confidence": "high",
      "verified": true,
      "claim_type": "jung-quotes-source",
-     "source": "St. Jerome"
+     "source": "St. Jerome",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -7794,7 +8226,9 @@
      "confidence": "high",
      "verified": true,
      "claim_type": "jung-quotes-source",
-     "source": "St. Augustine"
+     "source": "St. Augustine",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -7809,7 +8243,9 @@
      "quote": "can be understood in this sense as a symbol of the self.",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -7824,7 +8260,9 @@
      "quote": "the quaternity embodied in it is the vehicle or throne",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -7839,7 +8277,9 @@
      "quote": "the true psychological foundation of the God-concept",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -7854,7 +8294,9 @@
      "quote": "a symbol of totality and—from the psychological point of view—of the self",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -7869,7 +8311,9 @@
      "quote": "The Ortus is the alchemical ... which represents the living quaternity in its first synthesis",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -7885,7 +8329,9 @@
      "confidence": "high",
      "verified": true,
      "claim_type": "jung-reports-parallel",
-     "source": "Maier"
+     "source": "Maier",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -7901,7 +8347,9 @@
      "confidence": "high",
      "verified": true,
      "claim_type": "jung-reports-parallel",
-     "source": "Tabula Smaragdina"
+     "source": "Tabula Smaragdina",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -7916,7 +8364,9 @@
      "quote": "It corresponds to the struggle between the winged and the wingless dragon, i.e., the uroboros",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -7931,7 +8381,9 @@
      "quote": "the albedo, the moonlight which in the opinion of some alchemists heralds the rising sun",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -7946,7 +8398,9 @@
      "quote": "redness ( rubedo ) which now follows denotes an increase of warmth and light coming from the sun, consciousness",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -7961,7 +8415,9 @@
      "quote": "Mercurius is the light-bringing Nous, who knows the secret of transformation and of immortality",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -7976,7 +8432,9 @@
      "quote": "The aqua pontica (or aqua permanens ) behaves very much like the baptismal water of the Church",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -7991,7 +8449,9 @@
      "quote": "the solutio, which signifies the total dissolution of the imperfect body in the aqua divina",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -8007,7 +8467,9 @@
      "confidence": "high",
      "verified": true,
      "claim_type": "jung-reports-parallel",
-     "source": "Gloria mundi"
+     "source": "Gloria mundi",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -8022,7 +8484,9 @@
      "quote": "Salt as much as ash is a synonym for the albedo",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-reports-parallel"
+     "claim_type": "jung-reports-parallel",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -8038,7 +8502,9 @@
      "confidence": "high",
      "verified": true,
      "claim_type": "jung-reports-parallel",
-     "source": "Gloria mundi"
+     "source": "Gloria mundi",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -8053,7 +8519,9 @@
      "quote": "spark of the anima mundi",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-reports-parallel"
+     "claim_type": "jung-reports-parallel",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -8069,7 +8537,9 @@
      "confidence": "high",
      "verified": true,
      "claim_type": "jung-reports-parallel",
-     "source": "Glauber"
+     "source": "Glauber",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -8085,7 +8555,9 @@
      "confidence": "medium",
      "verified": true,
      "claim_type": "jung-reports-parallel",
-     "source": "Glauber"
+     "source": "Glauber",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -8101,7 +8573,9 @@
      "confidence": "high",
      "verified": true,
      "claim_type": "jung-quotes-source",
-     "source": "Dorn"
+     "source": "Dorn",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -8117,7 +8591,9 @@
      "confidence": "high",
      "verified": true,
      "claim_type": "jung-reports-parallel",
-     "source": "Mylius"
+     "source": "Mylius",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -8132,7 +8608,9 @@
      "quote": "the carrier of a myth, that is to say, of the statements of the collective unconscious",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -8148,7 +8626,9 @@
      "confidence": "high",
      "verified": true,
      "claim_type": "jung-reports-parallel",
-     "source": "Zosimos"
+     "source": "Zosimos",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -8163,7 +8643,9 @@
      "quote": "a living gold, so to speak, which corresponds in every respect to the lapis",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -8178,7 +8660,9 @@
      "quote": "the king, like every archetype, is not just a static image; he signifies a dynamic process",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -8193,7 +8677,9 @@
      "quote": "his procreation and birth, in the form of a hierosgamos",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -8208,7 +8694,9 @@
      "quote": "the murder or sacrifice of the king for the purpose of renewing his kingly power",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -8223,7 +8711,9 @@
      "quote": "the union of the male with the female, and this in turn to the union of conscious and unconscious",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -8238,7 +8728,9 @@
      "quote": "the king personifies a hypertrophy of the ego",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -8253,7 +8745,9 @@
      "quote": "the king is destined for “rotundity,” i.e., wholeness",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -8269,7 +8763,9 @@
      "confidence": "high",
      "verified": true,
      "claim_type": "jung-reports-parallel",
-     "source": "Ripley, Cantilena"
+     "source": "Ripley, Cantilena",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -8284,7 +8780,9 @@
      "quote": "her attempt to rejuvenate the old king and to give him immortality",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -8299,7 +8797,9 @@
      "quote": "a “tutelary madonna” who adopts the king as her son",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -8314,7 +8814,9 @@
      "quote": "the end of the work announced by the cauda pavonis was the birth of the filius regius",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -8329,7 +8831,9 @@
      "quote": "the lapis was brought into more or less clear connection with the ancient idea of the Anthropos",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -8345,7 +8849,9 @@
      "confidence": "medium",
      "verified": true,
      "claim_type": "jung-reports-parallel",
-     "source": "Khunrath"
+     "source": "Khunrath",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -8360,7 +8866,9 @@
      "quote": "more especially as a synonym for the lapis",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-reports-parallel"
+     "claim_type": "jung-reports-parallel",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -8375,7 +8883,9 @@
      "quote": "one of the best-known synonyms for the aqua permanens",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -8390,7 +8900,9 @@
      "quote": "the prima materia and the vessel were identical",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-reports-parallel"
+     "claim_type": "jung-reports-parallel",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -8406,7 +8918,9 @@
      "confidence": "high",
      "verified": true,
      "claim_type": "jung-quotes-source",
-     "source": "Introitus apertus"
+     "source": "Introitus apertus",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -8421,7 +8935,9 @@
      "quote": "Venus appears as the feminine aspect of the king, or as we should say, his anima",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -8436,7 +8952,9 @@
      "quote": "The stone, the filius regius, is the son of this whore",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -8451,7 +8969,9 @@
      "quote": "he represents a dominant of consciousness, such as a generally accepted principle",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -8466,7 +8986,9 @@
      "quote": "her consciousness is enriched by a knowledge of the collective unconscious",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -8481,7 +9003,9 @@
      "quote": "identification of the queen with the mother of God",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-reports-parallel"
+     "claim_type": "jung-reports-parallel",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -8496,7 +9020,9 @@
      "quote": "the rebirth of the king is a gift of the Holy Ghost or of Sapientia",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -8511,7 +9037,9 @@
      "quote": "the work is completed, and the lapis ... has taken shape",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -8526,7 +9054,9 @@
      "quote": "This gives the king immortality in a divine and incorruptible body",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -8541,7 +9071,9 @@
      "quote": "The One born of the Four is the Quinta Essentia",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -8557,7 +9089,9 @@
      "confidence": "high",
      "verified": true,
      "claim_type": "jung-reports-parallel",
-     "source": "Gospel of John"
+     "source": "Gospel of John",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -8572,7 +9106,9 @@
      "quote": "The sublimation of Luna ... is an unmistakable paraphrase ... of the Assumption of the Virgin",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-reports-parallel"
+     "claim_type": "jung-reports-parallel",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -8588,7 +9124,9 @@
      "confidence": "high",
      "verified": true,
      "claim_type": "jung-quotes-source",
-     "source": "Angelus Silesius"
+     "source": "Angelus Silesius",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -8603,7 +9141,9 @@
      "quote": "in her we recognize the crowned Virgin ... who recalls the old pictures of the anima media natura or anima mundi",
      "confidence": "medium",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -8618,7 +9158,9 @@
      "quote": "Her position corresponds ... to that of the Blessed Virgin",
      "confidence": "medium",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -8633,7 +9175,9 @@
      "quote": "the apotheosis of the Queen ... reminds us of its prototype, the coronation of the Virgin Mary",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-reports-parallel"
+     "claim_type": "jung-reports-parallel",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -8648,7 +9192,9 @@
      "quote": "the allegories of Christ as child and lion, the latter representing the body of the Crucified",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-reports-parallel"
+     "claim_type": "jung-reports-parallel",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -8664,7 +9210,9 @@
      "confidence": "high",
      "verified": true,
      "claim_type": "jung-quotes-source",
-     "source": "Khunrath"
+     "source": "Khunrath",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -8679,7 +9227,9 @@
      "quote": "He who held them was “like unto the Son of man,” in agreement with the puellus regius",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-reports-parallel"
+     "claim_type": "jung-reports-parallel",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -8694,7 +9244,9 @@
      "quote": "The king sinking in the sea is the arcane substance",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -8709,7 +9261,9 @@
      "quote": "his ability to unite the polarity of all existence in a symbol",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -8724,7 +9278,9 @@
      "quote": "So, too, the king rises from his “infernal fire” as a crowned dragon",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -8739,7 +9295,9 @@
      "quote": "the son of one day immediately becomes related to the “Hermaphrodite of nature,” ... All these figures are synonyms for Mercurius",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -8754,7 +9312,9 @@
      "quote": "The dragon is an allegory of Christ as well as of the Antichrist",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-reports-parallel"
+     "claim_type": "jung-reports-parallel",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -8769,7 +9329,9 @@
      "quote": "the central idea of the filius philosophorum is based on a conception of the Anthropos",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -8784,7 +9346,9 @@
      "quote": "that inner primordial image which had produced a Purusha or a Gayomart long before the Christian era",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-reports-parallel"
+     "claim_type": "jung-reports-parallel",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -8800,7 +9364,9 @@
      "confidence": "high",
      "verified": true,
      "claim_type": "jung-reports-parallel",
-     "source": "Gnostic tradition"
+     "source": "Gnostic tradition",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -8815,7 +9381,9 @@
      "quote": "This true man is Dorn’s “vir unus” and at the same time the lapis Philosophorum",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -8830,7 +9398,9 @@
      "quote": "it is through his work that Mercurius is freed from his chains",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -8845,7 +9415,9 @@
      "quote": "it is the king who dies or is killed, is dead and buried and on the third day rises again",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -8860,7 +9432,9 @@
      "quote": "the masculine, spiritual father-world ruled over by King Sol with the ... mother-world symbolized by the aqua permanens",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -8875,7 +9449,9 @@
      "quote": "the feminine Luna, who dissolves the king in her moistness",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -8890,7 +9466,9 @@
      "quote": "the place of matter, with its magical fascination, is taken by the unconscious, which was projected into it",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -8905,7 +9483,9 @@
      "quote": "Lion and peacock, emblems of concupiscence and pride, signify the overweening pretensions of the human shadow",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -8920,7 +9500,9 @@
      "quote": "The uroboros is a dramatic symbol for the integration and assimilation of the opposite, i.e., of the shadow",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -8935,7 +9517,9 @@
      "quote": "for consciousness to confront its shadow",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -8950,7 +9534,9 @@
      "quote": "if the son is the dominant, then Sol is his right eye and Luna his left",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -8965,7 +9551,9 @@
      "quote": "if the son is the dominant, then Sol is his right eye and Luna his left",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -8980,7 +9568,9 @@
      "quote": "the latter is understood as the child of Sol and Luna",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-reports-parallel"
+     "claim_type": "jung-reports-parallel",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -8995,7 +9585,9 @@
      "quote": "the latter is understood as the child of Sol and Luna",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-reports-parallel"
+     "claim_type": "jung-reports-parallel",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -9010,7 +9602,9 @@
      "quote": "Here Mercurius in feminine form is the queen",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -9025,7 +9619,9 @@
      "quote": "the queen corresponds to the soul (anima) and the king to spirit, the dominant of consciousness",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -9040,7 +9636,9 @@
      "quote": "the queen corresponds to the soul (anima) and the king to spirit, the dominant of consciousness",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -9055,7 +9653,9 @@
      "quote": "raises the status of the anima from that of a temptress to a psychopomp",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -9071,7 +9671,9 @@
      "confidence": "high",
      "verified": true,
      "claim_type": "jung-quotes-source",
-     "source": "Ruland"
+     "source": "Ruland",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -9087,7 +9689,9 @@
      "confidence": "high",
      "verified": true,
      "claim_type": "jung-quotes-source",
-     "source": "Dorn"
+     "source": "Dorn",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -9102,7 +9706,9 @@
      "quote": "As the transformative substance, therefore, Adam is also the king",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -9117,7 +9723,9 @@
      "quote": "The “old dragon” who prepared the bath ... is, psychologically, a personification of the instinctual psyche",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -9132,7 +9740,9 @@
      "quote": "the unconscious itself initiates the process of renewal",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -9147,7 +9757,9 @@
      "quote": "the unconscious process by which the self is “reborn” ... This state is then described as the “filius regius",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts"
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   }
