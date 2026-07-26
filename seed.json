@@ -1080,7 +1080,7 @@
   },
   {
    "subject": "coniunctio",
-   "relation": "produces",
+   "relation": "followed-by",
    "object": "nigredo",
    "references": [
     {
@@ -5596,7 +5596,7 @@
      "volume": 14,
      "paragraph": 444,
      "quote": "medieval alchemy ... was in the last resort a continuation of the doctrine of the Holy Ghost",
-     "confidence": "high",
+     "confidence": "medium",
      "verified": true,
      "claim_type": "jung-asserts",
      "verified_by": "claude-fable-5",
@@ -8267,8 +8267,8 @@
      "quote": "Sol is the father of Mercurius",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-quotes-source",
-     "source": "Tabula Smaragdina",
+     "claim_type": "jung-reports-parallel",
+     "source": "Tabula Smaragdina (Jung’s paraphrase)",
      "verified_by": "claude-fable-5",
      "verified_date": "2026-07-25"
     }
@@ -9867,9 +9867,10 @@
      "quote": "it is through his work that Mercurius is freed from his chains",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts",
+     "claim_type": "jung-reports-parallel",
      "verified_by": "claude-fable-5",
-     "verified_date": "2026-07-25"
+     "verified_date": "2026-07-25",
+     "source": "alchemical poem (CW14 §480)"
     }
    ]
   },

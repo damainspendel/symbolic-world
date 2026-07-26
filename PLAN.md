@@ -189,3 +189,21 @@ Two layers, both worth automating early:
   codes; `edgesNear` window logic; page lookup) and a few UI smoke tests (reading
   companion renders, mode toggle, add-note round-trips through SwiftData). Run under
   `xcodebuild test` on the simulator.
+
+## Verification audit (2026-07-25, v1.0-cw14)
+
+Every reference in the graph passes a two-stage check: a mechanical
+pre-check (verbatim quote in the cited paragraph) and an independent
+Fable-5 gate review against the full paragraph (SUPPORTED/PARTIAL/WRONG,
+with corrections applied and WRONG edges deleted). The early pre-gate
+batches (238 refs) were retro-verified on 2026-07-25: 178 confirmed,
+54 corrected, 6 edges deleted (~25% correction rate).
+
+Adversarial spot audit: 30 verified refs sampled (seed 20260725) and
+re-attacked by a differently-prompted auditor instructed to break each
+edge. Result: 26/30 upheld; 4 disputes (13.3%), all attribution/modality
+refinements (hedge restored, paraphrase-vs-quotation retyped, causation
+softened to sequence) — 0 content/direction/fabrication errors. All four
+refinements applied. Known residual: claim-type/hedging is the weakest
+axis (~1 in 8 refs may still carry minor attribution imprecision);
+referents and directions audit clean.
