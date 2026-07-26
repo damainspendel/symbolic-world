@@ -976,6 +976,11 @@
    "id": "tree",
    "type": "Symbol",
    "label": "The Tree (mythological)"
+  },
+  {
+   "id": "divine-triad",
+   "type": "Motif",
+   "label": "Divine triad (Yahweh · Logos · Sophia)"
   }
  ],
  "edges": [
@@ -1028,11 +1033,13 @@
     },
     {
      "volume": 16,
-     "paragraph": 467,
-     "quote": "after the coniunctio oppositorum, deathlike stillness reigns...the picture represents the putrefactio",
+     "paragraph": 468,
+     "quote": "The coniunctio was incestuous...The nigredo always appears in conjunction with tenebrositas",
      "confidence": "medium",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -1115,8 +1122,10 @@
      "paragraph": 453,
      "quote": "He stands for the mysterious psychic substance which nowadays we would call the unconscious psyche",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -1192,8 +1201,10 @@
      "paragraph": 493,
      "quote": "the nigredo gives way to the albedo",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -1255,8 +1266,10 @@
      "paragraph": 410,
      "quote": "King and Queen, bridegroom and bride, approach one another...betrothal or marriage",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -1280,8 +1293,10 @@
      "paragraph": 410,
      "quote": "King and Queen, bridegroom and bride, approach one another...betrothal or marriage",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -1435,8 +1450,10 @@
      "paragraph": 231,
      "quote": "In this way Christ realized the idea of the self",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     },
     {
      "volume": 12,
@@ -1670,8 +1687,10 @@
      "paragraph": 283,
      "quote": "the Christ figure wholly lacks a dark side",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -2021,11 +2040,13 @@
     },
     {
      "volume": 16,
-     "paragraph": 453,
-     "quote": "Gabricus disappears into the body of his sister Beya, where he is dissolved into atoms",
+     "paragraph": 467,
+     "quote": "Just as Gabricus dies after becoming united with his sister",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-reports-parallel"
+     "verified": true,
+     "claim_type": "jung-reports-parallel",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -3636,8 +3657,10 @@
      "paragraph": 538,
      "quote": "the coniunctio, corresponds to the central significance of the transference in psychotherapy",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -3651,8 +3674,10 @@
      "paragraph": 357,
      "quote": "unconscious contents are invariably projected at first upon concrete persons and situations",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -3666,8 +3691,10 @@
      "paragraph": 539,
      "quote": "transference phenomenon is...one of the most important syndromes in the process of individuation",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -3681,8 +3708,10 @@
      "paragraph": 420,
      "quote": "it nevertheless provides a workable prima materia",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -3698,8 +3727,10 @@
      "paragraph": 384,
      "quote": "The alchemists aptly personified it as the wily god of revelation, Hermes or Mercurius",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -3715,8 +3746,10 @@
      "paragraph": 471,
      "quote": "the conflict, death, and rebirth...it typifies the content of the transference neurosis",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -3730,8 +3763,10 @@
      "paragraph": 500,
      "quote": "the coniunctio is a hierosgamos of the gods and not a mere love-affair between mortals",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -3747,9 +3782,11 @@
      "paragraph": 451,
      "quote": "Sol says, O Luna, let me be thy husband",
      "confidence": "high",
-     "verified": false,
+     "verified": true,
      "claim_type": "jung-quotes-source",
-     "source": "Rosarium philosophorum"
+     "source": "Rosarium philosophorum",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -3765,14 +3802,16 @@
      "paragraph": 451,
      "quote": "Sol says, O Luna, let me be thy husband",
      "confidence": "high",
-     "verified": false,
+     "verified": true,
      "claim_type": "jung-quotes-source",
-     "source": "Rosarium philosophorum"
+     "source": "Rosarium philosophorum",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
   {
-   "subject": "coniunctio",
+   "subject": "night-sea-journey",
    "relation": "amplified-by",
    "object": "rex-marinus",
    "layer": "amplification",
@@ -3783,8 +3822,11 @@
      "paragraph": 455,
      "quote": "the philosophers are shut up with the brother-sister pair...by the Rex Marinus",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-reports-parallel"
+     "verified": true,
+     "claim_type": "jung-reports-parallel",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25",
+     "source": "Visio Arislei"
     }
    ]
   },
@@ -3798,8 +3840,10 @@
      "paragraph": 468,
      "quote": "a hermaphroditus...turns out to be the long-sought rebis or lapis",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -3813,9 +3857,11 @@
      "paragraph": 515,
      "quote": "their sanctification, and their resurrection, because the Tincture is made white",
      "confidence": "medium",
-     "verified": false,
+     "verified": true,
      "claim_type": "jung-quotes-source",
-     "source": "John Pordage, letter to his soror mystica Jane Leade"
+     "source": "John Pordage, letter to his soror mystica Jane Leade",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -3831,8 +3877,10 @@
      "paragraph": 458,
      "quote": "the hierosgamos of Sol and Luna continues right down to the animal kingdom",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -3848,8 +3896,10 @@
      "paragraph": 458,
      "quote": "the hierosgamos of Sol and Luna continues right down to the animal kingdom",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -4242,8 +4292,10 @@
      "paragraph": 107,
      "quote": "transforms it into a quaternity, which is at the same time a unity",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -4257,8 +4309,10 @@
      "paragraph": 103,
      "quote": "the evil principle is absent from the Trinity ... existence on its own as the devil",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -4272,8 +4326,10 @@
      "paragraph": 283,
      "quote": "reverted to the archaic triad in order to construct its trinitarian God-image",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -4287,8 +4343,10 @@
      "paragraph": 104,
      "quote": "The inclusion of the devil in the quaternity",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -4302,8 +4360,10 @@
      "paragraph": 107,
      "quote": "The fourth constituent ... the earth or the body",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-reports-parallel"
+     "verified": true,
+     "claim_type": "jung-reports-parallel",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -4317,8 +4377,10 @@
      "paragraph": 231,
      "quote": "one can never distinguish empirically between a symbol of the self and a God-image",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -4332,8 +4394,10 @@
      "paragraph": 283,
      "quote": "the self is by definition a complexio oppositorum",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -4347,8 +4411,11 @@
      "paragraph": 250,
      "quote": "the Cross ... a symbol of Christ's struggle with the devil",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-reports-parallel",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25",
+     "source": "Christian tradition (John 12:31)"
     }
    ]
   },
@@ -4362,8 +4429,11 @@
      "paragraph": 654,
      "quote": "to become incarnate in his turn as the dark God ... the figure of the Antichrist",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-reports-parallel",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25",
+     "source": "New Testament eschatology"
     }
    ]
   },
@@ -4377,8 +4447,10 @@
      "paragraph": 414,
      "quote": "we can speak of the Mass as the rite of the individuation process",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -4392,23 +4464,27 @@
      "paragraph": 306,
      "quote": "The idea of perpetual sacrifice and of an eternal priesthood is an essential component of the Mass",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
   {
    "subject": "the-mass",
    "relation": "transforms",
-   "object": "christ",
+   "object": "god-image",
    "references": [
     {
      "volume": 11,
      "paragraph": 413,
      "quote": "It is a transformation of God and man alike",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -4422,8 +4498,10 @@
      "paragraph": 413,
      "quote": "participation mystique ... of priest and congregation with Christ",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -4437,8 +4515,10 @@
      "paragraph": 233,
      "quote": "he is on the way towards realizing his wholeness",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -4452,8 +4532,10 @@
      "paragraph": 567,
      "quote": "Yahweh ... is an antinomy—a totality of inner opposites",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -4467,13 +4549,15 @@
      "paragraph": 617,
      "quote": "Self-reflection becomes an imperative necessity, and for this Wisdom is needed",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
   {
-   "subject": "sophia-wisdom",
+   "subject": "divine-triad",
    "relation": "prefigures",
    "object": "the-trinity",
    "references": [
@@ -4482,8 +4566,10 @@
      "paragraph": 193,
      "quote": "the Logos and Sophia ... a clear prefiguration of the post-Christian Trinity",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -4497,8 +4583,11 @@
      "paragraph": 613,
      "quote": "As a psychopomp she leads the way to God",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-quotes-source",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25",
+     "source": "Wisdom of Solomon"
     }
    ]
   },
@@ -4512,8 +4601,10 @@
      "paragraph": 252,
      "quote": "The Assumptio Mariae paves the way ... also for the quaternity",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
