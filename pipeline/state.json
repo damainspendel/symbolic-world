@@ -1,10 +1,10 @@
 {
- "updated": "2026-07-25T22:12",
+ "updated": "2026-07-26",
  "note": "all listed candidate batches are merged into seed.json (see git log); retro_gate*/audit verdicts likewise applied",
  "graph": {
-  "nodes": 220,
-  "edges": 590,
-  "refs": 614,
+  "nodes": 227,
+  "edges": 610,
+  "refs": 634,
   "verified": "100%"
  },
  "batches": [
@@ -112,13 +112,15 @@
   },
   {
    "id": "b-cw12-3",
-   "status": "pre-checked",
+   "status": "merged",
    "window": "CW12 \u00a7447-515",
    "input": "pipeline/work/b-cw12-3_input.json",
    "candidates": "pipeline/batches/b-cw12-3_candidates.json",
    "edges": 20,
-   "new_nodes": 7
+   "new_nodes": 7,
+   "verdicts": "pipeline/batches/b-cw12-3_verdicts.json",
+   "result": "20/0/0"
   }
  ],
- "next": "HELD FOR 02:37 WINDOW: gate b-cw12-3, merge; then CW9ii batches (b-cw9ii-1: Aion fish/Christ chapters), then CW8 Synchronicity (b-cw8-2: \u00a7816-968); per-batch cycle miner->pre-check->gate->merge->test->deploy->commit; ledger at every transition"
+ "next": "assurance experiments 2-3, then arXiv paper"
 }

@@ -1111,6 +1111,41 @@
    "id": "amplification",
    "type": "Operation",
    "label": "Amplification (amplificatio)"
+  },
+  {
+   "id": "gnosticism",
+   "type": "Concept",
+   "label": "Gnosticism"
+  },
+  {
+   "id": "lapis-christ-parallel",
+   "type": "Motif",
+   "label": "The lapis-Christ parallel"
+  },
+  {
+   "id": "petrus-bonus",
+   "type": "Figure",
+   "label": "Petrus Bonus of Ferrara"
+  },
+  {
+   "id": "homo-philosophicus",
+   "type": "Figure",
+   "label": "Homo philosophicus (second Adam)"
+  },
+  {
+   "id": "transubstantiation",
+   "type": "Motif",
+   "label": "Transubstantiation"
+  },
+  {
+   "id": "jakob-boehme",
+   "type": "Figure",
+   "label": "Jakob Boehme"
+  },
+  {
+   "id": "spiritus-mundi",
+   "type": "Concept",
+   "label": "Spiritus mundi (world spirit)"
   }
  ],
  "edges": [
@@ -11607,6 +11642,359 @@
      "claim_type": "jung-asserts",
      "verified_by": "claude-fable-5",
      "verified_date": "2026-07-25"
+    }
+   ]
+  },
+  {
+   "subject": "the-opus",
+   "relation": "parallels-redemptive-work-of",
+   "object": "christ",
+   "references": [
+    {
+     "volume": 12,
+     "paragraph": 453,
+     "quote": "as Jesus Christ, of the house of David, took on human nature for the deliverance and redemption of mankind ... so likewise in our art",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-quotes-source",
+     "source": "Raymond Lully, Codicillus",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-26"
+    }
+   ]
+  },
+  {
+   "subject": "christ",
+   "relation": "made-himself-one-with",
+   "object": "adam",
+   "references": [
+    {
+     "volume": 12,
+     "paragraph": 456,
+     "quote": "Jesus Christ made himself one with Adam and bore him up to that place where the Men of Light dwelt before",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-quotes-source",
+     "source": "Zosimos",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-26"
+    }
+   ]
+  },
+  {
+   "subject": "mercurius",
+   "relation": "made-equal-to",
+   "object": "mary",
+   "references": [
+    {
+     "volume": 12,
+     "paragraph": 505,
+     "quote": "it is not without good reason that Mercurius is made equal [ non immerito … aequiparatur ] to the most glorious and worshipful Virgin Mary",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-quotes-source",
+     "source": "Liber de arte chymica",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-26"
+    }
+   ]
+  },
+  {
+   "subject": "gold",
+   "relation": "dies-and-rises-again-like",
+   "object": "christ",
+   "references": [
+    {
+     "volume": 12,
+     "paragraph": 508,
+     "quote": "his own Son Jesus Christ ... So, too, is the gold ... it dies and rises again, glorious and redeemed",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-quotes-source",
+     "source": "Basilius Valentinus",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-26"
+    }
+   ]
+  },
+  {
+   "subject": "lapis",
+   "relation": "prototype-of",
+   "object": "christ",
+   "references": [
+    {
+     "volume": 12,
+     "paragraph": 509,
+     "quote": "the terrestrial Philosophical Stone is a veritable Harmonia, Contrafactur, and Prototype of the true spiritual and heavenly Stone Jesu Christ",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-quotes-source",
+     "source": "Wasserstein der Weysen",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-26"
+    }
+   ]
+  },
+  {
+   "subject": "quintessence",
+   "relation": "may-be-compared-in-action-with",
+   "object": "christ",
+   "references": [
+    {
+     "volume": 12,
+     "paragraph": 512,
+     "quote": "to produce a quintessence whose action may be compared with that of Christ upon mankind",
+     "confidence": "medium",
+     "verified": true,
+     "claim_type": "jung-quotes-source",
+     "source": "Orthelius",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-26"
+    }
+   ]
+  },
+  {
+   "subject": "spiritus-mundi",
+   "relation": "chief-constituent-of",
+   "object": "lapis",
+   "references": [
+    {
+     "volume": 12,
+     "paragraph": 512,
+     "quote": "this spirit ... became corporeal, and is the chief constituent of the Saviour [ salvatoris ] or Philosophical Stone",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-quotes-source",
+     "source": "Orthelius",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-26"
+    }
+   ]
+  },
+  {
+   "subject": "filius-philosophorum",
+   "relation": "identified-with",
+   "object": "christ",
+   "references": [
+    {
+     "volume": 12,
+     "paragraph": 474,
+     "quote": "The filius philosophorum is here identified with the “bridegroom” who, as we know, is interpreted as Christ",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-reports-parallel",
+     "source": "Aurora consurgens",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-26"
+    }
+   ]
+  },
+  {
+   "subject": "mary",
+   "relation": "identified-with",
+   "object": "arcane-substance",
+   "references": [
+    {
+     "volume": 12,
+     "paragraph": 483,
+     "quote": "In any case the Virgin is identified with the arcanum of the art",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-reports-parallel",
+     "source": "Melchior Cibinensis",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-26"
+    }
+   ]
+  },
+  {
+   "subject": "alchemy",
+   "relation": "identified-with",
+   "object": "sapientia",
+   "references": [
+    {
+     "volume": 12,
+     "paragraph": 465,
+     "quote": "Alchemy is for him absolutely identical with the Sapientia Dei",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-reports-parallel",
+     "source": "author of Aurora consurgens",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-26"
+    }
+   ]
+  },
+  {
+   "subject": "christ",
+   "relation": "identified-with",
+   "object": "homo-philosophicus",
+   "references": [
+    {
+     "volume": 12,
+     "paragraph": 476,
+     "quote": "Christ is identified with the homo philosophicus",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-reports-parallel",
+     "source": "Senior",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-26"
+    }
+   ]
+  },
+  {
+   "subject": "jakob-boehme",
+   "relation": "uses-stone-as-metaphor-for",
+   "object": "christ",
+   "references": [
+    {
+     "volume": 12,
+     "paragraph": 453,
+     "quote": "In the writings of the somewhat later Jakob Böhme, who frequently uses alchemical terms, the stone has already become a metaphor for Christ",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-reports-parallel",
+     "source": "Jakob Boehme",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-26"
+    }
+   ]
+  },
+  {
+   "subject": "the-opus",
+   "relation": "felt-as-equivalent-of",
+   "object": "transubstantiation",
+   "references": [
+    {
+     "volume": 12,
+     "paragraph": 489,
+     "quote": "he felt the alchemical process to be the equivalent of the transubstantiation in the Mass",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-reports-parallel",
+     "source": "Melchior Cibinensis",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-26"
+    }
+   ]
+  },
+  {
+   "subject": "alchemy",
+   "relation": "derives-basic-ideas-from",
+   "object": "gnosticism",
+   "references": [
+    {
+     "volume": 12,
+     "paragraph": 453,
+     "quote": "when we come to the original basic ideas of alchemy we find elements that derive from pagan, and more particularly from Gnostic, sources",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-26"
+    }
+   ]
+  },
+  {
+   "subject": "lapis-christ-parallel",
+   "relation": "has-precursor-in",
+   "object": "gnosticism",
+   "references": [
+    {
+     "volume": 12,
+     "paragraph": 461,
+     "quote": "the lapis-Christ parallel of the scholastic alchemists had a pagan Gnostic precursor",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-26"
+    }
+   ]
+  },
+  {
+   "subject": "petrus-bonus",
+   "relation": "gives-earliest-treatment-of",
+   "object": "lapis-christ-parallel",
+   "references": [
+    {
+     "volume": 12,
+     "paragraph": 462,
+     "quote": "The oldest source to treat specifically of the stone’s connection with Christ would appear to be a text, Pretiosa margarita novella",
+     "confidence": "medium",
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-26"
+    }
+   ]
+  },
+  {
+   "subject": "christ",
+   "relation": "corresponds-to",
+   "object": "inner-man",
+   "references": [
+    {
+     "volume": 12,
+     "paragraph": 459,
+     "quote": "Prometheus and Epimetheus represent the inner and outer man, like Christ and Adam",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-26"
+    }
+   ]
+  },
+  {
+   "subject": "homo-philosophicus",
+   "relation": "identical-or-connected-with",
+   "object": "anthropos",
+   "references": [
+    {
+     "volume": 12,
+     "paragraph": 476,
+     "quote": "he is also the everlasting inner man, identical or at least connected with the Anthropos",
+     "confidence": "medium",
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-26"
+    }
+   ]
+  },
+  {
+   "subject": "christ",
+   "relation": "worshipped-as",
+   "object": "sol",
+   "references": [
+    {
+     "volume": 12,
+     "paragraph": 497,
+     "quote": "helped to put the early worship of Christ as Helios or Sol on a rational basis",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-26"
+    }
+   ]
+  },
+  {
+   "subject": "alchemy",
+   "relation": "aims-to-produce",
+   "object": "corpus-glorificationis",
+   "references": [
+    {
+     "volume": 12,
+     "paragraph": 511,
+     "quote": "it was trying to produce a corpus subtile , a transfigured and resurrected body",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-26"
     }
    ]
   }
