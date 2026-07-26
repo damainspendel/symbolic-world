@@ -1041,6 +1041,46 @@
    "id": "isis",
    "type": "Figure",
    "label": "Isis"
+  },
+  {
+   "id": "imitatio-christi",
+   "type": "Motif",
+   "label": "Imitatio Christi"
+  },
+  {
+   "id": "inner-man",
+   "type": "Concept",
+   "label": "The inner man"
+  },
+  {
+   "id": "christianity",
+   "type": "Concept",
+   "label": "Christianity"
+  },
+  {
+   "id": "mysterium-magnum",
+   "type": "Concept",
+   "label": "Mysterium magnum"
+  },
+  {
+   "id": "religious-function",
+   "type": "Concept",
+   "label": "Religious function of the soul"
+  },
+  {
+   "id": "dogma",
+   "type": "Concept",
+   "label": "Dogma (religious)"
+  },
+  {
+   "id": "alchemy",
+   "type": "Concept",
+   "label": "Alchemy"
+  },
+  {
+   "id": "projection",
+   "type": "Concept",
+   "label": "Projection"
   }
  ],
  "edges": [
@@ -10855,6 +10895,346 @@
      "verified_by": "claude-fable-5",
      "verified_date": "2026-07-25",
      "source": "Philippians 2:6 (kenosis) and patristic Sol-Luna allegory (Hilary, Ephraem Syrus)"
+    }
+   ]
+  },
+  {
+   "subject": "imitatio-christi",
+   "relation": "ought-logically-to-develop",
+   "object": "inner-man",
+   "references": [
+    {
+     "volume": 12,
+     "paragraph": 7,
+     "quote": "The demand made by the imitatio Christi ... ought logically to have the result of developing and exalting the inner man",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
+    }
+   ]
+  },
+  {
+   "subject": "christianity",
+   "relation": "has-left-untouched",
+   "object": "inner-man",
+   "references": [
+    {
+     "volume": 12,
+     "paragraph": 12,
+     "quote": "Christian civilization has proved hollow to a terrifying degree: it is all veneer, but the inner man has remained untouched",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
+    }
+   ]
+  },
+  {
+   "subject": "soul",
+   "relation": "contains-archetype-of",
+   "object": "god-image",
+   "references": [
+    {
+     "volume": 12,
+     "paragraph": 11,
+     "quote": "the soul must contain in itself the faculty of relationship to God ... the archetype of the God-image",
+     "confidence": "medium",
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
+    }
+   ]
+  },
+  {
+   "subject": "mysterium-magnum",
+   "relation": "rooted-in",
+   "object": "psyche",
+   "references": [
+    {
+     "volume": 12,
+     "paragraph": 13,
+     "quote": "the mysterium magnum is not only an actuality but is first and foremost rooted in the human psyche",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
+    }
+   ]
+  },
+  {
+   "subject": "soul",
+   "relation": "possesses",
+   "object": "religious-function",
+   "references": [
+    {
+     "volume": 12,
+     "paragraph": 14,
+     "quote": "the soul is naturaliter religiosa , i.e., possesses a religious function",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
+    }
+   ]
+  },
+  {
+   "subject": "god-image",
+   "relation": "is-a",
+   "object": "archetype",
+   "references": [
+    {
+     "volume": 12,
+     "paragraph": 15,
+     "quote": "when I say as a psychologist that God is an archetype, I mean by that the “type” in the psyche",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
+    }
+   ]
+  },
+  {
+   "subject": "archetype",
+   "relation": "empirically-equivalent-to",
+   "object": "dogma",
+   "references": [
+    {
+     "volume": 12,
+     "paragraph": 20,
+     "quote": "The archetypes of the unconscious can be shown empirically to be the equivalents of religious dogmas",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
+    }
+   ]
+  },
+  {
+   "subject": "the-self",
+   "relation": "differs-essentially-from",
+   "object": "christ",
+   "references": [
+    {
+     "volume": 12,
+     "paragraph": 22,
+     "quote": "The self is a union of opposites par excellence , and this is where it differs essentially from the Christ-symbol",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
+    }
+   ]
+  },
+  {
+   "subject": "the-opposites",
+   "relation": "precondition-for-experience-of",
+   "object": "wholeness",
+   "references": [
+    {
+     "volume": 12,
+     "paragraph": 24,
+     "quote": "Without the experience of the opposites there is no experience of wholeness",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
+    }
+   ]
+  },
+  {
+   "subject": "alchemy",
+   "relation": "endeavours-to-compensate",
+   "object": "christianity",
+   "references": [
+    {
+     "volume": 12,
+     "paragraph": 26,
+     "quote": "so alchemy endeavours to fill in the gaps left open by the Christian tension of opposites",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
+    }
+   ]
+  },
+  {
+   "subject": "dragon",
+   "relation": "represents",
+   "object": "prima-materia",
+   "references": [
+    {
+     "volume": 12,
+     "paragraph": 26,
+     "quote": "the serpens mercurii , the dragon that creates and destroys itself and represents the prima materia",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-reports-parallel",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
+    }
+   ]
+  },
+  {
+   "subject": "consciousness",
+   "relation": "separates",
+   "object": "the-opposites",
+   "references": [
+    {
+     "volume": 12,
+     "paragraph": 30,
+     "quote": "The essence of the conscious mind is discrimination; it must, if it is to be aware of things, separate the opposites",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
+    }
+   ]
+  },
+  {
+   "subject": "the-opposites",
+   "relation": "cancel-out-in",
+   "object": "the-self",
+   "references": [
+    {
+     "volume": 12,
+     "paragraph": 30,
+     "quote": "particularly in the archetype of unity, the self. Here, as in the deity, the opposites cancel out",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
+    }
+   ]
+  },
+  {
+   "subject": "the-shadow",
+   "relation": "disposed-of-through",
+   "object": "projection",
+   "references": [
+    {
+     "volume": 12,
+     "paragraph": 36,
+     "quote": "his shadow, that dark half of the psyche which we invariably get rid of by means of projection",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
+    }
+   ]
+  },
+  {
+   "subject": "the-shadow",
+   "relation": "indistinguishably-merged-with",
+   "object": "collective-unconscious",
+   "references": [
+    {
+     "volume": 12,
+     "paragraph": 38,
+     "quote": "the contents of the personal unconscious (i.e., the shadow) are indistinguishably merged with the archetypal contents of the collective unconscious",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
+    }
+   ]
+  },
+  {
+   "subject": "alchemy",
+   "relation": "preserves-bridge-to",
+   "object": "the-unconscious",
+   "references": [
+    {
+     "volume": 12,
+     "paragraph": 40,
+     "quote": "alchemy and astrology were ceaselessly engaged in preserving the bridge to nature, i.e., to the unconscious psyche",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
+    }
+   ]
+  },
+  {
+   "subject": "alchemy",
+   "relation": "expresses",
+   "object": "individuation",
+   "references": [
+    {
+     "volume": 12,
+     "paragraph": 40,
+     "quote": "What the symbolism of alchemy expresses is the whole problem of the evolution of personality described above, the so-called individuation process",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
+    }
+   ]
+  },
+  {
+   "subject": "archetype",
+   "relation": "forms",
+   "object": "dominant-of-consciousness",
+   "references": [
+    {
+     "volume": 12,
+     "paragraph": 41,
+     "quote": "possessed by archetypes of a numinous nature that force their way to the surface in order to form new dominants",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
+    }
+   ]
+  },
+  {
+   "subject": "the-self",
+   "relation": "is-totality-of",
+   "object": "psyche",
+   "references": [
+    {
+     "volume": 12,
+     "paragraph": 44,
+     "quote": "I call this centre the “self,” which should be understood as the totality of the psyche",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
+    }
+   ]
+  },
+  {
+   "subject": "the-sea",
+   "relation": "symbolizes",
+   "object": "collective-unconscious",
+   "references": [
+    {
+     "volume": 12,
+     "paragraph": 57,
+     "quote": "The sea is the symbol of the collective unconscious, because unfathomed depths lie concealed beneath its reflecting surface",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   }
