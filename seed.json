@@ -1081,6 +1081,36 @@
    "id": "projection",
    "type": "Concept",
    "label": "Projection"
+  },
+  {
+   "id": "tetrameria",
+   "type": "Concept",
+   "label": "Tetrameria (quartering of the process)"
+  },
+  {
+   "id": "artifex",
+   "type": "Figure",
+   "label": "The artifex (alchemist-operator)"
+  },
+  {
+   "id": "visionary-experience",
+   "type": "Motif",
+   "label": "Visionary experience during the opus"
+  },
+  {
+   "id": "meditatio",
+   "type": "Operation",
+   "label": "Meditatio (inner dialogue)"
+  },
+  {
+   "id": "imaginatio",
+   "type": "Operation",
+   "label": "Imaginatio (vera imaginatio)"
+  },
+  {
+   "id": "amplification",
+   "type": "Operation",
+   "label": "Amplification (amplificatio)"
   }
  ],
  "edges": [
@@ -11230,6 +11260,348 @@
      "volume": 12,
      "paragraph": 57,
      "quote": "The sea is the symbol of the collective unconscious, because unfathomed depths lie concealed beneath its reflecting surface",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
+    }
+   ]
+  },
+  {
+   "subject": "alchemy",
+   "relation": "attributed-to-matter-what-belonged-to",
+   "object": "psyche",
+   "references": [
+    {
+     "volume": 12,
+     "paragraph": 332,
+     "quote": "figures and laws were dimly perceived and attributed to matter although they really belonged to the psyche",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
+    }
+   ]
+  },
+  {
+   "subject": "tetrameria",
+   "relation": "corresponds-to",
+   "object": "quaternity",
+   "references": [
+    {
+     "volume": 12,
+     "paragraph": 333,
+     "quote": "the original tetrameria corresponded exactly to the quaternity of elements",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
+    }
+   ]
+  },
+  {
+   "subject": "aqua-permanens",
+   "relation": "identical-with",
+   "object": "prima-materia",
+   "references": [
+    {
+     "volume": 12,
+     "paragraph": 337,
+     "quote": "the philosophical water is the stone or the prima materia itself; but at the same time, it is also its solvent",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
+    }
+   ]
+  },
+  {
+   "subject": "the-opus",
+   "relation": "deals-with-processes-resembling",
+   "object": "psyche",
+   "references": [
+    {
+     "volume": 12,
+     "paragraph": 342,
+     "quote": "not just with chemical experiments as such, but with something resembling psychic processes expressed in pseudochemical language",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
+    }
+   ]
+  },
+  {
+   "subject": "visionary-experience",
+   "relation": "is-projection-of",
+   "object": "the-unconscious",
+   "references": [
+    {
+     "volume": 12,
+     "paragraph": 350,
+     "quote": "events of an hallucinatory or visionary nature were perceived, which cannot be anything but projections of unconscious contents",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
+    }
+   ]
+  },
+  {
+   "subject": "active-imagination",
+   "relation": "seems-to-set-in-motion",
+   "object": "the-opus",
+   "references": [
+    {
+     "volume": 12,
+     "paragraph": 357,
+     "quote": "seems to point to active imagination as the thing that sets the process really going",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
+    }
+   ]
+  },
+  {
+   "subject": "artifex",
+   "relation": "unity-postulated-as-condition-for",
+   "object": "the-opus",
+   "references": [
+    {
+     "volume": 12,
+     "paragraph": 358,
+     "quote": "whose unity is postulated as the absolute condition for the completion of the work",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
+    }
+   ]
+  },
+  {
+   "subject": "alchemy",
+   "relation": "secret-possibly-hidden-in",
+   "object": "the-unconscious",
+   "references": [
+    {
+     "volume": 12,
+     "paragraph": 361,
+     "quote": "the essential secret of the art lies hidden in the human mind—or, to put it in modern terms, in the unconscious",
+     "confidence": "medium",
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
+    }
+   ]
+  },
+  {
+   "subject": "artifex",
+   "relation": "must-accomplish-in-himself-process-attributed-to",
+   "object": "matter",
+   "references": [
+    {
+     "volume": 12,
+     "paragraph": 375,
+     "quote": "he must accomplish in his own self the same process that he attributes to matter",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-reports-parallel",
+     "source": "Dorn; Liber Platonis quartorum",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
+    }
+   ]
+  },
+  {
+   "subject": "psyche",
+   "relation": "unconsciously-identical-with",
+   "object": "arcane-substance",
+   "references": [
+    {
+     "volume": 12,
+     "paragraph": 376,
+     "quote": "there is an unconscious identity between the psyche of the alchemist and the arcane substance",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
+    }
+   ]
+  },
+  {
+   "subject": "arcane-substance",
+   "relation": "concealed-within",
+   "object": "the-body",
+   "references": [
+    {
+     "volume": 12,
+     "paragraph": 377,
+     "quote": "Within the human body is concealed a certain metaphysical substance, known to very few",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-quotes-source",
+     "source": "Gerhard Dorn",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
+    }
+   ]
+  },
+  {
+   "subject": "meditatio",
+   "relation": "is-inner-dialogue-with",
+   "object": "the-unconscious",
+   "references": [
+    {
+     "volume": 12,
+     "paragraph": 390,
+     "quote": "an inner dialogue and hence a living relationship to the answering voice of the “other” in ourselves, i.e., of the unconscious",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
+    }
+   ]
+  },
+  {
+   "subject": "imaginatio",
+   "relation": "opens-door-to-secret-of",
+   "object": "the-opus",
+   "references": [
+    {
+     "volume": 12,
+     "paragraph": 400,
+     "quote": "is in truth a key that opens the door to the secret of the opus",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
+    }
+   ]
+  },
+  {
+   "subject": "imaginatio",
+   "relation": "actualizes-contents-of",
+   "object": "the-unconscious",
+   "references": [
+    {
+     "volume": 12,
+     "paragraph": 400,
+     "quote": "a question of actualizing those contents of the unconscious",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
+    }
+   ]
+  },
+  {
+   "subject": "alchemy",
+   "relation": "employs-method-of",
+   "object": "amplification",
+   "references": [
+    {
+     "volume": 12,
+     "paragraph": 403,
+     "quote": "The method of alchemy, psychologically speaking, is one of boundless amplification.",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
+    }
+   ]
+  },
+  {
+   "subject": "amplification",
+   "relation": "forms-second-part-of",
+   "object": "the-opus",
+   "references": [
+    {
+     "volume": 12,
+     "paragraph": 403,
+     "quote": "This amplificatio forms the second part of the opus",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
+    }
+   ]
+  },
+  {
+   "subject": "mercurius",
+   "relation": "stands-at-beginning-and-end-of",
+   "object": "the-opus",
+   "references": [
+    {
+     "volume": 12,
+     "paragraph": 404,
+     "quote": "Mercurius stands at the beginning and end of the work: he is the prima materia",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
+    }
+   ]
+  },
+  {
+   "subject": "mercurius",
+   "relation": "inwardly-means-spirit-imprisoned-in",
+   "object": "matter",
+   "references": [
+    {
+     "volume": 12,
+     "paragraph": 404,
+     "quote": "inwardly he means the world-creating spirit concealed or imprisoned in matter",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
+    }
+   ]
+  },
+  {
+   "subject": "alchemy",
+   "relation": "tasked-to-redeem",
+   "object": "anima-mundi",
+   "references": [
+    {
+     "volume": 12,
+     "paragraph": 413,
+     "quote": "the divine soul imprisoned in the elements,” whom it is the task of alchemy to redeem",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
+    }
+   ]
+  },
+  {
+   "subject": "alchemy",
+   "relation": "seeks-liberation-of-god-from",
+   "object": "matter",
+   "references": [
+    {
+     "volume": 12,
+     "paragraph": 420,
+     "quote": "but to the liberation of God from the darkness of matter",
      "confidence": "high",
      "verified": true,
      "claim_type": "jung-asserts",

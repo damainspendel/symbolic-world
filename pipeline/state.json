@@ -1,10 +1,10 @@
 {
- "updated": "2026-07-25T22:05",
+ "updated": "2026-07-25T22:30",
  "note": "all listed candidate batches are merged into seed.json (see git log); retro_gate*/audit verdicts likewise applied",
  "graph": {
-  "nodes": 214,
-  "edges": 570,
-  "refs": 594,
+  "nodes": 220,
+  "edges": 590,
+  "refs": 614,
   "verified": "100%"
  },
  "batches": [
@@ -101,13 +101,15 @@
   },
   {
    "id": "b-cw12-2",
-   "status": "pre-checked",
+   "status": "merged",
    "window": "CW12 \u00a7332-420",
    "input": "pipeline/work/b-cw12-2_input.json",
    "candidates": "pipeline/batches/b-cw12-2_candidates.json",
    "edges": 20,
-   "new_nodes": 6
+   "new_nodes": 6,
+   "verdicts": "pipeline/batches/b-cw12-2_verdicts.json",
+   "result": "20/0/0"
   }
  ],
- "next": "gate b-cw12-2"
+ "next": "build b-cw12-3 (lapis-Christ \u00a7447-515)"
 }
