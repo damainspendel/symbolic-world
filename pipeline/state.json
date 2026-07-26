@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-25T18:40",
+ "updated": "2026-07-25T18:42",
  "note": "all listed candidate batches are merged into seed.json (see git log); retro_gate*/audit verdicts likewise applied",
  "graph": {
   "nodes": 214,
@@ -98,7 +98,14 @@
    "new_nodes": 8,
    "verdicts": "pipeline/batches/b-cw12-1_verdicts.json",
    "result": "20/0/0"
+  },
+  {
+   "id": "b-cw12-2",
+   "status": "input-built",
+   "window": "CW12 \u00a7332-420",
+   "input": "pipeline/work/b-cw12-2_input.json",
+   "candidates": "pipeline/batches/b-cw12-2_candidates.json"
   }
  ],
- "next": "build b-cw12-2 (CW12 dream-symbolism \u00a767-170 or Part III \u00a7333+)"
+ "next": "mine b-cw12-2"
 }
