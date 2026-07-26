@@ -966,6 +966,11 @@
    "id": "unconsciousness",
    "type": "Concept",
    "label": "Unconsciousness (initial state)"
+  },
+  {
+   "id": "shadow-of-the-self",
+   "type": "Concept",
+   "label": "Shadow of the Self (dark half of totality)"
   }
  ],
  "edges": [
@@ -1063,8 +1068,10 @@
      "paragraph": 426,
      "quote": "the Rebis or Lapis Philosophorum... a symbol of the self",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -1335,8 +1342,10 @@
      "paragraph": 9,
      "quote": "The ego is, by definition, subordinate to the self",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -1350,8 +1359,10 @@
      "paragraph": 14,
      "quote": "The shadow is a moral problem that challenges the whole ego-personality",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -1365,8 +1376,10 @@
      "paragraph": 40,
      "quote": "anima and animus... personify those of its contents",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     },
     {
      "volume": "9i",
@@ -1390,8 +1403,10 @@
      "paragraph": 40,
      "quote": "anima and animus... personify those of its contents",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -1405,8 +1420,10 @@
      "paragraph": 123,
      "quote": "the traditional Christ-image... the archetype of the self",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     },
     {
      "volume": 11,
@@ -1431,15 +1448,17 @@
   {
    "subject": "antichrist",
    "relation": "corresponds-to",
-   "object": "the-shadow",
+   "object": "shadow-of-the-self",
    "references": [
     {
      "volume": "9ii",
      "paragraph": 76,
      "quote": "the Antichrist would correspond to the shadow of the self",
      "confidence": "medium",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -1453,8 +1472,10 @@
      "paragraph": 76,
      "quote": "In the empirical self, light and shadow form a paradoxical unity",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -1469,8 +1490,10 @@
      "paragraph": 117,
      "quote": "individuation is a 'mysterium coniunctionis'",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -1485,8 +1508,10 @@
      "paragraph": 117,
      "quote": "the self... symbolized by the marriage quaternio",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -1500,8 +1525,10 @@
      "paragraph": 11,
      "quote": "the point of reference for the field of consciousness",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -1515,8 +1542,10 @@
      "paragraph": 42,
      "quote": "the integration of the shadow... without it a recognition of anima and animus is impossible",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -1530,8 +1559,10 @@
      "paragraph": 42,
      "quote": "the integration of the shadow... without it a recognition of anima and animus is impossible",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -1545,8 +1576,10 @@
      "paragraph": 117,
      "quote": "the psychological self. Being a totality",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     },
     {
      "volume": "9i",
@@ -1570,8 +1603,10 @@
      "paragraph": 59,
      "quote": "wholeness... anticipated by the psyche in the form of... mandala symbols",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -1585,8 +1620,10 @@
      "paragraph": 60,
      "quote": "their symbols can no longer be distinguished from the imago Dei",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -1600,9 +1637,11 @@
      "paragraph": 71,
      "quote": "the God-image which is Christ",
      "confidence": "high",
-     "verified": false,
+     "verified": true,
      "claim_type": "jung-quotes-source",
-     "source": "St. Augustine"
+     "source": "St. Augustine",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -1616,8 +1655,10 @@
      "paragraph": 79,
      "quote": "the Christian image of the self—Christ—lacks the shadow that properly belongs to it",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     },
     {
      "volume": 11,
@@ -1639,8 +1680,10 @@
      "paragraph": 426,
      "quote": "the Rebis or Lapis Philosophorum... a symbol of the self",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -1656,8 +1699,10 @@
      "paragraph": 310,
      "quote": "every king carries the symbol of the self... show him as the cosmic Anthropos",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
@@ -1673,8 +1718,10 @@
      "paragraph": 340,
      "quote": "objective symbols of the self... the Naassene conception of the... indivisible point",
      "confidence": "high",
-     "verified": false,
-     "claim_type": "jung-asserts"
+     "verified": true,
+     "claim_type": "jung-asserts",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25"
     }
    ]
   },
