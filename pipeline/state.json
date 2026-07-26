@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-25T17:50",
+ "updated": "2026-07-25T17:52",
  "note": "all listed candidate batches are merged into seed.json (see git log); retro_gate*/audit verdicts likewise applied",
  "graph": {
   "nodes": 206,
@@ -87,7 +87,14 @@
    "id": "cw8_candidates1",
    "status": "merged",
    "candidates": "pipeline/batches/cw8_candidates1.json"
+  },
+  {
+   "id": "b-cw12-1",
+   "status": "input-built",
+   "window": "CW12 \u00a71-66",
+   "input": "pipeline/work/b-cw12-1_input.json",
+   "candidates": "pipeline/batches/b-cw12-1_candidates.json"
   }
  ],
- "next": "breadth: CW12 \u00a71-66 (b-cw12-1)"
+ "next": "mine b-cw12-1"
 }
