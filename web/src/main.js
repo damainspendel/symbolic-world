@@ -83,12 +83,20 @@ function renderPanel(node) {
       ? `<span class="rel">${esc(e.data('relation'))} →</span> ${esc(labelOf(other))}`
       : `${esc(labelOf(other))} <span class="rel">→ ${esc(e.data('relation'))}</span>`
     const r = (e.data('refs') || [])[0]
-    const cite = r ? `CW ${r.volume} §${r.paragraph}${r.verified ? ' <span class="vcheck" title="Independently verified against the source paragraph">✓</span>' : ''}` : ''
+    const cite = r ? `<span class="cite-toggle" title="Show verification record">CW ${r.volume} §${r.paragraph}${r.verified ? ' <span class="vcheck">✓</span>' : ''}</span>` : ''
     const pg = r ? page(r.volume, r.paragraph) : null
     const q = r ? `<blockquote>${esc(r.quote)}</blockquote>` : ''
     const prov = r && r.claim_type ? `<span class="prov">${esc(r.claim_type)}${r.source ? ' · ' + esc(r.source) : ''}</span>` : ''
     const open = pg ? `<span class="pageref">Bollingen · p.${pg}</span>` : ''
-    return `<div class="conn" data-node="${esc(other)}"><div class="conn-h">${dir}<span class="cite">${cite}</span></div>${q}<div class="conn-f">${prov}${open}</div></div>`
+    const CT_DESC = { 'jung-asserts': "Jung's own interpretive claim, in his own voice", 'jung-reports-parallel': 'a doctrine or tradition Jung reports without asserting it himself', 'jung-quotes-source': 'a named source Jung quotes' }
+    const evidence = r ? `<div class="evidence hidden">
+        <div><b>Claim type:</b> ${esc(r.claim_type || '—')} — ${esc(CT_DESC[r.claim_type] || '')}</div>
+        ${r.source ? `<div><b>Source:</b> ${esc(r.source)}</div>` : ''}
+        <div><b>Confidence:</b> ${esc(r.confidence || '—')}</div>
+        <div><b>Verification:</b> ${r.verified ? `passed independent review (${esc(r.verified_by || 'gate')}, ${esc(r.verified_date || '')}) — the full paragraph was checked for support, direction, quote fidelity, and attribution` : 'not yet independently reviewed'}</div>
+        <div><b>Check it yourself:</b> CW ${r.volume} §${r.paragraph}${pg ? `, Bollingen p.${pg}` : ''}</div>
+      </div>` : ''
+    return `<div class="conn" data-node="${esc(other)}"><div class="conn-h">${dir}<span class="cite">${cite}</span></div>${q}<div class="conn-f">${prov}${open}</div>${evidence}</div>`
   }).join('')
   p.innerHTML = `<div class="p-type">${esc(node.data('type'))}${node.data('tradition') ? ' · ' + esc(node.data('tradition')) : ''}</div>
     <h2>${esc(node.data('label'))}</h2>
@@ -96,6 +104,12 @@ function renderPanel(node) {
   p.classList.remove('hidden')
   p.querySelectorAll('.conn').forEach(el => el.addEventListener('click', () => {
     const n = cy.getElementById(el.dataset.node); if (n.nonempty()) { selectNode(n); cy.animate({ center: { eles: n }, zoom: Math.max(cy.zoom(), 0.9) }, { duration: 350 }) }
+  }))
+  // citation click toggles the verification record instead of walking the graph
+  p.querySelectorAll('.cite-toggle').forEach(el => el.addEventListener('click', ev => {
+    ev.stopPropagation()
+    const box = el.closest('.conn').querySelector('.evidence')
+    if (box) box.classList.toggle('hidden')
   }))
 }
 

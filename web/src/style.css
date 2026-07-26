@@ -62,6 +62,15 @@ body {
 .rel { color: var(--gold); font-style: italic; }
 .cite { font: 0.62rem var(--mono); color: var(--gold-dim); white-space: nowrap; }
 .vcheck { color: #7fc9a0; font-size: 0.7rem; }
+.cite-toggle { cursor: pointer; }
+.cite-toggle:hover { color: var(--gold); }
+.evidence {
+  margin: 0.4rem 0 0.2rem; padding: 0.5rem 0.6rem; border-left: 2px solid var(--gold-dim);
+  background: rgba(217, 178, 95, 0.05); border-radius: 0 6px 6px 0;
+  font-size: 0.72rem; line-height: 1.5; color: var(--ink-faint);
+}
+.evidence b { color: var(--ink); font-weight: 600; }
+.evidence.hidden { display: none; }
 .conn blockquote { font-size: 0.82rem; font-style: italic; color: var(--ink-faint); margin: 0.35rem 0; line-height: 1.45; }
 .conn blockquote::before { content: "\201C"; } .conn blockquote::after { content: "\201D"; }
 .conn-f { display: flex; gap: 0.7rem; }

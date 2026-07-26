@@ -50,8 +50,8 @@ def load():
     return seed, corpus, pages
 
 
-def main():
-    seed, corpus, pages = load()
+def validate(seed, corpus, pages):
+    """Run every integrity check; return the list of failure messages."""
     fails = []
 
     def check(cond, msg):
@@ -95,9 +95,54 @@ def main():
             if str(r["volume"]) in vols_with_pages:
                 check(key in pages, f"[page] no page for CW{r['volume']} §{r['paragraph']}  ({tag})")
 
+    return fails
+
+
+def canaries(seed, corpus, pages):
+    """Deliberately corrupt copies of real data; every mutation MUST be caught
+    by validate() or the validators themselves have regressed. Returns a list
+    of canary names that were NOT caught (empty = all good)."""
+    import copy
+
+    # pick a real verified edge with >=1 reference as the mutation target
+    base_idx = next(i for i, e in enumerate(seed["edges"])
+                    if e.get("references") and e["references"][0].get("verified"))
+
+    def mutated(fn):
+        s = copy.deepcopy(seed)
+        fn(s["edges"][base_idx])
+        return s
+
+    cases = {
+        "fabricated-quote": lambda e: e["references"][0].__setitem__(
+            "quote", "this exact sentence certainly never appears in the corpus zzqx"),
+        "nonexistent-paragraph": lambda e: e["references"][0].__setitem__("paragraph", 999999),
+        "undefined-node": lambda e: e.__setitem__("subject", "no-such-node-zzqx"),
+        "missing-provenance": lambda e: e["references"][0].pop("verified_by", None),
+        "bad-claim-type": lambda e: e["references"][0].__setitem__("claim_type", "someone-asserts"),
+    }
+    uncaught = []
+    for name, fn in cases.items():
+        if not validate(mutated(fn), corpus, pages):
+            uncaught.append(name)
+    return uncaught
+
+
+def main():
+    seed, corpus, pages = load()
+    fails = validate(seed, corpus, pages)
+    edges = seed["edges"]
+
     total_refs = sum(len(e.get("references", [])) for e in edges)
     verified_refs = sum(1 for e in edges for r in e.get("references", []) if r.get("verified"))
     print(f"checked: {len(seed['nodes'])} nodes, {len(edges)} edges, {total_refs} references ({verified_refs} verified)")
+
+    # Canaries: corrupted copies that the validators MUST reject.
+    uncaught = canaries(seed, corpus, pages)
+    if uncaught:
+        fails.extend(f"[canary] validators failed to catch: {c}" for c in uncaught)
+    else:
+        print("canaries: 5/5 planted corruptions caught")
 
     # Vocabulary review (warn-only): relations used by exactly one edge tend to
     # be one-off phrasings worth consolidating; not a failure.
