@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-25T22:30",
+ "updated": "2026-07-25T22:32",
  "note": "all listed candidate batches are merged into seed.json (see git log); retro_gate*/audit verdicts likewise applied",
  "graph": {
   "nodes": 220,
@@ -109,7 +109,14 @@
    "new_nodes": 6,
    "verdicts": "pipeline/batches/b-cw12-2_verdicts.json",
    "result": "20/0/0"
+  },
+  {
+   "id": "b-cw12-3",
+   "status": "input-built",
+   "window": "CW12 \u00a7447-515",
+   "input": "pipeline/work/b-cw12-3_input.json",
+   "candidates": "pipeline/batches/b-cw12-3_candidates.json"
   }
  ],
- "next": "build b-cw12-3 (lapis-Christ \u00a7447-515)"
+ "next": "mine b-cw12-3"
 }
