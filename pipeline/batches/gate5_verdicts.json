@@ -1,0 +1,113 @@
+[
+ {
+  "n": 1,
+  "verdict": "PARTIAL",
+  "reason": "The paragraph asserts in Jung's own voice that 'Besides the green lion there was also... a red lion. Both were Mercurius,' which supports green-lion synonym-of mercurius as jung-asserts. But neither Ripley nor Maier appears anywhere in this paragraph, so the source attribution 'Ripley (in Maier)' is unsupported (it belongs to CW14 §404, edge 3).",
+  "correction": {"subject": "green-lion", "relation": "synonym-of", "object": "mercurius", "claim_type": "jung-asserts", "source": null}
+ },
+ {
+  "n": 2,
+  "verdict": "SUPPORTED",
+  "reason": "The paragraph states verbatim 'Khunrath equates Venus with the green lion,' an equation Jung reports from Khunrath, and the surrounding text ('Venus or the whore corresponds to the erotic aspect of the lion') reinforces the correspondence. Direction is symmetric-safe and claim_type/source (jung-quotes-source, Khunrath) match the attribution."
+ },
+ {
+  "n": 3,
+  "verdict": "SUPPORTED",
+  "reason": "The paragraph says 'Maier cites from Ripley's Tractatus duodecim portarum the remark that the green lion is a means of conjoining the tinctures between sun and moon,' i.e. the green lion is the agent that conjoins Sol and Luna. Direction, relation (mediates the coniunctio), and claim_type/source (jung-quotes-source, Ripley in Maier) are all correct."
+ },
+ {
+  "n": 4,
+  "verdict": "SUPPORTED",
+  "reason": "The paragraph states 'Immediately before the albedo or rubedo all colours appear, as if the peacock were spreading his shimmering fan,' directly identifying the cauda pavonis phase as preceding the albedo. Direction is correct and the ellipsed quote is not misleading."
+ },
+ {
+  "n": 5,
+  "verdict": "SUPPORTED",
+  "reason": "The paragraph identifies the peacock's fan with the 'omnes colores' and says these 'are frequently mentioned in the texts as indicating something like totality,' which Jung develops psychologically (integration into the 'vir unus'). Cauda pavonis symbolizing wholeness/totality is supported in the direction stated."
+ },
+ {
+  "n": 6,
+  "verdict": "SUPPORTED",
+  "reason": "The paragraph opens 'Corvus (crow or raven) or caput corvi (raven's head) is the traditional name for the nigredo,' and the rest of the paragraph amplifies the nigredo through raven symbolism (bird of Hermes, caput mortuum). The raven as amplifying symbol of the nigredo is supported."
+ },
+ {
+  "n": 7,
+  "verdict": "SUPPORTED",
+  "reason": "The paragraph ends 'In Christian tradition the raven is an allegory of the devil' — Jung reporting another tradition's symbolic parallel without endorsing it, which matches jung-reports-parallel exactly. Direction (raven symbolizes devil) is correct."
+ },
+ {
+  "n": 8,
+  "verdict": "PARTIAL",
+  "reason": "The paragraph equates the soul with 'the aqua permanens, which dissolves and coagulates,' calling it 'the arcane substance which is at once the transformer and the transformed' — but 'prima materia' never appears in the paragraph. Equating the arcane substance here with prima materia is a conflation of distinct terms the text does not make.",
+  "correction": {"subject": "aqua-permanens", "relation": "synonym-of", "object": "arcane-substance (and the soul, per 'the salt of the earth is the soul')", "claim_type": "jung-asserts", "source": null}
+ },
+ {
+  "n": 9,
+  "verdict": "PARTIAL",
+  "reason": "The paragraph supports the renewal link: the parable concerns 'renewing his kingly power,' and 'This aqua permanens was then used to revive or reanimate the dead body' of the king. But the queen (Regina) appears nowhere in the paragraph, so the object 'Rex & Regina' overreaches; the edge should target the Rex/king alone.",
+  "correction": {"subject": "aqua-permanens", "relation": "renews", "object": "rex (the king)", "claim_type": "jung-asserts", "source": null}
+ },
+ {
+  "n": 10,
+  "verdict": "WRONG",
+  "reason": "The paragraph does not say the wolf devours the king: it is 'the black waters of chaos — i.e., the unconsciousness of projection — [that] have swallowed up the king,' while the wolf, lion, and other ravening beasts 'symbolized the appetites that break loose when' that swallowing has occurred. The devouring agent is the chaos-waters, not the wolf, and the Regina is absent as well; the edge misattributes the action."
+ },
+ {
+  "n": 11,
+  "verdict": "SUPPORTED",
+  "reason": "The paragraph quotes Kalid's 'Liber secretorum' ('Hermes said... take a Corascene dog and an Armenian bitch, join them together, and they will beget...') and Jung concludes 'It is clear that the mating must refer to the royal marriage of Sol and Luna,' i.e. the dog/bitch imagery amplifies the coniunctio. Quote, source (Kalid/Hermes), and claim_type are correct."
+ },
+ {
+  "n": 12,
+  "verdict": "SUPPORTED",
+  "reason": "The paragraph asserts directly that 'the desperately evasive and universal Mercurius... is none other than the unus mundus, the original, non-differentiated unity of the world or of Being.' Identity relation, direction, and jung-asserts are all correct."
+ },
+ {
+  "n": 13,
+  "verdict": "SUPPORTED",
+  "reason": "The paragraph states 'If mandala symbolism is the psychological equivalent of the unus mundus, then synchronicity is its parapsychological equivalent' — a premise Jung employs affirmatively, treating mandala symbolism as the psychic representation of the unus mundus. Unus-mundus symbolized-by mandala matches this direction."
+ },
+ {
+  "n": 14,
+  "verdict": "PARTIAL",
+  "reason": "The paragraph says of the mysterium coniunctionis: 'It is the Western equivalent of the fundamental principle of classical Chinese philosophy, namely the union of yang and yin in tao' — the correspondence is real and correctly directed. But Jung asserts this equivalence in his own voice as his interpretation, not as a mere report of another tradition's claim, so jung-asserts fits better than jung-reports-parallel.",
+  "correction": {"subject": "coniunctio", "relation": "corresponds-to", "object": "tao (the union of yang and yin)", "claim_type": "jung-asserts", "source": null}
+ },
+ {
+  "n": 15,
+  "verdict": "SUPPORTED",
+  "reason": "Interpreting the dragon's speech from the 'Aurelia occulta' ('I therefore am the One and the Many within me'), Jung concludes 'the dragon makes it clear that he is the chthonic forerunner of the self.' Dragon prefigures the Self is exactly what the paragraph asserts, in Jung's own interpretive voice."
+ },
+ {
+  "n": 16,
+  "verdict": "SUPPORTED",
+  "reason": "The paragraph states that Adam Kadmon 'is himself the process of transformation, its division into three or four parts,' and 'The alchemical formula for this is the Axiom of Maria,' with the Irira quotation showing Adam Kadmon enacting the 1-2-3-4 sequence. Anthropos embodying the Axiom of Maria is supported as Jung's own synthesis."
+ },
+ {
+  "n": 17,
+  "verdict": "SUPPORTED",
+  "reason": "The paragraph concludes 'the Shulamite takes over the ancient role of the hierodule of Ishtar. She is the sacred harlot (meretrix), which is one of the names the alchemist gave his arcane substance.' The meretrix directly amplifies the Shulamite figure, in Jung's own interpretive voice."
+ },
+ {
+  "n": 18,
+  "verdict": "SUPPORTED",
+  "reason": "The paragraph makes Adam Kadmon the Shulamite's lover-bridegroom: 'He is the only one who loves her despite her blackness,' and he 'appears here in the classic form of the son-lover, who, in the hierosgamos of sun and moon, reproduces himself in the mother-beloved.' Shulamite as consort of the Anthropos is supported."
+ },
+ {
+  "n": 19,
+  "verdict": "PARTIAL",
+  "reason": "The paragraph asserts that 'the mind (mens) must be separated from the body,' a discrimination Dorn meant ('By this separation (distractio) Dorn obviously meant...') as the road to the unio mentalis — but the term 'unio mentalis' itself never appears in this paragraph, and the separating subject in the text is the mens, with the unio mentalis being what the separation achieves. The edge also omits Dorn, whose doctrine Jung is expounding.",
+  "correction": {"subject": "unio-mentalis", "relation": "achieved-by-separating", "object": "the-body (mens separated from corpus)", "claim_type": "jung-asserts", "source": "Dorn"}
+ },
+ {
+  "n": 20,
+  "verdict": "SUPPORTED",
+  "reason": "The paragraph says 'In the heat of the nigredo the anima media natura holds dominion,' and that 'The anima media natura corresponds to the Platonic world-soul and the Wisdom of the Old Testament,' with the state described as 'incubation or pregnancy.' The nigredo harbouring Sapientia follows directly from this chain within the one paragraph."
+ },
+ {
+  "n": 21,
+  "verdict": "PARTIAL",
+  "reason": "The paragraph links only the queen to the lion: 'The blood of the green lion drunk by the queen is handed to her in a golden cup of Babylon,' glossed via Rev. 17. The Rex does not appear, so the subject 'Rex & Regina' overreaches; the amplification attaches to the Regina alone.",
+  "correction": {"subject": "regina", "relation": "amplified-by", "object": "green-lion", "claim_type": "jung-asserts", "source": null}
+ }
+]

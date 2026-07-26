@@ -1,0 +1,162 @@
+[
+ {
+  "id": "E6R0",
+  "verdict": "WRONG",
+  "reason": "The quote is spliced misleadingly from opposite ends of the paragraph; §289 nowhere asserts that Mercurius personifies the unconscious. What it asserts is that Mercurius-lapis points to the self, and that the lapis is 'an outcropping of the unconscious' whose 'form and content are largely determined by the unconscious' — a claim about the lapis image, not a personification claim about Mercurius (the Mercurius–unconscious link is already covered by E68R0 from §284)."
+ },
+ {
+  "id": "E65R0",
+  "verdict": "PARTIAL",
+  "reason": "§284 says 'Mercurius consists of all conceivable opposites... is named a unity' — he EMBODIES a union of opposites; 'unites → union-of-opposites' is doubly wrapped (uniting a union) and misstates the relation.",
+  "correction": {
+   "subject": "mercurius",
+   "relation": "embodies",
+   "object": "union-of-opposites",
+   "claim_type": "jung-asserts",
+   "source": null
+  }
+ },
+ {
+  "id": "E66R0",
+  "verdict": "SUPPORTED",
+  "reason": "§296 states directly: 'Mercurius as the lapis is a symbolic expression for the psychological complex which I have defined as the self.' Jung's own conclusion, direction correct."
+ },
+ {
+  "id": "E67R0",
+  "verdict": "SUPPORTED",
+  "reason": "§284, Jung's own summary list: 'he represents on the one hand the self and on the other the individuation process.' Direction and claim_type correct."
+ },
+ {
+  "id": "E68R0",
+  "verdict": "SUPPORTED",
+  "reason": "§284: 'because of the limitless number of his names, also the collective unconscious' — Jung's own summary that Mercurius represents the collective unconscious."
+ },
+ {
+  "id": "E69R0",
+  "verdict": "SUPPORTED",
+  "reason": "§284, Jung's own voice: 'He is the devil, a redeeming psychopomp, an evasive trickster, and God's reflection in physical nature.' Direct identity assertion."
+ },
+ {
+  "id": "E70R0",
+  "verdict": "SUPPORTED",
+  "reason": "§251: 'the elusive Mercurius who evades every grasp—a real trickster who drove the alchemists to despair' — the trickster epithet is Jung's authorial gloss in his own narration, so jung-asserts is right."
+ },
+ {
+  "id": "E71R0",
+  "verdict": "SUPPORTED",
+  "reason": "§267 opens 'Mercurius, following the tradition of Hermes, is many-sided, changeable, and deceitful' — Jung asserting the Mercurius–Hermes continuity; correspondence relation and direction are fine."
+ },
+ {
+  "id": "E72R0",
+  "verdict": "PARTIAL",
+  "reason": "§315 supports the content and direction ('In alchemy, Mercurius is symbolized by the tree as well as by the dragon'), but Jung is explicitly reporting an alchemical designation ('In alchemy...'), not making his own psychological assertion; miscast as jung-asserts.",
+  "correction": {
+   "subject": "mercurius",
+   "relation": "symbolized-by",
+   "object": "dragon",
+   "claim_type": "jung-reports-parallel",
+   "source": "alchemical tradition"
+  }
+ },
+ {
+  "id": "E73R0",
+  "verdict": "SUPPORTED",
+  "reason": "§282: 'Mercurius, it is generally affirmed, is the arcanum, the prima materia' — correctly cast as reported alchemical doctrine (jung-quotes-source, alchemists, with Jung's footnoted sources)."
+ },
+ {
+  "id": "E74R0",
+  "verdict": "SUPPORTED",
+  "reason": "§303 in Jung's own voice: 'Mercurius, that two-faced god, comes as the lumen naturae, the Servator and Salvator, only to those whose reason strives towards the highest light.' The manifestation claim holds; the conditional qualifier is context, not contradiction."
+ },
+ {
+  "id": "E74R1",
+  "verdict": "PARTIAL",
+  "reason": "§256 supports the link, but the operative statement is a quoted alchemical text ('as another text says, \"the universal and scintillating fire of the light of nature\"') which Jung then flags as relating Mercurius to the lumen naturae — reported alchemical material miscast as jung-asserts.",
+  "correction": {
+   "subject": "mercurius",
+   "relation": "manifests-as",
+   "object": "lumen-naturae",
+   "claim_type": "jung-reports-parallel",
+   "source": "alchemical treatises (unnamed texts cited at CW13 §256)"
+  }
+ },
+ {
+  "id": "E75R0",
+  "verdict": "SUPPORTED",
+  "reason": "§304: 'the tree would represent a profile view of it: the self depicted as a process of growth' — Jung's own assertion in the opening of 'The Philosophical Tree'; direction correct."
+ },
+ {
+  "id": "E76R0",
+  "verdict": "SUPPORTED",
+  "reason": "§288: 'what it signifies is the individuation process... The commonest alchemical symbol for this is the tree, the arbor philosophica.' Jung's own claim linking the arbor philosophica to individuation."
+ },
+ {
+  "id": "E77R0",
+  "verdict": "SUPPORTED",
+  "reason": "§458: 'the results of our investigation of the historical material have shown that the tree can be interpreted as the Anthropos or self' — Jung's own conclusion; direction correct."
+ },
+ {
+  "id": "E78R0",
+  "verdict": "PARTIAL",
+  "reason": "§315 supports content and direction (tree symbolizes Mercurius = 'Mercurius is symbolized by the tree'), but as with E72R0 Jung is reporting an alchemical designation ('In alchemy...'), miscast as jung-asserts.",
+  "correction": {
+   "subject": "philosophical-tree",
+   "relation": "symbolizes",
+   "object": "mercurius",
+   "claim_type": "jung-reports-parallel",
+   "source": "alchemical tradition"
+  }
+ },
+ {
+  "id": "E79R0",
+  "verdict": "SUPPORTED",
+  "reason": "§33 in Jung's own voice: 'The golden flower is a mandala symbol I have often met with in the material brought me by my patients.' Direct is-a assertion."
+ },
+ {
+  "id": "E80R0",
+  "verdict": "SUPPORTED",
+  "reason": "§33, Jung explicating the text's doctrine: 'The golden flower is the light, and the light of heaven is the Tao.' Correctly cast as jung-quotes-source with The Secret of the Golden Flower."
+ },
+ {
+  "id": "E81R0",
+  "verdict": "SUPPORTED",
+  "reason": "§31: the union of opposites 'expresses itself in symbols' and when drawn 'symbols appear that are chiefly of the mandala type' — mandala as the symbolic expression of the union-of-opposites process; ellipsis not misleading."
+ },
+ {
+  "id": "E82R0",
+  "verdict": "SUPPORTED",
+  "reason": "§38, Jung's exposition of the text: through the circulation 'the sun is activated and begins its course—in other words, the Tao begins to work and takes the lead.' Correctly attributed to The Secret of the Golden Flower."
+ },
+ {
+  "id": "E83R0",
+  "verdict": "SUPPORTED",
+  "reason": "§96: 'the krater of Poimandres... the vessel which the demiurge sent down to earth filled with Nous.' Relation, direction, and jung-quotes-source attribution to the Poimandres are all correct."
+ },
+ {
+  "id": "E84R0",
+  "verdict": "SUPPORTED",
+  "reason": "§111: 'The homunculus therefore stands for the uroboros, which devours itself and gives birth to itself' — direct assertion within Jung's analysis of Zosimos' visions; amplification layer appropriately scopes the context."
+ },
+ {
+  "id": "E85R0",
+  "verdict": "SUPPORTED",
+  "reason": "§134: 'the apparently absurd statement of the alchemists that the lapis... is a living being, a homunculus' — correctly cast as jung-quotes-source attributed to the alchemists."
+ },
+ {
+  "id": "E86R0",
+  "verdict": "PARTIAL",
+  "reason": "§118 says the dragon 'represents the initial state of UNCONSCIOUSNESS' (a state to be sacrificed), not 'the unconscious' as a psychic system — a real Jungian distinction; the object conflates state with structure.",
+  "correction": {
+   "subject": "dragon",
+   "relation": "symbolizes",
+   "object": "initial-state-of-unconsciousness",
+   "claim_type": "jung-asserts",
+   "source": null
+  }
+ },
+ {
+  "id": "E87R0",
+  "verdict": "SUPPORTED",
+  "reason": "§148: 'the \"light of nature\" was a second, independent source of knowledge for Paracelsus' and the physician 'derives his knowledge from the lumen naturae' — Jung's own historical assertion; direction correct."
+ }
+]

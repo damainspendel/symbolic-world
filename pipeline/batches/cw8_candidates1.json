@@ -1,0 +1,177 @@
+{
+  "new_nodes": [
+    { "id": "psyche", "type": "Concept", "label": "The psyche" },
+    { "id": "instinct", "type": "Concept", "label": "Instinct" },
+    { "id": "spirit", "type": "Concept", "label": "Spirit" },
+    { "id": "psychoid", "type": "Concept", "label": "The psychoid" },
+    { "id": "will", "type": "Concept", "label": "Will (freedom of choice)" },
+    { "id": "pattern-of-behaviour", "type": "Concept", "label": "Pattern of behaviour" },
+    { "id": "numinosity", "type": "Concept", "label": "Numinosity" },
+    { "id": "archetypal-image", "type": "Concept", "label": "Archetypal image" },
+    { "id": "collective-consciousness", "type": "Concept", "label": "Collective consciousness" },
+    { "id": "mass-psyche", "type": "Concept", "label": "Mass psyche / mass man" },
+    { "id": "matter", "type": "Concept", "label": "Matter" }
+  ],
+  "candidate_edges": [
+    {
+      "subject": "instinct",
+      "relation": "polarizes-with",
+      "object": "will",
+      "references": [
+        { "volume": 8, "paragraph": 380, "quote": "psyche is essentially conflict between blind instinct and will", "confidence": "high", "verified": false, "claim_type": "jung-asserts" }
+      ]
+    },
+    {
+      "subject": "will",
+      "relation": "presupposes",
+      "object": "consciousness",
+      "references": [
+        { "volume": 8, "paragraph": 380, "quote": "we can hardly conceive of will and freedom of choice without consciousness", "confidence": "high", "verified": false, "claim_type": "jung-asserts" }
+      ]
+    },
+    {
+      "subject": "the-unconscious",
+      "relation": "includes",
+      "object": "psychoid",
+      "references": [
+        { "volume": 8, "paragraph": 382, "quote": "we must also include in the unconscious the psychoid functions that are not capable of consciousness", "confidence": "high", "verified": false, "claim_type": "jung-asserts" }
+      ]
+    },
+    {
+      "subject": "archetype",
+      "relation": "is",
+      "object": "psychoid",
+      "references": [
+        { "volume": 8, "paragraph": 417, "quote": "The archetype as such is a psychoid factor", "confidence": "high", "verified": false, "claim_type": "jung-asserts" }
+      ]
+    },
+    {
+      "subject": "psychoid",
+      "relation": "bridges",
+      "object": "matter",
+      "references": [
+        { "volume": 8, "paragraph": 420, "quote": "with its psychoid nature, forms the bridge to matter in general", "confidence": "high", "verified": false, "claim_type": "jung-asserts" }
+      ]
+    },
+    {
+      "subject": "archetype",
+      "relation": "polarizes-with",
+      "object": "instinct",
+      "references": [
+        { "volume": 8, "paragraph": 406, "quote": "Archetype and instinct are the most polar opposites imaginable", "confidence": "high", "verified": false, "claim_type": "jung-asserts" }
+      ]
+    },
+    {
+      "subject": "archetype",
+      "relation": "is-authentic-element-of",
+      "object": "spirit",
+      "references": [
+        { "volume": 8, "paragraph": 406, "quote": "the archetype represents the authentic element of spirit", "confidence": "high", "verified": false, "claim_type": "jung-asserts" }
+      ]
+    },
+    {
+      "subject": "archetype",
+      "relation": "is-image-of",
+      "object": "instinct",
+      "references": [
+        { "volume": 8, "paragraph": 415, "quote": "the archetype as an image of instinct is a spiritual goal", "confidence": "high", "verified": false, "claim_type": "jung-asserts" }
+      ]
+    },
+    {
+      "subject": "archetype",
+      "relation": "is",
+      "object": "pattern-of-behaviour",
+      "references": [
+        { "volume": 8, "paragraph": 435, "quote": "Archetypes are typical forms of behaviour", "confidence": "high", "verified": false, "claim_type": "jung-asserts" }
+      ]
+    },
+    {
+      "subject": "consciousness",
+      "relation": "checks",
+      "object": "instinct",
+      "references": [
+        { "volume": 8, "paragraph": 412, "quote": "consciousness enables him to adapt in an orderly way and to check the instincts", "confidence": "high", "verified": false, "claim_type": "jung-asserts" }
+      ]
+    },
+    {
+      "subject": "consciousness",
+      "relation": "continuous-with",
+      "object": "the-unconscious",
+      "references": [
+        { "volume": 8, "paragraph": 397, "quote": "conscious and unconscious have no clear demarcations", "confidence": "high", "verified": false, "claim_type": "jung-asserts" }
+      ]
+    },
+    {
+      "subject": "lumen-naturae",
+      "relation": "illuminates",
+      "object": "consciousness",
+      "references": [
+        { "volume": 8, "paragraph": 389, "quote": "the lumen naturae which illuminates consciousness", "confidence": "high", "verified": false, "claim_type": "jung-asserts" }
+      ]
+    },
+    {
+      "subject": "scintilla",
+      "relation": "symbolizes",
+      "object": "the-self",
+      "references": [
+        { "volume": 8, "paragraph": 388, "quote": "the One Scintilla or Monad is to be regarded as a symbol of the self", "confidence": "high", "verified": false, "claim_type": "jung-asserts" }
+      ]
+    },
+    {
+      "subject": "archetype",
+      "relation": "carries",
+      "object": "numinosity",
+      "references": [
+        { "volume": 8, "paragraph": 405, "quote": "the archetypes have, when they appear, a distinctly numinous character", "confidence": "high", "verified": false, "claim_type": "jung-asserts" }
+      ]
+    },
+    {
+      "subject": "archetypal-image",
+      "relation": "distinct-from",
+      "object": "archetype",
+      "references": [
+        { "volume": 8, "paragraph": 417, "quote": "should not be confused with the archetype as such", "confidence": "high", "verified": false, "claim_type": "jung-asserts" }
+      ]
+    },
+    {
+      "subject": "collective-consciousness",
+      "relation": "polarizes-with",
+      "object": "collective-unconscious",
+      "references": [
+        { "volume": 8, "paragraph": 423, "quote": "between collective consciousness and the collective unconscious there is an almost unbridgeable gulf", "confidence": "high", "verified": false, "claim_type": "jung-asserts" }
+      ]
+    },
+    {
+      "subject": "collective-consciousness",
+      "relation": "produces",
+      "object": "mass-psyche",
+      "references": [
+        { "volume": 8, "paragraph": 426, "quote": "identifications of the subjective with the collective consciousness. Such an identity infallibly produces a mass psyche", "confidence": "high", "verified": false, "claim_type": "jung-asserts" }
+      ]
+    },
+    {
+      "subject": "archetype",
+      "relation": "defends-against",
+      "object": "mass-psyche",
+      "references": [
+        { "volume": 8, "paragraph": 426, "quote": "an effective defence against the brute force of collective consciousness and the mass psyche", "confidence": "high", "verified": false, "claim_type": "jung-asserts" }
+      ]
+    },
+    {
+      "subject": "will",
+      "relation": "subordinates-to",
+      "object": "the-self",
+      "references": [
+        { "volume": 8, "paragraph": 430, "quote": "the will, as disposable energy, gradually subordinates itself to the stronger factor ... I call the self", "confidence": "high", "verified": false, "claim_type": "jung-asserts" }
+      ]
+    },
+    {
+      "subject": "archetype",
+      "relation": "transcends",
+      "object": "psyche",
+      "references": [
+        { "volume": 8, "paragraph": 439, "quote": "the archetypes, therefore have a nature that cannot with certainty be designated as psychic", "confidence": "medium", "verified": false, "claim_type": "jung-asserts" }
+      ]
+    }
+  ]
+}

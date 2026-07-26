@@ -1,0 +1,129 @@
+[
+ {
+  "id": "E2R1",
+  "verdict": "PARTIAL",
+  "reason": "The paragraph asserts that after the coniunctio oppositorum comes deathlike stillness and that the picture represents the putrefactio; 'nigredo' is never named in §467. The supported claim is coniunctio -> putrefactio/death; the coniunctio->nigredo link is asserted only at §468 ('The coniunctio was incestuous... The nigredo always appears in conjunction with tenebrositas').",
+  "correction": {
+   "subject": "coniunctio",
+   "relation": "produces",
+   "object": "putrefactio",
+   "object_label": "Putrefactio (death/decay)",
+   "claim_type": "jung-asserts",
+   "source": null,
+   "citation": "CW16 §467",
+   "note": "If the nigredo object must be kept, re-cite to CW16 §468 with quote 'The coniunctio was incestuous and therefore sinful... The nigredo always appears in conjunction with tenebrositas.'"
+  }
+ },
+ {
+  "id": "E6R1",
+  "verdict": "SUPPORTED",
+  "reason": "Paragraph states directly that the liquid is Mercurius and 'He stands for the mysterious psychic substance which nowadays we would call the unconscious psyche' — Jung's own equation, direction correct, quote verbatim."
+ },
+ {
+  "id": "E11R0",
+  "verdict": "SUPPORTED",
+  "reason": "Paragraph asserts an enantiodromia in which 'the nigredo gives way to the albedo'; nigredo precedes albedo in Jung's own voice, quote exact."
+ },
+ {
+  "id": "E15R1",
+  "verdict": "SUPPORTED",
+  "reason": "Jung asserts the coniunctio Solis et Lunae 'is illustrated in considerable detail' by the picture in which 'King and Queen, bridegroom and bride, approach one another' — the King is an image amplifying the coniunctio, in Jung's interpretive voice."
+ },
+ {
+  "id": "E16R1",
+  "verdict": "SUPPORTED",
+  "reason": "Same §410 passage: the Queen is one of the pair whose approach illustrates the coniunctio Solis et Lunae; image amplification in Jung's own interpretive voice."
+ },
+ {
+  "id": "E57R1",
+  "verdict": "PARTIAL",
+  "reason": "In §453 the Gabricus/Beya image is listed as a variation of the bath/immersion theme — the perilous encroachment of Mercurius/the unconscious — not as an amplification of the coniunctio. The coniunctio–Gabricus link is made at §467 ('Just as Gabricus dies after becoming united with his sister... so, after the coniunctio oppositorum, deathlike stillness reigns').",
+  "correction": {
+   "subject": "coniunctio",
+   "relation": "amplified-by",
+   "object": "gabricus-beya",
+   "claim_type": "jung-reports-parallel",
+   "source": null,
+   "citation": "CW16 §467",
+   "quote": "Just as Gabricus dies after becoming united with his sister...so, after the coniunctio oppositorum, deathlike stillness reigns"
+  }
+ },
+ {
+  "id": "E145R0",
+  "verdict": "SUPPORTED",
+  "reason": "Paragraph states the part played by the hierosgamos, mystical marriage, 'and also by the coniunctio, corresponds to the central significance of the transference in psychotherapy'; correspondence relation is symmetric and quote is accurate."
+ },
+ {
+  "id": "E146R0",
+  "verdict": "SUPPORTED",
+  "reason": "Paragraph asserts from practical analysis that unconscious contents are projected onto persons, resist integration, and 'transfer themselves to the doctor,' creating the transference bond — transference as projection of unconscious contents, in Jung's voice."
+ },
+ {
+  "id": "E147R0",
+  "verdict": "SUPPORTED",
+  "reason": "Paragraph states 'The transference phenomenon is without doubt one of the most important syndromes in the process of individuation'; being a syndrome within the individuation process supports aspect-of, quote accurate across ellipsis."
+ },
+ {
+  "id": "E148R0",
+  "verdict": "SUPPORTED",
+  "reason": "Paragraph states the transference of infantile fantasies to the doctor 'nevertheless provides a workable prima materia' — direct assertion, direction correct."
+ },
+ {
+  "id": "E149R0",
+  "verdict": "SUPPORTED",
+  "reason": "The elusive content that 'flits about from patient to doctor' (the transference content) is what 'the alchemists aptly personified... as Hermes or Mercurius'; 'aptly' marks Jung's own endorsement of the parallel, so jung-asserts with kind parallel is defensible."
+ },
+ {
+  "id": "E150R0",
+  "verdict": "SUPPORTED",
+  "reason": "Paragraph says the conflict-death-rebirth process 'typifies the content of the transference neurosis' and is the psychic process par excellence in psychotherapy — transference paralleling the death-and-rebirth drama; ellipsis does not distort (the 'it' is this same process)."
+ },
+ {
+  "id": "E151R0",
+  "verdict": "SUPPORTED",
+  "reason": "Paragraph states verbatim 'the coniunctio is a hierosgamos of the gods and not a mere love-affair between mortals' — direct is-a assertion in Jung's voice, direction correct."
+ },
+ {
+  "id": "E152R0",
+  "verdict": "SUPPORTED",
+  "reason": "Jung quotes the Rosarium inscription — Sol says 'O Luna, let me be thy husband' — and the paragraph concludes 'this will lead to the coniunctio of the two'; Sol as quoted-source image amplifying the coniunctio is correct, claim_type jung-quotes-source with Rosarium named is right."
+ },
+ {
+  "id": "E153R0",
+  "verdict": "SUPPORTED",
+  "reason": "Same §451 passage: Luna answers 'O Sol, I must submit to thee' and the union of the pair 'will lead to the coniunctio'; Luna as Rosarium-quoted image amplifying the coniunctio, claim_type correct."
+ },
+ {
+  "id": "E154R0",
+  "verdict": "PARTIAL",
+  "reason": "§455 amplifies the immersion in the bath — the night sea journey and descent into the unconscious — via the Visio Arislei, where the Rex Marinus shuts up the philosophers with the brother-sister pair; the Rex Marinus image amplifies the bath/descent motif, not the coniunctio itself, and the parallel comes from a named source.",
+  "correction": {
+   "subject": "night-sea-journey (immersion in the bath / descent into the unconscious)",
+   "relation": "amplified-by",
+   "object": "rex-marinus",
+   "claim_type": "jung-reports-parallel",
+   "source": "Visio Arislei",
+   "citation": "CW16 §455"
+  }
+ },
+ {
+  "id": "E155R0",
+  "verdict": "SUPPORTED",
+  "reason": "The corpse left over from the union feast 'is already a new body, a hermaphroditus,' which 'turns out to be the long-sought rebis or lapis,' and the paragraph names the coniunctio as the act that preceded and left this result — the union produces the two-headed rebis."
+ },
+ {
+  "id": "E156R0",
+  "verdict": "SUPPORTED",
+  "reason": "The paragraph is Pordage's own text calling the making-white (albification) 'their resurrection, because the white rises up out of the black'; albedo symbolizing resurrection/rebirth is asserted in the quoted source's voice, so jung-quotes-source with Pordage named is correct."
+ },
+ {
+  "id": "E157R0",
+  "verdict": "SUPPORTED",
+  "reason": "Paragraph opens 'the hierosgamos of Sol and Luna continues right down to the animal kingdom' — Sol is a constitutive image of the hierosgamos in Jung's own framing of the alchemical material; quote exact."
+ },
+ {
+  "id": "E158R0",
+  "verdict": "SUPPORTED",
+  "reason": "Same §458 passage: Luna is the other partner in 'the hierosgamos of Sol and Luna'; image amplification supported, direction correct."
+ }
+]

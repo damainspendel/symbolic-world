@@ -1,0 +1,120 @@
+{
+ "new_nodes": [
+  {"id": "filius-canis", "type": "Figure", "label": "Filius canis (son of the dog)"},
+  {"id": "dog", "type": "Symbol", "label": "Dog (canis)"},
+  {"id": "succus-lunariae", "type": "Substance", "label": "Succus lunariae (juice of the moon-plant)"},
+  {"id": "basilisk", "type": "Symbol", "label": "Basilisk"},
+  {"id": "hecate", "type": "Figure", "label": "Hecate"},
+  {"id": "contrasexuality", "type": "Concept", "label": "Contrasexuality (inversion of sex roles)"}
+ ],
+ "candidate_edges": [
+  {
+   "subject": "filius-canis",
+   "relation": "synonym-of",
+   "object": "filius-philosophorum",
+   "references": [{"volume": 14, "paragraph": 176, "quote": "Kalid’s “son of the dog” is the same as the much extolled “son of the philosophers.”", "confidence": "high", "verified": false, "claim_type": "jung-asserts"}]
+  },
+  {
+   "subject": "filius-philosophorum",
+   "relation": "expresses-divine-nature-of",
+   "object": "the-self",
+   "references": [{"volume": 14, "paragraph": 176, "quote": "it is at once bright as day and dark as night, a perfect coincidentia oppositorum expressing the divine nature of the self", "confidence": "high", "verified": false, "claim_type": "jung-asserts"}]
+  },
+  {
+   "subject": "logos",
+   "relation": "likened-to",
+   "object": "dog",
+   "references": [{"volume": 14, "paragraph": 176, "quote": "For the Logos is a dog ... who guards and protects the sheep against the wiles of the wolves", "confidence": "high", "verified": false, "claim_type": "jung-quotes-source", "source": "Hippolytus, Elenchos"}]
+  },
+  {
+   "subject": "dog",
+   "relation": "counterbalances",
+   "object": "lapis",
+   "references": [{"volume": 14, "paragraph": 179, "quote": "The motif of the dog is a necessary counterbalance to the excessively praised “light-nature” of the stone", "confidence": "high", "verified": false, "claim_type": "jung-asserts"}]
+  },
+  {
+   "subject": "rabid-dog",
+   "relation": "infects",
+   "object": "rebis",
+   "references": [{"volume": 14, "paragraph": 182, "quote": "the infant hermaphrodite, who is infected from his very cradle by the bite of the rabid Corascene dog", "confidence": "high", "verified": false, "claim_type": "jung-quotes-source", "source": "Philaletha, Introitus apertus"}]
+  },
+  {
+   "subject": "dove",
+   "relation": "assuages",
+   "object": "rabid-dog",
+   "references": [{"volume": 14, "paragraph": 182, "quote": "in the grove of Diana there is a pair of doves, which assuage his raving madness. Then will the impatient, swarthy, rabid dog", "confidence": "high", "verified": false, "claim_type": "jung-quotes-source", "source": "Philaletha, Introitus apertus"}]
+  },
+  {
+   "subject": "succus-lunariae",
+   "relation": "derives-from",
+   "object": "the-unconscious",
+   "references": [{"volume": 14, "paragraph": 180, "quote": "This “liquid” comes from the unconscious but is not always an authentic content of it", "confidence": "high", "verified": false, "claim_type": "jung-asserts"}]
+  },
+  {
+   "subject": "the-unconscious",
+   "relation": "compensates",
+   "object": "consciousness",
+   "references": [{"volume": 14, "paragraph": 184, "quote": "In itself the unconscious is neutral, and its normal function is to compensate the conscious position", "confidence": "high", "verified": false, "claim_type": "jung-asserts"}]
+  },
+  {
+   "subject": "sulphur",
+   "relation": "obstructs-discovery-of",
+   "object": "the-self",
+   "references": [{"volume": 14, "paragraph": 194, "quote": "that “crude sulphur” which with “arsenical malignity” prevents man from discovering his true self", "confidence": "high", "verified": false, "claim_type": "jung-asserts"}]
+  },
+  {
+   "subject": "luna",
+   "relation": "is-eye-of",
+   "object": "basilisk",
+   "references": [{"volume": 14, "paragraph": 215, "quote": "thus the moon in the sky is the eye of the basilisk of heaven", "confidence": "high", "verified": false, "claim_type": "jung-quotes-source", "source": "Paracelsus, De pestilitate"}]
+  },
+  {
+   "subject": "hecate",
+   "relation": "haunts",
+   "object": "anima",
+   "references": [{"volume": 14, "paragraph": 216, "quote": "the baying of Hecate is always there ... This is true of everything feminine and not least of a man’s anima", "confidence": "medium", "verified": false, "claim_type": "jung-asserts"}]
+  },
+  {
+   "subject": "anima",
+   "relation": "personifies-plurality-of",
+   "object": "archetype",
+   "references": [{"volume": 14, "paragraph": 218, "quote": "This role of Luna devolves upon the anima, as she personifies the plurality of archetypes", "confidence": "high", "verified": false, "claim_type": "jung-asserts"}]
+  },
+  {
+   "subject": "albedo",
+   "relation": "emerges-from",
+   "object": "the-unconscious",
+   "references": [{"volume": 14, "paragraph": 220, "quote": "From the darkness of the unconscious comes the light of illumination, the albedo", "confidence": "high", "verified": false, "claim_type": "jung-asserts"}]
+  },
+  {
+   "subject": "luna",
+   "relation": "can-represent",
+   "object": "consciousness",
+   "references": [{"volume": 14, "paragraph": 223, "quote": "the moon is not only dark but is also a giver of light and can therefore represent consciousness", "confidence": "high", "verified": false, "claim_type": "jung-asserts"}]
+  },
+  {
+   "subject": "contrasexuality",
+   "relation": "is-psychological-source-of",
+   "object": "rebis",
+   "references": [{"volume": 14, "paragraph": 225, "quote": "This inversion of roles is probably the chief psychological source for the alchemical concept of the hermaphrodite", "confidence": "medium", "verified": false, "claim_type": "jung-asserts"}]
+  },
+  {
+   "subject": "salt",
+   "relation": "expresses-aspects-of",
+   "object": "the-unconscious",
+   "references": [{"volume": 14, "paragraph": 234, "quote": "the various aspects of the unconscious that are expressed by salt", "confidence": "high", "verified": false, "claim_type": "jung-asserts"}]
+  },
+  {
+   "subject": "the-devil",
+   "relation": "equivalent-to-dark-side-of",
+   "object": "mercurius",
+   "references": [{"volume": 14, "paragraph": 238, "quote": "His equivalent in alchemy is the dark side of Mercurius duplex and, as we saw, the active sulphur", "confidence": "high", "verified": false, "claim_type": "jung-asserts"}]
+  },
+  {
+   "subject": "anima-mundi",
+   "relation": "identical-to",
+   "object": "filius-macrocosmi",
+   "references": [{"volume": 14, "paragraph": 238, "quote": "the anima mundi who has been freed from the shackles of matter, the filius macrocosmi or Mercurius-Anthropos", "confidence": "high", "verified": false, "claim_type": "jung-asserts"}]
+  }
+ ]
+}

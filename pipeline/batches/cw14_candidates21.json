@@ -1,0 +1,119 @@
+{
+ "new_nodes": [
+  {"id": "soul", "type": "Concept", "label": "Soul"},
+  {"id": "stag", "type": "Symbol", "label": "Stag"},
+  {"id": "unicorn", "type": "Symbol", "label": "Unicorn"},
+  {"id": "circulatio", "type": "Operation", "label": "Circulatio"},
+  {"id": "isis", "type": "Figure", "label": "Isis"}
+ ],
+ "candidate_edges": [
+  {
+   "subject": "spirit",
+   "relation": "opposes",
+   "object": "soul",
+   "references": [{"volume": 14, "paragraph": 3, "quote": "The opposition between spirit and soul is due to the latter having a very fine substance.", "confidence": "high", "verified": false, "claim_type": "jung-asserts"}]
+  },
+  {
+   "subject": "the-sea",
+   "relation": "interpreted-as",
+   "object": "the-body",
+   "references": [{"volume": 14, "paragraph": 3, "quote": "The water they swim in is mare nostrum (our sea) and is interpreted as the body.", "confidence": "high", "verified": false, "claim_type": "jung-reports-parallel", "source": "Lambspringk's Symbols"}]
+  },
+  {
+   "subject": "stag",
+   "relation": "signifies",
+   "object": "soul",
+   "references": [{"volume": 14, "paragraph": 3, "quote": "The stag signifies the soul, the unicorn spirit, and the forest the body.", "confidence": "high", "verified": false, "claim_type": "jung-reports-parallel", "source": "Lambspringk's Symbols"}]
+  },
+  {
+   "subject": "unicorn",
+   "relation": "signifies",
+   "object": "spirit",
+   "references": [{"volume": 14, "paragraph": 3, "quote": "The stag signifies the soul, the unicorn spirit, and the forest the body.", "confidence": "high", "verified": false, "claim_type": "jung-reports-parallel", "source": "Lambspringk's Symbols"}]
+  },
+  {
+   "subject": "the-opposites",
+   "relation": "supraordinate-to",
+   "object": "the-ego",
+   "references": [{"volume": 14, "paragraph": 4, "quote": "indications of the transconscious character of the pairs of opposites. They do not belong to the ego-personality but are supraordinate to it.", "confidence": "high", "verified": false, "claim_type": "jung-asserts"}]
+  },
+  {
+   "subject": "circulatio",
+   "relation": "aims-to-reproduce",
+   "object": "anthropos",
+   "references": [{"volume": 14, "paragraph": 5, "quote": "the aim of the circulatio is the production (or rather, reproduction) of the Original Man, who was a sphere.", "confidence": "high", "verified": false, "claim_type": "jung-asserts"}]
+  },
+  {
+   "subject": "mercurius",
+   "relation": "mediates-between",
+   "object": "four-elements",
+   "references": [{"volume": 14, "paragraph": 10, "quote": "The idea of Mercurius as a peacemaker, the mediator between the warring elements and producer of unity", "confidence": "high", "verified": false, "claim_type": "jung-asserts"}]
+  },
+  {
+   "subject": "mercurius",
+   "relation": "corresponds-to",
+   "object": "holy-ghost",
+   "references": [{"volume": 14, "paragraph": 12, "quote": "Mercurius corresponds to the Holy Ghost as well as to the Anthropos", "confidence": "high", "verified": false, "claim_type": "jung-asserts"}]
+  },
+  {
+   "subject": "mercurius",
+   "relation": "corresponds-to",
+   "object": "anthropos",
+   "references": [{"volume": 14, "paragraph": 12, "quote": "Mercurius corresponds to the Holy Ghost as well as to the Anthropos", "confidence": "high", "verified": false, "claim_type": "jung-asserts"}]
+  },
+  {
+   "subject": "mandala",
+   "relation": "corresponds-to",
+   "object": "the-vessel",
+   "references": [{"volume": 14, "paragraph": 12, "quote": "the mandala, which we find so often in the drawings of our patients, corresponds to the vessel of transformation.", "confidence": "high", "verified": false, "claim_type": "jung-asserts"}]
+  },
+  {
+   "subject": "prima-materia",
+   "relation": "mother-of",
+   "object": "lapis",
+   "references": [{"volume": 14, "paragraph": 14, "quote": "Above all, the prima materia is the mother of the lapis", "confidence": "high", "verified": false, "claim_type": "jung-asserts"}]
+  },
+  {
+   "subject": "isis",
+   "relation": "personifies",
+   "object": "arcane-substance",
+   "references": [{"volume": 14, "paragraph": 14, "quote": "Isis, however, is also the healer ... As such she personifies that arcane substance", "confidence": "high", "verified": false, "claim_type": "jung-asserts"}]
+  },
+  {
+   "subject": "prima-materia",
+   "relation": "amplified-by",
+   "object": "isis",
+   "references": [{"volume": 14, "paragraph": 16, "quote": "Maier was fully justified in giving the name Isis to the prima materia or feminine transformative substance.", "confidence": "high", "verified": false, "claim_type": "jung-asserts"}]
+  },
+  {
+   "subject": "malchuth",
+   "relation": "identified-with",
+   "object": "luna",
+   "references": [{"volume": 14, "paragraph": 19, "quote": "The identification of Malchuth with Luna forms a link with alchemy", "confidence": "high", "verified": false, "claim_type": "jung-asserts"}]
+  },
+  {
+   "subject": "luna",
+   "relation": "identified-with",
+   "object": "mercurius",
+   "references": [{"volume": 14, "paragraph": 19, "quote": "she is duplex and mutable like Mercurius, and is like him a mediator; hence their identification in alchemy.", "confidence": "high", "verified": false, "claim_type": "jung-asserts"}]
+  },
+  {
+   "subject": "luna",
+   "relation": "slays",
+   "object": "sol",
+   "references": [{"volume": 14, "paragraph": 21, "quote": "the moisture of the moon ... slays the sun, and at the birth of the child of the Philosophers she dies likewise", "confidence": "high", "verified": false, "claim_type": "jung-quotes-source", "source": "Consilium coniugii"}]
+  },
+  {
+   "subject": "coniunctio",
+   "relation": "produces",
+   "object": "balsam",
+   "references": [{"volume": 14, "paragraph": 27, "quote": "The conjunction of the moist (= moon) and the hot (= sun) thus produces the balsam", "confidence": "high", "verified": false, "claim_type": "jung-asserts"}]
+  },
+  {
+   "subject": "luna",
+   "relation": "parallels",
+   "object": "christ",
+   "references": [{"volume": 14, "paragraph": 29, "quote": "the changefulness of the moon is paralleled by the transformation of the pre-existent Christ from a divine into a human figure", "confidence": "high", "verified": false, "claim_type": "jung-asserts"}]
+  }
+ ]
+}

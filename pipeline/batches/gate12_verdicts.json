@@ -1,0 +1,108 @@
+[
+  {
+    "n": 1,
+    "verdict": "SUPPORTED",
+    "reason": "Paragraph opens flatly: 'The production of the lapis was the goal of alchemy in general' (§759). Direction and quote exact; Dorn is noted as an exception, but the edge claims the general goal, which is what Jung asserts."
+  },
+  {
+    "n": 2,
+    "verdict": "PARTIAL",
+    "reason": "The paragraph says Dorn's third degree of conjunction was 'the union of the whole man with the unus mundus'; the self is named only as the analogous ground of personality and as the basis ('On the basis of a self... Dorn hoped') from which the union proceeds — the self is not the party united.",
+    "correction": {
+      "subject": "the-whole-man",
+      "relation": "unites-with",
+      "object": "unus-mundus",
+      "claim_type": "jung-reports-parallel",
+      "source": "Dorn"
+    }
+  },
+  {
+    "n": 3,
+    "verdict": "SUPPORTED",
+    "reason": "'This potential world is the \"mundus archetypus\" of the Schoolmen' (§761), where 'this potential world' is the unus mundus of §760. Designation correctly attributed to the Schoolmen as jung-reports-parallel."
+  },
+  {
+    "n": 4,
+    "verdict": "SUPPORTED",
+    "reason": "'there can be no doubt about its tendency to spiritualize the \"body\"' (§763), 'its' referring to the opus alchymicum. 'No doubt' makes this a firm assertion of the tendency; the mutual counter-movement (concretizing spirit) is captured separately in edge 5."
+  },
+  {
+    "n": 5,
+    "verdict": "SUPPORTED",
+    "reason": "'In reality his labours elevated the body into proximity with the spirit while at the same time drawing the spirit down into matter. By sublimating matter he concretized spirit' (§764) — the alchemist's opus concretizes spirit; direction and quote correct."
+  },
+  {
+    "n": 6,
+    "verdict": "SUPPORTED",
+    "reason": "The paragraph frames this as the alchemist's belief ('the alchemist thought he knew... the anima mundi entered into material things and was caught there'), so jung-reports-parallel is the right claim_type and direction (anima mundi caught in matter) is correct."
+  },
+  {
+    "n": 7,
+    "verdict": "SUPPORTED",
+    "reason": "'Dorn's caelum, which corresponded to the stone... For the psychologist it is the self' (§765) — Jung himself makes the psychological identification, so jung-asserts with relation symbolizes is right."
+  },
+  {
+    "n": 8,
+    "verdict": "SUPPORTED",
+    "reason": "The 'air-coloured liquid' (the caelum/quintessence) 'represents nothing less than a corpus glorificationis, the resurrected body' (§763). The parallel to the Christian resurrected body is a reported theological designation, correctly jung-reports-parallel."
+  },
+  {
+    "n": 9,
+    "verdict": "PARTIAL",
+    "reason": "The paragraph says Christ is 'a dividing \"sword\" which sunders the spiritual man from the physical' (§773) — a separation between spiritual man and physical man, not an action done to 'the body' as sole object. The object misstates what is sundered.",
+    "correction": {
+      "subject": "christ",
+      "relation": "sunders",
+      "object": "spiritual-man-from-physical-man",
+      "claim_type": "jung-asserts",
+      "source": null
+    }
+  },
+  {
+    "n": 10,
+    "verdict": "PARTIAL",
+    "reason": "The text is conditional and its subject is doctrinal, not Christ himself: 'In that case the Christian standpoint would correspond to the unio mentalis in the overcoming of the body' (§773). A hedged claim about the Christian standpoint has been flattened into an assertion about Christ as symbol.",
+    "correction": {
+      "subject": "the-christian-standpoint",
+      "relation": "corresponds-to",
+      "object": "unio-mentalis",
+      "claim_type": "jung-asserts",
+      "source": null
+    }
+  },
+  {
+    "n": 11,
+    "verdict": "SUPPORTED",
+    "reason": "'the experience of the self is always a defeat for the ego' (§778) is a flat, unhedged assertion with correct direction (self overpowering ego, prototyped by Job and Yahweh); Jung's later caveat concerns whether the ego deserves defeat, not whether the experience constitutes one."
+  },
+  {
+    "n": 12,
+    "verdict": "SUPPORTED",
+    "reason": "Mandala symbolism 'portrays the self as a concentric structure, often in the form of a squaring of the circle' (§776) — the squaring of the circle is a symbolic form portraying the self; direction correct."
+  },
+  {
+    "n": 13,
+    "verdict": "SUPPORTED",
+    "reason": "The paragraph describes the active-imagination procedure (entering the fantasy drama with personal reactions) and concludes 'This is where insight, the unio mentalis, begins to become real' (§753) — the process is what makes the unio mentalis real; direction correct."
+  },
+  {
+    "n": 14,
+    "verdict": "SUPPORTED",
+    "reason": "The one who 'risked the fight with the dragon and is not overcome by it' — the hero — 'attained what the alchemists called the unio mentalis' (§756). Quote exact; the alchemical term is attributed but the attainment claim is Jung's own."
+  },
+  {
+    "n": 15,
+    "verdict": "SUPPORTED",
+    "reason": "'the integration of the unconscious with consciousness, whereby both are altered' (§779): the unconscious is what is integrated into consciousness, matching the edge direction; the mutual alteration does not reverse it."
+  },
+  {
+    "n": 16,
+    "verdict": "SUPPORTED",
+    "reason": "'when we talk of God or gods we are speaking of debatable images from the psychoid realm' (§787) — the God-image (not God) comes from the psychoid realm; the edge correctly targets the image, and the 'realization might be dawning' framing is rhetorical, not a genuine hedge."
+  },
+  {
+    "n": 17,
+    "verdict": "SUPPORTED",
+    "reason": "The opus 'was a work of reconciliation between apparently incompatible opposites', understood as both physical and moral conflict (§790). Direction and quote correct."
+  }
+]

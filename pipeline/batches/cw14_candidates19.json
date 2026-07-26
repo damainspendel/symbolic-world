@@ -1,0 +1,125 @@
+{
+  "new_nodes": [],
+  "candidate_edges": [
+    {
+      "subject": "luna",
+      "relation": "dissolves",
+      "object": "rex",
+      "references": [{"volume": 14, "paragraph": 506, "quote": "the feminine Luna, who dissolves the king in her moistness", "confidence": "high", "verified": false, "claim_type": "jung-asserts"}]
+    },
+    {
+      "subject": "the-unconscious",
+      "relation": "projected-into",
+      "object": "matter",
+      "references": [{"volume": 14, "paragraph": 509, "quote": "the place of matter, with its magical fascination, is taken by the unconscious, which was projected into it", "confidence": "high", "verified": false, "claim_type": "jung-asserts"}]
+    },
+    {
+      "subject": "lion",
+      "relation": "signifies",
+      "object": "the-shadow",
+      "references": [{"volume": 14, "paragraph": 513, "quote": "Lion and peacock, emblems of concupiscence and pride, signify the overweening pretensions of the human shadow", "confidence": "high", "verified": false, "claim_type": "jung-asserts"}]
+    },
+    {
+      "subject": "ouroboros",
+      "relation": "assimilates",
+      "object": "the-shadow",
+      "references": [{"volume": 14, "paragraph": 513, "quote": "The uroboros is a dramatic symbol for the integration and assimilation of the opposite, i.e., of the shadow", "confidence": "high", "verified": false, "claim_type": "jung-asserts"}]
+    },
+    {
+      "subject": "consciousness",
+      "relation": "confronts",
+      "object": "the-shadow",
+      "references": [{"volume": 14, "paragraph": 514, "quote": "for consciousness to confront its shadow", "confidence": "high", "verified": false, "claim_type": "jung-asserts"}]
+    },
+    {
+      "subject": "filius-regius",
+      "relation": "contains",
+      "object": "sol",
+      "references": [{"volume": 14, "paragraph": 517, "quote": "if the son is the dominant, then Sol is his right eye and Luna his left", "confidence": "high", "verified": false, "claim_type": "jung-asserts"}]
+    },
+    {
+      "subject": "filius-regius",
+      "relation": "contains",
+      "object": "luna",
+      "references": [{"volume": 14, "paragraph": 517, "quote": "if the son is the dominant, then Sol is his right eye and Luna his left", "confidence": "high", "verified": false, "claim_type": "jung-asserts"}]
+    },
+    {
+      "subject": "lapis",
+      "relation": "child-of",
+      "object": "sol",
+      "references": [{"volume": 14, "paragraph": 524, "quote": "the latter is understood as the child of Sol and Luna", "confidence": "high", "verified": false, "claim_type": "jung-reports-parallel"}]
+    },
+    {
+      "subject": "lapis",
+      "relation": "child-of",
+      "object": "luna",
+      "references": [{"volume": 14, "paragraph": 524, "quote": "the latter is understood as the child of Sol and Luna", "confidence": "high", "verified": false, "claim_type": "jung-reports-parallel"}]
+    },
+    {
+      "subject": "mercurius",
+      "relation": "manifests-as",
+      "object": "regina",
+      "references": [{"volume": 14, "paragraph": 534, "quote": "Here Mercurius in feminine form is the queen", "confidence": "high", "verified": false, "claim_type": "jung-asserts"}]
+    },
+    {
+      "subject": "regina",
+      "relation": "corresponds-to",
+      "object": "anima",
+      "references": [{"volume": 14, "paragraph": 536, "quote": "the queen corresponds to the soul (anima) and the king to spirit, the dominant of consciousness", "confidence": "high", "verified": false, "claim_type": "jung-asserts"}]
+    },
+    {
+      "subject": "rex",
+      "relation": "corresponds-to",
+      "object": "spirit",
+      "references": [{"volume": 14, "paragraph": 536, "quote": "the queen corresponds to the soul (anima) and the king to spirit, the dominant of consciousness", "confidence": "high", "verified": false, "claim_type": "jung-asserts"}]
+    },
+    {
+      "subject": "anima",
+      "relation": "transforms-into",
+      "object": "psychopomp",
+      "references": [{"volume": 14, "paragraph": 540, "quote": "raises the status of the anima from that of a temptress to a psychopomp", "confidence": "high", "verified": false, "claim_type": "jung-asserts"}]
+    },
+    {
+      "subject": "the-opus",
+      "relation": "enacts",
+      "object": "individuation",
+      "references": [{"volume": 14, "paragraph": 543, "quote": "in his art and its allegories the drama of his own soul, his individuation process, is played out", "confidence": "high", "verified": false, "claim_type": "jung-asserts"}]
+    },
+    {
+      "subject": "adam",
+      "relation": "synonym-of",
+      "object": "aqua-permanens",
+      "references": [{"volume": 14, "paragraph": 545, "quote": "Ruland defines Adam as a synonym for the aqua permanens", "confidence": "high", "verified": false, "claim_type": "jung-quotes-source", "source": "Ruland"}]
+    },
+    {
+      "subject": "adam",
+      "relation": "contains",
+      "object": "eve",
+      "references": [{"volume": 14, "paragraph": 545, "quote": "Adam, who bore his invisible Eve hidden in his body", "confidence": "high", "verified": false, "claim_type": "jung-quotes-source", "source": "Dorn"}]
+    },
+    {
+      "subject": "adam",
+      "relation": "is",
+      "object": "rex",
+      "references": [{"volume": 14, "paragraph": 546, "quote": "As the transformative substance, therefore, Adam is also the king", "confidence": "high", "verified": false, "claim_type": "jung-asserts"}]
+    },
+    {
+      "subject": "dragon",
+      "relation": "personifies",
+      "object": "instinct",
+      "references": [{"volume": 14, "paragraph": 548, "quote": "The “old dragon” who prepared the bath ... is, psychologically, a personification of the instinctual psyche", "confidence": "high", "verified": false, "claim_type": "jung-asserts"}]
+    },
+    {
+      "subject": "the-unconscious",
+      "relation": "initiates",
+      "object": "rebirth",
+      "references": [{"volume": 14, "paragraph": 548, "quote": "the unconscious itself initiates the process of renewal", "confidence": "high", "verified": false, "claim_type": "jung-asserts"}]
+    },
+    {
+      "subject": "the-self",
+      "relation": "reborn-as",
+      "object": "filius-regius",
+      "references": [{"volume": 14, "paragraph": 548, "quote": "the unconscious process by which the self is “reborn” ... This state is then described as the “filius regius", "confidence": "high", "verified": false, "claim_type": "jung-asserts"}]
+    }
+  ]
+}

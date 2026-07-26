@@ -1,0 +1,93 @@
+{
+ "updated": "2026-07-25T17:50",
+ "note": "all listed candidate batches are merged into seed.json (see git log); retro_gate*/audit verdicts likewise applied",
+ "graph": {
+  "nodes": 206,
+  "edges": 550,
+  "refs": 574,
+  "verified": "100%"
+ },
+ "batches": [
+  {
+   "id": "cw14_candidates10",
+   "status": "merged",
+   "candidates": "pipeline/batches/cw14_candidates10.json"
+  },
+  {
+   "id": "cw14_candidates11",
+   "status": "merged",
+   "candidates": "pipeline/batches/cw14_candidates11.json"
+  },
+  {
+   "id": "cw14_candidates12",
+   "status": "merged",
+   "candidates": "pipeline/batches/cw14_candidates12.json"
+  },
+  {
+   "id": "cw14_candidates13",
+   "status": "merged",
+   "candidates": "pipeline/batches/cw14_candidates13.json"
+  },
+  {
+   "id": "cw14_candidates14",
+   "status": "merged",
+   "candidates": "pipeline/batches/cw14_candidates14.json"
+  },
+  {
+   "id": "cw14_candidates15",
+   "status": "merged",
+   "candidates": "pipeline/batches/cw14_candidates15.json"
+  },
+  {
+   "id": "cw14_candidates16",
+   "status": "merged",
+   "candidates": "pipeline/batches/cw14_candidates16.json"
+  },
+  {
+   "id": "cw14_candidates17",
+   "status": "merged",
+   "candidates": "pipeline/batches/cw14_candidates17.json"
+  },
+  {
+   "id": "cw14_candidates18",
+   "status": "merged",
+   "candidates": "pipeline/batches/cw14_candidates18.json"
+  },
+  {
+   "id": "cw14_candidates19",
+   "status": "merged",
+   "candidates": "pipeline/batches/cw14_candidates19.json"
+  },
+  {
+   "id": "cw14_candidates20",
+   "status": "merged",
+   "candidates": "pipeline/batches/cw14_candidates20.json"
+  },
+  {
+   "id": "cw14_candidates21",
+   "status": "merged",
+   "candidates": "pipeline/batches/cw14_candidates21.json"
+  },
+  {
+   "id": "cw14_candidates6",
+   "status": "merged",
+   "candidates": "pipeline/batches/cw14_candidates6.json"
+  },
+  {
+   "id": "cw14_candidates7",
+   "status": "merged",
+   "candidates": "pipeline/batches/cw14_candidates7.json"
+  },
+  {
+   "id": "cw14_candidates9",
+   "status": "merged",
+   "candidates": "pipeline/batches/cw14_candidates9.json"
+  },
+  {
+   "id": "cw8_candidates1",
+   "status": "merged",
+   "candidates": "pipeline/batches/cw8_candidates1.json"
+  }
+ ],
+ "next": "breadth: CW12 \u00a71-66 (b-cw12-1)"
+}

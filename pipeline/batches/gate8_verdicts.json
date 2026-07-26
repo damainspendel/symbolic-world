@@ -1,0 +1,137 @@
+[
+ {
+  "n": 1,
+  "verdict": "SUPPORTED",
+  "reason": "Paragraph states 'psyche is essentially conflict between blind instinct and will (freedom of choice)', framing the two as the opposed poles of the psyche. Symmetric polarity relation matches the assertion."
+ },
+ {
+  "n": 2,
+  "verdict": "SUPPORTED",
+  "reason": "Jung asserts 'we can hardly conceive of will and freedom of choice without consciousness' and that the will 'needs a supraordinate authority, something like a consciousness of itself'. Direction (will presupposes consciousness) is correct."
+ },
+ {
+  "n": 3,
+  "verdict": "SUPPORTED",
+  "reason": "Jung explicitly says 'we must also include in the unconscious the psychoid functions that are not capable of consciousness', and defines the unconscious as the unknown psychic 'with the addition... of the psychoid system'. Containment direction is correct."
+ },
+ {
+  "n": 4,
+  "verdict": "PARTIAL",
+  "reason": "Jung says 'The archetype as such is a psychoid factor' and 'I call it psychoid' — a predication of psychoid nature / class membership, not identity with the psychoid system as a whole, which (per CW8 §380) also contains instinctual psychoid processes that are not archetypes. The 'is' identity to the shared node 'The psychoid' overreaches.",
+  "correction": {
+   "subject": "archetype",
+   "relation": "is-a",
+   "object": "psychoid-factor",
+   "claim_type": "jung-asserts",
+   "source": null
+  }
+ },
+ {
+  "n": 5,
+  "verdict": "PARTIAL",
+  "reason": "The bridging subject in the paragraph is physiological instinct: 'the position of physiological instinct, which is immediately rooted in the stuff of the organism and, with its psychoid nature, forms the bridge to matter in general'. The psychoid nature is the instrument by which instinct bridges matter; making 'the psychoid' the subject misattributes the clause.",
+  "correction": {
+   "subject": "instinct",
+   "relation": "bridges",
+   "object": "matter",
+   "claim_type": "jung-asserts",
+   "source": null
+  }
+ },
+ {
+  "n": 6,
+  "verdict": "SUPPORTED",
+  "reason": "Direct assertion: 'Archetype and instinct are the most polar opposites imaginable', with the qualification that as true opposites they belong together as correspondences. Polarity relation is exactly what the paragraph asserts."
+ },
+ {
+  "n": 7,
+  "verdict": "SUPPORTED",
+  "reason": "Jung asserts 'the archetype represents the authentic element of spirit', immediately qualifying that this spirit is not the human intellect. Direction and predicate match the text."
+ },
+ {
+  "n": 8,
+  "verdict": "SUPPORTED",
+  "reason": "Jung writes 'the archetype as an image of instinct is a spiritual goal toward which the whole nature of man strives'. Archetype as image-of instinct is his own formulation; direction is correct (archetype images instinct, not the reverse)."
+ },
+ {
+  "n": 9,
+  "verdict": "SUPPORTED",
+  "reason": "Jung asserts 'Archetypes are typical forms of behaviour which, once they become conscious, naturally present themselves as ideas and images', explicitly rejecting the 'inborn idea' reading. The equation with pattern-of-behaviour is his own claim here."
+ },
+ {
+  "n": 10,
+  "verdict": "SUPPORTED",
+  "reason": "Jung asserts 'consciousness enables him to adapt in an orderly way and to check the instincts, and consequently it cannot be dispensed with' — consciousness as the checking counter-force to compulsive instinct. Minor compression (consciousness enables man to check) does not distort the claim."
+ },
+ {
+  "n": 11,
+  "verdict": "SUPPORTED",
+  "reason": "Jung asserts 'conscious and unconscious have no clear demarcations, the one beginning where the other leaves off' and that 'the psyche is a conscious-unconscious whole'. Continuity relation is exactly what the paragraph claims."
+ },
+ {
+  "n": 12,
+  "verdict": "SUPPORTED",
+  "reason": "In his own interpretive voice Jung states 'This light is the lumen naturae which illuminates consciousness, and the scintillae are germinal luminosities shining forth from the darkness of the unconscious' — a psychological gloss on Dorn asserted by Jung, so jung-asserts is defensible and the relation is verbatim."
+ },
+ {
+  "n": 13,
+  "verdict": "PARTIAL",
+  "reason": "The paragraph says 'the One Scintilla or Monad is to be regarded as a symbol of the self' — specifically Khunrath's singled-out 'scintilla perfecta' / Monad, not scintillae in general, which Jung instead equates with the archetypes ('equate the scintillae with the archetypes'). Generalizing the subject to 'scintilla' conflates the One with the many.",
+  "correction": {
+   "subject": "one-scintilla-monad",
+   "relation": "symbolizes",
+   "object": "the-self",
+   "claim_type": "jung-asserts",
+   "source": null
+  }
+ },
+ {
+  "n": 14,
+  "verdict": "SUPPORTED",
+  "reason": "Jung asserts 'the archetypes have, when they appear, a distinctly numinous character which can only be described as spiritual' and 'There is a mystical aura about its numinosity'. Numinosity attaches to the archetypes when they appear; 'carries' is a fair rendering."
+ },
+ {
+  "n": 15,
+  "verdict": "SUPPORTED",
+  "reason": "Jung states 'The archetypal representations (images and ideas)... should not be confused with the archetype as such', and adds that every represented archetype 'differs to an indeterminable extent from that which caused the representation'. The distinction is asserted directly."
+ },
+ {
+  "n": 16,
+  "verdict": "SUPPORTED",
+  "reason": "The paragraph asserts 'so pronounced a contrast' between the contents of collective consciousness and the collective unconscious, and concludes 'between collective consciousness and the collective unconscious there is an almost unbridgeable gulf'. Polarity is exactly the claim."
+ },
+ {
+  "n": 17,
+  "verdict": "PARTIAL",
+  "reason": "What 'infallibly produces a mass psyche' is not collective consciousness itself but the 'dangerous identifications of the subjective with the collective consciousness' ('Such an identity infallibly produces a mass psyche'). The producing cause is the identification, so the subject is off, though mass psyche does 'go with' collective consciousness later in the paragraph.",
+  "correction": {
+   "subject": "identification-with-collective-consciousness",
+   "relation": "produces",
+   "object": "mass-psyche",
+   "claim_type": "jung-asserts",
+   "source": null
+  }
+ },
+ {
+  "n": 18,
+  "verdict": "SUPPORTED",
+  "reason": "'These latter' refers to the archetypes: 'These latter are an effective defence against the brute force of collective consciousness and the mass psyche that goes with it'. Subject, relation, and direction match the sentence."
+ },
+ {
+  "n": 19,
+  "verdict": "SUPPORTED",
+  "reason": "Jung writes 'the will, as disposable energy, gradually subordinates itself to the stronger factor, namely to the new totality-figure I call the self'. The ellipsis in the quote skips only 'namely to the new totality-figure' and is not misleading; direction (will subordinates to self) is correct."
+ },
+ {
+  "n": 20,
+  "verdict": "PARTIAL",
+  "reason": "§439 only asserts the hedged claim that the archetypes 'have a nature that cannot with certainty be designated as psychic', which is weaker than 'transcends psyche'. The transcendence claim is real in Jung but is anchored at CW8 §420 ('the position of the archetype would be located beyond the psychic sphere') and §417 ('it is transcendent, on which account I call it psychoid'), so the edge should either soften the relation or re-anchor.",
+  "correction": {
+   "subject": "archetype",
+   "relation": "transcends",
+   "object": "psyche",
+   "claim_type": "jung-asserts",
+   "source": "CW8 §420"
+  }
+ }
+]

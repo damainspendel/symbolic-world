@@ -1,0 +1,114 @@
+[
+ {
+  "id": "E4R1",
+  "verdict": "SUPPORTED",
+  "reason": "Paragraph states the Rebis or Lapis Philosophorum is recognized without difficulty 'as a symbol of the self'. Direction correct (lapis is the symbol, self the symbolized); Jung's own assertion."
+ },
+ {
+  "id": "E20R0",
+  "verdict": "SUPPORTED",
+  "reason": "Verbatim: 'The ego is, by definition, subordinate to the self and is related to it like a part to the whole.' Direction and claim_type correct."
+ },
+ {
+  "id": "E21R0",
+  "verdict": "SUPPORTED",
+  "reason": "Verbatim opening sentence: 'The shadow is a moral problem that challenges the whole ego-personality.' Jung's own assertion, direction correct."
+ },
+ {
+  "id": "E22R0",
+  "verdict": "SUPPORTED",
+  "reason": "Paragraph: 'The autonomy of the collective unconscious expresses itself in the figures of anima and animus. They personify those of its contents...' The edge is a fair compression; strictly they personify contents of the collective unconscious, but the paragraph explicitly casts the figures as the personified expression of the collective unconscious's autonomy."
+ },
+ {
+  "id": "E23R0",
+  "verdict": "SUPPORTED",
+  "reason": "Same paragraph covers animus jointly with anima: the figures personify contents of the collective unconscious and express its autonomy. Direction correct."
+ },
+ {
+  "id": "E24R0",
+  "verdict": "SUPPORTED",
+  "reason": "Jung states he 'tried to show how the traditional Christ-image concentrates upon itself the characteristics of an archetype—the archetype of the self' and speaks of taking 'Christ as a symbol of the self'. Direction correct: Christ is the symbol, the self the referent."
+ },
+ {
+  "id": "E25R0",
+  "verdict": "PARTIAL",
+  "reason": "Paragraph says 'the Antichrist would correspond to the shadow of the self, namely the dark half of the human totality' — the specific archetypal dark half of the self, not the general (personal) shadow node. Object is too broad; framing is also conditional ('If we see... then'), though Jung affirms the parallel elsewhere (e.g. §79).",
+  "correction": {
+   "subject": "antichrist",
+   "relation": "corresponds-to",
+   "object": "shadow-of-the-self (the dark half of the human totality, i.e. the self's dark aspect, not the personal shadow)",
+   "claim_type": "jung-asserts",
+   "source": null
+  }
+ },
+ {
+  "id": "E26R0",
+  "verdict": "SUPPORTED",
+  "reason": "Paragraph: the psychic totality 'cannot omit the shadow that belongs to the light figure' and 'In the empirical self, light and shadow form a paradoxical unity.' Inclusion is asserted directly."
+ },
+ {
+  "id": "E27R0",
+  "verdict": "SUPPORTED",
+  "reason": "Verbatim: 'Hence individuation is a \"mysterium coniunctionis,\" the self being experienced as a nuptial union of opposite halves.' Jung's own conclusion, not merely the Naassene report."
+ },
+ {
+  "id": "E28R0",
+  "verdict": "SUPPORTED",
+  "reason": "Paragraph: 'This quaternio characterizes the psychological self... the self... is therefore symbolized by the marriage quaternio.' Direction correct (quaternity is the symbol); the specific form here is the marriage quaternio, a quaternity."
+ },
+ {
+  "id": "E29R0",
+  "verdict": "SUPPORTED",
+  "reason": "Paragraph calls the ego 'the point of reference for the field of consciousness' and says it 'retains its quality as the centre of the field of consciousness' — while denying it is the centre of the personality, which the edge does not claim."
+ },
+ {
+  "id": "E30R0",
+  "verdict": "SUPPORTED",
+  "reason": "Paragraph: integration of the shadow 'marks the first stage in the analytic process, and... without it a recognition of anima and animus is impossible.' Sequential precedence of shadow before anima is asserted."
+ },
+ {
+  "id": "E31R0",
+  "verdict": "SUPPORTED",
+  "reason": "Same sentence names animus jointly: shadow integration is the first stage and prerequisite for recognizing anima and animus. Precedence supported."
+ },
+ {
+  "id": "E32R0",
+  "verdict": "SUPPORTED",
+  "reason": "Paragraph: 'the psychological self. Being a totality, it must by definition include the light and dark aspects...' — the self is defined as totality/wholeness, consistent with §9's 'total personality... the self'."
+ },
+ {
+  "id": "E33R0",
+  "verdict": "SUPPORTED",
+  "reason": "Paragraph: wholeness 'is anticipated by the psyche in the form of spontaneous or autonomous symbols. These are the quaternity or mandala symbols... symbols of unity and totality.' Mandala as symbol of wholeness, direction correct."
+ },
+ {
+  "id": "E34R0",
+  "verdict": "SUPPORTED",
+  "reason": "Paragraph: 'Unity and totality... their symbols can no longer be distinguished from the imago Dei. Hence all statements about the God-image apply also to the empirical symbols of totality.' Empirical indistinguishability/analogy is Jung's own assertion."
+ },
+ {
+  "id": "E35R0",
+  "verdict": "SUPPORTED",
+  "reason": "Paragraph: 'St. Augustine... distinguishes between the God-image which is Christ and the image which is implanted in man', and 'Christ is an embodiment of the God-image' per Augustine. claim_type jung-quotes-source with source St. Augustine is exactly right."
+ },
+ {
+  "id": "E36R0",
+  "verdict": "SUPPORTED",
+  "reason": "Verbatim: 'the Christian image of the self—Christ—lacks the shadow that properly belongs to it'; the paragraph also says Christ 'corresponds to only one half of the archetype', the other half appearing in the Antichrist."
+ },
+ {
+  "id": "E37R0",
+  "verdict": "SUPPORTED",
+  "reason": "Same §426 paragraph: 'the Rebis or Lapis Philosophorum... a symbol of the self.' The Rebis is named explicitly as the dual being recognized as a self-symbol."
+ },
+ {
+  "id": "E38R0",
+  "verdict": "SUPPORTED",
+  "reason": "Jung's own sentences: 'every king carries the symbol of the self. All his insignia... show him as the cosmic Anthropos' — linking self-symbolism to the Anthropos; the Gnostic material that follows is amplificatory, matching layer=amplification/kind=parallel."
+ },
+ {
+  "id": "E39R0",
+  "verdict": "SUPPORTED",
+  "reason": "Verbatim: 'Among the objective symbols of the self I have already mentioned the Naassene conception of the... indivisible point.' Jung himself asserts the point is a self-symbol; the Naassene origin is properly carried by the amplification/parallel layer."
+ }
+]

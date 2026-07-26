@@ -1,0 +1,149 @@
+[
+ {
+  "id": "E0R0",
+  "verdict": "PARTIAL",
+  "reason": "The paragraph says the factors which come together in the coniunctio ARE opposites; the coniunctio unites opposites (or is itself the union of opposites). 'Coniunctio unites union-of-opposites' is malformed — it makes the coniunctio unite its own definition.",
+  "correction": {
+   "subject": "coniunctio",
+   "relation": "is-a",
+   "object": "union-of-opposites",
+   "claim_type": "jung-asserts",
+   "source": null,
+   "note": "Alternatively: coniunctio —unites→ opposites. The object of 'unites' must be the opposites themselves, not the union of them."
+  }
+ },
+ {
+  "id": "E7R0",
+  "verdict": "SUPPORTED",
+  "reason": "Paragraph states verbatim that 'the alchemical Sol corresponds psychologically to consciousness, the diurnal side of the psyche' — Jung's own recap of his psychological equation. Direction and claim_type correct."
+ },
+ {
+  "id": "E8R0",
+  "verdict": "SUPPORTED",
+  "reason": "Jung asserts in his own voice that the primary pair of opposites is 'consciousness and unconsciousness, whose symbols are Sol and Luna' — Luna is the symbol/analogue of the unconscious. Direction correct."
+ },
+ {
+  "id": "E10R0",
+  "verdict": "WRONG",
+  "reason": "The paragraph (Dorn's three stages: unio mentalis, union with body, union with unus mundus) never mentions individuation; the quote about 'merely the first stage' concerns the unio mentalis within the coniunctio procedure, not a prefiguration of individuation. Edge unsupported by this paragraph."
+ },
+ {
+  "id": "E13R0",
+  "verdict": "SUPPORTED",
+  "reason": "Sol and Luna are named as the symbols of 'the primary pair of opposites, consciousness and unconsciousness' — the paragraph directly casts them as an opposed pair. Symmetric relation, so no direction issue."
+ },
+ {
+  "id": "E15R0",
+  "verdict": "SUPPORTED",
+  "reason": "In the chapter on the factors united in the coniunctio, Jung states 'the masculine-feminine opposition is personified as King and Queen' — the King is a standard personification of the masculine partner of the coniunctio; apt amplification-layer image."
+ },
+ {
+  "id": "E16R0",
+  "verdict": "SUPPORTED",
+  "reason": "Same paragraph: the Queen personifies the feminine pole of the masculine-feminine opposition whose union is the coniunctio. Valid amplification image."
+ },
+ {
+  "id": "E17R0",
+  "verdict": "SUPPORTED",
+  "reason": "The paragraph identifies the speaker as 'the feminine personification of the prima materia in the nigredo state' and names her the black Shulamite (contaminated with Eve) — the Shulamite amplifies the nigredo. jung-reports-parallel fits Jung's reporting of the Song of Songs/Cabala parallel."
+ },
+ {
+  "id": "E18R0",
+  "verdict": "PARTIAL",
+  "reason": "The Tifereth-Malchuth reunion ('the coming Messiah will reunite the King with the Queen') is indeed presented as a hierosgamos parallel to the coniunctio, but the parallel is Jung's construction over Cabalistic material — Knorr is quoted only for the widow/Malchuth definition, and Knorr nowhere asserts the alchemical-coniunctio link. jung-quotes-source overstates the sourcing.",
+  "correction": {
+   "subject": "coniunctio",
+   "relation": "amplified-by",
+   "object": "tifereth-malchuth",
+   "claim_type": "jung-reports-parallel",
+   "source": "Cabala (Knorr von Rosenroth, Kabbala Denudata, cited)"
+  }
+ },
+ {
+  "id": "E19R0",
+  "verdict": "SUPPORTED",
+  "reason": "Jung states Adam Kadmon 'as a personification of the whole inverted tree, is androgynous' and calls the Sefiroth system 'a highly differentiated coniunctio symbol', in a passage on Cabalistic statements that 'found their way into alchemy' — a genuine reported parallel to the alchemical hermaphrodite/Rebis."
+ },
+ {
+  "id": "E40R0",
+  "verdict": "SUPPORTED",
+  "reason": "Jung reports Dorn's view that 'the third and highest degree of conjunction was the union of the whole man with the unus mundus' — the coniunctio culminates in the unus mundus, correctly typed as jung-quotes-source with Dorn named."
+ },
+ {
+  "id": "E41R0",
+  "verdict": "SUPPORTED",
+  "reason": "The paragraph opens 'Mercurius, however, is not just the medium of conjunction but also that which is to be united' — Mercurius as medium of the coniunctio is directly asserted (the edge captures the mediating role; his additionally being the united substance does not contradict it)."
+ },
+ {
+  "id": "E42R0",
+  "verdict": "PARTIAL",
+  "reason": "The generative relation is supported ('Sol therefore derives from sulphur'), but it rests on a reported alchemical designation — 'it was called the prima materia of Sol' — so casting it as jung-asserts overstates it; this is Jung relaying alchemical doctrine.",
+  "correction": {
+   "subject": "sulphur",
+   "relation": "generates",
+   "object": "sol",
+   "claim_type": "jung-reports-parallel",
+   "source": "alchemical tradition (sulphur 'called the prima materia of Sol')"
+  }
+ },
+ {
+  "id": "E43R0",
+  "verdict": "SUPPORTED",
+  "reason": "Jung asserts in his own expository voice: 'In philosophical alchemy, salt is a cosmic principle. According to its position in the quaternity, it is correlated with the feminine, lunar side.' Relation and direction exact."
+ },
+ {
+  "id": "E44R0",
+  "verdict": "SUPPORTED",
+  "reason": "The paragraph frames salt within 'the phenomenology of the self': salt appears as the cubic crystal that 'represents the centre and hence the self', its quaternary sign parallels mandalas, and its lapis-synonyms are treated as 'symbols of the self'. The symbolizes-edge is Jung's own psychological reading here."
+ },
+ {
+  "id": "E45R0",
+  "verdict": "SUPPORTED",
+  "reason": "'The theriomorphic form of Sol as a lion and dog' — the lion is directly given as a theriomorphic image of Sol."
+ },
+ {
+  "id": "E46R0",
+  "verdict": "SUPPORTED",
+  "reason": "Same sentence gives the theriomorphic form 'of Luna as a bitch' — direct amplification image."
+ },
+ {
+  "id": "E47R0",
+  "verdict": "SUPPORTED",
+  "reason": "In an explicitly psychological passage (Sol = consciousness), Jung says of Sol 'that he either possesses a shadow or is even a Sol niger' — Sol niger as image of the shadow side of consciousness is supported."
+ },
+ {
+  "id": "E48R0",
+  "verdict": "SUPPORTED",
+  "reason": "'Sol being naturally understood as the gold' — the Sol-gold identification is stated as the standard alchemical understanding; valid amplification image."
+ },
+ {
+  "id": "E49R0",
+  "verdict": "SUPPORTED",
+  "reason": "The paragraph states 'Luna also signifies silver' and that 'silver is yet another synonym or symbol for the arcanum Luna' — the Luna-silver amplification holds in both formulations."
+ },
+ {
+  "id": "E50R0",
+  "verdict": "SUPPORTED",
+  "reason": "Jung states as his own summary: 'Altogether, sulphur is one of the innumerable synonyms for the prima materia in its dual aspect' — synonym relation directly asserted."
+ },
+ {
+  "id": "E51R0",
+  "verdict": "SUPPORTED",
+  "reason": "'For Paracelsus sulphur, together with Sal (salt), is the begetter of Mercurius' — the begetting claim is Paracelsus's, correctly typed jung-quotes-source with Paracelsus named. Direction correct (sulphur begets Mercurius, who is 'born of the sun and moon')."
+ },
+ {
+  "id": "E52R0",
+  "verdict": "SUPPORTED",
+  "reason": "Same Paracelsus report: Sal is co-begetter of Mercurius with sulphur. Claim_type and source correct."
+ },
+ {
+  "id": "E53R0",
+  "verdict": "SUPPORTED",
+  "reason": "'In alchemy the lion, the royal beast, is a synonym for Mercurius, or, to be more accurate, for a stage in his transformation' — lion as image of Mercurius directly asserted; the stage-qualification does not overturn the amplification."
+ },
+ {
+  "id": "E54R0",
+  "verdict": "SUPPORTED",
+  "reason": "'In the lion hunt of Marchos the lion, as we have seen, takes the place of the king' — the lion substitutes for Rex; direct amplification support."
+ }
+]

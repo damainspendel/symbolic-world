@@ -1,0 +1,156 @@
+[
+ {
+  "id": "E55R0",
+  "verdict": "SUPPORTED",
+  "reason": "Khunrath's quoted vision has 'the Philosophical Stone, our King and Lord of Lords, come forth... regenerated and more than perfect' — the regenerated king appears as the lapis. Quote accurate, source (Khunrath) correctly named, jung-quotes-source is right."
+ },
+ {
+  "id": "E56R0",
+  "verdict": "SUPPORTED",
+  "reason": "The Cantilena verses have the king say 'I'le Humbled be into my Mother's Breast, Dissolve to my First Matter, and there rest' — the king dissolving into the prima materia. Quote verbatim; jung-quotes-source with Ripley's Cantilena is correct."
+ },
+ {
+  "id": "E57R0",
+  "verdict": "SUPPORTED",
+  "reason": "The paragraph reads the lion falling into the 'thalamus' (bridal chamber) and being swallowed by the stone-woman as a union image, and Jung himself declares it 'a parallel of the Arisleus vision, where Beya causes Gabricus to disappear into her body' — a classic coniunctio amplification drawn in Jung's own voice."
+ },
+ {
+  "id": "E58R0",
+  "verdict": "SUPPORTED",
+  "reason": "Jung asserts in his own voice: 'The whore (meretrix) is a well-known figure in alchemy. She characterizes the arcane substance in its initial, chaotic, maternal state' — i.e., the prima materia. Direction and claim_type correct."
+ },
+ {
+  "id": "E59R0",
+  "verdict": "SUPPORTED",
+  "reason": "The paragraph states 'The Tractatus aureus de lapide says of the arcane substance: That noble whore Venus...' — Venus explicitly names the arcane substance in its initial state (prima materia), reinforced by Flamel taking Venus as a component of the arcane substance. Source correctly named."
+ },
+ {
+  "id": "E60R0",
+  "verdict": "PARTIAL",
+  "reason": "The paragraph asserts 'The Moor or Ethiopian is the black, sinful man' compared to the raven (per St. Hilary), placing him in the blackness/raven/caput-corvi cluster — but the word nigredo never occurs and no stage of the opus is named; the nigredo link is inferential. As an amplification of the concept 'nigredo' this overreaches the paragraph.",
+  "correction": {
+   "subject": "ethiopian-moor",
+   "relation": "symbolizes",
+   "object": "the black, sinful man (shadow); raven parallel",
+   "claim_type": "jung-asserts",
+   "source": null,
+   "note": "If a nigredo amplification edge is wanted, re-source it to a paragraph that names the nigredo explicitly."
+  }
+ },
+ {
+  "id": "E61R0",
+  "verdict": "PARTIAL",
+  "reason": "The paragraph treats the four elements as one instantiation of the archetypal quaternity ('four wheels... to correspond with the four elements or natures', alongside the 'quaternity of basic functions'), not as its constituents. 'Comprises' overstates; the quaternity is a pattern of order exemplified by the four elements.",
+  "correction": {
+   "subject": "quaternity",
+   "relation": "exemplified-by",
+   "object": "four-elements",
+   "claim_type": "jung-asserts",
+   "source": null
+  }
+ },
+ {
+  "id": "E62R0",
+  "verdict": "SUPPORTED",
+  "reason": "Jung states 'The alchemists therefore pictured the unio mentalis as Father and Son and their union as the dove (the spiration common to both)' — the dove images the unitive bond of the unio mentalis. A fair amplification-layer image link in Jung's own voice."
+ },
+ {
+  "id": "E63R0",
+  "verdict": "SUPPORTED",
+  "reason": "Though the stage schema is introduced as Dorn's view, Jung asserts it in his own voice later in the paragraph: 'This may begin with a purely intra-psychic unio mentalis of intellect or reason with Eros' — the supreme union of opposites begins with the unio mentalis. Direction correct."
+ },
+ {
+  "id": "E64R0",
+  "verdict": "SUPPORTED",
+  "reason": "The paragraph states 'The second stage is reached when the mental union... is conjoined with the body', and Jung endorses this in his own voice ('its reality is merely potential and is validated only by a union with the physical world of the body'). Direction and claim_type acceptable."
+ },
+ {
+  "id": "E104R0",
+  "verdict": "SUPPORTED",
+  "reason": "Jung asserts directly: 'Psychologically the king stands first of all for Sol, whom we have interpreted as consciousness', adding that he further represents a dominant of consciousness. Direction and claim_type correct."
+ },
+ {
+  "id": "E105R0",
+  "verdict": "SUPPORTED",
+  "reason": "The paragraph names 'Man's own nature, the unconscious' as the compensating factor and concludes 'the king constantly needs the renewal that begins with a descent into his own darkness, an immersion in his own depths' — renewal through the unconscious, in Jung's own voice."
+ },
+ {
+  "id": "E106R0",
+  "verdict": "SUPPORTED",
+  "reason": "The paragraph quotes the rex marinus of the Visio Arislei ('Thus the rex marinus says: Truly I have a son and a daughter...') as an instance of the king figure — a proper amplification with the named source correctly given."
+ },
+ {
+  "id": "E107R0",
+  "verdict": "SUPPORTED",
+  "reason": "Jung, discussing 'the renewal of the king and the birth of the son' in Ripley, asserts 'The attributes of sun and moon make the filius regius into the rearisen Primordial Man, who is the cosmos' — the renewed king manifests as the Anthropos."
+ },
+ {
+  "id": "E108R0",
+  "verdict": "SUPPORTED",
+  "reason": "'Adam Kadmon is not merely the universal soul or, psychologically, the self, but is himself the process of transformation' — the 'not merely' presupposes and affirms the Adam Kadmon = self analogy while extending it; the edge's weaker claim is supported, not contradicted, by the fuller context."
+ },
+ {
+  "id": "E108R1",
+  "verdict": "SUPPORTED",
+  "reason": "Jung identifies the arcane substance with 'the inner man or Primordial Man, known as Adam Kadmon' and states this 'higher spiritual man' is 'the more comprehensive, supra-ordinate totality which we know as the self'. Direct assertion in Jung's own voice."
+ },
+ {
+  "id": "E109R0",
+  "verdict": "SUPPORTED",
+  "reason": "The paragraph opens: 'why it was that Adam should have been selected as a symbol for the prima materia or transformative substance', and develops Adam (Microcosm, made of the four elements, massa confusa clay) as that symbol. Direction correct — Adam symbolizes the prima materia, not the reverse."
+ },
+ {
+  "id": "E110R0",
+  "verdict": "SUPPORTED",
+  "reason": "Jung asserts 'The second Adam is Christ, whose mystical androgyny is established in ecclesiastical tradition' within his discussion of Adam's dual aspect as first and second Adam — Christ as an instance of the Adam/Anthropos figure."
+ },
+ {
+  "id": "E110R1",
+  "verdict": "PARTIAL",
+  "reason": "The identification here occurs entirely inside Jung's report of Hippolytus's Gnostic exegesis of Psalm 24 ('says Hippolytus... The worm therefore signifies the second Adam, Christ'), with Epiphanius as a second reporter. Miscast as an unqualified jung-asserts; also duplicates E110R0, which is the properly asserted instance.",
+  "correction": {
+   "subject": "christ",
+   "relation": "is-a",
+   "object": "anthropos",
+   "claim_type": "jung-reports-parallel",
+   "source": "Hippolytus, Elenchos (Gnostic exegesis of Psalm 24); cf. Epiphanius"
+  }
+ },
+ {
+  "id": "E111R0",
+  "verdict": "SUPPORTED",
+  "reason": "Jung states of the invisible centre, Adam Kadmon: 'He is the product of the conjunction of sun and moon' — the coniunctio produces the Anthropos, asserted in Jung's own interpretive voice ('It is clear from this text that...')."
+ },
+ {
+  "id": "E111R1",
+  "verdict": "SUPPORTED",
+  "reason": "Jung's own elucidation of Eleazar: 'This is feasible only if the coniunctio symbolizes the production of the hermaphroditic second Adam' — the coniunctio produces the second Adam (Anthropos). Direction correct."
+ },
+ {
+  "id": "E112R0",
+  "verdict": "SUPPORTED",
+  "reason": "'the moon is a favourite symbol for certain aspects of the unconscious — though only, of course, in a man' — the quote itself carries Jung's qualification (in a woman the moon corresponds to consciousness), so it is not misleading. Asserted in Jung's own voice."
+ },
+ {
+  "id": "E112R1",
+  "verdict": "SUPPORTED",
+  "reason": "Jung writes 'Psychologically, this means that the union of consciousness (Sol) with its feminine counterpart the unconscious (Luna)...' — a direct equation of Luna with the unconscious in his own psychological interpretation."
+ },
+ {
+  "id": "E113R0",
+  "verdict": "PARTIAL",
+  "reason": "The paragraph says 'According to these ancient ideas the moon is a vessel of the sun: she is a universal receptacle' — a reported ancient/alchemical designation, not Jung's own assertion, and it never mentions the vas Hermetis; equating 'vessel of the sun' with the Hermetic Vessel is conceptual overreach.",
+  "correction": {
+   "subject": "luna",
+   "relation": "described-as",
+   "object": "vessel/receptacle of Sol (not the vas Hermetis)",
+   "claim_type": "jung-reports-parallel",
+   "source": "ancient ideas / alchemical tradition (Pliny, Aurora Consurgens context)"
+  }
+ },
+ {
+  "id": "E114R0",
+  "verdict": "SUPPORTED",
+  "reason": "The paragraph reports 'According to Pico, Luna has an affinity with Venus, as is particularly to be seen from the fact that she is sublimated in Taurus, the House of Venus'. Quote accurate, source (Pico della Mirandola) correctly named, jung-quotes-source correct."
+ }
+]

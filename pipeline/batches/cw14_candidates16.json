@@ -1,0 +1,351 @@
+{
+ "new_nodes": [
+  {
+   "id": "baptism",
+   "type": "Motif",
+   "label": "Baptism (ablution/rebirth)"
+  },
+  {
+   "id": "solutio",
+   "type": "Operation",
+   "label": "Solutio (dissolution)"
+  }
+ ],
+ "candidate_edges": [
+  {
+   "subject": "albedo",
+   "relation": "corresponds-to",
+   "object": "luna",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 307,
+     "quote": "the albedo, the moonlight which in the opinion of some alchemists heralds the rising sun",
+     "confidence": "high",
+     "verified": false,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "rubedo",
+   "relation": "corresponds-to",
+   "object": "consciousness",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 307,
+     "quote": "redness ( rubedo ) which now follows denotes an increase of warmth and light coming from the sun, consciousness",
+     "confidence": "high",
+     "verified": false,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "mercurius",
+   "relation": "is",
+   "object": "nous",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 311,
+     "quote": "Mercurius is the light-bringing Nous, who knows the secret of transformation and of immortality",
+     "confidence": "high",
+     "verified": false,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "aqua-permanens",
+   "relation": "parallels",
+   "object": "baptism",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 316,
+     "quote": "The aqua pontica (or aqua permanens ) behaves very much like the baptismal water of the Church",
+     "confidence": "high",
+     "verified": false,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "solutio",
+   "relation": "dissolves",
+   "object": "the-body",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 316,
+     "quote": "the solutio, which signifies the total dissolution of the imperfect body in the aqua divina",
+     "confidence": "high",
+     "verified": false,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "salt",
+   "relation": "synonym-of",
+   "object": "arcane-substance",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 318,
+     "quote": "salt is a synonym for the arcane substance",
+     "confidence": "high",
+     "verified": false,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "salt",
+   "relation": "synonym-of",
+   "object": "albedo",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 320,
+     "quote": "Salt as much as ash is a synonym for the albedo",
+     "confidence": "high",
+     "verified": false,
+     "claim_type": "jung-reports-parallel"
+    }
+   ]
+  },
+  {
+   "subject": "salt",
+   "relation": "signifies",
+   "object": "psyche",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 321,
+     "quote": "one of its principal meanings is soul",
+     "confidence": "high",
+     "verified": false,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "salt",
+   "relation": "spark-of",
+   "object": "anima-mundi",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 321,
+     "quote": "spark of the anima mundi",
+     "confidence": "high",
+     "verified": false,
+     "claim_type": "jung-reports-parallel"
+    }
+   ]
+  },
+  {
+   "subject": "salt",
+   "relation": "corresponds-to",
+   "object": "eve",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 321,
+     "quote": "the salt is feminine and corresponds to Eve",
+     "confidence": "high",
+     "verified": false,
+     "claim_type": "jung-reports-parallel",
+     "source": "Glauber"
+    }
+   ]
+  },
+  {
+   "subject": "salt",
+   "relation": "analogue-of",
+   "object": "god-image",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 323,
+     "quote": "salt becomes an analogue of God",
+     "confidence": "medium",
+     "verified": false,
+     "claim_type": "jung-reports-parallel",
+     "source": "Glauber"
+    }
+   ]
+  },
+  {
+   "subject": "salt",
+   "relation": "essential-to",
+   "object": "the-opus",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 329,
+     "quote": "Without salt the work has no success",
+     "confidence": "high",
+     "verified": false,
+     "claim_type": "jung-quotes-source",
+     "source": "Khunrath"
+    }
+   ]
+  },
+  {
+   "subject": "salt",
+   "relation": "begotten-from",
+   "object": "human-blood",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 337,
+     "quote": "a salt, the natural balsam of the body, is begotten from human blood",
+     "confidence": "high",
+     "verified": false,
+     "claim_type": "jung-quotes-source",
+     "source": "Dorn"
+    }
+   ]
+  },
+  {
+   "subject": "salt",
+   "relation": "identified-with",
+   "object": "ouroboros",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 338,
+     "quote": "Mylius expressly identifies salt with the uroboros-dragon",
+     "confidence": "high",
+     "verified": false,
+     "claim_type": "jung-reports-parallel",
+     "source": "Mylius"
+    }
+   ]
+  },
+  {
+   "subject": "rex",
+   "relation": "carrier-of",
+   "object": "collective-unconscious",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 349,
+     "quote": "the carrier of a myth, that is to say, of the statements of the collective unconscious",
+     "confidence": "high",
+     "verified": false,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "rex",
+   "relation": "is",
+   "object": "gold",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 354,
+     "quote": "the king, is none other than gold, the king of metals",
+     "confidence": "high",
+     "verified": false,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "gold",
+   "relation": "corresponds-to",
+   "object": "lapis",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 354,
+     "quote": "a living gold, so to speak, which corresponds in every respect to the lapis",
+     "confidence": "high",
+     "verified": false,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "rex",
+   "relation": "is-a",
+   "object": "archetype",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 356,
+     "quote": "the king, like every archetype, is not just a static image; he signifies a dynamic process",
+     "confidence": "high",
+     "verified": false,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "rex",
+   "relation": "transformed-through",
+   "object": "hierosgamos",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 356,
+     "quote": "his procreation and birth, in the form of a hierosgamos",
+     "confidence": "high",
+     "verified": false,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "rex",
+   "relation": "undergoes",
+   "object": "the-sacrifice",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 358,
+     "quote": "the murder or sacrifice of the king for the purpose of renewing his kingly power",
+     "confidence": "high",
+     "verified": false,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "solutio",
+   "relation": "corresponds-to",
+   "object": "union-of-opposites",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 364,
+     "quote": "the union of the male with the female, and this in turn to the union of conscious and unconscious",
+     "confidence": "high",
+     "verified": false,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  },
+  {
+   "subject": "rex",
+   "relation": "personifies",
+   "object": "the-ego",
+   "references": [
+    {
+     "volume": 14,
+     "paragraph": 365,
+     "quote": "the king personifies a hypertrophy of the ego",
+     "confidence": "high",
+     "verified": false,
+     "claim_type": "jung-asserts"
+    }
+   ]
+  }
+ ]
+}

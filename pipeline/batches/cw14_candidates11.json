@@ -1,0 +1,193 @@
+{
+  "new_nodes": [
+    { "id": "chelidonia", "type": "Substance", "label": "Chelidonia (celandine)" },
+    { "id": "lily", "type": "Symbol", "label": "Lily (lilium)" },
+    { "id": "rosemary", "type": "Substance", "label": "Rosemary (ros marinus)" },
+    { "id": "human-blood", "type": "Substance", "label": "Human blood (sanguis)" },
+    { "id": "active-imagination", "type": "Operation", "label": "Active imagination" },
+    { "id": "self-knowledge", "type": "Concept", "label": "Self-knowledge (cognitio sui)" },
+    { "id": "atman", "type": "Concept", "label": "Atman / Purusha" },
+    { "id": "substantia-coelestis", "type": "Concept", "label": "Substantia coelestis (Dorn)" },
+    { "id": "monocolus", "type": "Symbol", "label": "Monocolus / Uniped" },
+    { "id": "osiris", "type": "Figure", "label": "Osiris" },
+    { "id": "gazophylacium", "type": "Motif", "label": "Gazophylacium (treasure-house of archetypes)" }
+  ],
+  "candidate_edges": [
+    {
+      "subject": "chelidonia",
+      "relation": "synonym-of",
+      "object": "gold",
+      "references": [
+        { "volume": 14, "paragraph": 698, "quote": "The Chelidonia, a synonym for the philosophical gold", "confidence": "high", "verified": false, "claim_type": "jung-reports-parallel" }
+      ]
+    },
+    {
+      "subject": "the-self",
+      "relation": "extracts",
+      "object": "quintessence",
+      "references": [
+        { "volume": 14, "paragraph": 698, "quote": "the image of the self (the golden quaternity) draws a quintessence out of the chthonic spirit", "confidence": "high", "verified": false, "claim_type": "jung-asserts" }
+      ]
+    },
+    {
+      "subject": "lily",
+      "relation": "synonym-of",
+      "object": "mercurius",
+      "references": [
+        { "volume": 14, "paragraph": 689, "quote": "the lily was conceived to be Mercurius and the quintessence itself", "confidence": "high", "verified": false, "claim_type": "jung-reports-parallel" }
+      ]
+    },
+    {
+      "subject": "rosemary",
+      "relation": "synonym-of",
+      "object": "aqua-permanens",
+      "references": [
+        { "volume": 14, "paragraph": 701, "quote": "Ros marinus (sea-dew) was for the alchemist a welcome analogy for the aqua permanens", "confidence": "high", "verified": false, "claim_type": "jung-reports-parallel" }
+      ]
+    },
+    {
+      "subject": "human-blood",
+      "relation": "prefigures",
+      "object": "lapis",
+      "references": [
+        { "volume": 14, "paragraph": 690, "quote": "a synonym for the red tincture, a preliminary stage of the lapis", "confidence": "high", "verified": false, "claim_type": "jung-reports-parallel" }
+      ]
+    },
+    {
+      "subject": "caelum",
+      "relation": "symbolizes",
+      "object": "god-image",
+      "references": [
+        { "volume": 14, "paragraph": 705, "quote": "the celestial balsam or life principle, which is identical with the God-image", "confidence": "high", "verified": false, "claim_type": "jung-asserts" }
+      ]
+    },
+    {
+      "subject": "active-imagination",
+      "relation": "symbolizes",
+      "object": "individuation",
+      "references": [
+        { "volume": 14, "paragraph": 705, "quote": "a representation of the individuation process ... or what we today call active imagination", "confidence": "high", "verified": false, "claim_type": "jung-asserts" }
+      ]
+    },
+    {
+      "subject": "the-opus",
+      "relation": "is-equivalent-of",
+      "object": "active-imagination",
+      "references": [
+        { "volume": 14, "paragraph": 749, "quote": "the alchemical operation seems to us the equivalent of the psychological process of active imagination", "confidence": "high", "verified": false, "claim_type": "jung-asserts" }
+      ]
+    },
+    {
+      "subject": "the-shadow",
+      "relation": "produces",
+      "object": "nigredo",
+      "references": [
+        { "volume": 14, "paragraph": 708, "quote": "Confrontation with the shadow produces at first a dead balance ... the alchemists called this stage nigredo", "confidence": "high", "verified": false, "claim_type": "jung-asserts" }
+      ]
+    },
+    {
+      "subject": "unio-mentalis",
+      "relation": "is",
+      "object": "self-knowledge",
+      "references": [
+        { "volume": 14, "paragraph": 711, "quote": "The unio mentalis ... means knowledge of oneself", "confidence": "high", "verified": false, "claim_type": "jung-asserts" }
+      ]
+    },
+    {
+      "subject": "the-self",
+      "relation": "is-analogue-of",
+      "object": "atman",
+      "references": [
+        { "volume": 14, "paragraph": 711, "quote": "regarded the self as a substance ... This view fully accords with the Indian idea of purusha-atman", "confidence": "high", "verified": false, "claim_type": "jung-reports-parallel" }
+      ]
+    },
+    {
+      "subject": "substantia-coelestis",
+      "relation": "symbolizes",
+      "object": "the-self",
+      "references": [
+        { "volume": 14, "paragraph": 736, "quote": "corresponds to Dorn's substantia coelestis , that is, to knowledge of the inner light—the self or imago Dei", "confidence": "high", "verified": false, "claim_type": "jung-asserts" }
+      ]
+    },
+    {
+      "subject": "mercurius",
+      "relation": "is",
+      "object": "lapis",
+      "references": [
+        { "volume": 14, "paragraph": 714, "quote": "Mercurius is not only the lapis as prima materia but the lapis as ultima materia", "confidence": "high", "verified": false, "claim_type": "jung-reports-parallel", "source": "Albertus Magnus" }
+      ]
+    },
+    {
+      "subject": "aqua-permanens",
+      "relation": "is-analogue-of",
+      "object": "the-unconscious",
+      "references": [
+        { "volume": 14, "paragraph": 717, "quote": "the matrix and \"nurse of all things\" makes it an unsurpassable analogy of the unconscious", "confidence": "high", "verified": false, "claim_type": "jung-asserts" }
+      ]
+    },
+    {
+      "subject": "monocolus",
+      "relation": "symbolizes",
+      "object": "mercurius",
+      "references": [
+        { "volume": 14, "paragraph": 720, "quote": "in order to emphasize the unity of Mercurius, Albertus makes use of the expression \"monocolus\"", "confidence": "high", "verified": false, "claim_type": "jung-reports-parallel", "source": "Albertus Magnus" }
+      ]
+    },
+    {
+      "subject": "osiris",
+      "relation": "is-analogue-of",
+      "object": "mercurius",
+      "references": [
+        { "volume": 14, "paragraph": 726, "quote": "The alchemical interpretation of him as Mercurius", "confidence": "high", "verified": false, "claim_type": "jung-reports-parallel" }
+      ]
+    },
+    {
+      "subject": "osiris",
+      "relation": "is-analogue-of",
+      "object": "christ",
+      "references": [
+        { "volume": 14, "paragraph": 726, "quote": "the dying and resurgent God-man and hence a parallel to Christ", "confidence": "high", "verified": false, "claim_type": "jung-reports-parallel" }
+      ]
+    },
+    {
+      "subject": "the-self",
+      "relation": "unites-with",
+      "object": "anima",
+      "references": [
+        { "volume": 14, "paragraph": 736, "quote": "the self or imago Dei which is here united with its chthonic counterpart, the feminine spirit of the unconscious", "confidence": "high", "verified": false, "claim_type": "jung-asserts" }
+      ]
+    },
+    {
+      "subject": "sophia-wisdom",
+      "relation": "prefigures",
+      "object": "mary",
+      "references": [
+        { "volume": 14, "paragraph": 744, "quote": "she was very distinctly prefigured in the Sophia of the Old Testament", "confidence": "high", "verified": false, "claim_type": "jung-asserts" }
+      ]
+    },
+    {
+      "subject": "collective-unconscious",
+      "relation": "corresponds-to",
+      "object": "gazophylacium",
+      "references": [
+        { "volume": 14, "paragraph": 744, "quote": "the treasure-house of the archetypes, the \"gazophylacium\" of the alchemists, and the collective unconscious", "confidence": "high", "verified": false, "claim_type": "jung-asserts" }
+      ]
+    },
+    {
+      "subject": "anima-mundi",
+      "relation": "corresponds-to",
+      "object": "god-image",
+      "references": [
+        { "volume": 14, "paragraph": 748, "quote": "identify this anima mundi with the Biblical imago Dei", "confidence": "high", "verified": false, "claim_type": "jung-reports-parallel" }
+      ]
+    },
+    {
+      "subject": "anthropos",
+      "relation": "manifests-as",
+      "object": "homunculus",
+      "references": [
+        { "volume": 14, "paragraph": 748, "quote": "the archetype of the Anthropos ... down to the figure of the homunculus in Faust", "confidence": "high", "verified": false, "claim_type": "jung-asserts" }
+      ]
+    }
+  ]
+}

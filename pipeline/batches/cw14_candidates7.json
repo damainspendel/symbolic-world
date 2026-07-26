@@ -1,0 +1,188 @@
+{
+  "new_nodes": [
+    { "id": "logos", "type": "Concept", "label": "Logos" },
+    { "id": "diana", "type": "Figure", "label": "Diana (Luna as nymph)" },
+    { "id": "winged-youth", "type": "Figure", "label": "Winged Youth (adolescens alatus)" },
+    { "id": "eagle", "type": "Symbol", "label": "Eagle (aquila)" },
+    { "id": "thief", "type": "Figure", "label": "The Thief (fur)" },
+    { "id": "arsenic", "type": "Substance", "label": "Arsenic (arsenicum)" }
+  ],
+  "candidate_edges": [
+    {
+      "subject": "bitch",
+      "relation": "symbolizes",
+      "object": "the-vessel",
+      "references": [
+        { "volume": 14, "paragraph": 181, "quote": "She is the vessel which must be broken asunder in order to extract the precious content", "confidence": "high", "verified": false, "claim_type": "jung-asserts" }
+      ]
+    },
+    {
+      "subject": "bitch",
+      "relation": "transforms-into",
+      "object": "eagle",
+      "references": [
+        { "volume": 14, "paragraph": 183, "quote": "the dark, dangerous, rabid dog changes into an eagle at the time of the plenilunium", "confidence": "high", "verified": false, "claim_type": "jung-asserts" }
+      ]
+    },
+    {
+      "subject": "dove",
+      "relation": "heralds",
+      "object": "hierosgamos",
+      "references": [
+        { "volume": 14, "paragraph": 185, "quote": "The appearance of a pair of doves points to the imminent marriage of the filius regius", "confidence": "high", "verified": false, "claim_type": "jung-asserts" }
+      ]
+    },
+    {
+      "subject": "lapis",
+      "relation": "amplified-by",
+      "object": "shulamite",
+      "references": [
+        { "volume": 14, "paragraph": 185, "quote": "the lapis in its dark, feminine form appears instead of the dog and is compared to the Shulamite", "confidence": "high", "verified": false, "claim_type": "jung-reports-parallel", "source": "Abraham Eleazar" }
+      ]
+    },
+    {
+      "subject": "winged-youth",
+      "relation": "is-analogue-of",
+      "object": "sol",
+      "references": [
+        { "volume": 14, "paragraph": 200, "quote": "the winged youth is Sol, the filius solis, lapis, aurum philosophicum", "confidence": "high", "verified": false, "claim_type": "jung-asserts" }
+      ]
+    },
+    {
+      "subject": "winged-youth",
+      "relation": "personifies",
+      "object": "sulphur",
+      "references": [
+        { "volume": 14, "paragraph": 196, "quote": "the winged youth, who represents the other aspect, or personifies the “true sulphur", "confidence": "high", "verified": false, "claim_type": "jung-asserts" }
+      ]
+    },
+    {
+      "subject": "winged-youth",
+      "relation": "unites-with",
+      "object": "luna",
+      "references": [
+        { "volume": 14, "paragraph": 200, "quote": "he will become real only if he can unite with Luna, the “mother of mortal bodies.”", "confidence": "high", "verified": false, "claim_type": "jung-asserts" }
+      ]
+    },
+    {
+      "subject": "diana",
+      "relation": "personifies",
+      "object": "anima",
+      "references": [
+        { "volume": 14, "paragraph": 193, "quote": "Diana as the numen and nymph of this spring is an excellent formulation of the figure we know as the anima", "confidence": "high", "verified": false, "claim_type": "jung-asserts" }
+      ]
+    },
+    {
+      "subject": "diana",
+      "relation": "is-analogue-of",
+      "object": "luna",
+      "references": [
+        { "volume": 14, "paragraph": 200, "quote": "The nymph of the spring is in the last analysis Luna, the mother-beloved", "confidence": "high", "verified": false, "claim_type": "jung-asserts" }
+      ]
+    },
+    {
+      "subject": "bitch",
+      "relation": "is-dark-aspect-of",
+      "object": "diana",
+      "references": [
+        { "volume": 14, "paragraph": 188, "quote": "the rabid dog, who is none other than the vindictive and treacherous aspect of Diana as the new moon", "confidence": "high", "verified": false, "claim_type": "jung-asserts" }
+      ]
+    },
+    {
+      "subject": "thief",
+      "relation": "personifies",
+      "object": "the-shadow",
+      "references": [
+        { "volume": 14, "paragraph": 203, "quote": "in reality it is merely the ego with its shadow where the abysmal depths of human nature begin to appear", "confidence": "high", "verified": false, "claim_type": "jung-asserts" }
+      ]
+    },
+    {
+      "subject": "thief",
+      "relation": "identical-to",
+      "object": "bitch",
+      "references": [
+        { "volume": 14, "paragraph": 187, "quote": "That the dog and the thief are identical", "confidence": "high", "verified": false, "claim_type": "jung-asserts" }
+      ]
+    },
+    {
+      "subject": "arsenic",
+      "relation": "conjoins",
+      "object": "mercurius",
+      "references": [
+        { "volume": 14, "paragraph": 195, "quote": "arsenic is defined as an “hermaphrodite, the means whereby Sulphur and Mercury are united.", "confidence": "high", "verified": false, "claim_type": "jung-quotes-source", "source": "Ruland, Lexicon alchemiae" }
+      ]
+    },
+    {
+      "subject": "luna",
+      "relation": "prefigures",
+      "object": "the-self",
+      "references": [
+        { "volume": 14, "paragraph": 217, "quote": "The moon with her antithetical nature is, in a sense, a prototype of individuation, a prefiguration of the self", "confidence": "high", "verified": false, "claim_type": "jung-asserts" }
+      ]
+    },
+    {
+      "subject": "luna",
+      "relation": "mother-of",
+      "object": "sol",
+      "references": [
+        { "volume": 14, "paragraph": 219, "quote": "Luna is really the mother of the sun", "confidence": "high", "verified": false, "claim_type": "jung-asserts" }
+      ]
+    },
+    {
+      "subject": "the-unconscious",
+      "relation": "gives-birth-to",
+      "object": "consciousness",
+      "references": [
+        { "volume": 14, "paragraph": 219, "quote": "the unconscious is pregnant with consciousness and gives birth to it", "confidence": "high", "verified": false, "claim_type": "jung-asserts" }
+      ]
+    },
+    {
+      "subject": "logos",
+      "relation": "is-equivalent-of",
+      "object": "sol",
+      "references": [
+        { "volume": 14, "paragraph": 226, "quote": "Logos and Eros are intellectually formulated intuitive equivalents of the archetypal images of Sol and Luna", "confidence": "high", "verified": false, "claim_type": "jung-asserts" }
+      ]
+    },
+    {
+      "subject": "eros",
+      "relation": "is-equivalent-of",
+      "object": "luna",
+      "references": [
+        { "volume": 14, "paragraph": 226, "quote": "Logos and Eros are intellectually formulated intuitive equivalents of the archetypal images of Sol and Luna", "confidence": "high", "verified": false, "claim_type": "jung-asserts" }
+      ]
+    },
+    {
+      "subject": "sol-niger",
+      "relation": "corresponds-to",
+      "object": "animus",
+      "references": [
+        { "volume": 14, "paragraph": 232, "quote": "The dark sun of feminine psychology is connected with the father-imago, since the father is the first carrier of the animus-image", "confidence": "high", "verified": false, "claim_type": "jung-asserts" }
+      ]
+    },
+    {
+      "subject": "salt",
+      "relation": "conquers",
+      "object": "sulphur",
+      "references": [
+        { "volume": 14, "paragraph": 235, "quote": "sulphur is the true black devil of hell, who can be conquered by no element save by salt alone", "confidence": "high", "verified": false, "claim_type": "jung-quotes-source", "source": "Glauber" }
+      ]
+    },
+    {
+      "subject": "salt",
+      "relation": "corresponds-to",
+      "object": "lapis",
+      "references": [
+        { "volume": 14, "paragraph": 235, "quote": "Salt by contrast is a “light” substance, similar to the lapis", "confidence": "high", "verified": false, "claim_type": "jung-asserts" }
+      ]
+    },
+    {
+      "subject": "salt",
+      "relation": "synonym-of",
+      "object": "aqua-permanens",
+      "references": [
+        { "volume": 14, "paragraph": 240, "quote": "salt-water and sea-water are synonyms for the aqua permanens", "confidence": "high", "verified": false, "claim_type": "jung-reports-parallel", "source": "Turba Philosophorum" }
+      ]
+    }
+  ]
+}

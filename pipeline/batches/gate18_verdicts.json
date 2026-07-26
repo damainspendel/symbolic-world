@@ -1,0 +1,154 @@
+[
+ {
+  "n": 1,
+  "verdict": "PARTIAL",
+  "reason": "The paragraph does say 'the Light, the Logos (John 1:5), who is the Johannine Christ', but the identification is explicitly scriptural and qualified ('the Johannine Christ', anchored to John 1:5); the paragraph's own assertion is about the filius unius diei being this Logos. A bare 'logos is christ' edge with source null drops the Johannine attribution the claim_type jung-reports-parallel requires. Keep the edge but attribute the reported identification to its source.",
+  "correction": {
+   "subject": "logos",
+   "relation": "is",
+   "object": "christ",
+   "claim_type": "jung-reports-parallel",
+   "source": "Gospel of John (John 1:5)"
+  }
+ },
+ {
+  "n": 2,
+  "verdict": "SUPPORTED",
+  "reason": "§443: 'The sublimation of Luna... is an unmistakable paraphrase on the one hand of the Assumption of the Virgin'. Quote accurate across ellipsis (omitted matter adds the marriage-of-the-bride parallel, not contradicting). Strictly it is Luna's sublimation to the imperial place that paraphrases the Assumption, but the compression to luna—parallels→assumption is faithful. Direction and claim_type fine."
+ },
+ {
+  "n": 3,
+  "verdict": "SUPPORTED",
+  "reason": "§444 quotes Angelus Silesius verbatim: 'If by God's Holy Ghost thou art beguiled, There will be born in thee the Eternal Child.' Holy Ghost begets/engenders the Eternal (divine) Child in the soul — direction correct, jung-quotes-source with source Angelus Silesius is exactly right."
+ },
+ {
+  "n": 4,
+  "verdict": "SUPPORTED",
+  "reason": "§450: the Quinta Essentia is the 'Maid'; 'in her we recognize the crowned Virgin... who recalls the old pictures of the anima media natura or anima mundi', and Jung continues in his own voice ('She is the divine life indwelling in the world'). Jung himself makes the identification, so jung-asserts fits; ellipsis (omitting 'the Queen of Heaven') is not misleading."
+ },
+ {
+  "n": 5,
+  "verdict": "SUPPORTED",
+  "reason": "§452: 'Her position corresponds on the one hand to that of Luna and on the other to that of the Blessed Virgin' — 'Her' is the Maid/quintessence from the same paragraph. Ellipsis omits the Luna half but does not distort the Mary half. corresponds-to (not identity) is the right strength; jung-asserts correct."
+ },
+ {
+  "n": 6,
+  "verdict": "SUPPORTED",
+  "reason": "§454: 'the apotheosis of the Queen is described in a way that instantly reminds us of its prototype, the coronation of the Virgin Mary.' Parallel explicitly drawn, direction correct (alchemical Queen has the Marian coronation as prototype), claim_type jung-reports-parallel appropriate."
+ },
+ {
+  "n": 7,
+  "verdict": "PARTIAL",
+  "reason": "§454 supports lion→Christ: 'the allegories of Christ as child and lion, the latter representing the body of the Crucified'. But the paragraph never says green lion; it speaks only of the lion (the wounded lion in the Virgin's lap). Tagging the edge to the leo viridis node imports a specification the anchor paragraph does not make.",
+  "correction": {
+   "subject": "lion",
+   "relation": "symbolizes",
+   "object": "christ",
+   "claim_type": "jung-reports-parallel",
+   "source": null
+  }
+ },
+ {
+  "n": 8,
+  "verdict": "SUPPORTED",
+  "reason": "§460 quotes Khunrath on the filius Mundi Maioris: 'it is a splendid living likeness of our Saviour Jesus Christ'. Quote accurate; the likeness (parallel, not identity — Khunrath says the Son of the Great World is 'very similar to him') is Khunrath's own designation, so jung-quotes-source with source Khunrath is correct."
+ },
+ {
+  "n": 9,
+  "verdict": "PARTIAL",
+  "reason": "§466: 'He who held them was \"like unto the Son of man,\" in agreement with the puellus regius in the \"Introitus\".' The figure the text puts in agreement with the Son of Man is the puellus regius (the royal boy / filius regius), not Rex as such — in this chapter Jung distinguishes the aging king from the renewed son; the same paragraph makes the sinking king the arcane substance. Attributing the Son-of-Man parallel to rex conflates king and royal child.",
+  "correction": {
+   "subject": "filius-regius",
+   "relation": "parallels",
+   "object": "son-of-man",
+   "claim_type": "jung-reports-parallel",
+   "source": null
+  }
+ },
+ {
+  "n": 10,
+  "verdict": "PARTIAL",
+  "reason": "The sentence is real: 'The king sinking in the sea is the arcane substance.' But the subject is the king in a specific image-state (sinking in the sea, Maier's 'antimony of the philosophers'), and the 'is' is symbolic equivalence within that emblem, not a standing identity of the Rex node with the arcanum. A bare rex—is→arcane-substance edge is identity overreach; symbolizes captures what the paragraph licenses.",
+  "correction": {
+   "subject": "rex",
+   "relation": "symbolizes",
+   "object": "arcane-substance",
+   "claim_type": "jung-asserts",
+   "source": null
+  }
+ },
+ {
+  "n": 11,
+  "verdict": "PARTIAL",
+  "reason": "§466 says 'The arcane substance corresponds to the Christian dominant, which was originally alive and present in consciousness but then sank into the unconscious.' 'Dominant' (the ruling dominant of consciousness) is a specific Jungian concept, repeatedly used in this section (§505 'psychic dominant'); 'the Christian standpoint' is a different, weaker notion and mislabels the object node. Quote itself even says 'dominant'.",
+  "correction": {
+   "subject": "arcane-substance",
+   "relation": "corresponds-to",
+   "object": "christian-dominant",
+   "claim_type": "jung-asserts",
+   "source": null
+  }
+ },
+ {
+  "n": 12,
+  "verdict": "SUPPORTED",
+  "reason": "§471: the king's power 'had consisted just in his ability to unite the polarity of all existence in a symbol'. Rex unites the opposites (originally; the paragraph adds that this power decays with one-sidedness, which qualifies but does not reverse the claim). jung-asserts correct."
+ },
+ {
+  "n": 13,
+  "verdict": "SUPPORTED",
+  "reason": "§472: 'So, too, the king rises from his \"infernal fire\" as a crowned dragon. He is the Mercurial serpent...' Direction verified: rex → dragon (the king, phoenix-like, re-emerges in dragon/worm form), not dragon → rex. Quote accurate; jung-asserts fine (Jung's own synthesis over Epiphanius and the alchemical sources)."
+ },
+ {
+  "n": 14,
+  "verdict": "SUPPORTED",
+  "reason": "§476: the son of one day is related to the Hermaphrodite of nature, the Philosophic Man, and Saturn, and 'All these figures are synonyms for Mercurius'; §472 independently equates the filius unius diei with the Hermaphrodite/arcane substance. The synonym chain includes the filius unius diei. Ellipsis in the quote is not misleading; jung-asserts fits (it is Jung's interpretive conclusion)."
+ },
+ {
+  "n": 15,
+  "verdict": "SUPPORTED",
+  "reason": "§483: 'The dragon is an allegory of Christ as well as of the Antichrist.' (footnoted to tradition, so jung-reports-parallel is right). The edge takes only the Antichrist half, but the quote supplied preserves the full double allegory, so nothing is misleadingly suppressed. Direction correct."
+ },
+ {
+  "n": 16,
+  "verdict": "SUPPORTED",
+  "reason": "§487: 'the central idea of the filius philosophorum is based on a conception of the Anthropos in which the \"Man\"... does not coincide with the Christian, historical redeemer figure.' Direction correct (filius philosophorum is based on the Anthropos conception, not vice versa); jung-asserts correct."
+ },
+ {
+  "n": 17,
+  "verdict": "SUPPORTED",
+  "reason": "§488: 'that inner primordial image which had produced a Purusha or a Gayomart long before the Christian era' — the primordial image is the Anthropos archetype of this section, and Purusha is named as its pre-Christian product, supporting anthropos—parallels→atman/purusha. Claim_type jung-reports-parallel is acceptable for this cross-tradition parallel, though jung-asserts would also fit since Jung speaks in his own voice."
+ },
+ {
+  "n": 18,
+  "verdict": "PARTIAL",
+  "reason": "§490 supports the content and direction ('the Anthropos, the man created in the image of the Nous'), but the sentence begins 'The inner spiritual man of the Gnostics is...' — this is Gnostic doctrine Jung reports (footnote 344), not Jung's own metaphysical assertion. claim_type jung-asserts overstates Jung's commitment.",
+  "correction": {
+   "subject": "anthropos",
+   "relation": "image-of",
+   "object": "nous",
+   "claim_type": "jung-reports-parallel",
+   "source": "Gnostic tradition"
+  }
+ },
+ {
+  "n": 19,
+  "verdict": "SUPPORTED",
+  "reason": "§490 states it verbatim: 'This true man is Dorn's \"vir unus\" and at the same time the lapis Philosophorum.' The antecedent of 'this true man' is the chên-yên of the Wei Po-yang passage, matching the subject node. Though flagged as potential identity overreach, the paragraph genuinely asserts the identity in Jung's own sentence (with Dorn cited); jung-asserts is defensible."
+ },
+ {
+  "n": 20,
+  "verdict": "SUPPORTED",
+  "reason": "§480: 'From Mercurius comes the illumination of the adept, and it is through his work that Mercurius is freed from his chains' — 'his work' is the adept's work, i.e., the opus. Direction verified: the opus frees Mercurius (while Mercurius, reciprocally, illuminates the adept). Quote accurate; jung-asserts fine."
+ },
+ {
+  "n": 21,
+  "verdict": "SUPPORTED",
+  "reason": "§492: 'it is the king who dies or is killed, is dead and buried and on the third day rises again.' Death-and-resurrection of the king within the opus supports rex—undergoes→rebirth/renovatio. Quote accurate; jung-asserts correct."
+ },
+ {
+  "n": 22,
+  "verdict": "SUPPORTED",
+  "reason": "§505: the confrontation is 'the collision of the masculine, spiritual father-world ruled over by King Sol with the feminine, chthonic mother-world symbolized by the aqua permanens or by the chaos.' Sol—opposes→aqua-permanens is a fair compression of the collision of the two worlds they head; ellipsis (omitting 'feminine, chthonic') is not misleading. jung-asserts correct."
+ }
+]

@@ -1,0 +1,155 @@
+[
+ {
+  "id": "E126R1",
+  "verdict": "SUPPORTED",
+  "reason": "The paragraph interprets the cavern of death and rebirth as belonging to the subterranean mother (Hecate), and asserts that burial in consecrated ground 'is a rendering back to the mother with the hope of resurrection.' The mother as locus of both death and rebirth is Jung's own interpretive assertion, so presides-over and jung-asserts hold."
+ },
+ {
+  "id": "E159R0",
+  "verdict": "SUPPORTED",
+  "reason": "Jung states directly 'It allowed me to identify \"psychic energy\" with \"libido\"' and elaborates the energic conception in his own voice. Identity claim, direction, and jung-asserts are all correct."
+ },
+ {
+  "id": "E159R1",
+  "verdict": "SUPPORTED",
+  "reason": "Jung asserts libido should be understood 'as an energy-value which is able to communicate itself to any field of activity whatsoever... without ever being itself a specific instinct.' The Schopenhauer quotation is supplementary; the core claim is Jung's own."
+ },
+ {
+  "id": "E160R0",
+  "verdict": "PARTIAL",
+  "reason": "The paragraph does not say libido is 'stored in' the unconscious; it contrasts libido under conscious control with 'the energy which belongs to the archetype, to the unconscious, and which is therefore not his to dispose of.' The relation is one of belonging/non-disposability of specifically archetypal energy, not a storage/reservoir claim about libido in general.",
+  "correction": {
+   "subject": "libido",
+   "relation": "belongs-to",
+   "object": "the-unconscious",
+   "claim_type": "jung-asserts",
+   "source": null,
+   "note": "Scope: the energy of the archetype (religious relationship) belongs to the unconscious and is not at the ego's disposal; not a claim that all libido is stored in the unconscious."
+  }
+ },
+ {
+  "id": "E161R0",
+  "verdict": "SUPPORTED",
+  "reason": "Jung states 'psychic energy or libido creates the God-image by making use of archetypal patterns' — a direct first-person assertion ('I am therefore of the opinion'). Direction and claim_type correct."
+ },
+ {
+  "id": "E162R0",
+  "verdict": "SUPPORTED",
+  "reason": "Opening sentence: 'The psychic life-force, the libido, symbolizes itself in the sun.' Libido symbolized-by sol matches the direction exactly; it is Jung's own interpretive thesis, not a reported parallel."
+ },
+ {
+  "id": "E163R0",
+  "verdict": "SUPPORTED",
+  "reason": "'The sun comparison tells us over and over again that the dynamic of the gods is psychic energy,' framed by 'this whole solar mythology is psychology projected into the heavens.' Sol as symbol of psychic energy is Jung's assertion; direction correct (this is the inverse pairing of E162R0, both asserted)."
+ },
+ {
+  "id": "E164R0",
+  "verdict": "SUPPORTED",
+  "reason": "'The finest of all symbols of the libido is the human figure, conceived as a demon or hero.' Hero as symbol of libido; direction (hero symbolizes libido) matches the text."
+ },
+ {
+  "id": "E165R0",
+  "verdict": "SUPPORTED",
+  "reason": "Referring to the hero or god figures characterized by libido-symbols, Jung asserts 'They are, in fact, personifications of the libido.' Direct assertion, correct direction."
+ },
+ {
+  "id": "E166R0",
+  "verdict": "SUPPORTED",
+  "reason": "Libido 'personifies itself in figures of heroes with solar attributes' — the hero image carries solar attributes, which supports the amplification-layer link hero amplified-by sol as an image association asserted by Jung."
+ },
+ {
+  "id": "E167R0",
+  "verdict": "SUPPORTED",
+  "reason": "'That is why the hero so often has two mothers,' with examples (Heracles/Hera, Hiawatha, Buddha, Romulus and Remus) and the dual-birth motif. Jung asserts the dual-mother motif as his own interpretive generalization, using Rank only for the exposure examples."
+ },
+ {
+  "id": "E168R0",
+  "verdict": "SUPPORTED",
+  "reason": "'In the morning of life the son tears himself loose from the mother, from the domestic hearth' and his life is 'a violent yet fleeting deliverance from ever-lurking night' (the maternal depths). The hero/son's deliverance from the mother is asserted as the meaning of the primordial sun-image."
+ },
+ {
+  "id": "E169R0",
+  "verdict": "SUPPORTED",
+  "reason": "'The dragon represents the negative mother-imago and thus expresses resistance to incest.' The dragon is asserted as an image of the mother — specifically her negative/terrible aspect — which supports the amplification edge; ideally the edge should carry the 'negative mother-imago' qualification."
+ },
+ {
+  "id": "E170R0",
+  "verdict": "SUPPORTED",
+  "reason": "The paragraph reports Marduk/Yahweh going forth to battle the dragon Rahab/Tiamat and states 'the hero sets free those who had previously been devoured by the whale-dragon (Frobenius).' Hero-battles-dragon is supported and the Frobenius attribution justifies jung-quotes-source."
+ },
+ {
+  "id": "E171R0",
+  "verdict": "SUPPORTED",
+  "reason": "The meaning of the myth cycle of union with the mother (Ogyges possessing the mother-city) is asserted to be 'the longing to attain rebirth through a return to the womb' — symbolic incest as expression of the rebirth-longing, in Jung's own voice."
+ },
+ {
+  "id": "E172R0",
+  "verdict": "SUPPORTED",
+  "reason": "Jung asserts 'The canalization of regressive libido into the god justifies the mythological statement that it is the god or the hero who commits incest'; the Herodotus material only illustrates it. Direction (incest committed-by hero) matches."
+ },
+ {
+  "id": "E173R0",
+  "verdict": "SUPPORTED",
+  "reason": "The paragraph presupposes the hero's death through self-sacrifice as the required consummation ('the hero Chiwantopel is not yet fatally poisoned and ready for death through self-sacrifice') and interprets 'this sacrifice' as giving up the connection with the mother. Note the quoted sentence says 'not yet' — the sacrifice is pending in the Miller material, but the hero-undergoes-sacrifice schema is what Jung asserts."
+ },
+ {
+  "id": "E174R0",
+  "verdict": "SUPPORTED",
+  "reason": "'By sacrificing these valued objects of desire and possession, the instinctive desire, or libido, is given up in order that it may be regained in new form,' with sacrifice releasing energy and renewing life. Sacrifice as transformer of libido is directly asserted."
+ },
+ {
+  "id": "E175R0",
+  "verdict": "PARTIAL",
+  "reason": "The paragraph says the underlying images of the broken sceptre are 'the sacrificial death and resurrection of Christ, conceived as the self-sacrifice of the sun' — Christ's death is an instance/image of the archetypal self-sacrifice, not something the sacrifice 'prefigures.' 'Prefigures' imports a temporal-typological claim the paragraph does not make and arguably reverses the conceptual dependence.",
+  "correction": {
+   "subject": "the-sacrifice",
+   "relation": "amplified-by",
+   "object": "christ",
+   "layer": "amplification",
+   "kind": "image",
+   "claim_type": "jung-asserts",
+   "source": null,
+   "note": "Christ's sacrificial death and resurrection, conceived as the sun's self-sacrifice, is an image amplifying the sacrifice archetype (equivalently: Christ exemplifies the-sacrifice)."
+  }
+ },
+ {
+  "id": "E176R0",
+  "verdict": "SUPPORTED",
+  "reason": "The night sea journey is the middle section of the myth cycle whose meaning Jung asserts is 'the longing to attain rebirth through a return to the womb, and to become immortal like the sun.' The spliced quote skips 'is lacking in the Ogyges tradition,' but the meaning-statement explicitly covers the whole cycle including the night sea journey, so the ellipsis is not distorting."
+ },
+ {
+  "id": "E177R0",
+  "verdict": "SUPPORTED",
+  "reason": "'All these sea-going gods are solar figures. They are enclosed in a chest or ark for the \"night sea journey\" (Frobenius)... During the night sea journey the sun-god is shut up in the mother's womb.' Solar imagery amplifies the night sea journey; the Frobenius attribution for the term/motif supports jung-quotes-source."
+ },
+ {
+  "id": "E178R0",
+  "verdict": "PARTIAL",
+  "reason": "The paragraph asserts 'The tree entwined by the snake may therefore be taken as the symbol of the mother who is protected against incest by fear' — but the subject node is the alchemical arbor philosophica, which CW5 §396 does not discuss. This is a conceptual conflation: the mythological tree (specifically the snake-entwined tree) is the mother-symbol here, not the philosophical tree of alchemy.",
+  "correction": {
+   "subject": "tree",
+   "subject_label": "The Tree (mythological tree / tree-symbol)",
+   "relation": "symbolizes",
+   "object": "great-mother",
+   "claim_type": "jung-asserts",
+   "source": null,
+   "note": "Attach to a generic tree/world-tree node, not arbor philosophica; the specific image is the tree entwined by the snake as symbol of the incest-protected mother."
+  }
+ },
+ {
+  "id": "E179R0",
+  "verdict": "PARTIAL",
+  "reason": "The paragraph does support tree imagery amplifying the sacrifice (hanged gods Attis, Marsyas, Odin, Christ; 'the Cross is the Tree of Life and at the same time a Tree of Death'), but the object node is wrong: this is the mythological tree of life/death as mother-symbol, not the alchemical arbor philosophica, which §349 never mentions. Same node conflation as E178R0.",
+  "correction": {
+   "subject": "the-sacrifice",
+   "relation": "amplified-by",
+   "object": "tree",
+   "object_label": "The Tree (tree of life / tree of death, mother-symbol)",
+   "layer": "amplification",
+   "kind": "image",
+   "claim_type": "jung-asserts",
+   "source": null,
+   "note": "The hanging of gods on the tree — Cross as Tree of Life and Tree of Death — amplifies the sacrifice; retarget from arbor philosophica to the mythological tree node."
+  }
+ }
+]

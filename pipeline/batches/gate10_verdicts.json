@@ -1,0 +1,154 @@
+[
+ {
+  "n": 1,
+  "verdict": "SUPPORTED",
+  "reason": "Jung explicitly draws the parallel: 'The reference to the mountains which encompass the Shulamite has a strange parallel in Parvati,' amplified by the shared blackness/withdrawal motif. Direction and jung-reports-parallel claim_type fit an amplificatory parallel."
+ },
+ {
+  "n": 2,
+  "verdict": "SUPPORTED",
+  "reason": "The named source Mylius is quoted saying the germinating greenness ('this virtue of generation and the preservation of things') 'might be called the Soul of the World,' directly linking the benedicta viriditas Jung has just introduced to the anima mundi. jung-quotes-source with Mylius is correct."
+ },
+ {
+  "n": 3,
+  "verdict": "PARTIAL",
+  "reason": "The paragraph says 'the brain is a synonym for the arcane substance, as is clear from a Hermes quotation in the Rosarium' — a reported alchemical designation evidenced by a source, not Jung's flat assertion, and the object named is the arcane substance, not prima materia specifically.",
+  "correction": {
+   "subject": "brain",
+   "relation": "synonym-of",
+   "object": "arcane-substance",
+   "claim_type": "jung-reports-parallel",
+   "source": "Rosarium philosophorum (Hermes quotation)"
+  }
+ },
+ {
+  "n": 4,
+  "verdict": "PARTIAL",
+  "reason": "Jung says the coniunctio's equivalent 'in the ecclesiastical rite' is specifically 'the mixing of substances, or the Communion in both kinds' — a particular rite, not the Mass as a whole. Object is overbroad.",
+  "correction": {
+   "subject": "coniunctio",
+   "relation": "corresponds-to",
+   "object": "mixing-of-substances-communion-in-both-kinds",
+   "claim_type": "jung-asserts",
+   "source": null
+  }
+ },
+ {
+  "n": 5,
+  "verdict": "PARTIAL",
+  "reason": "The link is real — 'in it dwells the Mercurial serpent' — but the whole clause is framed as 'the alchemical idea of the ignis gehennalis,' i.e., reported alchemical doctrine rather than Jung's own flat assertion.",
+  "correction": {
+   "subject": "ignis-gehennalis",
+   "relation": "contains",
+   "object": "mercurius",
+   "claim_type": "jung-reports-parallel",
+   "source": null
+  }
+ },
+ {
+  "n": 6,
+  "verdict": "SUPPORTED",
+  "reason": "Jung states in his own voice that though the fire is a portion of God's spirit, 'it is also Lucifer, the most beautiful of God's angels, who after his fall became the fire of hell itself.' Manifests-as and jung-asserts fit."
+ },
+ {
+  "n": 7,
+  "verdict": "SUPPORTED",
+  "reason": "Jung himself supplies the equation in the parenthesis — 'an illustration of the fils de l'homme (= Mercurius)' — and grounds it via Yesod's alchemical correspondence to Mercurius. Analogue relation and direction are correct."
+ },
+ {
+  "n": 8,
+  "verdict": "SUPPORTED",
+  "reason": "'Alchemically he [Jezoth = Yesod] corresponds to the spiritus vegetativus, Mercurius.' Direction Yesod -> Mercurius matches the sentence exactly."
+ },
+ {
+  "n": 9,
+  "verdict": "SUPPORTED",
+  "reason": "'In Yesod is accomplished the mystery of the unitio of the upper, Tifereth, and the lower, Malchuth,' reinforced by 'he leads the emanation of Tifereth down into Malchuth.' Yesod as the uniting term is correct."
+ },
+ {
+  "n": 10,
+  "verdict": "PARTIAL",
+  "reason": "Jung says Paracelsus 'introduced it into alchemy from the Cabala as a synonym for the arcane substance' — a reported Paracelsian designation (hedged with 'It seems as though'), not Jung's flat assertion, and the object is the arcane substance, not prima materia by name.",
+  "correction": {
+   "subject": "sapphire",
+   "relation": "synonym-of",
+   "object": "arcane-substance",
+   "claim_type": "jung-reports-parallel",
+   "source": "Paracelsus"
+  }
+ },
+ {
+  "n": 11,
+  "verdict": "SUPPORTED",
+  "reason": "Jung asserts of the stone symbol: '\"Stone\" is the essence of everything solid and earthly. It represents feminine matter.' The edge is correct, though the paragraph specifies the matter as feminine — worth preserving in the object label if possible."
+ },
+ {
+  "n": 12,
+  "verdict": "SUPPORTED",
+  "reason": "Opening sentence is nearly verbatim: 'The nigredo corresponds to the darkness of the unconscious, which contains in the first place the inferior personality, the shadow.'"
+ },
+ {
+  "n": 13,
+  "verdict": "SUPPORTED",
+  "reason": "'The white dove is a hint that the Shulamite will become Sophia, the Holy Ghost' — a prospective transformation asserted by Jung; transforms-into with correct direction."
+ },
+ {
+  "n": 14,
+  "verdict": "SUPPORTED",
+  "reason": "Jung, interpreting via the Cabala, says of Eve as the feminine principle: 'She appears chiefly as the \"lower,\" as Malchuth (kingdom), Shekinah... or as Atarah.' Eve -> Malchuth correspondence is stated directly."
+ },
+ {
+  "n": 15,
+  "verdict": "SUPPORTED",
+  "reason": "'In particular, Geryon corresponds to the cosmogonic Adam Kadmon' — Jung's own comparative assertion, direction correct."
+ },
+ {
+  "n": 16,
+  "verdict": "SUPPORTED",
+  "reason": "The paragraph opposes 'an active principle (sulphur) and a passive (salt)' with Mercurius as the mediating third; sulphur/salt as the polar pair is exactly what is asserted."
+ },
+ {
+  "n": 17,
+  "verdict": "SUPPORTED",
+  "reason": "'The same is true of the synonyms for Mercurius, the green lion and the aqua permanens or spiritual water, which are likewise media of conjunction' — aqua permanens as medium of the coniunctio is explicit."
+ },
+ {
+  "n": 18,
+  "verdict": "PARTIAL",
+  "reason": "The sentence says the sea 'mitigates and unites the opposites' — the object of 'unites' is the opposites themselves, not the 'union of opposites' (which is the outcome, making the edge malformed); moreover the marvels are attributed to the Tractatus Micreris.",
+  "correction": {
+   "subject": "the-sea",
+   "relation": "unites",
+   "object": "the-opposites",
+   "claim_type": "jung-quotes-source",
+   "source": "Tractatus Micreris"
+  }
+ },
+ {
+  "n": 19,
+  "verdict": "SUPPORTED",
+  "reason": "Jung asserts 'synchronicity is its [the unus mundus's] para-psychological equivalent' and closes by saying the synchronistic principle 'postulates a unitary aspect of being which can very well be described as the unus mundus.'"
+ },
+ {
+  "n": 20,
+  "verdict": "PARTIAL",
+  "reason": "The chain is: Mercurius stands for the arcane substance, whose synonyms include the spagyric medicine, and 'Dorn identifies the latter with the balsam of Paracelsus.' Balsam = Mercurius is a two-step inference, and the identification is Dorn's, not Jung's flat assertion.",
+  "correction": {
+   "subject": "balsam",
+   "relation": "synonym-of",
+   "object": "arcane-substance",
+   "claim_type": "jung-quotes-source",
+   "source": "Dorn"
+  }
+ },
+ {
+  "n": 21,
+  "verdict": "SUPPORTED",
+  "reason": "The third stage of the coniunctio 'was depicted after the manner of an Assumption and Coronation of Mary, in which the Mother of God represents the body,' and later 'the world of the body they represented by... Mary.' Personifies is an accurate rendering."
+ },
+ {
+  "n": 22,
+  "verdict": "SUPPORTED",
+  "reason": "Jung, unpacking Dorn's symbols in his own interpretive voice, says the truth 'consists in the imago Dei imprinted in man. This imago is the true quintessence' — an explicit identity supporting corresponds-to in either direction."
+ }
+]

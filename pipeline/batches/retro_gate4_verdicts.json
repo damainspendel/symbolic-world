@@ -1,0 +1,168 @@
+[
+ {
+  "id": "E22R1",
+  "verdict": "SUPPORTED",
+  "reason": "Paragraph asserts 'The anima, on the other hand, so far as she is distinguished from the shadow, personifies the collective unconscious' and later repeats 'her dominating position as a personification of the collective unconscious.' The ellipsis drops the shadow-distinction qualifier but does not distort the core assertion, which Jung makes in his own voice."
+ },
+ {
+  "id": "E32R1",
+  "verdict": "SUPPORTED",
+  "reason": "Jung states directly 'I have called this wholeness that transcends consciousness the \"self.\"' — an explicit definitional identification of the self with wholeness/totality, in his own voice."
+ },
+ {
+  "id": "E95R1",
+  "verdict": "SUPPORTED",
+  "reason": "Paragraph states 'The mandala, though only a symbol of the self as the psychic totality...' — mandala symbolizes the self, direction correct, quote verbatim."
+ },
+ {
+  "id": "E123R0",
+  "verdict": "SUPPORTED",
+  "reason": "Paragraph contrasts personal-unconscious contents (complexes) with 'The contents of the collective unconscious... are known as archetypes.' Contents = contains; direction correct."
+ },
+ {
+  "id": "E124R0",
+  "verdict": "SUPPORTED",
+  "reason": "Paragraph: 'The concept of the archetype, which is an indispensable correlate of the idea of the collective unconscious.' Direction correct (archetype is the correlate of the collective unconscious); strictly a concept-level correlation, which the relation label preserves adequately."
+ },
+ {
+  "id": "E125R0",
+  "verdict": "PARTIAL",
+  "reason": "The paragraph asserts two things: the collective unconscious 'does not develop individually but is inherited,' and it 'consists of pre-existent forms, the archetypes.' The edge fuses a property of the CU (inherited-not-acquired) into a relation whose object is archetype, which the text does not assert as a single relation between the two nodes.",
+  "correction": {
+   "subject": "collective-unconscious",
+   "relation": "consists-of",
+   "object": "archetype",
+   "claim_type": "jung-asserts",
+   "source": null,
+   "note": "The inheritance claim ('does not develop individually but is inherited') is a unary property of the collective unconscious and should be a separate attribute/edge, not folded into the CU-archetype relation."
+  }
+ },
+ {
+  "id": "E126R0",
+  "verdict": "SUPPORTED",
+  "reason": "Within the enumeration of mother-archetype attributes: 'The place of magic transformation and rebirth, together with the underworld and its inhabitants, are presided over by the mother.' Direction and relation match; Jung asserts this in his own voice."
+ },
+ {
+  "id": "E127R0",
+  "verdict": "SUPPORTED",
+  "reason": "Paragraph says the grandmother's exaltation 'transforms her into a \"Great Mother,\" and it frequently happens that the opposites contained in this image split apart,' and that in antiquity and the East 'the opposites often remain united in the same figure.' The Great Mother image containing (and often uniting) opposites is asserted; the tendency to split is a noted qualification, not a contradiction."
+ },
+ {
+  "id": "E128R0",
+  "verdict": "SUPPORTED",
+  "reason": "Paragraph: 'in every masculine mother-complex, side by side with the mother archetype, a significant role is played by the image of the man's sexual counterpart, the anima.' Anima appearing alongside the mother archetype is asserted (in the context of the son's mother-complex)."
+ },
+ {
+  "id": "E129R0",
+  "verdict": "SUPPORTED",
+  "reason": "Paragraph: 'she is yet only one archetype among many... she is not characteristic of the unconscious in its entirety.' The anima is-a archetype is directly asserted."
+ },
+ {
+  "id": "E130R0",
+  "verdict": "SUPPORTED",
+  "reason": "Paragraph: 'If the encounter with the shadow is the \"apprentice-piece\" in the individual's development, then that with the anima is the \"master-piece.\"' The conditional is rhetorical — Jung endorses both terms; apprentice-piece = first stage of the individual's development (individuation), a fair graph rendering of 'encounter with the shadow.'"
+ },
+ {
+  "id": "E131R0",
+  "verdict": "PARTIAL",
+  "reason": "The paragraph says 'The meeting with oneself is, at first, the meeting with one's own shadow' — lowercase 'oneself,' meaning honest self-confrontation at the threshold of the unconscious, not the technical Self archetype (psychic totality). Casting the subject as 'The Self' is identity overreach.",
+  "correction": {
+   "subject": "self-knowledge (the meeting with oneself)",
+   "relation": "begins-with",
+   "object": "the-shadow",
+   "claim_type": "jung-asserts",
+   "source": null,
+   "note": "If node vocabulary lacks a self-knowledge node, recast as: individuation/confrontation-with-the-unconscious —first-encounter-is→ the-shadow. Do not attach to the Self-as-totality node."
+  }
+ },
+ {
+  "id": "E132R0",
+  "verdict": "SUPPORTED",
+  "reason": "Paragraph: 'The trickster is a collective shadow figure, a summation of all the inferior traits of character in individuals.' Trickster personifying the (collective) shadow is directly asserted; direction correct."
+ },
+ {
+  "id": "E133R0",
+  "verdict": "PARTIAL",
+  "reason": "The preserving agent in the text is 'Radin's trickster cycle' — the myth cycle as a cultural artifact — not the trickster figure itself: 'Radin's trickster cycle preserves the shadow in its pristine mythological form.' The edge misattributes the subject; the trickster IS the preserved shadow-form, the cycle does the preserving.",
+  "correction": {
+   "subject": "trickster-cycle (Radin's Trickster myth cycle)",
+   "relation": "preserves",
+   "object": "the-shadow",
+   "claim_type": "jung-asserts",
+   "source": null,
+   "note": "Alternatively drop this edge as redundant with E132R0 (trickster personifies the collective shadow, CW9i §484), which carries the same conceptual content with a clean subject."
+  }
+ },
+ {
+  "id": "E134R0",
+  "verdict": "SUPPORTED",
+  "reason": "Paragraph: 'He is a forerunner of the saviour, and, like him, God, man, and animal at once.' Jung asserts this in his own voice; 'the saviour' who is 'God, man, and animal at once' is the Christ-figure in the Christian cultural frame the paragraph opens with, so mapping the object to Christ-as-symbol is faithful."
+ },
+ {
+  "id": "E135R0",
+  "verdict": "SUPPORTED",
+  "reason": "Paragraph: 'the various \"child\"-fates may be regarded as illustrating the kind of psychic events that occur in the entelechy or genesis of the \"self.\"' The child motif prefiguring/illustrating the genesis of the self is asserted (with a mild 'may be regarded' hedge that does not change the relation)."
+ },
+ {
+  "id": "E136R0",
+  "verdict": "SUPPORTED",
+  "reason": "Paragraph: 'Sometimes the child appears in the cup of a flower, or out of a golden egg, or as the centre of a mandala.' Directly asserted; 'sometimes' is inherent in the 'appears-as' framing."
+ },
+ {
+  "id": "E137R0",
+  "verdict": "PARTIAL",
+  "reason": "The cited paragraph asserts that 'The hermaphrodite means nothing less than a union of the strongest and most striking opposites' — the subject there is the hermaphrodite/cosmogonic gods, and the child is not named in the paragraph. The claim about the child uniting opposites is true of Jung but is asserted at CW9i §278, not §292.",
+  "correction": {
+   "subject": "divine-child",
+   "relation": "unites",
+   "object": "union-of-opposites",
+   "claim_type": "jung-asserts",
+   "source": null,
+   "citation": "CW9i §278",
+   "quote": "It is therefore a symbol which unites the opposites; a mediator, bringer of healing, that is, one who makes whole.",
+   "note": "Re-cite to §278 where the child motif is the explicit subject; alternatively keep §292 with subject changed to 'hermaphrodite' (as an aspect of the child archetype per the section context)."
+  }
+ },
+ {
+  "id": "E138R0",
+  "verdict": "SUPPORTED",
+  "reason": "Paragraph: the 'child' as new birth is 'the most pregnant with the future, signifying a higher stage of self-realization.' In Jung's usage self-realization is the realization of the self via individuation; the child aiming at / signifying the self's realization is asserted."
+ },
+ {
+  "id": "E139R0",
+  "verdict": "SUPPORTED",
+  "reason": "Paragraph: 'If, however, the child motif appears in the form of a unity, we are dealing with an unconscious and provisionally complete synthesis of the personality' — i.e., the child-as-unity signifies wholeness/totality of personality. The quote preserves the unity condition; consistent with §278 (quaternity 'as another form of wholeness')."
+ },
+ {
+  "id": "E140R0",
+  "verdict": "PARTIAL",
+  "reason": "The paragraph reports the dual-birth motif across mythology and religion: 'It is an idea that underlies all rebirth mysteries, Christianity included. Christ himself is \"twiceborn\": through his baptism in the Jordan...' Jung is reporting the Christian/Gnostic designation of Christ as reborn, not asserting it as his own psychological claim — miscast as jung-asserts.",
+  "correction": {
+   "subject": "christ",
+   "relation": "undergoes",
+   "object": "rebirth",
+   "claim_type": "jung-reports-parallel",
+   "source": "Christian tradition / rebirth mysteries (dual-birth motif; Roman liturgy 'uterus ecclesiae')"
+  }
+ },
+ {
+  "id": "E141R0",
+  "verdict": "SUPPORTED",
+  "reason": "Paragraph: 'The goal of the individuation process is the synthesis of the self.' The self (its synthesis) as goal of individuation is directly asserted; direction correct."
+ },
+ {
+  "id": "E142R0",
+  "verdict": "SUPPORTED",
+  "reason": "Paragraph: 'the \"self,\" by which I understand a psychic totality and at the same time a centre, neither of which coincides with the ego but includes it, just as a larger circle encloses a smaller one.' Self includes the ego, asserted definitionally in Jung's own voice."
+ },
+ {
+  "id": "E143R0",
+  "verdict": "SUPPORTED",
+  "reason": "Paragraph: 'But the mandala is a symbol of individuation,' stated flatly in Jung's own voice within the dream interpretation. Direction and relation correct."
+ },
+ {
+  "id": "E144R0",
+  "verdict": "SUPPORTED",
+  "reason": "Paragraph: 'The mandala, though only a symbol of the self as the psychic totality, is at the same time a God-image, for the central point, circle, and quaternity are well-known symbols for the deity.' Mandala-as-God-image asserted directly; the same sentence properly keeps self and God-image empirically indistinguishable rather than identical, so no conflation is introduced."
+ }
+]

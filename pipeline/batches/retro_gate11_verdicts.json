@@ -1,0 +1,176 @@
+[
+ {
+  "id": "E115R0",
+  "verdict": "PARTIAL",
+  "reason": "Luna appears in a footnoted list of traditional alchemical synonyms for the widow/prima materia ('For this there are synonyms such as mater, matrix... Luna...'); Jung is reporting the alchemical synonym tradition, not asserting the amplification in his own voice. Direction and image are correct.",
+  "correction": {
+   "subject": "prima-materia",
+   "relation": "amplified-by",
+   "object": "luna",
+   "claim_type": "jung-reports-parallel",
+   "source": "alchemical synonym tradition (footnoted sources, CW14 §14 n.71)"
+  }
+ },
+ {
+  "id": "E116R0",
+  "verdict": "PARTIAL",
+  "reason": "The paragraph presents the 'sal: sapientia equation' as the historical basis of late alchemical speculation, tracing it through antiquity (Cicero) and the Vulgate; the equation belongs to the tradition Jung is documenting, so jung-asserts miscasts a reported equation. (Jung's own-voice version of salt=wisdom is at §330.)",
+  "correction": {
+   "subject": "salt",
+   "relation": "symbolizes",
+   "object": "sapientia",
+   "claim_type": "jung-reports-parallel",
+   "source": "late alchemical speculation / Vulgate usage (CW14 §324)"
+  }
+ },
+ {
+  "id": "E117R0",
+  "verdict": "SUPPORTED",
+  "reason": "Jung states in his own declarative voice that 'the doves are emblems of innocence and of marital love as well as of the Holy Ghost and Sapientia,' and builds his interpretation of the text on that emblematics. Direction and quote check out."
+ },
+ {
+  "id": "E118R0",
+  "verdict": "SUPPORTED",
+  "reason": "The Rosarium is explicitly named and quoted: 'in my sister the moon the degree of your wisdom increases,' cited by Jung as evidence for Luna's noetic aspect. Quote accurate, source correct, direction correct."
+ },
+ {
+  "id": "E119R0",
+  "verdict": "PARTIAL",
+  "reason": "The paragraph says 'The pairs of opposites constitute the phenomenology of the paradoxical self' — it is the pairs of opposites (the unresolved polarity), not their union, that Jung says express the self here. Subject conflates opposites with union of opposites.",
+  "correction": {
+   "subject": "pairs-of-opposites",
+   "relation": "symbolizes",
+   "object": "the-self",
+   "claim_type": "jung-asserts",
+   "source": null
+  }
+ },
+ {
+  "id": "E120R0",
+  "verdict": "PARTIAL",
+  "reason": "The paragraph is about 'the double quaternio or ogdoad,' which 'stands for a totality... the mystical Adam and bisexual Original Man' — not the simple quaternity. Subject overreaches from the ogdoad (double quaternio) to the quaternity in general.",
+  "correction": {
+   "subject": "double-quaternio",
+   "relation": "symbolizes",
+   "object": "anthropos",
+   "claim_type": "jung-asserts",
+   "source": null
+  }
+ },
+ {
+  "id": "E121R0",
+  "verdict": "SUPPORTED",
+  "reason": "Jung asserts in his own voice that 'The common denominator of these two utterly incommensurable conceptions [sulphur and Christ] is the self, the image of the whole man,' i.e. sulphur as arcane substance is a manifestation of the self. Direction and claim_type correct."
+ },
+ {
+  "id": "E122R0",
+  "verdict": "SUPPORTED",
+  "reason": "St. Hilary is named and quoted: 'salt contains in itself the element of water and fire, and by this is one out of two' — salt as the union of two hostile elements, reinforced by Picinellus ('wholly fire and wholly water'). Source, quote, and direction all correct."
+ },
+ {
+  "id": "E199R0",
+  "verdict": "SUPPORTED",
+  "reason": "Jung asserts in his own psychological voice: 'In the unconscious are hidden those \"sparks of light\" (scintillae), the archetypes, from which a higher meaning can be \"extracted\".' The scintilla image amplifies the archetype; the ellipsis in the quote is not misleading."
+ },
+ {
+  "id": "E200R0",
+  "verdict": "SUPPORTED",
+  "reason": "The paragraph opens with Jung's direct assertion 'The point is identical with the... scintilla, the \"little soul-spark\" of Meister Eckhart,' then documents it from Saturninus, Heraclitus, the Sethians, and Simon Magus. Identity claim and direction match."
+ },
+ {
+  "id": "E201R0",
+  "verdict": "PARTIAL",
+  "reason": "The paragraph frames the content as what the alchemists said: 'This strangely beautiful passage contains pretty well everything that the alchemists endeavoured to say about salt: it is... the spark of the anima mundi.' A reported alchemical designation is miscast as jung-asserts. (Jung's own-voice equivalent — 'salt, as the soul or spark of the anima mundi' — is at §322, so alternatively re-cite there.)",
+  "correction": {
+   "subject": "salt",
+   "relation": "amplified-by",
+   "object": "scintilla",
+   "claim_type": "jung-reports-parallel",
+   "source": "alchemical passage summarized at CW14 §328 (or re-cite §322 for a jung-asserts version)"
+  }
+ },
+ {
+  "id": "E202R0",
+  "verdict": "SUPPORTED",
+  "reason": "Dorn is explicitly quoted: 'Hermes Trismegistus called the stone \"orphan\",' and the paragraph elaborates 'orphan' as a very apt name for the unique lapis Philosophorum. Source chain, quote, and direction all correct."
+ },
+ {
+  "id": "E203R0",
+  "verdict": "SUPPORTED",
+  "reason": "This is Jung's own inference: 'The \"orphan\" referred to by Hermes must therefore have for his counterpart a vidua (widow) as the prima materia.' jung-asserts is correct here, and the direction (prima materia amplified by the widow image) matches."
+ },
+ {
+  "id": "E204R0",
+  "verdict": "PARTIAL",
+  "reason": "The paragraph says only 'Malchuth became a widow' (upon the sundering of earth from heaven) — the widow image attaches to Malchuth alone, not to the pair Tifereth & Malchuth, and it is Jung retelling the Kabbalistic doctrine underlying Eleazar's text rather than his own assertion.",
+  "correction": {
+   "subject": "malchuth",
+   "relation": "amplified-by",
+   "object": "widow",
+   "claim_type": "jung-reports-parallel",
+   "source": "Kabbalistic doctrine (via Eleazar's text, CW14 §607)"
+  }
+ },
+ {
+  "id": "E205R0",
+  "verdict": "SUPPORTED",
+  "reason": "Jung speaks of 'our interpretation of salt as Eros (i.e., as a feeling relationship)' and adduces clinical confirmation (colours as feeling-values). This is Jung's own interpretive assertion; direction correct."
+ },
+ {
+  "id": "E206R0",
+  "verdict": "SUPPORTED",
+  "reason": "Jung asserts 'the most outstanding properties of salt are bitterness and wisdom' and calls salt 'the carrier of this fateful alternative,' psychologized as the feeling function. Strictly a property/carrier relation, but the symbolic association is asserted in Jung's own voice."
+ },
+ {
+  "id": "E207R0",
+  "verdict": "SUPPORTED",
+  "reason": "Though introduced as 'the notion that salt comes from Mercurius,' Jung endorses it in his own voice: it is 'quite understandable,' for 'salt... is in very truth the daughter of the spiritus vegetativus of creation' (i.e. Mercurius, whom only he surpasses as relating principle). Direction (salt derives from Mercurius) correct."
+ },
+ {
+  "id": "E208R0",
+  "verdict": "SUPPORTED",
+  "reason": "Jung asserts directly: 'In mythology the unconscious is portrayed as a great animal, for instance Leviathan, or as a whale, wolf, or dragon.' Direction correct; jung-asserts is right for this psychological identification."
+ },
+ {
+  "id": "E209R0",
+  "verdict": "SUPPORTED",
+  "reason": "The paragraph reports the patristic parallel with attribution: 'There dwells Leviathan..., who in the language of the Fathers signifies the devil,' backed by Rahner's equation diabolus = draco = Leviathan. jung-reports-parallel is exactly the right claim_type."
+ },
+ {
+  "id": "E210R0",
+  "verdict": "SUPPORTED",
+  "reason": "Jung states 'Dorn's caelum, which corresponded to the stone, was on the one hand a liquid... and on the other the Microcosm itself.' The correspondence is asserted plainly; subject label already scopes caelum to Dorn."
+ },
+ {
+  "id": "E211R0",
+  "verdict": "PARTIAL",
+  "reason": "The union is explicitly Dorn's conception, not Jung's own claim: 'If Dorn, then, saw the consummation of the mysterium coniunctionis in the union of the alchemically produced caelum with the unus mundus, he expressly meant... a unio mystica with the potential world.' jung-asserts miscasts Jung's explication of Dorn.",
+  "correction": {
+   "subject": "caelum",
+   "relation": "unites-with",
+   "object": "unus-mundus",
+   "claim_type": "jung-reports-parallel",
+   "source": "Gerhard Dorn (as explicated by Jung, CW14 §767)"
+  }
+ },
+ {
+  "id": "E212R0",
+  "verdict": "SUPPORTED",
+  "reason": "Jung asserts that alchemy 'exalted the most heinous transgression of the law, namely incest, into a symbol of the union of opposites.' The symbolic relation and direction are exactly as stated; jung-asserts fits Jung's historical-interpretive claim."
+ },
+ {
+  "id": "E213R0",
+  "verdict": "SUPPORTED",
+  "reason": "Jung asserts: 'Incest was the hierosgamos of the gods, the mystic prerogative of kings, a priestly rite,' identifying it as an archetype of the collective unconscious. Correspondence and direction supported."
+ },
+ {
+  "id": "E214R0",
+  "verdict": "SUPPORTED",
+  "reason": "The paragraph states that the problem of three and four 'plays a great role in alchemy as the \"axiom of Maria\" and, like the vision of Ezekiel, is concerned with the God-image.' The concerns-relation is asserted by Jung directly."
+ },
+ {
+  "id": "E215R0",
+  "verdict": "SUPPORTED",
+  "reason": "The paragraph reports the Christ-salt analogy from Glauber and Georg von Welling ('Christ is the salt of wisdom which is given at baptism'; 'Christ is the salt'), which jung-reports-parallel correctly captures; direction (Christ amplified by the salt image) matches the paragraph's 'analogy with Christ'."
+ }
+]

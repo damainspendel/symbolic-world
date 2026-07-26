@@ -1,0 +1,154 @@
+[
+ {
+  "n": 1,
+  "verdict": "SUPPORTED",
+  "reason": "Paragraph explicitly identifies the matrix as 'the canicula, the moon-bitch' and states 'She is the vessel which must be broken asunder in order to extract the precious content.' Jung's own interpretive equation; quote verbatim."
+ },
+ {
+  "n": 2,
+  "verdict": "PARTIAL",
+  "reason": "The paragraph does assert the transformation into an eagle at the plenilunium, but its subject is 'the dark, dangerous, rabid dog' ('His darkness disappears and he becomes a solar animal') — the masculine mad dog, not the canicula/moon-bitch, which Jung treats as the feminine vessel (§181). Merging the rabid dog into the bitch node conflates the evil-carrier with the vessel.",
+  "correction": {
+   "subject": "rabid-dog (mad dog, canis rabidus — distinct node from the canicula/moon-bitch)",
+   "relation": "transforms-into",
+   "object": "eagle",
+   "claim_type": "jung-asserts",
+   "source": null
+  }
+ },
+ {
+  "n": 3,
+  "verdict": "SUPPORTED",
+  "reason": "Paragraph states 'The appearance of a pair of doves points to the imminent marriage of the filius regius and to the dissolution of the opposites as a result of the union' — Jung's own reading; 'heralds' fairly renders 'points to the imminent marriage.'"
+ },
+ {
+  "n": 4,
+  "verdict": "SUPPORTED",
+  "reason": "Paragraph: 'In the treatise of Abraham Eleazar, the lapis in its dark, feminine form... is compared to the Shulamite in the Song of Songs.' A cited parallel from a named source; claim_type and source field match."
+ },
+ {
+  "n": 5,
+  "verdict": "SUPPORTED",
+  "reason": "Paragraph states 'it follows that the winged youth is Sol, the filius solis, lapis, aurum philosophicum' — Jung's own inference; quote verbatim and direction correct."
+ },
+ {
+  "n": 6,
+  "verdict": "PARTIAL",
+  "reason": "The paragraph says the winged youth 'personifies the \"true sulphur,\" the spirit of inner truth' while explicitly contrasting him with the crude/common sulphur (the thief) from which he 'flees shuddering.' An unqualified Sulphur object erases the very true-vs-crude distinction the paragraph turns on.",
+  "correction": {
+   "subject": "winged-youth",
+   "relation": "personifies",
+   "object": "true-sulphur (spiritual sulphur / spirit of inner truth, as opposed to sulphur vulgi)",
+   "claim_type": "jung-asserts",
+   "source": null
+  }
+ },
+ {
+  "n": 7,
+  "verdict": "SUPPORTED",
+  "reason": "Paragraph states 'he will become real only if he can unite with Luna, the \"mother of mortal bodies\"' — direct assertion, correct direction, quote verbatim."
+ },
+ {
+  "n": 8,
+  "verdict": "SUPPORTED",
+  "reason": "Paragraph states 'Diana as the numen and nymph of this spring is an excellent formulation of the figure we know as the anima' — Jung's own psychological identification, quoted accurately."
+ },
+ {
+  "n": 9,
+  "verdict": "SUPPORTED",
+  "reason": "Paragraph states 'The nymph of the spring is in the last analysis Luna, the mother-beloved'; the nymph of the spring is Diana (cf. §187 'the fountain of Diana (Luna as a nymph)'), so the analogue relation and direction hold."
+ },
+ {
+  "n": 10,
+  "verdict": "PARTIAL",
+  "reason": "The paragraph asserts the relation — 'her hunting animal the dog, who represents her dark side' and 'the rabid dog, who is none other than the vindictive and treacherous aspect of Diana as the new moon' — but the figure is the rabid dog, not the canicula/moon-bitch (the vessel of §181). Same node conflation as n2.",
+  "correction": {
+   "subject": "rabid-dog (mad dog / Diana's hunting dog — distinct node from the canicula/moon-bitch)",
+   "relation": "is-dark-aspect-of",
+   "object": "diana",
+   "claim_type": "jung-asserts",
+   "source": null
+  }
+ },
+ {
+  "n": 11,
+  "verdict": "SUPPORTED",
+  "reason": "Paragraph states the thief 'is merely the ego with its shadow where the abysmal depths of human nature begin to appear,' and the whole passage treats him as the projected shadow ('puts the blame on the wiles of the enemy'; 'one cannot project one's shadow on to others'). Personification of the shadow is Jung's explicit point."
+ },
+ {
+  "n": 12,
+  "verdict": "PARTIAL",
+  "reason": "The paragraph does say 'That the dog and the thief are identical is clear...', but the dog in question is 'the dog choked in the water' — the mad/rabid dog, equivalent of sulphur vulgi — not the canicula/moon-bitch vessel of §181. Linking the thief to the bitch node would make the evil thief identical to the vessel carrying the precious content.",
+  "correction": {
+   "subject": "thief",
+   "relation": "identical-to",
+   "object": "rabid-dog (mad dog choked in the water — distinct node from the canicula/moon-bitch)",
+   "claim_type": "jung-asserts",
+   "source": null
+  }
+ },
+ {
+  "n": 13,
+  "verdict": "PARTIAL",
+  "reason": "Ruland's definition says arsenic is the 'hermaphrodite, the means whereby Sulphur and Mercury are united' — arsenic is the mediating agent that unites Sulphur WITH Mercury, not a partner that conjoins Mercurius. The binary edge drops Sulphur and misreads arsenic's role as participant rather than medium.",
+  "correction": {
+   "subject": "arsenic",
+   "relation": "mediates-union-of",
+   "object": "sulphur-and-mercurius (the pair Sulphur/Mercury)",
+   "claim_type": "jung-quotes-source",
+   "source": "Ruland, Lexicon alchemiae"
+  }
+ },
+ {
+  "n": 14,
+  "verdict": "SUPPORTED",
+  "reason": "Paragraph opens 'The moon with her antithetical nature is, in a sense, a prototype of individuation, a prefiguration of the self' — direct assertion by Jung, quote verbatim."
+ },
+ {
+  "n": 15,
+  "verdict": "SUPPORTED",
+  "reason": "Paragraph states 'Luna is really the mother of the sun,' Jung's own interpretive claim (he immediately glosses it psychologically). Direction correct."
+ },
+ {
+  "n": 16,
+  "verdict": "SUPPORTED",
+  "reason": "Paragraph states 'which means, psychologically, that the unconscious is pregnant with consciousness and gives birth to it' — Jung's explicit psychological translation; direction correct (night 'older than the day')."
+ },
+ {
+  "n": 17,
+  "verdict": "SUPPORTED",
+  "reason": "Paragraph states 'Logos and Eros are intellectually formulated intuitive equivalents of the archetypal images of Sol and Luna'; the parallel ordering (Logos:Sol, Eros:Luna) is Jung's standard pairing and unambiguous here."
+ },
+ {
+  "n": 18,
+  "verdict": "SUPPORTED",
+  "reason": "Same sentence as n17: Eros is the intellectually formulated equivalent of Luna in the Logos/Eros — Sol/Luna pairing. Direction and claim_type correct."
+ },
+ {
+  "n": 19,
+  "verdict": "SUPPORTED",
+  "reason": "Paragraph states 'The dark sun of feminine psychology is connected with the father-imago, since the father is the first carrier of the animus-image' — Jung himself grounds the dark sun in the animus-image, so the loose 'corresponds-to' relation is warranted."
+ },
+ {
+  "n": 20,
+  "verdict": "SUPPORTED",
+  "reason": "Jung quotes Glauber verbatim: 'Verily, sulphur is the true black devil of hell, who can be conquered by no element save by salt alone.' Salt as conqueror is the correct direction; claim_type jung-quotes-source with Glauber named is right (Jung frames this as sulphur comburens, the negative aspect)."
+ },
+ {
+  "n": 21,
+  "verdict": "SUPPORTED",
+  "reason": "Paragraph concludes 'Salt by contrast is a \"light\" substance, similar to the lapis, as we shall see' — Jung's own comparison; 'corresponds-to' matches 'similar to.'"
+ },
+ {
+  "n": 22,
+  "verdict": "PARTIAL",
+  "reason": "The Turba passage as Jung reports it makes 'salt-water and sea-water' — not salt itself — the synonyms for the aqua permanens. Jung uses this as the oldest trace of salt-as-arcanum, but the synonym edge as stated overshoots the source.",
+  "correction": {
+   "subject": "salt-water (aqua salsa / sea-water)",
+   "relation": "synonym-of",
+   "object": "aqua-permanens",
+   "claim_type": "jung-reports-parallel",
+   "source": "Turba Philosophorum"
+  }
+ }
+]

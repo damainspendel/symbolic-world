@@ -1,0 +1,73 @@
+{
+ "new_nodes": [
+  {"id": "filius-macrocosmi", "type": "Figure", "label": "Filius Macrocosmi (Son of the Great World)"},
+  {"id": "filius-unius-diei", "type": "Motif", "label": "Filius unius diei (Son of one day)"}
+ ],
+ "candidate_edges": [
+  {"subject": "logos", "relation": "is", "object": "christ",
+   "references": [{"volume": 14, "paragraph": 476, "quote": "the Light, the Logos (John 1:5), who is the Johannine Christ", "confidence": "high", "verified": false, "claim_type": "jung-reports-parallel"}]},
+
+  {"subject": "luna", "relation": "parallels", "object": "the-assumption",
+   "references": [{"volume": 14, "paragraph": 443, "quote": "The sublimation of Luna ... is an unmistakable paraphrase ... of the Assumption of the Virgin", "confidence": "high", "verified": false, "claim_type": "jung-reports-parallel"}]},
+
+  {"subject": "holy-ghost", "relation": "begets", "object": "divine-child",
+   "references": [{"volume": 14, "paragraph": 444, "quote": "If by God’s Holy Ghost thou art beguiled, There will be born in thee the Eternal Child", "confidence": "high", "verified": false, "claim_type": "jung-quotes-source", "source": "Angelus Silesius"}]},
+
+  {"subject": "quintessence", "relation": "corresponds-to", "object": "anima-mundi",
+   "references": [{"volume": 14, "paragraph": 450, "quote": "in her we recognize the crowned Virgin ... who recalls the old pictures of the anima media natura or anima mundi", "confidence": "medium", "verified": false, "claim_type": "jung-asserts"}]},
+
+  {"subject": "quintessence", "relation": "corresponds-to", "object": "mary",
+   "references": [{"volume": 14, "paragraph": 452, "quote": "Her position corresponds ... to that of the Blessed Virgin", "confidence": "medium", "verified": false, "claim_type": "jung-asserts"}]},
+
+  {"subject": "regina", "relation": "parallels", "object": "mary",
+   "references": [{"volume": 14, "paragraph": 454, "quote": "the apotheosis of the Queen ... reminds us of its prototype, the coronation of the Virgin Mary", "confidence": "high", "verified": false, "claim_type": "jung-reports-parallel"}]},
+
+  {"subject": "green-lion", "relation": "symbolizes", "object": "christ",
+   "references": [{"volume": 14, "paragraph": 454, "quote": "the allegories of Christ as child and lion, the latter representing the body of the Crucified", "confidence": "high", "verified": false, "claim_type": "jung-reports-parallel"}]},
+
+  {"subject": "filius-macrocosmi", "relation": "parallels", "object": "christ",
+   "references": [{"volume": 14, "paragraph": 460, "quote": "it is a splendid living likeness of our Saviour Jesus Christ", "confidence": "high", "verified": false, "claim_type": "jung-quotes-source", "source": "Khunrath"}]},
+
+  {"subject": "rex", "relation": "parallels", "object": "son-of-man",
+   "references": [{"volume": 14, "paragraph": 466, "quote": "He who held them was “like unto the Son of man,” in agreement with the puellus regius", "confidence": "high", "verified": false, "claim_type": "jung-reports-parallel"}]},
+
+  {"subject": "rex", "relation": "is", "object": "arcane-substance",
+   "references": [{"volume": 14, "paragraph": 466, "quote": "The king sinking in the sea is the arcane substance", "confidence": "high", "verified": false, "claim_type": "jung-asserts"}]},
+
+  {"subject": "arcane-substance", "relation": "corresponds-to", "object": "the-christian-standpoint",
+   "references": [{"volume": 14, "paragraph": 466, "quote": "The arcane substance corresponds to the Christian dominant, which was originally alive and present in consciousness", "confidence": "high", "verified": false, "claim_type": "jung-asserts"}]},
+
+  {"subject": "rex", "relation": "unites", "object": "the-opposites",
+   "references": [{"volume": 14, "paragraph": 471, "quote": "his ability to unite the polarity of all existence in a symbol", "confidence": "high", "verified": false, "claim_type": "jung-asserts"}]},
+
+  {"subject": "rex", "relation": "transforms-into", "object": "dragon",
+   "references": [{"volume": 14, "paragraph": 472, "quote": "So, too, the king rises from his “infernal fire” as a crowned dragon", "confidence": "high", "verified": false, "claim_type": "jung-asserts"}]},
+
+  {"subject": "filius-unius-diei", "relation": "synonym-of", "object": "mercurius",
+   "references": [{"volume": 14, "paragraph": 476, "quote": "the son of one day immediately becomes related to the “Hermaphrodite of nature,” ... All these figures are synonyms for Mercurius", "confidence": "high", "verified": false, "claim_type": "jung-asserts"}]},
+
+  {"subject": "dragon", "relation": "symbolizes", "object": "antichrist",
+   "references": [{"volume": 14, "paragraph": 483, "quote": "The dragon is an allegory of Christ as well as of the Antichrist", "confidence": "high", "verified": false, "claim_type": "jung-reports-parallel"}]},
+
+  {"subject": "filius-philosophorum", "relation": "based-on", "object": "anthropos",
+   "references": [{"volume": 14, "paragraph": 487, "quote": "the central idea of the filius philosophorum is based on a conception of the Anthropos", "confidence": "high", "verified": false, "claim_type": "jung-asserts"}]},
+
+  {"subject": "anthropos", "relation": "parallels", "object": "atman",
+   "references": [{"volume": 14, "paragraph": 488, "quote": "that inner primordial image which had produced a Purusha or a Gayomart long before the Christian era", "confidence": "high", "verified": false, "claim_type": "jung-reports-parallel"}]},
+
+  {"subject": "anthropos", "relation": "image-of", "object": "nous",
+   "references": [{"volume": 14, "paragraph": 490, "quote": "the Anthropos, the man created in the image of the Nous", "confidence": "high", "verified": false, "claim_type": "jung-asserts"}]},
+
+  {"subject": "true-man", "relation": "is", "object": "lapis",
+   "references": [{"volume": 14, "paragraph": 490, "quote": "This true man is Dorn’s “vir unus” and at the same time the lapis Philosophorum", "confidence": "high", "verified": false, "claim_type": "jung-asserts"}]},
+
+  {"subject": "the-opus", "relation": "frees", "object": "mercurius",
+   "references": [{"volume": 14, "paragraph": 480, "quote": "it is through his work that Mercurius is freed from his chains", "confidence": "high", "verified": false, "claim_type": "jung-asserts"}]},
+
+  {"subject": "rex", "relation": "undergoes", "object": "rebirth",
+   "references": [{"volume": 14, "paragraph": 492, "quote": "it is the king who dies or is killed, is dead and buried and on the third day rises again", "confidence": "high", "verified": false, "claim_type": "jung-asserts"}]},
+
+  {"subject": "sol", "relation": "opposes", "object": "aqua-permanens",
+   "references": [{"volume": 14, "paragraph": 505, "quote": "the masculine, spiritual father-world ruled over by King Sol with the ... mother-world symbolized by the aqua permanens", "confidence": "high", "verified": false, "claim_type": "jung-asserts"}]}
+ ]
+}

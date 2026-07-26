@@ -1,0 +1,144 @@
+[
+ {
+  "id": "E24R1",
+  "verdict": "SUPPORTED",
+  "reason": "Paragraph states in Jung's own voice that 'Christ realized the idea of the self' and that the self appears synonymous with the inner Christ; Christ-as-symbol-of-self is asserted, direction correct, quote exact."
+ },
+ {
+  "id": "E36R1",
+  "verdict": "SUPPORTED",
+  "reason": "The clause 'the Christ figure wholly lacks a dark side' is presented as an accepted premise, and Jung's own parenthetical confirms it ('In dogma, Christ is sine macula peccati'). Mapping 'dark side' to the shadow is standard Jung usage; quote exact."
+ },
+ {
+  "id": "E180R0",
+  "verdict": "SUPPORTED",
+  "reason": "Paragraph asserts in Jung's voice: 'The unconscious, however, transforms it [the Trinity] into a quaternity, which is at the same time a unity.' Direction (unconscious acts on Trinity) and claim_type correct."
+ },
+ {
+  "id": "E181R0",
+  "verdict": "SUPPORTED",
+  "reason": "Jung asserts 'the dogmatic aspect of the evil principle is absent from the Trinity and leads a more or less awkward existence on its own as the devil' — his own observation about the incompleteness of the formula. Ellipsis in the quote does not distort."
+ },
+ {
+  "id": "E182R0",
+  "verdict": "SUPPORTED",
+  "reason": "Paragraph says Christianity 'reverted to the archaic triad in order to construct its trinitarian God-image' — the Trinity is the form of the Christian God-image, in Jung's own voice, and the psychologically careful object (god-image, not God) avoids overreach."
+ },
+ {
+  "id": "E183R0",
+  "verdict": "SUPPORTED",
+  "reason": "Jung's framing sentence in his own voice — 'The inclusion of the devil in the quaternity is by no means a modern speculation or a monstrous fabrication of the unconscious' — asserts the inclusion as a genuine, historically attested idea (Dorn serves as precedent, not as the sole carrier of the claim)."
+ },
+ {
+  "id": "E184R0",
+  "verdict": "SUPPORTED",
+  "reason": "Paragraph reports the natural philosophers' quaternity whose 'fourth constituent... was the earth or the body'; claim_type jung-reports-parallel correctly captures that this is historical parallel material, not Jung's own metaphysical assertion."
+ },
+ {
+  "id": "E185R0",
+  "verdict": "SUPPORTED",
+  "reason": "Jung asserts 'one can never distinguish empirically between a symbol of the self and a God-image, the two ideas... always appear blended together' — an empirical correspondence claim in his own voice; 'corresponds-to' is the right, non-overreaching relation."
+ },
+ {
+  "id": "E186R0",
+  "verdict": "SUPPORTED",
+  "reason": "'The self is by definition a complexio oppositorum' is stated as a definitional fact in Jung's voice (the 'since' clause treats it as given, and it is Jung's standard doctrine). Quote exact."
+ },
+ {
+  "id": "E187R0",
+  "verdict": "PARTIAL",
+  "reason": "The struggle content is Christian tradition Jung is reporting — the devil 'vanquishes the God-man' per John 12:31 and 'According to an old view, Christ is the bait on the hook'; Jung's own assertion in this paragraph is that the Cross, as symbol of that struggle, corresponds to the quaternity. Casting the battle itself as jung-asserts miscasts reported doctrine.",
+  "correction": {
+   "subject": "the-devil",
+   "relation": "battles",
+   "object": "christ",
+   "claim_type": "jung-reports-parallel",
+   "source": "Christian tradition (John 12:31, 14:30; patristic 'bait on the hook' motif)"
+  }
+ },
+ {
+  "id": "E188R0",
+  "verdict": "PARTIAL",
+  "reason": "The paragraph explicitly anchors the Satan-incarnating-as-Antichrist scenario in scripture: 'This expectation, which is already to be found in the New Testament.' It is Jung's dramatized exegesis of Christian eschatology, not a claim he asserts in propria persona.",
+  "correction": {
+   "subject": "the-devil",
+   "relation": "manifests-as",
+   "object": "antichrist",
+   "claim_type": "jung-reports-parallel",
+   "source": "New Testament eschatology (as interpreted in Answer to Job)"
+  }
+ },
+ {
+  "id": "E189R0",
+  "verdict": "SUPPORTED",
+  "reason": "Jung concludes in his own voice: 'we can speak of the Mass as the rite of the individuation process' — his psychological interpretation, correctly typed jung-asserts; 'symbolizes' is a fair rendering of 'rite of'."
+ },
+ {
+  "id": "E190R0",
+  "verdict": "SUPPORTED",
+  "reason": "Jung states as his own scholarly summary that 'The idea of perpetual sacrifice and of an eternal priesthood is an essential component of the Mass' — a descriptive assertion about the rite's structure made in his voice (Hebrews is cited as the rite's source, not as the speaker)."
+ },
+ {
+  "id": "E191R0",
+  "verdict": "PARTIAL",
+  "reason": "The paragraph says the Mass 'is a transformation of God and man alike'; the Christ-figure is said to be 'recollected in the soul', not transformed. Object narrowed to Christ overreaches what this paragraph asserts.",
+  "correction": {
+   "subject": "the-mass",
+   "relation": "transforms",
+   "object": "god-image",
+   "object_note": "text says 'a transformation of God and man alike' — best rendered as Mass transforms God(-image) and man, not Christ specifically",
+   "claim_type": "jung-asserts",
+   "source": null
+  }
+ },
+ {
+  "id": "E192R0",
+  "verdict": "SUPPORTED",
+  "reason": "Paragraph asserts 'The Mass tries to effect a participation mystique — or identity — of priest and congregation with Christ', i.e., the Mass unites the participants with Christ; direction and jung-asserts (psychological description) are correct."
+ },
+ {
+  "id": "E193R0",
+  "verdict": "SUPPORTED",
+  "reason": "Paragraph asserts individuation/self-realization as the developmental goal and that through this process man 'is on the way towards realizing his wholeness'; individuation leads to wholeness is Jung's own claim here."
+ },
+ {
+  "id": "E194R0",
+  "verdict": "SUPPORTED",
+  "reason": "Jung asserts in his own voice: 'Yahweh is not split but is an antinomy — a totality of inner opposites'; this is his famous thesis stated directly, not merely Job's perception. Quote accurate."
+ },
+ {
+  "id": "E195R0",
+  "verdict": "SUPPORTED",
+  "reason": "Jung's own interpretive narration asserts that Yahweh's needed self-reflection requires Wisdom: 'Self-reflection becomes an imperative necessity, and for this Wisdom is needed. Yahweh has to remember his absolute knowledge.' 'Draws-knowledge-from' fairly captures this dependence on Sophia."
+ },
+ {
+  "id": "E196R0",
+  "verdict": "PARTIAL",
+  "reason": "The paragraph says Yahweh 'together with' the Logos and Sophia 'form a triad, and this is a clear prefiguration of the post-Christian Trinity' — the prefiguring subject is the triad Yahweh-Logos-Sophia, not Sophia alone. Subject overreach.",
+  "correction": {
+   "subject": "yahweh-logos-sophia-triad",
+   "subject_label": "Triad of Yahweh, Logos, and Sophia",
+   "relation": "prefigures",
+   "object": "the-trinity",
+   "claim_type": "jung-asserts",
+   "source": "Alexandrian philosophy (last century B.C.), as Jung's historical claim"
+  }
+ },
+ {
+  "id": "E197R0",
+  "verdict": "PARTIAL",
+  "reason": "The entire paragraph is a chain of quotations from the apocryphal Wisdom of Solomon (each clause footnoted), and 'As a psychopomp she leads the way to God and assures immortality' carries a source footnote; this is Jung summarizing a named source, not asserting in propria persona.",
+  "correction": {
+   "subject": "sophia-wisdom",
+   "relation": "is",
+   "object": "psychopomp",
+   "claim_type": "jung-quotes-source",
+   "source": "Wisdom of Solomon (apocrypha)"
+  }
+ },
+ {
+  "id": "E198R0",
+  "verdict": "SUPPORTED",
+  "reason": "Jung asserts in his own voice: 'The Assumptio Mariae paves the way not only for the divinity of the Theotokos... but also for the quaternity.' Direction correct, quote accurate, and it is Jung's own claim about the dogma's implications, not the dogma itself."
+ }
+]

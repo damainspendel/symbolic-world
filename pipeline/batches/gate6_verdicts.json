@@ -1,0 +1,119 @@
+[
+ {
+  "n": 1,
+  "verdict": "PARTIAL",
+  "reason": "The paragraph says of the son 'In him all opposites are fused together' — he is the locus in which the union of opposites is realized. But 'unites → union-of-opposites' is a relation/object mismatch: one unites opposites, or embodies the union of opposites; 'unites the union of opposites' is malformed.",
+  "correction": {"subject": "filius-regius", "relation": "embodies", "object": "union-of-opposites", "claim_type": "jung-asserts", "source": null}
+ },
+ {
+  "n": 2,
+  "verdict": "SUPPORTED",
+  "reason": "The paragraph states the son 'attained his redness (rubedo) through the solificatio' — the solificatio is the means by which the rubedo is attained. Direction and claim_type are correct."
+ },
+ {
+  "n": 3,
+  "verdict": "SUPPORTED",
+  "reason": "The paragraph states 'The attributes of sun and moon make the filius regius into the rearisen Primordial Man, who is the cosmos' — the filius regius becomes the Anthropos. Direction correct; this is Jung's own interpretation of Ripley."
+ },
+ {
+  "n": 4,
+  "verdict": "PARTIAL",
+  "reason": "The paragraph says medieval alchemy 'was in the last resort a continuation of the doctrine of the Holy Ghost' — the continuation is of the doctrine, not of the Holy Ghost itself, and Jung frames it as a conjecture ('one is driven to the conjecture'). The core link is real but the relation elides 'doctrine of'.",
+  "correction": {"subject": "the-opus", "relation": "continues-doctrine-of", "object": "holy-ghost", "claim_type": "jung-asserts", "source": null}
+ },
+ {
+  "n": 5,
+  "verdict": "SUPPORTED",
+  "reason": "The paragraph states 'To the regenerated king ... God gives the four elements as the weapons with which he shall conquer the world.' In context the regenerated king is the renewed filius regius, and the quote is verbatim."
+ },
+ {
+  "n": 6,
+  "verdict": "SUPPORTED",
+  "reason": "The paragraph ends with the verbatim assertion 'The anima mundi is the feminine half of Mercurius.' Direction, relation, and claim_type are all correct."
+ },
+ {
+  "n": 7,
+  "verdict": "PARTIAL",
+  "reason": "In this paragraph 'Her position corresponds on the one hand to that of Luna' — but 'her' is the Maid/quintessence, not the anima mundi; the anima mundi is never named in §452 (the Maid=anima mundi identification lives in §450). The subject as anchored to this paragraph is the Maid/quintessence.",
+  "correction": {"subject": "quintessence", "relation": "corresponds-to", "object": "luna", "claim_type": "jung-asserts", "source": null}
+ },
+ {
+  "n": 8,
+  "verdict": "SUPPORTED",
+  "reason": "The paragraph, framed as 'the apotheosis of the filius regius', quotes Khunrath saying the filius Mundi Maioris 'is a splendid living likeness of our Saviour Jesus Christ.' The likeness claim belongs to the quoted Khunrath, so jung-quotes-source with source Khunrath is correct, and the direction (filius as likeness of Christ) matches."
+ },
+ {
+  "n": 9,
+  "verdict": "SUPPORTED",
+  "reason": "The paragraph states 'Leo, too, is ambiguous: on the one hand he is an allegory of the devil and on the other is connected with Venus.' Lion-as-allegory-of-devil is directly asserted with correct direction."
+ },
+ {
+  "n": 10,
+  "verdict": "PARTIAL",
+  "reason": "The paragraph reports Khunrath's 'filius unius diei' as 'a designation for the \"Hermaphrodite of nature,\" i.e., the arcane substance' — a naming/synonymy ('He is there synonymous with Saturn ... the ambisexual Philosophic Man'), not a symbolization, and it is Khunrath's designation of the filius unius diei, which Jung only tentatively ('perhaps') connects to the rising king. The link is real but the relation word overstates it as symbolism.",
+  "correction": {"subject": "filius-regius", "relation": "synonym-of", "object": "rebis", "claim_type": "jung-quotes-source", "source": "Khunrath"}
+ },
+ {
+  "n": 11,
+  "verdict": "SUPPORTED",
+  "reason": "The paragraph opens 'As we have seen, the filius regius is identical with Mercurius and at this particular stage also with the Mercurial serpent.' Identity is asserted verbatim in the stated direction, as Jung's own claim."
+ },
+ {
+  "n": 12,
+  "verdict": "SUPPORTED",
+  "reason": "The paragraph states 'in Christian hermeneutics the phoenix is made an allegory of Christ, which amounts to a reinterpretation of the myth' — Jung reports the Christian tradition's reading rather than asserting it himself, so jung-reports-parallel is the right claim_type."
+ },
+ {
+  "n": 13,
+  "verdict": "SUPPORTED",
+  "reason": "The paragraph says the phoenix 'stands for the long-lasting restitution of things; indeed, it is renewal itself', and Jung himself closes by calling renewal 'the main motif' of the phoenix. Renewal/rebirth as the phoenix's meaning is endorsed, not merely reported."
+ },
+ {
+  "n": 14,
+  "verdict": "SUPPORTED",
+  "reason": "The paragraph states 'This Mercurius duplex, who ascends and descends, is the uroboros ... the snake that begets itself from itself.' Mercurius is presented under the uroboros image, so Mercurius symbolized-by uroboros preserves the direction and the entity-image relation."
+ },
+ {
+  "n": 15,
+  "verdict": "PARTIAL",
+  "reason": "The paragraph does conclude 'The worm therefore signifies the second Adam, Christ', but this is Jung summarizing the Gnostic exegesis in Hippolytus, with 'Epiphanius also mentions the worm as an allegory of Christ' — he is reporting a patristic/Gnostic hermeneutic parallel (same structure as the phoenix-Christ edge), not asserting his own symbolic equation.",
+  "correction": {"subject": "worm", "relation": "symbolizes", "object": "christ", "claim_type": "jung-reports-parallel", "source": null}
+ },
+ {
+  "n": 16,
+  "verdict": "PARTIAL",
+  "reason": "The paragraph says 'they [the alchemists] projected the Passion as an unconscious premise into the chemical transformations' — the opus is the screen that receives the projection, not the agent that projects. As written, the edge reverses the direction of projection.",
+  "correction": {"subject": "the-passion", "relation": "projected-into", "object": "the-opus", "claim_type": "jung-asserts", "source": null}
+ },
+ {
+  "n": 17,
+  "verdict": "SUPPORTED",
+  "reason": "The paragraph states of the Gnostic Anthropos: 'He corresponds to the chên-yên (true man) of Chinese alchemy.' Verbatim, correct direction and claim_type."
+ },
+ {
+  "n": 18,
+  "verdict": "SUPPORTED",
+  "reason": "The paragraph states 'The chên-yên is the product of the opus.' The passive relation produced-by with the opus as object matches the text exactly."
+ },
+ {
+  "n": 19,
+  "verdict": "SUPPORTED",
+  "reason": "The paragraph equates them: 'If the adept experiences his own self, the \"true man\", in his work' and 'an assimilation of the Christ-image to his own self, which is the \"true man.\"' The correspondence of true man and self is directly supported."
+ },
+ {
+  "n": 20,
+  "verdict": "SUPPORTED",
+  "reason": "The paragraph states 'From inner necessity the dragon destroyed itself (natura naturam vincit) and changed into the lion.' The ellipsis in the quote only drops the parenthetical Latin and does not distort the sense; direction is correct."
+ },
+ {
+  "n": 21,
+  "verdict": "SUPPORTED",
+  "reason": "The paragraph says the apotheosis 'must also have made mother Luna visible, that is to say made the unconscious conscious', and 'It is primarily the feminine element in man, the anima, that becomes visible' — Luna is Jung's personified figure for the anima (her other senses, moonlight and rotundum, are listed as secondary)."
+ },
+ {
+  "n": 22,
+  "verdict": "PARTIAL",
+  "reason": "The paragraph says 'the king is essentially synonymous with the sun' — it is Rex alone, as ego-consciousness, who is synonymous with Sol; the Regina/queen never appears in this paragraph, so attaching the synonymy to the Rex & Regina pair overreaches.",
+  "correction": {"subject": "rex", "relation": "synonym-of", "object": "sol", "claim_type": "jung-asserts", "source": null}
+ }
+]

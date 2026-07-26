@@ -1,0 +1,150 @@
+[
+ {
+  "id": "E1R0",
+  "verdict": "PARTIAL",
+  "reason": "The paragraph does state the nigredo is 'the initial state, either present from the beginning as a quality of the prima materia... or else produced by the separation of the elements' — the link is real but is one of two alternatives, and Jung is expounding the alchemists' stage doctrine, not asserting his own psychological interpretation.",
+  "correction": {"claim_type": "jung-reports-parallel", "note": "Reported alchemical stage doctrine; also 'begins-from' holds only in the first of two alternatives Jung lists (the other: nigredo produced by separatio)."}
+ },
+ {
+  "id": "E2R0",
+  "verdict": "PARTIAL",
+  "reason": "The paragraph says the coniunctio is 'followed by the death of the product of the union (mortificatio...) and a corresponding nigredo' — the nigredo follows via the mortificatio of the union's product, and this is Jung reporting the alchemical scheme, not his own assertion.",
+  "correction": {"claim_type": "jung-reports-parallel", "note": "Causal chain is coniunctio -> mortificatio of the product -> nigredo; 'produces' compresses an intermediate step. Reported alchemical stage doctrine."}
+ },
+ {
+  "id": "E3R0",
+  "verdict": "PARTIAL",
+  "reason": "CW12 §335 says the philosophers' stone is 'sometimes' the alchemists' conception of the goal of the work; nothing in the paragraph makes the lapis the goal of the coniunctio specifically — the hermaphrodite remark concerns containing both tinctures, not the coniunctio.",
+  "correction": {"subject": "lapis", "relation": "is-goal-of", "object": "the-opus", "claim_type": "jung-reports-parallel", "note": "Goal of the opus per the alchemists' varying conceptions, not of the coniunctio."}
+ },
+ {
+  "id": "E4R0",
+  "verdict": "SUPPORTED",
+  "reason": "Jung groups the lapis with the mandala, golden pill, and golden seed as historical semblances 'for that obscure thing we call the mandala or self,' and calls the self 'a veritable lapis invisibilitatis' — his own psychological interpretation, so jung-asserts is right."
+ },
+ {
+  "id": "E5R0",
+  "verdict": "SUPPORTED",
+  "reason": "The axiom's own content ('out of the third comes the one as the fourth') plus Jung's reading of the interpolated even/feminine numbers compensating the uneven numbers of Christian dogma asserts the axiom as the pregnant early expression of the 3-to-4 (quaternity) movement; direction and quote are accurate."
+ },
+ {
+  "id": "E9R0",
+  "verdict": "SUPPORTED",
+  "reason": "Jung explains the divine, eternal predicates heaped on the prima materia as 'inevitable psychologically, because the unconscious, being unknown, is bound to coincide with itself everywhere' — i.e., the prima materia carries the projected unconscious; his own interpretation, direction correct."
+ },
+ {
+  "id": "E14R0",
+  "verdict": "SUPPORTED",
+  "reason": "The paragraph states the Uroboros, being hermaphroditic, 'is compounded of opposites and is at the same time their uniting symbol' — an exact match for subject, relation, and object."
+ },
+ {
+  "id": "E24R2",
+  "verdict": "SUPPORTED",
+  "reason": "Jung states the alchemist would have had to recognize 'Christ as a symbol of the self,' a 'tremendous conclusion' Jung himself draws and endorses (it merely 'failed to dawn on the medieval mind'); jung-asserts is correct."
+ },
+ {
+  "id": "E88R0",
+  "verdict": "SUPPORTED",
+  "reason": "The paragraph concludes 'What the symbolism of alchemy expresses is the whole problem of the evolution of personality... the so-called individuation process,' and describes laboratory work as the reflection of a parallel psychic process; Jung's own thesis, direction correct."
+ },
+ {
+  "id": "E89R0",
+  "verdict": "SUPPORTED",
+  "reason": "§346 states the alchemist 'experienced his projection as a property of matter; but what he was in reality experiencing was his own unconscious' — the opus as projection of the unconscious is asserted directly by Jung."
+ },
+ {
+  "id": "E89R1",
+  "verdict": "SUPPORTED",
+  "reason": "§394 states 'everything unconscious, once it was activated, was projected into matter,' framing the fantasy processes connected with the opus as projections of the unconscious; duplicate edge to E89R0 with an independent, valid ref."
+ },
+ {
+  "id": "E90R0",
+  "verdict": "SUPPORTED",
+  "reason": "§451 says 'it is the coveted substance, the lapis, that he likens to Christ,' explicitly a hermeneutic analogy made by the alchemist and reported by Jung; direction (lapis likened to Christ) and claim_type jung-reports-parallel are both correct."
+ },
+ {
+  "id": "E90R1",
+  "verdict": "PARTIAL",
+  "reason": "The lapis-Christ identity is genuinely attested here ('Christe... lapis benedicte'), but the whole paragraph presents a single named source — Nicholas Melchior of Hermannstadt's alchemical Mass — so this ref is a quoted source, not a general reported parallel.",
+  "correction": {"claim_type": "jung-quotes-source", "source": "Nicholas Melchior of Hermannstadt (Melchior Cibinensis)"}
+ },
+ {
+  "id": "E90R2",
+  "verdict": "WRONG",
+  "reason": "§173 asserts the reverse direction: 'the Gnostic quadripartite original man as well as Christ Pantokrator is an imago lapidis' — Christ is an image of the stone here, not the lapis a symbol of Christ. This ref cannot support 'lapis symbolizes christ' as mined; the edge is already covered by the correctly-directed refs E90R0/E90R1."
+ },
+ {
+  "id": "E91R0",
+  "verdict": "SUPPORTED",
+  "reason": "§457 says Adam/Anthropos is 'a quaternity compounded of four different earths... symbolized by the four elements, just like the lapis which has the same structure' — Jung's own comparative statement that the lapis has the four-element quaternary structure."
+ },
+ {
+  "id": "E92R0",
+  "verdict": "PARTIAL",
+  "reason": "The link is real, but 'a figure WE can only compare with the Gnostic Anthropos' is Jung's own amplificatory comparison, not a parallel reported from the alchemical tradition (the tradition supplies only Deus terrestris/Salvator/filius macrocosmi).",
+  "correction": {"claim_type": "jung-asserts", "note": "Keep layer amplification / kind parallel; the Anthropos comparison is Jung's, so jung-asserts rather than jung-reports-parallel."}
+ },
+ {
+  "id": "E93R0",
+  "verdict": "SUPPORTED",
+  "reason": "§165 states of the squaring of the circle: 'It is a symbol of the opus alchymicum, since it breaks down the original chaotic unity into the four elements and then combines them again in a higher unity' — exact match."
+ },
+ {
+  "id": "E94R0",
+  "verdict": "SUPPORTED",
+  "reason": "§167 states 'the squaring of the circle is a stage on the way to the unconscious, a point of transition leading to a goal lying as yet unformulated beyond it'; 'leads-to' fairly renders this (Jung's 'Presumably' is a mild hedge but the assertion is his)."
+ },
+ {
+  "id": "E95R0",
+  "verdict": "SUPPORTED",
+  "reason": "§247 names 'that obscure thing we call the mandala or self' and says everything under the concept mandala expresses a man's attitude towards the self — Jung's own interpretation, direction correct."
+ },
+ {
+  "id": "E96R0",
+  "verdict": "SUPPORTED",
+  "reason": "§43 states the work leads 'to the union of opposites in the archetypal form of the hierosgamos or chymical wedding,' where male and female 'are melted into a unity' — the hierosgamos as the archetypal form of the union of opposites."
+ },
+ {
+  "id": "E97R0",
+  "verdict": "SUPPORTED",
+  "reason": "§215 states outright 'the golden child (filius philosophorum = archetype of the divine child)' — direct equation by Jung; direction and claim_type correct."
+ },
+ {
+  "id": "E98R0",
+  "verdict": "PARTIAL",
+  "reason": "The link is textually solid — the vessel 'is a kind of matrix or uterus from which the filius philosophorum, the miraculous stone, is to be born' — but the paragraph frames this as what the vessel is 'for the alchemists' (footnoted to their texts), a reported alchemical conception rather than Jung's own psychological assertion.",
+  "correction": {"claim_type": "jung-reports-parallel", "note": "Reported alchemical doctrine of the vas as matrix/uterus of the filius."}
+ },
+ {
+  "id": "E99R0",
+  "verdict": "SUPPORTED",
+  "reason": "§338: 'Thus we hear that the vas is the water or aqua permanens, which is none other than the Mercurius of the philosophers' — Jung explicitly relaying footnoted alchemical texts, so jung-quotes-source with 'unnamed alchemical texts' is accurate; the identity vas = Mercurius supports the edge."
+ },
+ {
+  "id": "E100R0",
+  "verdict": "PARTIAL",
+  "reason": "§172 says 'Mercurius also takes on the significance of Hermes, god of revelation' — Mercurius assimilates or is identified with Hermes; 'symbolizes' misstates the semantics (Mercurius is not a symbol pointing at Hermes, he inherits Hermes' significance).",
+  "correction": {"subject": "mercurius", "relation": "is-identified-with", "object": "hermes", "note": "Or 'takes-on-significance-of'; keep layer amplification."}
+ },
+ {
+  "id": "E101R0",
+  "verdict": "SUPPORTED",
+  "reason": "§409 states the tincturing stone-extract, 'as Mercurius, possesses the Hermetic dual significance of redeeming psychopomp and quicksilver' — Mercurius as psychopomp is asserted directly."
+ },
+ {
+  "id": "E102R0",
+  "verdict": "SUPPORTED",
+  "reason": "§490 states 'his table shows that the analogy between the opus and the Mass was also valid in Paracelsist circles' — Jung reporting a historical parallel from Ripley/Penotus's correspondence table; claim_type jung-reports-parallel is correct."
+ },
+ {
+  "id": "E102R1",
+  "verdict": "PARTIAL",
+  "reason": "The parallel is genuinely attested — Melchior 'expounded the alchemical process in the form of a Mass' — but this paragraph is entirely a single named source (Nicholas Melchior's alchemical Mass), so the ref should be typed as a quoted source with the source named.",
+  "correction": {"claim_type": "jung-quotes-source", "source": "Nicholas Melchior of Hermannstadt (Melchior Cibinensis)"}
+ },
+ {
+  "id": "E103R0",
+  "verdict": "SUPPORTED",
+  "reason": "§457 reports 'the symbolic peregrinatio to the four quarters in Michael Maier' and that 'Maier imagined the opus as a wandering or odyssey' — quoted named source matches the source field (Michael Maier); direction (opus symbolized-by peregrinatio) is correct."
+ }
+]
