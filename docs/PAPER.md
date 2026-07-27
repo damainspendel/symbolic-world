@@ -63,18 +63,20 @@ Each risk in §2 forced a step into the pipeline. Figure 3 shows the result: the
 
 **The pipeline, step by step.**
 
-| Step | What it does | What comes out |
-|---|---|---|
-| 1 · Propose | A proposer model reads a window of the corpus and drafts candidate claims, each with a verbatim quote and its anchor, typed *author-asserts / author-reports / author-quotes* | 12–22 candidates per window |
-| 2 · Quote check | Deterministic: the quote must appear in the cited passage as a letter-normalized, in-order, near-contiguous token run (small bounded gaps absorb interleaved footnote markers; collage quotes are rejected, and a dedicated canary guards this) | candidates with real quotes |
-| 3 · Structure gate | A reviewer model **from a different family** reads the full passage: is the claim there, right way round, right object, no inflation of analogy into identity? | SUPPORTED / PARTIAL + correction / WRONG |
-| 4 · Voice gate | A second, narrow review: whose claim is it, and how firmly is it made? | voice + hedge corrections |
-| 5 · Second-vendor check | A model **from a different vendor** re-judges the batch, blind | independent verdicts, disagreements adjudicated |
-| 6 · Publish | Corrections applied; WRONG dropped and logged; provenance stamped; integrity tests + canaries; the build **fails closed** if any reference is unverified | the public artifact |
+| Step | What it does | Mitigates | What comes out |
+|---|---|---|---|
+| 1 · Propose | A proposer model reads a window of the corpus and drafts candidate claims, each with a verbatim quote and its anchor, typed *author-asserts / author-reports / author-quotes* | — (the risks arise here) | 12–22 candidates per window |
+| 2 · Quote check | Deterministic: the quote must appear in the cited passage as a letter-normalized, in-order, near-contiguous token run (bounded gaps absorb interleaved footnote markers; collage quotes rejected, canary-guarded) | **R2** | candidates with real quotes |
+| 3 · Structure gate | A reviewer model **from a different family** reads the full passage: is the claim there, right way round, right object, no inflation of analogy into identity? | **R1 · R3** | SUPPORTED / PARTIAL + correction / WRONG |
+| 4 · Voice gate | A second, narrow review: whose claim is it, and how firmly is it made? | **R4** | voice + hedge corrections |
+| 5 · Second-vendor check | A model **from a different vendor** re-judges the batch, blind | **R6** | independent verdicts, disagreements adjudicated |
+| 6 · Publish | Corrections applied; WRONG dropped and logged; provenance stamped; integrity tests + canaries; build **fails closed** on any unverified reference; readers confirm/dispute | backstop for all | the public artifact |
+
+R5 (arbitrary selection) is mitigated by practice rather than a step — union-mining plus stability probing; R7 (self-refereeing) by publishing every ruling and the auditor's adversarial re-review of the referee.
 
 Every batch's passage through these steps is committed to a **transaction ledger**, one commit per transition — the construction history is replayable and auditable commit-by-commit.
 
-**The cross-vendor loop.** Beyond the per-batch check, the second-vendor auditor periodically re-audits the published graph — and the machinery itself: it judges samples blind (in two modes: under our rubric for comparability, or entirely in its own terms for independence), every disagreement is adjudicated against the source passage with the ruling logged, the auditor then **adversarially re-reviews the adjudicator's rulings** (the conflict-of-interest control), and finally it critiques our gate prompt itself for bias. Audit findings re-enter the same merge machinery as ordinary batch verdicts — there is no separate, weaker path into the graph.
+**The cross-vendor loop.** Beyond the per-batch check, the second-vendor auditor re-audits the published graph — and the machinery itself — **at every dataset release** (two full runs so far, E6 and E7; this is a release-gated commitment, not a background process): it judges samples blind (in two modes: under our rubric for comparability, or entirely in its own terms for independence), every disagreement is adjudicated against the source passage with the ruling logged, the auditor then **adversarially re-reviews the adjudicator's rulings** (the conflict-of-interest control), and finally it critiques our gate prompt itself for bias. Audit findings re-enter the same merge machinery as ordinary batch verdicts — there is no separate, weaker path into the graph.
 
 ## 5. The measurement harness
 

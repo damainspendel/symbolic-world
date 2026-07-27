@@ -146,7 +146,7 @@
   {
    "id": "b-union-2",
    "status": "merged",
-   "result": "mined 20; 13 dup-pair (coverage re-confirmation); 7 novel: stage1 6/1/0, stage2 0 flags; merged 7 edges, 2 new nodes (en-soph, tifereth)"
+   "result": "mined 20; 13 dup-pair (coverage re-confirmation); 7 novel: stage1 6/1/0, stage2 0 flags; merged 7 edges, 2 new nodes (en-soph, tifereth); cross-vendor check (run post-merge \u2014 process slip, now standing): 4 SUPPORTED / 3 PARTIAL, all three the documented Adam-Kadmon/anthropos vocabulary convention, adjudicated both-defensible"
   },
   {
    "id": "exp7-rubricfree",

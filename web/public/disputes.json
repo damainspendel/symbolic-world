@@ -202,6 +202,20 @@
     "christ|is-a|anthropos",
     "coniunctio|produces|anthropos"
    ]
+  },
+  {
+   "date": "2026-07-27",
+   "source": "cross-vendor pre-publication check (Gemini 3.1 Pro), batch b-union-2",
+   "edge": "anthropos —proceeded-from→ en-soph; —takes-the-place-of→ tifereth; —is→ tetrameria",
+   "citation": "CW 14 §594, §592, §619",
+   "objection": "Paragraphs name Adam Kadmon specifically, not the generic Anthropos.",
+   "outcome": "both-defensible",
+   "resolution": "The graph's anthropos node is the documented merged node 'Anthropos / Adam Kadmon' (vocabulary convention upheld in E6 and by the auditor's own cross-review). No change; logged for transparency.",
+   "current_edges": [
+    "anthropos|proceeded-from|en-soph",
+    "anthropos|takes-the-place-of|tifereth",
+    "anthropos|is|tetrameria"
+   ]
   }
  ]
 }
