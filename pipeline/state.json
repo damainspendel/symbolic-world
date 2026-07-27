@@ -157,6 +157,12 @@
    "id": "exp1b-calibration",
    "status": "complete",
    "note": "n=200 expanded calibration: 86%/93% with CIs; per-class 23-24/25 structural, 18/25 voice; 1 production claim-type fix (rex/hierosgamos \u00a7356); E5 doubling claim downgraded to directional"
+  },
+  {
+   "id": "b-cw12-4",
+   "status": "mining",
+   "window": "CW12 \u00a744-110",
+   "note": "CW12 series resumed 2026-07-27 per user; standard v2 cycle incl. pre-merge cross-vendor check"
   }
  ],
  "next": "12:03 wake: finish b-union-1 (stage2+merge), then b-union-2, then CW12 \u00a744-110 first dream-series batch"
