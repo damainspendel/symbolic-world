@@ -90,6 +90,13 @@ The correspondence is diagnostic, not decorative: our one systematically hard re
                                                                        │
                                                                        ▼
                                                                   public Atlas
+                                                                       │
+                                          sampled, on cadence          ▼
+                              ┌──────────────────────────── CROSS-VENDOR AUDITOR
+                              │ disagreements → adjudication   (Gemini 3.1 Pro,
+                              ▼   → cross-review of rulings     different vendor,
+                        corrections re-enter the                blind; rubric &
+                        adjudicated merge above                 rubric-free modes)
 ```
 
 Rejected candidates stop at their stage; PARTIAL verdicts carry concrete corrections applied at merge; every WRONG is logged. Calibration (seeded corruption) attaches measured sensitivity/specificity to each verification stage (E1, E5).
@@ -97,9 +104,10 @@ Rejected candidates stop at their stage; PARTIAL verdicts carry concrete correct
 **Pipeline (per batch, transaction-logged).**
 1. *Propose* (Claude Opus 4.8): 12–22 candidate edges from a contiguous window; verbatim quotes; node-vocabulary reuse; claim-typing rules (reported doctrine must be typed as reported).
 2. *Mechanical pre-check* (deterministic): each quote must appear as an in-order, letter-normalized substring of its cited paragraph (ellipsis-tolerant); node existence; duplicate-triple rejection.
-3. *Independent verification, two stages* (Claude Fable 5, different family from the proposer). **Stage 1 — structure gate** (generalist): full-paragraph review for support, direction, referent, quote fidelity across elisions, and conflation → SUPPORTED / PARTIAL(+concrete correction) / WRONG. **Stage 2 — voice specialist** (narrow): claim-type honesty, source attribution, and hedge fidelity only. The decomposition is motivated and validated empirically (§6, E5): narrowing the verifier's semantic responsibility doubled detection on the weak axis at ~+$0.02/citation.
+3. *Independent verification, two stages* (Claude Fable 5, different family from the proposer; a second-**vendor** auditor stands behind both — step 6). **Stage 1 — structure gate** (generalist): full-paragraph review for support, direction, referent, quote fidelity across elisions, and conflation → SUPPORTED / PARTIAL(+concrete correction) / WRONG. **Stage 2 — voice specialist** (narrow): claim-type honesty, source attribution, and hedge fidelity only. The decomposition is motivated and validated empirically (§6, E5): narrowing the verifier's semantic responsibility doubled detection on the weak axis at ~+$0.02/citation.
 4. *Adjudicated merge*: corrections applied; WRONG dropped and logged; provenance stamped (`verified_by`, `verified_date`).
 5. *Integrity tests* (all quotes/anchors/types/provenance re-validated on every change, plus five **corruption canaries that must fail** — self-testing validators) → deploy → commit.
+6. *Standing cross-vendor audit* (Google Gemini 3.1 Pro — different **vendor**, not merely different family): stratified samples of the published graph re-audited on a cadence, blind to prior verdicts, alternating the shared rubric with rubric-free own-terms judgment; its findings, the adjudication of them, and its adversarial review of the adjudicator's rulings all feed corrections back through the same merge machinery (full workflow below).
 
 Every batch transition is committed to a ledger (`pipeline/state.json`); the construction history is replayable and auditable commit-by-commit.
 
