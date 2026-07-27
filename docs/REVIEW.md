@@ -84,7 +84,7 @@ tests/test_graph.py (validators + canaries)     launchd service :8788 (~/Library
    are caught at ceiling (10/10 in calibration; 0 in audits post-gate). The residual
    axis is *attribution modality* — whose claim is it, how hedged — now measured
    three independent ways (audit 13.3%, calibration voice-flip detection 40%,
-   sweep flag rate 11.8%).
+   sweep flag rate 10.3%).
 3. **The gate teaches the miner.** Modality flag rate falls from 19% (oldest edges)
    to ~5% (newest); the last three batches passed 20/20. Feedback from verifier
    corrections, folded into miner instructions, compounds.
@@ -100,10 +100,10 @@ tests/test_graph.py (validators + canaries)     launchd service :8788 (~/Library
 |---|---|---|
 | Fabricated citations | Mechanical verbatim check + gate | Eliminated (measured) |
 | Reversed/wrong-referent edges | Gate (calibrated 100% on these classes) | Negligible post-gate |
-| Voice/modality drift | Claim-type taxonomy; sweep (381/634 done); hedge→confidence rule | Finish sweep batches 4–5 (**held**, ~$2); sympathetic-reportage ambiguity → human tier |
+| Voice/modality drift | Claim-type taxonomy; **full-graph sweep complete (65/634 fixed)**; hedge→confidence rule | Sympathetic-reportage ambiguity → human tier |
 | Validator regression | 5 corruption canaries (must-fail) in test suite | — |
 | Shared-substrate blind spots (same-vendor miner+gate) | Cross-family separation; assumptions register | **Cross-vendor tier (§5)** + community verification |
-| Selection subjectivity | Stability probe designed, reference sets committed | Run when budget returns (~$2) |
+| Selection subjectivity | **Stability probe complete: 37.5% strict top-20 overlap**, core theses stable | Union-mining for coverage (future work) |
 | Reader trust | Evidence view (per-citation verification record); standing falsification offer; published error rates | Public dispute channel needs a decision (repo has no public remote yet) |
 | Session/budget interruptions | Transaction ledger; held-not-merged rule (exercised 3× without data loss) | — |
 | Translation dependence | Documented (assumption #1) | German GW cross-check — deferred |
