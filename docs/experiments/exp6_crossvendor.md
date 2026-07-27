@@ -79,3 +79,38 @@ Fable — evidence of intrinsic ambiguity, not a vendor blind spot.*
   salvage parser for the dropped bracket.
 - Cost: ~50K tokens in / ~5K out for the audit (+ replays) — ≈ $0.15 total at Gemini
   preview pricing.
+
+## Adjudication cross-review (Gemini reviews the adjudicator)
+
+Because the adjudicator of the 11 disputes is a Claude model (the vendor whose model
+verified the edges — a structural conflict of interest), all 11 rulings + rationales
+were sent back to Gemini for adversarial review (`pipeline/work/gemini_adjudication_review.json`):
+**9 AGREE, 2 PARTIALLY-AGREE, 0 DISAGREE.** Both partial agreements (n48, n37) argued the
+confidence-demotion remedy was too weak and the referent should actually be corrected.
+**Both accepted and applied**: n48 subject retargeted to a new `blood` node (¶ supports
+blood generally); n37 object retargeted to `the-ego` with quote extended to "the ego with
+its shadow". Final graph: **228 nodes · 608 edges · 633 references.**
+
+## Prompt-bias audit (Gemini critiques the gate prompt itself)
+
+Risk: the gate prompt was written by the first-party vendor's model, so a cross-vendor
+audit run under that prompt could inherit its biases. Gemini's adversarial critique of the
+prompt (`pipeline/work/gemini_prompt_critique.json`) found:
+
+- **Rubric leniency:** "PARTIAL (core link real but something off)" and WRONG's
+  "beyond repair" bar nudge verifiers toward salvaging edges; misattributed voice is
+  hardcoded as PARTIAL, never WRONG. (In pipeline semantics PARTIAL is not survival —
+  corrections are mandatory at merge — but the critique stands for *audit* readings of
+  the verdicts: "0 WRONG" partly reflects the shared rubric.)
+- **Shared-rubric convergence:** giving a second vendor the first vendor's rubric and
+  claim-type ontology forces convergent thresholds — cross-vendor agreement is partly
+  an artifact of the shared prompt, not fully independent judgment.
+- **Missing error classes** for future verifier-registry axes: conditional/contextual
+  dependency stripping, metaphorical-vs-literal flattening, node-label fidelity.
+- **Smuggled ontology:** the claim-type trichotomy assumes Jung's voice separates
+  cleanly — the same sympathetic-reportage blending our calibrations identify.
+
+**Mitigation adopted (planned as E7):** a *rubric-free replication* — the cross-vendor
+auditor judges a sample in its own terms (support yes/no + severity in its own words,
+no verdict enum, no claim-type definitions), mapped to our categories only afterwards.
+Until then, E6's headline is stated as "0 unsupported edges *under the shared rubric*".

@@ -1146,6 +1146,11 @@
    "id": "spiritus-mundi",
    "type": "Concept",
    "label": "Spiritus mundi (world spirit)"
+  },
+  {
+   "id": "blood",
+   "type": "Substance",
+   "label": "Blood"
   }
  ],
  "edges": [
@@ -5925,13 +5930,13 @@
   {
    "subject": "thief",
    "relation": "personifies",
-   "object": "the-shadow",
+   "object": "the-ego",
    "references": [
     {
      "volume": 14,
      "paragraph": 203,
-     "quote": "in reality it is merely the ego with its shadow where the abysmal depths of human nature begin to appear",
-     "confidence": "medium",
+     "quote": "in reality it is merely the ego with its shadow",
+     "confidence": "high",
      "verified": true,
      "claim_type": "jung-asserts",
      "verified_by": "claude-fable-5",
@@ -9482,7 +9487,7 @@
    ]
   },
   {
-   "subject": "human-blood",
+   "subject": "blood",
    "relation": "synonym-of",
    "object": "aqua-permanens",
    "references": [
@@ -9490,7 +9495,7 @@
      "volume": 14,
      "paragraph": 401,
      "quote": "one of the best-known synonyms for the aqua permanens",
-     "confidence": "medium",
+     "confidence": "high",
      "verified": true,
      "claim_type": "jung-asserts",
      "verified_by": "claude-fable-5",

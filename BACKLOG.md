@@ -75,3 +75,23 @@ it is not inspectable or tunable as a *thing*. Backlog: a small declarative laye
 - Payoff: the paper's "specialist decomposition" becomes an operable pattern —
   new corpus, new axes, same machinery; and the assumptions register can link
   each verifier to its measured performance.
+
+## Publication venues beyond arXiv (added 2026-07-27)
+Research other places to publish/announce: Paradigm Explorer, Jungian journals
+(e.g. Journal of Analytical Psychology, Jung Journal: Culture & Psyche,
+International Journal of Jungian Studies), digital-humanities venues (DH Quarterly,
+Journal of Cultural Analytics). Check each venue's stance on AI-assisted work and
+preprints before submitting.
+
+## Reader's guide to the papers we cite (added 2026-07-27)
+Damian wants plain-language breakdowns of the papers cited in docs/PAPER.md to
+understand the core claims — especially the hallucination-rate and KG-extraction
+benchmarks (KGGen, GraphRAG accuracy studies, citation-hallucination surveys) and
+which citations are preprints/non-peer-reviewed ("nonpublications") vs published.
+Deliverable: one short annotated-bibliography doc, per-paper: what it measured,
+how, headline number, and how much weight it can bear.
+
+## E7: rubric-free cross-vendor replication (added 2026-07-27)
+Re-run a cross-vendor audit sample WITHOUT the first-party rubric: the second vendor
+states support + severity in its own terms; map post hoc. Motivated by Gemini's
+prompt-bias critique (shared-rubric convergence). See docs/experiments/exp6_crossvendor.md.
