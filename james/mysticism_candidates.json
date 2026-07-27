@@ -1,0 +1,372 @@
+{
+  "nodes": [
+    {
+      "id": "personal-religious-experience",
+      "type": "Concept",
+      "label": "Personal religious experience"
+    },
+    {
+      "id": "mystical-states-of-consciousness",
+      "type": "State",
+      "label": "Mystical states of consciousness (the mystical consciousness)"
+    },
+    {
+      "id": "ineffability",
+      "type": "Concept",
+      "label": "Ineffability (incommunicableness)"
+    },
+    {
+      "id": "states-of-feeling",
+      "type": "Concept",
+      "label": "States of feeling"
+    },
+    {
+      "id": "noetic-quality",
+      "type": "Concept",
+      "label": "Noetic quality"
+    },
+    {
+      "id": "discursive-intellect",
+      "type": "Concept",
+      "label": "The discursive intellect"
+    },
+    {
+      "id": "sense-of-authority",
+      "type": "Concept",
+      "label": "Sense of authority for after-time"
+    },
+    {
+      "id": "transiency",
+      "type": "Concept",
+      "label": "Transiency"
+    },
+    {
+      "id": "passivity",
+      "type": "Concept",
+      "label": "Passivity"
+    },
+    {
+      "id": "alcohol",
+      "type": "Motif",
+      "label": "Alcohol / drunken consciousness"
+    },
+    {
+      "id": "nitrous-oxide",
+      "type": "Motif",
+      "label": "Nitrous oxide and ether"
+    },
+    {
+      "id": "rational-consciousness",
+      "type": "State",
+      "label": "Normal waking (rational) consciousness"
+    },
+    {
+      "id": "potential-forms-of-consciousness",
+      "type": "Concept",
+      "label": "Potential forms of consciousness entirely different"
+    },
+    {
+      "id": "account-of-the-universe",
+      "type": "Concept",
+      "label": "Any account of the universe in its totality"
+    },
+    {
+      "id": "cosmic-consciousness",
+      "type": "State",
+      "label": "Cosmic consciousness (Bucke)"
+    },
+    {
+      "id": "consciousness-of-the-cosmos",
+      "type": "Concept",
+      "label": "Consciousness of the life and order of the universe"
+    },
+    {
+      "id": "yoga",
+      "type": "Process",
+      "label": "Yoga"
+    },
+    {
+      "id": "samadhi",
+      "type": "State",
+      "label": "Samadhi (superconscious state)"
+    },
+    {
+      "id": "vedanta",
+      "type": "Concept",
+      "label": "Vedantist doctrine"
+    },
+    {
+      "id": "empirical-fruits",
+      "type": "Concept",
+      "label": "Empirical test by fruits for life"
+    },
+    {
+      "id": "mystical-knowledge",
+      "type": "Concept",
+      "label": "Mystical knowledge / the transport"
+    },
+    {
+      "id": "study-and-hearsay",
+      "type": "Concept",
+      "label": "Knowledge by study and hearsay"
+    },
+    {
+      "id": "mysticism",
+      "type": "Concept",
+      "label": "Mysticism as such"
+    },
+    {
+      "id": "christian-mysticism",
+      "type": "Concept",
+      "label": "Christian mystical theology"
+    },
+    {
+      "id": "orison",
+      "type": "Process",
+      "label": "Orison (methodical meditation)"
+    },
+    {
+      "id": "orison-of-union",
+      "type": "State",
+      "label": "Orison of union"
+    },
+    {
+      "id": "unshakable-certitude",
+      "type": "Concept",
+      "label": "Unshakable certitude of having been in God"
+    },
+    {
+      "id": "sensible-representations",
+      "type": "Motif",
+      "label": "Images and sensible representations"
+    }
+  ],
+  "candidate_edges": [
+    {
+      "subject": "personal-religious-experience",
+      "relation": "has-root-and-centre-in",
+      "object": "mystical-states-of-consciousness",
+      "claim_type": "james-asserts",
+      "confidence": "medium",
+      "reference": {
+        "lecture": "XVI+XVII",
+        "paragraph": 1,
+        "quote": "personal religious experience has its root and centre in mystical states of consciousness"
+      }
+    },
+    {
+      "subject": "mystical-states-of-consciousness",
+      "relation": "is-marked-by",
+      "object": "ineffability",
+      "claim_type": "james-asserts",
+      "reference": {
+        "lecture": "XVI+XVII",
+        "paragraph": 4,
+        "quote": "The handiest of the marks...it defies expression, that no adequate report of its contents can be given in words."
+      }
+    },
+    {
+      "subject": "mystical-states-of-consciousness",
+      "relation": "more-resemble",
+      "object": "states-of-feeling",
+      "claim_type": "james-asserts",
+      "reference": {
+        "lecture": "XVI+XVII",
+        "paragraph": 4,
+        "quote": "In this peculiarity mystical states are more like states of feeling than like states of intellect."
+      }
+    },
+    {
+      "subject": "mystical-states-of-consciousness",
+      "relation": "is-marked-by",
+      "object": "noetic-quality",
+      "claim_type": "james-asserts",
+      "confidence": "medium",
+      "reference": {
+        "lecture": "XVI+XVII",
+        "paragraph": 5,
+        "quote": "mystical states seem to those who experience them to be also states of knowledge."
+      }
+    },
+    {
+      "subject": "noetic-quality",
+      "relation": "gives-insight-unplumbed-by",
+      "object": "discursive-intellect",
+      "claim_type": "james-asserts",
+      "reference": {
+        "lecture": "XVI+XVII",
+        "paragraph": 5,
+        "quote": "They are states of insight into depths of truth unplumbed by the discursive intellect."
+      }
+    },
+    {
+      "subject": "mystical-states-of-consciousness",
+      "relation": "carry",
+      "object": "sense-of-authority",
+      "claim_type": "james-asserts",
+      "reference": {
+        "lecture": "XVI+XVII",
+        "paragraph": 5,
+        "quote": "as a rule they carry with them a curious sense of authority for after‐time"
+      }
+    },
+    {
+      "subject": "mystical-states-of-consciousness",
+      "relation": "is-marked-by",
+      "object": "transiency",
+      "claim_type": "james-asserts",
+      "reference": {
+        "lecture": "XVI+XVII",
+        "paragraph": 7,
+        "quote": "Mystical states cannot be sustained for long."
+      }
+    },
+    {
+      "subject": "mystical-states-of-consciousness",
+      "relation": "is-marked-by",
+      "object": "passivity",
+      "claim_type": "james-asserts",
+      "reference": {
+        "lecture": "XVI+XVII",
+        "paragraph": 8,
+        "quote": "when the characteristic sort of consciousness once has set in, the mystic feels as if his own will were in abeyance"
+      }
+    },
+    {
+      "subject": "alcohol",
+      "relation": "stimulates",
+      "object": "mystical-states-of-consciousness",
+      "claim_type": "james-asserts",
+      "reference": {
+        "lecture": "XVI+XVII",
+        "paragraph": 19,
+        "quote": "The sway of alcohol over mankind is unquestionably due to its power to stimulate the mystical faculties of human nature"
+      }
+    },
+    {
+      "subject": "nitrous-oxide",
+      "relation": "stimulates",
+      "object": "mystical-states-of-consciousness",
+      "claim_type": "james-asserts",
+      "reference": {
+        "lecture": "XVI+XVII",
+        "paragraph": 20,
+        "quote": "Nitrous oxide and ether, especially nitrous oxide, when sufficiently diluted with air, stimulate the mystical consciousness in an extraordinary degree."
+      }
+    },
+    {
+      "subject": "rational-consciousness",
+      "relation": "is-but-one-type-alongside",
+      "object": "potential-forms-of-consciousness",
+      "claim_type": "james-asserts",
+      "reference": {
+        "lecture": "XVI+XVII",
+        "paragraph": 21,
+        "quote": "our normal waking consciousness, rational consciousness as we call it, is but one special type of consciousness...there lie potential forms of consciousness entirely different"
+      }
+    },
+    {
+      "subject": "account-of-the-universe",
+      "relation": "cannot-be-final-without",
+      "object": "potential-forms-of-consciousness",
+      "claim_type": "james-asserts",
+      "reference": {
+        "lecture": "XVI+XVII",
+        "paragraph": 21,
+        "quote": "No account of the universe in its totality can be final which leaves these other forms of consciousness quite disregarded."
+      }
+    },
+    {
+      "subject": "cosmic-consciousness",
+      "relation": "is-characterized-by",
+      "object": "consciousness-of-the-cosmos",
+      "claim_type": "james-quotes-source",
+      "source": "R. M. Bucke",
+      "reference": {
+        "lecture": "XVI+XVII",
+        "paragraph": 35,
+        "quote": "The prime characteristic of cosmic consciousness is a consciousness of the cosmos, that is, of the life and order of the universe."
+      }
+    },
+    {
+      "subject": "yoga",
+      "relation": "leads-to",
+      "object": "samadhi",
+      "claim_type": "james-reports",
+      "reference": {
+        "lecture": "XVI+XVII",
+        "paragraph": 39,
+        "quote": "The yogi, or disciple, who has by these means overcome the obscurations of his lower nature sufficiently, enters into the condition termed _samâdhi_"
+      }
+    },
+    {
+      "subject": "vedanta",
+      "relation": "tests-superconsciousness-by",
+      "object": "empirical-fruits",
+      "claim_type": "james-reports",
+      "reference": {
+        "lecture": "XVI+XVII",
+        "paragraph": 41,
+        "quote": "Their test of its purity, like our test of religion’s value, is empirical: its fruits must be good for life."
+      }
+    },
+    {
+      "subject": "mystical-knowledge",
+      "relation": "cannot-be-grasped-by",
+      "object": "study-and-hearsay",
+      "claim_type": "james-quotes-source",
+      "source": "Al-Ghazzali",
+      "reference": {
+        "lecture": "XVI+XVII",
+        "paragraph": 45,
+        "quote": "what pertains most exclusively to their method is just what no study can grasp, but only transport, ecstasy, and the transformation of the soul"
+      }
+    },
+    {
+      "subject": "ineffability",
+      "relation": "is-keynote-of",
+      "object": "mysticism",
+      "claim_type": "james-asserts",
+      "reference": {
+        "lecture": "XVI+XVII",
+        "paragraph": 49,
+        "quote": "This incommunicableness of the transport is the keynote of all mysticism."
+      }
+    },
+    {
+      "subject": "christian-mysticism",
+      "relation": "is-based-on",
+      "object": "orison",
+      "claim_type": "james-reports",
+      "reference": {
+        "lecture": "XVI+XVII",
+        "paragraph": 50,
+        "quote": "The basis of the system is “orison” or meditation, the methodical elevation of the soul towards God."
+      }
+    },
+    {
+      "subject": "mystical-knowledge",
+      "relation": "is-received-without",
+      "object": "sensible-representations",
+      "claim_type": "james-quotes-source",
+      "source": "Saint John of the Cross",
+      "reference": {
+        "lecture": "XVI+XVII",
+        "paragraph": 52,
+        "quote": "We receive this mystical knowledge of God clothed in none of the kinds of images, in none of the sensible representations"
+      }
+    },
+    {
+      "subject": "orison-of-union",
+      "relation": "yields",
+      "object": "unshakable-certitude",
+      "claim_type": "james-quotes-source",
+      "source": "Saint Teresa",
+      "reference": {
+        "lecture": "XVI+XVII",
+        "paragraph": 56,
+        "quote": "when she returns to herself, it is wholly impossible for her to doubt that she has been in God, and God in her"
+      }
+    }
+  ]
+}
