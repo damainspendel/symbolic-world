@@ -145,13 +145,18 @@
   },
   {
    "id": "b-union-2",
-   "status": "pending",
-   "note": "PAUSED by user 2026-07-27: all CW12/CW14 mining on hold; Gemini budget redirected to E7 rubric-free validation of CW14"
+   "status": "stage1-running",
+   "note": "mined 20 (Adam ch. \u00a7555-620), 13 dup-pair (coverage re-confirmation), 7 novel at stage-1 gate; new node en-soph pending"
   },
   {
    "id": "exp7-rubricfree",
    "status": "complete",
    "note": "407 CW14 refs: 356/47/4; 10 adjudicated, 4 upheld+corrected (1 edge deleted); rubric-free calib identical to rubric (70/95, same misses); cross-mode consistency 55/58; graph 231/627/652"
+  },
+  {
+   "id": "exp1b-calibration",
+   "status": "complete",
+   "note": "n=200 expanded calibration: 86%/93% with CIs; per-class 23-24/25 structural, 18/25 voice; 1 production claim-type fix (rex/hierosgamos \u00a7356); E5 doubling claim downgraded to directional"
   }
  ],
  "next": "12:03 wake: finish b-union-1 (stage2+merge), then b-union-2, then CW12 \u00a744-110 first dream-series batch"

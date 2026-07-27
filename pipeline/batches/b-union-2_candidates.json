@@ -1,0 +1,234 @@
+{
+  "new_nodes": [
+    {
+      "id": "en-soph",
+      "type": "Concept",
+      "label": "En Soph (the Simple and the One)"
+    }
+  ],
+  "candidate_edges": [
+    {
+      "subject": "adam",
+      "relation": "is-a-symbol-of",
+      "object": "the-self",
+      "claim_type": "jung-asserts",
+      "reference": {
+        "volume": "14",
+        "paragraph": 558,
+        "quote": "Adam stands not only for the psyche but for its totality; he is a symbol of the self"
+      }
+    },
+    {
+      "subject": "adam",
+      "relation": "is-a-quaternarius",
+      "object": "quaternity",
+      "claim_type": "jung-asserts",
+      "confidence": "medium",
+      "reference": {
+        "volume": "14",
+        "paragraph": 555,
+        "quote": "Adam would then be a quaternarius, as he was composed of red, black, white, and green dust from the four corners of the earth"
+      }
+    },
+    {
+      "subject": "adam",
+      "relation": "is",
+      "object": "prima-materia",
+      "claim_type": "jung-reports-parallel",
+      "reference": {
+        "volume": "14",
+        "paragraph": 570,
+        "quote": "Adam, being composed of the four elements, either is the prima materia and the arcane substance itself"
+      }
+    },
+    {
+      "subject": "adam",
+      "relation": "signifies",
+      "object": "lapis",
+      "claim_type": "jung-asserts",
+      "reference": {
+        "volume": "14",
+        "paragraph": 569,
+        "quote": "Since Adam signifies not only the beginning of the work, the prima materia, but also the end, the lapis"
+      }
+    },
+    {
+      "subject": "adam",
+      "relation": "is-a-synonym-for",
+      "object": "mercurius",
+      "claim_type": "jung-asserts",
+      "reference": {
+        "volume": "14",
+        "paragraph": 565,
+        "quote": "The figure of Adam readily lent itself as a biblical synonym for the alchemical Mercurius"
+      }
+    },
+    {
+      "subject": "adam",
+      "relation": "is",
+      "object": "anthropos",
+      "claim_type": "jung-asserts",
+      "reference": {
+        "volume": "14",
+        "paragraph": 590,
+        "quote": "As the first man, Adam is the homo maximus , the Anthropos, from whom the macrocosm arose, or who is the macrocosm"
+      }
+    },
+    {
+      "subject": "adam",
+      "relation": "is",
+      "object": "inner-man",
+      "claim_type": "jung-asserts",
+      "reference": {
+        "volume": "14",
+        "paragraph": 606,
+        "quote": "For Adam is “interior homo noster,” the Primordial Man in us."
+      }
+    },
+    {
+      "subject": "adam",
+      "relation": "was-created-as",
+      "object": "the-statue",
+      "claim_type": "jung-reports-parallel",
+      "reference": {
+        "volume": "14",
+        "paragraph": 559,
+        "quote": "An old tradition says that Adam was created “a lifeless statue.”"
+      }
+    },
+    {
+      "subject": "christ",
+      "relation": "is-the-second-adam",
+      "object": "adam",
+      "claim_type": "jung-asserts",
+      "reference": {
+        "volume": "14",
+        "paragraph": 565,
+        "quote": "The second Adam is Christ, whose mystical androgyny is established in ecclesiastical tradition."
+      }
+    },
+    {
+      "subject": "the-statue",
+      "relation": "denotes",
+      "object": "lapis",
+      "claim_type": "jung-asserts",
+      "reference": {
+        "volume": "14",
+        "paragraph": 559,
+        "quote": "Here the statue evidently denotes the end-product of the process, the lapis Philosophorum or its equivalent."
+      }
+    },
+    {
+      "subject": "the-statue",
+      "relation": "is",
+      "object": "anthropos",
+      "claim_type": "jung-asserts",
+      "reference": {
+        "volume": "14",
+        "paragraph": 567,
+        "quote": "It is clear from these extracts that the statue or pillar is either the perfect Primordial Man"
+      }
+    },
+    {
+      "subject": "malchuth",
+      "relation": "is-called",
+      "object": "the-statue",
+      "claim_type": "jung-quotes-source",
+      "source": "Zohar, Haye Sarah on Genesis 28:22",
+      "reference": {
+        "volume": "14",
+        "paragraph": 568,
+        "quote": "the Haye Sarah on Genesis 28:22 says that Malchuth is called the “statue” when she is united with Tifereth"
+      }
+    },
+    {
+      "subject": "anthropos",
+      "relation": "proceeded-from",
+      "object": "en-soph",
+      "claim_type": "jung-quotes-source",
+      "source": "Knorr von Rosenroth, Tractatus de Revolutionibus Animarum",
+      "reference": {
+        "volume": "14",
+        "paragraph": 594,
+        "quote": "From En Soph, from the most general One, was produced the universe, which is Adam Kadmon, who is One and Many"
+      }
+    },
+    {
+      "subject": "anthropos",
+      "relation": "takes-the-place-of",
+      "object": "tifereth-malchuth",
+      "claim_type": "jung-asserts",
+      "reference": {
+        "volume": "14",
+        "paragraph": 592,
+        "quote": "Accordingly, Adam Kadmon here takes the place of Tifereth."
+      }
+    },
+    {
+      "subject": "anthropos",
+      "relation": "is",
+      "object": "tetrameria",
+      "claim_type": "jung-reports-parallel",
+      "reference": {
+        "volume": "14",
+        "paragraph": 619,
+        "quote": "Adam Kadmon is not merely the universal soul ... but is himself the process of transformation, its division into three or four parts (trimeria or tetrameria)"
+      }
+    },
+    {
+      "subject": "anthropos",
+      "relation": "is-identified-with",
+      "object": "christ",
+      "claim_type": "jung-reports-parallel",
+      "reference": {
+        "volume": "14",
+        "paragraph": 607,
+        "quote": "The alchemists could not help identifying their Primordial Man with Christ"
+      }
+    },
+    {
+      "subject": "old-adam",
+      "relation": "corresponds-to",
+      "object": "the-shadow",
+      "claim_type": "jung-asserts",
+      "reference": {
+        "volume": "14",
+        "paragraph": 602,
+        "quote": "The “old Adam” corresponds to the primitive man, the “shadow” of our present-day consciousness"
+      }
+    },
+    {
+      "subject": "old-adam",
+      "relation": "is-equated-with",
+      "object": "anthropos",
+      "claim_type": "jung-asserts",
+      "reference": {
+        "volume": "14",
+        "paragraph": 596,
+        "quote": "The reader is immediately struck by the expression “the old Adam,” who is evidently equated with Adam Kadmon."
+      }
+    },
+    {
+      "subject": "shulamite",
+      "relation": "corresponds-to",
+      "object": "malchuth",
+      "claim_type": "jung-asserts",
+      "reference": {
+        "volume": "14",
+        "paragraph": 592,
+        "quote": "The black Shulamite in our text corresponds to Malchuth as a widow, who awaits union with Tifereth and hence the restoration of the original wholeness."
+      }
+    },
+    {
+      "subject": "shulamite",
+      "relation": "is",
+      "object": "anima",
+      "claim_type": "jung-asserts",
+      "reference": {
+        "volume": "14",
+        "paragraph": 592,
+        "quote": "the speaker is the feminine personification of the prima materia in the nigredo state ... Psychologically this dark figure is the unconscious anima."
+      }
+    }
+  ]
+}

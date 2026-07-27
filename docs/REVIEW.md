@@ -76,6 +76,7 @@ tests/test_graph.py (validators + canaries)     launchd service :8788 (~/Library
 | **Recent pipeline precision** | last 3 batches | **60/60 SUPPORTED (three consecutive perfect batches)** |
 | **Exp 6 — Cross-vendor audit** (Gemini 3.1 Pro, blind) | 100 published edges + E1/E5 replays | **89 SUPPORTED · 11 PARTIAL · 0 WRONG**; adjudicated: 4 upheld (corrected), 5 both-defensible, 2 not upheld. E1 replay 70%/95% — same voice-flip items missed by both vendors; specialist effect replicates (33%→67%) |
 | **Exp 7 — Rubric-free full-CW14 sweep** (Gemini, own terms) | 407 refs + calib replay | **356/47/4**; 4 upheld corrections (1.0%); rubric-free calib profile **identical** to with-rubric (70%/95%); cross-mode consistency 55/58 — rubric convergence measures ≈ zero |
+| **Exp 1b — Expanded calibration** (n=200, blind) | 100 corruptions / 100 controls | **86% sens (CI 78–91) / 93% spec (CI 86–97)**; reversal 23/25 · object-swap 24/25 · overreach 21/25 · voice-flip 18/25; E1's voice baseline was noisy-low; specialist-gap claim downgraded to directional |
 
 **Discoveries worth publishing:**
 
