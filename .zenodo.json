@@ -1,0 +1,22 @@
+{
+  "title": "The Symbolic World: Verification-First Knowledge Extraction from Interpretive Corpora (dataset, pipeline, and paper)",
+  "description": "A methodology for AI-assisted knowledge extraction in which trust is manufactured by construction and terminates in human judgement, demonstrated on a knowledge graph of C. G. Jung's Collected Works: 233 nodes, 634 edges, 659 references, each verbatim-anchored to a numbered paragraph, independently gated by a second model family, calibrated with seeded corruptions (n=200, published confidence intervals), cross-vendor audited (rubric and rubric-free), with live public dispute and confirmation channels. Includes the full transaction ledger, all experiment inputs/verdicts/adjudications (E0-E7), and the paper. Copyrighted source texts are not included; quotations are <=25 words under quotation exceptions (see docs/LEGAL.md). Live atlas: https://symbolicworld.observer",
+  "creators": [
+    {"name": "Spendel, Damian"}
+  ],
+  "contributors": [
+    {"name": "Claude Opus 4.8 (Anthropic) — edge proposal", "type": "Other"},
+    {"name": "Claude Fable 5 (Anthropic) — independent verification and calibration", "type": "Other"},
+    {"name": "Gemini 3.1 Pro (Google) — cross-vendor audits", "type": "Other"},
+    {"name": "Claude Code (Anthropic) — orchestration, tooling, drafting", "type": "Other"}
+  ],
+  "license": "cc-by-4.0",
+  "upload_type": "dataset",
+  "keywords": ["knowledge graph", "C. G. Jung", "LLM verification", "digital humanities",
+               "provenance", "nanopublications", "epistemic stance", "hallucination",
+               "cross-vendor audit", "falsifiability"],
+  "related_identifiers": [
+    {"identifier": "https://symbolicworld.observer", "relation": "isSupplementTo", "scheme": "url"},
+    {"identifier": "https://github.com/sudamana23/symbolic-world", "relation": "isDerivedFrom", "scheme": "url"}
+  ]
+}
