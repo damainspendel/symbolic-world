@@ -7,10 +7,10 @@
 
 | | |
 |---|---|
-| Graph | **227 nodes · 608 edges · 633 references**, 461 distinct CW paragraphs, 9 volumes |
-| Verification | **633/633 (100%)** gate-verified with model+date provenance |
-| Claim provenance | 419 jung-asserts · 155 jung-reports-parallel · 59 jung-quotes-source (74 named sources) |
-| Coverage | CW14 complete end-to-end (395 refs); CW12 at 87 and growing; 7 further volumes sampled |
+| Graph | **231 nodes · 627 edges · 652 references**, 461 distinct CW paragraphs, 9 volumes |
+| Verification | **652/652 (100%)** gate-verified with model+date provenance |
+| Claim provenance | 436 jung-asserts · 157 jung-reports-parallel · 59 jung-quotes-source (74 named sources) |
+| Coverage | CW14 complete end-to-end (406 refs); CW12 at 87 and growing; 7 further volumes sampled |
 | Cost to date | ≈ $60–90 total model spend; ≈ **$0.09–0.12 per fully verified citation** |
 
 ## 1. Methodology
@@ -75,6 +75,7 @@ tests/test_graph.py (validators + canaries)     launchd service :8788 (~/Library
 | **Exp 4 — Stability probe** (blind re-mine, no prior triples) | 2 windows × 20 edges | **37.5% strict top-20 pair overlap** (35% / 40%); core theses stable; non-overlap = complementary edges + schema variants |
 | **Recent pipeline precision** | last 3 batches | **60/60 SUPPORTED (three consecutive perfect batches)** |
 | **Exp 6 — Cross-vendor audit** (Gemini 3.1 Pro, blind) | 100 published edges + E1/E5 replays | **89 SUPPORTED · 11 PARTIAL · 0 WRONG**; adjudicated: 4 upheld (corrected), 5 both-defensible, 2 not upheld. E1 replay 70%/95% — same voice-flip items missed by both vendors; specialist effect replicates (33%→67%) |
+| **Exp 7 — Rubric-free full-CW14 sweep** (Gemini, own terms) | 407 refs + calib replay | **356/47/4**; 4 upheld corrections (1.0%); rubric-free calib profile **identical** to with-rubric (70%/95%); cross-mode consistency 55/58 — rubric convergence measures ≈ zero |
 
 **Discoveries worth publishing:**
 

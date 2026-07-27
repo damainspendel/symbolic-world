@@ -150,8 +150,8 @@
   },
   {
    "id": "exp7-rubricfree",
-   "status": "running",
-   "note": "rubric-free Gemini audit: 407 CW14 refs (58 overlap E6 sample for rubric-vs-rubric-free comparison) + E1 calib replay; background task"
+   "status": "complete",
+   "note": "407 CW14 refs: 356/47/4; 10 adjudicated, 4 upheld+corrected (1 edge deleted); rubric-free calib identical to rubric (70/95, same misses); cross-mode consistency 55/58; graph 231/627/652"
   }
  ],
  "next": "12:03 wake: finish b-union-1 (stage2+merge), then b-union-2, then CW12 \u00a744-110 first dream-series batch"

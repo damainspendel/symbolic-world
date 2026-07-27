@@ -5427,7 +5427,7 @@
   },
   {
    "subject": "regina",
-   "relation": "amplified-by",
+   "relation": "drinks-blood-of",
    "object": "green-lion",
    "references": [
     {
@@ -5436,7 +5436,7 @@
      "quote": "The blood of the green lion drunk by the queen",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts",
+     "claim_type": "jung-reports-parallel",
      "verified_by": "claude-fable-5",
      "verified_date": "2026-07-25"
     }
@@ -5754,14 +5754,14 @@
    ]
   },
   {
-   "subject": "filius-regius",
+   "subject": "arcane-substance",
    "relation": "synonym-of",
    "object": "rebis",
    "references": [
     {
      "volume": 14,
      "paragraph": 472,
-     "quote": "as a designation for the “Hermaphrodite of nature,” i.e., the arcane substance.",
+     "quote": "as a designation for the “Hermaphrodite of nature,” i.e., the arcane substance",
      "confidence": "medium",
      "verified": true,
      "claim_type": "jung-quotes-source",
@@ -5934,7 +5934,7 @@
      "volume": 14,
      "paragraph": 200,
      "quote": "The nymph of the spring is in the last analysis Luna, the mother-beloved",
-     "confidence": "high",
+     "confidence": "medium",
      "verified": true,
      "claim_type": "jung-asserts",
      "verified_by": "claude-fable-5",
@@ -7401,7 +7401,7 @@
   },
   {
    "subject": "active-imagination",
-   "relation": "symbolizes",
+   "relation": "represents",
    "object": "individuation",
    "references": [
     {
@@ -9964,24 +9964,6 @@
      "claim_type": "jung-asserts",
      "verified_by": "claude-fable-5",
      "verified_date": "2026-07-25"
-    }
-   ]
-  },
-  {
-   "subject": "anthropos",
-   "relation": "parallels",
-   "object": "atman",
-   "references": [
-    {
-     "volume": 14,
-     "paragraph": 488,
-     "quote": "that inner primordial image which had produced a Purusha or a Gayomart long before the Christian era",
-     "confidence": "high",
-     "verified": true,
-     "claim_type": "jung-asserts",
-     "verified_by": "claude-fable-5",
-     "verified_date": "2026-07-25",
-     "modality_swept": "2026-07-27"
     }
    ]
   },
