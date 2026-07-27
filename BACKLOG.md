@@ -95,3 +95,19 @@ how, headline number, and how much weight it can bear.
 Re-run a cross-vendor audit sample WITHOUT the first-party rubric: the second vendor
 states support + severity in its own terms; map post hoc. Motivated by Gemini's
 prompt-bias critique (shared-rubric convergence). See docs/experiments/exp6_crossvendor.md.
+
+## Hostile-review remediations (added 2026-07-27, from Gemini Reviewer-2 pass)
+Priority order agreed with the hostile review's own "what would change my mind":
+1. **Expand calibration sets** — seeded corruptions from n=5/class to n=25/class (~$5-8):
+   turns fractions into rates with usable confidence intervals. Do before arXiv.
+2. **Human ground-truth tier** — upgrade the community pilot ambition toward ~200
+   human-annotated paragraphs; this is the answer to the (correct) circularity attack:
+   AI extracts, AI verifies, AI audits — the buck must stop at humans.
+3. **Public-domain mini-replication** — run the identical pipeline on a public-domain
+   interpretive corpus (e.g. William James, Varieties of Religious Experience, 1902):
+   answers generalizability AND gives a fully distributable reproduction package.
+4. **Paragraph-hash verification pack** — publish letter-normalized hashes of all
+   cited paragraphs so third parties with any edition can verify quote anchoring
+   without us distributing copyrighted text.
+5. ~~Semantic-diffusion terminology~~ ✅ repositioned as shorthand w/ decomposition-literature context.
+Full hostile review: pipeline/work/gemini_hostile_review.json
