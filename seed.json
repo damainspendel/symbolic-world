@@ -3178,23 +3178,6 @@
    ]
   },
   {
-   "subject": "rex",
-   "relation": "renewed-as",
-   "object": "anthropos",
-   "references": [
-    {
-     "volume": 14,
-     "paragraph": 443,
-     "quote": "the filius regius into the rearisen Primordial Man, who is the cosmos",
-     "confidence": "high",
-     "verified": true,
-     "claim_type": "jung-asserts",
-     "verified_by": "claude-fable-5",
-     "verified_date": "2026-07-25"
-    }
-   ]
-  },
-  {
    "subject": "anthropos",
    "relation": "is-psychic-analogue-of",
    "object": "the-self",
@@ -3218,24 +3201,6 @@
      "claim_type": "jung-asserts",
      "verified_by": "claude-fable-5",
      "verified_date": "2026-07-25"
-    }
-   ]
-  },
-  {
-   "subject": "anthropos",
-   "relation": "symbolizes",
-   "object": "prima-materia",
-   "references": [
-    {
-     "volume": 14,
-     "paragraph": 552,
-     "quote": "why it was that Adam should have been selected as a symbol for the prima materia",
-     "confidence": "high",
-     "verified": true,
-     "claim_type": "jung-reports-parallel",
-     "verified_by": "claude-fable-5",
-     "verified_date": "2026-07-25",
-     "modality_swept": "2026-07-27"
     }
    ]
   },
@@ -5966,7 +5931,7 @@
      "volume": 14,
      "paragraph": 203,
      "quote": "in reality it is merely the ego with its shadow where the abysmal depths of human nature begin to appear",
-     "confidence": "high",
+     "confidence": "medium",
      "verified": true,
      "claim_type": "jung-asserts",
      "verified_by": "claude-fable-5",
@@ -6570,6 +6535,17 @@
      "source": "alchemical tradition",
      "verified_by": "claude-fable-5",
      "verified_date": "2026-07-25"
+    },
+    {
+     "volume": 14,
+     "paragraph": 552,
+     "quote": "why it was that Adam should have been selected as a symbol for the prima materia",
+     "confidence": "high",
+     "verified": true,
+     "claim_type": "jung-reports-parallel",
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-25",
+     "modality_swept": "2026-07-27"
     }
    ]
   },
@@ -9514,7 +9490,7 @@
      "volume": 14,
      "paragraph": 401,
      "quote": "one of the best-known synonyms for the aqua permanens",
-     "confidence": "high",
+     "confidence": "medium",
      "verified": true,
      "claim_type": "jung-asserts",
      "verified_by": "claude-fable-5",

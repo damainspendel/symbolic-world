@@ -7,10 +7,10 @@
 
 | | |
 |---|---|
-| Graph | **227 nodes · 610 edges · 634 references**, 461 distinct CW paragraphs, 9 volumes |
-| Verification | **634/634 (100%)** gate-verified with model+date provenance |
-| Claim provenance | 420 jung-asserts · 155 jung-reports-parallel · 59 jung-quotes-source (74 named sources) |
-| Coverage | CW14 complete end-to-end (396 refs); CW12 at 87 and growing; 7 further volumes sampled |
+| Graph | **227 nodes · 608 edges · 633 references**, 461 distinct CW paragraphs, 9 volumes |
+| Verification | **633/633 (100%)** gate-verified with model+date provenance |
+| Claim provenance | 419 jung-asserts · 155 jung-reports-parallel · 59 jung-quotes-source (74 named sources) |
+| Coverage | CW14 complete end-to-end (395 refs); CW12 at 87 and growing; 7 further volumes sampled |
 | Cost to date | ≈ $60–90 total model spend; ≈ **$0.09–0.12 per fully verified citation** |
 
 ## 1. Methodology
@@ -74,6 +74,7 @@ tests/test_graph.py (validators + canaries)     launchd service :8788 (~/Library
 | **Exp 3 — Modality sweep** (narrow claim-type/hedge audit) | **634/634 refs (complete)** | **65 flagged (10.3%)** — 50 claim-type (incl. 5 reverse-direction), 10 source, 15 hedge fixes — all applied. Age gradient 18.9% → 5.6% |
 | **Exp 4 — Stability probe** (blind re-mine, no prior triples) | 2 windows × 20 edges | **37.5% strict top-20 pair overlap** (35% / 40%); core theses stable; non-overlap = complementary edges + schema variants |
 | **Recent pipeline precision** | last 3 batches | **60/60 SUPPORTED (three consecutive perfect batches)** |
+| **Exp 6 — Cross-vendor audit** (Gemini 3.1 Pro, blind) | 100 published edges + E1/E5 replays | **89 SUPPORTED · 11 PARTIAL · 0 WRONG**; adjudicated: 4 upheld (corrected), 5 both-defensible, 2 not upheld. E1 replay 70%/95% — same voice-flip items missed by both vendors; specialist effect replicates (33%→67%) |
 
 **Discoveries worth publishing:**
 
@@ -130,7 +131,7 @@ chain — proposer and verifier share a vendor (assumption #10).
 ## 6. Immediate queue
 
 1. ~~Modality sweep~~ ✅ complete (65/634 fixed). 2. ~~Stability probe~~ ✅ complete (37.5%).
-3. Cross-vendor tier on your go + API key (~$5–10).
+3. ~~Cross-vendor tier~~ ✅ complete (E6: 0 WRONG on 100-edge blind audit; `docs/experiments/exp6_crossvendor.md`).
 4. Community verification pilot per `docs/ASSUMPTIONS.md` §E (50-edge stratified
    sample, 2–3 Jungian reviewers, κ vs machine gate).
 5. Decide the public dispute channel (publish repo / issue tracker vs email alias).
