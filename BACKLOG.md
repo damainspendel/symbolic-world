@@ -53,3 +53,25 @@ always come first; nothing here may compromise the trust model (every canonical 
 
 - **Explore mode inside the app chrome.** The dark constellation view as a mode within
   the reading companion, not just the standalone atlas.
+
+## Verification architecture: make it declaratively manageable (added 2026-07-27)
+
+Today the verification stack (structure gate, voice specialist, sweeps, seeded
+calibrations) lives as prompt text inside orchestration calls — it works, but
+it is not inspectable or tunable as a *thing*. Backlog: a small declarative layer.
+
+- `pipeline/verifiers.yaml` — one entry per verifier stage: name, model, axis
+  (structure | voice | ...), prompt template (file ref), output schema, and its
+  calibration set + last measured sensitivity/specificity. Adding a specialist
+  for a new corpus axis = adding a YAML block, not editing orchestration.
+- `pipeline/verify.py` — single runner: takes a candidates file + stage name,
+  builds the payload from the corpus, invokes the model, writes verdicts in the
+  standard shape. Same runner powers production gating, sweeps, and calibrations
+  (a calibration is just a run over a seeded input with a key file).
+- Per-stage calibration tracked in the YAML (date, seed, scores) so "how good is
+  this verifier" is data, not memory; recalibration is a one-command re-run.
+- Verdict application (corrections/merge/provenance) already uniform — extract the
+  apply step into `pipeline/apply_verdicts.py` so every stage shares one code path.
+- Payoff: the paper's "specialist decomposition" becomes an operable pattern —
+  new corpus, new axes, same machinery; and the assumptions register can link
+  each verifier to its measured performance.
