@@ -127,11 +127,11 @@ function renderPanel(node) {
       'My objection (what the cited paragraph actually says):',
       '  [describe here — please quote the paragraph]',
       '',
-      'Submit via the project contact / issue tracker. Disputed edges are',
+      'Submit at: https://github.com/sudamana23/symbolic-world/issues — disputed edges are',
       're-reviewed with this objection attached; outcomes are published.'
     ].join('\n')
     navigator.clipboard.writeText(report).then(() => {
-      el.textContent = 'Report copied ✓ — paste it into the project contact'
+      el.textContent = 'Report copied ✓ — submit at github.com/sudamana23/symbolic-world/issues'
       setTimeout(() => { el.textContent = 'Dispute this edge — copy report' }, 3000)
     })
   }))

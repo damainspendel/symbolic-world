@@ -1,30 +1,72 @@
-# JungKG
+# The Symbolic World
 
-A knowledge graph of Jung's alchemical thought, where **every interpretive edge
-is anchored to a specific Collected Works paragraph (§)**. Grounding is the whole
-point — it's what a concepts-and-vague-arrows graph lacks.
+**A verified knowledge graph of C. G. Jung's *Collected Works* — every connection
+anchored to a specific paragraph (§), mechanically checked, independently reviewed,
+and cross-vendor audited.**
 
-Scope for v1: the alchemy volumes — **CW 12** (*Psychology and Alchemy*),
-**CW 13** (*Alchemical Studies*), **CW 14** (*Mysterium Coniunctionis*).
+Live atlas: **[symbolicworld.observer](https://symbolicworld.observer)**
+Paper: [docs/PAPER.md](docs/PAPER.md) · One-page summary: [docs/ABSTRACT.md](docs/ABSTRACT.md)
 
-## Files
-| File | What it is |
+## What this is
+
+231 symbols, figures, and concepts joined by 627 relations, each backed by one or
+more of 652 references. Every reference names its exact CW paragraph and Bollingen
+page, carries a verbatim quote of ≤25 words, and is typed by **whose claim it is**:
+Jung's own assertion, doctrine he reports, or a named source he quotes. 100% of
+references passed an independent verification gate; the whole of CW 14 was
+additionally re-audited by a second vendor's model in its own terms.
+
+## Why it's different
+
+Nothing enters this graph without passing, in order:
+
+1. **Mechanical verbatim check** — the quote must exist, letter-for-letter, in the
+   cited paragraph (eliminates fabricated citations entirely);
+2. **Independent structure gate** — a model from a different family than the
+   proposer reviews the full paragraph (support, direction, referent, conflation);
+3. **Voice specialist** — a narrow second review of attribution and hedging;
+4. **Standing cross-vendor audit** — a different vendor's model re-audits published
+   samples, blind, including rubric-free in its own terms.
+
+Error rates are measured and published, not hidden: see the experiments in
+[docs/experiments/](docs/experiments/) (seeded-corruption calibration, adversarial
+audits, stability probes, cross-vendor audits E6–E7) and the standing review in
+[docs/REVIEW.md](docs/REVIEW.md).
+
+## Dispute an edge
+
+Every citation in the atlas expands to its verification record and a **dispute
+button** that copies a prefilled report. Submit it as a
+[GitHub issue](https://github.com/sudamana23/symbolic-world/issues) — disputed
+edges are re-reviewed with your objection attached, and outcomes (upheld /
+corrected / removed) are published here. If a cited paragraph does not support
+its edge, that finding falsifies the edge, publicly.
+
+## Repository map
+
+| Path | Contents |
 |---|---|
-| `extract.py` | Turns the Collected Works epub into `data/paragraphs.jsonl` — one record per numbered §. Paragraph numbers are read from the markup, never inferred. |
-| `seed.json` | The hand-built v1 graph: nodes (concepts/symbols/operations/figures) + typed edges, each interpretive edge carrying its § citation. |
-| `query.py` | Demonstrates the graph answering real questions, including its own "what still needs a source" worklist. |
+| `seed.json` | The graph: nodes, edges, references with full verification provenance |
+| `docs/PAPER.md` | Research paper (methods, experiments E0–E7, results) |
+| `docs/experiments/` | Every experiment: designs, keys, verdicts, adjudications |
+| `docs/ASSUMPTIONS.md` | 16-item assumptions register + community-verification protocol |
+| `docs/LEGAL.md` | Legal statement (quotation basis, licensing, takedown) |
+| `pipeline/` | Construction pipeline: runners, transaction ledger (`state.json`), batches |
+| `tests/test_graph.py` | Integrity validators + 5 self-testing corruption canaries |
+| `web/` | The atlas web app (Vite + Cytoscape) |
+| `manage.sh` | Build / deploy / service management |
 
 ## Copyright posture
-The epub and `data/` (full text) are **gitignored and stay local**. Only the
-derived facts + § pointers in `seed.json` are ever published — a citation like
-"CW12 §334" is a fact, not a reproduction. Quotes in `seed.json` are kept under
-15 words for the same reason.
 
-## Corpus status (Phase 0a — passed)
-1,838 numbered paragraphs extracted cleanly: CW12 = 565, CW13 = 482, CW14 = 791.
+The Collected Works texts are **not** in this repository and never were: the epub
+and extracted corpus (`data/`) are gitignored and local-only. Only ≤25-word
+attributed quotations, § numbers, and page numbers are published, in reliance on
+quotation and fair-use exceptions — the full position, including licensing
+(MIT code / CC BY 4.0 data, quotes excluded) and takedown commitment, is in
+[docs/LEGAL.md](docs/LEGAL.md).
 
-## Reproduce
-```bash
-python3 extract.py --epub /path/to/CollectedWorks.epub
-python3 query.py
-```
+## Authorship
+
+Damian Spendel, with AI collaborators: Claude Opus 4.8 (proposal), Claude Fable 5
+(verification), Gemini 3.1 Pro (cross-vendor audit), Claude Code (orchestration).
+See the authorship note in the paper.
