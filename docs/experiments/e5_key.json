@@ -1,0 +1,82 @@
+{
+ "1": {
+  "status": "corrupt",
+  "class": "voice-flip"
+ },
+ "2": {
+  "status": "clean",
+  "class": null
+ },
+ "3": {
+  "status": "corrupt",
+  "class": "hedge-strip"
+ },
+ "4": {
+  "status": "clean",
+  "class": null
+ },
+ "5": {
+  "status": "corrupt",
+  "class": "voice-flip"
+ },
+ "6": {
+  "status": "clean",
+  "class": null
+ },
+ "7": {
+  "status": "corrupt",
+  "class": "voice-flip"
+ },
+ "8": {
+  "status": "corrupt",
+  "class": "voice-flip"
+ },
+ "9": {
+  "status": "clean",
+  "class": null
+ },
+ "10": {
+  "status": "corrupt",
+  "class": "voice-flip"
+ },
+ "11": {
+  "status": "clean",
+  "class": null
+ },
+ "12": {
+  "status": "corrupt",
+  "class": "hedge-strip"
+ },
+ "13": {
+  "status": "clean",
+  "class": null
+ },
+ "14": {
+  "status": "corrupt",
+  "class": "voice-flip"
+ },
+ "15": {
+  "status": "clean",
+  "class": null
+ },
+ "16": {
+  "status": "clean",
+  "class": null
+ },
+ "17": {
+  "status": "corrupt",
+  "class": "hedge-strip"
+ },
+ "18": {
+  "status": "clean",
+  "class": null
+ },
+ "19": {
+  "status": "corrupt",
+  "class": "hedge-strip"
+ },
+ "20": {
+  "status": "clean",
+  "class": null
+ }
+}
