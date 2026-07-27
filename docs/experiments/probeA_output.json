@@ -1,0 +1,184 @@
+{
+  "candidate_edges": [
+    {
+      "subject": "arcane-substance",
+      "relation": "is-identified-with",
+      "object": "god-image",
+      "claim_type": "jung-reports-parallel",
+      "references": [
+        {"volume": 14, "paragraph": 374, "quote": "the identification of the transformative substance with God"}
+      ]
+    },
+    {
+      "subject": "aqua-permanens",
+      "relation": "corresponds-to",
+      "object": "collective-unconscious",
+      "claim_type": "jung-asserts",
+      "references": [
+        {"volume": 14, "paragraph": 372, "quote": "There is probably no more suitable psychological concept for this than the collective unconscious"}
+      ]
+    },
+    {
+      "subject": "the-self",
+      "relation": "is-nucleus-and-ordering-principle-of",
+      "object": "collective-unconscious",
+      "claim_type": "jung-asserts",
+      "references": [
+        {"volume": 14, "paragraph": 372, "quote": "whose nucleus and ordering “principle” is the self"}
+      ]
+    },
+    {
+      "subject": "rex",
+      "relation": "dissolves-into",
+      "object": "prima-materia",
+      "claim_type": "jung-reports-parallel",
+      "references": [
+        {"volume": 14, "paragraph": 381, "quote": "the king must transform himself into the prima materia in the body of his mother"}
+      ]
+    },
+    {
+      "subject": "solutio",
+      "relation": "is-prerequisite-for",
+      "object": "rebirth",
+      "claim_type": "jung-asserts",
+      "references": [
+        {"volume": 14, "paragraph": 381, "quote": "Dissolution is the prerequisite for redemption."}
+      ]
+    },
+    {
+      "subject": "albedo",
+      "relation": "unifies-psychic-disunity-into",
+      "object": "the-whole-man",
+      "claim_type": "jung-asserts",
+      "references": [
+        {"volume": 14, "paragraph": 388, "quote": "becomes the “vir unus,” the unified man"}
+      ]
+    },
+    {
+      "subject": "cauda-pavonis",
+      "relation": "announces-birth-of",
+      "object": "filius-regius",
+      "claim_type": "jung-reports-parallel",
+      "references": [
+        {"volume": 14, "paragraph": 397, "quote": "the end of the work announced by the cauda pavonis was the birth of the filius regius"}
+      ]
+    },
+    {
+      "subject": "lapis",
+      "relation": "is-connected-with",
+      "object": "anthropos",
+      "claim_type": "jung-asserts",
+      "references": [
+        {"volume": 14, "paragraph": 397, "quote": "the lapis was brought into more or less clear connection with the ancient idea of the Anthropos"}
+      ]
+    },
+    {
+      "subject": "the-vessel",
+      "relation": "signifies",
+      "object": "great-mother",
+      "claim_type": "jung-asserts",
+      "references": [
+        {"volume": 14, "paragraph": 403, "quote": "The water and the containing vessel always signify the mother, the feminine principle best characterized by yin"}
+      ]
+    },
+    {
+      "subject": "lion",
+      "relation": "is-synonym-for",
+      "object": "mercurius",
+      "claim_type": "jung-reports-parallel",
+      "references": [
+        {"volume": 14, "paragraph": 404, "quote": "the lion, the “royal” beast, is a synonym for Mercurius"}
+      ]
+    },
+    {
+      "subject": "lion",
+      "relation": "represents-unconscious-state-of",
+      "object": "rex",
+      "claim_type": "jung-asserts",
+      "references": [
+        {"volume": 14, "paragraph": 405, "quote": "he represents the king in his theriomorphic form, that is, as he appears in his unconscious state"}
+      ]
+    },
+    {
+      "subject": "hierosgamos",
+      "relation": "is-projection-of",
+      "object": "the-unconscious",
+      "claim_type": "jung-asserts",
+      "references": [
+        {"volume": 14, "paragraph": 410, "quote": "the hierosgamos of the substances is a projection of unconscious contents"}
+      ]
+    },
+    {
+      "subject": "meretrix",
+      "relation": "characterizes-initial-state-of",
+      "object": "arcane-substance",
+      "claim_type": "jung-asserts",
+      "references": [
+        {"volume": 14, "paragraph": 415, "quote": "She characterizes the arcane substance in its initial, “chaotic,” maternal state."}
+      ]
+    },
+    {
+      "subject": "venus",
+      "relation": "is-anima-of",
+      "object": "rex",
+      "claim_type": "jung-asserts",
+      "references": [
+        {"volume": 14, "paragraph": 416, "quote": "Venus appears as the feminine aspect of the king, or as we should say, his anima"}
+      ]
+    },
+    {
+      "subject": "regina",
+      "relation": "enacts",
+      "object": "ouroboros",
+      "claim_type": "jung-asserts",
+      "references": [
+        {"volume": 14, "paragraph": 424, "quote": "the mother who merges with her own substance, “eating her own tail”"}
+      ]
+    },
+    {
+      "subject": "anima",
+      "relation": "sends-contents-into",
+      "object": "consciousness",
+      "claim_type": "jung-asserts",
+      "references": [
+        {"volume": 14, "paragraph": 424, "quote": "the anima has become activated and sends her contents into consciousness"}
+      ]
+    },
+    {
+      "subject": "rex",
+      "relation": "represents",
+      "object": "dominant-of-consciousness",
+      "claim_type": "jung-asserts",
+      "references": [
+        {"volume": 14, "paragraph": 424, "quote": "over and above that he represents a dominant of consciousness, such as a generally accepted principle or a collective conviction"}
+      ]
+    },
+    {
+      "subject": "rex",
+      "relation": "renewal-compensates-fading-of",
+      "object": "dogma",
+      "claim_type": "jung-asserts",
+      "references": [
+        {"volume": 14, "paragraph": 425, "quote": "there grew up in their unconscious the compensating image of the king’s renewal"}
+      ]
+    },
+    {
+      "subject": "the-opus",
+      "relation": "is-modeled-on",
+      "object": "transubstantiation",
+      "claim_type": "jung-asserts",
+      "references": [
+        {"volume": 14, "paragraph": 435, "quote": "what hovered before the mind of the alchemist during this transformation was the almost daily miracle of transubstantiation at the Mass"}
+      ]
+    },
+    {
+      "subject": "quintessence",
+      "relation": "is-born-of",
+      "object": "four-elements",
+      "claim_type": "jung-reports-parallel",
+      "references": [
+        {"volume": 14, "paragraph": 439, "quote": "The One born of the Four is the Quinta Essentia."}
+      ]
+    }
+  ]
+}

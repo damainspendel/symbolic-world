@@ -1,0 +1,378 @@
+{
+ "A": [
+  {
+   "subject": "mercurius",
+   "relation": "amplified-by",
+   "object": "lion",
+   "paragraph": 404
+  },
+  {
+   "subject": "rex",
+   "relation": "amplified-by",
+   "object": "lion",
+   "paragraph": 409
+  },
+  {
+   "subject": "rex",
+   "relation": "dissolves-into",
+   "object": "prima-materia",
+   "paragraph": 380
+  },
+  {
+   "subject": "coniunctio",
+   "relation": "amplified-by",
+   "object": "gabricus-beya",
+   "paragraph": 409
+  },
+  {
+   "subject": "prima-materia",
+   "relation": "amplified-by",
+   "object": "meretrix",
+   "paragraph": 415
+  },
+  {
+   "subject": "prima-materia",
+   "relation": "amplified-by",
+   "object": "venus",
+   "paragraph": 415
+  },
+  {
+   "subject": "rex",
+   "relation": "symbolizes",
+   "object": "consciousness",
+   "paragraph": 424
+  },
+  {
+   "subject": "green-lion",
+   "relation": "corresponds-to",
+   "object": "venus",
+   "paragraph": 416
+  },
+  {
+   "subject": "green-lion",
+   "relation": "mediates",
+   "object": "coniunctio",
+   "paragraph": 404
+  },
+  {
+   "subject": "cauda-pavonis",
+   "relation": "precedes",
+   "object": "albedo",
+   "paragraph": 388
+  },
+  {
+   "subject": "cauda-pavonis",
+   "relation": "symbolizes",
+   "object": "wholeness",
+   "paragraph": 388
+  },
+  {
+   "subject": "green-lion",
+   "relation": "synonym-of",
+   "object": "mercurius",
+   "paragraph": 405
+  },
+  {
+   "subject": "regina",
+   "relation": "amplified-by",
+   "object": "green-lion",
+   "paragraph": 414
+  },
+  {
+   "subject": "rex",
+   "relation": "destined-for",
+   "object": "wholeness",
+   "paragraph": 373
+  },
+  {
+   "subject": "rex",
+   "relation": "identified-with",
+   "object": "ancient-of-days",
+   "paragraph": 374
+  },
+  {
+   "subject": "regina",
+   "relation": "renews",
+   "object": "rex",
+   "paragraph": 400
+  },
+  {
+   "subject": "regina",
+   "relation": "adopts",
+   "object": "rex",
+   "paragraph": 435
+  },
+  {
+   "subject": "cauda-pavonis",
+   "relation": "heralds",
+   "object": "filius-regius",
+   "paragraph": 397
+  },
+  {
+   "subject": "lapis",
+   "relation": "corresponds-to",
+   "object": "anthropos",
+   "paragraph": 397
+  },
+  {
+   "subject": "benedicta-viriditas",
+   "relation": "symbolizes",
+   "object": "holy-ghost",
+   "paragraph": 391
+  },
+  {
+   "subject": "phoenix",
+   "relation": "synonym-of",
+   "object": "lapis",
+   "paragraph": 396
+  },
+  {
+   "subject": "human-blood",
+   "relation": "synonym-of",
+   "object": "aqua-permanens",
+   "paragraph": 401
+  },
+  {
+   "subject": "prima-materia",
+   "relation": "identical-to",
+   "object": "the-vessel",
+   "paragraph": 402
+  },
+  {
+   "subject": "green-lion",
+   "relation": "synonym-of",
+   "object": "dragon",
+   "paragraph": 408
+  },
+  {
+   "subject": "venus",
+   "relation": "personifies",
+   "object": "anima",
+   "paragraph": 416
+  },
+  {
+   "subject": "filius-regius",
+   "relation": "born-of",
+   "object": "meretrix",
+   "paragraph": 420
+  },
+  {
+   "subject": "rex",
+   "relation": "personifies",
+   "object": "dominant-of-consciousness",
+   "paragraph": 424
+  },
+  {
+   "subject": "regina",
+   "relation": "gains-knowledge-of",
+   "object": "collective-unconscious",
+   "paragraph": 428
+  },
+  {
+   "subject": "regina",
+   "relation": "identified-with",
+   "object": "mary",
+   "paragraph": 429
+  },
+  {
+   "subject": "rex",
+   "relation": "renewed-by",
+   "object": "holy-ghost",
+   "paragraph": 432
+  },
+  {
+   "subject": "rubedo",
+   "relation": "produces",
+   "object": "lapis",
+   "paragraph": 434
+  },
+  {
+   "subject": "rex",
+   "relation": "attains",
+   "object": "corpus-glorificationis",
+   "paragraph": 436
+  },
+  {
+   "subject": "quintessence",
+   "relation": "produced-from",
+   "object": "four-elements",
+   "paragraph": 439
+  }
+ ],
+ "B": [
+  {
+   "subject": "nigredo",
+   "relation": "begins-from",
+   "object": "prima-materia",
+   "paragraph": 334
+  },
+  {
+   "subject": "coniunctio",
+   "relation": "followed-by",
+   "object": "nigredo",
+   "paragraph": 334
+  },
+  {
+   "subject": "the-opus",
+   "relation": "is-projection-of",
+   "object": "the-unconscious",
+   "paragraph": 346
+  },
+  {
+   "subject": "the-opus",
+   "relation": "is-projection-of",
+   "object": "the-unconscious",
+   "paragraph": 394
+  },
+  {
+   "subject": "lapis",
+   "relation": "symbolizes",
+   "object": "anthropos",
+   "paragraph": 335
+  },
+  {
+   "subject": "the-vessel",
+   "relation": "produces",
+   "object": "filius-philosophorum",
+   "paragraph": 338
+  },
+  {
+   "subject": "the-vessel",
+   "relation": "symbolizes",
+   "object": "mercurius",
+   "paragraph": 338
+  },
+  {
+   "subject": "mercurius",
+   "relation": "is-a",
+   "object": "psychopomp",
+   "paragraph": 409
+  },
+  {
+   "subject": "lapis",
+   "relation": "is-goal-of",
+   "object": "the-opus",
+   "paragraph": 335
+  },
+  {
+   "subject": "alchemy",
+   "relation": "attributed-to-matter-what-belonged-to",
+   "object": "psyche",
+   "paragraph": 332
+  },
+  {
+   "subject": "tetrameria",
+   "relation": "corresponds-to",
+   "object": "quaternity",
+   "paragraph": 333
+  },
+  {
+   "subject": "aqua-permanens",
+   "relation": "identical-with",
+   "object": "prima-materia",
+   "paragraph": 337
+  },
+  {
+   "subject": "the-opus",
+   "relation": "deals-with-processes-resembling",
+   "object": "psyche",
+   "paragraph": 342
+  },
+  {
+   "subject": "visionary-experience",
+   "relation": "is-projection-of",
+   "object": "the-unconscious",
+   "paragraph": 350
+  },
+  {
+   "subject": "active-imagination",
+   "relation": "seems-to-set-in-motion",
+   "object": "the-opus",
+   "paragraph": 357
+  },
+  {
+   "subject": "artifex",
+   "relation": "unity-postulated-as-condition-for",
+   "object": "the-opus",
+   "paragraph": 358
+  },
+  {
+   "subject": "alchemy",
+   "relation": "secret-possibly-hidden-in",
+   "object": "the-unconscious",
+   "paragraph": 361
+  },
+  {
+   "subject": "artifex",
+   "relation": "must-accomplish-in-himself-process-attributed-to",
+   "object": "matter",
+   "paragraph": 375
+  },
+  {
+   "subject": "psyche",
+   "relation": "unconsciously-identical-with",
+   "object": "arcane-substance",
+   "paragraph": 376
+  },
+  {
+   "subject": "arcane-substance",
+   "relation": "concealed-within",
+   "object": "the-body",
+   "paragraph": 377
+  },
+  {
+   "subject": "meditatio",
+   "relation": "is-inner-dialogue-with",
+   "object": "the-unconscious",
+   "paragraph": 390
+  },
+  {
+   "subject": "imaginatio",
+   "relation": "opens-door-to-secret-of",
+   "object": "the-opus",
+   "paragraph": 400
+  },
+  {
+   "subject": "imaginatio",
+   "relation": "actualizes-contents-of",
+   "object": "the-unconscious",
+   "paragraph": 400
+  },
+  {
+   "subject": "alchemy",
+   "relation": "employs-method-of",
+   "object": "amplification",
+   "paragraph": 403
+  },
+  {
+   "subject": "amplification",
+   "relation": "forms-second-part-of",
+   "object": "the-opus",
+   "paragraph": 403
+  },
+  {
+   "subject": "mercurius",
+   "relation": "stands-at-beginning-and-end-of",
+   "object": "the-opus",
+   "paragraph": 404
+  },
+  {
+   "subject": "mercurius",
+   "relation": "inwardly-means-spirit-imprisoned-in",
+   "object": "matter",
+   "paragraph": 404
+  },
+  {
+   "subject": "alchemy",
+   "relation": "tasked-to-redeem",
+   "object": "anima-mundi",
+   "paragraph": 413
+  },
+  {
+   "subject": "alchemy",
+   "relation": "seeks-liberation-of-god-from",
+   "object": "matter",
+   "paragraph": 420
+  }
+ ]
+}

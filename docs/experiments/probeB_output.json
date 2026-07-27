@@ -1,0 +1,264 @@
+{
+  "candidate_edges": [
+    {
+      "subject": "the-unconscious",
+      "relation": "is-projected-into",
+      "object": "matter",
+      "references": [
+        {
+          "volume": 12,
+          "paragraph": 332,
+          "quote": "What he sees in matter, or thinks he can see, is chiefly the data of his own unconscious which he is projecting into it",
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "the-opus",
+      "relation": "expresses",
+      "object": "psyche",
+      "references": [
+        {
+          "volume": 12,
+          "paragraph": 342,
+          "quote": "deals in the main not just with chemical experiments as such, but with something resembling psychic processes expressed in pseudochemical language",
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "alchemy",
+      "relation": "is-rooted-in",
+      "object": "projection",
+      "references": [
+        {
+          "volume": 12,
+          "paragraph": 346,
+          "quote": "the real root of alchemy is to be sought less in philosophical doctrines than in the projections of individual investigators",
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "active-imagination",
+      "relation": "sets-in-motion",
+      "object": "the-opus",
+      "references": [
+        {
+          "volume": 12,
+          "paragraph": 357,
+          "quote": "active imagination as the thing that sets the process really going",
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "artifex",
+      "relation": "is-unconsciously-identical-with",
+      "object": "arcane-substance",
+      "references": [
+        {
+          "volume": 12,
+          "paragraph": 376,
+          "quote": "there is an unconscious identity between the psyche of the alchemist and the arcane substance",
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "lapis",
+      "relation": "is-identified-with",
+      "object": "inner-man",
+      "references": [
+        {
+          "volume": 12,
+          "paragraph": 378,
+          "quote": "But again, the stone is man.",
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "nigredo",
+      "relation": "coincides-with",
+      "object": "unconsciousness",
+      "references": [
+        {
+          "volume": 12,
+          "paragraph": 383,
+          "quote": "the author feels or experiences the initial stage of the alchemical process as identical with his own psychic condition",
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "meditatio",
+      "relation": "is-inner-dialogue-with",
+      "object": "the-unconscious",
+      "references": [
+        {
+          "volume": 12,
+          "paragraph": 390,
+          "quote": "an inner dialogue and hence a living relationship to the answering voice of the “other” in ourselves, i.e., of the unconscious",
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "imaginatio",
+      "relation": "opens-secret-of",
+      "object": "the-opus",
+      "references": [
+        {
+          "volume": 12,
+          "paragraph": 400,
+          "quote": "is in truth a key that opens the door to the secret of the opus",
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "the-opus",
+      "relation": "actualizes",
+      "object": "archetypal-image",
+      "references": [
+        {
+          "volume": 12,
+          "paragraph": 400,
+          "quote": "not a datum of our empirical world, and therefore an a priori of archetypal character",
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "alchemy",
+      "relation": "uses-method-of",
+      "object": "amplification",
+      "references": [
+        {
+          "volume": 12,
+          "paragraph": 403,
+          "quote": "The method of alchemy, psychologically speaking, is one of boundless amplification.",
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "mercurius",
+      "relation": "stands-at-beginning-and-end-of",
+      "object": "the-opus",
+      "references": [
+        {
+          "volume": 12,
+          "paragraph": 404,
+          "quote": "Mercurius stands at the beginning and end of the work: he is the prima materia , the caput corvi , the nigredo",
+          "claim_type": "jung-reports-parallel"
+        }
+      ]
+    },
+    {
+      "subject": "mercurius",
+      "relation": "unites",
+      "object": "the-opposites",
+      "references": [
+        {
+          "volume": 12,
+          "paragraph": 404,
+          "quote": "poison and yet healing draught—a symbol uniting all opposites",
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "mercurius",
+      "relation": "inwardly-signifies",
+      "object": "spiritus-mundi",
+      "references": [
+        {
+          "volume": 12,
+          "paragraph": 404,
+          "quote": "inwardly he means the world-creating spirit concealed or imprisoned in matter",
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "nous",
+      "relation": "is-equivalent-of",
+      "object": "mercurius",
+      "references": [
+        {
+          "volume": 12,
+          "paragraph": 409,
+          "quote": "Its function is the exact equivalent of the tincturing stone-extract, which is also a pneuma and, as Mercurius",
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "christ",
+      "relation": "embodies",
+      "object": "anthropos",
+      "references": [
+        {
+          "volume": 12,
+          "paragraph": 412,
+          "quote": "he embodies the God-man; and as an incarnation of the Logos by “pneumatic” impregnation",
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "god-image",
+      "relation": "hides-in",
+      "object": "lapis",
+      "references": [
+        {
+          "volume": 12,
+          "paragraph": 413,
+          "quote": "the Godhead conceals itself in the man of low degree, so in the “philosophy” it hides in the uncomely stone",
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "alchemy",
+      "relation": "redeems",
+      "object": "anima-mundi",
+      "references": [
+        {
+          "volume": 12,
+          "paragraph": 413,
+          "quote": "She is “the divine soul imprisoned in the elements,” whom it is the task of alchemy to redeem",
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "artifex",
+      "relation": "seeks-liberation-of",
+      "object": "god-image",
+      "references": [
+        {
+          "volume": 12,
+          "paragraph": 420,
+          "quote": "not directed to his own salvation through God’s grace, but to the liberation of God from the darkness of matter",
+          "claim_type": "jung-asserts"
+        }
+      ]
+    },
+    {
+      "subject": "lapis",
+      "relation": "is-compared-with",
+      "object": "anthropos",
+      "references": [
+        {
+          "volume": 12,
+          "paragraph": 335,
+          "quote": "a figure we can only compare with the Gnostic Anthropos, the divine original man",
+          "claim_type": "jung-asserts"
+        }
+      ]
+    }
+  ]
+}
