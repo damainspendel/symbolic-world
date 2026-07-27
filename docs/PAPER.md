@@ -11,11 +11,11 @@
 
 **This paper's contribution is primarily a methodology — and secondarily the verified dataset it produced.** Language models extract knowledge-graph facts at 30–66% accuracy and hallucinate 11–57% of citations in deployed systems; for scholarship, that is unusable. We build a knowledge graph of C. G. Jung's *Collected Works* — 233 concepts and symbols, 634 relations, 659 references, each anchored to a numbered paragraph with a verbatim quote of at most 25 words — under one rule: **no claim is published until it passes a mechanical check that its quote exists in the cited paragraph, an independent review by a model from a different family than the proposer, and an audit by a model from a different vendor.** Every reference is also typed by rhetorical voice — Jung's own claim, doctrine he reports, or a source he quotes — because voice confusion is the error that dominated every audit we ran (E2–E3, E6–E7). We measure the pipeline rather than ask anyone to trust it. Five numbers carry the result: unverified extraction ran at a **~25% flaw rate** on this corpus; the calibrated verifier catches **86% of deliberately seeded corruptions** (95% CI 78–91%) while wrongly flagging at most 7% of clean items; an adversarial audit of published references found **zero content errors**; a full-volume audit by a second vendor, judging in its own words, upheld a **1.0% residual error rate** — none of them fabrications or reversals; and the marginal cost is **$0.09–0.12 per verified citation**. All error rates, corruption seeds, and adjudications are published with the artifact (a plain-language guide to the statistics is included). The trust chain ends in humans, not models: every edge carries a check-it-yourself pointer, and live dispute and confirmation channels feed a public per-edge verification log. The machines do the hard yards; human judgement has the last word.
 
-## 1. The opportunity
+## 1. Opportunity
 
 Every field has corpora like this: twenty volumes of an author arguing, quoting, and reporting — where what the author *said*, on *whose authority*, at *exactly which place*, is the scholarly currency. Law has its judgments, philosophy its systems, history of science its debates. Our running example is C. G. Jung's *Collected Works*: twenty volumes that run to twenty volumes of densely cross-referential prose in which the same symbol (Mercurius, the lion, salt, Luna) carries systematically different meanings by context and authority. The digital tools that exist are lexical — the [ARAS concordance](https://aras.org/concordance) indexes word occurrences; Princeton's digital edition searches full text — but no resource answers the question a reader actually has: *what does Jung say the green lion **is**, and on whose authority?*
 
-Large language models make the answer look easy, and cheap: an AI reads the volumes, drafts the claims, and a public atlas appears for about ten cents a claim.
+Large language models make the answer look easy, and cheap: an AI reads the volumes, drafts the claims, and a public atlas appears for about ten cents a claim (Figure 1).
 
 ![Figure 1 — the naive view](figures/fig1_naive.svg)
 
@@ -23,9 +23,9 @@ Large language models make the answer look easy, and cheap: an AI reads the volu
 
 This paper's shape, stated up front: **the naive pipeline has named risks (§2, with the literature that documents them in §3); for every risk we inserted a mitigation into the pipeline (§4); for every mitigation we ran an experiment to test whether it works (§5–6); §7 tables what risk remains; §8 what we haven't done; §9 what we learned.** One design choice runs through everything: the trust chain is built to end in humans, not models — because a chain of models, however cross-checked, cannot certify itself. Honest status today: the machine part is complete and measured; the human part is live as channels, with accumulated human verification still small.
 
-## 2. The problem: what can go wrong
+## 2. Risks
 
-Reading is where the danger is. When a model turns prose into claims, seven things can go wrong — five in the reading itself, two in any machinery you build to catch them:
+Reading is where the danger is. When a model turns prose into claims, seven things can go wrong — five in the reading itself, two in any machinery you build to catch them (Figure 2):
 
 - **R1 — the statement is wrong or invented.** The model asserts something the text does not say.
 - **R2 — the quote is fabricated.** The supporting quotation does not exist in the cited paragraph.
@@ -39,7 +39,7 @@ Reading is where the danger is. When a model turns prose into claims, seven thin
 
 *Figure 2 — The same naive pipeline, with its risks made visible. R1–R5 arise at the reading step; R6–R7 arise from the fix itself.*
 
-## 3. Related work: what is known about these risks, and what we borrowed
+## 3. Related Work
 
 The risks above are documented, not hypothetical:
 
@@ -53,7 +53,7 @@ The risks above are documented, not hypothetical:
 
 **What we borrowed.** The reference format adapts the assertion/provenance/publication-info anatomy of [nanopublications](https://arxiv.org/pdf/1809.06532) (a native serialization is planned). Nanopublications have seen almost no humanities uptake — their ~10.8M published instances are overwhelmingly life-science data — and this project is evidence that they deserve consideration as a publishing form for the humanities: the atomic unit of a nanopublication (one claim, its exact source, who stands behind it) matches what a humanities footnote has always tried to be, and the voice dimension interpretive corpora add fits naturally in its provenance graph. And the voice-typing treats provenance as *epistemic stance* in the sense of [provenance-enhanced statements](https://arxiv.org/html/2606.15246) — our stubborn "sympathetic reportage" residual is precisely their claim-in-permeation between cognitive worlds. The nearest existing artifact is the [Darshana Graph](https://arxiv.org/abs/2606.18222), whose author names a randomly sampled precision evaluation "the most valuable immediate extension" of that work — this paper operationalizes exactly that extension, with the caveat that our annotators are so far models from two vendors rather than multiple humans (human in the loop live as a channel, §8). No knowledge graph of Jung's Collected Works previously existed; the ARAS concordance and Princeton's digital edition are search, not relations.
 
-## 4. The mitigants: growing the pipeline out of the risks
+## 4. Mitigants
 
 Each risk in §2 forced a step into the pipeline. Figure 3 shows the result: the two-box dream of Figure 1 with four inserted checks, plus practices for the two risks that don't fit in a box.
 
@@ -61,7 +61,7 @@ Each risk in §2 forced a step into the pipeline. Figure 3 shows the result: the
 
 *Figure 3 — Steps 2–5 did not exist in Figure 1; each was inserted because a named risk forced it (green tags name the risk each step mitigates).*
 
-**The pipeline, step by step.**
+**Table 1 — the pipeline, step by step, and the risk each step mitigates.**
 
 | Step | What it does | Mitigates | What comes out |
 |---|---|---|---|
@@ -78,7 +78,7 @@ Every batch's passage through these steps is committed to a **transaction ledger
 
 **The cross-vendor loop.** Beyond the per-batch check, the second-vendor auditor re-audits the published graph — and the machinery itself — **at every dataset release** (two full runs so far, E6 and E7; this is a release-gated commitment, not a background process): it judges samples blind (in two modes: under our rubric for comparability, or entirely in its own terms for independence), every disagreement is adjudicated against the source passage with the ruling logged, the auditor then **adversarially re-reviews the adjudicator's rulings** (the conflict-of-interest control), and finally it critiques our gate prompt itself for bias. Audit findings re-enter the same merge machinery as ordinary batch verdicts — there is no separate, weaker path into the graph.
 
-## 5. The measurement harness
+## 5. Risk Measurement
 
 Every mitigant gets measured, by a small set of reusable experiment designs — none of them corpus-specific:
 
@@ -89,13 +89,13 @@ Every mitigant gets measured, by a small set of reusable experiment designs — 
 - **Cross-vendor audit, two modes** — a different vendor's model re-judges published samples, once under our rubric (comparable) and once entirely in its own terms (independent): measures shared blind spots, and whether the rubric itself steers verdicts.
 - **Standing self-tests** — corruption canaries the validators must catch on every run, and the human confirm/dispute channels on every published claim.
 
-Figure 4 pins each design to the pipeline step it measures. Results for the Jung case study are consolidated in Table 1 (§10); per-experiment details are in Appendix A.
+Figure 4 pins each design to the pipeline step it measures. Results for the Jung case study are consolidated in Table 3 (§10); per-experiment details are in Appendix A.
 
 ![Figure 4 — every mitigant gets measured](figures/fig4_experiments.svg)
 
 *Figure 4 — Blue chips name the experiment that measures each step, with a one-line legend for each experiment. No box is taken on faith.*
 
-## 6. Case study: Jung's Collected Works
+## 6. Case Study: Jung's Collected Works
 
 **Corpus.** Paragraph records `{volume, §, text, page}` extracted mechanically from epub markup (§ numbers read from bracketed markers, strictly ascending; never inferred), with a §→Bollingen-page concordance. The corpus stays local; only ≤25-word verified quotes are published (legal basis: `docs/LEGAL.md`).
 
@@ -105,13 +105,15 @@ Figure 4 pins each design to the pipeline step it measures. Results for the Jung
 
 **Instantiation.** The generic voice vocabulary becomes `jung-asserts` / `jung-reports-parallel` / `jung-quotes-source` (+ named source). Current state: **233 nodes · 634 edges · 659 references** across 468 distinct paragraphs of nine CW volumes; CW 14 covered end-to-end; 438 asserts / 160 reports / 61 quotes-source over 74 named sources; 84 hedged (medium-confidence) references; 100% gate-verified with per-reference verifier and date.
 
-**The artifact.** The public Atlas ([symbolicworld.observer](https://symbolicworld.observer)) renders six typed regions with search and walkable citations; **every citation expands to its verification record** (claim-type explanation, source, confidence, verifier, date, check-it-yourself pointer), and the About panel carries a standing falsification offer. The mechanism has three parts: (1) **per-edge evidence view** — every citation in the Atlas expands to its full verification record (claim type with explanation, source, confidence, verifier and date, and a check-it-yourself pointer to the exact § and Bollingen page), so refutation requires only the printed edition and ~2 minutes; (2) **structured dispute reports** — the evidence view generates a prefilled dispute report (edge triple, citation, quote, verification record) that a reader submits through the [repository issue tracker](https://github.com/damianspendel/symbolic-world/issues); (3) **adjudication protocol** — dispute admissibility is itself gated (the channel requires an authenticated account, and a dispute must state what the cited paragraph actually says; reports that do not engage the paragraph are closed as incomplete without adjudication — the same paragraph-grounding rule the pipeline applies to itself); an admissible disputed edge is re-gated with the reader's objection attached to the payload; outcomes (upheld / corrected / removed) are published in the repository, and the edge's evidence view links its dispute history. Accumulated upheld disputes exceeding the published error bar falsify the pipeline claim itself, not just individual edges; (4) **reader confirmations** — the symmetric positive channel: a reader who checks a cited paragraph submits a confirmation report (same gated intake, same admissibility rule), and accepted confirmations are published in the verification log and displayed in the edge's evidence view ("reader-confirmed ×N") — human verification accumulating as per-edge provenance, edge by edge, which is the operational form of human-in-the-loop verification rather than a one-off study.
+**The artifact.** The public Atlas ([symbolicworld.observer](https://symbolicworld.observer)) renders the graph in six typed regions with search and walkable citations. Every citation expands to its verification record — claim type, source, confidence, verifier, date, and a check-it-yourself pointer to the exact § and Bollingen page — so refutation needs only the printed edition and about two minutes. Two gated reader channels close the loop: **dispute** (a prefilled report to the public issue tracker; admissible disputes are re-judged with the objection attached; outcomes published in the verification log and linked from the edge) and **confirm** (reader confirmations enter the edge's public record as human-in-the-loop provenance). Accumulated upheld disputes above the published error bar would falsify the pipeline claim itself, not just individual edges.
 
 **What the measurements say about Jung.** The residual error class is not noise — it maps a real property of the text. Every model configuration, across two vendors, fails on the same items: passages where Jung reports alchemical or Gnostic doctrine *and half-adopts it*. That "sympathetic reportage" boundary resists the three-way voice taxonomy because Jung's own voice is genuinely blended there — a finding about the Collected Works, not just about models, and the precise place where human judgement (and Jungian scholarship) is required.
 
-## 7. Residual risks
+## 7. Residual Risks
 
-This section answers one question: **of the risks in §2, what remains after the mitigations of §4, measured by the experiments of §5 (details: Appendix A)?** (A 16-item assumptions register is published in `docs/ASSUMPTIONS.md`.)
+Table 2 answers one question: **of the risks in §2, what remains after the mitigations of §4, measured by the experiments of §5 (details: Appendix A)?** (A 16-item assumptions register is published in `docs/ASSUMPTIONS.md`.)
+
+**Table 2 — residual risks.**
 
 | # | Risk | Mitigation in force | Evidence / data | Residual |
 |---|---|---|---|---|
@@ -124,35 +126,35 @@ This section answers one question: **of the risks in §2, what remains after the
 | vii | **Shared-rubric convergence** — agreement partly an artifact of handing the auditor our rubric | Rubric-free replication mode (E7) | Identical detection profile with and without rubric; 95% cross-mode verdict consistency | Measured ≈ zero on tested classes |
 | viii | **Human in the loop still thin** — channels live, accumulated human data ≈ zero | Confirm/dispute channels shipped; community pilot planned (§8) | Channels e2e-tested; 0 reader confirmations to date (stated plainly) | The main open gap — see §8 |
 
-## 8. Limitations and future work
+## 8. Limitations
 
 Where §7 quantifies what remains of the *named* risks, this section lists the boundaries the experiments never touched.
 
 Coverage beyond CW14/CW12 is thin; eleven volumes untouched. The relation vocabulary is open (single-use relations pending a relation-family layer). The cross-vendor stage is implemented and standing (E6–E7; pre-publication for all future batches, §3); what remains is only its ongoing cadence commitment as the graph grows. Planned: **(a) expanded specialist calibration** — the E5 voice-specialist sample is still small (n=6 per axis) and the specialist-advantage claim awaits statistical resolution; **(b) community verification** — blind review by Jungian readers with the evidence view as instrument, human–machine κ published, human confirmations entering the per-edge provenance chain (protocol in `docs/ASSUMPTIONS.md` §E); **(c) a declarative verifier registry** — each verification stage defined as configuration (model, axis, prompt, output schema, and its own calibration set with last measured sensitivity/specificity) over one shared runner and verdict-applier, making specialist decomposition an operable pattern rather than a finding: a new corpus axis becomes a registry entry, and every stage's quality is attached, re-measurable data; **(d) German *Gesammelte Werke* cross-check; (e) DOI-registered dataset releases, including a native nanopublication serialization of the graph (each reference already carries the assertion/provenance/publication-info anatomy, §2); (f) explicit permeation markers for sympathetic reportage, adapting the DEC cognitive-worlds semantics (§2) to replace the informal confidence downgrade.**
 
-## 9. Discussion and takeaways
+## 9. Imperatives
 
-1. **Verification is where the value is created.** A quarter of unverified extractions were flawed; after gating, adversarial audits find zero content errors. *Takeaway: the checking is not overhead on the product — it is the product.*
+1. **Ensure extraction is verified — the checking is the product.** A quarter of unverified extractions were flawed; after gating, adversarial audits find zero content errors.
 
-2. **Two kinds of mistakes, and machines are only good at one of them.** *Shape* mistakes — who does what to whom: wrong direction, wrong object — are caught almost every time (92–96% in calibration). *Voice* mistakes — who is speaking: Jung himself, or the alchemists he is describing — are caught only about three times in four. So nearly everything that slips through is a voice mistake. Like proofreading: the spellchecker catches spelling nearly perfectly; whether a sentence is sincere or sarcastic survives it. *Takeaway: the residual risk in this graph is almost entirely "whose claim is this," not "is this claim there."*
+2. **Know the two kinds of mistakes — machines only catch one well.** *Shape* mistakes — who does what to whom: wrong direction, wrong object — are caught almost every time (92–96% in calibration). *Voice* mistakes — who is speaking: Jung himself, or the alchemists he is describing — are caught only about three times in four. So nearly everything that slips through is a voice mistake. Like proofreading: the spellchecker catches spelling nearly perfectly; whether a sentence is sincere or sarcastic survives it.
 
-3. **Voice is genuinely hard — for machines and probably for people.** "Sympathetic reportage" — doctrine Jung reports *and* half-adopts — resists a clean three-way label; every model configuration we tested, across two vendors, missed the same borderline items. *Takeaway: where our verifiers disagree or fail marks real ambiguity in Jung's text — a finding about Jung, not just about models — and it is exactly where human judgement is required (§8).*
+3. **Voice is genuinely hard — for machines and probably for people.** "Sympathetic reportage" — doctrine Jung reports *and* half-adopts — resists a clean three-way label; every model configuration we tested, across two vendors, missed the same borderline items.
 
-4. **The gate teaches the miner — by editing its instructions, not its weights.** When the verifier corrects a batch ("you typed reported doctrine as Jung's own claim"), those corrections are folded into the *next* batch's extraction instructions as explicit rules and examples. The extraction model never changes; its briefing does. Result: error flags fell from 18.9% on the oldest batches to 5.6% on the newest, and recent batches pass 20/20. *Takeaway: a feedback loop between checker and extractor steadily improves first-pass quality, with no model training involved.*
+4. **Teach the miner — fold the gate's corrections back into its instructions, not its weights.** When the verifier corrects a batch ("you typed reported doctrine as Jung's own claim"), those corrections are folded into the *next* batch's extraction instructions as explicit rules and examples. The extraction model never changes; its briefing does. Result: error flags fell from 18.9% on the oldest batches to 5.6% on the newest, and recent batches pass 20/20.
 
-5. **A checker given five things to check does the obvious ones well and the subtle one poorly; given one thing, it does that one well.** The same model that caught 40–72% of voice errors as a five-criteria generalist caught 5/6 as a single-axis specialist, and the same improvement appears with the other vendor's model (2/6 → 4/6). The expanded calibration narrowed the measured gap, so we state this as directionally consistent across four measurements, pending larger samples. *Takeaway: don't ask one reviewer to check everything — measure where checking is weak, then assign a narrow specialist to that axis.*
+5. **Specialize the checkers — one measured weak axis each.** A checker given five things to check does the obvious ones well and the subtle one poorly; given one thing, it does that one well. The same model that caught 40–72% of voice errors as a five-criteria generalist caught 5/6 as a single-axis specialist, and the same improvement appears with the other vendor's model (2/6 → 4/6). The expanded calibration narrowed the measured gap, so we state this as directionally consistent across four measurements, pending larger samples.
 
-6. **The graph is complete in claims, not in pages.** It cites 34% of CW 14's paragraphs, yet independent re-extraction recovers each chapter's core claims (E4) — because most paragraphs argue, illustrate, or amplify rather than assert a new relation. Like a topographic map, it is complete above a chosen prominence, not in every hill; union-mining lowers that threshold at ~$2 per window. *Takeaway: judge coverage by whether the chapter's load-bearing claims are present, not by paragraph counts.*
+6. **Measure coverage in claims, not pages — the graph is accurate, not exhaustive.** It cites 34% of CW 14's paragraphs, yet independent re-extraction recovers each chapter's core claims (E4) — because most paragraphs argue, illustrate, or amplify rather than assert a new relation. Like a topographic map, it is complete above a chosen prominence, not in every hill; union-mining lowers that threshold at ~$2 per window.
 
-7. **Trust can be made inspectable.** Per-citation verification records, published error rates, self-testing validators, and live dispute/confirmation channels convert "trust us" into "check us." *Takeaway: every claim in the atlas can be checked by anyone with the book, in about two minutes — and the mechanisms for saying so publicly are built in.*
+7. **Make trust inspectable.** Per-citation verification records, published error rates, self-testing validators, and live dispute/confirmation channels convert "trust us" into "check us."
 
-## 10. Summary of results
+## 10. Summary of Results
 
 **The compounded result, in one sentence: raw AI extraction on this corpus gets roughly one claim in four wrong; after the pipeline, an independent vendor auditing a full volume in its own words could uphold errors in one claim in a hundred — a ~25-fold error reduction, with every surviving error a nuance of attribution rather than a fabrication or reversal, at about ten cents per verified claim, and every claim checkable by any reader in about two minutes.**
 
-The funnel: ~25% flawed (E0, ungated) → fabrication eliminated (quote check) → structure errors caught at 92–96% (E1b) → voice swept graph-wide (E3) → independently re-audited across vendors → **1.0% upheld residual (E7), none of it fabrication**. Table 1 decomposes this row by row.
+The funnel: ~25% flawed (E0, ungated) → fabrication eliminated (quote check) → structure errors caught at 92–96% (E1b) → voice swept graph-wide (E3) → independently re-audited across vendors → **1.0% upheld residual (E7), none of it fabrication**. Table 3 decomposes this row by row.
 
-**Table 1 — pipeline step · risk · mitigant · experiment · headline result.**
+**Table 3 — pipeline step · risk · mitigant · experiment · headline result.**
 
 | Pipeline step | Risk | Mitigant | Experiment | Headline result |
 |---|---|---|---|---|
