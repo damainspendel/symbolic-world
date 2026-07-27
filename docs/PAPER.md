@@ -19,7 +19,7 @@ The trust problem is quantified in the NLP literature: LLM triple extractors sco
 
 **Contributions.** (1) A publication-gated pipeline for interpretive corpora combining deterministic verbatim anchoring with cross-family adversarial verification and typed rhetorical provenance; (2) a self-measuring evaluation methodology — retro-verification, seeded-corruption calibration of the verifier, adversarial audit, full-graph error-axis sweep, extraction-stability probing, and per-axis specialist calibration — with all rates published; (3) the artifact itself: the first citation-grade semantic graph of Jung's Collected Works, publicly explorable with per-citation verification records; (4) an honest accounting of what remains hard (attribution modality; shared-vendor verification), with costed mitigations.
 
-A note on what is primary here. The graph is the *demonstration*; the claimed contribution is the **approach**: (i) verification as a publication precondition rather than post-hoc measurement; (ii) verifiers that are themselves calibrated instruments with published sensitivity/specificity; (iii) audit lanes that cross vendor boundaries and audit the auditors' instruments; and (iv) a trust chain that is explicitly *human-terminal* — evidence views, dispute and confirmation channels, and a community tier — because a chain of models, however cross-checked, cannot certify itself. The honest status of this artifact today is: machine floor complete and measured; human ceiling operational as channels, with accumulated human verification still small. The methodology is designed so that the second grows monotonically on top of the first.
+The graph is the demonstration; the claimed contribution is the approach. And the paper has a simple shape, worth stating up front: **there is a problem (§1); we built a machine to solve it (§3); the machine has known risks; for every risk we implemented a mitigation and ran an experiment to test it (§5, organized risk by risk); §7 tables what risk remains after all that; and the conclusion is not "the graph is correct" but something more useful — its error rate is known, small, named, and checkable by anyone.** One design choice runs through everything: the trust chain is built to end in humans, not models — evidence views, dispute and confirmation channels, and a community tier — because a chain of models, however cross-checked, cannot certify itself. Honest status today: the machine part is complete and measured; the human part is live as channels, with accumulated human verification still small.
 
 **Reader's map.** Four words are used precisely in this paper:
 
@@ -80,30 +80,29 @@ The correspondence is diagnostic, not decorative: our one systematically hard re
 
 **Corpus.** Paragraph records `{volume, §, text, page}` are extracted mechanically from epub markup (§ numbers read from bracketed superscript markers, strictly-ascending filter; never inferred). A §→Bollingen-page concordance is carried per record. The corpus remains local; only ≤25-word verified quotes are published.
 
-**Pipeline overview.**
+**The pipeline, and how each stage is measured** (the experiments named in the boxes are reported in §5):
 
 ```
-        TRANSACTION LEDGER  (pipeline/state.json — one commit per stage transition)
-           ▲            ▲            ▲             ▲               ▲
-corpus     │            │            │             │               │
-window     │            │            │             │               │
-┌─────────┐│            │            │             │               │
-│PROPOSER ││   MECHANICAL      STAGE 1        STAGE 2        CROSS-VENDOR      ADJUDICATED
-│Opus 4.8 │┴─▶ PRE-CHECK   ─▶  STRUCTURE  ─▶  VOICE      ─▶  CHECK         ─▶  MERGE
-└─────────┘    verbatim        GATE           SPECIALIST     Gemini 3.1 Pro      │
-               substring;      Fable 5:       Fable 5:       (different          ▼
-               nodes; dups     support,       claim-type,    VENDOR, blind)   seed.json
-               (determin-      direction,     source,                            │
-               istic)          referent,      hedges only                        ▼
-                               conflation                            integrity tests + canaries
-                                                                                 │
-                                                                                 ▼
-                                                                            public Atlas
-                                                                                 │
-   periodic full-graph audits (shared-rubric and rubric-free) ◀─────────────────┘
-   + adversarial cross-review of adjudications + prompt-bias audit
-   — findings re-enter the adjudicated merge above
+ PROPOSER ──▶ MECHANICAL ──▶ STAGE 1  ──▶ STAGE 2  ──▶ CROSS-VENDOR ──▶ MERGE ──▶ PUBLISHED
+ Opus 4.8     PRE-CHECK      STRUCTURE    VOICE         CHECK                      GRAPH
+    ▲             ▲          GATE ▲       SPECIALIST    Gemini ▲                     ▲
+    │             │               │            ▲               │                     │
+┌───┴────────┐┌───┴───────┐┌──────┴─────┐┌─────┴─────┐┌────────┴───────┐┌────────────┴──────────┐
+│ E0 what if ││ canaries: ││ E1/E1b     ││ E5 seeded ││ E6 shared-     ││ E2 adversarial audit  │
+│ we skipped ││ 5 planted ││ seeded     ││ voice     ││ rubric audit   ││    (0 errors in 30)   │
+│ the gates? ││ corrupt-  ││ errors:    ││ errors:   ││ (0 unsupported ││ E3 full-graph voice   │
+│ (~25%      ││ ions MUST ││ 86% sens / ││ 5/6       ││  in 100)       ││    sweep (10.3% fixed)│
+│ flawed)    ││ be caught ││ 93% spec   ││ caught    ││ E7 rubric-free ││ E4 independent        │
+│ E4 re-mine:││ on every  ││ (n=200,    ││ (small n) ││ full volume    ││    re-extraction:     │
+│ same core  ││ test run  ││ with CIs)  ││           ││ (1.0% residual)││    core claims stable │
+│ claims?    ││           ││            ││           ││                ││                       │
+└────────────┘└───────────┘└────────────┘└───────────┘└────────────────┘└───────────────────────┘
+  measures      tests the    calibrates    calibrates    validates the     audits the published
+  the raw       validators   this gate     this gate     new stage         artifact end-to-end
+  proposer      themselves
 ```
+
+Every batch's passage through these stages is recorded in a **transaction ledger** (`pipeline/state.json`), one commit per stage transition — the construction history is replayable and auditable commit-by-commit.
 
 
 Rejected candidates stop at their stage; PARTIAL verdicts carry concrete corrections applied at merge; every WRONG is logged. Calibration (seeded corruption) attaches measured sensitivity/specificity to each verification stage (E1, E5).
@@ -115,8 +114,6 @@ Rejected candidates stop at their stage; PARTIAL verdicts carry concrete correct
 4. *Adjudicated merge*: corrections applied; WRONG dropped and logged; provenance stamped (`verified_by`, `verified_date`).
 5. *Integrity tests* (all quotes/anchors/types/provenance re-validated on every change, plus five **corruption canaries that must fail** — self-testing validators) → deploy → commit.
 6. *Cross-vendor check* (Google Gemini 3.1 Pro — different **vendor**, not merely different family). **This is a standing stage of the methodology, and going forward it runs before publication**: each gated batch is re-judged by the second vendor prior to merge, with disagreements adjudicated (and the adjudication itself open to the auditor's adversarial cross-review). The graph built before this stage existed was audited retroactively instead — a stratified sample under the shared rubric (E6) and a full volume rubric-free (E7) — which is what validated promoting the check from experiment to gate. At measured cost (~a tenth of a cent per citation) there is no economic reason to leave it post-hoc. Periodic full-graph audits continue on a cadence as drift insurance (full workflow below).
-
-Every batch transition is committed to a ledger (`pipeline/state.json`); the construction history is replayable and auditable commit-by-commit.
 
 **The cross-vendor loop in detail.** Beyond the per-batch pre-merge check (stage 6 above), the second-vendor auditor also runs periodic full-graph audits — a workflow that audits the pipeline *and its own instruments*, not just edges. This is the loop that validated promoting the cross-vendor check into the pipeline (E6–E7 were its first two runs, executed retroactively over the already-published graph):
 
@@ -161,34 +158,19 @@ All seeds, keys, verdicts, and scoring scripts are in `docs/experiments/` and th
 | E6 | Does a *different vendor* agree with the published graph? | 0 unsupported in 100; 4 nuance corrections upheld |
 | E7 | …even without our rubric, on a full volume? | 1.0% upheld residual in 407; rubric effect ≈ zero |
 
-And the same experiments placed where they bite — each stage of the pipeline is measured by the experiment(s) beneath it:
-
-```
- PROPOSER ──▶ MECHANICAL ──▶ STAGE 1  ──▶ STAGE 2  ──▶ CROSS-VENDOR ──▶ MERGE ──▶ PUBLISHED
- Opus 4.8     PRE-CHECK      STRUCTURE    VOICE         CHECK                      GRAPH
-    ▲             ▲          GATE ▲       SPECIALIST    Gemini ▲                     ▲
-    │             │               │            ▲               │                     │
-┌───┴────────┐┌───┴───────┐┌──────┴─────┐┌─────┴─────┐┌────────┴───────┐┌────────────┴──────────┐
-│ E0 what if ││ canaries: ││ E1/E1b     ││ E5 seeded ││ E6 shared-     ││ E2 adversarial audit  │
-│ we skipped ││ 5 planted ││ seeded     ││ voice     ││ rubric audit   ││    (0 errors in 30)   │
-│ the gates? ││ corrupt-  ││ errors:    ││ errors:   ││ (0 unsupported ││ E3 full-graph voice   │
-│ (~25%      ││ ions MUST ││ 86% sens / ││ 5/6       ││  in 100)       ││    sweep (10.3% fixed)│
-│ flawed)    ││ be caught ││ 93% spec   ││ caught    ││ E7 rubric-free ││ E4 independent        │
-│ E4 re-mine:││ on every  ││ (n=200,    ││ (small n) ││ full volume    ││    re-extraction:     │
-│ same core  ││ test run  ││ with CIs)  ││           ││ (1.0% residual)││    core claims stable │
-│ claims?    ││           ││            ││           ││                ││                       │
-└────────────┘└───────────┘└────────────┘└───────────┘└────────────────┘└───────────────────────┘
-  measures      tests the    calibrates    calibrates    validates the     audits the published
-  the raw       validators   this gate     this gate     new stage         artifact end-to-end
-  proposer      themselves
-```
 
 
-**E0 — Retro-verification of ungated extraction (n=238).** All references mined before the gate became mandatory were re-verified by the standard gate: 178 confirmed, 54 corrected, 6 edges deleted — a **25.2% flaw rate for unverified LLM extraction** on this corpus, consistent with public benchmarks. Dominant classes: voice conflation, identity overreach, referent drift, direction reversal; deletions included a spliced quote and a reversed symbolization.
+**Risk 1 — raw AI extraction can't be trusted.** *Mitigation: never publish raw extraction. Test: measure how bad it actually is.*
+
+**E0 — Retro-verification of ungated extraction (n=238).** Everything mined before the gate became mandatory was re-checked by the standard gate: 178 confirmed, 54 corrected, 6 edges deleted — a **25.2% flaw rate for unverified LLM extraction** on this corpus, consistent with public benchmarks. Dominant classes: voice conflation, identity overreach, referent drift, direction reversal; deletions included a spliced quote and a reversed symbolization.
+
+**Risk 2 — the gate itself might not work.** *Mitigation: treat the verifier as an instrument and calibrate it — feed it deliberately broken entries, hidden among clean ones, and count what it catches. (The mechanical validators get the same treatment: five planted corruptions that must be caught on every test run.)*
 
 **E1 — Verifier calibration by seeded corruption (n=40, seed 20260726, blind).** 20 intact controls + 20 corruptions (5 each: direction reversal, voice flip, object swap, identity overreach), quotes/paragraphs untouched so only the semantic gate is tested; production prompt; key withheld. Results: **specificity 20/20 (100%)**; sensitivity 15/20 (75%) — **reversal 5/5, object swap 5/5**, overreach 3/5, **voice flip 2/5**. Missed voice flips were sympathetic-reportage cases (doctrine Jung partially adopts) — genuinely ambiguous voice.
 
 **E1b — Expanded calibration (n=200, seed 20260727, blind).** The per-class sample was expanded tenfold (25 corruptions per class + 100 intact controls; reversal corruptions restricted to directional relations — a design fix, since reversing a symmetric relation is not a corruption). Results with 95% Wilson intervals: **sensitivity 86/100 (86%, CI 78–91%)**, **specificity 93/100 (93%, CI 86–97%)**; reversal **23/25 (92%)**, object-swap **24/25 (96%)**, overreach 21/25 (84%), voice-flip **18/25 (72%, CI 52–86%)**. Two honest consequences: (i) E1's n=5 voice-flip estimate (2/5) was noisy — the generalist's true voice baseline is materially higher, which **narrows the measured generalist–specialist gap** (72% vs 5/6; directionally consistent across all four first-party and cross-vendor measurements, but not statistically resolved at current specialist n — the E5 claim is downgraded accordingly); (ii) measured specificity is a **lower bound**: the 7 flagged controls are production references, and several flags are plausible nuance findings of the familiar vocabulary/voice class — one was upheld and corrected in the graph. Full tables: `docs/experiments/exp1b_expanded_calibration.md`.
+
+**Risk 3 — the finished graph might still contain errors.** *Mitigation: audit the published product, three independent ways — an auditor told to break each edge (E2), a graph-wide sweep of the weakest axis (E3), and an independent re-extraction to test whether the selection is arbitrary (E4).*
 
 **E2 — Adversarial audit of published references (n=30, seed 20260725).** A differently-prompted reviewer instructed to *break* each edge: **0 content/direction/fabrication errors**; 4 disputes (13.3%), all attribution/modality refinements; all applied.
 
@@ -196,11 +178,17 @@ And the same experiments placed where they bite — each stage of the pipeline i
 
 **E4 — Extraction stability probe (n=40 across two windows, blind).** Two already-mined windows re-mined independently with a fixed "20 strongest relations" budget (shared node vocabulary; prior triples withheld): strict unordered {subject, object} pair overlap with the graph was **7/20 (35%)** on CW14 §371–440 and **8/20 (40%)** on CW12 §332–420 — **37.5% combined**. Core theses recur near-verbatim across runs; non-overlap decomposes into complementary genuine edges (the windows hold 29–33 graph edges each, more than one 20-edge budget can cover), schema-shape variants of the same insight, and one case where the probe independently re-found an edge that adjudication had dropped on schema grounds. The graph is therefore a *stable curated map*, not an exhaustive parse; union-mining is the costed coverage upgrade.
 
+**Risk 4 — the gate is weakest on one axis (voice).** *Mitigation: add a second, narrow reviewer that checks only whose claim it is and how firmly it is made — then calibrate that too.*
+
 **E5 — Voice-specialist calibration (n=20, seed 20260727, blind).** Per-axis seeded corruption of post-sweep ground truth (6 voice flips, 4 hedge strips, 10 clean controls) run through the narrow stage-2 auditor: **sensitivity 80%** (voice flips **5/6 = 83%**, hedge strips 3/4), **specificity 10/10 (100%)**. Against the generalist's 40% voice-flip detection on the same error class (E1), this is a direct, controlled measurement of what we shorthand *semantic diffusion* in verification — task decomposition is well documented for generation (least-to-most prompting, chain-of-thought decomposition, plan-and-solve); our contribution is not the decomposition idea but its seeded-corruption *measurement on the verification side*, replicated cross-vendor: same model, same paragraphs, scope narrowed from five criteria to one — detection improved on paired items (2/5→5/6 first-party; 2/6→4/6 cross-vendor) at zero false-positive cost. The expanded calibration (E1b) revises the generalist voice baseline upward to 72%, narrowing the measured gap; we therefore state the specialist advantage as **directionally consistent across four measurements but pending a larger specialist calibration for statistical resolution** — an honest downgrade the larger sample forced, and an example of the methodology auditing its own earlier claims. The two residual misses are the same sympathetic-reportage boundary cases identified by E1 and E3.
 
-**E6 — Cross-vendor verification audit (n=100 production edges + calibration replays, Gemini 3.1 Pro).** The one structural weakness of a single-vendor trust chain is correlated blind spots between proposer and verifier. A verifier from a different vendor (Google Gemini 3.1 Pro, temperature 0, same production gate prompt, blind to prior verdicts) audited a stratified sample of 100 published edges (strata: volume × claim type × extraction age): **89 SUPPORTED, 11 PARTIAL, 0 WRONG** — zero fabrications, reversals, or unsupported edges found by an independent vendor, and every disagreement confined to the attribution/referent-nuance axis the pipeline already identifies as its residual weakness. Adjudication of the 11 disagreements against the ground-truth paragraphs: **4 upheld** (two referent-precision errors — an edge anchored to a paragraph naming the *filius regius* rather than Rex, and one naming Adam rather than Anthropos — one subject overreach, one referent demotion; all corrected, two near-duplicate edges removed), **5 both-defensible** (the sympathetic-reportage boundary), **2 not upheld** (one objection to ellipsis splicing permitted by the stated quotation rule, one strict-vocabulary reading). Because all sampled edges were published (the first-party verifier's marginal is degenerate), κ is uninformative here; the two-sided comparison comes from calibration replays: on the E1 corruption set Gemini scores **70% sensitivity / 95% specificity** (Fable: 75%/100%), with reversals and object swaps 5/5 and voice flips 2/5 — **missing the same individual voice-flip items as Fable**, evidence that these items are intrinsically ambiguous rather than a vendor blind spot; on the E5 set the narrow voice brief lifts Gemini's voice-flip detection from 33% to 67% (Fable: 40% → 83%) — **the semantic-diffusion effect replicates across vendors**. The orchestrator's dispute rulings were then adversarially reviewed by the cross-vendor model (9 AGREE / 2 PARTIALLY-AGREE / 0 DISAGREE); both partial agreements argued for stronger remedies than confidence demotion, and both were accepted (two referent retargets). Post-audit graph at the time of E6: 228 nodes, 608 edges, 633 references (the graph has since grown under the same pipeline rules; §4 states current counts). E6's headline is stated precisely: zero unsupported edges *under the shared rubric* (see threat vii).
+**Risk 5 — proposer and verifier come from one vendor, and could share blind spots no one inside can see.** *Mitigation: bring in a different vendor's model as auditor — first with our grading scale, then (because the scale itself could bias it) with no scale at all.*
+
+**E6 — Cross-vendor verification audit (n=100 production edges + calibration replays, Gemini 3.1 Pro).** A verifier from a different vendor (Google Gemini 3.1 Pro, temperature 0, same production gate prompt, blind to prior verdicts) audited a stratified sample of 100 published edges (strata: volume × claim type × extraction age): **89 SUPPORTED, 11 PARTIAL, 0 WRONG** — zero fabrications, reversals, or unsupported edges found by an independent vendor, and every disagreement confined to the attribution/referent-nuance axis the pipeline already identifies as its residual weakness. Adjudication of the 11 disagreements against the ground-truth paragraphs: **4 upheld** (two referent-precision errors — an edge anchored to a paragraph naming the *filius regius* rather than Rex, and one naming Adam rather than Anthropos — one subject overreach, one referent demotion; all corrected, two near-duplicate edges removed), **5 both-defensible** (the sympathetic-reportage boundary), **2 not upheld** (one objection to ellipsis splicing permitted by the stated quotation rule, one strict-vocabulary reading). Because all sampled edges were published (the first-party verifier's marginal is degenerate), κ is uninformative here; the two-sided comparison comes from calibration replays: on the E1 corruption set Gemini scores **70% sensitivity / 95% specificity** (Fable: 75%/100%), with reversals and object swaps 5/5 and voice flips 2/5 — **missing the same individual voice-flip items as Fable**, evidence that these items are intrinsically ambiguous rather than a vendor blind spot; on the E5 set the narrow voice brief lifts Gemini's voice-flip detection from 33% to 67% (Fable: 40% → 83%) — **the semantic-diffusion effect replicates across vendors**. The orchestrator's dispute rulings were then adversarially reviewed by the cross-vendor model (9 AGREE / 2 PARTIALLY-AGREE / 0 DISAGREE); both partial agreements argued for stronger remedies than confidence demotion, and both were accepted (two referent retargets). Post-audit graph at the time of E6: 228 nodes, 608 edges, 633 references (the graph has since grown under the same pipeline rules; §4 states current counts). E6's headline is stated precisely: zero unsupported edges *under the shared rubric* (see threat vii).
 
 **E7 — Rubric-free cross-vendor audit (n=407, full CW14 + calibration replay, Gemini 3.1 Pro).** E6's prompt-bias audit raised *shared-rubric convergence*: agreement measured under the first vendor's rubric partly reflects shared thresholds. E7 removes the rubric — no verdict enum, no claim-type definitions, no strictness persona; the second vendor judges every CW 14 reference (the full volume, n=407) in its own terms. Results: **356 supported / 47 partly / 4 no**; on the auditor's own severity scale, 350 none / 47 minor / 8 moderate / 2 serious. Adjudication of the 10 moderate+serious findings upheld **4 (1.0%)** — one misanchored edge deleted, one relation and one subject retargeted, one relation relabeled; none was a fabrication or reversal. The decisive measurement is the calibration replay: Gemini's rubric-free detection profile is **identical** to its with-rubric profile (70% sensitivity, 95% specificity, same per-class breakdown, same three missed sympathetic-reportage voice flips), and on the 58 doubly-audited references, verdict consistency across modes is **55/58 (95%)** with all three divergences in the *stricter* direction. Shared-rubric convergence — a legitimate concern — has a measured impact of ≈ zero on these error classes: detection is driven by the paragraph evidence, and the rubric's real function is output comparability, not verdict steering (threat vii, discharged with measurement).
+
+**Risk 6 — the referee of all these disagreements is itself a model from the first vendor.** *Mitigation: publish every ruling verbatim, and have the second vendor adversarially re-review the referee's rulings (it accepted 9 of 11 and successfully forced 2 stronger corrections — see E6). Full independence arrives with the human tier (§8).*
 
 **Cost.** From production telemetry (~97K tokens/miner batch, ~56K/gate batch at $5/$25 and $10/$50 per MTok): ≈ **$0.09 per verified citation**, ≈ $0.12 including retro-verification, audit, and calibration overhead; total artifact cost ≈ $60–90.
 
@@ -241,7 +229,7 @@ Coverage beyond CW14/CW12 is thin; eleven volumes untouched. The relation vocabu
 
 ## 9. Conclusion
 
-For interpretive corpora, the question is not whether LLMs can extract structure — they can, at ~75% — but whether a pipeline can be built where the published artifact is *measurably* better than its extractor, and honest about the remainder. The Symbolic World demonstrates one affirmative design: deterministic grounding, cross-family adversarial gating, typed voice provenance, self-testing validators, and published error bars, at ~$0.10 per verified claim. The method contains nothing Jung-specific: any authored corpus where *who said what, exactly where* is the scholarly currency is a candidate.
+This paper does not claim the graph is correct. It claims something a reader can actually use: **the graph's error rate is known (~1% by independent audit), small, named (voice nuance, not fabrication), and checkable** — by another AI vendor, and by any reader with the book and two minutes. That is what the methodology manufactures: not correctness, but *quantified, inspectable trust*. Whether that is robust enough for scholarly use is a judgment the reader is now equipped to make — which is the point. The machines did the hard yards: extraction, checking, cross-checking, and the bookkeeping of every correction. Human judgement keeps the last word: in the adjudications, in the dispute and confirmation channels, and eventually in a community of readers. Nothing in the method is Jung-specific — any authored corpus where *who said what, exactly where* is the scholarly currency is a candidate, at roughly $0.10 per verified claim.
 
 ---
 
