@@ -123,21 +123,30 @@
   },
   {
    "id": "exp2-modality",
-   "status": "partially-applied",
+   "status": "complete",
    "note": "batches 1-3 applied (45 fixes/381 refs); batches 4-5 HELD on spend limit (inputs in pipeline/work/modality[45]_input.json)"
   },
   {
    "id": "exp3-probe",
-   "status": "held",
+   "status": "complete",
    "note": "probeA/probeB inputs + probe_reference.json committed; run when budget returns"
   },
   {
    "id": "b-union-1",
-   "status": "stage1-gated",
-   "result": "16/5/0",
-   "note": "HELD for 12:03 window: apply stage-1 corrections, run stage-2 voice specialist, merge; then union batch 2 (fresh window) + CW12 series under pipeline v2",
+   "status": "merged",
+   "result": "16/5/0 stage1; 4 corrected, 1 dropped (n16 one-off node); stage2: 2 hedge demotions; merged 20 edges, 3 new nodes",
    "candidates": "pipeline/batches/b-union-1_candidates.json",
    "verdicts": "pipeline/batches/b-union-1_verdicts.json"
+  },
+  {
+   "id": "exp6-crossvendor",
+   "status": "complete",
+   "note": "Gemini 3.1 Pro: 100-edge audit 89/11/0; 4 corrections; adjudication cross-review 9/2/0; prompt-bias audit -> E7 backlog"
+  },
+  {
+   "id": "b-union-2",
+   "status": "pending",
+   "note": "next window: fresh union mine on rich CW14 chapter (\u00a7555-620 Adam or \u00a7240-305 Salt); then CW12 b-cw12-4 (\u00a744-110) series"
   }
  ],
  "next": "12:03 wake: finish b-union-1 (stage2+merge), then b-union-2, then CW12 \u00a744-110 first dream-series batch"

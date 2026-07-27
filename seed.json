@@ -1151,6 +1151,21 @@
    "id": "blood",
    "type": "Substance",
    "label": "Blood"
+  },
+  {
+   "id": "redemption",
+   "type": "Concept",
+   "label": "Redemption"
+  },
+  {
+   "id": "vir-unus",
+   "type": "Concept",
+   "label": "Vir Unus (the unified man)"
+  },
+  {
+   "id": "man",
+   "type": "Concept",
+   "label": "Man (homo)"
   }
  ],
  "edges": [
@@ -12044,6 +12059,366 @@
      "claim_type": "jung-asserts",
      "verified_by": "claude-fable-5",
      "verified_date": "2026-07-26"
+    }
+   ]
+  },
+  {
+   "subject": "arcane-substance",
+   "relation": "is-identified-with",
+   "object": "god-image",
+   "references": [
+    {
+     "volume": "14",
+     "paragraph": 374,
+     "quote": "the identification of the transformative substance with God",
+     "claim_type": "jung-reports-parallel",
+     "confidence": "high",
+     "verified": true,
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-27",
+     "modality_swept": true
+    }
+   ]
+  },
+  {
+   "subject": "aqua-permanens",
+   "relation": "corresponds-to",
+   "object": "collective-unconscious",
+   "references": [
+    {
+     "volume": "14",
+     "paragraph": 372,
+     "quote": "There is probably no more suitable psychological concept for this than the collective unconscious",
+     "claim_type": "jung-asserts",
+     "confidence": "medium",
+     "verified": true,
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-27",
+     "modality_swept": true
+    }
+   ]
+  },
+  {
+   "subject": "the-self",
+   "relation": "is-nucleus-and-ordering-principle-of",
+   "object": "collective-unconscious",
+   "references": [
+    {
+     "volume": "14",
+     "paragraph": 372,
+     "quote": "whose nucleus and ordering “principle” is the self",
+     "claim_type": "jung-asserts",
+     "confidence": "high",
+     "verified": true,
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-27",
+     "modality_swept": true
+    }
+   ]
+  },
+  {
+   "subject": "solutio",
+   "relation": "is-prerequisite-for",
+   "object": "redemption",
+   "references": [
+    {
+     "volume": "14",
+     "paragraph": 381,
+     "quote": "Dissolution is the prerequisite for redemption.",
+     "claim_type": "jung-asserts",
+     "confidence": "high",
+     "verified": true,
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-27",
+     "modality_swept": true
+    }
+   ]
+  },
+  {
+   "subject": "albedo",
+   "relation": "unifies-psychic-disunity-into",
+   "object": "vir-unus",
+   "references": [
+    {
+     "volume": "14",
+     "paragraph": 388,
+     "quote": "becomes the “vir unus,” the unified man",
+     "claim_type": "jung-asserts",
+     "confidence": "high",
+     "verified": true,
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-27",
+     "modality_swept": true
+    }
+   ]
+  },
+  {
+   "subject": "the-vessel",
+   "relation": "signifies",
+   "object": "great-mother",
+   "references": [
+    {
+     "volume": "14",
+     "paragraph": 403,
+     "quote": "The water and the containing vessel always signify the mother, the feminine principle best characterized by yin",
+     "claim_type": "jung-asserts",
+     "confidence": "high",
+     "verified": true,
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-27",
+     "modality_swept": true
+    }
+   ]
+  },
+  {
+   "subject": "hierosgamos",
+   "relation": "is-projection-of",
+   "object": "the-unconscious",
+   "references": [
+    {
+     "volume": "14",
+     "paragraph": 410,
+     "quote": "the hierosgamos of the substances is a projection of unconscious contents",
+     "claim_type": "jung-asserts",
+     "confidence": "high",
+     "verified": true,
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-27",
+     "modality_swept": true
+    }
+   ]
+  },
+  {
+   "subject": "meretrix",
+   "relation": "characterizes-initial-state-of",
+   "object": "arcane-substance",
+   "references": [
+    {
+     "volume": "14",
+     "paragraph": 415,
+     "quote": "She characterizes the arcane substance in its initial, “chaotic,” maternal state.",
+     "claim_type": "jung-asserts",
+     "confidence": "high",
+     "verified": true,
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-27",
+     "modality_swept": true
+    }
+   ]
+  },
+  {
+   "subject": "venus",
+   "relation": "is-anima-of",
+   "object": "rex",
+   "references": [
+    {
+     "volume": "14",
+     "paragraph": 416,
+     "quote": "Venus appears as the feminine aspect of the king, or as we should say, his anima",
+     "claim_type": "jung-asserts",
+     "confidence": "high",
+     "verified": true,
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-27",
+     "modality_swept": true
+    }
+   ]
+  },
+  {
+   "subject": "regina",
+   "relation": "enacts",
+   "object": "ouroboros",
+   "references": [
+    {
+     "volume": "14",
+     "paragraph": 424,
+     "quote": "the mother who merges with her own substance, “eating her own tail”",
+     "claim_type": "jung-asserts",
+     "confidence": "high",
+     "verified": true,
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-27",
+     "modality_swept": true
+    }
+   ]
+  },
+  {
+   "subject": "anima",
+   "relation": "sends-contents-into",
+   "object": "consciousness",
+   "references": [
+    {
+     "volume": "14",
+     "paragraph": 424,
+     "quote": "the anima has become activated and sends her contents into consciousness",
+     "claim_type": "jung-asserts",
+     "confidence": "high",
+     "verified": true,
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-27",
+     "modality_swept": true
+    }
+   ]
+  },
+  {
+   "subject": "rex",
+   "relation": "renewal-compensates-fading-of",
+   "object": "dogma",
+   "references": [
+    {
+     "volume": "14",
+     "paragraph": 425,
+     "quote": "there grew up in their unconscious the compensating image of the king’s renewal",
+     "claim_type": "jung-asserts",
+     "confidence": "high",
+     "verified": true,
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-27",
+     "modality_swept": true
+    }
+   ]
+  },
+  {
+   "subject": "alchemy",
+   "relation": "is-rooted-in",
+   "object": "projection",
+   "references": [
+    {
+     "volume": "12",
+     "paragraph": 346,
+     "quote": "the real root of alchemy is to be sought less in philosophical doctrines than in the projections of individual investigators",
+     "claim_type": "jung-asserts",
+     "confidence": "medium",
+     "verified": true,
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-27",
+     "modality_swept": true
+    }
+   ]
+  },
+  {
+   "subject": "artifex",
+   "relation": "is-unconsciously-identical-with",
+   "object": "arcane-substance",
+   "references": [
+    {
+     "volume": "12",
+     "paragraph": 376,
+     "quote": "there is an unconscious identity between the psyche of the alchemist and the arcane substance",
+     "claim_type": "jung-asserts",
+     "confidence": "high",
+     "verified": true,
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-27",
+     "modality_swept": true
+    }
+   ]
+  },
+  {
+   "subject": "lapis",
+   "relation": "is-identified-with",
+   "object": "man",
+   "references": [
+    {
+     "volume": "12",
+     "paragraph": 378,
+     "quote": "But again, the stone is man.",
+     "claim_type": "jung-asserts",
+     "confidence": "high",
+     "verified": true,
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-27",
+     "modality_swept": true
+    }
+   ]
+  },
+  {
+   "subject": "the-opus",
+   "relation": "actualizes",
+   "object": "archetypal-image",
+   "references": [
+    {
+     "volume": "12",
+     "paragraph": 400,
+     "quote": "not a datum of our empirical world, and therefore an a priori of archetypal character",
+     "claim_type": "jung-asserts",
+     "confidence": "high",
+     "verified": true,
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-27",
+     "modality_swept": true
+    }
+   ]
+  },
+  {
+   "subject": "mercurius",
+   "relation": "unites",
+   "object": "the-opposites",
+   "references": [
+    {
+     "volume": "12",
+     "paragraph": 404,
+     "quote": "poison and yet healing draught—a symbol uniting all opposites",
+     "claim_type": "jung-asserts",
+     "confidence": "high",
+     "verified": true,
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-27",
+     "modality_swept": true
+    }
+   ]
+  },
+  {
+   "subject": "mercurius",
+   "relation": "inwardly-signifies",
+   "object": "spiritus-mundi",
+   "references": [
+    {
+     "volume": "12",
+     "paragraph": 404,
+     "quote": "inwardly he means the world-creating spirit concealed or imprisoned in matter",
+     "claim_type": "jung-asserts",
+     "confidence": "high",
+     "verified": true,
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-27",
+     "modality_swept": true
+    }
+   ]
+  },
+  {
+   "subject": "god-image",
+   "relation": "hides-in",
+   "object": "lapis",
+   "references": [
+    {
+     "volume": "12",
+     "paragraph": 413,
+     "quote": "the Godhead conceals itself in the man of low degree, so in the “philosophy” it hides in the uncomely stone",
+     "claim_type": "jung-asserts",
+     "confidence": "high",
+     "verified": true,
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-27",
+     "modality_swept": true
+    }
+   ]
+  },
+  {
+   "subject": "artifex",
+   "relation": "seeks-liberation-of",
+   "object": "god-image",
+   "references": [
+    {
+     "volume": "12",
+     "paragraph": 420,
+     "quote": "not directed to his own salvation through God’s grace, but to the liberation of God from the darkness of matter",
+     "claim_type": "jung-asserts",
+     "confidence": "high",
+     "verified": true,
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-27",
+     "modality_swept": true
     }
    ]
   }
