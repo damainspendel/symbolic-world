@@ -146,7 +146,12 @@
   {
    "id": "b-union-2",
    "status": "pending",
-   "note": "next window: fresh union mine on rich CW14 chapter (\u00a7555-620 Adam or \u00a7240-305 Salt); then CW12 b-cw12-4 (\u00a744-110) series"
+   "note": "PAUSED by user 2026-07-27: all CW12/CW14 mining on hold; Gemini budget redirected to E7 rubric-free validation of CW14"
+  },
+  {
+   "id": "exp7-rubricfree",
+   "status": "running",
+   "note": "rubric-free Gemini audit: 407 CW14 refs (58 overlap E6 sample for rubric-vs-rubric-free comparison) + E1 calib replay; background task"
   }
  ],
  "next": "12:03 wake: finish b-union-1 (stage2+merge), then b-union-2, then CW12 \u00a744-110 first dream-series batch"
