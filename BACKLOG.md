@@ -111,3 +111,4 @@ Priority order agreed with the hostile review's own "what would change my mind":
    without us distributing copyrighted text.
 5. ~~Semantic-diffusion terminology~~ ✅ repositioned as shorthand w/ decomposition-literature context.
 Full hostile review: pipeline/work/gemini_hostile_review.json
+- Review great-mother vs the-mother node split (b-union-1 §403 edge may want retargeting to the new the-mother figure node; decided 2026-07-27 when both gates rejected the convention on b-cw12-4 n9)

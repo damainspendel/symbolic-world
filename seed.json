@@ -1176,6 +1176,46 @@
    "id": "tifereth",
    "type": "Concept",
    "label": "Tifereth (sefira)"
+  },
+  {
+   "id": "temenos",
+   "type": "Motif",
+   "label": "Temenos (protected taboo precinct)"
+  },
+  {
+   "id": "unknown-woman",
+   "type": "Motif",
+   "label": "The motif of the unknown woman"
+  },
+  {
+   "id": "the-father",
+   "type": "Figure",
+   "label": "The father (traditional spirit)"
+  },
+  {
+   "id": "personal-unconscious",
+   "type": "Concept",
+   "label": "The personal unconscious"
+  },
+  {
+   "id": "blue-flower",
+   "type": "Symbol",
+   "label": "The blue flower"
+  },
+  {
+   "id": "helios",
+   "type": "Figure",
+   "label": "Helios"
+  },
+  {
+   "id": "aqua-nostra",
+   "type": "Substance",
+   "label": "Aqua Nostra"
+  },
+  {
+   "id": "the-mother",
+   "type": "Figure",
+   "label": "The Mother (figure/imago)"
   }
  ],
  "edges": [
@@ -12539,6 +12579,272 @@
      "verified_by": "claude-fable-5",
      "verified_date": "2026-07-27",
      "modality_swept": true
+    }
+   ]
+  },
+  {
+   "subject": "mandala",
+   "relation": "is-a",
+   "object": "archetype",
+   "references": [
+    {
+     "volume": "12",
+     "paragraph": 50,
+     "quote": "we are concerned with a definite archetype—the mandala",
+     "claim_type": "jung-asserts",
+     "confidence": "high",
+     "verified": true,
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-27",
+     "modality_swept": true,
+     "crossvendor_checked": "gemini-3.1-pro"
+    }
+   ]
+  },
+  {
+   "subject": "temenos",
+   "relation": "is-taboo-area-where-dreamer-can-meet",
+   "object": "the-unconscious",
+   "references": [
+    {
+     "volume": "12",
+     "paragraph": 63,
+     "quote": "he has succeeded in establishing a protected temenos ... a taboo area where he will be able to meet the unconscious",
+     "claim_type": "jung-asserts",
+     "confidence": "high",
+     "verified": true,
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-27",
+     "modality_swept": true,
+     "crossvendor_checked": "gemini-3.1-pro"
+    }
+   ]
+  },
+  {
+   "subject": "unknown-woman",
+   "relation": "has-technical-name",
+   "object": "anima",
+   "references": [
+    {
+     "volume": "12",
+     "paragraph": 65,
+     "quote": "The motif of the unknown woman—whose technical name is the “anima”",
+     "claim_type": "jung-asserts",
+     "confidence": "high",
+     "verified": true,
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-27",
+     "modality_swept": true,
+     "crossvendor_checked": "gemini-3.1-pro"
+    }
+   ]
+  },
+  {
+   "subject": "unknown-woman",
+   "relation": "personifies",
+   "object": "the-unconscious",
+   "references": [
+    {
+     "volume": "12",
+     "paragraph": 108,
+     "quote": "the motif of the unknown woman who personifies the unconscious",
+     "claim_type": "jung-asserts",
+     "confidence": "high",
+     "verified": true,
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-27",
+     "modality_swept": true,
+     "crossvendor_checked": "gemini-3.1-pro"
+    }
+   ]
+  },
+  {
+   "subject": "solificatio",
+   "relation": "is-consummated-on-the-person-of",
+   "object": "anima",
+   "references": [
+    {
+     "volume": "12",
+     "paragraph": 68,
+     "quote": "The solificatio is consummated on the person of the anima.",
+     "claim_type": "jung-asserts",
+     "confidence": "high",
+     "verified": true,
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-27",
+     "modality_swept": true,
+     "crossvendor_checked": "gemini-3.1-pro"
+    }
+   ]
+  },
+  {
+   "subject": "anima",
+   "relation": "conflicts-with-world-of",
+   "object": "the-father",
+   "references": [
+    {
+     "volume": "12",
+     "paragraph": 93,
+     "quote": "The anima now becomes a life-giving factor, a psychic reality which conflicts strongly with the world of the father.",
+     "claim_type": "jung-asserts",
+     "confidence": "high",
+     "verified": true,
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-27",
+     "modality_swept": true,
+     "crossvendor_checked": "gemini-3.1-pro"
+    }
+   ]
+  },
+  {
+   "subject": "the-father",
+   "relation": "represents",
+   "object": "collective-consciousness",
+   "references": [
+    {
+     "volume": "12",
+     "paragraph": 92,
+     "quote": "Just as the father represents collective consciousness, the traditional spirit",
+     "claim_type": "jung-asserts",
+     "confidence": "high",
+     "verified": true,
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-27",
+     "modality_swept": true,
+     "crossvendor_checked": "gemini-3.1-pro"
+    }
+   ]
+  },
+  {
+   "subject": "the-mother",
+   "relation": "stands-for",
+   "object": "collective-unconscious",
+   "references": [
+    {
+     "volume": "12",
+     "paragraph": 92,
+     "quote": "the mother stands for the collective unconscious, the source of the water of life",
+     "claim_type": "jung-asserts",
+     "confidence": "high",
+     "verified": true,
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-27",
+     "modality_swept": true,
+     "crossvendor_checked": "gemini-3.1-pro"
+    }
+   ]
+  },
+  {
+   "subject": "personal-unconscious",
+   "relation": "must-be-made-conscious-to-open-gateway-to",
+   "object": "collective-unconscious",
+   "references": [
+    {
+     "volume": "12",
+     "paragraph": 81,
+     "quote": "This “personal unconscious” must always be dealt with first, that is, made conscious, otherwise the gateway to the collective unconscious cannot be opened.",
+     "claim_type": "jung-asserts",
+     "confidence": "high",
+     "verified": true,
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-27",
+     "modality_swept": true,
+     "crossvendor_checked": "gemini-3.1-pro"
+    }
+   ]
+  },
+  {
+   "subject": "solificatio",
+   "relation": "crowns-initiand-as",
+   "object": "helios",
+   "references": [
+    {
+     "volume": "12",
+     "paragraph": 66,
+     "quote": "called the solificatio , where the initiand was crowned as Helios",
+     "claim_type": "jung-reports-parallel",
+     "confidence": "high",
+     "verified": true,
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-27",
+     "modality_swept": true,
+     "crossvendor_checked": "gemini-3.1-pro"
+    }
+   ]
+  },
+  {
+   "subject": "sol",
+   "relation": "is-classical-symbol-for-unity-and-divinity-of",
+   "object": "the-self",
+   "references": [
+    {
+     "volume": "12",
+     "paragraph": 108,
+     "quote": "the classical symbol for the unity and divinity of the self, the sun",
+     "claim_type": "jung-asserts",
+     "confidence": "high",
+     "verified": true,
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-27",
+     "modality_swept": true,
+     "crossvendor_checked": "gemini-3.1-pro"
+    }
+   ]
+  },
+  {
+   "subject": "aqua-nostra",
+   "relation": "symbolizes",
+   "object": "psychic-energy",
+   "references": [
+    {
+     "volume": "12",
+     "paragraph": 94,
+     "quote": "an excellent symbol for the living power of the psyche",
+     "claim_type": "jung-asserts",
+     "confidence": "medium",
+     "verified": true,
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-27",
+     "modality_swept": true,
+     "crossvendor_checked": "gemini-3.1-pro"
+    }
+   ]
+  },
+  {
+   "subject": "golden-flower",
+   "relation": "can-sometimes-be",
+   "object": "blue-flower",
+   "references": [
+    {
+     "volume": "12",
+     "paragraph": 101,
+     "quote": "the “golden flower of alchemy” ... can sometimes be a blue flower",
+     "claim_type": "jung-reports-parallel",
+     "confidence": "high",
+     "verified": true,
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-27",
+     "modality_swept": true,
+     "crossvendor_checked": "gemini-3.1-pro"
+    }
+   ]
+  },
+  {
+   "subject": "blue-flower",
+   "relation": "is-numinous-emanation-from",
+   "object": "the-unconscious",
+   "references": [
+    {
+     "volume": "12",
+     "paragraph": 101,
+     "quote": "a numinous emanation from the unconscious",
+     "claim_type": "jung-asserts",
+     "confidence": "high",
+     "verified": true,
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-27",
+     "modality_swept": true,
+     "crossvendor_checked": "gemini-3.1-pro"
     }
    ]
   }
