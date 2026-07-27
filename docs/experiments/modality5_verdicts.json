@@ -1,0 +1,37 @@
+[
+  {
+    "id": "E485R0",
+    "fix": {"claim_type": "jung-reports-parallel", "source": null, "confidence": "high"},
+    "reason": "The king rising from his 'infernal fire' as a crowned dragon is footnoted alchemical doctrine (nn. 286-287, with quoted source phrases), which Jung reports rather than asserts in his own interpretive voice."
+  },
+  {
+    "id": "E489R0",
+    "fix": {"claim_type": "jung-asserts", "source": null, "confidence": "high"},
+    "reason": "The Anthropos-Purusha/Gayomart parallel is Jung's own archetypal thesis ('that inner primordial image which had produced a Purusha or a Gayomart'), not a doctrine he reports from another tradition."
+  },
+  {
+    "id": "E500R0",
+    "fix": {"claim_type": "jung-asserts", "source": null, "confidence": "medium"},
+    "reason": "The claim is conditional: 'But IF the son is the dominant, THEN Sol is his right eye and Luna his left' -- an if-clause warrants medium confidence."
+  },
+  {
+    "id": "E501R0",
+    "fix": {"claim_type": "jung-asserts", "source": null, "confidence": "medium"},
+    "reason": "Same conditional sentence as E500R0: 'if the son is the dominant, then... Luna his left' -- if-clause warrants medium confidence."
+  },
+  {
+    "id": "E512R0",
+    "fix": {"claim_type": "jung-asserts", "source": null, "confidence": "medium"},
+    "reason": "The claim is hedged with 'It is as though the alchemists were trying to express the fact that the unconscious itself initiates the process of renewal.'"
+  },
+  {
+    "id": "E538R0",
+    "fix": {"claim_type": "jung-reports-parallel", "source": null, "confidence": "high"},
+    "reason": "Jung frames this as 'The idea of Mercurius as a peacemaker, the mediator between the warring elements' -- an idea learned from the excursus/treatise whose origin he traces to Ephesians, not his own interpretive assertion."
+  },
+  {
+    "id": "E575R0",
+    "fix": {"claim_type": "jung-asserts", "source": null, "confidence": "medium"},
+    "reason": "The claim is explicitly hedged: 'This SEEMS to point to active imagination as the thing that sets the process really going.'"
+  }
+]

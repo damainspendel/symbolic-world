@@ -1,0 +1,67 @@
+[
+ {
+  "id": "E360R0",
+  "fix": {"claim_type": "jung-asserts", "source": null},
+  "reason": "Jung himself equates the potential world with the Schoolmen's mundus archetypus in his own voice ('This potential world is the mundus archetypus of the Schoolmen'); the Schoolmen are not reported as asserting this correspondence to the unus mundus."
+ },
+ {
+  "id": "E365R0",
+  "fix": {"claim_type": "jung-asserts", "source": null},
+  "reason": "The claim rests on Jung's own emphatic interpretation ('It represents nothing less than a corpus glorificationis'), not on a reported tradition."
+ },
+ {
+  "id": "E376R0",
+  "fix": {"claim_type": "jung-reports-parallel", "source": null},
+  "reason": "The sentence sits in a chain of footnoted alchemical-Gnostic doctrine ('In alchemy the eye is the coelum...'), matching the sister claim E378R0 already typed as reports-parallel, not Jung's own interpretive voice."
+ },
+ {
+  "id": "E379R0",
+  "fix": {"claim_type": "jung-asserts", "source": null, "confidence": "medium"},
+  "reason": "Clearly hedged claim ('so it is possible that other unconscious complexes may possess... a certain luminosity') should not carry high confidence."
+ },
+ {
+  "id": "E386R0",
+  "fix": {"claim_type": "jung-asserts", "source": null, "confidence": "medium"},
+  "reason": "Doubly hedged in the paragraph ('unless we are completely deluded, the inscription itself seems to be a fantasy sprung from...'), so high confidence overstates the modality."
+ },
+ {
+  "id": "E394R0",
+  "fix": {"claim_type": "jung-reports-parallel", "source": null},
+  "reason": "Footnoted alchemical doctrine inside an 'In alchemy, the sun signifies...' exposition ('it contains an active sulphur... 9'), not Jung's own interpretive assertion."
+ },
+ {
+  "id": "E396R0",
+  "fix": {"claim_type": "jung-reports-parallel", "source": null},
+  "reason": "The Sol niger / nigredo coincidence is footnoted alchemical doctrine ('Hence there is also a Sol niger... 24'), an idea Jung elsewhere calls 'often mentioned in the literature', not his own interpretive claim."
+ },
+ {
+  "id": "E398R0",
+  "fix": {"claim_type": "jung-reports-parallel", "source": null},
+  "reason": "The paragraph attributes the claim to the tradition ('Generally Sol is regarded as the masculine and active half of Mercurius'), a passive report rather than Jung's own voice."
+ },
+ {
+  "id": "E406R0",
+  "fix": {"claim_type": "jung-reports-parallel", "source": null},
+  "reason": "'Being the inner fire of Mercurius, 130' is footnoted doctrine taken from the sources as a premise, not a claim Jung makes in his own interpretive voice."
+ },
+ {
+  "id": "E411R0",
+  "fix": {"claim_type": "jung-reports-parallel", "source": null},
+  "reason": "The quotation ('shadow of the sun...') comes from an unnamed footnoted treatise, and jung-quotes-source with a null source is invalid; anonymous quoted doctrine is jung-reports-parallel."
+ },
+ {
+  "id": "E458R0",
+  "fix": {"claim_type": "jung-reports-parallel", "source": null},
+  "reason": "The claim is explicitly framed as the tradition's schema ('In alchemy, the end of the work announced by the cauda pavonis was the birth of the filius regius'), parallel to other 'In alchemy...' edges typed as reports-parallel."
+ },
+ {
+  "id": "E475R0",
+  "fix": {"claim_type": "jung-asserts", "source": null},
+  "reason": "The Assumption parallel is Jung's own comparative thesis ('is an unmistakable paraphrase... of the Assumption of the Virgin'); no author or tradition is reported as holding it."
+ },
+ {
+  "id": "E479R0",
+  "fix": {"claim_type": "jung-asserts", "source": null},
+  "reason": "The Mary parallel is drawn by Jung himself ('instantly reminds us of its prototype, the coronation of the Virgin Mary'), not presented as another author's doctrine."
+ }
+]

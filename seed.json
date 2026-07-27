@@ -9913,9 +9913,10 @@
      "quote": "So, too, the king rises from his “infernal fire” as a crowned dragon",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts",
+     "claim_type": "jung-reports-parallel",
      "verified_by": "claude-fable-5",
-     "verified_date": "2026-07-25"
+     "verified_date": "2026-07-25",
+     "modality_swept": "2026-07-27"
     }
    ]
   },
@@ -9981,9 +9982,10 @@
      "quote": "that inner primordial image which had produced a Purusha or a Gayomart long before the Christian era",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-reports-parallel",
+     "claim_type": "jung-asserts",
      "verified_by": "claude-fable-5",
-     "verified_date": "2026-07-25"
+     "verified_date": "2026-07-25",
+     "modality_swept": "2026-07-27"
     }
    ]
   },
@@ -10168,11 +10170,12 @@
      "volume": 14,
      "paragraph": 517,
      "quote": "if the son is the dominant, then Sol is his right eye and Luna his left",
-     "confidence": "high",
+     "confidence": "medium",
      "verified": true,
      "claim_type": "jung-asserts",
      "verified_by": "claude-fable-5",
-     "verified_date": "2026-07-25"
+     "verified_date": "2026-07-25",
+     "modality_swept": "2026-07-27"
     }
    ]
   },
@@ -10185,11 +10188,12 @@
      "volume": 14,
      "paragraph": 517,
      "quote": "if the son is the dominant, then Sol is his right eye and Luna his left",
-     "confidence": "high",
+     "confidence": "medium",
      "verified": true,
      "claim_type": "jung-asserts",
      "verified_by": "claude-fable-5",
-     "verified_date": "2026-07-25"
+     "verified_date": "2026-07-25",
+     "modality_swept": "2026-07-27"
     }
    ]
   },
@@ -10374,11 +10378,12 @@
      "volume": 14,
      "paragraph": 548,
      "quote": "the unconscious itself initiates the process of renewal",
-     "confidence": "high",
+     "confidence": "medium",
      "verified": true,
      "claim_type": "jung-asserts",
      "verified_by": "claude-fable-5",
-     "verified_date": "2026-07-25"
+     "verified_date": "2026-07-25",
+     "modality_swept": "2026-07-27"
     }
    ]
   },
@@ -10826,9 +10831,10 @@
      "quote": "The idea of Mercurius as a peacemaker, the mediator between the warring elements and producer of unity",
      "confidence": "high",
      "verified": true,
-     "claim_type": "jung-asserts",
+     "claim_type": "jung-reports-parallel",
      "verified_by": "claude-fable-5",
-     "verified_date": "2026-07-25"
+     "verified_date": "2026-07-25",
+     "modality_swept": "2026-07-27"
     }
    ]
   },
@@ -11458,11 +11464,12 @@
      "volume": 12,
      "paragraph": 357,
      "quote": "seems to point to active imagination as the thing that sets the process really going",
-     "confidence": "high",
+     "confidence": "medium",
      "verified": true,
      "claim_type": "jung-asserts",
      "verified_by": "claude-fable-5",
-     "verified_date": "2026-07-25"
+     "verified_date": "2026-07-25",
+     "modality_swept": "2026-07-27"
     }
    ]
   },
