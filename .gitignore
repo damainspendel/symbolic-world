@@ -24,3 +24,4 @@ web/serve.log
 *.log
 __pycache__/
 pipeline/work/
+app/

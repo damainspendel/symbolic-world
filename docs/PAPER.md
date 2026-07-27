@@ -170,7 +170,7 @@ Coverage beyond CW14/CW12 is thin — eleven volumes untouched — and the relat
 
 ## 11. Conclusion
 
-What has this methodology actually produced? Judged dimension by dimension, honestly:
+What has this methodology actually produced? Judged dimension by dimension:
 
 **Accurate**, by independent measurement: a second vendor auditing a full volume in its own words could uphold errors in about one claim in a hundred, none of them fabricated — against roughly one in four for the unguarded pipeline the field currently runs. **Complete** only in a defined and tested sense: the core claims of covered chapters, the ones independent re-extraction re-finds, are there; the long tail below that line is sampled, deliberately. **Not comprehensive**: one volume end-to-end, eight more touched, eleven untouched. **Inspectable**, always: every claim carries its evidence, verifier, and history; the construction replays commit by commit; disputing takes two minutes and a book. **General** by design but not yet by demonstration — nothing in the method is Jung-specific, and until a second corpus runs, that remains a claim. **Human-verified** only thinly, so far: the channels exist and are tested; the accumulated human record is the project's youngest and most important open front.
 
