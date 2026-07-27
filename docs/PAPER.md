@@ -189,7 +189,9 @@ For interpretive corpora, the question is not whether LLMs can extract structure
 
 ### Authorship note
 
-Conception, direction, corpus provision, publication decisions, and final responsibility: **Damian Spendel**. Edge proposal: *Claude Opus 4.8*. Independent verification, audits, calibration runs: *Claude Fable 5*. Orchestration, tooling, experiments, drafting: *Claude Code* (Anthropic), under the author's instruction. Proposer/verifier family separation is a deliberate design constraint.
+Conception, direction, corpus provision, publication decisions, and final responsibility: **Damian Spendel**. Edge proposal: *Claude Opus 4.8* (Anthropic). Independent verification, audits, calibration runs: *Claude Fable 5* (Anthropic). Cross-vendor auditing, adjudication cross-review, and prompt-bias critique: *Gemini 3.1 Pro* (Google). Orchestration, tooling, experiments, drafting: *Claude Code* (Anthropic), under the author's instruction. Proposer/verifier family separation — and the second-vendor audit tier — are deliberate design constraints.
+
+**Artifact availability.** Dataset, pipeline code, transaction ledger, all experiment inputs/verdicts/adjudications, and this paper: [github.com/sudamana23/symbolic-world](https://github.com/sudamana23/symbolic-world) (public at release; the repository's issue tracker is the standing dispute channel described in §4). Live atlas: [symbolicworld.observer](https://symbolicworld.observer).
 
 ### Key references
 
