@@ -115,7 +115,7 @@ function renderPanel(node) {
   // dispute button: copy a structured, prefilled dispute report to the clipboard
   p.querySelectorAll('.dispute-btn').forEach(el => el.addEventListener('click', ev => {
     ev.stopPropagation()
-    const d = JSON.parse(el.dataset.report)
+    const d = JSON.parse(decodeURIComponent(el.dataset.report))
     const report = [
       'DISPUTE REPORT — The Symbolic World',
       `Edge: ${d.edge}`,
@@ -128,7 +128,8 @@ function renderPanel(node) {
       '  [describe here — please quote the paragraph]',
       '',
       'Submit at: https://github.com/sudamana23/symbolic-world/issues — disputed edges are',
-      're-reviewed with this objection attached; outcomes are published.'
+      're-reviewed with this objection attached; outcomes are published at',
+      'https://symbolicworld.observer/disputes.html'
     ].join('\n')
     navigator.clipboard.writeText(report).then(() => {
       el.textContent = 'Report copied ✓ — submit at github.com/sudamana23/symbolic-world/issues'

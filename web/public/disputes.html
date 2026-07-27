@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dispute log — The Symbolic World</title>
+<style>
+  :root { --ground:#0e1116; --gold:#d9b25f; --gold-dim:#a9863f; --ink:#c9d0d6; --ink-faint:#7a828b;
+          --surface:rgba(18,23,30,.92); --hairline:#2a323c;
+          --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+          --mono:ui-monospace,"SF Mono",Menlo,monospace; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { background:radial-gradient(120% 90% at 50% 0%, #141b24 0%, var(--ground) 60%, #0a0d12 100%);
+         font-family:var(--serif); color:var(--ink); min-height:100vh; padding:2.5rem 1.2rem 4rem; }
+  main { max-width: 860px; margin: 0 auto; }
+  .eyebrow { font:.6rem/1 var(--mono); letter-spacing:.26em; text-transform:uppercase; color:var(--gold-dim); }
+  h1 { color:#e8e2d0; font-size:1.6rem; font-weight:600; margin:.3rem 0 .8rem; }
+  .intro { font-size:.92rem; line-height:1.6; color:var(--ink); max-width:64ch; margin-bottom:.5rem; }
+  .meta { font:.62rem var(--mono); color:var(--ink-faint); margin-bottom:1.6rem; }
+  a { color:var(--gold); }
+  .card { background:var(--surface); border:1px solid var(--hairline); border-radius:10px;
+          padding:.85rem 1rem; margin:.6rem 0; }
+  .edge { font-size:1rem; color:#f0ead8; }
+  .cite { font:.62rem var(--mono); color:var(--gold-dim); margin-left:.5rem; white-space:nowrap; }
+  .row2 { display:flex; gap:.6rem; align-items:baseline; flex-wrap:wrap; margin:.3rem 0 .35rem; }
+  .badge { font:.58rem var(--mono); letter-spacing:.06em; padding:.12rem .45rem; border-radius:99px;
+           border:1px solid var(--hairline); white-space:nowrap; }
+  .b-upheld { color:#7fc9a0; border-color:#2f5c46; }
+  .b-partially-upheld { color:#d9b25f; border-color:#6b5726; }
+  .b-both-defensible { color:#9ec9c3; border-color:#39575c; }
+  .b-not-upheld { color:var(--ink-faint); }
+  .src { font:.58rem var(--mono); color:var(--ink-faint); }
+  .obj, .res { font-size:.84rem; line-height:1.5; color:var(--ink); }
+  .obj b, .res b { color:var(--ink-faint); font-weight:600; font-size:.7rem; letter-spacing:.08em;
+                   text-transform:uppercase; font-family:var(--mono); }
+  .back { display:inline-block; margin-bottom:1.4rem; font-size:.85rem; text-decoration:none; }
+  .empty { color:var(--ink-faint); font-style:italic; }
+</style>
+</head>
+<body>
+<main>
+  <a class="back" href="/">← back to the atlas</a>
+  <div class="eyebrow">The Symbolic World</div>
+  <h1>Dispute log</h1>
+  <p class="intro">Every challenged connection, the objection raised, and the published outcome —
+  whether the challenge came from our own cross-vendor audits or from a reader.
+  This log is the falsification offer working in public: <b>upheld</b> disputes are corrected or
+  removed; <b>both-defensible</b> cases are documented without change; <b>not-upheld</b> objections
+  are answered. To dispute an edge, open its citation in the atlas, use the dispute button, and
+  submit the report as a <a href="https://github.com/sudamana23/symbolic-world/issues">GitHub issue</a>.</p>
+  <div class="meta" id="meta"></div>
+  <div id="log"><p class="empty">Loading…</p></div>
+</main>
+<script>
+fetch('./disputes.json').then(r => r.json()).then(d => {
+  document.getElementById('meta').textContent =
+    `${d.disputes.length} disputes on record · updated ${d.updated}`
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))
+  document.getElementById('log').innerHTML = d.disputes.map(x => `
+    <div class="card">
+      <div><span class="edge">${esc(x.edge)}</span><span class="cite">${esc(x.citation)}</span></div>
+      <div class="row2">
+        <span class="badge b-${esc(x.outcome)}">${esc(x.outcome.replace('-', ' '))}</span>
+        <span class="src">${esc(x.source)} · ${esc(x.date)}</span>
+      </div>
+      <div class="obj"><b>Objection</b> — ${esc(x.objection)}</div>
+      <div class="res"><b>Outcome</b> — ${esc(x.resolution)}</div>
+    </div>`).join('')
+}).catch(() => {
+  document.getElementById('log').innerHTML = '<p class="empty">Could not load the dispute log.</p>'
+})
+</script>
+</body>
+</html>
