@@ -148,6 +148,10 @@ Coverage beyond CW14/CW12 is thin; eleven volumes untouched. The relation vocabu
 
 ## 10. Summary of results
 
+**The compounded result, in one sentence: raw AI extraction on this corpus gets roughly one claim in four wrong; after the pipeline, an independent vendor auditing a full volume in its own words could uphold errors in one claim in a hundred — a ~25-fold error reduction, with every surviving error a nuance of attribution rather than a fabrication or reversal, at about ten cents per verified claim, and every claim checkable by any reader in about two minutes.**
+
+The funnel: ~25% flawed (E0, ungated) → fabrication eliminated (quote check) → structure errors caught at 92–96% (E1b) → voice swept graph-wide (E3) → independently re-audited across vendors → **1.0% upheld residual (E7), none of it fabrication**. Table 1 decomposes this row by row.
+
 **Table 1 — pipeline step · risk · mitigant · experiment · headline result.**
 
 | Pipeline step | Risk | Mitigant | Experiment | Headline result |
