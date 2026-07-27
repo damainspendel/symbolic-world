@@ -161,6 +161,28 @@ All seeds, keys, verdicts, and scoring scripts are in `docs/experiments/` and th
 | E6 | Does a *different vendor* agree with the published graph? | 0 unsupported in 100; 4 nuance corrections upheld |
 | E7 | …even without our rubric, on a full volume? | 1.0% upheld residual in 407; rubric effect ≈ zero |
 
+And the same experiments placed where they bite — each stage of the pipeline is measured by the experiment(s) beneath it:
+
+```
+ PROPOSER ──▶ MECHANICAL ──▶ STAGE 1  ──▶ STAGE 2  ──▶ CROSS-VENDOR ──▶ MERGE ──▶ PUBLISHED
+ Opus 4.8     PRE-CHECK      STRUCTURE    VOICE         CHECK                      GRAPH
+    ▲             ▲          GATE ▲       SPECIALIST    Gemini ▲                     ▲
+    │             │               │            ▲               │                     │
+┌───┴────────┐┌───┴───────┐┌──────┴─────┐┌─────┴─────┐┌────────┴───────┐┌────────────┴──────────┐
+│ E0 what if ││ canaries: ││ E1/E1b     ││ E5 seeded ││ E6 shared-     ││ E2 adversarial audit  │
+│ we skipped ││ 5 planted ││ seeded     ││ voice     ││ rubric audit   ││    (0 errors in 30)   │
+│ the gates? ││ corrupt-  ││ errors:    ││ errors:   ││ (0 unsupported ││ E3 full-graph voice   │
+│ (~25%      ││ ions MUST ││ 86% sens / ││ 5/6       ││  in 100)       ││    sweep (10.3% fixed)│
+│ flawed)    ││ be caught ││ 93% spec   ││ caught    ││ E7 rubric-free ││ E4 independent        │
+│ E4 re-mine:││ on every  ││ (n=200,    ││ (small n) ││ full volume    ││    re-extraction:     │
+│ same core  ││ test run  ││ with CIs)  ││           ││ (1.0% residual)││    core claims stable │
+│ claims?    ││           ││            ││           ││                ││                       │
+└────────────┘└───────────┘└────────────┘└───────────┘└────────────────┘└───────────────────────┘
+  measures      tests the    calibrates    calibrates    validates the     audits the published
+  the raw       validators   this gate     this gate     new stage         artifact end-to-end
+  proposer      themselves
+```
+
 
 **E0 — Retro-verification of ungated extraction (n=238).** All references mined before the gate became mandatory were re-verified by the standard gate: 178 confirmed, 54 corrected, 6 edges deleted — a **25.2% flaw rate for unverified LLM extraction** on this corpus, consistent with public benchmarks. Dominant classes: voice conflation, identity overreach, referent drift, direction reversal; deletions included a spliced quote and a reversed symbolization.
 
