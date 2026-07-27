@@ -1,0 +1,7 @@
+{
+  "vendor": "gemini",
+  "model": "auto",
+  "_comment": "model: 'auto' = runner queries the API's model list and picks the strongest available Pro-class reasoning model, and records which one it used in the experiment log. To pin a specific model, replace 'auto' with its exact name, e.g. 'gemini-3-pro'.",
+  "key_file": "pipeline/work/gemini.key",
+  "runs": ["calibration-replay-E1", "calibration-replay-E5", "audit-100-stratified"]
+}
