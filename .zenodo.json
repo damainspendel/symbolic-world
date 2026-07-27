@@ -17,6 +17,6 @@
                "cross-vendor audit", "falsifiability"],
   "related_identifiers": [
     {"identifier": "https://symbolicworld.observer", "relation": "isSupplementTo", "scheme": "url"},
-    {"identifier": "https://github.com/sudamana23/symbolic-world", "relation": "isDerivedFrom", "scheme": "url"}
+    {"identifier": "https://github.com/damianspendel/symbolic-world", "relation": "isDerivedFrom", "scheme": "url"}
   ]
 }

@@ -147,7 +147,7 @@ function renderPanel(node) {
       'Edition checked: [fill in]',
       'Notes (optional): [anything the record should say]',
       '',
-      'Submit at: https://github.com/sudamana23/symbolic-world/issues/new?template=confirm.yml',
+      'Submit at: https://github.com/damianspendel/symbolic-world/issues/new?template=confirm.yml',
       'Confirmations become part of the edge\u2019s public verification record.'
     ].join('\n')
     navigator.clipboard.writeText(report).then(() => {
@@ -170,13 +170,13 @@ function renderPanel(node) {
       'My objection (what the cited paragraph actually says):',
       '  [describe here — please quote the paragraph]',
       '',
-      'Submit at: https://github.com/sudamana23/symbolic-world/issues/new?template=dispute.yml',
+      'Submit at: https://github.com/damianspendel/symbolic-world/issues/new?template=dispute.yml',
       '(use the dispute template). Disputed edges are',
       're-reviewed with this objection attached; outcomes are published at',
       'https://symbolicworld.observer/disputes.html'
     ].join('\n')
     navigator.clipboard.writeText(report).then(() => {
-      el.textContent = 'Report copied ✓ — submit at github.com/sudamana23/symbolic-world/issues'
+      el.textContent = 'Report copied ✓ — submit at github.com/damianspendel/symbolic-world/issues'
       setTimeout(() => { el.textContent = 'Dispute this edge — copy report' }, 3000)
     })
   }))

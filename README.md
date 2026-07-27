@@ -37,7 +37,7 @@ audits, stability probes, cross-vendor audits E6–E7) and the standing review i
 
 Every citation in the atlas expands to its verification record and a **dispute
 button** that copies a prefilled report. Submit it as a
-[GitHub issue](https://github.com/sudamana23/symbolic-world/issues) — disputed
+[GitHub issue](https://github.com/damianspendel/symbolic-world/issues) — disputed
 edges are re-reviewed with your objection attached, and outcomes (upheld /
 corrected / removed) are published here. If a cited paragraph does not support
 its edge, that finding falsifies the edge, publicly.
