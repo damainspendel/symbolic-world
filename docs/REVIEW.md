@@ -9,7 +9,7 @@
 |---|---|
 | Graph | **227 nodes · 610 edges · 634 references**, 461 distinct CW paragraphs, 9 volumes |
 | Verification | **634/634 (100%)** gate-verified with model+date provenance |
-| Claim provenance | 423 jung-asserts · 151 jung-reports-parallel · 60 jung-quotes-source (74 named sources) |
+| Claim provenance | 420 jung-asserts · 155 jung-reports-parallel · 59 jung-quotes-source (74 named sources) |
 | Coverage | CW14 complete end-to-end (396 refs); CW12 at 87 and growing; 7 further volumes sampled |
 | Cost to date | ≈ $60–90 total model spend; ≈ **$0.09–0.12 per fully verified citation** |
 
@@ -71,8 +71,8 @@ tests/test_graph.py (validators + canaries)     launchd service :8788 (~/Library
 | **Retro-verification sweep** (all pre-gate edges) | 238 refs | 178 confirmed · 54 corrected · 6 edges deleted → **~25% flaw rate in ungated LLM extraction** |
 | **Adversarial audit** (break-each-edge prompt) | 30 refs, seed 20260725 | **0 content/direction/fabrication errors**; 4 modality refinements (13.3%), applied |
 | **Exp 1 — Gate calibration** (seeded corruption, blind) | 40 items, seed 20260726 | **Specificity 100%** (20/20 clean passed). **Sensitivity 75%**: reversals **5/5**, object swaps **5/5**, overreach 3/5, voice flips **2/5** |
-| **Exp 2 — Modality sweep** (narrow claim-type/hedge audit) | 381/634 refs (3 of 5 batches; 2 held on spend limit) | **45 flagged (11.8%)** — 36 claim-type demotions, 9 source fixes, 9 hedge downgrades — all applied. Rate by graph age: oldest edges 19% → newest 5.5% |
-| **Exp 3 — Stability probe** (blind re-mine, no prior triples) | staged; window A attempted | pending (spend limit); inputs + reference sets committed |
+| **Exp 3 — Modality sweep** (narrow claim-type/hedge audit) | **634/634 refs (complete)** | **65 flagged (10.3%)** — 50 claim-type (incl. 5 reverse-direction), 10 source, 15 hedge fixes — all applied. Age gradient 18.9% → 5.6% |
+| **Exp 4 — Stability probe** (blind re-mine, no prior triples) | 2 windows × 20 edges | **37.5% strict top-20 pair overlap** (35% / 40%); core theses stable; non-overlap = complementary edges + schema variants |
 | **Recent pipeline precision** | last 3 batches | **60/60 SUPPORTED (three consecutive perfect batches)** |
 
 **Discoveries worth publishing:**
@@ -129,8 +129,7 @@ chain — proposer and verifier share a vendor (assumption #10).
 
 ## 6. Immediate queue
 
-1. Finish modality sweep batches 4–5 (held; ~$2 when budget returns).
-2. Run stability probe A/B + scoring (~$2–3) — completes Experiment 3.
+1. ~~Modality sweep~~ ✅ complete (65/634 fixed). 2. ~~Stability probe~~ ✅ complete (37.5%).
 3. Cross-vendor tier on your go + API key (~$5–10).
 4. Community verification pilot per `docs/ASSUMPTIONS.md` §E (50-edge stratified
    sample, 2–3 Jungian reviewers, κ vs machine gate).
