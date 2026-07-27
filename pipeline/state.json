@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-27T08:30",
+ "updated": "2026-07-27T10:50",
  "note": "all listed candidate batches are merged into seed.json (see git log); retro_gate*/audit verdicts likewise applied",
  "graph": {
   "nodes": 227,
@@ -130,7 +130,15 @@
    "id": "exp3-probe",
    "status": "held",
    "note": "probeA/probeB inputs + probe_reference.json committed; run when budget returns"
+  },
+  {
+   "id": "b-union-1",
+   "status": "stage1-gated",
+   "result": "16/5/0",
+   "note": "HELD for 12:03 window: apply stage-1 corrections, run stage-2 voice specialist, merge; then union batch 2 (fresh window) + CW12 series under pipeline v2",
+   "candidates": "pipeline/batches/b-union-1_candidates.json",
+   "verdicts": "pipeline/batches/b-union-1_verdicts.json"
   }
  ],
- "next": "resume sweep 4-5, probe A/B; cross-vendor tier on user go"
+ "next": "12:03 wake: finish b-union-1 (stage2+merge), then b-union-2, then CW12 \u00a744-110 first dream-series batch"
 }
