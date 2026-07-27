@@ -145,8 +145,8 @@
   },
   {
    "id": "b-union-2",
-   "status": "stage1-running",
-   "note": "mined 20 (Adam ch. \u00a7555-620), 13 dup-pair (coverage re-confirmation), 7 novel at stage-1 gate; new node en-soph pending"
+   "status": "merged",
+   "result": "mined 20; 13 dup-pair (coverage re-confirmation); 7 novel: stage1 6/1/0, stage2 0 flags; merged 7 edges, 2 new nodes (en-soph, tifereth)"
   },
   {
    "id": "exp7-rubricfree",

@@ -1166,6 +1166,16 @@
    "id": "man",
    "type": "Concept",
    "label": "Man (homo)"
+  },
+  {
+   "id": "en-soph",
+   "type": "Concept",
+   "label": "En Soph"
+  },
+  {
+   "id": "tifereth",
+   "type": "Concept",
+   "label": "Tifereth (sefira)"
   }
  ],
  "edges": [
@@ -12396,6 +12406,134 @@
      "paragraph": 420,
      "quote": "not directed to his own salvation through God’s grace, but to the liberation of God from the darkness of matter",
      "claim_type": "jung-asserts",
+     "confidence": "high",
+     "verified": true,
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-27",
+     "modality_swept": true
+    }
+   ]
+  },
+  {
+   "subject": "adam",
+   "relation": "signifies",
+   "object": "lapis",
+   "references": [
+    {
+     "volume": "14",
+     "paragraph": 569,
+     "quote": "Since Adam signifies not only the beginning of the work, the prima materia, but also the end, the lapis",
+     "claim_type": "jung-asserts",
+     "confidence": "high",
+     "verified": true,
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-27",
+     "modality_swept": true
+    }
+   ]
+  },
+  {
+   "subject": "adam",
+   "relation": "is",
+   "object": "inner-man",
+   "references": [
+    {
+     "volume": "14",
+     "paragraph": 606,
+     "quote": "For Adam is “interior homo noster,” the Primordial Man in us.",
+     "claim_type": "jung-asserts",
+     "confidence": "high",
+     "verified": true,
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-27",
+     "modality_swept": true
+    }
+   ]
+  },
+  {
+   "subject": "adam",
+   "relation": "was-created-as",
+   "object": "the-statue",
+   "references": [
+    {
+     "volume": "14",
+     "paragraph": 559,
+     "quote": "An old tradition says that Adam was created “a lifeless statue.”",
+     "claim_type": "jung-reports-parallel",
+     "confidence": "high",
+     "verified": true,
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-27",
+     "modality_swept": true
+    }
+   ]
+  },
+  {
+   "subject": "malchuth",
+   "relation": "is-called",
+   "object": "the-statue",
+   "references": [
+    {
+     "volume": "14",
+     "paragraph": 568,
+     "quote": "the Haye Sarah on Genesis 28:22 says that Malchuth is called the “statue” when she is united with Tifereth",
+     "claim_type": "jung-quotes-source",
+     "source": "Zohar, Haye Sarah on Genesis 28:22",
+     "confidence": "high",
+     "verified": true,
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-27",
+     "modality_swept": true
+    }
+   ]
+  },
+  {
+   "subject": "anthropos",
+   "relation": "proceeded-from",
+   "object": "en-soph",
+   "references": [
+    {
+     "volume": "14",
+     "paragraph": 594,
+     "quote": "From En Soph, from the most general One, was produced the universe, which is Adam Kadmon, who is One and Many",
+     "claim_type": "jung-quotes-source",
+     "source": "Knorr von Rosenroth, Tractatus de Revolutionibus Animarum",
+     "confidence": "high",
+     "verified": true,
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-27",
+     "modality_swept": true
+    }
+   ]
+  },
+  {
+   "subject": "anthropos",
+   "relation": "takes-the-place-of",
+   "object": "tifereth",
+   "references": [
+    {
+     "volume": "14",
+     "paragraph": 592,
+     "quote": "Accordingly, Adam Kadmon here takes the place of Tifereth.",
+     "claim_type": "jung-asserts",
+     "confidence": "high",
+     "verified": true,
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-27",
+     "modality_swept": true
+    }
+   ]
+  },
+  {
+   "subject": "anthropos",
+   "relation": "is",
+   "object": "tetrameria",
+   "references": [
+    {
+     "volume": "14",
+     "paragraph": 619,
+     "quote": "Adam Kadmon is not merely the universal soul ... but is himself the process of transformation, its division into three or four parts (trimeria or tetrameria)",
+     "claim_type": "jung-reports-parallel",
      "confidence": "high",
      "verified": true,
      "verified_by": "claude-fable-5",
