@@ -12,8 +12,13 @@ const labelOf = id => (atlas.nodes.find(n => n.id === id) || {}).label || id
 
 // dispute history per current edge (key: "subject|relation|object") — loaded async
 const DISPUTES = {}
+const CONFIRMS = {}
 fetch('./disputes.json').then(r => r.json()).then(d => {
   d.disputes.forEach(x => (x.current_edges || []).forEach(k => { (DISPUTES[k] = DISPUTES[k] || []).push(x) }))
+  const sel = cy.$('node:selected'); if (sel.nonempty()) renderPanel(sel[0])
+}).catch(() => {})
+fetch('./confirmations.json').then(r => r.json()).then(d => {
+  d.confirmations.forEach(x => (x.current_edges || []).forEach(k => { (CONFIRMS[k] = CONFIRMS[k] || []).push(x) }))
   const sel = cy.$('node:selected'); if (sel.nonempty()) renderPanel(sel[0])
 }).catch(() => {})
 const page = (v, p) => atlas.pages[`${v}:${p}`]
@@ -90,7 +95,9 @@ function renderPanel(node) {
       ? `<span class="rel">${esc(e.data('relation'))} →</span> ${esc(labelOf(other))}`
       : `${esc(labelOf(other))} <span class="rel">→ ${esc(e.data('relation'))}</span>`
     const r = (e.data('refs') || [])[0]
-    const dHist = DISPUTES[`${e.data('source')}|${e.data('relation')}|${e.data('target')}`] || []
+    const eKey = `${e.data('source')}|${e.data('relation')}|${e.data('target')}`
+    const dHist = DISPUTES[eKey] || []
+    const cHist = CONFIRMS[eKey] || []
     const cite = r ? `<span class="cite-toggle" title="Show verification record">CW ${r.volume} §${r.paragraph}${r.verified ? ' <span class="vcheck">✓</span>' : ''}${dHist.length ? ' <span class="dmark" title="This edge has public dispute history">⚖</span>' : ''}</span>` : ''
     const pg = r ? page(r.volume, r.paragraph) : null
     const q = r ? `<blockquote>${esc(r.quote)}</blockquote>` : ''
@@ -104,6 +111,8 @@ function renderPanel(node) {
         <div><b>Verification:</b> ${r.verified ? `passed independent review (${esc(r.verified_by || 'gate')}, ${esc(r.verified_date || '')}) — the full paragraph was checked for support, direction, quote fidelity, and attribution` : 'not yet independently reviewed'}</div>
         <div><b>Check it yourself:</b> CW ${r.volume} §${r.paragraph}${pg ? `, Bollingen p.${pg}` : ''}</div>
         ${dHist.map(x => `<div class="dhist"><b>Disputed</b> (${esc(x.date)}, ${esc(x.outcome)}): ${esc(x.objection)} <span class="dhist-res">→ ${esc(x.resolution)}</span> <a href="/disputes.html" class="dhist-link">full log</a></div>`).join('')}
+        ${cHist.length ? `<div class="chist"><b>Reader-confirmed ×${cHist.length}</b> — a human checked the cited paragraph${cHist.length>1?'s':''} (${cHist.map(x=>esc(x.date)).join(', ')}) <a href="/disputes.html" class="dhist-link">log</a></div>` : ''}
+        <button class="confirm-btn" data-report="${encodeURIComponent(JSON.stringify({ edge: `${e.data('source')} —${e.data('relation')}→ ${e.data('target')}`, citation: `CW ${r.volume} §${r.paragraph}` + (pg ? ` (Bollingen p.${pg})` : ''), quote: r.quote, claim_type: r.claim_type || '' }))}">Confirm this edge — I checked the book</button>
         <button class="dispute-btn" data-report="${encodeURIComponent(JSON.stringify({ edge: `${e.data('source')} —${e.data('relation')}→ ${e.data('target')}`, citation: `CW ${r.volume} §${r.paragraph}` + (pg ? ` (Bollingen p.${pg})` : ''), quote: r.quote, claim_type: r.claim_type || '', verified_by: r.verified_by || '', verified_date: r.verified_date || '' }))}">Dispute this edge — copy report</button>
       </div>` : ''
     return `<div class="conn" data-node="${esc(other)}"><div class="conn-h">${dir}<span class="cite">${cite}</span></div>${q}<div class="conn-f">${prov}${open}</div>${evidence}</div>`
@@ -122,6 +131,29 @@ function renderPanel(node) {
     ev.stopPropagation()
     const box = el.closest('.conn').querySelector('.evidence')
     if (box) box.classList.toggle('hidden')
+  }))
+  // confirm button: copy a structured, prefilled human-confirmation report
+  p.querySelectorAll('.confirm-btn').forEach(el => el.addEventListener('click', ev => {
+    ev.stopPropagation()
+    const d = JSON.parse(decodeURIComponent(el.dataset.report))
+    const report = [
+      'CONFIRMATION REPORT — The Symbolic World',
+      `Edge: ${d.edge}`,
+      `Citation: ${d.citation}`,
+      `Quote: "${d.quote}"`,
+      `Claim type: ${d.claim_type}`,
+      '',
+      'I checked the cited paragraph in the Collected Works and confirm the edge.',
+      'Edition checked: [fill in]',
+      'Notes (optional): [anything the record should say]',
+      '',
+      'Submit at: https://github.com/sudamana23/symbolic-world/issues/new?template=confirm.yml',
+      'Confirmations become part of the edge\u2019s public verification record.'
+    ].join('\n')
+    navigator.clipboard.writeText(report).then(() => {
+      el.textContent = 'Report copied \u2713 \u2014 submit via the confirm template'
+      setTimeout(() => { el.textContent = 'Confirm this edge \u2014 I checked the book' }, 3000)
+    })
   }))
   // dispute button: copy a structured, prefilled dispute report to the clipboard
   p.querySelectorAll('.dispute-btn').forEach(el => el.addEventListener('click', ev => {

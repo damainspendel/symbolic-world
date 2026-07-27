@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Dispute log — The Symbolic World</title>
+<title>Verification log — The Symbolic World</title>
 <style>
   :root { --ground:#0e1116; --gold:#d9b25f; --gold-dim:#a9863f; --ink:#c9d0d6; --ink-faint:#7a828b;
           --surface:rgba(18,23,30,.92); --hairline:#2a323c;
@@ -41,15 +41,21 @@
 <main>
   <a class="back" href="/">← back to the atlas</a>
   <div class="eyebrow">The Symbolic World</div>
-  <h1>Dispute log</h1>
+  <h1>Verification log</h1>
   <p class="intro">Every challenged connection, the objection raised, and the published outcome —
   whether the challenge came from our own cross-vendor audits or from a reader.
   This log is the falsification offer working in public: <b>upheld</b> disputes are corrected or
   removed; <b>both-defensible</b> cases are documented without change; <b>not-upheld</b> objections
   are answered. To dispute an edge, open its citation in the atlas, use the dispute button, and
   submit the report as a <a href="https://github.com/sudamana23/symbolic-world/issues/new?template=dispute.yml">GitHub issue</a>. Admissibility is itself gated: a dispute must state what the cited paragraph actually says — reports that do not engage the paragraph are closed as incomplete, without adjudication.</p>
+  <p class="intro">Readers can also <b>confirm</b> edges: check the cited paragraph in any edition and submit
+  a confirmation via the atlas's confirm button — human confirmations enter the edge's public verification
+  record. The machine gates are the floor; readers are the ceiling.</p>
   <div class="meta" id="meta"></div>
+  <h2 style="color:#e8e2d0;font-size:1.1rem;margin:1.2rem 0 .2rem">Disputes</h2>
   <div id="log"><p class="empty">Loading…</p></div>
+  <h2 style="color:#e8e2d0;font-size:1.1rem;margin:1.6rem 0 .2rem">Reader confirmations</h2>
+  <div id="clog"><p class="empty">Loading…</p></div>
 </main>
 <script>
 fetch('./disputes.json').then(r => r.json()).then(d => {
@@ -68,6 +74,19 @@ fetch('./disputes.json').then(r => r.json()).then(d => {
     </div>`).join('')
 }).catch(() => {
   document.getElementById('log').innerHTML = '<p class="empty">Could not load the dispute log.</p>'
+})
+fetch('./confirmations.json').then(r => r.json()).then(d => {
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))
+  document.getElementById('clog').innerHTML = d.confirmations.length ? d.confirmations.map(x => `
+    <div class="card">
+      <div><span class="edge">${esc(x.edge)}</span><span class="cite">${esc(x.citation)}</span></div>
+      <div class="row2"><span class="badge b-upheld">confirmed</span>
+        <span class="src">${esc(x.by || 'reader')} · ${esc(x.edition || '')} · ${esc(x.date)}</span></div>
+      ${x.note ? `<div class="res"><b>Note</b> — ${esc(x.note)}</div>` : ''}
+    </div>`).join('')
+    : '<p class="empty">No reader confirmations yet — be the first: open any citation in the atlas and use the confirm button.</p>'
+}).catch(() => {
+  document.getElementById('clog').innerHTML = '<p class="empty">Could not load confirmations.</p>'
 })
 </script>
 </body>

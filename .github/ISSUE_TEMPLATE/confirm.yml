@@ -1,0 +1,32 @@
+name: Confirm an edge (human verification)
+description: You checked the cited paragraph against the Collected Works and confirm the edge. Reader confirmations become part of the edge's public verification record.
+title: "[Confirm] "
+labels: ["confirmation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you — reader confirmations are the **human tier** of this project's verification chain.
+        Use the **confirm button** in the atlas (expand any citation's ✓) to copy a prefilled report and paste it below.
+        Confirmations are reviewed (same admissibility rule as disputes: the report must engage the cited paragraph)
+        and then published in the [verification log](https://symbolicworld.observer/disputes.html) and the edge's evidence view.
+  - type: textarea
+    id: report
+    attributes:
+      label: Confirmation report
+      description: Paste the prefilled report from the atlas.
+      render: text
+    validations:
+      required: true
+  - type: input
+    id: edition
+    attributes:
+      label: Edition checked
+      description: e.g. "Bollingen hardcover CW 14, 2nd ed." or "Princeton digital edition"
+    validations:
+      required: true
+  - type: textarea
+    id: note
+    attributes:
+      label: Anything the record should say (optional)
+      description: Nuances you noticed, e.g. "supported, but the hedge is stronger than 'medium' suggests".

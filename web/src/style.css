@@ -126,3 +126,10 @@ body {
 .dhist-link { color: var(--gold); font-size: 0.62rem; }
 #disputes-link { font: 0.62rem var(--mono); color: var(--ink-faint); text-decoration: none; letter-spacing: 0.05em; white-space: nowrap; }
 #disputes-link:hover { color: var(--gold); }
+.confirm-btn {
+  margin-top: 0.4rem; margin-right: 0.4rem; padding: 0.25rem 0.55rem; font: 0.62rem var(--mono);
+  background: transparent; border: 1px solid var(--hairline); border-radius: 6px;
+  color: var(--ink-faint); cursor: pointer;
+}
+.confirm-btn:hover { border-color: #7fc9a0; color: #7fc9a0; }
+.chist { margin-top: 0.35rem; padding-top: 0.35rem; border-top: 1px dashed var(--hairline); color: #7fc9a0; }
