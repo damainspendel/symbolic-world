@@ -6,31 +6,41 @@
 *Draft v2.0 (arXiv-track) — 27 July 2026 · Artifact: [symbolicworld.observer](https://symbolicworld.observer) · Dataset & ledger: project repository, release `v1.0-cw14`+*
 
 ---
-
 ## Abstract
 
 **This paper's contribution is primarily a methodology — and secondarily the verified dataset it produced.** Language models extract knowledge-graph facts at 30–66% accuracy and hallucinate 11–57% of citations in deployed systems; for scholarship, that is unusable. We build a knowledge graph of C. G. Jung's *Collected Works* — 233 concepts and symbols, 634 relations, 659 references, each anchored to a numbered paragraph with a verbatim quote of at most 25 words — under one rule: **no claim is published until it passes a mechanical check that its quote exists in the cited paragraph, an independent review by a model from a different family than the proposer, and an audit by a model from a different vendor.** Every reference is also typed by rhetorical voice — Jung's own claim, doctrine he reports, or a source he quotes — because voice confusion is the error that dominated every audit we ran (E2–E3, E6–E7). We measure the pipeline rather than ask anyone to trust it. Five numbers carry the result: unverified extraction ran at a **~25% flaw rate** on this corpus; the calibrated verifier catches **86% of deliberately seeded corruptions** (95% CI 78–91%) while wrongly flagging at most 7% of clean items; an adversarial audit of published references found **zero content errors**; a full-volume audit by a second vendor, judging in its own words, upheld a **1.0% residual error rate** — none of them fabrications or reversals; and the marginal cost is **$0.09–0.12 per verified citation**. All error rates, corruption seeds, and adjudications are published with the artifact (a plain-language guide to the statistics is included). The trust chain ends in humans, not models: every edge carries a check-it-yourself pointer, and live dispute and confirmation channels feed a public per-edge verification log. The machines do the hard yards; human judgement has the last word.
 
-## 1. Introduction: the gap
+## 1. The opportunity
 
-Jung's *Collected Works* run to twenty volumes of densely cross-referential prose in which the same symbol (Mercurius, the lion, salt, Luna) carries systematically different meanings by context and authority. The scholarly instruments available digitally are lexical — the [ARAS concordance](https://aras.org/concordance) indexes word occurrences with headings and context, and the [ARAS image archive](https://aras.org/about-us-0) indexes ~18,000 images — but no existing resource represents the corpus as citation-grade *semantic structure*: typed relations with paragraph-level anchors that can answer "what does Jung say the green lion *is*, and on whose authority?" General surveys confirm that [digital-humanities knowledge graphs](https://arxiv.org/abs/1803.03198) concentrate on collections metadata rather than interpretive content — precisely because interpretive claims are where automated extraction is least trustworthy.
+Jung's *Collected Works* run to twenty volumes of densely cross-referential prose in which the same symbol (Mercurius, the lion, salt, Luna) carries systematically different meanings by context and authority. The digital tools that exist are lexical — the [ARAS concordance](https://aras.org/concordance) indexes word occurrences; Princeton's digital edition searches full text — but no resource answers the question a reader actually has: *what does Jung say the green lion **is**, and on whose authority?*
 
-The trust problem is quantified in the NLP literature: LLM triple extractors score 29.84–66.07% fact accuracy ([KGGen](https://papers.neurips.cc/paper_files/paper/2025/file/2b368455e832d2b1a60bcad8c4c6481f-Paper-Conference.pdf) vs GraphRAG vs OpenIE; see also [RAG vs GraphRAG](https://arxiv.org/pdf/2502.11371)), and citation hallucination rates of 11–57% persist in deployed systems ([survey](https://arxiv.org/html/2508.15396v1); ["Cited but Not Verified"](https://arxiv.org/pdf/2605.06635)). Interpretive corpora add a subtler failure mode we call **voice conflation**: converting an author's *report* of a doctrine into the author's *own assertion*. Our production logs show this to be the single most frequent semantic error class in practice (§5, §6).
+Large language models make the answer look easy, and cheap: an AI reads the volumes, drafts the claims, and a public atlas appears for about ten cents a claim.
 
-**Contributions.** (1) A publication-gated pipeline for interpretive corpora combining deterministic verbatim anchoring with cross-family adversarial verification and typed rhetorical provenance; (2) a self-measuring evaluation methodology — retro-verification, seeded-corruption calibration of the verifier, adversarial audit, full-graph error-axis sweep, extraction-stability probing, and per-axis specialist calibration — with all rates published; (3) the artifact itself: the first citation-grade semantic graph of Jung's Collected Works, publicly explorable with per-citation verification records; (4) an honest accounting of what remains hard (attribution modality; shared-vendor verification), with costed mitigations.
+![Figure 1 — the naive view](figures/fig1_naive.svg)
 
-The graph is the demonstration; the claimed contribution is the approach. And the paper has a simple shape, worth stating up front: **there is a problem (§1); we built a machine to solve it (§3); the machine has known risks; for every risk we implemented a mitigation and ran an experiment to test it (§5, organized risk by risk); §7 tables what risk remains after all that; and the conclusion is not "the graph is correct" but something more useful — its error rate is known, small, named, and checkable by anyone.** One design choice runs through everything: the trust chain is built to end in humans, not models — evidence views, dispute and confirmation channels, and a community tier — because a chain of models, however cross-checked, cannot certify itself. Honest status today: the machine part is complete and measured; the human part is live as channels, with accumulated human verification still small.
+*Figure 1 — The opportunity: let the machines do the hard yards. This is also, unguarded, exactly what current tools do — and the rest of this paper is about why that is not good enough and what to do instead.*
 
-**Reader's map.** Four words are used precisely in this paper:
+This paper's shape, stated up front: **the naive pipeline has named risks (§2, with the literature that documents them in §3); for every risk we inserted a mitigation into the pipeline (§4); for every mitigation we ran an experiment to test whether it works (§5–6); §7 tables what risk remains; §8 what we haven't done; §9 what we learned.** One design choice runs through everything: the trust chain is built to end in humans, not models — because a chain of models, however cross-checked, cannot certify itself. Honest status today: the machine part is complete and measured; the human part is live as channels, with accumulated human verification still small.
 
-| Term | Meaning here | Where |
-|---|---|---|
-| **Method** | The rules: verbatim anchoring, independent gating, cross-vendor checking, calibration, human-terminal trust | §3 |
-| **Pipeline** | The per-batch machinery that enforces the rules (proposer → pre-check → gates → cross-vendor → merge), with its transaction ledger | §3 |
-| **Architecture** | The running system: corpus extraction, `seed.json`, integrity tests + canaries, the public Atlas, the verification log | §3–4 |
-| **Experiments (E0–E7)** | The measurements *of* the pipeline — each answers one question, indexed at the top of §5 | §5 |
+## 2. The problem: what can go wrong
 
-## 2. Related work
+Reading is where the danger is. When a model turns prose into claims, seven things can go wrong — five in the reading itself, two in any machinery you build to catch them:
+
+- **R1 — the statement is wrong or invented.** The model asserts something the text does not say.
+- **R2 — the quote is fabricated.** The supporting quotation does not exist in the cited paragraph.
+- **R3 — the meaning is wrong.** Right ingredients, wrong dish: direction reversed, wrong object, "is" where the text says "is like".
+- **R4 — the context is wrong.** The claim is real but the *voice* is misassigned: Jung's own view, doctrine he reports, or a source he quotes — and how firmly it is said.
+- **R5 — the selection is arbitrary.** Why these claims and not others? A different run might paint a different picture.
+- **R6 — the checkers share blood with the writer.** If proposer and verifier come from one vendor, they may share blind spots that no one inside the loop can see.
+- **R7 — the referee is one of ours.** When checkers disagree, some judge must rule — and if that judge is also our model, it is marking its own homework.
+
+![Figure 2 — where the risks live](figures/fig2_risks.svg)
+
+*Figure 2 — The same naive pipeline, with its risks made visible. R1–R5 arise at the reading step; R6–R7 arise from the fix itself.*
+
+## 3. What is known about these risks (related work)
+
+The risks above are documented, not hypothetical:
 
 **LLM KG extraction.** [KGGen](https://papers.neurips.cc/paper_files/paper/2025/file/2b368455e832d2b1a60bcad8c4c6481f-Paper-Conference.pdf), GraphRAG, OpenIE establish unverified accuracy baselines (30–66%); [schema-aware triple verification](https://arxiv.org/pdf/2604.04190) and prover–skeptic [dialogue approaches](https://arxiv.org/pdf/2603.06974) add post-hoc verification. We differ in making verification a *mandatory publication gate*, grounding it in the full source paragraph, and calibrating the verifier itself with seeded corruptions.
 
@@ -39,6 +49,16 @@ The graph is the demonstration; the claimed contribution is the approach. And th
 **LLM-as-judge reliability.** [Self-preference bias](https://www.researchgate.net/publication/385353198_Self-Preference_Bias_in_LLM-as-a-Judge) (measured −38% to +90%) and [debiasing work](https://arxiv.org/pdf/2508.09724) motivate our hard constraint that proposer and verifier come from different model families; our seeded-corruption calibration (§6.2) is, to our knowledge, the first published sensitivity/specificity measurement of a verification gate in a humanities KG setting.
 
 **Industry practice.** Production extraction pipelines converge on the same skeleton independently: schema-first design, typed mechanical validation with human escalation carrying the best-effort extraction ([production document-pipeline lessons](https://medium.com/alan/lessons-from-running-an-llm-document-processing-pipeline-in-production-33d87f99cdb1)), continuous calibration of automated judges against sampled expert judgment ([HITL evaluation practice](https://www.braintrust.dev/articles/best-human-in-the-loop-llm-evaluation-platforms-2026)), and verification loops with measured diminishing returns after ~2 rounds ([verification-loop patterns](https://timjwilliams.medium.com/llm-verification-loops-best-practices-and-patterns-07541c854fd8)). Dedicated KG fact-verification agents ([AgentKGV](https://arxiv.org/html/2607.09092)) treat verification as a first-class subsystem. Our pipeline is the documented, measured instance of this consensus applied end-to-end to an interpretive humanities corpus — orthodox where it should be (cross-model judging, staged validation, audit artifacts), novel where it counts (publication-gating, seeded-corruption calibration of the judge itself, per-axis specialist decomposition, rhetorical-voice provenance).
+
+## 4. The mitigants: growing the pipeline out of the risks
+
+Each risk in §2 forced a step into the pipeline. Figure 3 shows the result: the two-box dream of Figure 1 with four inserted checks, plus practices for the two risks that don't fit in a box.
+
+![Figure 3 — each risk gets a mitigant](figures/fig3_mitigants.svg)
+
+*Figure 3 — Steps 2–5 did not exist in Figure 1; each was inserted because a named risk forced it.*
+
+**What we borrowed.** Two lines of prior work shape the mitigants, and one neighbor shows the contrast:
 
 **Nearest existing artifacts.** No knowledge graph of Jung's Collected Works exists, to our knowledge. Jung's existing digital tooling is search, not relations: the [ARAS Concordance](https://aras.org/concordance) (a 25-year manual project offering word/topic search with quotes and context) and Princeton's New Complete Digital Edition (navigation and full-text search) both retrieve *occurrences* — neither represents what Jung said a symbol *is*, on whose authority, nor verifies such claims. The closest methodological neighbor is the [Darshana Graph](https://arxiv.org/abs/2606.18222) (2026): a 125K-record corpus of Indian philosophy with an LLM extraction pipeline and a candid account of its limitations — including cases where an independent embedding analysis *disagrees* with the graph's findings. The instructive contrast: Darshana reports extraction unreliability as a finding — its author explicitly identifies a randomly sampled precision evaluation as "the most valuable immediate extension of this work" — while our pipeline operationalizes exactly that extension and goes further: sampled precision evaluation is here a *publication precondition* (verbatim anchoring, calibrated gates, stratified and full-volume sampled audits E6–E7), with the measured residual published. Our annotators are so far models from two vendors rather than multiple humans; the human-annotator tier is the planned completion (§8). [Cultural-heritage KG work on scholarly debates](https://arxiv.org/pdf/2511.10354) combines LLMs with ontological engineering but likewise without per-claim verbatim gating or verifier calibration. We believe the combination presented here — mandatory mechanical quotation anchoring, independent cross-family gating as a publication gate, seeded-corruption calibration of the verifiers themselves, typed rhetorical voice, and a standing cross-vendor audit — has no published precedent as an integrated artifact.
 
@@ -76,34 +96,12 @@ The construction ledger (one commit per stage transition) plays the role of the 
 
 The correspondence is diagnostic, not decorative: our one systematically hard residual — *sympathetic reportage*, doctrine Jung reports **and** partially adopts — is exactly Vitali & Pasqual's permeation in mid-transit: a claim between the alchemists' world and Jung's own. Both our verifiers (across two vendors) fail on the same permeating items (E1/E6), which suggests the difficulty is a property of the epistemic structure of the text, not of any model — and that the right representation for such cases is an explicit permeation marker (our `confidence: medium` and logged both-defensible adjudications are informal versions of one) rather than a forced binary.
 
-## 3. Method
+**The pipeline in detail.**
 
 **Corpus.** Paragraph records `{volume, §, text, page}` are extracted mechanically from epub markup (§ numbers read from bracketed superscript markers, strictly-ascending filter; never inferred). A §→Bollingen-page concordance is carried per record. The corpus remains local; only ≤25-word verified quotes are published.
 
-**The pipeline, and how each stage is measured** (the experiments named in the boxes are reported in §5):
-
-```
- PROPOSER ──▶ MECHANICAL ──▶ STAGE 1  ──▶ STAGE 2  ──▶ CROSS-VENDOR ──▶ MERGE ──▶ PUBLISHED
- Opus 4.8     PRE-CHECK      STRUCTURE    VOICE         CHECK                      GRAPH
-    ▲             ▲          GATE ▲       SPECIALIST    Gemini ▲                     ▲
-    │             │               │            ▲               │                     │
-┌───┴────────┐┌───┴───────┐┌──────┴─────┐┌─────┴─────┐┌────────┴───────┐┌────────────┴──────────┐
-│ E0 what if ││ canaries: ││ E1/E1b     ││ E5 seeded ││ E6 shared-     ││ E2 adversarial audit  │
-│ we skipped ││ 5 planted ││ seeded     ││ voice     ││ rubric audit   ││    (0 errors in 30)   │
-│ the gates? ││ corrupt-  ││ errors:    ││ errors:   ││ (0 unsupported ││ E3 full-graph voice   │
-│ (~25%      ││ ions MUST ││ 86% sens / ││ 5/6       ││  in 100)       ││    sweep (10.3% fixed)│
-│ flawed)    ││ be caught ││ 93% spec   ││ caught    ││ E7 rubric-free ││ E4 independent        │
-│ E4 re-mine:││ on every  ││ (n=200,    ││ (small n) ││ full volume    ││    re-extraction:     │
-│ same core  ││ test run  ││ with CIs)  ││           ││ (1.0% residual)││    core claims stable │
-│ claims?    ││           ││            ││           ││                ││                       │
-└────────────┘└───────────┘└────────────┘└───────────┘└────────────────┘└───────────────────────┘
-  measures      tests the    calibrates    calibrates    validates the     audits the published
-  the raw       validators   this gate     this gate     new stage         artifact end-to-end
-  proposer      themselves
-```
 
 Every batch's passage through these stages is recorded in a **transaction ledger** (`pipeline/state.json`), one commit per stage transition — the construction history is replayable and auditable commit-by-commit.
-
 
 Rejected candidates stop at their stage; PARTIAL verdicts carry concrete corrections applied at merge; every WRONG is logged. Calibration (seeded corruption) attaches measured sensitivity/specificity to each verification stage (E1, E5).
 
@@ -117,35 +115,35 @@ Rejected candidates stop at their stage; PARTIAL verdicts carry concrete correct
 
 **The cross-vendor loop in detail.** Beyond the per-batch pre-merge check (stage 6 above), the second-vendor auditor also runs periodic full-graph audits — a workflow that audits the pipeline *and its own instruments*, not just edges. This is the loop that validated promoting the cross-vendor check into the pipeline (E6–E7 were its first two runs, executed retroactively over the already-published graph):
 
-```
-graph (stratified sample or full volume)
-   ▼
-CROSS-VENDOR AUDITOR — blind to prior verdicts
-   │  mode a) shared production rubric (comparable)
-   │  mode b) rubric-free, own-terms judgment (independent)
-   ▼
-ADJUDICATION — each disagreement ruled on against the paragraph; all rulings logged
-   ▼
-ADVERSARIAL CROSS-REVIEW — the auditor re-reviews the adjudicator's rulings
-   │  (conflict-of-interest control; 2 stronger remedies forced in E6)
-   ▼
-PROMPT-BIAS AUDIT — the auditor critiques the first-party gate prompt itself
-   ▼
-corrections → adjudicated merge → tests + canaries → deploy → commit
-```
-
+The loop runs: take a stratified sample or a full volume → the second vendor judges it blind (in two modes: our production rubric for comparability, or entirely in its own terms for independence) → every disagreement is adjudicated against the ground-truth paragraph and the ruling logged → the auditor then adversarially re-reviews the adjudicator's rulings (the conflict-of-interest control; it forced two stronger corrections in E6) → and finally the auditor critiques the first-party gate prompt itself for bias. Corrections re-enter the ordinary merge machinery, followed by tests, canaries, deploy, and commit.
 
 The lane exists because a single-vendor chain cannot see its own correlated blind spots (threat i) and its adjudicator cannot referee its own vendor's disputes (threat vi). Two design rules follow from its first runs: audit findings feed the same adjudicated-merge machinery as batch verdicts (no separate, weaker path into the graph), and each audit alternates between the shared production rubric (comparable, but convergence-biased — threat vii) and a rubric-free replication in which the second vendor judges support and severity entirely in its own terms.
 
 **Schema.** Nodes `{id, type ∈ {Concept, Operation, Symbol, Figure, Substance, Motif}, label}`; edges `{subject, relation (open vocabulary, verbatim-faithful), object, references[]}`; references `{volume, §, quote, claim_type, source?, confidence, verified, verified_by, verified_date}`.
 
-## 4. The artifact
-
+**The publish step in detail (the artifact).** 
 233 nodes · 634 edges · 659 references across 468 distinct paragraphs of nine CW volumes; CW 14 (*Mysterium Coniunctionis*) covered end-to-end (413 refs), CW 12 at 87 and growing. Claim types: 438 *jung-asserts*, 160 *jung-reports-parallel*, 61 *jung-quotes-source* over 74 named sources; 84 references carry hedged (medium) confidence. The public Atlas renders six typed regions with search and walkable citations; **every citation expands to its verification record** (claim-type explanation, source, confidence, verifier, date, check-it-yourself pointer), and the About panel carries a standing falsification offer. The mechanism has three parts: (1) **per-edge evidence view** — every citation in the Atlas expands to its full verification record (claim type with explanation, source, confidence, verifier and date, and a check-it-yourself pointer to the exact § and Bollingen page), so refutation requires only the printed edition and ~2 minutes; (2) **structured dispute reports** — the evidence view generates a prefilled dispute report (edge triple, citation, quote, verification record) that a reader submits through the [repository issue tracker](https://github.com/damianspendel/symbolic-world/issues); (3) **adjudication protocol** — dispute admissibility is itself gated (the channel requires an authenticated account, and a dispute must state what the cited paragraph actually says; reports that do not engage the paragraph are closed as incomplete without adjudication — the same paragraph-grounding rule the pipeline applies to itself); an admissible disputed edge is re-gated with the reader's objection attached to the payload; outcomes (upheld / corrected / removed) are published in the repository, and the edge's evidence view links its dispute history. Accumulated upheld disputes exceeding the published error bar falsify the pipeline claim itself, not just individual edges; (4) **reader confirmations** — the symmetric positive channel: a reader who checks a cited paragraph submits a confirmation report (same gated intake, same admissibility rule), and accepted confirmations are published in the verification log and displayed in the edge's evidence view ("reader-confirmed ×N") — human verification accumulating as per-edge provenance, edge by edge, which is the operational form of the human tier rather than a one-off study.
 
-## 5. Experiments and results
+## 5. The experiments: one view of the whole argument
 
-All seeds, keys, verdicts, and scoring scripts are in `docs/experiments/` and the pipeline ledger. A plain-language guide to every statistic used below is in `docs/STATS_GUIDE.md`. One line per experiment:
+Every mitigant gets measured. Figure 4 pins each experiment to the step it tests; Table 1 is the paper's spine — everything after it is detail.
+
+![Figure 4 — every mitigant gets measured](figures/fig4_experiments.svg)
+
+*Figure 4 — Blue chips name the experiment that measures each step. No box is taken on faith.*
+
+**Table 1 — pipeline step · risk · mitigant · experiment · headline result.**
+
+| Pipeline step | Risk | Mitigant | Experiment | Headline result |
+|---|---|---|---|---|
+| 1 · Propose | R1 wrong/invented statements | never publish raw — everything below | E0 | unchecked extraction: ~25% flawed |
+| 1 · Propose | R5 arbitrary selection | union-mining; claim-coverage framing | E4 | independent re-extraction finds the same core claims |
+| 2 · Quote check | R2 fabricated quotes | deterministic verbatim match | canaries | fabrication eliminated; 5 planted corruptions must be caught on every test run |
+| 3 · Structure gate | R3 wrong meaning | independent model family reads the full paragraph | E1b | 86% of planted errors caught (CI 78–91%); 92–96% on structure |
+| 4 · Voice gate | R4 wrong context | narrow specialist on the measured weak axis | E5 · E3 | graph-wide sweep fixed 10.3%; specialist directionally better, larger n pending |
+| 5 · Second vendor | R6 shared blind spots | Gemini re-judges — with our rubric and without | E6 · E7 | 0 unsupported /100; 1.0% residual /407; rubric effect ≈ 0 |
+| (refereeing) | R7 marking own homework | rulings published verbatim; second vendor re-reviews the referee | in E6 | 9/11 rulings upheld; 2 stronger corrections forced on us |
+| 6 · Publish | whatever still got through | adversarial audit; evidence views; reader confirm/dispute | E2 · humans | 0 content errors in 30; human data accumulating (early) |
 
 | E | Question it answers | Headline result |
 |---|---|---|
@@ -158,7 +156,7 @@ All seeds, keys, verdicts, and scoring scripts are in `docs/experiments/` and th
 | E6 | Does a *different vendor* agree with the published graph? | 0 unsupported in 100; 4 nuance corrections upheld |
 | E7 | …even without our rubric, on a full volume? | 1.0% upheld residual in 407; rubric effect ≈ zero |
 
-
+## 6. Experiment details
 
 **Risk 1 — raw AI extraction can't be trusted.** *Mitigation: never publish raw extraction. Test: measure how bad it actually is.*
 
@@ -192,7 +190,28 @@ All seeds, keys, verdicts, and scoring scripts are in `docs/experiments/` and th
 
 **Cost.** From production telemetry (~97K tokens/miner batch, ~56K/gate batch at $5/$25 and $10/$50 per MTok): ≈ **$0.09 per verified citation**, ≈ $0.12 including retro-verification, audit, and calibration overhead; total artifact cost ≈ $60–90.
 
-## 6. Discussion: what the process revealed
+## 7. Residual risks
+
+This section answers one question: **of the risks in §2, what remains after the mitigations of §4, measured by the experiments of §5–6?** (A 16-item assumptions register is published in `docs/ASSUMPTIONS.md`.)
+
+| # | Threat | Mitigation in force | Evidence / data | Residual |
+|---|---|---|---|---|
+| i | **Shared-substrate risk** — proposer and verifier share one vendor; correlated blind spots invisible to both | Cross-vendor check now a pipeline stage; full retro audits E6–E7 | 0 unsupported edges (n=100); 1.0% upheld residual (n=407); both vendors miss the *same* voice items → text ambiguity, not vendor blind spot | Low; both audits so far use one second vendor |
+| ii | **Single translation** — quotes are Hull/Bollingen-bound | § anchors are edition-stable; documented as assumption #1 | — | German *GW* cross-check deferred (§8) |
+| iii | **Salience sampling** — "strongest relations" per window, not exhaustive parse | Stability probe; union-mining; claim-coverage framing (§6.6) | E4: independent re-extraction recovers core claims (37.5% strict pair overlap, theses stable); union batch: 13/20 re-findings | Tier-2 claims sampled, not complete |
+| iv | **Calibration scope** — sensitivity measured only on four seeded corruption classes | Classes chosen from observed production errors; expanded to n=200 | E1b: 86% (CI 78–91%) / 93% spec; per-class 72–96% | Unknown error types unmeasured, by construction |
+| v | **Single-paragraph judging context** — cross-paragraph claims can be mis-scored | Documented; flagged cases adjudicated case-by-case | E7: 2 of 10 moderate flags were cross-paragraph context cases (both-defensible) | Standing; a windowed-context gate would cost ~2× |
+| vi | **Adjudication discretion** — the orchestrator (an Anthropic model) rules on disputes | All rulings published verbatim; adversarial cross-review by the second vendor | E6: cross-review accepted 9/11 rulings and forced 2 stronger corrections | Cross-review is one round; full independence awaits the human tier |
+| vii | **Shared-rubric convergence** — agreement partly an artifact of handing the auditor our rubric | Rubric-free replication mode (E7) | Identical detection profile with and without rubric; 95% cross-mode verdict consistency | Measured ≈ zero on tested classes |
+| viii | **Human tier still thin** — channels live, accumulated human data ≈ zero | Confirm/dispute channels shipped; community pilot planned (§8) | Channel e2e-tested; 0 reader confirmations to date (stated plainly) | The main open gap — see §8 |
+
+## 8. Limitations and future work
+
+Where §7 quantifies what remains of the *named* risks, this section lists the boundaries the experiments never touched.
+
+Coverage beyond CW14/CW12 is thin; eleven volumes untouched. The relation vocabulary is open (single-use relations pending a relation-family layer). The cross-vendor stage is implemented and standing (E6–E7; pre-publication for all future batches, §3); what remains is only its ongoing cadence commitment as the graph grows. Planned: **(a) expanded specialist calibration** — the E5 voice-specialist sample is still small (n=6 per axis) and the specialist-advantage claim awaits statistical resolution; **(b) community verification** — blind review by Jungian readers with the evidence view as instrument, human–machine κ published, human confirmations entering the per-edge provenance chain (protocol in `docs/ASSUMPTIONS.md` §E); **(c) a declarative verifier registry** — each verification stage defined as configuration (model, axis, prompt, output schema, and its own calibration set with last measured sensitivity/specificity) over one shared runner and verdict-applier, making specialist decomposition an operable pattern rather than a finding: a new corpus axis becomes a registry entry, and every stage's quality is attached, re-measurable data; **(d) German *Gesammelte Werke* cross-check; (e) DOI-registered dataset releases, including a native nanopublication serialization of the graph (each reference already carries the assertion/provenance/publication-info anatomy, §2); (f) explicit permeation markers for sympathetic reportage, adapting the DEC cognitive-worlds semantics (§2) to replace the informal confidence downgrade.**
+
+## 9. Discussion and takeaways
 
 1. **Verification is where the value is created.** A quarter of unverified extractions were flawed; after gating, adversarial audits find zero content errors. *Takeaway: the checking is not overhead on the product — it is the product.*
 
@@ -208,28 +227,11 @@ All seeds, keys, verdicts, and scoring scripts are in `docs/experiments/` and th
 
 7. **Trust can be made inspectable.** Per-citation verification records, published error rates, self-testing validators, and live dispute/confirmation channels convert "trust us" into "check us." *Takeaway: every claim in the atlas can be checked by anyone with the book, in about two minutes — and the mechanisms for saying so publicly are built in.*
 
-## 7. Threats to validity
-
-A 16-item assumptions register is published (`docs/ASSUMPTIONS.md`). The principal threats, with what is actually done about each and what the data says:
-
-| # | Threat | Mitigation in force | Evidence / data | Residual |
-|---|---|---|---|---|
-| i | **Shared-substrate risk** — proposer and verifier share one vendor; correlated blind spots invisible to both | Cross-vendor check now a pipeline stage; full retro audits E6–E7 | 0 unsupported edges (n=100); 1.0% upheld residual (n=407); both vendors miss the *same* voice items → text ambiguity, not vendor blind spot | Low; both audits so far use one second vendor |
-| ii | **Single translation** — quotes are Hull/Bollingen-bound | § anchors are edition-stable; documented as assumption #1 | — | German *GW* cross-check deferred (§8) |
-| iii | **Salience sampling** — "strongest relations" per window, not exhaustive parse | Stability probe; union-mining; claim-coverage framing (§6.6) | E4: independent re-extraction recovers core claims (37.5% strict pair overlap, theses stable); union batch: 13/20 re-findings | Tier-2 claims sampled, not complete |
-| iv | **Calibration scope** — sensitivity measured only on four seeded corruption classes | Classes chosen from observed production errors; expanded to n=200 | E1b: 86% (CI 78–91%) / 93% spec; per-class 72–96% | Unknown error types unmeasured, by construction |
-| v | **Single-paragraph judging context** — cross-paragraph claims can be mis-scored | Documented; flagged cases adjudicated case-by-case | E7: 2 of 10 moderate flags were cross-paragraph context cases (both-defensible) | Standing; a windowed-context gate would cost ~2× |
-| vi | **Adjudication discretion** — the orchestrator (an Anthropic model) rules on disputes | All rulings published verbatim; adversarial cross-review by the second vendor | E6: cross-review accepted 9/11 rulings and forced 2 stronger corrections | Cross-review is one round; full independence awaits the human tier |
-| vii | **Shared-rubric convergence** — agreement partly an artifact of handing the auditor our rubric | Rubric-free replication mode (E7) | Identical detection profile with and without rubric; 95% cross-mode verdict consistency | Measured ≈ zero on tested classes |
-| viii | **Human tier still thin** — channels live, accumulated human data ≈ zero | Confirm/dispute channels shipped; community pilot planned (§8) | Channel e2e-tested; 0 reader confirmations to date (stated plainly) | The main open gap — see §8 |
-
-## 8. Limitations and future work
-
-Coverage beyond CW14/CW12 is thin; eleven volumes untouched. The relation vocabulary is open (single-use relations pending a relation-family layer). The cross-vendor stage is implemented and standing (E6–E7; pre-publication for all future batches, §3); what remains is only its ongoing cadence commitment as the graph grows. Planned: **(a) expanded specialist calibration** — the E5 voice-specialist sample is still small (n=6 per axis) and the specialist-advantage claim awaits statistical resolution; **(b) community verification** — blind review by Jungian readers with the evidence view as instrument, human–machine κ published, human confirmations entering the per-edge provenance chain (protocol in `docs/ASSUMPTIONS.md` §E); **(c) a declarative verifier registry** — each verification stage defined as configuration (model, axis, prompt, output schema, and its own calibration set with last measured sensitivity/specificity) over one shared runner and verdict-applier, making specialist decomposition an operable pattern rather than a finding: a new corpus axis becomes a registry entry, and every stage's quality is attached, re-measurable data; **(d) German *Gesammelte Werke* cross-check; (e) DOI-registered dataset releases, including a native nanopublication serialization of the graph (each reference already carries the assertion/provenance/publication-info anatomy, §2); (f) explicit permeation markers for sympathetic reportage, adapting the DEC cognitive-worlds semantics (§2) to replace the informal confidence downgrade.**
-
-## 9. Conclusion
+## 10. Conclusion
 
 This paper does not claim the graph is correct. It claims something a reader can actually use: **the graph's error rate is known (~1% by independent audit), small, named (voice nuance, not fabrication), and checkable** — by another AI vendor, and by any reader with the book and two minutes. That is what the methodology manufactures: not correctness, but *quantified, inspectable trust*. Whether that is robust enough for scholarly use is a judgment the reader is now equipped to make — which is the point. The machines did the hard yards: extraction, checking, cross-checking, and the bookkeeping of every correction. Human judgement keeps the last word: in the adjudications, in the dispute and confirmation channels, and eventually in a community of readers. Nothing in the method is Jung-specific — any authored corpus where *who said what, exactly where* is the scholarly currency is a candidate, at roughly $0.10 per verified claim.
+
+---
 
 ---
 
