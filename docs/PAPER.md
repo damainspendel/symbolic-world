@@ -21,6 +21,15 @@ The trust problem is quantified in the NLP literature: LLM triple extractors sco
 
 A note on what is primary here. The graph is the *demonstration*; the claimed contribution is the **approach**: (i) verification as a publication precondition rather than post-hoc measurement; (ii) verifiers that are themselves calibrated instruments with published sensitivity/specificity; (iii) audit lanes that cross vendor boundaries and audit the auditors' instruments; and (iv) a trust chain that is explicitly *human-terminal* — evidence views, dispute and confirmation channels, and a community tier — because a chain of models, however cross-checked, cannot certify itself. The honest status of this artifact today is: machine floor complete and measured; human ceiling operational as channels, with accumulated human verification still small. The methodology is designed so that the second grows monotonically on top of the first.
 
+**Reader's map.** Four words are used precisely in this paper:
+
+| Term | Meaning here | Where |
+|---|---|---|
+| **Method** | The rules: verbatim anchoring, independent gating, cross-vendor checking, calibration, human-terminal trust | §3 |
+| **Pipeline** | The per-batch machinery that enforces the rules (proposer → pre-check → gates → cross-vendor → merge), with its transaction ledger | §3 |
+| **Architecture** | The running system: corpus extraction, `seed.json`, integrity tests + canaries, the public Atlas, the verification log | §3–4 |
+| **Experiments (E0–E7)** | The measurements *of* the pipeline — each answers one question, indexed at the top of §5 | §5 |
+
 ## 2. Related work
 
 **LLM KG extraction.** [KGGen](https://papers.neurips.cc/paper_files/paper/2025/file/2b368455e832d2b1a60bcad8c4c6481f-Paper-Conference.pdf), GraphRAG, OpenIE establish unverified accuracy baselines (30–66%); [schema-aware triple verification](https://arxiv.org/pdf/2604.04190) and prover–skeptic [dialogue approaches](https://arxiv.org/pdf/2603.06974) add post-hoc verification. We differ in making verification a *mandatory publication gate*, grounding it in the full source paragraph, and calibrating the verifier itself with seeded corruptions.
@@ -74,34 +83,28 @@ The correspondence is diagnostic, not decorative: our one systematically hard re
 **Pipeline overview.**
 
 ```
-             ┌─────────────────────────────────────────────────────────────┐
-             │                    TRANSACTION LEDGER                       │
-             │   (pipeline/state.json — one commit per stage transition:   │
-             │    input-built → mined → pre-checked → gated → merged)      │
-             └─────────────────────────────────────────────────────────────┘
-                 ▲              ▲               ▲               ▲
- corpus window   │              │               │               │
- ┌────────────┐  │  candidate   │   surviving   │   corrected   │
- │  PROPOSER  │──┴─▶ edges ─▶ MECHANICAL ─▶ STAGE 1 ──▶ STAGE 2 ──▶ ADJUDICATED
- │ Opus 4.8   │      (quotes)  PRE-CHECK    STRUCTURE   VOICE        MERGE
- └────────────┘               verbatim      GATE        SPECIALIST     │
-                              substring;    Fable 5:    Fable 5:       ▼
-                              nodes; dups   support,    claim-type,  seed.json
-                              (determin-    direction,  source,        │
-                               istic)       referent,   hedges         ▼
-                                            conflation             integrity tests
-                                                                   + canaries
-                                                                       │
-                                                                       ▼
-                                                                  public Atlas
-                                                                       │
-                                          sampled, on cadence          ▼
-                              ┌──────────────────────────── CROSS-VENDOR AUDITOR
-                              │ disagreements → adjudication   (Gemini 3.1 Pro,
-                              ▼   → cross-review of rulings     different vendor,
-                        corrections re-enter the                blind; rubric &
-                        adjudicated merge above                 rubric-free modes)
+        TRANSACTION LEDGER  (pipeline/state.json — one commit per stage transition)
+           ▲            ▲            ▲             ▲               ▲
+corpus     │            │            │             │               │
+window     │            │            │             │               │
+┌─────────┐│            │            │             │               │
+│PROPOSER ││   MECHANICAL      STAGE 1        STAGE 2        CROSS-VENDOR      ADJUDICATED
+│Opus 4.8 │┴─▶ PRE-CHECK   ─▶  STRUCTURE  ─▶  VOICE      ─▶  CHECK         ─▶  MERGE
+└─────────┘    verbatim        GATE           SPECIALIST     Gemini 3.1 Pro      │
+               substring;      Fable 5:       Fable 5:       (different          ▼
+               nodes; dups     support,       claim-type,    VENDOR, blind)   seed.json
+               (determin-      direction,     source,                            │
+               istic)          referent,      hedges only                        ▼
+                               conflation                            integrity tests + canaries
+                                                                                 │
+                                                                                 ▼
+                                                                            public Atlas
+                                                                                 │
+   periodic full-graph audits (shared-rubric and rubric-free) ◀─────────────────┘
+   + adversarial cross-review of adjudications + prompt-bias audit
+   — findings re-enter the adjudicated merge above
 ```
+
 
 Rejected candidates stop at their stage; PARTIAL verdicts carry concrete corrections applied at merge; every WRONG is logged. Calibration (seeded corruption) attaches measured sensitivity/specificity to each verification stage (E1, E5).
 
@@ -115,27 +118,25 @@ Rejected candidates stop at their stage; PARTIAL verdicts carry concrete correct
 
 Every batch transition is committed to a ledger (`pipeline/state.json`); the construction history is replayable and auditable commit-by-commit.
 
-**Standing cross-vendor audit lane.** Orthogonal to the per-batch first-party pipeline, a second-vendor auditor (currently Gemini 3.1 Pro, temperature 0) runs over the *published* graph on a sampling cadence, in a workflow that audits the pipeline — and its own instruments — rather than individual batches:
+**The cross-vendor loop in detail.** Beyond the per-batch pre-merge check (stage 6 above), the second-vendor auditor also runs periodic full-graph audits — a workflow that audits the pipeline *and its own instruments*, not just edges. This is the loop that validated promoting the cross-vendor check into the pipeline (E6–E7 were its first two runs, executed retroactively over the already-published graph):
 
 ```
-published seed.json
-   │  stratified sample (volume × claim type × age)
+graph (stratified sample or full volume)
    ▼
-CROSS-VENDOR AUDITOR (different vendor, blind to prior verdicts)
-   │  a) shared-rubric verdicts (E6)   b) rubric-free, own-terms judgments (E7)
+CROSS-VENDOR AUDITOR — blind to prior verdicts
+   │  mode a) shared production rubric (comparable)
+   │  mode b) rubric-free, own-terms judgment (independent)
    ▼
-ADJUDICATION — orchestrator rules on each disagreement
-   │  against the ground-truth paragraph; every ruling logged
+ADJUDICATION — each disagreement ruled on against the paragraph; all rulings logged
    ▼
-ADJUDICATION CROSS-REVIEW — the auditor adversarially re-reviews
-   │  the orchestrator's rulings (conflict-of-interest control);
-   │  strengthened remedies accepted (2 forced in E6)
+ADVERSARIAL CROSS-REVIEW — the auditor re-reviews the adjudicator's rulings
+   │  (conflict-of-interest control; 2 stronger remedies forced in E6)
    ▼
-PROMPT-BIAS AUDIT — the auditor critiques the first-party gate
-   │  prompt itself for leniency / rubric-convergence bias
+PROMPT-BIAS AUDIT — the auditor critiques the first-party gate prompt itself
    ▼
-corrections applied → tests + canaries → deploy → commit
+corrections → adjudicated merge → tests + canaries → deploy → commit
 ```
+
 
 The lane exists because a single-vendor chain cannot see its own correlated blind spots (threat i) and its adjudicator cannot referee its own vendor's disputes (threat vi). Two design rules follow from its first runs: audit findings feed the same adjudicated-merge machinery as batch verdicts (no separate, weaker path into the graph), and each audit alternates between the shared production rubric (comparable, but convergence-biased — threat vii) and a rubric-free replication in which the second vendor judges support and severity entirely in its own terms.
 
@@ -147,7 +148,19 @@ The lane exists because a single-vendor chain cannot see its own correlated blin
 
 ## 5. Experiments and results
 
-All seeds, keys, verdicts, and scoring scripts are in `docs/experiments/` and the pipeline ledger. A plain-language guide to every statistic used below (sensitivity, specificity, confidence intervals, flag rates) is in `docs/STATS_GUIDE.md`.
+All seeds, keys, verdicts, and scoring scripts are in `docs/experiments/` and the pipeline ledger. A plain-language guide to every statistic used below is in `docs/STATS_GUIDE.md`. One line per experiment:
+
+| E | Question it answers | Headline result |
+|---|---|---|
+| E0 | How bad is *unverified* extraction? | ~25% flawed (238 refs re-verified) |
+| E1/E1b | How good is the verifier, measured with planted errors? | 86% sensitivity (CI 78–91%) / 93% specificity (n=200) |
+| E2 | Do published edges survive an audit told to *break* them? | 0 content errors in 30 |
+| E3 | How often is the *voice* of a claim mislabeled graph-wide? | 10.3% corrected; error rate falls with pipeline age |
+| E4 | Would an independent re-extraction find the same graph? | Core claims stable; 37.5% strict pair overlap |
+| E5 | Does narrowing the verifier's brief help on the weak axis? | Directionally yes (5/6 vs generalist), pending larger n |
+| E6 | Does a *different vendor* agree with the published graph? | 0 unsupported in 100; 4 nuance corrections upheld |
+| E7 | …even without our rubric, on a full volume? | 1.0% upheld residual in 407; rubric effect ≈ zero |
+
 
 **E0 — Retro-verification of ungated extraction (n=238).** All references mined before the gate became mandatory were re-verified by the standard gate: 178 confirmed, 54 corrected, 6 edges deleted — a **25.2% flaw rate for unverified LLM extraction** on this corpus, consistent with public benchmarks. Dominant classes: voice conflation, identity overreach, referent drift, direction reversal; deletions included a spliced quote and a reversed symbolization.
 
@@ -187,7 +200,18 @@ All seeds, keys, verdicts, and scoring scripts are in `docs/experiments/` and th
 
 ## 7. Threats to validity
 
-A 16-item assumptions register is published (`docs/ASSUMPTIONS.md`); principal threats: **(i) shared-substrate risk** — proposer and verifier are different model families from one vendor; correlated blind spots would be invisible to both (mitigation: cross-vendor tier, §8); **(ii) single translation** — quotes are Hull/Bollingen-bound; §-anchors are edition-stable but nuance may be the translator's; **(iii) salience sampling** — the graph maps the "strongest" relations per window, not an exhaustive parse (E4 measures stability); **(iv) calibration scope** — E1's sensitivity generalizes only to its four corruption classes, chosen from observed production errors; unknown error types are unmeasured; **(v) judged context = one paragraph** — claims supported across paragraphs can be mis-scored; **(vi) adjudication discretion** — PARTIAL corrections are applied by the orchestrator; every decision is logged but the layer is itself model-mediated (mitigations: in E6 the orchestrator's dispute rulings were themselves adversarially reviewed by the cross-vendor model, which accepted 9/11 and successfully forced two stronger corrections; all adjudications are published verbatim; but the cross-review is itself one round, and full independence of adjudication awaits the human community tier); **(vii) shared-rubric convergence** — the cross-vendor audit (E6) ran under the first vendor's gate prompt and verdict rubric, so part of the measured agreement is an artifact of shared thresholds rather than independent judgment — a bias the cross-vendor model itself identified when asked to critique the prompt adversarially; measured by E7's rubric-free replication: on the calibration set the second vendor's detection profile is identical with and without the rubric, and cross-mode verdict consistency on doubly-audited references is 95% — the convergence effect exists in principle but measures ≈ zero on these error classes.
+A 16-item assumptions register is published (`docs/ASSUMPTIONS.md`). The principal threats, with what is actually done about each and what the data says:
+
+| # | Threat | Mitigation in force | Evidence / data | Residual |
+|---|---|---|---|---|
+| i | **Shared-substrate risk** — proposer and verifier share one vendor; correlated blind spots invisible to both | Cross-vendor check now a pipeline stage; full retro audits E6–E7 | 0 unsupported edges (n=100); 1.0% upheld residual (n=407); both vendors miss the *same* voice items → text ambiguity, not vendor blind spot | Low; both audits so far use one second vendor |
+| ii | **Single translation** — quotes are Hull/Bollingen-bound | § anchors are edition-stable; documented as assumption #1 | — | German *GW* cross-check deferred (§8) |
+| iii | **Salience sampling** — "strongest relations" per window, not exhaustive parse | Stability probe; union-mining; claim-coverage framing (§6.6) | E4: independent re-extraction recovers core claims (37.5% strict pair overlap, theses stable); union batch: 13/20 re-findings | Tier-2 claims sampled, not complete |
+| iv | **Calibration scope** — sensitivity measured only on four seeded corruption classes | Classes chosen from observed production errors; expanded to n=200 | E1b: 86% (CI 78–91%) / 93% spec; per-class 72–96% | Unknown error types unmeasured, by construction |
+| v | **Single-paragraph judging context** — cross-paragraph claims can be mis-scored | Documented; flagged cases adjudicated case-by-case | E7: 2 of 10 moderate flags were cross-paragraph context cases (both-defensible) | Standing; a windowed-context gate would cost ~2× |
+| vi | **Adjudication discretion** — the orchestrator (an Anthropic model) rules on disputes | All rulings published verbatim; adversarial cross-review by the second vendor | E6: cross-review accepted 9/11 rulings and forced 2 stronger corrections | Cross-review is one round; full independence awaits the human tier |
+| vii | **Shared-rubric convergence** — agreement partly an artifact of handing the auditor our rubric | Rubric-free replication mode (E7) | Identical detection profile with and without rubric; 95% cross-mode verdict consistency | Measured ≈ zero on tested classes |
+| viii | **Human tier still thin** — channels live, accumulated human data ≈ zero | Confirm/dispute channels shipped; community pilot planned (§8) | Channel e2e-tested; 0 reader confirmations to date (stated plainly) | The main open gap — see §8 |
 
 ## 8. Limitations and future work
 
