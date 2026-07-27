@@ -1,0 +1,242 @@
+{
+ "1": {
+  "status": "corrupt",
+  "class": "overreach"
+ },
+ "2": {
+  "status": "corrupt",
+  "class": "voice-flip"
+ },
+ "3": {
+  "status": "corrupt",
+  "class": "reversal"
+ },
+ "4": {
+  "status": "clean",
+  "class": null
+ },
+ "5": {
+  "status": "clean",
+  "class": null
+ },
+ "6": {
+  "status": "corrupt",
+  "class": "voice-flip"
+ },
+ "7": {
+  "status": "corrupt",
+  "class": "reversal"
+ },
+ "8": {
+  "status": "clean",
+  "class": null
+ },
+ "9": {
+  "status": "clean",
+  "class": null
+ },
+ "10": {
+  "status": "corrupt",
+  "class": "reversal"
+ },
+ "11": {
+  "status": "clean",
+  "class": null
+ },
+ "12": {
+  "status": "clean",
+  "class": null
+ },
+ "13": {
+  "status": "corrupt",
+  "class": "object-swap"
+ },
+ "14": {
+  "status": "corrupt",
+  "class": "object-swap"
+ },
+ "15": {
+  "status": "corrupt",
+  "class": "object-swap"
+ },
+ "16": {
+  "status": "corrupt",
+  "class": "object-swap"
+ },
+ "17": {
+  "status": "corrupt",
+  "class": "overreach"
+ },
+ "18": {
+  "status": "clean",
+  "class": null
+ },
+ "19": {
+  "status": "corrupt",
+  "class": "reversal"
+ },
+ "20": {
+  "status": "corrupt",
+  "class": "reversal"
+ },
+ "21": {
+  "status": "corrupt",
+  "class": "object-swap"
+ },
+ "22": {
+  "status": "corrupt",
+  "class": "voice-flip"
+ },
+ "23": {
+  "status": "corrupt",
+  "class": "voice-flip"
+ },
+ "24": {
+  "status": "corrupt",
+  "class": "reversal"
+ },
+ "25": {
+  "status": "corrupt",
+  "class": "overreach"
+ },
+ "26": {
+  "status": "corrupt",
+  "class": "object-swap"
+ },
+ "27": {
+  "status": "clean",
+  "class": null
+ },
+ "28": {
+  "status": "corrupt",
+  "class": "voice-flip"
+ },
+ "29": {
+  "status": "corrupt",
+  "class": "overreach"
+ },
+ "30": {
+  "status": "corrupt",
+  "class": "object-swap"
+ },
+ "31": {
+  "status": "corrupt",
+  "class": "overreach"
+ },
+ "32": {
+  "status": "corrupt",
+  "class": "voice-flip"
+ },
+ "33": {
+  "status": "corrupt",
+  "class": "voice-flip"
+ },
+ "34": {
+  "status": "clean",
+  "class": null
+ },
+ "35": {
+  "status": "clean",
+  "class": null
+ },
+ "36": {
+  "status": "corrupt",
+  "class": "voice-flip"
+ },
+ "37": {
+  "status": "clean",
+  "class": null
+ },
+ "38": {
+  "status": "corrupt",
+  "class": "overreach"
+ },
+ "39": {
+  "status": "corrupt",
+  "class": "voice-flip"
+ },
+ "40": {
+  "status": "corrupt",
+  "class": "reversal"
+ },
+ "41": {
+  "status": "clean",
+  "class": null
+ },
+ "42": {
+  "status": "corrupt",
+  "class": "overreach"
+ },
+ "43": {
+  "status": "corrupt",
+  "class": "voice-flip"
+ },
+ "44": {
+  "status": "clean",
+  "class": null
+ },
+ "45": {
+  "status": "corrupt",
+  "class": "overreach"
+ },
+ "46": {
+  "status": "clean",
+  "class": null
+ },
+ "47": {
+  "status": "corrupt",
+  "class": "object-swap"
+ },
+ "48": {
+  "status": "corrupt",
+  "class": "overreach"
+ },
+ "49": {
+  "status": "clean",
+  "class": null
+ },
+ "50": {
+  "status": "clean",
+  "class": null
+ },
+ "51": {
+  "status": "clean",
+  "class": null
+ },
+ "52": {
+  "status": "clean",
+  "class": null
+ },
+ "53": {
+  "status": "corrupt",
+  "class": "overreach"
+ },
+ "54": {
+  "status": "corrupt",
+  "class": "reversal"
+ },
+ "55": {
+  "status": "corrupt",
+  "class": "object-swap"
+ },
+ "56": {
+  "status": "clean",
+  "class": null
+ },
+ "57": {
+  "status": "clean",
+  "class": null
+ },
+ "58": {
+  "status": "corrupt",
+  "class": "reversal"
+ },
+ "59": {
+  "status": "corrupt",
+  "class": "object-swap"
+ },
+ "60": {
+  "status": "corrupt",
+  "class": "reversal"
+ }
+}

@@ -1,0 +1,264 @@
+{
+  "nodes": [
+    { "id": "conversion", "type": "Process", "label": "Conversion" },
+    { "id": "divided-self", "type": "State", "label": "The divided self" },
+    { "id": "firmer-hold-upon-religious-realities", "type": "Concept", "label": "Firmer hold upon religious realities" },
+    { "id": "religious-ideas", "type": "Concept", "label": "Religious ideas" },
+    { "id": "focus-of-excitement", "type": "Concept", "label": "Focus of excitement and heat" },
+    { "id": "emotional-occasions", "type": "Concept", "label": "Emotional occasions" },
+    { "id": "mental-rearrangement", "type": "Process", "label": "Mental rearrangement" },
+    { "id": "normal-adolescent-phenomenon", "type": "Concept", "label": "Normal adolescent phenomenon" },
+    { "id": "adolescent-storm-and-stress", "type": "State", "label": "Adolescent storm and stress" },
+    { "id": "leuba", "type": "Figure", "label": "James H. Leuba" },
+    { "id": "sense-of-sin", "type": "State", "label": "Sense of sin / feeling of un-wholeness" },
+    { "id": "spiritually-barren-persons", "type": "Concept", "label": "Persons anaesthetic on the religious side" },
+    { "id": "volitional-type", "type": "Process", "label": "Conversion of the volitional type" },
+    { "id": "conversion-by-self-surrender", "type": "Process", "label": "Conversion of the self-surrender type" },
+    { "id": "self-surrender", "type": "Process", "label": "Self-surrender" },
+    { "id": "sin", "type": "Concept", "label": "Sin" },
+    { "id": "conscious-strainings", "type": "Process", "label": "Conscious strainings of wit and will" },
+    { "id": "subconscious-forces", "type": "Concept", "label": "Subconscious forces (\"allies behind the scenes\")" },
+    { "id": "candidate-for-conversion", "type": "Concept", "label": "The candidate for conversion" },
+    { "id": "larger-power-that-makes-for-righteousness", "type": "Concept", "label": "The larger Power that makes for righteousness" },
+    { "id": "religious-life", "type": "Concept", "label": "The religious life" },
+    { "id": "christian-theology", "type": "Concept", "label": "Christian theology" },
+    { "id": "supernatural-operations-of-the-deity", "type": "Concept", "label": "Direct supernatural operations of the Deity" },
+    { "id": "temporary-exhaustion", "type": "State", "label": "Temporary exhaustion of the anxious emotion" },
+    { "id": "conversion-crisis", "type": "Motif", "label": "The conversion crisis" },
+    { "id": "s-h-hadley", "type": "Figure", "label": "S. H. Hadley" },
+    { "id": "david-brainerd", "type": "Figure", "label": "David Brainerd" }
+  ],
+  "candidate_edges": [
+    {
+      "subject": "conversion",
+      "relation": "unifies",
+      "object": "divided-self",
+      "claim_type": "james-asserts",
+      "reference": {
+        "lecture": "IX",
+        "paragraph": 1,
+        "quote": "a self hitherto divided ... becomes unified and consciously right superior and happy"
+      }
+    },
+    {
+      "subject": "conversion",
+      "relation": "occurs-in-consequence-of",
+      "object": "firmer-hold-upon-religious-realities",
+      "claim_type": "james-asserts",
+      "reference": {
+        "lecture": "IX",
+        "paragraph": 1,
+        "quote": "in consequence of its firmer hold upon religious realities"
+      }
+    },
+    {
+      "subject": "conversion",
+      "relation": "makes-central",
+      "object": "religious-ideas",
+      "claim_type": "james-asserts",
+      "reference": {
+        "lecture": "IX",
+        "paragraph": 19,
+        "quote": "religious ideas, previously peripheral in his consciousness, now take a central place, and that religious aims form the habitual centre of his energy"
+      }
+    },
+    {
+      "subject": "conversion",
+      "relation": "consists-in-permanent-lodging-of",
+      "object": "focus-of-excitement",
+      "claim_type": "james-asserts",
+      "reference": {
+        "lecture": "IX",
+        "paragraph": 18,
+        "quote": "may come to lie permanently within a certain system; and then, if the change be a religious one, we call it a"
+      }
+    },
+    {
+      "subject": "emotional-occasions",
+      "relation": "precipitate",
+      "object": "mental-rearrangement",
+      "claim_type": "james-asserts",
+      "reference": {
+        "lecture": "IX",
+        "paragraph": 22,
+        "quote": "Emotional occasions, especially violent ones, are extremely potent in precipitating mental rearrangements."
+      }
+    },
+    {
+      "subject": "conversion",
+      "relation": "is-in-its-essence",
+      "object": "normal-adolescent-phenomenon",
+      "claim_type": "james-quotes-source",
+      "source": "Edwin D. Starbuck, The Psychology of Religion",
+      "confidence": "medium",
+      "reference": {
+        "lecture": "IX",
+        "paragraph": 23,
+        "quote": "Conversion is in its essence a normal adolescent phenomenon ... the wider intellectual and spiritual life of maturity"
+      }
+    },
+    {
+      "subject": "conversion",
+      "relation": "intensifies-but-shortens",
+      "object": "adolescent-storm-and-stress",
+      "claim_type": "james-quotes-source",
+      "source": "Edwin D. Starbuck",
+      "confidence": "medium",
+      "reference": {
+        "lecture": "IX",
+        "paragraph": 24,
+        "quote": "The essential distinction appears to be that conversion intensifies but shortens the period by bringing the person to a definite crisis."
+      }
+    },
+    {
+      "subject": "leuba",
+      "relation": "defines-religious-sense-as",
+      "object": "sense-of-sin",
+      "claim_type": "james-quotes-source",
+      "source": "James H. Leuba, article on the psychology of conversion",
+      "reference": {
+        "lecture": "IX",
+        "paragraph": 27,
+        "quote": "the feeling of un‐wholeness, of moral imperfection, of sin, to use the technical word, accompanied by the yearning after the peace of unity"
+      }
+    },
+    {
+      "subject": "religious-ideas",
+      "relation": "cannot-become-the-centre-of-spiritual-energy-in",
+      "object": "spiritually-barren-persons",
+      "claim_type": "james-asserts",
+      "confidence": "medium",
+      "reference": {
+        "lecture": "IX",
+        "paragraph": 33,
+        "quote": "never are, and possibly never under any circumstances could be, converted. Religious ideas cannot become the centre of their spiritual energy."
+      }
+    },
+    {
+      "subject": "conversion",
+      "relation": "has-type",
+      "object": "volitional-type",
+      "claim_type": "james-asserts",
+      "reference": {
+        "lecture": "IX",
+        "paragraph": 36,
+        "quote": "we find both ways exemplified in the history of conversion, giving us two types, which Starbuck calls the"
+      }
+    },
+    {
+      "subject": "conversion",
+      "relation": "has-type",
+      "object": "conversion-by-self-surrender",
+      "claim_type": "james-asserts",
+      "reference": {
+        "lecture": "IX",
+        "paragraph": 40,
+        "quote": "less interesting than those of the self‐surrender type, in which the subconscious effects are more abundant and often startling"
+      }
+    },
+    {
+      "subject": "self-surrender",
+      "relation": "becomes-indispensable-to",
+      "object": "conversion",
+      "claim_type": "james-asserts",
+      "confidence": "medium",
+      "reference": {
+        "lecture": "IX",
+        "paragraph": 40,
+        "quote": "the very last step must be left to other forces and performed without the help of its activity. In other words, self‐surrender becomes then indispensable."
+      }
+    },
+    {
+      "subject": "conversion",
+      "relation": "is-a-process-of-struggling-away-from",
+      "object": "sin",
+      "claim_type": "james-quotes-source",
+      "source": "Edwin D. Starbuck",
+      "reference": {
+        "lecture": "IX",
+        "paragraph": 42,
+        "quote": "a process of struggling away from sin rather than of striving towards righteousness"
+      }
+    },
+    {
+      "subject": "conscious-strainings",
+      "relation": "let-loose",
+      "object": "subconscious-forces",
+      "claim_type": "james-asserts",
+      "reference": {
+        "lecture": "IX",
+        "paragraph": 42,
+        "quote": "his conscious strainings are letting loose subconscious allies behind the scenes, which in their way work towards rearrangement"
+      }
+    },
+    {
+      "subject": "candidate-for-conversion",
+      "relation": "must-fall-back-on",
+      "object": "larger-power-that-makes-for-righteousness",
+      "claim_type": "james-quotes-source",
+      "source": "Edwin D. Starbuck",
+      "reference": {
+        "lecture": "IX",
+        "paragraph": 43,
+        "quote": "he must fall back on the larger Power that makes for righteousness, which has been welling up in his own being"
+      }
+    },
+    {
+      "subject": "self-surrender",
+      "relation": "is-the-vital-turning-point-of",
+      "object": "religious-life",
+      "claim_type": "james-asserts",
+      "reference": {
+        "lecture": "IX",
+        "paragraph": 46,
+        "quote": "self‐surrender has been and always must be regarded as the vital turning‐point of the religious life"
+      }
+    },
+    {
+      "subject": "christian-theology",
+      "relation": "insists-redemptive-forces-are",
+      "object": "supernatural-operations-of-the-deity",
+      "claim_type": "james-reports",
+      "reference": {
+        "lecture": "IX",
+        "paragraph": 47,
+        "quote": "she diverges from Christian theology, which insists that they are direct supernatural operations of the Deity"
+      }
+    },
+    {
+      "subject": "temporary-exhaustion",
+      "relation": "forms-part-of",
+      "object": "conversion-crisis",
+      "claim_type": "james-asserts",
+      "reference": {
+        "lecture": "IX",
+        "paragraph": 49,
+        "quote": "there is documentary proof that this state of temporary exhaustion not infrequently forms part of the conversion crisis"
+      }
+    },
+    {
+      "subject": "s-h-hadley",
+      "relation": "never-wanted-a-drink-after",
+      "object": "conversion",
+      "claim_type": "james-quotes-source",
+      "source": "S. H. Hadley (converted drunkard, quoted testimony)",
+      "reference": {
+        "lecture": "IX",
+        "paragraph": 31,
+        "quote": "From that moment till now I have never wanted a drink of whiskey, and I have never seen money enough to make me take one."
+      }
+    },
+    {
+      "subject": "david-brainerd",
+      "relation": "experienced-unspeakable-glory-after",
+      "object": "temporary-exhaustion",
+      "claim_type": "james-quotes-source",
+      "source": "David Brainerd (quoted account of his crisis)",
+      "reference": {
+        "lecture": "IX",
+        "paragraph": 52,
+        "quote": "found no heart to engage in that or any other duty ... unspeakable glory seemed to open to the apprehension of my soul"
+      }
+    }
+  ]
+}

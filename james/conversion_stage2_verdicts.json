@@ -1,0 +1,20 @@
+[
+  {
+    "n": 13,
+    "issue": "hedge",
+    "fix": "confidence: medium",
+    "reason": "James endorses Starbuck's account only conditionally ('it seems to me a true account—so far as conceptions so schematic can claim truth at all') and scopes the claim to 'a majority of cases', so high confidence overstates the hedged framing."
+  },
+  {
+    "n": 14,
+    "issue": "hedge",
+    "fix": "confidence: medium",
+    "reason": "This claim belongs to the same schematic account James accepts only with the double hedge 'it seems to me a true account—so far as conceptions so schematic can claim truth at all', so it should not carry high confidence."
+  },
+  {
+    "n": 15,
+    "issue": "hedge",
+    "fix": "confidence: medium",
+    "reason": "James's framing is explicitly hedged ('Starbuck seems to put his finger on the root of the matter' ... 'it is more probably the better self'), so high confidence misrepresents the hedged endorsement."
+  }
+]
