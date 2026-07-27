@@ -1,4 +1,4 @@
-# Verification-First Knowledge Extraction from Interpretive Corpora: A Methodology with Measured Error Bars, Demonstrated on C. G. Jung's Collected Works
+# Trust, Measured: Verification-First AI Knowledge Extraction for Interpretive Corpora, Demonstrated on Jung's *Collected Works*
 
 **Damian Spendel**
 *AI collaborators: Claude Opus 4.8 (extraction), Claude Fable 5 (verification), Gemini 3.1 Pro (cross-vendor audit), orchestration via Claude Code. Roles in §6 and the Authorship Note.*
@@ -174,9 +174,9 @@ What has this methodology actually produced? Judged dimension by dimension, hone
 
 **Accurate**, by independent measurement: a second vendor auditing a full volume in its own words could uphold errors in about one claim in a hundred, none of them fabricated — against roughly one in four for the unguarded pipeline the field currently runs. **Complete** only in a defined and tested sense: the core claims of covered chapters, the ones independent re-extraction re-finds, are there; the long tail below that line is sampled, deliberately. **Not comprehensive**: one volume end-to-end, eight more touched, eleven untouched. **Inspectable**, always: every claim carries its evidence, verifier, and history; the construction replays commit by commit; disputing takes two minutes and a book. **General** by design but not yet by demonstration — nothing in the method is Jung-specific, and until a second corpus runs, that remains a claim. **Human-verified** only thinly, so far: the channels exist and are tested; the accumulated human record is the project's youngest and most important open front.
 
-The methodology's real product is not any single one of these dimensions but the fact that each now carries a number or a mechanism instead of an adjective: accuracy has an error bar, completeness has a tested definition, inspection has a button, and every gap is stated in the artifact itself. The machines did the hard yards — proposing, checking, cross-checking, and the bookkeeping of every correction — at about ten cents per verified claim[^cost]. Human judgement has the last word, and, for the first time on this corpus, the tools to exercise it.
+None of these dimensions is the point on its own. The point is that each now comes with a number or a mechanism where an adjective used to be: accuracy has an error bar, completeness has a tested definition, inspection has a button, and the gaps are stated in the artifact itself. The machines did the hard yards — proposing, checking, cross-checking, and the bookkeeping of every correction — at about ten cents per verified claim[^cost]. Human judgement has the last word, and, for the first time on this corpus, the tools to exercise it.
 
-Any authored corpus where *who said what, exactly where* is the scholarly currency is a candidate.
+The method is not tied to Jung. It should carry to any corpus where the scholarly work is establishing who said what, and exactly where — law, philosophy, theology, the history of science. Demonstrating that on a second corpus is the next test, and the reproduction package it would produce is the one this project cannot yet ship.
 ---
 
 ---
