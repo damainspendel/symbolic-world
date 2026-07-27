@@ -1,5 +1,7 @@
 # The Symbolic World
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21631523.svg)](https://doi.org/10.5281/zenodo.21631523)
+
 **A verified knowledge graph of C. G. Jung's *Collected Works* — every connection
 anchored to a specific paragraph (§), mechanically checked, independently reviewed,
 and cross-vendor audited.**

@@ -20,4 +20,4 @@
 
 **Why it matters beyond Jung.** The pipeline — verbatim anchoring, cross-family verification as a publication gate, typed voice provenance, published error bars, and a fully replayable construction log — generalizes to any authored corpus where *who said what, exactly where* is the whole game: patristics, philosophy, law, history of science. It is a working answer to a current problem: how to use AI to structure humanistic knowledge *without* asking anyone to take the AI's word for it.
 
-*Full paper: `docs/PAPER.md` in the project repository.*
+*Full paper: `docs/PAPER.md` · DOI: [10.5281/zenodo.21631523](https://doi.org/10.5281/zenodo.21631523)*

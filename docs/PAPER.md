@@ -3,7 +3,7 @@
 **Damian Spendel**
 *AI use disclosure — tools and roles: Claude Opus 4.8 (extraction), Claude Fable 5 (verification), Gemini 3.1 Pro (cross-vendor audit), orchestration via Claude Code, all under the author's direction. Detail in §6 and the Authorship Note.*
 
-*Draft v2.1 (arXiv-track) — 27 July 2026 · Artifact: [symbolicworld.observer](https://symbolicworld.observer) · Dataset & ledger: project repository, release `v1.0-cw14`+*
+*v1.0 — 27 July 2026 · DOI: [10.5281/zenodo.21631523](https://doi.org/10.5281/zenodo.21631523) · Artifact: [symbolicworld.observer](https://symbolicworld.observer) · Repository: [github.com/damianspendel/symbolic-world](https://github.com/damianspendel/symbolic-world), release `v1.0.0`*
 
 ---
 
