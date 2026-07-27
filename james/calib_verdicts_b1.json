@@ -1,0 +1,22 @@
+[
+  {"n": 1, "verdict": "WRONG", "reason": "Identity overreach: the text says Christian theology INSISTS the redeeming forces are supernatural operations of the Deity; the theology itself is not identical with those operations."},
+  {"n": 2, "verdict": "SUPPORTED", "reason": "Paragraph directly states mystical states are 'states of insight into depths of truth unplumbed by the discursive intellect', and james-reports honestly reflects the 'seem to those who experience them' framing."},
+  {"n": 3, "verdict": "WRONG", "reason": "Direction reversed: the text says self-surrender becomes indispensable to the completion of conversion, not that conversion is indispensable to self-surrender."},
+  {"n": 4, "verdict": "SUPPORTED", "reason": "James asserts in his own voice that nitrous oxide stimulates the mystical consciousness in an extraordinary degree."},
+  {"n": 5, "verdict": "SUPPORTED", "reason": "The paragraph reports the Indian tradition that the yogi, by yoga training, enters the condition termed samadhi; james-reports is the correct voice."},
+  {"n": 6, "verdict": "SUPPORTED", "reason": "James states the codified system of Christian mystical theology has orison or meditation as its basis, in his own expository voice."},
+  {"n": 7, "verdict": "WRONG", "reason": "Reversed/garbled: conversion consists in the focus of excitement coming to lie permanently within a religious system, not the focus consisting in a lodging of conversion."},
+  {"n": 8, "verdict": "SUPPORTED", "reason": "Noetic quality is one of James's own defining marks of mystical states, asserted in this paragraph."},
+  {"n": 9, "verdict": "SUPPORTED", "reason": "The paragraph explicitly distinguishes the volitional type from the self-surrender type of conversion."},
+  {"n": 10, "verdict": "WRONG", "reason": "Direction reversed: in Starbuck's words the candidate must fall back on the larger Power, not the Power fall back on the candidate."},
+  {"n": 11, "verdict": "SUPPORTED", "reason": "Saint Teresa's quoted account says the union leaves the soul with a certitude impossible to doubt and 'unshakable' belief; james-quotes-source is correct."},
+  {"n": 12, "verdict": "SUPPORTED", "reason": "James defines conversion as religious ideas previously peripheral taking a central place, in his own voice."},
+  {"n": 13, "verdict": "WRONG", "reason": "Wrong object: this paragraph says alcohol stimulates the mystical faculties of human nature; 'consciousness of the cosmos' is Bucke's term from a different paragraph and is conflated in here."},
+  {"n": 14, "verdict": "WRONG", "reason": "Wrong object: conscious strainings let loose subconscious allies working toward rearrangement, not religious ideas."},
+  {"n": 15, "verdict": "PARTIAL", "reason": "The paragraph supports that mystical states carry 'a curious sense of authority for after-time', but 'unshakable-certitude' imports Teresa's stronger term from another passage and overstates this object."},
+  {"n": 16, "verdict": "WRONG", "reason": "Wrong object: Bucke characterizes cosmic consciousness by consciousness of the cosmos, enlightenment, and moral exaltation; 'volitional type' is a conversion-typology term absent from this paragraph."},
+  {"n": 17, "verdict": "WRONG", "reason": "Identity overreach: the text says temporary exhaustion 'not infrequently forms part of' the conversion crisis, which is part-of, not identity."},
+  {"n": 18, "verdict": "SUPPORTED", "reason": "Al-Ghazzali's quoted testimony states Sufi mystical knowledge can be grasped by no study or hearsay but only by transport and ecstasy; james-quotes-source is correct."},
+  {"n": 19, "verdict": "WRONG", "reason": "Direction reversed: James asserts self-surrender is the vital turning-point of the religious life, not the religious life the turning-point of self-surrender."},
+  {"n": 20, "verdict": "WRONG", "reason": "Subject and object scrambled: David Brainerd is the experiencer who, after his exhausted inability to pray, saw unspeakable glory; 'temporary-exhaustion' cannot be the subject that experienced it."}
+]

@@ -9,7 +9,7 @@
 
 ## Abstract
 
-AI makes it cheap to turn twenty volumes of an author's writing into a queryable map of claims. Unguarded, it also makes it wrong: language models extract knowledge-graph facts at 30–66% accuracy and hallucinate 11–57% of citations in deployed systems. This paper contributes, primarily, a methodology for doing it trustworthily, and secondarily the artifact that demonstrates it: a knowledge graph of C. G. Jung's *Collected Works* (233 concepts and symbols, 634 relations, 659 references, each anchored to a numbered paragraph with a verbatim quote of at most 25 words, and each typed by voice: the author's own claim, doctrine he reports, or a source he quotes). The method treats extraction as risk management: seven named risks, a mitigation in the pipeline for each, and an experiment measuring each mitigation. No claim is published without passing a deterministic quote check, review by a model from a different family than the proposer, and audit by a model from a different vendor. Every published claim ships with its evidence and with live channels for any reader to dispute or confirm it. The compounded result: raw extraction got roughly one claim in four wrong; an independent vendor auditing a full published volume in its own words could uphold errors in one claim in a hundred, none of them fabrications, at about ten cents per verified claim. All error rates, corruption seeds, and adjudications are published with the artifact. The machines do the hard yards; human judgement has the last word.
+AI makes it cheap to turn twenty volumes of an author's writing into a queryable map of claims. Unguarded, it also makes it wrong: language models extract knowledge-graph facts at 30–66% accuracy and hallucinate 11–57% of citations in deployed systems. This paper contributes, primarily, a methodology for doing it trustworthily, and secondarily the artifact that demonstrates it: a knowledge graph of C. G. Jung's *Collected Works* (233 concepts and symbols, 634 relations, 659 references, each anchored to a numbered paragraph with a verbatim quote of at most 25 words, and each typed by voice: the author's own claim, doctrine he reports, or a source he quotes). The method treats extraction as risk management: seven named risks, a mitigation in the pipeline for each, and an experiment measuring each mitigation. No claim is published without passing a deterministic quote check, review by a model from a different family than the proposer, and audit by a model from a different vendor. Every published claim ships with its evidence and with live channels for any reader to dispute or confirm it. The compounded result: raw extraction got roughly one claim in four wrong; an independent vendor auditing a full published volume in its own words could uphold errors in one claim in a hundred, none of them fabrications, at about ten cents per verified claim. Run unchanged on a second, public-domain corpus (James's *The Varieties of Religious Experience*), the pipeline reproduces the same risk profile — structure caught at ceiling, voice the shared weak axis — and ships as a complete replication package. All error rates, corruption seeds, and adjudications are published with the artifact. The machines do the hard yards; human judgement has the last word.
 
 ## 1. Opportunity
 
@@ -95,7 +95,9 @@ Figure 4 pins each design to the pipeline step it measures. Results for the Jung
 
 *Figure 4 — Blue chips name the experiment that measures each step, with a one-line legend for each experiment. No box is taken on faith.*
 
-## 6. Case Study: Jung's Collected Works
+## 6. Case Studies
+
+### 6.1 Jung's *Collected Works*
 
 **Corpus.** Paragraph records `{volume, §, text, page}` extracted mechanically from epub markup (§ numbers read from bracketed markers, strictly ascending; never inferred), with a §→Bollingen-page concordance. The corpus stays local; only ≤25-word verified quotes are published (legal basis: `docs/LEGAL.md`).
 
@@ -106,6 +108,10 @@ Figure 4 pins each design to the pipeline step it measures. Results for the Jung
 **Instantiation.** The generic voice vocabulary becomes `jung-asserts` / `jung-reports-parallel` / `jung-quotes-source` (+ named source). Current state: **233 nodes · 634 edges · 659 references** across 468 distinct paragraphs of nine CW volumes; CW 14 covered end-to-end; 438 asserts / 160 reports / 61 quotes-source over 74 named sources; 84 hedged (medium-confidence) references; 100% gate-verified with per-reference verifier and date.
 
 **The artifact.** The public Atlas ([symbolicworld.observer](https://symbolicworld.observer)) renders the graph in six typed regions with search and walkable citations. Every citation expands to its verification record (claim type, source, confidence, verifier, date, and a check-it-yourself pointer to the exact § and Bollingen page), so refutation needs only the printed edition and about two minutes. Two gated reader channels close the loop: **dispute** (a prefilled report to the public issue tracker; admissible disputes are re-judged with the objection attached; outcomes published in the verification log and linked from the edge) and **confirm** (reader confirmations enter the edge's public record as human-in-the-loop provenance). Accumulated upheld disputes above the published error bar would falsify the pipeline claim itself, not just individual edges.
+
+### 6.2 Replication: James's *The Varieties of Religious Experience*
+
+The identical pipeline, unchanged, was run on a second corpus: William James's *Varieties* (1902, public domain; 1,277 anchored paragraphs), mining the Conversion and Mysticism lectures. Results: 40 candidates; 40/40 quotes passed the mechanical check; the structure gate returned 37/3/0; the cross-vendor check passed all 38 published edges; and a seeded-corruption calibration (n=60) measured the gate at **90% sensitivity (CI 77–96%) and 100% specificity**, with the per-class profile matching Jung's: structural corruptions at ceiling, **voice again the weak axis (7/10, vs Jung's 18/25)**. The risk profile is not a Jung idiosyncrasy; for authored interpretive prose, voice appears to be the shared weak axis. Because the corpus is public domain, this replication ships complete: raw text, anchored corpus, candidates, verdicts, graph, and calibration (`james/` in the repository; visual graph at [symbolicworld.observer/james.html](https://symbolicworld.observer/james.html)). Full detail: `docs/experiments/exp8_james.md` (E8). Two honesty notes: the miner's instructions carry the claim-typing lessons of the Jung pipeline (its 7.5% raw error rate measures a taught miner, not a naive one), and this is pilot scale (38 edges, per-class calibration n=10).
 
 **What the measurements say about Jung.** The residual error class is not noise; it maps a real property of the text. Every model configuration, across two vendors, fails on the same items: passages where Jung reports alchemical or Gnostic doctrine *and half-adopts it*. That "sympathetic reportage" boundary resists the three-way voice taxonomy because Jung's own voice is genuinely blended there: a finding about the Collected Works, not just about models, and the precise place where human judgement (and Jungian scholarship) is required.
 
@@ -130,7 +136,7 @@ Table 2 answers one question: **of the risks in §2, what remains after the miti
 
 Where §7 quantifies what remains of the *named* risks, this section lists the boundaries the experiments never touched.
 
-Coverage beyond CW14/CW12 is thin (eleven volumes untouched) and the relation vocabulary remains open.  Human-in-the-loop verification is live as channels but thin as data. Generality is a design claim until a second corpus runs. Next, in order: a second, public-domain corpus (a fully distributable reproduction package); the community verification pilot ([`docs/ASSUMPTIONS.md`](https://github.com/damianspendel/symbolic-world/blob/master/docs/ASSUMPTIONS.md) §E); a native nanopublication serialization; a German *Gesammelte Werke* cross-check.
+Coverage beyond CW14/CW12 is thin (eleven volumes untouched) and the relation vocabulary remains open.  Human-in-the-loop verification is live as channels but thin as data. Generality is demonstrated only at pilot scale (38 edges, one second corpus). Next, in order: the community verification pilot ([`docs/ASSUMPTIONS.md`](https://github.com/damianspendel/symbolic-world/blob/master/docs/ASSUMPTIONS.md) §E); a native nanopublication serialization; a German *Gesammelte Werke* cross-check.
 
 ## 9. Imperatives
 
@@ -153,18 +159,18 @@ Coverage beyond CW14/CW12 is thin (eleven volumes untouched) and the relation vo
 **The compounded result, in one sentence: raw AI extraction on this corpus gets roughly one claim in four wrong; after the pipeline, an independent vendor auditing a full volume in its own words could uphold errors in one claim in a hundred, a ~25-fold error reduction, with every surviving error a nuance of attribution rather than a fabrication or reversal, at about ten cents per verified claim, and every claim checkable by any reader in about two minutes.**
 
 
-**Table 3 — pipeline step · risk · mitigant · experiment · headline result.**
+**Table 3 — pipeline step · risk · mitigant · experiment · headline result (Jung), with the James replication (E8) alongside.**
 
-| Pipeline step | Risk | Mitigant | Experiment | Headline result |
-|---|---|---|---|---|
-| 1 · Propose | R1 wrong/invented statements | never publish raw — everything below | E0 | unchecked extraction: ~25% flawed |
-| 1 · Propose | R5 arbitrary selection | union-mining; claim-coverage framing | E4 | independent re-extraction finds the same core claims |
-| 2 · Quote check | R2 fabricated quotes | deterministic verbatim match | canaries | fabrication eliminated; 5 planted corruptions must be caught on every test run |
-| 3 · Structure gate | R3 wrong meaning | independent model family reads the full paragraph | E1b | 86% of planted errors caught (CI 78–91%); 92–96% on structure |
-| 4 · Voice gate | R4 wrong context | narrow specialist on the measured weak axis | E5 · E3 | graph-wide sweep fixed 10.3%; specialist 80% vs 72% paired (modest, consistent) |
-| 5 · Second vendor | R6 shared blind spots | Gemini re-judges — with our rubric and without | E6 · E7 | 0 unsupported /100; 1.0% residual /407; rubric effect ≈ 0 |
-| (refereeing) | R7 marking own homework | rulings published verbatim; second vendor re-reviews the referee | in E6 | 9/11 rulings upheld; 2 stronger corrections forced on us |
-| 6 · Publish | whatever still got through | adversarial audit; evidence views; reader confirm/dispute | E2 · humans | 0 content errors in 30; human data accumulating (early) |
+| Pipeline step | Risk | Mitigant | Experiment | Result (Jung, CW) | Result (James, VRE) |
+|---|---|---|---|---|---|
+| 1 · Propose | R1 wrong/invented statements | never publish raw — everything below | E0 | unchecked extraction: ~25% flawed | taught miner: 7.5% raw (not comparable — see E8) |
+| 1 · Propose | R5 arbitrary selection | union-mining; claim-coverage framing | E4 | independent re-extraction finds the same core claims | — (not run) |
+| 2 · Quote check | R2 fabricated quotes | deterministic verbatim match | canaries | fabrication eliminated; canaries caught on every run | 40/40 quotes verbatim |
+| 3 · Structure gate | R3 wrong meaning | independent model family reads the full paragraph | E1b | 86% caught (CI 78–91%); 92–96% on structure | 90% caught (CI 77–96%); structure 29/30 |
+| 4 · Voice gate | R4 wrong context | narrow specialist on the measured weak axis | E5 · E3 | sweep fixed 10.3%; specialist 80% vs 72% paired | voice-flips 7/10 — same weak axis |
+| 5 · Second vendor | R6 shared blind spots | Gemini re-judges — with our rubric and without | E6 · E7 | 0 unsupported /100; 1.0% residual /407; rubric effect ≈ 0 | 38/38 supported (pre-merge) |
+| (refereeing) | R7 marking own homework | rulings published verbatim; second vendor re-reviews the referee | in E6 | 9/11 rulings upheld; 2 stronger corrections forced | — (no disputes arose) |
+| 6 · Publish | whatever still got through | adversarial audit; evidence views; reader confirm/dispute | E2 · humans | 0 content errors in 30; human data early | published graph + full reproduction package |
 
 *A second-corpus column is planned: the same harness run on a public-domain corpus (William James, __The Varieties of Religious Experience__), yielding a per-corpus risk profile alongside Jung's, and a fully distributable reproduction package.*
 
@@ -176,7 +182,7 @@ What has this methodology actually produced? Judged dimension by dimension:
 
 None of these dimensions is the point on its own. The point is that each now comes with a number or a mechanism where an adjective used to be: accuracy has an error bar, completeness has a tested definition, inspection has a button, and the gaps are stated in the artifact itself. The machines did the hard yards (proposing, checking, cross-checking, and the bookkeeping of every correction) at about ten cents per verified claim[^cost]. Human judgement has the last word, and, for the first time on this corpus, the tools to exercise it.
 
-The method is not tied to Jung. It should carry to any corpus where the scholarly work is establishing who said what, and exactly where: law, philosophy, theology, the history of science. Demonstrating that on a second corpus is the next test, and the reproduction package it would produce is the one this project cannot yet ship.
+The method is not tied to Jung. It should carry to any corpus where the scholarly work is establishing who said what, and exactly where: law, philosophy, theology, the history of science. A first replication on James's *Varieties* (E8) supports this at pilot scale, and — being public domain — ships as the complete reproduction package the Jung corpus cannot legally provide. Scaling that replication is the next test.
 ---
 
 ---

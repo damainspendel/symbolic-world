@@ -1,0 +1,46 @@
+{
+ "sens": [
+  36,
+  40
+ ],
+ "spec": [
+  20,
+  20
+ ],
+ "by_class": {
+  "overreach": [
+   9,
+   10
+  ],
+  "voice-flip": [
+   7,
+   10
+  ],
+  "reversal": [
+   10,
+   10
+  ],
+  "object-swap": [
+   10,
+   10
+  ]
+ },
+ "missed": [
+  [
+   2,
+   "voice-flip"
+  ],
+  [
+   6,
+   "voice-flip"
+  ],
+  [
+   29,
+   "overreach"
+  ],
+  [
+   33,
+   "voice-flip"
+  ]
+ ]
+}
