@@ -8,6 +8,11 @@ import { readFileSync, writeFileSync } from 'fs'
 
 const here = (p) => new URL(p, import.meta.url)
 const seed = JSON.parse(readFileSync(here('../seed.json')))
+
+// Publication gate is structural: refuse to build if any reference is unverified.
+for (const e of seed.edges)
+  for (const r of (e.references || []))
+    if (!r.verified) { console.error(`UNVERIFIED ref in ${e.subject}->${e.object} (CW${r.volume} §${r.paragraph}) — build refused`); process.exit(1) }
 let pages = {}
 try { pages = JSON.parse(readFileSync(here('../app/Sources/Resources/pages.json'))) } catch {}
 

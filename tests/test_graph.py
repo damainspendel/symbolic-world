@@ -31,11 +31,32 @@ def words(s):
     return re.findall(r"[a-z]+", s.lower())
 
 
-def is_subsequence(needle, haystack):
-    """True if `needle` tokens appear in order within `haystack` (gaps allowed —
-    the corpus interleaves 'fig. 115' and footnote numbers into the prose)."""
-    it = iter(haystack)
-    return all(tok in it for tok in needle)
+def is_subsequence(needle, haystack, max_gap=3):
+    """True if `needle` tokens appear in order and NEAR-CONTIGUOUSLY within
+    `haystack`: at most `max_gap` non-matching tokens between consecutive quote
+    tokens (absorbs interleaved 'fig. 115' / footnote markers, but rejects
+    collage quotes assembled from words scattered across the paragraph)."""
+    if not needle:
+        return True
+    n = len(haystack)
+    for start in range(n):
+        if haystack[start] != needle[0]:
+            continue
+        pos = start
+        ok = True
+        for tok in needle[1:]:
+            nxt = -1
+            for j in range(pos + 1, min(pos + 2 + max_gap, n)):
+                if haystack[j] == tok:
+                    nxt = j
+                    break
+            if nxt < 0:
+                ok = False
+                break
+            pos = nxt
+        if ok:
+            return True
+    return False
 
 
 def load():
@@ -106,6 +127,14 @@ def canaries(seed, corpus, pages):
     of canary names that were NOT caught (empty = all good)."""
     import copy
 
+    def _collage_from(ref):
+        key = (str(ref["volume"]), ref["paragraph"])
+        toks = corpus.get(key, [])
+        if len(toks) < 40:
+            return "collage canary needs a longer paragraph zzqx"
+        step = max(8, len(toks) // 8)
+        return " ".join(toks[::step][:8])
+
     # pick a real verified edge with >=1 reference as the mutation target
     base_idx = next(i for i, e in enumerate(seed["edges"])
                     if e.get("references") and e["references"][0].get("verified")
@@ -123,12 +152,16 @@ def canaries(seed, corpus, pages):
         "undefined-node": lambda e: e.__setitem__("subject", "no-such-node-zzqx"),
         "missing-provenance": lambda e: e["references"][0].pop("verified_by", None),
         "bad-claim-type": lambda e: e["references"][0].__setitem__("claim_type", "someone-asserts"),
+        # words individually present in the paragraph, in order, but scattered —
+        # guards against regression to gap-unbounded subsequence matching
+        "collage-quote": lambda e: e["references"][0].__setitem__(
+            "quote", _collage_from(e["references"][0])),
     }
     uncaught = []
     for name, fn in cases.items():
         if not validate(mutated(fn), corpus, pages):
             uncaught.append(name)
-    return uncaught
+    return uncaught, len(cases)
 
 
 def main():
@@ -141,11 +174,11 @@ def main():
     print(f"checked: {len(seed['nodes'])} nodes, {len(edges)} edges, {total_refs} references ({verified_refs} verified)")
 
     # Canaries: corrupted copies that the validators MUST reject.
-    uncaught = canaries(seed, corpus, pages)
+    uncaught, cases_run = canaries(seed, corpus, pages)
     if uncaught:
         fails.extend(f"[canary] validators failed to catch: {c}" for c in uncaught)
     else:
-        print("canaries: 5/5 planted corruptions caught")
+        print(f"canaries: {cases_run}/{cases_run} planted corruptions caught")
 
     # Vocabulary review (warn-only): relations used by exactly one edge tend to
     # be one-off phrasings worth consolidating; not a failure.
