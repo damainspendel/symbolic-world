@@ -7,10 +7,10 @@
 
 | | |
 |---|---|
-| Graph | **231 nodes · 627 edges · 652 references**, 461 distinct CW paragraphs, 9 volumes |
-| Verification | **652/652 (100%)** gate-verified with model+date provenance |
-| Claim provenance | 436 jung-asserts · 157 jung-reports-parallel · 59 jung-quotes-source (74 named sources) |
-| Coverage | CW14 complete end-to-end (406 refs); CW12 at 87 and growing; 7 further volumes sampled |
+| Graph | **233 nodes · 634 edges · 659 references**, 461 distinct CW paragraphs, 9 volumes |
+| Verification | **659/659 (100%)** gate-verified with model+date provenance |
+| Claim provenance | 438 jung-asserts · 160 jung-reports-parallel · 61 jung-quotes-source (74 named sources) |
+| Coverage | CW14 complete end-to-end (413 refs); CW12 at 87 and growing; 7 further volumes sampled |
 | Cost to date | ≈ $60–90 total model spend; ≈ **$0.09–0.12 per fully verified citation** |
 
 ## 1. Methodology
