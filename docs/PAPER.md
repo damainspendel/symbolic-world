@@ -29,7 +29,39 @@ The trust problem is quantified in the NLP literature: LLM triple extractors sco
 
 **Industry practice.** Production extraction pipelines converge on the same skeleton independently: schema-first design, typed mechanical validation with human escalation carrying the best-effort extraction ([production document-pipeline lessons](https://medium.com/alan/lessons-from-running-an-llm-document-processing-pipeline-in-production-33d87f99cdb1)), continuous calibration of automated judges against sampled expert judgment ([HITL evaluation practice](https://www.braintrust.dev/articles/best-human-in-the-loop-llm-evaluation-platforms-2026)), and verification loops with measured diminishing returns after ~2 rounds ([verification-loop patterns](https://timjwilliams.medium.com/llm-verification-loops-best-practices-and-patterns-07541c854fd8)). Dedicated KG fact-verification agents ([AgentKGV](https://arxiv.org/html/2607.09092)) treat verification as a first-class subsystem. Our pipeline is the documented, measured instance of this consensus applied end-to-end to an interpretive humanities corpus — orthodox where it should be (cross-model judging, staged validation, audit artifacts), novel where it counts (publication-gating, seeded-corruption calibration of the judge itself, per-axis specialist decomposition, rhetorical-voice provenance).
 
-**Scholarly provenance.** Our claim typing consciously adapts the [nanopublication](https://arxiv.org/pdf/1809.06532) assertion/provenance separation and [provenance-enhanced statements](https://arxiv.org/html/2606.15246) to rhetorical voice in interpretive text.
+**Scholarly provenance.** Our claim typing consciously adapts two lines of work, and each of our references can be read as an instance of both.
+
+*Nanopublications* ([Kuhn et al. 2018](https://arxiv.org/pdf/1809.06532)) package every atomic scientific claim as a self-contained triple of named graphs — **assertion** (the claim), **provenance** (how it is known), **publication info** (who packaged it, when) — identified by content-hashed "trusty URIs"; 10.8M exist, averaging 11.3 provenance triples per claim. Every reference in our dataset already carries exactly this anatomy, and would serialize directly. One of ours, as a nanopublication:
+
+```
+:assertion {
+  :blood  sw:synonym-of  :aqua-permanens .
+}
+:provenance {
+  :assertion  prov:wasQuotedFrom  cw:vol14_par401 ;      # CW 14, §401
+              sw:quote "one of the best-known synonyms
+                        for the aqua permanens" ;         # verbatim, mechanically checked
+              sw:claimType sw:jung-asserts .              # whose claim it is
+}
+:pubinfo {
+  :  prov:wasGeneratedBy  sw:pipeline-v2 ;
+     sw:proposedBy "claude-opus-4-8" ;
+     sw:verifiedBy "claude-fable-5" ;  sw:verifiedDate "2026-07-27" ;
+     sw:crossVendorAudit "gemini-3.1-pro (E6)" .
+}
+```
+
+The construction ledger (one commit per stage transition) plays the role of the trusty-URI immutability guarantee; emitting the graph natively in nanopublication format is planned (§8).
+
+*Provenance-enhanced statements* ([Vitali & Pasqual 2026](https://arxiv.org/html/2606.15246)) argue that provenance is not neutral metadata but **epistemic stance**: attributed claims live in distinct "cognitive worlds" (known / believed / conjectured) with formal rules — *permeation* — for when a claim crosses from someone's belief-world into accepted fact. Our claim-type trichotomy is precisely such a stance annotation, worked example:
+
+| Paragraph evidence | claim_type | Cognitive world |
+|---|---|---|
+| "the experience of the self is always a defeat for the ego" (CW 14 §778) | `jung-asserts` | Jung's own assertoric layer |
+| "why it was that Adam should have been selected as a symbol for the prima materia" (CW 14 §552) | `jung-reports-parallel` | the alchemists' belief-world, which Jung reports without owning |
+| Orthelius on the quintessence "whose action may be compared with that of Christ" (CW 12 §512) | `jung-quotes-source` (source: Orthelius) | a named author's world, quoted |
+
+The correspondence is diagnostic, not decorative: our one systematically hard residual — *sympathetic reportage*, doctrine Jung reports **and** partially adopts — is exactly Vitali & Pasqual's permeation in mid-transit: a claim between the alchemists' world and Jung's own. Both our verifiers (across two vendors) fail on the same permeating items (E1/E6), which suggests the difficulty is a property of the epistemic structure of the text, not of any model — and that the right representation for such cases is an explicit permeation marker (our `confidence: medium` and logged both-defensible adjudications are informal versions of one) rather than a forced binary.
 
 ## 3. Method
 
@@ -70,6 +102,30 @@ Rejected candidates stop at their stage; PARTIAL verdicts carry concrete correct
 5. *Integrity tests* (all quotes/anchors/types/provenance re-validated on every change, plus five **corruption canaries that must fail** — self-testing validators) → deploy → commit.
 
 Every batch transition is committed to a ledger (`pipeline/state.json`); the construction history is replayable and auditable commit-by-commit.
+
+**Standing cross-vendor audit lane.** Orthogonal to the per-batch first-party pipeline, a second-vendor auditor (currently Gemini 3.1 Pro, temperature 0) runs over the *published* graph on a sampling cadence, in a workflow that audits the pipeline — and its own instruments — rather than individual batches:
+
+```
+published seed.json
+   │  stratified sample (volume × claim type × age)
+   ▼
+CROSS-VENDOR AUDITOR (different vendor, blind to prior verdicts)
+   │  a) shared-rubric verdicts (E6)   b) rubric-free, own-terms judgments (E7)
+   ▼
+ADJUDICATION — orchestrator rules on each disagreement
+   │  against the ground-truth paragraph; every ruling logged
+   ▼
+ADJUDICATION CROSS-REVIEW — the auditor adversarially re-reviews
+   │  the orchestrator's rulings (conflict-of-interest control);
+   │  strengthened remedies accepted (2 forced in E6)
+   ▼
+PROMPT-BIAS AUDIT — the auditor critiques the first-party gate
+   │  prompt itself for leniency / rubric-convergence bias
+   ▼
+corrections applied → tests + canaries → deploy → commit
+```
+
+The lane exists because a single-vendor chain cannot see its own correlated blind spots (threat i) and its adjudicator cannot referee its own vendor's disputes (threat vi). Two design rules follow from its first runs: audit findings feed the same adjudicated-merge machinery as batch verdicts (no separate, weaker path into the graph), and each audit alternates between the shared production rubric (comparable, but convergence-biased — threat vii) and a rubric-free replication in which the second vendor judges support and severity entirely in its own terms.
 
 **Schema.** Nodes `{id, type ∈ {Concept, Operation, Symbol, Figure, Substance, Motif}, label}`; edges `{subject, relation (open vocabulary, verbatim-faithful), object, references[]}`; references `{volume, §, quote, claim_type, source?, confidence, verified, verified_by, verified_date}`.
 
@@ -115,7 +171,7 @@ A 16-item assumptions register is published (`docs/ASSUMPTIONS.md`); principal t
 
 ## 8. Limitations and future work
 
-Coverage beyond CW14/CW12 is thin; eleven volumes untouched. The relation vocabulary is open (157 single-use relations) pending a relation-family layer. Sweep batches 4–5 and probe E4 await budget. The cross-vendor tier proposed in earlier drafts is now executed (E6). Planned: **(a) a standing cross-vendor stage** — promoting the E6 auditor from one-off experiment to a periodic sampled audit with published disagreement ledgers; **(b) community verification** — blind review by Jungian readers with the evidence view as instrument, human–machine κ published, human confirmations entering the per-edge provenance chain (protocol in `docs/ASSUMPTIONS.md` §E); **(c) a declarative verifier registry** — each verification stage defined as configuration (model, axis, prompt, output schema, and its own calibration set with last measured sensitivity/specificity) over one shared runner and verdict-applier, making specialist decomposition an operable pattern rather than a finding: a new corpus axis becomes a registry entry, and every stage's quality is attached, re-measurable data; **(d) German *Gesammelte Werke* cross-check; (e) DOI-registered dataset releases.**
+Coverage beyond CW14/CW12 is thin; eleven volumes untouched. The relation vocabulary is open (157 single-use relations) pending a relation-family layer. Sweep batches 4–5 and probe E4 await budget. The cross-vendor tier proposed in earlier drafts is now executed (E6). Planned: **(a) a standing cross-vendor stage** — promoting the E6 auditor from one-off experiment to a periodic sampled audit with published disagreement ledgers; **(b) community verification** — blind review by Jungian readers with the evidence view as instrument, human–machine κ published, human confirmations entering the per-edge provenance chain (protocol in `docs/ASSUMPTIONS.md` §E); **(c) a declarative verifier registry** — each verification stage defined as configuration (model, axis, prompt, output schema, and its own calibration set with last measured sensitivity/specificity) over one shared runner and verdict-applier, making specialist decomposition an operable pattern rather than a finding: a new corpus axis becomes a registry entry, and every stage's quality is attached, re-measurable data; **(d) German *Gesammelte Werke* cross-check; (e) DOI-registered dataset releases, including a native nanopublication serialization of the graph (each reference already carries the assertion/provenance/publication-info anatomy, §2); (f) explicit permeation markers for sympathetic reportage, adapting the DEC cognitive-worlds semantics (§2) to replace the informal confidence downgrade.**
 
 ## 9. Conclusion
 
