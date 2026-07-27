@@ -135,7 +135,8 @@ function renderPanel(node) {
       'My objection (what the cited paragraph actually says):',
       '  [describe here — please quote the paragraph]',
       '',
-      'Submit at: https://github.com/sudamana23/symbolic-world/issues — disputed edges are',
+      'Submit at: https://github.com/sudamana23/symbolic-world/issues/new?template=dispute.yml',
+      '(use the dispute template). Disputed edges are',
       're-reviewed with this objection attached; outcomes are published at',
       'https://symbolicworld.observer/disputes.html'
     ].join('\n')
