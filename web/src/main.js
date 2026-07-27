@@ -95,6 +95,7 @@ function renderPanel(node) {
         <div><b>Confidence:</b> ${esc(r.confidence || '—')}</div>
         <div><b>Verification:</b> ${r.verified ? `passed independent review (${esc(r.verified_by || 'gate')}, ${esc(r.verified_date || '')}) — the full paragraph was checked for support, direction, quote fidelity, and attribution` : 'not yet independently reviewed'}</div>
         <div><b>Check it yourself:</b> CW ${r.volume} §${r.paragraph}${pg ? `, Bollingen p.${pg}` : ''}</div>
+        <button class="dispute-btn" data-report="${encodeURIComponent(JSON.stringify({ edge: `${e.data('source')} —${e.data('relation')}→ ${e.data('target')}`, citation: `CW ${r.volume} §${r.paragraph}` + (pg ? ` (Bollingen p.${pg})` : ''), quote: r.quote, claim_type: r.claim_type || '', verified_by: r.verified_by || '', verified_date: r.verified_date || '' }))}">Dispute this edge — copy report</button>
       </div>` : ''
     return `<div class="conn" data-node="${esc(other)}"><div class="conn-h">${dir}<span class="cite">${cite}</span></div>${q}<div class="conn-f">${prov}${open}</div>${evidence}</div>`
   }).join('')
@@ -110,6 +111,29 @@ function renderPanel(node) {
     ev.stopPropagation()
     const box = el.closest('.conn').querySelector('.evidence')
     if (box) box.classList.toggle('hidden')
+  }))
+  // dispute button: copy a structured, prefilled dispute report to the clipboard
+  p.querySelectorAll('.dispute-btn').forEach(el => el.addEventListener('click', ev => {
+    ev.stopPropagation()
+    const d = JSON.parse(el.dataset.report)
+    const report = [
+      'DISPUTE REPORT — The Symbolic World',
+      `Edge: ${d.edge}`,
+      `Citation: ${d.citation}`,
+      `Quote: "${d.quote}"`,
+      `Claim type: ${d.claim_type}`,
+      `Verified by: ${d.verified_by} (${d.verified_date})`,
+      '',
+      'My objection (what the cited paragraph actually says):',
+      '  [describe here — please quote the paragraph]',
+      '',
+      'Submit via the project contact / issue tracker. Disputed edges are',
+      're-reviewed with this objection attached; outcomes are published.'
+    ].join('\n')
+    navigator.clipboard.writeText(report).then(() => {
+      el.textContent = 'Report copied ✓ — paste it into the project contact'
+      setTimeout(() => { el.textContent = 'Dispute this edge — copy report' }, 3000)
+    })
   }))
 }
 

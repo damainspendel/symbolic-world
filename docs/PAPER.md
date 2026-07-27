@@ -35,6 +35,33 @@ The trust problem is quantified in the NLP literature: LLM triple extractors sco
 
 **Corpus.** Paragraph records `{volume, §, text, page}` are extracted mechanically from epub markup (§ numbers read from bracketed superscript markers, strictly-ascending filter; never inferred). A §→Bollingen-page concordance is carried per record. The corpus remains local; only ≤25-word verified quotes are published.
 
+**Pipeline overview.**
+
+```
+             ┌─────────────────────────────────────────────────────────────┐
+             │                    TRANSACTION LEDGER                       │
+             │   (pipeline/state.json — one commit per stage transition:   │
+             │    input-built → mined → pre-checked → gated → merged)      │
+             └─────────────────────────────────────────────────────────────┘
+                 ▲              ▲               ▲               ▲
+ corpus window   │              │               │               │
+ ┌────────────┐  │  candidate   │   surviving   │   corrected   │
+ │  PROPOSER  │──┴─▶ edges ─▶ MECHANICAL ─▶ STAGE 1 ──▶ STAGE 2 ──▶ ADJUDICATED
+ │ Opus 4.8   │      (quotes)  PRE-CHECK    STRUCTURE   VOICE        MERGE
+ └────────────┘               verbatim      GATE        SPECIALIST     │
+                              substring;    Fable 5:    Fable 5:       ▼
+                              nodes; dups   support,    claim-type,  seed.json
+                              (determin-    direction,  source,        │
+                               istic)       referent,   hedges         ▼
+                                            conflation             integrity tests
+                                                                   + canaries
+                                                                       │
+                                                                       ▼
+                                                                  public Atlas
+```
+
+Rejected candidates stop at their stage; PARTIAL verdicts carry concrete corrections applied at merge; every WRONG is logged. Calibration (seeded corruption) attaches measured sensitivity/specificity to each verification stage (E1, E5).
+
 **Pipeline (per batch, transaction-logged).**
 1. *Propose* (Claude Opus 4.8): 12–22 candidate edges from a contiguous window; verbatim quotes; node-vocabulary reuse; claim-typing rules (reported doctrine must be typed as reported).
 2. *Mechanical pre-check* (deterministic): each quote must appear as an in-order, letter-normalized substring of its cited paragraph (ellipsis-tolerant); node existence; duplicate-triple rejection.
@@ -48,7 +75,7 @@ Every batch transition is committed to a ledger (`pipeline/state.json`); the con
 
 ## 4. The artifact
 
-227 nodes · 610 edges · 634 references across 461 distinct paragraphs of nine CW volumes; CW 14 (*Mysterium Coniunctionis*) covered end-to-end (396 refs), CW 12 at 87 and growing. Claim types: 420 *jung-asserts*, 155 *jung-reports-parallel*, 59 *jung-quotes-source* over 74 named sources; 81 references carry hedged (medium) confidence. The public Atlas renders six typed regions with search and walkable citations; **every citation expands to its verification record** (claim-type explanation, source, confidence, verifier, date, check-it-yourself pointer), and the About panel carries a standing falsification offer: any reader with the Bollingen edition can refute any edge in ~2 minutes.
+227 nodes · 610 edges · 634 references across 461 distinct paragraphs of nine CW volumes; CW 14 (*Mysterium Coniunctionis*) covered end-to-end (396 refs), CW 12 at 87 and growing. Claim types: 420 *jung-asserts*, 155 *jung-reports-parallel*, 59 *jung-quotes-source* over 74 named sources; 81 references carry hedged (medium) confidence. The public Atlas renders six typed regions with search and walkable citations; **every citation expands to its verification record** (claim-type explanation, source, confidence, verifier, date, check-it-yourself pointer), and the About panel carries a standing falsification offer. The mechanism has three parts: (1) **per-edge evidence view** — every citation in the Atlas expands to its full verification record (claim type with explanation, source, confidence, verifier and date, and a check-it-yourself pointer to the exact § and Bollingen page), so refutation requires only the printed edition and ~2 minutes; (2) **structured dispute reports** — the evidence view generates a prefilled dispute report (edge triple, citation, quote, verification record) that a reader submits through the project repository's issue tracker (public with the artifact release; an interim contact route is given on the site); (3) **adjudication protocol** — a disputed edge is re-gated with the reader's objection attached to the payload; outcomes (upheld / corrected / removed) are published in the repository, and the edge's evidence view links its dispute history. Accumulated upheld disputes exceeding the published error bar falsify the pipeline claim itself, not just individual edges.
 
 ## 5. Experiments and results
 

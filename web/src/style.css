@@ -114,3 +114,9 @@ body {
   #about-open { top: auto; bottom: 1rem; }
   #filters { max-width: 150px; }
 }
+.dispute-btn {
+  margin-top: 0.4rem; padding: 0.25rem 0.55rem; font: 0.62rem var(--mono);
+  background: transparent; border: 1px solid var(--hairline); border-radius: 6px;
+  color: var(--ink-faint); cursor: pointer;
+}
+.dispute-btn:hover { border-color: #d0685a; color: #d0685a; }
