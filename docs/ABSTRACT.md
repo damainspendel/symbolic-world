@@ -14,7 +14,7 @@
 
 1. **Nothing enters without a source.** Every relation must carry a verbatim quote mechanically verified to exist in its cited paragraph.
 2. **Nothing enters without an independent check.** One AI model proposes relations; a *different* model family reviews each against the full paragraph and can correct or reject it. Rejections are deleted and logged publicly. (Same-model self-review is known to be biased — that's why two families.)
-3. **Whose claim is it?** Every citation is typed: Jung's own assertion (446), doctrine he reports without endorsing (151), or a named source he quotes (60 — Dorn, Khunrath, Paracelsus…). Reportage is never silently converted into endorsement.
+3. **Whose claim is it?** Every citation is typed: Jung's own assertion (423), doctrine he reports without endorsing (151), or a named source he quotes (60 — Dorn, Khunrath, Paracelsus…). Reportage is never silently converted into endorsement.
 
 **And the error rate is published, not hidden.** When early, unreviewed material was re-audited, ~25% needed correction — the honest baseline for unverified AI extraction. After full verification, an adversarial audit (a reviewer instructed to *break* each of 30 randomly sampled links) found **zero factual or directional errors**; four links (13%) needed minor attribution refinements, which were applied. The remaining known weakness — nuance of attribution and hedging — is stated on the record, with a roadmap for driving it down (seeded-corruption tests of the verifier itself, cross-vendor audits, and a standing offer: any reader who finds a link unsupported by its cited paragraph can falsify it publicly).
 
