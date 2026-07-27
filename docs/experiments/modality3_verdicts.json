@@ -1,0 +1,62 @@
+[
+  {
+    "id": "E237R0",
+    "fix": {
+      "claim_type": "jung-reports-parallel",
+      "source": "Horapollo"
+    },
+    "reason": "The quoted clause ('It stands for... indeed, it is renewal itself') continues the sentence chain governed by 'According to Horapollo (4th cent.), whose views were taken over by later writers', so the claim is reported doctrine, not Jung's own assertion."
+  },
+  {
+    "id": "E307R0",
+    "fix": {
+      "claim_type": "jung-asserts",
+      "source": null,
+      "confidence": "medium"
+    },
+    "reason": "The paragraph states 'The daemonic Lilith seems to be a certain aspect of Adam' — an explicitly hedged ('seems to be') inference, so confidence high is too strong."
+  },
+  {
+    "id": "E319R0",
+    "fix": {
+      "claim_type": "jung-reports-parallel",
+      "source": null
+    },
+    "reason": "The Lucifer identification continues the exposition of 'the alchemical idea of the ignis gehennalis' (with Boehme's 'divine wrath-fire' cited), the same reported doctrinal complex typed jung-reports-parallel in the sibling edge E318R0, not Jung's own interpretive voice."
+  },
+  {
+    "id": "E322R0",
+    "fix": {
+      "claim_type": "jung-reports-parallel",
+      "source": "Cabalistic tradition (Zohar)"
+    },
+    "reason": "The unitio of Tifereth and Malchuth in Yesod is footnoted Cabalistic doctrine ('in Yesod is accomplished the mystery of the unitio 294... He is also called the covenant of peace 295') that Jung reports, not a claim in his own interpretive voice."
+  },
+  {
+    "id": "E323R0",
+    "fix": {
+      "claim_type": "jung-reports-parallel",
+      "source": "Paracelsus",
+      "confidence": "medium"
+    },
+    "reason": "Jung frames the claim with 'It seems as though this author introduced it into alchemy from the Cabala as a synonym for the arcane substance' — a clearly hedged conjecture, so confidence should be medium."
+  },
+  {
+    "id": "E332R0",
+    "fix": {
+      "claim_type": "jung-asserts",
+      "source": null,
+      "confidence": "medium"
+    },
+    "reason": "The claim is stated conditionally — 'If mandala symbolism is the psychological equivalent of the unus mundus, then synchronicity is its para-psychological equivalent' — so confidence high overstates the paragraph's modality."
+  },
+  {
+    "id": "E343R0",
+    "fix": {
+      "claim_type": "jung-asserts",
+      "source": null,
+      "confidence": "medium"
+    },
+    "reason": "The equivalence is hedged in the text — 'the alchemical operation seems to us the equivalent of the psychological process of active imagination' — so 'seems' warrants medium rather than high confidence."
+  }
+]

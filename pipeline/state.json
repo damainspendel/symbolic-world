@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-26",
+ "updated": "2026-07-27T08:30",
  "note": "all listed candidate batches are merged into seed.json (see git log); retro_gate*/audit verdicts likewise applied",
  "graph": {
   "nodes": 227,
@@ -120,7 +120,17 @@
    "new_nodes": 7,
    "verdicts": "pipeline/batches/b-cw12-3_verdicts.json",
    "result": "20/0/0"
+  },
+  {
+   "id": "exp2-modality",
+   "status": "partially-applied",
+   "note": "batches 1-3 applied (45 fixes/381 refs); batches 4-5 HELD on spend limit (inputs in pipeline/work/modality[45]_input.json)"
+  },
+  {
+   "id": "exp3-probe",
+   "status": "held",
+   "note": "probeA/probeB inputs + probe_reference.json committed; run when budget returns"
   }
  ],
- "next": "assurance experiments 2-3, then arXiv paper"
+ "next": "resume sweep 4-5, probe A/B; cross-vendor tier on user go"
 }

@@ -1,0 +1,72 @@
+[
+  {
+    "id": "E113R0",
+    "fix": {"claim_type": "jung-reports-parallel", "source": null},
+    "reason": "The dove-as-emblem of the Holy Ghost and Sapientia is footnoted traditional Christian iconographic doctrine that Jung invokes, not his own interpretive claim."
+  },
+  {
+    "id": "E129R0",
+    "fix": {"claim_type": "jung-asserts", "source": null, "confidence": "medium"},
+    "reason": "Claim is hedged: 'the various child-fates MAY BE REGARDED as illustrating' — high confidence overstates it."
+  },
+  {
+    "id": "E151R0",
+    "fix": {"claim_type": "jung-reports-parallel", "source": null},
+    "reason": "Paragraph frames the claim as the alchemists' doctrine ('In the fertile imagination of the alchemists ... as is shown by the following instructions'), not Jung's own assertion."
+  },
+  {
+    "id": "E152R0",
+    "fix": {"claim_type": "jung-reports-parallel", "source": null},
+    "reason": "Same sentence as E151R0: the Sol-Luna hierosgamos extending to the animal kingdom is presented as the alchemists' imagination, backed by quoted alchemical instructions."
+  },
+  {
+    "id": "E164R0",
+    "fix": {"claim_type": "jung-reports-parallel", "source": "Frobenius"},
+    "reason": "No quotation is given — the whale-dragon liberation mythologem is Frobenius's documented material cited parenthetically, so it is reported, not quoted."
+  },
+  {
+    "id": "E166R0",
+    "fix": {"claim_type": "jung-reports-parallel", "source": null},
+    "reason": "Paragraph explicitly presents this as 'the mythological statement that it is the god or the hero who commits incest' — mythology's doctrine reported (and explained) by Jung."
+  },
+  {
+    "id": "E171R0",
+    "fix": {"claim_type": "jung-asserts", "source": null},
+    "reason": "'All these sea-going gods are solar figures' is Jung's own assertion; Frobenius is credited only for the coined term 'night sea journey', and nothing is quoted."
+  },
+  {
+    "id": "E172R0",
+    "fix": {"claim_type": "jung-asserts", "source": null, "confidence": "medium"},
+    "reason": "Claim is hedged: 'MAY therefore BE TAKEN as the symbol of the mother' — high confidence overstates it."
+  },
+  {
+    "id": "E197R0",
+    "fix": {"claim_type": "jung-reports-parallel", "source": null},
+    "reason": "The vidua/widow as prima materia rests on the footnoted alchemical synonym tradition (same paragraph and mode as E111R0, which is typed reports-parallel)."
+  },
+  {
+    "id": "E201R0",
+    "fix": {"claim_type": "jung-reports-parallel", "source": null},
+    "reason": "Jung reports 'the notion that salt comes from Mercurius' as an alchemical notion he finds understandable, not a claim in his own voice."
+  },
+  {
+    "id": "E204R0",
+    "fix": {"claim_type": "jung-reports-parallel", "source": "Dorn"},
+    "reason": "'Dorn's caelum, which corresponded to the stone' reports Dorn's doctrine; the correspondence is Dorn's, not Jung's own assertion."
+  },
+  {
+    "id": "E218R0",
+    "fix": {"claim_type": "jung-asserts", "source": null, "confidence": "medium"},
+    "reason": "The equivalence appears only as the protasis of a conditional ('IF mandala symbolism is the psychological equivalent of the unus mundus, then...'), so high confidence overstates it."
+  },
+  {
+    "id": "E223R0",
+    "fix": {"claim_type": "jung-reports-parallel", "source": null},
+    "reason": "The nigredo-Wisdom link rests on quoted/footnoted doctrine of the 'old philosophers' (anima media natura = Platonic world-soul = OT Wisdom), reported rather than asserted by Jung."
+  },
+  {
+    "id": "E227R0",
+    "fix": {"claim_type": "jung-reports-parallel", "source": "Dorn"},
+    "reason": "The separation of mens from body is Dorn's procedure ('By this separation Dorn obviously meant...'); claim_type jung-asserts contradicts the already-filled Dorn source."
+  }
+]
