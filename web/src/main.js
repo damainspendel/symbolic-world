@@ -9,6 +9,12 @@ const volKey = v => { const m = String(v).match(/^(\d+)(i*)$/); return m ? parse
 const esc = s => String(s).replace(/[&<>]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]))
 
 const labelOf = id => (atlas.nodes.find(n => n.id === id) || {}).label || id
+
+// dispute history per current edge (key: "subject|relation|object") — loaded async
+const DISPUTES = {}
+fetch('./disputes.json').then(r => r.json()).then(d => {
+  d.disputes.forEach(x => (x.current_edges || []).forEach(k => { (DISPUTES[k] = DISPUTES[k] || []).push(x) }))
+}).catch(() => {})
 const page = (v, p) => atlas.pages[`${v}:${p}`]
 
 const cy = cytoscape({
@@ -83,7 +89,8 @@ function renderPanel(node) {
       ? `<span class="rel">${esc(e.data('relation'))} →</span> ${esc(labelOf(other))}`
       : `${esc(labelOf(other))} <span class="rel">→ ${esc(e.data('relation'))}</span>`
     const r = (e.data('refs') || [])[0]
-    const cite = r ? `<span class="cite-toggle" title="Show verification record">CW ${r.volume} §${r.paragraph}${r.verified ? ' <span class="vcheck">✓</span>' : ''}</span>` : ''
+    const dHist = DISPUTES[`${e.data('source')}|${e.data('relation')}|${e.data('target')}`] || []
+    const cite = r ? `<span class="cite-toggle" title="Show verification record">CW ${r.volume} §${r.paragraph}${r.verified ? ' <span class="vcheck">✓</span>' : ''}${dHist.length ? ' <span class="dmark" title="This edge has public dispute history">⚖</span>' : ''}</span>` : ''
     const pg = r ? page(r.volume, r.paragraph) : null
     const q = r ? `<blockquote>${esc(r.quote)}</blockquote>` : ''
     const prov = r && r.claim_type ? `<span class="prov">${esc(r.claim_type)}${r.source ? ' · ' + esc(r.source) : ''}</span>` : ''
@@ -95,6 +102,7 @@ function renderPanel(node) {
         <div><b>Confidence:</b> ${esc(r.confidence || '—')}</div>
         <div><b>Verification:</b> ${r.verified ? `passed independent review (${esc(r.verified_by || 'gate')}, ${esc(r.verified_date || '')}) — the full paragraph was checked for support, direction, quote fidelity, and attribution` : 'not yet independently reviewed'}</div>
         <div><b>Check it yourself:</b> CW ${r.volume} §${r.paragraph}${pg ? `, Bollingen p.${pg}` : ''}</div>
+        ${dHist.map(x => `<div class="dhist"><b>Disputed</b> (${esc(x.date)}, ${esc(x.outcome)}): ${esc(x.objection)} <span class="dhist-res">→ ${esc(x.resolution)}</span> <a href="/disputes.html" class="dhist-link">full log</a></div>`).join('')}
         <button class="dispute-btn" data-report="${encodeURIComponent(JSON.stringify({ edge: `${e.data('source')} —${e.data('relation')}→ ${e.data('target')}`, citation: `CW ${r.volume} §${r.paragraph}` + (pg ? ` (Bollingen p.${pg})` : ''), quote: r.quote, claim_type: r.claim_type || '', verified_by: r.verified_by || '', verified_date: r.verified_date || '' }))}">Dispute this edge — copy report</button>
       </div>` : ''
     return `<div class="conn" data-node="${esc(other)}"><div class="conn-h">${dir}<span class="cite">${cite}</span></div>${q}<div class="conn-f">${prov}${open}</div>${evidence}</div>`

@@ -120,3 +120,7 @@ body {
   color: var(--ink-faint); cursor: pointer;
 }
 .dispute-btn:hover { border-color: #d0685a; color: #d0685a; }
+.dmark { color: #d9b25f; font-size: 0.7rem; }
+.dhist { margin-top: 0.35rem; padding-top: 0.35rem; border-top: 1px dashed var(--hairline); }
+.dhist-res { color: var(--ink); }
+.dhist-link { color: var(--gold); font-size: 0.62rem; }

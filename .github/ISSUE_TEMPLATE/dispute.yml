@@ -1,0 +1,35 @@
+name: Dispute an edge
+description: Challenge a connection in The Symbolic World. Disputes must engage the cited paragraph — incomplete reports are closed without adjudication.
+title: "[Dispute] "
+labels: ["dispute"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use the **dispute button** in the atlas (expand any citation's ✓) to copy a prefilled
+        report, then paste it below. Disputes that do not state what the cited paragraph
+        actually says are closed as incomplete, without adjudication. Admissible disputes are
+        re-gated with your objection attached; every outcome is published in the
+        [dispute log](https://symbolicworld.observer/disputes.html).
+  - type: textarea
+    id: report
+    attributes:
+      label: Dispute report
+      description: Paste the prefilled report from the atlas (edge, citation, quote, verification record).
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: objection
+    attributes:
+      label: What the cited paragraph actually says
+      description: Quote or closely paraphrase the paragraph (volume + §) and state why it does not support the edge. This field is the admissibility gate.
+    validations:
+      required: true
+  - type: checkboxes
+    id: checked
+    attributes:
+      label: Verification
+      options:
+        - label: I have read the cited paragraph in the Collected Works (any edition with § numbers).
+          required: true
