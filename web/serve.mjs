@@ -14,7 +14,9 @@ const ROOT = fileURLToPath(new URL('./dist/', import.meta.url))
 const MIME = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.svg': 'image/svg+xml', '.png': 'image/png', '.ico': 'image/x-icon' }
 
 createServer((req, res) => {
-  let path = decodeURIComponent((req.url || '/').split('?')[0])
+  let path
+  try { path = decodeURIComponent((req.url || '/').split('?')[0]) }
+  catch { res.writeHead(400); res.end('bad request'); return }
   let file = normalize(join(ROOT, path))
   if (!file.startsWith(ROOT) || !existsSync(file) || statSync(file).isDirectory()) file = join(ROOT, 'index.html')
   try {

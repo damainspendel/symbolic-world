@@ -124,3 +124,5 @@ body {
 .dhist { margin-top: 0.35rem; padding-top: 0.35rem; border-top: 1px dashed var(--hairline); }
 .dhist-res { color: var(--ink); }
 .dhist-link { color: var(--gold); font-size: 0.62rem; }
+#disputes-link { font: 0.62rem var(--mono); color: var(--ink-faint); text-decoration: none; letter-spacing: 0.05em; white-space: nowrap; }
+#disputes-link:hover { color: var(--gold); }

@@ -86,6 +86,8 @@ def validate(seed, corpus, pages):
                 fails.append(f"[corpus] §missing: CW{r['volume']} §{r['paragraph']}  ({tag})")
                 continue
             text = corpus[key]
+            if not words(r.get("quote", "")):
+                fails.append(f"[quote] empty/blank quote: {tag}")
             for frag in re.split(r"\.\.\.|…", r["quote"]):
                 nt = words(frag)
                 if nt and not is_subsequence(nt, text):
@@ -106,7 +108,8 @@ def canaries(seed, corpus, pages):
 
     # pick a real verified edge with >=1 reference as the mutation target
     base_idx = next(i for i, e in enumerate(seed["edges"])
-                    if e.get("references") and e["references"][0].get("verified"))
+                    if e.get("references") and e["references"][0].get("verified")
+                    and e["relation"] not in STRUCTURAL)
 
     def mutated(fn):
         s = copy.deepcopy(seed)
