@@ -2291,7 +2291,8 @@
      "source": "Ripley, Cantilena",
      "verified_by": "claude-fable-5",
      "verified_date": "2026-07-25",
-     "crossvendor_checked": "gemini-3.1-pro (E7 full-volume audit, rubric-free, 2026-07-27)"
+     "crossvendor_checked": "gemini-3.1-pro (E7 full-volume audit, rubric-free, 2026-07-27)",
+     "vocabulary_note": "speaker (the old king of Ripley's Cantilena) resolved from preceding paragraphs, not this one"
     }
    ]
   },
@@ -3341,7 +3342,8 @@
      "claim_type": "jung-asserts",
      "verified_by": "claude-fable-5",
      "verified_date": "2026-07-25",
-     "crossvendor_checked": "gemini-3.1-pro (E7 full-volume audit, rubric-free, 2026-07-27)"
+     "crossvendor_checked": "gemini-3.1-pro (E7 full-volume audit, rubric-free, 2026-07-27)",
+     "vocabulary_note": "'second Adam' mapped to the anthropos node ('Anthropos / Adam Kadmon') by documented convention"
     },
     {
      "volume": "14",
@@ -3353,7 +3355,8 @@
      "verified_by": "claude-fable-5",
      "verified_date": "2026-07-25",
      "source": "Hippolytus",
-     "crossvendor_checked": "gemini-3.1-pro (E7 full-volume audit, rubric-free, 2026-07-27)"
+     "crossvendor_checked": "gemini-3.1-pro (E7 full-volume audit, rubric-free, 2026-07-27)",
+     "vocabulary_note": "'second Adam' mapped to the anthropos node by documented convention"
     }
    ]
   },
@@ -3383,7 +3386,8 @@
      "claim_type": "jung-asserts",
      "verified_by": "claude-fable-5",
      "verified_date": "2026-07-25",
-     "crossvendor_checked": "gemini-3.1-pro (E7 full-volume audit, rubric-free, 2026-07-27)"
+     "crossvendor_checked": "gemini-3.1-pro (E7 full-volume audit, rubric-free, 2026-07-27)",
+     "vocabulary_note": "'second Adam' mapped to the anthropos node by documented convention"
     }
    ]
   },
@@ -5597,7 +5601,8 @@
      "verified_by": "claude-fable-5",
      "verified_date": "2026-07-25",
      "modality_swept": true,
-     "crossvendor_checked": "gemini-3.1-pro (E7 full-volume audit, rubric-free, 2026-07-27)"
+     "crossvendor_checked": "gemini-3.1-pro (E7 full-volume audit, rubric-free, 2026-07-27)",
+     "vocabulary_note": "'unio mentalis' term appears in adjacent paragraphs of the same discussion, not this one"
     }
    ]
   },
@@ -5981,7 +5986,8 @@
      "claim_type": "jung-reports-parallel",
      "verified_by": "claude-fable-5",
      "verified_date": "2026-07-25",
-     "crossvendor_checked": "gemini-3.1-pro (E7 full-volume audit, rubric-free, 2026-07-27)"
+     "crossvendor_checked": "gemini-3.1-pro (E7 full-volume audit, rubric-free, 2026-07-27)",
+     "vocabulary_note": "'second Adam' mapped to the anthropos node by documented convention"
     }
    ]
   },
@@ -6090,7 +6096,8 @@
      "claim_type": "jung-asserts",
      "verified_by": "claude-fable-5",
      "verified_date": "2026-07-25",
-     "crossvendor_checked": "gemini-3.1-pro (E7 full-volume audit, rubric-free, 2026-07-27)"
+     "crossvendor_checked": "gemini-3.1-pro (E7 full-volume audit, rubric-free, 2026-07-27)",
+     "vocabulary_note": "'Diana' resolved from the preceding paragraph (nymph of the spring)"
     }
    ]
   },
@@ -6108,7 +6115,8 @@
      "claim_type": "jung-asserts",
      "verified_by": "claude-fable-5",
      "verified_date": "2026-07-25",
-     "crossvendor_checked": "gemini-3.1-pro (E7 full-volume audit, rubric-free, 2026-07-27)"
+     "crossvendor_checked": "gemini-3.1-pro (E7 full-volume audit, rubric-free, 2026-07-27)",
+     "vocabulary_note": "'Diana' resolved from the preceding paragraph (nymph of the spring)"
     }
    ]
   },
@@ -6144,7 +6152,8 @@
      "claim_type": "jung-asserts",
      "verified_by": "claude-fable-5",
      "verified_date": "2026-07-25",
-     "crossvendor_checked": "gemini-3.1-pro (E7 full-volume audit, rubric-free, 2026-07-27)"
+     "crossvendor_checked": "gemini-3.1-pro (E7 full-volume audit, rubric-free, 2026-07-27)",
+     "vocabulary_note": "'Diana' resolved from the preceding paragraph (nymph of the spring)"
     }
    ]
   },
@@ -6810,7 +6819,8 @@
      "claim_type": "jung-asserts",
      "verified_by": "claude-fable-5",
      "verified_date": "2026-07-25",
-     "crossvendor_checked": "gemini-3.1-pro (E7 full-volume audit, rubric-free, 2026-07-27)"
+     "crossvendor_checked": "gemini-3.1-pro (E7 full-volume audit, rubric-free, 2026-07-27)",
+     "vocabulary_note": "'second Adam' mapped to the anthropos node ('Anthropos / Adam Kadmon') by documented convention"
     }
    ]
   },
@@ -6828,7 +6838,8 @@
      "claim_type": "jung-asserts",
      "verified_by": "claude-fable-5",
      "verified_date": "2026-07-25",
-     "crossvendor_checked": "gemini-3.1-pro (E7 full-volume audit, rubric-free, 2026-07-27)"
+     "crossvendor_checked": "gemini-3.1-pro (E7 full-volume audit, rubric-free, 2026-07-27)",
+     "vocabulary_note": "'second Adam' mapped to the anthropos node ('Anthropos / Adam Kadmon') by documented convention"
     }
    ]
   },
@@ -7230,7 +7241,8 @@
      "claim_type": "jung-asserts",
      "verified_by": "claude-fable-5",
      "verified_date": "2026-07-25",
-     "crossvendor_checked": "gemini-3.1-pro (E7 full-volume audit, rubric-free, 2026-07-27)"
+     "crossvendor_checked": "gemini-3.1-pro (E7 full-volume audit, rubric-free, 2026-07-27)",
+     "vocabulary_note": "'second Adam' mapped to the anthropos node by documented convention"
     }
    ]
   },
