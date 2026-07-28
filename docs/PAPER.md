@@ -51,7 +51,7 @@ The risks above are documented, not hypothetical:
 
 **Industry practice.** Production extraction pipelines converge on the same skeleton independently: schema-first design, typed mechanical validation with human escalation carrying the best-effort extraction ([production document-pipeline lessons](https://medium.com/alan/lessons-from-running-an-llm-document-processing-pipeline-in-production-33d87f99cdb1)), continuous calibration of automated judges against sampled expert judgment ([HITL evaluation practice](https://www.braintrust.dev/articles/best-human-in-the-loop-llm-evaluation-platforms-2026)), and verification loops with measured diminishing returns after ~2 rounds ([verification-loop patterns](https://timjwilliams.medium.com/llm-verification-loops-best-practices-and-patterns-07541c854fd8)). Dedicated KG fact-verification agents ([AgentKGV](https://arxiv.org/html/2607.09092)) treat verification as a first-class subsystem. Our pipeline is the documented, measured instance of this consensus applied end-to-end to an interpretive humanities corpus: orthodox in its skeleton (cross-model judging, staged validation, audit artifacts) and novel in four places: publication-gating, seeded-corruption calibration of the judge itself, per-axis specialist decomposition, and rhetorical-voice provenance.
 
-**What we borrowed.** The reference format adapts the assertion/provenance/publication-info anatomy of [nanopublications](https://arxiv.org/pdf/1809.06532) (a native serialization is planned). Nanopublications have seen almost no humanities uptake[^npuptake]; this project is evidence that they deserve consideration as a publishing form for the humanities: the atomic unit of a nanopublication (one claim, its exact source, who stands behind it) matches what a humanities footnote has always tried to be, and the voice dimension interpretive corpora add fits naturally in its provenance graph. And the voice-typing treats provenance as *epistemic stance* in the sense of [provenance-enhanced statements](https://arxiv.org/html/2606.15246): our stubborn "sympathetic reportage" residual is precisely their claim-in-permeation between cognitive worlds (and an instance of Drucker's argument that humanities "data" is better understood as *capta* — taken, interpreted — than given). Two neighbors define the space. [PhilKG](https://openreview.net/forum?id=yvk5HRVGQr) builds a 140K-node graph from the Stanford Encyclopedia of Philosophy with LLM extraction and a stronger model reviewing *selected* outputs; the contrast is instructive on three axes: PhilKG reviews a selection, we gate every published claim; PhilKG's independence comes from a capability tier (a stronger model from the same ecosystem), ours from vendor diversity; and PhilKG reports no calibration of its reviewer, where our verifiers are themselves measured instruments with published catch rates. The nearest in spirit is the [Darshana Graph](https://arxiv.org/abs/2606.18222), whose author names a randomly sampled precision evaluation "the most valuable immediate extension" of that work; this paper operationalizes exactly that extension, with the caveat that our annotators are so far models from two vendors rather than multiple humans (human in the loop live as a channel, §8). To our knowledge, no knowledge graph of Jung's Collected Works previously existed[^nojungkg]; the ARAS concordance and Princeton's digital edition are search, not relations.
+**What we borrowed.** The reference format adapts the assertion/provenance/publication-info anatomy of [nanopublications](https://arxiv.org/pdf/1809.06532) (a native serialization is planned). Nanopublications have seen almost no humanities uptake[^npuptake]; this project is evidence that they deserve consideration as a publishing form for the humanities: the atomic unit of a nanopublication (one claim, its exact source, who stands behind it) matches what a humanities footnote has always tried to be, and the voice dimension interpretive corpora add fits naturally in its provenance graph. And the voice-typing treats provenance as *epistemic stance* in the sense of [provenance-enhanced statements](https://arxiv.org/html/2606.15246) (worked examples of both borrowings: Appendix B): our stubborn "sympathetic reportage" residual is precisely their claim-in-permeation between cognitive worlds (and an instance of Drucker's argument that humanities "data" is better understood as *capta* — taken, interpreted — than given). Two neighbors define the space. [PhilKG](https://openreview.net/forum?id=yvk5HRVGQr) builds a 140K-node graph from the Stanford Encyclopedia of Philosophy with LLM extraction and a stronger model reviewing *selected* outputs; the contrast is instructive on three axes: PhilKG reviews a selection, we gate every published claim; PhilKG's independence comes from a capability tier (a stronger model from the same ecosystem), ours from vendor diversity; and PhilKG reports no calibration of its reviewer, where our verifiers are themselves measured instruments with published catch rates. The nearest in spirit is the [Darshana Graph](https://arxiv.org/abs/2606.18222), whose author names a randomly sampled precision evaluation "the most valuable immediate extension" of that work; this paper operationalizes exactly that extension, with the caveat that our annotators are so far models from two vendors rather than multiple humans (human in the loop live as a channel, §8). To our knowledge, no knowledge graph of Jung's Collected Works previously existed[^nojungkg]; the ARAS concordance and Princeton's digital edition are search, not relations.
 
 ## 4. Mitigants
 
@@ -255,3 +255,38 @@ Conception, direction, corpus provision, publication decisions, and final respon
 | First-pass pipeline (mine + both gates + check) | ≈ $0.09–0.10 per verified citation |
 | Fully amortized (calibrations, audits, evaluation suite) | ≈ $0.12–0.14 per verified citation |
 | Whole artifact + evaluation suite (E0–E8) | ≈ $85–115 — API cost only; excludes roughly a person-week of human time |
+
+## Appendix B — Worked examples: nanopublication and epistemic stance
+
+**A reference as a nanopublication.** Every reference in the dataset already carries the assertion / provenance / publication-info anatomy. One of ours, serialized:
+
+```
+:assertion {
+  :blood  sw:synonym-of  :aqua-permanens .
+}
+:provenance {
+  :assertion  prov:wasQuotedFrom  cw:vol14_par401 ;      # CW 14, §401
+              sw:quote "one of the best-known synonyms
+                        for the aqua permanens" ;         # verbatim, mechanically checked
+              sw:claimType sw:jung-asserts .              # whose claim it is
+}
+:pubinfo {
+  :  prov:wasGeneratedBy  sw:pipeline-v2 ;
+     sw:proposedBy "claude-opus-4-8" ;
+     sw:verifiedBy "claude-fable-5" ;  sw:verifiedDate "2026-07-27" ;
+     sw:crossVendorAudit "gemini-3.1-pro" .
+}
+```
+
+The transaction ledger (one commit per stage transition) plays the role of the trusty-URI immutability guarantee; a native serialization of the full graph in this format is planned (§8).
+
+**Voice as epistemic stance.** The claim-type vocabulary is a stance annotation in the sense of the provenance-enhanced-statements (DEC) framework — each type places a claim in a different cognitive world:
+
+| Paragraph evidence | claim_type | Cognitive world |
+|---|---|---|
+| "the experience of the self is always a defeat for the ego" (CW 14 §778) | `jung-asserts` | Jung's own assertoric layer |
+| "why it was that Adam should have been selected as a symbol for the prima materia" (CW 14 §552) | `jung-reports-parallel` | the alchemists' belief-world, which Jung reports without owning |
+| Orthelius on the quintessence "whose action may be compared with that of Christ" (CW 12 §512) | `jung-quotes-source` (source: Orthelius) | a named author's world, quoted |
+
+The correspondence is diagnostic, not decorative: the pipeline's one systematically hard residual — *sympathetic reportage*, doctrine Jung reports and half-adopts — is precisely a claim in mid-permeation between the alchemists' world and Jung's own. Both verifiers, across two vendors, fail on exactly these items; the difficulty is a property of the text's epistemic structure. An explicit permeation marker, replacing the informal confidence downgrade, is future work (§8).
+
