@@ -173,7 +173,6 @@ The compounded result, in one sentence: raw AI extraction on this corpus gets ro
 | (refereeing) | R7 marking own homework | rulings published verbatim; second vendor re-reviews the referee | in E6 | 9/11 rulings upheld; 2 stronger corrections forced | — (no disputes arose) |
 | 6 · Publish | whatever still got through | adversarial audit; evidence views; reader confirm/dispute | E2 · humans | 0 content errors in 30; human data early | published graph + full reproduction package |
 
-*A second-corpus column is planned: the same harness run on a public-domain corpus (William James, __The Varieties of Religious Experience__), yielding a per-corpus risk profile alongside Jung's, and a fully distributable reproduction package.*
 
 ## 11. Conclusion
 
