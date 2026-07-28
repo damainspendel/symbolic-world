@@ -75,7 +75,7 @@ why it was made, what would break if it's wrong, and its measurement status.
 15. **Per-edge verification implies graph-level coherence.** Dedup is by exact
     triple; near-duplicate phrasings and cross-edge contradictions are not
     systematically checked. Status: known gap.
-16. **The gate's SUPPORTED is trustworthy.** Now measured: 100% specificity,
+16. **The gate's SUPPORTED is trustworthy.** Now measured: 93% specificity (E1b, n=200; supersedes the n=40 figure),
     100% detection of direction reversals and wrong referents, 60% on identity
     overreach, 40% on voice flips (Experiment 1, n=40, seed 20260726).
 

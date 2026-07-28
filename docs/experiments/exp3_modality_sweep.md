@@ -25,8 +25,8 @@ carries `modality_swept: 2026-07-27`.
 
 **Interpretation.** (i) The 10.3% full-graph modality-error rate closely matches
 the two independent estimates (adversarial audit 13.3%, calibration voice-flip
-detection deficit) — three methods converge on the same weak axis. (ii) The
-age gradient (18.9% oldest → ~5.5% newest) is direct evidence that gate
+detection deficit) — two same-instrument measurements agree on the weak axis (the calibration miss rate is a detector property, not a prevalence — correction 2026-07-28). (ii) The
+age gradient (18.9% oldest → ~5.5% newest) is suggestive evidence (uncontrolled temporal comparison; see E9 for the controlled test) that gate
 corrections fed back into extractor instructions compound: the pipeline's
 first-pass modality precision roughly tripled over the project's lifetime.
 (iii) The auditor corrects in both directions (asserts↔reports), so the sweep

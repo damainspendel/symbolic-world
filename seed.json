@@ -1620,9 +1620,9 @@
      "verified": true,
      "claim_type": "jung-asserts",
      "verified_by": "claude-fable-5",
-     "verified_date": "2026-07-25",
-     "quote_repaired": "2026-07-28: elision exceeded 30-word bound; trimmed to strongest contiguous fragment",
-     "crossvendor_checked": "gemini-3.1-pro (E6 stratified audit, 2026-07-27)"
+     "verified_date": "2026-07-28",
+     "quote_repaired": "2026-07-28: elision exceeded 30-word bound; trimmed to strongest contiguous fragment; re-gated 2026-07-28 (SUPPORTED)",
+     "crossvendor_checked": "gemini-3.1-pro (E6 stratified audit, 2026-07-27) — NOTE: audit predates the 2026-07-28 quote repair; not re-audited cross-vendor"
     }
    ]
   },
@@ -2405,9 +2405,9 @@
      "verified": true,
      "claim_type": "jung-asserts",
      "verified_by": "claude-fable-5",
-     "verified_date": "2026-07-25",
-     "quote_repaired": "2026-07-28: elision exceeded 30-word bound; trimmed to strongest contiguous fragment",
-     "crossvendor_checked": "gemini-3.1-pro (E7 full-volume audit, rubric-free, 2026-07-27)"
+     "verified_date": "2026-07-28",
+     "quote_repaired": "2026-07-28: elision exceeded 30-word bound; trimmed to strongest contiguous fragment; re-gated 2026-07-28 (SUPPORTED)",
+     "crossvendor_checked": "gemini-3.1-pro (E7 full-volume audit, rubric-free, 2026-07-27) — NOTE: audit predates the 2026-07-28 quote repair; not re-audited cross-vendor"
     }
    ]
   },
@@ -2673,9 +2673,9 @@
      "verified": true,
      "claim_type": "jung-asserts",
      "verified_by": "claude-fable-5",
-     "verified_date": "2026-07-25",
+     "verified_date": "2026-07-28",
      "modality_swept": true,
-     "quote_repaired": "2026-07-28: elision exceeded 30-word bound; trimmed to strongest contiguous fragment"
+     "quote_repaired": "2026-07-28: elision exceeded 30-word bound; trimmed to strongest contiguous fragment; re-gated 2026-07-28 (SUPPORTED)"
     }
    ]
   },
@@ -2783,8 +2783,8 @@
      "verified": true,
      "claim_type": "jung-asserts",
      "verified_by": "claude-fable-5",
-     "verified_date": "2026-07-25",
-     "quote_repaired": "2026-07-28: elision exceeded 30-word bound; trimmed to strongest contiguous fragment"
+     "verified_date": "2026-07-28",
+     "quote_repaired": "2026-07-28: elision exceeded 30-word bound; trimmed to strongest contiguous fragment; re-gated 2026-07-28 (SUPPORTED)"
     }
    ]
   },
@@ -3374,9 +3374,9 @@
      "verified": true,
      "claim_type": "jung-asserts",
      "verified_by": "claude-fable-5",
-     "verified_date": "2026-07-25",
-     "quote_repaired": "2026-07-28: elision exceeded 30-word bound; trimmed to strongest contiguous fragment",
-     "crossvendor_checked": "gemini-3.1-pro (E7 full-volume audit, rubric-free, 2026-07-27)"
+     "verified_date": "2026-07-28",
+     "quote_repaired": "2026-07-28: elision exceeded 30-word bound; trimmed to strongest contiguous fragment; re-gated 2026-07-28 (SUPPORTED)",
+     "crossvendor_checked": "gemini-3.1-pro (E7 full-volume audit, rubric-free, 2026-07-27) — NOTE: audit predates the 2026-07-28 quote repair; not re-audited cross-vendor"
     },
     {
      "volume": "14",
@@ -3951,9 +3951,9 @@
      "verified": true,
      "claim_type": "jung-asserts",
      "verified_by": "claude-fable-5",
-     "verified_date": "2026-07-25",
-     "quote_repaired": "2026-07-28: elision exceeded 30-word bound; trimmed to strongest contiguous fragment",
-     "crossvendor_checked": "gemini-3.1-pro (E6 stratified audit, 2026-07-27)"
+     "verified_date": "2026-07-28",
+     "quote_repaired": "2026-07-28: elision exceeded 30-word bound; trimmed to strongest contiguous fragment; re-gated 2026-07-28 (SUPPORTED)",
+     "crossvendor_checked": "gemini-3.1-pro (E6 stratified audit, 2026-07-27) — NOTE: audit predates the 2026-07-28 quote repair; not re-audited cross-vendor"
     }
    ]
   },
@@ -4060,8 +4060,8 @@
      "verified": true,
      "claim_type": "jung-asserts",
      "verified_by": "claude-fable-5",
-     "verified_date": "2026-07-25",
-     "quote_repaired": "2026-07-28: elision exceeded 30-word bound; trimmed to strongest contiguous fragment"
+     "verified_date": "2026-07-28",
+     "quote_repaired": "2026-07-28: elision exceeded 30-word bound; trimmed to strongest contiguous fragment; re-gated 2026-07-28 (SUPPORTED)"
     }
    ]
   },
@@ -4156,8 +4156,8 @@
      "verified": true,
      "claim_type": "jung-asserts",
      "verified_by": "claude-fable-5",
-     "verified_date": "2026-07-25",
-     "quote_repaired": "2026-07-28: elision exceeded 30-word bound; trimmed to strongest contiguous fragment"
+     "verified_date": "2026-07-28",
+     "quote_repaired": "2026-07-28: elision exceeded 30-word bound; trimmed to strongest contiguous fragment; re-gated 2026-07-28 (SUPPORTED)"
     }
    ]
   },
@@ -4544,9 +4544,9 @@
      "verified": true,
      "claim_type": "jung-asserts",
      "verified_by": "claude-fable-5",
-     "verified_date": "2026-07-25",
-     "quote_repaired": "2026-07-28: elision exceeded 30-word bound; trimmed to strongest contiguous fragment",
-     "crossvendor_checked": "gemini-3.1-pro (E6 stratified audit, 2026-07-27)"
+     "verified_date": "2026-07-28",
+     "quote_repaired": "2026-07-28: elision exceeded 30-word bound; trimmed to strongest contiguous fragment; re-gated 2026-07-28 (SUPPORTED)",
+     "crossvendor_checked": "gemini-3.1-pro (E6 stratified audit, 2026-07-27) — NOTE: audit predates the 2026-07-28 quote repair; not re-audited cross-vendor"
     }
    ]
   },
@@ -4741,9 +4741,9 @@
      "verified": true,
      "claim_type": "jung-reports-parallel",
      "verified_by": "claude-fable-5",
-     "verified_date": "2026-07-25",
+     "verified_date": "2026-07-28",
      "source": "Christian tradition (John 12:31)",
-     "quote_repaired": "2026-07-28: elision exceeded 30-word bound; trimmed to strongest contiguous fragment"
+     "quote_repaired": "2026-07-28: elision exceeded 30-word bound; trimmed to strongest contiguous fragment; re-gated 2026-07-28 (SUPPORTED)"
     }
    ]
   },
@@ -4863,8 +4863,8 @@
      "verified": true,
      "claim_type": "jung-asserts",
      "verified_by": "claude-fable-5",
-     "verified_date": "2026-07-25",
-     "quote_repaired": "2026-07-28: elision exceeded 30-word bound; trimmed to strongest contiguous fragment"
+     "verified_date": "2026-07-28",
+     "quote_repaired": "2026-07-28: elision exceeded 30-word bound; trimmed to strongest contiguous fragment; re-gated 2026-07-28 (SUPPORTED)"
     }
    ]
   },
@@ -5334,9 +5334,9 @@
      "verified": true,
      "claim_type": "jung-asserts",
      "verified_by": "claude-fable-5",
-     "verified_date": "2026-07-25",
-     "quote_repaired": "2026-07-28: elision exceeded 30-word bound; trimmed to strongest contiguous fragment",
-     "crossvendor_checked": "gemini-3.1-pro (E7 full-volume audit, rubric-free, 2026-07-27)"
+     "verified_date": "2026-07-28",
+     "quote_repaired": "2026-07-28: elision exceeded 30-word bound; trimmed to strongest contiguous fragment; re-gated 2026-07-28 (SUPPORTED)",
+     "crossvendor_checked": "gemini-3.1-pro (E7 full-volume audit, rubric-free, 2026-07-27) — NOTE: audit predates the 2026-07-28 quote repair; not re-audited cross-vendor"
     }
    ]
   },
@@ -5562,9 +5562,9 @@
      "verified": true,
      "claim_type": "jung-asserts",
      "verified_by": "claude-fable-5",
-     "verified_date": "2026-07-25",
-     "quote_repaired": "2026-07-28: elision exceeded 30-word bound; trimmed to strongest contiguous fragment",
-     "crossvendor_checked": "gemini-3.1-pro (E7 full-volume audit, rubric-free, 2026-07-27)"
+     "verified_date": "2026-07-28",
+     "quote_repaired": "2026-07-28: elision exceeded 30-word bound; trimmed to strongest contiguous fragment; re-gated 2026-07-28 (SUPPORTED)",
+     "crossvendor_checked": "gemini-3.1-pro (E7 full-volume audit, rubric-free, 2026-07-27) — NOTE: audit predates the 2026-07-28 quote repair; not re-audited cross-vendor"
     }
    ]
   },
@@ -5895,9 +5895,9 @@
      "verified": true,
      "claim_type": "jung-asserts",
      "verified_by": "claude-fable-5",
-     "verified_date": "2026-07-25",
-     "quote_repaired": "2026-07-28: elision exceeded 30-word bound; trimmed to strongest contiguous fragment",
-     "crossvendor_checked": "gemini-3.1-pro (E7 full-volume audit, rubric-free, 2026-07-27)"
+     "verified_date": "2026-07-28",
+     "quote_repaired": "2026-07-28: elision exceeded 30-word bound; trimmed to strongest contiguous fragment; re-gated 2026-07-28 (SUPPORTED)",
+     "crossvendor_checked": "gemini-3.1-pro (E7 full-volume audit, rubric-free, 2026-07-27) — NOTE: audit predates the 2026-07-28 quote repair; not re-audited cross-vendor"
     }
    ]
   },
@@ -12257,9 +12257,9 @@
      "claim_type": "jung-quotes-source",
      "source": "Basilius Valentinus",
      "verified_by": "claude-fable-5",
-     "verified_date": "2026-07-26",
-     "quote_repaired": "2026-07-28: elision exceeded 30-word bound; trimmed to strongest contiguous fragment",
-     "crossvendor_checked": "gemini-3.1-pro (E6 stratified audit, 2026-07-27)"
+     "verified_date": "2026-07-28",
+     "quote_repaired": "2026-07-28: elision exceeded 30-word bound; trimmed to strongest contiguous fragment; re-gated 2026-07-28 (SUPPORTED)",
+     "crossvendor_checked": "gemini-3.1-pro (E6 stratified audit, 2026-07-27) — NOTE: audit predates the 2026-07-28 quote repair; not re-audited cross-vendor"
     }
    ]
   },
@@ -12314,8 +12314,8 @@
      "claim_type": "jung-quotes-source",
      "source": "Orthelius",
      "verified_by": "claude-fable-5",
-     "verified_date": "2026-07-26",
-     "quote_repaired": "2026-07-28: elision exceeded 30-word bound; trimmed to strongest contiguous fragment"
+     "verified_date": "2026-07-28",
+     "quote_repaired": "2026-07-28: elision exceeded 30-word bound; trimmed to strongest contiguous fragment; re-gated 2026-07-28 (SUPPORTED)"
     }
    ]
   },

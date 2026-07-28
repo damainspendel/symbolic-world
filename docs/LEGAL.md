@@ -59,7 +59,7 @@ We are committed to acting in good faith toward the rights holders. If any right
 
 ## 7. AI disclosure
 
-Extraction and verification were performed with AI models — Claude (Opus and Fable, Anthropic) and Gemini (Google) — under human direction. All quotations were mechanically verified verbatim against the source texts; the AI systems assisted the analysis but did not replace source verification.
+Extraction and verification were performed with AI models (Claude Opus and Fable, Anthropic; Gemini, Google) under human direction. All quotations were mechanically verified against the source texts as letter-normalized, in-order, near-contiguous excerpts with bounded elisions; the semantic verification of claims has to date been performed by AI models, with human verification of a reference sample planned and disclosed as outstanding in the accompanying paper.
 
 ## 8. Disclaimer
 

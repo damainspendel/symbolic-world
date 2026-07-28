@@ -822,9 +822,9 @@
      "confidence": "medium",
      "verified": true,
      "verified_by": "claude-fable-5",
-     "verified_date": "2026-07-27",
-     "crossvendor_checked": "gemini-3.1-pro",
-     "quote_repaired": "2026-07-28: trimmed to 25-word bound"
+     "verified_date": "2026-07-28",
+     "crossvendor_checked": "gemini-3.1-pro — NOTE: audit predates the 2026-07-28 quote repair; not re-audited cross-vendor",
+     "quote_repaired": "2026-07-28: trimmed to 25-word bound; re-gated 2026-07-28 (SUPPORTED)"
     }
    ]
   },
@@ -952,9 +952,9 @@
      "confidence": "high",
      "verified": true,
      "verified_by": "claude-fable-5",
-     "verified_date": "2026-07-27",
-     "crossvendor_checked": "gemini-3.1-pro",
-     "quote_repaired": "2026-07-28: elision exceeded 30-token bound; trimmed to the sequence's culminating fragment"
+     "verified_date": "2026-07-28",
+     "crossvendor_checked": "gemini-3.1-pro — NOTE: audit predates the 2026-07-28 quote repair; not re-audited cross-vendor",
+     "quote_repaired": "2026-07-28: elision exceeded 30-token bound; trimmed to the sequence's culminating fragment; re-gated 2026-07-28 (SUPPORTED)"
     }
    ]
   }
