@@ -31,15 +31,19 @@ def words(s):
     return re.findall(r"[a-z]+", s.lower())
 
 
-def is_subsequence(needle, haystack, max_gap=3):
-    """True if `needle` tokens appear in order and NEAR-CONTIGUOUSLY within
-    `haystack`: at most `max_gap` non-matching tokens between consecutive quote
-    tokens (absorbs interleaved 'fig. 115' / footnote markers, but rejects
-    collage quotes assembled from words scattered across the paragraph)."""
+MAX_FRAGMENT_GAP = 3      # tokens absorbed inside a fragment (footnote markers)
+MAX_ELISION = 30          # tokens an ellipsis may skip between fragments (~1 sentence)
+MAX_QUOTE_WORDS = 25      # total quoted words per reference
+
+
+def find_fragment(needle, haystack, max_gap=MAX_FRAGMENT_GAP, start_from=0):
+    """Earliest near-contiguous occurrence of `needle` in `haystack` at or after
+    `start_from`; returns (start, end) token indices or None. At most `max_gap`
+    non-matching tokens between consecutive quote tokens."""
     if not needle:
-        return True
+        return (start_from, start_from)
     n = len(haystack)
-    for start in range(n):
+    for start in range(start_from, n):
         if haystack[start] != needle[0]:
             continue
         pos = start
@@ -55,8 +59,30 @@ def is_subsequence(needle, haystack, max_gap=3):
                 break
             pos = nxt
         if ok:
-            return True
-    return False
+            return (start, pos)
+    return None
+
+
+def quote_matches(fragments, haystack):
+    """All fragments must occur in order, each near-contiguously, with at most
+    MAX_ELISION tokens skipped between consecutive fragments. Returns an error
+    string or None. Rejects both scattered collages and unbounded ellisions."""
+    pos = 0
+    prev_end = None
+    for frag in fragments:
+        m = find_fragment(frag, haystack, start_from=pos)
+        if m is None:
+            return "fragment not found"
+        if prev_end is not None and m[0] - prev_end - 1 > MAX_ELISION:
+            return f"elision exceeds {MAX_ELISION} tokens"
+        prev_end = m[1]
+        pos = m[1] + 1
+    return None
+
+
+def is_subsequence(needle, haystack, max_gap=MAX_FRAGMENT_GAP):
+    """Back-compat single-fragment check."""
+    return find_fragment(needle, haystack, max_gap) is not None
 
 
 def load():
@@ -109,10 +135,12 @@ def validate(seed, corpus, pages):
             text = corpus[key]
             if not words(r.get("quote", "")):
                 fails.append(f"[quote] empty/blank quote: {tag}")
-            for frag in re.split(r"\.\.\.|…", r["quote"]):
-                nt = words(frag)
-                if nt and not is_subsequence(nt, text):
-                    fails.append(f"[quote] not found in CW{r['volume']} §{r['paragraph']}: '{frag.strip()}'  ({tag})")
+            frags = [words(f) for f in re.split(r"\.\.\.|…", r["quote"]) if words(f)]
+            if sum(len(f) for f in frags) > MAX_QUOTE_WORDS:
+                fails.append(f"[quote] exceeds {MAX_QUOTE_WORDS} words: {tag}")
+            err = quote_matches(frags, text)
+            if err:
+                fails.append(f"[quote] {err} in CW{r['volume']} §{r['paragraph']}  ({tag})")
             if e["relation"] not in STRUCTURAL:
                 check(r.get("claim_type") in CLAIM_TYPES, f"[provenance] bad/missing claim_type: {tag}")
             if str(r["volume"]) in vols_with_pages:
@@ -156,6 +184,10 @@ def canaries(seed, corpus, pages):
         # guards against regression to gap-unbounded subsequence matching
         "collage-quote": lambda e: e["references"][0].__setitem__(
             "quote", _collage_from(e["references"][0])),
+        # the same scattered words joined with ellipses — guards the elision bound
+        # (the pre-2026-07-28 canary used spaces only and missed this form)
+        "ellipsis-collage": lambda e: e["references"][0].__setitem__(
+            "quote", _collage_from(e["references"][0]).replace(" ", " ... ")),
     }
     uncaught = []
     for name, fn in cases.items():
