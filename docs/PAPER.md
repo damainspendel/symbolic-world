@@ -249,6 +249,8 @@ Conception, direction, corpus provision, publication decisions, and final respon
 
 [^benchmarks]: 30–66% fact accuracy: [KGGen](https://papers.neurips.cc/paper_files/paper/2025/file/2b368455e832d2b1a60bcad8c4c6481f-Paper-Conference.pdf) and [RAG vs GraphRAG](https://arxiv.org/pdf/2502.11371); 11–57% citation hallucination: [survey](https://arxiv.org/html/2508.15396v1) and ["Cited but Not Verified"](https://arxiv.org/pdf/2605.06635). Both discussed in §3.
 
+**E9 — Controlled teaching test (in progress).** Two miners, identical model, run blind on the same held-out window (CW 12 §111–180, never previously mined): one with minimal instructions, one with the correction-derived instructions. Both candidate sets receive the same blind gate review; the flag-rate difference isolates the teaching effect from batch composition. Results will appear here; until then, Imperative 4 is stated as suggestive only.
+
 **Cost, consolidated.**
 
 | Level | Figure |
