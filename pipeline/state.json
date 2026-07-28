@@ -165,5 +165,9 @@
    "result": "mined 20; 5 dup-pair; stage1 11/4/0 (1 dropped, 3 corrected \u2014 n9 referent forced by BOTH gates agreeing); stage2 clean; cross-vendor pre-merge 13/1 -> 14 merged, 7 new nodes"
   }
  ],
- "next": "12:03 wake: finish b-union-1 (stage2+merge), then b-union-2, then CW12 \u00a744-110 first dream-series batch"
+ "next": "12:03 wake: finish b-union-1 (stage2+merge), then b-union-2, then CW12 \u00a744-110 first dream-series batch",
+ "nodes": 241,
+ "edges": 648,
+ "refs": 673,
+ "as_of": "2026-07-28"
 }
