@@ -817,13 +817,14 @@
     {
      "lecture": "IX",
      "paragraph": 40,
-     "quote": "the very last step must be left to other forces and performed without the help of its activity. In other words, self‐surrender becomes then indispensable.",
+     "quote": "the very last step must be left to other forces and performed without the help of its activity",
      "claim_type": "james-asserts",
      "confidence": "medium",
      "verified": true,
      "verified_by": "claude-fable-5",
      "verified_date": "2026-07-27",
-     "crossvendor_checked": "gemini-3.1-pro"
+     "crossvendor_checked": "gemini-3.1-pro",
+     "quote_repaired": "2026-07-28: trimmed to 25-word bound"
     }
    ]
   },
@@ -945,14 +946,15 @@
     {
      "lecture": "IX",
      "paragraph": 52,
-     "quote": "found no heart to engage in that or any other duty ... unspeakable glory seemed to open to the apprehension of my soul",
+     "quote": "unspeakable glory seemed to open to the apprehension of my soul",
      "claim_type": "james-quotes-source",
      "source": "David Brainerd (quoted account of his crisis)",
      "confidence": "high",
      "verified": true,
      "verified_by": "claude-fable-5",
      "verified_date": "2026-07-27",
-     "crossvendor_checked": "gemini-3.1-pro"
+     "crossvendor_checked": "gemini-3.1-pro",
+     "quote_repaired": "2026-07-28: elision exceeded 30-token bound; trimmed to the sequence's culminating fragment"
     }
    ]
   }

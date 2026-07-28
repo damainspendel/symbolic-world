@@ -1558,7 +1558,8 @@
      "claim_type": "jung-reports-parallel",
      "verified_by": "claude-fable-5",
      "verified_date": "2026-07-25",
-     "crossvendor_checked": "gemini-3.1-pro (E7 full-volume audit, rubric-free, 2026-07-27)"
+     "crossvendor_checked": "gemini-3.1-pro (E7 full-volume audit, rubric-free, 2026-07-27)",
+     "vocabulary_note": "'hermaphroditic Adam' mapped to rebis by convention; contested by unanchored cross-review"
     }
    ]
   },
@@ -8454,7 +8455,8 @@
      "source": "Michael Maier",
      "verified_by": "claude-fable-5",
      "verified_date": "2026-07-25",
-     "crossvendor_checked": "gemini-3.1-pro (E7 full-volume audit, rubric-free, 2026-07-27)"
+     "crossvendor_checked": "gemini-3.1-pro (E7 full-volume audit, rubric-free, 2026-07-27)",
+     "vocabulary_note": "inscription-as-referent reading; auditor holds the referent is Crispis; contested by unanchored cross-review"
     }
    ]
   },
@@ -12290,7 +12292,7 @@
      "quote": "to produce a quintessence whose action may be compared with that of Christ upon mankind",
      "confidence": "medium",
      "verified": true,
-     "claim_type": "jung-quotes-source",
+     "claim_type": "jung-reports-parallel",
      "source": "Orthelius",
      "verified_by": "claude-fable-5",
      "verified_date": "2026-07-26",

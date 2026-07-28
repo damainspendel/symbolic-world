@@ -48,6 +48,8 @@ graph_test() {
 # Rebuild the atlas from seed.json and deploy a copy to ATLAS_HOME.
 build() {
     [ -d "$WEB_DIR" ] || error "web dir not found: $WEB_DIR"
+    log "Running integrity tests (quotes, anchors, canaries) before build..."
+    python3 "$SCRIPT_DIR/tests/test_graph.py" > /dev/null || error "integrity tests failed — build refused"
     log "Building the Atlas (npm run build regenerates atlas.json from seed.json)..."
     ( cd "$WEB_DIR" && npm run build ) || error "build failed"
     log "Deploying to $ATLAS_HOME (outside ~/Documents so launchd isn't blocked by TCC)..."

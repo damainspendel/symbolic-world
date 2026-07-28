@@ -13,11 +13,15 @@ def words(s):
     return re.findall(r'[a-z]+', s)
 
 
-def near_contiguous(needle, hay, max_gap=3):
+MAX_ELISION = 30
+MAX_QUOTE_WORDS = 25
+
+
+def find_fragment(needle, hay, max_gap=3, start_from=0):
     if not needle:
-        return True
+        return (start_from, start_from)
     n = len(hay)
-    for start in range(n):
+    for start in range(start_from, n):
         if hay[start] != needle[0]:
             continue
         pos, ok = start, True
@@ -32,8 +36,22 @@ def near_contiguous(needle, hay, max_gap=3):
                 break
             pos = nxt
         if ok:
-            return True
-    return False
+            return (start, pos)
+    return None
+
+
+def quote_matches(fragments, hay):
+    """In-order, near-contiguous fragments; inter-fragment elision <= MAX_ELISION."""
+    pos, prev_end = 0, None
+    for frag in fragments:
+        m = find_fragment(frag, hay, start_from=pos)
+        if m is None:
+            return "fragment not found (or out of order)"
+        if prev_end is not None and m[0] - prev_end - 1 > MAX_ELISION:
+            return f"elision exceeds {MAX_ELISION} tokens"
+        prev_end = m[1]
+        pos = m[1] + 1
+    return None
 
 
 def main(cand_path, out_path):
@@ -57,10 +75,12 @@ def main(cand_path, out_path):
             reasons.append('no-paragraph')
         else:
             hay = words(text)
-            for frag in re.split(r'\.\.\.|…', r['quote']):
-                if words(frag) and not near_contiguous(words(frag), hay):
-                    reasons.append('quote')
-                    break
+            frags = [words(f) for f in re.split(r'\.\.\.|…', r['quote']) if words(f)]
+            if sum(len(f) for f in frags) > MAX_QUOTE_WORDS:
+                reasons.append('quote-over-25-words')
+            err = quote_matches(frags, hay)
+            if err:
+                reasons.append(f'quote: {err}')
         if reasons:
             drop.append((t, reasons))
         else:

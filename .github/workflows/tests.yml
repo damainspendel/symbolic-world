@@ -1,0 +1,54 @@
+name: integrity
+on: [push, pull_request]
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - name: James replication checks (corpus ships in-repo)
+        run: |
+          python3 - << 'PY'
+          import json, re, sys
+          sys.path.insert(0, 'james')
+          import importlib
+          prec = importlib.import_module('precheck')
+          paras = {}
+          for line in open('james/corpus.jsonl'):
+              p = json.loads(line); paras[(p['lecture'], p['paragraph'])] = p['text']
+          seed = json.load(open('james/james_seed.json'))
+          bad = 0
+          for e in seed['edges']:
+              for r in e['references']:
+                  hay = prec.words(paras[(r['lecture'], r['paragraph'])])
+                  frags = [prec.words(f) for f in re.split(r'\.\.\.|…', r['quote']) if prec.words(f)]
+                  if sum(len(f) for f in frags) > 25 or prec.quote_matches(frags, hay):
+                      bad += 1
+          assert bad == 0, f"{bad} James references violate quote rules"
+          print("james: all references pass")
+          PY
+      - name: Jung graph structural checks (corpus is local-only; quote checks run locally via manage.sh)
+        run: |
+          python3 - << 'PY'
+          import json
+          seed = json.load(open('seed.json'))
+          ids = {n['id'] for n in seed['nodes']}
+          CLAIMS = {'jung-asserts','jung-reports-parallel','jung-quotes-source'}
+          STRUCTURAL = {'precedes'}
+          problems = []
+          for e in seed['edges']:
+              if e['subject'] not in ids or e['object'] not in ids:
+                  problems.append(f"undefined node: {e['subject']}->{e['object']}")
+              for r in e.get('references', []):
+                  if not isinstance(r.get('volume'), str): problems.append("non-str volume")
+                  if r.get('verified') and not r.get('verified_by'): problems.append("verified without verifier")
+                  if e['relation'] not in STRUCTURAL and r.get('claim_type') not in CLAIMS:
+                      problems.append(f"bad claim_type: {e['subject']}->{e['object']}")
+                  q = r.get('quote','')
+                  if len(q.split()) > 27: problems.append(f"quote too long: {e['subject']}->{e['object']}")
+              if e['relation'] not in STRUCTURAL and not e.get('references'):
+                  problems.append(f"no references: {e['subject']}->{e['object']}")
+          assert not problems, problems[:10]
+          print(f"jung: {len(seed['nodes'])} nodes / {len(seed['edges'])} edges structurally clean")
+          PY
