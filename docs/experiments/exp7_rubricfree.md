@@ -1,3 +1,5 @@
+# NOTE (2026-07-28): E7 was originally described as rubric-free. A code-level hostile review established the prompt retained support/severity enums and directed the auditor at the project annotation fields. It is a REDUCED-RUBRIC replication; claims of rubric-independence are withdrawn pending a genuinely open-ended audit. See the paper Appendix A (E7) and exp7_addendum_crossreview.md.
+
 # E7 — Rubric-free cross-vendor audit (Gemini 3.1 Pro)
 
 **Date:** 2026-07-27 · **Design:** mitigation for shared-rubric convergence (E6 prompt-bias audit)
