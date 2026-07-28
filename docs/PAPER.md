@@ -27,8 +27,8 @@ The paper follows the shape of the work itself. The naive pipeline has named ris
 
 Reading is where the danger is. When a model turns prose into claims, seven things can go wrong, five in the reading itself and two in any machinery you build to catch them (Figure 2):
 
-- **R1 — the statement is wrong or invented.** The model asserts something the text does not say.
-- **R2 — the quote is fabricated.** The supporting quotation does not exist in the cited paragraph.
+- **R1 — the claim is wrong.** The model asserts something the text does not say — even, often, while quoting it accurately: a real quote can carry a false claim.
+- **R2 — the evidence is fabricated.** The supporting quotation itself does not exist in the cited paragraph. Distinct from R1: this is about the quoted words, not the claim built on them — and unlike R1 it is mechanically checkable.
 - **R3 — the meaning is wrong.** Right ingredients, wrong dish: direction reversed, wrong object, "is" where the text says "is like".
 - **R4 — the context is wrong.** The claim is real but the *voice* is misassigned: the author's own view (*author-asserts*), doctrine the author reports (*author-reports*), or a source the author quotes (*author-quotes*), and how firmly it is said. (In Jung: is this his psychology, or the alchemists' doctrine he is describing?)
 - **R5 — the selection is arbitrary.** Why these claims and not others? A different run might paint a different picture.
@@ -80,7 +80,7 @@ Every batch's passage through these steps is committed to a **transaction ledger
 
 ## 5. Risk Measurement
 
-Every mitigant gets measured, by a small set of reusable experiment designs, none of them corpus-specific:
+(A note on numbering: R-numbers are risks and E-numbers are experiments; the sequences are unrelated, and Table 3 maps each risk to the experiment that tests its mitigation.) Every mitigant gets measured, by a small set of reusable experiment designs, none of them corpus-specific:
 
 - **Retro-verification.** Run the gates over output that was published *without* them: measures the raw risk the pipeline exists to remove.
 - **Seeded-corruption calibration.** Deliberately break known-good entries (reverse a direction, swap an object, inflate an analogy, flip a voice), hide them among clean ones, and count what each gate catches: turns "we have a verifier" into "we have a verifier with a measured catch rate per error type."
@@ -183,7 +183,6 @@ Accurate, by independent measurement: when a second vendor audited a full volume
 
 None of these dimensions is the point on its own. The point is that each now comes with a number or a mechanism where an adjective used to be: accuracy has an error bar, completeness has a tested definition, inspection has a button, and the gaps are stated in the artifact itself. The machines did the hard yards (proposing, checking, cross-checking, and the bookkeeping of every correction) at about ten cents per verified claim[^cost]. Human judgement has the last word, and, for the first time on this corpus, the tools to exercise it.
 
-The method is not tied to Jung. It should carry to any corpus where the scholarly work is establishing who said what, and exactly where: law, philosophy, theology, the history of science. A first replication on James's *Varieties* (E8) supports this at pilot scale, and — being public domain — ships as the complete reproduction package the Jung corpus cannot legally provide. Scaling that replication is the next test.
 ---
 
 ---
