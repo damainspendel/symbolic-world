@@ -48,6 +48,14 @@ is plausibly in, given the sample size. Bigger samples, tighter ranges.
 > 100 items, the true rate is plausibly anywhere from 78% to 91% — but not 60%, and
 > not 99%.
 
+(Why "Wilson"? There are several recipes for computing these ranges. The naive
+schoolbook one misbehaves exactly where we need it most: with small samples and
+rates near 0% or 100%, it can produce nonsense like "103% ± 5" or a zero-width
+range around a perfect score. The Wilson recipe stays sensible at the extremes —
+a 20/20 result gets an honest range like 84–100%, not a false "100% exactly."
+That's the whole reason for the name-drop: it is the interval that doesn't
+flatter perfect-looking small samples.)
+
 Why it matters here: our first calibration tested only 5 items per error kind and
 measured voice-flip detection at 2/5 = "40%". The expanded test (25 per kind) measured
 72%. Neither test was wrong — the first was just too small to trust, and its interval
