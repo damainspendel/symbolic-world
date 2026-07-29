@@ -54,7 +54,9 @@ The risks above are documented, not hypothetical:
 
 **Industry practice.** Production extraction pipelines converge on the same skeleton independently: schema-first design, typed mechanical validation with human escalation carrying the best-effort extraction ([production document-pipeline lessons](https://medium.com/alan/lessons-from-running-an-llm-document-processing-pipeline-in-production-33d87f99cdb1)), continuous calibration of automated judges against sampled expert judgment ([HITL evaluation practice](https://www.braintrust.dev/articles/best-human-in-the-loop-llm-evaluation-platforms-2026)), and verification loops with measured diminishing returns after ~2 rounds ([verification-loop patterns](https://timjwilliams.medium.com/llm-verification-loops-best-practices-and-patterns-07541c854fd8)). Dedicated KG fact-verification agents ([AgentKGV](https://arxiv.org/html/2607.09092)) treat verification as a first-class subsystem. Our pipeline is the documented, measured instance of this consensus applied end-to-end to an interpretive humanities corpus: orthodox in its skeleton (cross-model judging, staged validation, audit artifacts); its distinctive choices are publication-gating (a policy, not a technique) and applying seeded-corruption calibration to the verification gate itself. Voice typing adapts a mature NLP tradition — event factuality and attribution annotation ([FactBank](https://link.springer.com/article/10.1007/s10579-009-9089-9), the [Penn Discourse Treebank](https://catalog.ldc.upenn.edu/LDC2019T05) attribution layer, [subjectivity and private states](https://link.springer.com/article/10.1007/s10579-005-7880-9)) — to a scholarly-publication setting; our "sympathetic reportage" residual is that literature's nested/partial-commitment attribution problem, and its human inter-annotator agreement figures are the natural benchmark for our planned human tier. Seeded corruption likewise descends from perturbation-based evaluation ([FEVER](https://arxiv.org/abs/1803.05355), [CheckList](https://arxiv.org/abs/2005.04118)).
 
-**Positioning at a glance.**
+Table 1 compresses the comparison.
+
+**Table 1 — positioning at a glance: existing work (cited) against this methodology.**
 
 | Dimension | Existing work (cited) | This methodology |
 |---|---|---|
@@ -69,13 +71,13 @@ The risks above are documented, not hypothetical:
 
 ## 4. Mitigants
 
-Each risk in §2 forced a step into the pipeline. Figure 3 shows the result: the two-box dream of Figure 1 with four inserted checks, plus practices for the two risks that don't fit in a box.
+Each risk in §2 forced a step into the pipeline. Figure 3 shows the result: the two-box dream of Figure 1 with four inserted checks, plus practices for the two risks that don't fit in a box; Table 2 lists the steps and what each one mitigates.
 
 ![Figure 3 — mitigants and their measurements](figures/fig4_experiments.svg)
 
 *Figure 3 — Steps 2–5 did not exist in Figure 1; each was inserted because a named risk forced it (green tags name the risk each step mitigates), and each is measured by the experiment chip above it (legend in the figure; details in Appendix A).*
 
-**Table 1 — the pipeline, step by step, and the risk each step mitigates.**
+**Table 2 — the pipeline, step by step, and the risk each step mitigates.**
 
 | Step | What it does | Mitigates | What comes out |
 |---|---|---|---|
@@ -105,7 +107,7 @@ Every mitigant gets measured, by a small set of reusable experiment designs, non
 - **Human gold-set validation** (anchors the model measurements for R1, R3, R4 in human judgment; E10). A human validates a stratified sample of published references against the full source paragraphs under the published annotation protocol: the reference the model-graded numbers answer to.
 - **Standing self-tests** (guard R2 permanently; backstop everything; no E-number — they run on every build). Corruption canaries the validators must catch on every run, and the human confirm/dispute channels on every published claim.
 
-Figure 3 pins each design to the pipeline step it measures (chips and legend). Results for the Jung case study are consolidated in Table 3 (§10); per-experiment details are in Appendix A.
+Figure 3 (§4, previous page) pins each design to the pipeline step it measures (chips and legend). Results for the Jung case study are consolidated in Table 4 (§10); per-experiment details are in Appendix A.
 
 ## 6. Case Studies
 
@@ -125,7 +127,7 @@ Figure 3 pins each design to the pipeline step it measures (chips and legend). R
 
 **Instantiation.** The generic voice vocabulary becomes `jung-asserts` / `jung-reports-parallel` / `jung-quotes-source` (+ named source). Current state: **241 nodes · 648 edges · 673 references** across 479 distinct paragraphs of nine CW volumes; CW 14 covered end-to-end; 450 asserts / 163 reports / 60 quotes-source across 42 distinct named-source strings on quoted references (unnormalized; name variants and traditional attributions included); 85 hedged (medium-confidence) references; 100% gate-verified with per-reference verifier and date.
 
-**The artifact.** The public Atlas ([symbolicworld.observer](https://symbolicworld.observer)) renders the graph in six typed regions with search and walkable citations. Every citation expands to its verification record (claim type, source, confidence, verifier, date, and a check-it-yourself pointer to the exact § and Bollingen page), so refutation needs only the printed edition and about two minutes. Two gated reader channels close the loop: **dispute** (a prefilled report to the public issue tracker; admissible disputes are re-judged with the objection attached; outcomes published in the verification log and linked from the edge) and **confirm** (reader confirmations enter the edge's public record as human-in-the-loop provenance). Accumulated upheld disputes above the published error bar would falsify the pipeline claim itself, not just individual edges.
+**The artifact.** The public Atlas ([symbolicworld.observer](https://symbolicworld.observer)) renders the graph in six typed regions with search and walkable citations. Every citation expands to its verification record (claim type, source, confidence, verifier, date, and a check-it-yourself pointer to the exact § and Bollingen page), so refutation needs only the printed edition and about two minutes. The construction is equally public: the transaction ledger of §4 is browsable from the atlas as a construction-ledger page listing every reference's gate passage (quote check, verifier and date, cross-vendor stamp, human validation, dispute history) and every batch's history, linked to the underlying commits. Two gated reader channels close the loop: **dispute** (a prefilled report to the public issue tracker; admissible disputes are re-judged with the objection attached; outcomes published in the verification log and linked from the edge) and **confirm** (reader confirmations enter the edge's public record as human-in-the-loop provenance). Accumulated upheld disputes above the published error bar would falsify the pipeline claim itself, not just individual edges.
 
 **What the measurements say about Jung.** The residual error class maps a real property of the text: every model configuration, across two vendors, fails on the same passages, where Jung reports alchemical or Gnostic doctrine and half-adopts it. That blended voice is a finding about the *Collected Works*, not just about models (developed as Imperative 3, §9), and it marks the exact place where Jungian scholarship is needed.
 
@@ -136,16 +138,16 @@ The pipeline was run on a second corpus (with one divergence a hostile review la
 
 ## 7. Residual Risks
 
-Table 2 answers one question: **of the risks in §2, what remains after the mitigations of §4, measured by the experiments of §5 (details: Appendix A)?** (A 16-item assumptions register is published in `docs/ASSUMPTIONS.md`.)
+Table 3 answers one question: **of the risks in §2, what remains after the mitigations of §4, measured by the experiments of §5 (details: Appendix A)?** (A 16-item assumptions register is published in `docs/ASSUMPTIONS.md`.)
 
-**Table 2 — residual risks.**
+**Table 3 — residual risks.**
 
 | # | Risk | Mitigation in force | Evidence / data | Residual |
 |---|---|---|---|---|
 | R1 | **Wrong claims** | structure gate (E1b-calibrated) | E2: 0/30 adversarial; E6/E7: 0 unsupported | none observed in evaluated samples |
 | R2 | **Fabricated evidence** | deterministic quote check; 30-token elision bound; 7 canaries | 783/791 quote fragments exact substrings under letter normalization (ellipsis-split quotes yield 791 fragments across the 673 references; the remainder differ only by absorbed footnote/figure markers); 16 over-bound splices in this graph (plus 2 in the James replication) found by hostile review, repaired 2026-07-28 | eliminated within the stated bound |
 | R3 | **Wrong meaning** | structure gate | reversal/object-swap caught 92–96% (E1b) | none observed in evaluated samples |
-| R4 | **Wrong voice** | voice gate + graph-wide sweep + human gold set | detector catches 70–80% on seeded flips; sweep fixed 10.3%; human agreement 40/50 (E10) | **the dominant surviving risk, now with a first human estimate: 80% agreement (interval 67–89%), errors directional (over-credit to Jung's voice) and concentrated in the reports class (8/15) — single-annotator, anchored review** |
+| R4 | **Wrong voice** | voice gate + graph-wide sweep + human gold set | detector catches 70–80% on seeded flips; sweep fixed 10.3%; human agreement 40/50 (E10) | **the dominant surviving risk. The gold-set review (E10) agreed with the voice label on 40 of 50 sampled references; 8 of the 10 disagreements over-credited Jung's own voice, most in the reports class (8/15 correct). Single annotator, anchored review.** |
 | i | **Shared-substrate risk (R6)** — proposer and verifier share one vendor; correlated blind spots invisible to both | **Tiered** (§4): family separation at the continuous mandatory gate (same vendor — the weaker form); vendor independence at the pre-merge check (all new batches) and at release audits for the earlier graph (E6–E7) | 0 unsupported edges (n=100); 1.0% upheld residual (n=407); both vendors miss the *same* voice items → text ambiguity, not shared blind spots | Low-moderate; one second vendor, and the mandatory gate remains single-vendor |
 | ii | **Single translation** — quotes are Hull/Bollingen-bound | § anchors are edition-stable; documented as assumption #1 | — | German *GW* cross-check deferred (§8) |
 | iii | **Salience sampling (R5)** — "strongest relations" per window, not exhaustive parse | Stability probe; union-mining; claim-coverage framing (§9, Imperative 6) | E4: independent re-extraction recovers core claims (37.5% strict pair overlap, theses stable); union batch: 13/20 candidates re-found existing pairs (ledger, b-union-2) | Tier-2 claims sampled, not complete |
@@ -182,7 +184,7 @@ Coverage beyond CW14/CW12 is thin (eleven volumes untouched; the seven other sam
 What can be compounded, and what cannot. Two flag rates exist: 25.2% on the ungated backlog (Fable, cross-volume, all flags acted on) and 12.5% on the published graph (Gemini, CW 14 only, 4 of 51 flags upheld after first-party adjudication). They differ in grader, prompt, population, and adjudication discipline, so we do not present their ratio as a measured reduction; they are two measurements that point the same way. What the evidence supports: fabricated quotations are excluded within the validated operating assumptions of the deterministic quotation checker (letter-normalized matching, a stated elision bound, canary-guarded); coarse structural corruptions are caught at 92–96% in calibration, with realistic near-referent drift not yet calibrated and four drift errors found and fixed by audits; and the modality sweep corrected 10.3% of references (claim-type alone 7.9%; E3), with a voice residual that now carries a first human estimate: the author gold set (E10) puts voice agreement at 40/50 (80%, interval 67–89%), with 8 of 10 disagreements moving the same way — the pipeline over-credits Jung's own voice — and the weakness concentrated in the reports class (8/15). One annotator, anchored review: a first estimate, not a bound.
 
 
-**Table 3 — pipeline step · risk · mitigant · experiment · headline result (Jung), with the James replication (E8) alongside.**
+**Table 4 — pipeline step · risk · mitigant · experiment · headline result (Jung), with the James replication (E8) alongside.**
 
 | Pipeline step | Risk | Mitigant | Experiment | Result (Jung, CW) | Result (James, VRE) |
 |---|---|---|---|---|---|
@@ -253,9 +255,9 @@ Conception, direction, corpus provision, publication decisions, and final respon
 
 **E7 — Reduced-rubric cross-vendor audit (n=407, full CW14 + calibration replay, Gemini 3.1 Pro).** E6's prompt-bias audit raised *shared-rubric convergence*: agreement measured under the first vendor's rubric partly reflects shared thresholds. E7 audited the 407 CW 14 references existing at audit time (the volume has since grown to 413: six later additions carry their own batch-level cross-vendor check, and one E7-corrected reference awaits re-audit in its corrected form). E7 (originally described as rubric-free, relabeled after a code-level review) reduces the rubric: the strictness persona and prose claim-type definitions were removed, but — as a later code-level review established — the prompt still supplied a three-valued support enum, a four-valued severity enum, and directed the auditor at the project's attribution and confidence fields. It is a *reduced-rubric* replication, not a rubric-free one; a genuinely open-ended audit remains future work. Results: **356 supported / 47 partly / 4 no**; on the auditor's own severity scale, 350 none / 47 minor / 8 moderate / 2 serious. Adjudication of the 10 moderate+serious findings upheld **4 (1.0%)**: one misanchored edge deleted, one relation and one subject retargeted, one relation relabeled; none was a fabrication or reversal. Sensitivity to the adjudication itself: counting the 5 both-defensible rulings as half-errors gives 1.6%; as full errors, 2.2%; the 41 auditor-rated-minor flags were not adjudicated. Unlike E6, this adjudication initially received no auditor cross-review — a gap a later hostile review identified. The cross-review has since been run, **unanchored** (outcomes only, no rationales): the auditor agrees with all 4 upheld corrections and disagrees with all 6 convention-based rulings, so the honest residual is a range — 1.0–1.6% under the project's documented vocabulary conventions, 2.2% under the auditor's strict single-paragraph reading (E7 addendum, `docs/experiments/exp7_addendum_crossreview.md`; the 8 convention-dependent references (7 edges) now carry a `vocabulary_note` field). The calibration replay shows an identical detection profile across the two prompts (70%/95%, same per-class breakdown, same missed items) and 55/58 verdict consistency on doubly-audited references. Given how much rubric the 'reduced' prompt retained, the parsimonious reading is that the two prompts were operationally similar instruments — this narrows but does not discharge the shared-rubric concern (residual risk vii remains open pending a genuinely open-ended audit).
 
-**Risk 6 — the referee of all these disagreements is itself a model from the first vendor.** *Mitigation: publish every ruling verbatim, and have the second vendor adversarially re-review the referee's rulings — which endorsed every upheld correction, forced 2 stronger remedies, and, re-run unanchored, rejected 3 of 7 convention rulings (the anchored 9-of-11 figure is retired; see E6 and Table 2 row vi). Full independence arrives with the human tier (§8).*
+**Risk 6 — the referee of all these disagreements is itself a model from the first vendor.** *Mitigation: publish every ruling verbatim, and have the second vendor adversarially re-review the referee's rulings — which endorsed every upheld correction, forced 2 stronger remedies, and, re-run unanchored, rejected 3 of 7 convention rulings (the anchored 9-of-11 figure is retired; see E6 and Table 3 row vi). Full independence arrives with the human tier (§8).*
 
-[^numbering]: R-numbers are risks and E-numbers are experiments; the two sequences are unrelated. Table 3 (§10) maps each risk to the experiment that tests its mitigation.
+[^numbering]: R-numbers are risks and E-numbers are experiments; the two sequences are unrelated. Table 4 (§10) maps each risk to the experiment that tests its mitigation.
 
 [^npuptake]: The ~10.8M nanopublications catalogued by Kuhn et al. (2018) derive from DrugBank, GloBI, DisGeNET, WikiPathways, neXtProt, OpenBEL, LIDDI, and the Human Protein Atlas — all life-science datasets; we are aware of no published humanities nanopublication dataset.
 
@@ -275,9 +277,9 @@ Conception, direction, corpus provision, publication decisions, and final respon
 
 **What the audits missed — and what caught it.** The most instructive datum in this project is not a success. The cross-vendor efficacy audit of 2026-07-27 certified the quote checker as faithful while its elision path was still unbounded, and an E6 adjudication dismissed the second vendor's splice objection by appeal to the very rule that was defective. What found the defect was an adversarial, code-re-executing review the next day. The lesson is structural: sampled semantic auditing does not bound mechanical error classes — only adversarial re-execution of the code paths does — and a first-party adjudicator can wrongly overrule a correct objection (R7 materialized, in our own logs). Both failures are preserved in the published audit trail.
 
-**Cost.** From production telemetry (~97K tokens/miner batch, ~56K/gate batch at $5/$25 and $10/$50 per MTok): ≈ **$0.09 per verified citation**, ≈ $0.12 including retro-verification, audit, and calibration overhead; total artifact cost ≈ $60–90.
+**Cost.** From production telemetry (~97K tokens/miner batch, ~56K/gate batch at $5/$25 and $10/$50 per MTok): ≈ **$0.09 per verified citation**, ≈ $0.12 including retro-verification, audit, and calibration overhead; total artifact cost ≈ $60–90 (consolidated in Table A1).
 
-**Cost, consolidated.**
+**Table A1 — cost, consolidated.**
 
 | Level | Figure |
 |---|---|
@@ -311,7 +313,9 @@ Conception, direction, corpus provision, publication decisions, and final respon
 
 The transaction ledger (one commit per stage transition) plays the role of the trusty-URI immutability guarantee; a native serialization of the full graph in this format is planned (§8).
 
-**Voice as epistemic stance.** The claim-type vocabulary is a stance annotation in the sense of the provenance-enhanced-statements (DEC) framework — each type places a claim in a different cognitive world:
+**Voice as epistemic stance.** The claim-type vocabulary is a stance annotation in the sense of the provenance-enhanced-statements (DEC) framework — each type places a claim in a different cognitive world (Table B1):
+
+**Table B1 — voice labels as epistemic stances.**
 
 | Paragraph evidence | claim_type | Cognitive world |
 |---|---|---|
