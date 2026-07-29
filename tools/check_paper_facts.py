@@ -153,6 +153,11 @@ for pat, why in [
     (r'hard yards', "retired rhetoric"),
     (r'first published sensitivity', "retired first-ever claim"),
     (r'confound-free support', "E9 shared-instrument confound (Fable M5)"),
+    (r'errors (?:run|at) 1–2%', "underivable pooled rate (Fable r2 M3)"),
+    (r'human floor', "floor implies lower bound; anchored review forbids it (Gemini r4 M1)"),
+    (r'blind-check', "E10 was anchored, not blind (Fable r2 M1)"),
+    (r'\bfive planted corruption', "canary count is asserted above"),
+    (r'confirmed by a human', "n=10 directionality is not significant (Fable r2 minor 4)"),
 ]:
     forbid(pat, why)
 

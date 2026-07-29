@@ -43,22 +43,26 @@ quotes→reports 1; reports→asserts 1; reports→quotes 6.
 
 1. **The disagreements are directional.** 8 of 10 move the label away from Jung's
    own voice — the over-attribution direction predicted by every model audit
-   (E3, E5, E6/E7), now confirmed by a human.
+   (E3, E5, E6/E7); a sign test at n=10 is not significant (two-sided p ≈ 0.11),
+   so this is consistent with the prediction, not proof of it.
 2. **A failure mode the models missed.** The six reports→quotes rulings are cases
    where Jung renders a *named* source (Boehme, the Aelia Laelia inscription, a
    quoted salt passage) and the pipeline filed the claim as anonymous reported
    tradition — under-crediting the source. This is a source-specificity failure,
    distinct from the commitment-permeation of sympathetic reportage, and no model
    audit had surfaced it.
-3. **Support holds.** The 5 partly items are correctable per the annotator's notes
-   (a missed hedge, a referent to narrow, an ibid-context loss); the 1 not-supported
+3. **Support holds.** The 5 partly items are correctable or re-anchorable per the
+   annotator's notes (a missed hedge, a referent to narrow, an ibid-context loss,
+   one edge proposed for remodeling); the 1 not-supported
    item (coniunctio→regina, CW 14 §2) is an amplification the annotator ruled
    mis-structured, not an invented claim. Nothing fabricated.
 4. **Three items remain open**, flagged by the annotator as needing adjudication
    beyond one reader: gold_id 12 (coniunctio→regina, support), 14
    (aelia-laelia-inscription→lapis; the operative reference may be §51 rather than
    §59), and 19 (mercurius→lumen-naturae, reports vs quotes). They are recorded as
-   unresolved pending independent human review.
+   unresolved pending independent human review. (A fourth note, gold_id 27, invites
+   a second opinion on a hedge borderline but was resolved as partly and is not
+   counted as open.)
 
 ## Honesty constraints
 
@@ -67,6 +71,7 @@ quotes→reports 1; reports→asserts 1; reports→quotes 6.
 - **Anchored review.** The tool displays the pipeline's label before the human
   rules. Our own cross-review experiments (E6/E7 addenda) measured anchoring to
   inflate agreement, so 80% should be read as a favorable estimate; the
-  second-annotator pass will be unanchored.
+  second-annotator pass will be unanchored (the review tool now defaults to an
+  unanchored mode — no pipeline label shown; `GOLD_ANCHORED=1` restores it).
 - The three open items can move the headline counts by one or two in either
   direction; the paper reports the counts as they stand and marks the items open.

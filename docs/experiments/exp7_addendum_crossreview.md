@@ -29,7 +29,7 @@ which reads them as term-absent-from-paragraph errors.
    auditor applies, the E7 residual is the both-defensible-as-errors bound, **2.2%**,
    rather than 1.0%; under the project's documented vocabulary conventions it remains
    1.0–1.6%. The paper reports the range, not the friendly endpoint.
-3. **Conventions are now inspectable**: the six convention-dependent references carry
+3. **Conventions are now inspectable**: the 8 convention-dependent references (7 edges) carry
    a `vocabulary_note` field in `seed.json` stating exactly what was mapped and why,
    so a reader can apply either reading.
 4. The 41 auditor-rated-minor E7 flags remain unadjudicated (disclosed in the paper).

@@ -7,11 +7,16 @@ Usage:  python3 tools/review_server.py        (then open http://127.0.0.1:8791)
 Resumable: already-validated items are skipped on restart.
 """
 import json
+import os
 import pathlib
 from http.server import BaseHTTPRequestHandler, HTTPServer
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-OUT = ROOT / 'pipeline' / 'human_validations.json'
+# Unanchored by default (the pipeline's label is hidden; E6/E7 measured anchoring
+# to inflate agreement). GOLD_ANCHORED=1 restores the original display.
+ANCHORED = os.environ.get('GOLD_ANCHORED') == '1'
+OUT = ROOT / 'pipeline' / os.environ.get('GOLD_OUT', 'human_validations.json')
+ANNOTATOR = os.environ.get('GOLD_ANNOTATOR', 'author')
 PORT = 8791
 
 
@@ -54,6 +59,7 @@ textarea{width:100%;background:#161c24;color:#c9d0d6;border:1px solid #2a323c;bo
 <h1>Gold-set review — human validation <span class="prog" id="prog"></span></h1>
 <div id="app">loading…</div>
 <script>
+const ANCHORED = __ANCHORED__;
 let items=[], done={}, idx=0, verdict={};
 async function init(){
   const r = await fetch('/api/state'); const d = await r.json();
@@ -80,7 +86,7 @@ function render(){
   const it = items[idx]; verdict = {};
   document.getElementById('app').innerHTML = `
     <div class="edge">${esc(it.subject)} <span class="rel">${esc(it.relation)}</span> ${esc(it.object)}</div>
-    <div class="meta">#${it.gold_id} · CW ${it.volume} §${it.paragraph}${it.page ? ` · Bollingen p.${it.page}` : ''} · pipeline says: ${it.claim_type} · confidence ${it.confidence}</div>
+    <div class="meta">#${it.gold_id} · CW ${it.volume} §${it.paragraph}${it.page ? ` · Bollingen p.${it.page}` : ''} ${ANCHORED ? ` · pipeline says: ${it.claim_type} · confidence ${it.confidence}` : ''}</div>
     <blockquote>${esc(it.quote)} <button id="cpq" style="font-size:.7rem;padding:.15rem .5rem;margin-left:.4rem">copy for epub search (c)</button></blockquote>
     <div class="para">${hl(it.paragraph_text, it.quote)}</div>
     <div class="q">1. Does the paragraph support this claim, as stated? <span class="key">(keys 1–3)</span></div>
@@ -89,12 +95,15 @@ function render(){
       <button data-v="partly">2 · Partly / needs correction</button>
       <button data-v="not-supported">3 · Not supported</button>
     </div>
-    <div class="q">2. Whose claim is it — is the voice label (${esc(it.claim_type)}) right? <span class="key">(keys q/w/e/r)</span></div>
-    <div class="btns" id="q2">
+    <div class="q">2. Whose claim is it? ${ANCHORED ? `Is the voice label (${esc(it.claim_type)}) right? <span class="key">(keys q/w/e/r)</span>` : `<span class="key">(keys q/w/e)</span>`}</div>
+    <div class="btns" id="q2">${ANCHORED ? `
       <button data-v="voice-correct">q · Label correct</button>
       <button data-v="should-be-asserts">w · Should be jung-asserts</button>
       <button data-v="should-be-reports">e · Should be jung-reports-parallel</button>
-      <button data-v="should-be-quotes">r · Should be jung-quotes-source</button>
+      <button data-v="should-be-quotes">r · Should be jung-quotes-source</button>` : `
+      <button data-v="should-be-asserts">q · jung-asserts</button>
+      <button data-v="should-be-reports">w · jung-reports-parallel</button>
+      <button data-v="should-be-quotes">e · jung-quotes-source</button>`}
     </div>
     <div class="q">3. Notes (optional)</div>
     <textarea id="notes" rows="2" placeholder="borderline? sympathetic reportage? anything the record should say"></textarea>
@@ -128,13 +137,14 @@ async function save(){
     volume: it.volume, paragraph: it.paragraph, pipeline_claim_type: it.claim_type,
     support: verdict.q1, voice: verdict.q2,
     notes: document.getElementById('notes').value.trim(),
-    validated_by: 'author', date: new Date().toISOString().slice(0,10) };
+    validated_by: '__ANNOTATOR__', date: new Date().toISOString().slice(0,10) };
   await fetch('/api/save', {method:'POST', body: JSON.stringify(rec)});
   done[it.gold_id] = rec; advance(); render();
 }
 document.addEventListener('keydown', e => {
   if (e.target.tagName === 'TEXTAREA') return;
-  const map = {'1':['q1',0],'2':['q1',1],'3':['q1',2],'q':['q2',0],'w':['q2',1],'e':['q2',2],'r':['q2',3]};
+  const map = ANCHORED ? {'1':['q1',0],'2':['q1',1],'3':['q1',2],'q':['q2',0],'w':['q2',1],'e':['q2',2],'r':['q2',3]}
+                        : {'1':['q1',0],'2':['q1',1],'3':['q1',2],'q':['q2',0],'w':['q2',1],'e':['q2',2]};
   if (map[e.key]){ document.querySelectorAll('#'+map[e.key][0]+' button')[map[e.key][1]].click(); }
   if (e.key === 'Enter'){ e.preventDefault(); save(); }
   if (e.key === 's'){ advance(); render(); }
@@ -160,7 +170,8 @@ class H(BaseHTTPRequestHandler):
             self.send_response(200)
             self.send_header('Content-Type', 'text/html; charset=utf-8')
             self.end_headers()
-            self.wfile.write(PAGE.encode())
+            page = PAGE.replace('__ANCHORED__', 'true' if ANCHORED else 'false').replace('__ANNOTATOR__', ANNOTATOR)
+            self.wfile.write(page.encode())
         elif self.path == '/api/state':
             sample, done = load()
             self._json({"sample": sample, "done": done})
@@ -190,5 +201,5 @@ if __name__ == '__main__':
         srv = ReusableServer(('127.0.0.1', PORT), H)
     except OSError:
         raise SystemExit(f"Port {PORT} is busy. Free it with:  lsof -ti :{PORT} | xargs kill")
-    print(f"Gold-set review → http://127.0.0.1:{PORT}  (local only; corpus never leaves this machine)")
+    print(f"Gold-set review → http://127.0.0.1:{PORT}  ({'ANCHORED' if ANCHORED else 'unanchored'} · annotator: {ANNOTATOR} · out: {OUT.name}; local only, corpus never leaves this machine)")
     srv.serve_forever()
