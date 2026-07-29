@@ -1216,6 +1216,41 @@
    "id": "the-mother",
    "type": "Figure",
    "label": "The Mother (figure/imago)"
+  },
+  {
+   "id": "shapeless-life-mass",
+   "type": "Symbol",
+   "label": "The shapeless animal lump or life-mass of dream 18, the amorphous mass out of which the transfigured human head arises"
+  },
+  {
+   "id": "serpent",
+   "type": "Symbol",
+   "label": "The snake/serpent as agent of transformation and renewal (healing serpent, Kundalini serpent, the snakes in the four corners)"
+  },
+  {
+   "id": "circumambulatio",
+   "type": "Operation",
+   "label": "Circular movement about the centre; exclusive concentration on the centre as the place of creative change"
+  },
+  {
+   "id": "the-centre",
+   "type": "Concept",
+   "label": "The centre towards which the eyes must always be turned; virtual midpoint of the mandala and locus of creative change"
+  },
+  {
+   "id": "magic-circle",
+   "type": "Symbol",
+   "label": "The traced magic circle that holds the tension and prevents an eruption of the unconscious; psychological equivalent of the vas bene clausum"
+  },
+  {
+   "id": "inferior-function",
+   "type": "Concept",
+   "label": "The fourth or 'inferior' function, taboo and contaminated with the unconscious, personified by the anima"
+  },
+  {
+   "id": "the-wheel",
+   "type": "Symbol",
+   "label": "The wheel (eight-spoked wheel, rota, Ezekiel's wheel) as symbol of the circulating process and of wholeness"
   }
  ],
  "edges": [
@@ -1323,6 +1358,19 @@
      "claim_type": "jung-asserts",
      "verified_by": "claude-fable-5",
      "verified_date": "2026-07-25"
+    },
+    {
+     "volume": "12",
+     "paragraph": 209,
+     "quote": "One becomes two, two becomes three, and out of the third comes the One as the fourth.",
+     "claim_type": "jung-quotes-source",
+     "confidence": "high",
+     "verified": true,
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-30",
+     "crossvendor_checked": "gemini-3.1-pro (pre-merge, b-cw12-5, PARTIAL, 2026-07-30)",
+     "source": "Maria Prophetissa (the Hebrew prophetess, via the Christianos treatise)",
+     "vocabulary_note": "§209 quotes the axiom verbatim and names Maria Prophetissa; 'Axiom of Maria' is the standard designation; relation belongs to the existing edge (cross-vendor PARTIAL adjudicated both-defensible, b-cw12-5)"
     }
    ]
   },
@@ -2998,6 +3046,18 @@
      "claim_type": "jung-asserts",
      "verified_by": "claude-fable-5",
      "verified_date": "2026-07-25"
+    },
+    {
+     "volume": "12",
+     "paragraph": 220,
+     "quote": "Our stone is from the four elements.",
+     "claim_type": "jung-quotes-source",
+     "confidence": "high",
+     "verified": true,
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-30",
+     "crossvendor_checked": "gemini-3.1-pro (pre-merge, b-cw12-5, SUPPORTED, 2026-07-30)",
+     "source": "Rosarium philosophorum"
     }
    ]
   },
@@ -11822,6 +11882,18 @@
      "claim_type": "jung-asserts",
      "verified_by": "claude-fable-5",
      "verified_date": "2026-07-25"
+    },
+    {
+     "volume": "12",
+     "paragraph": 247,
+     "quote": "I may define “self” as the totality of the conscious and unconscious psyche, but this totality transcends our vision",
+     "claim_type": "jung-asserts",
+     "confidence": "medium",
+     "verified": true,
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-30",
+     "crossvendor_checked": "gemini-3.1-pro (pre-merge, b-cw12-5, SUPPORTED, 2026-07-30)",
+     "correction_note": "stage1: \"I may define… but this totality transcends our vision… borderline concept\" — hedged; confidence demoted"
     }
    ]
   },
@@ -12511,6 +12583,18 @@
      "claim_type": "jung-asserts",
      "verified_by": "claude-fable-5",
      "verified_date": "2026-07-26"
+    },
+    {
+     "volume": "12",
+     "paragraph": 209,
+     "quote": "he is the androgynous original man or Anthropos of Gnosticism",
+     "claim_type": "jung-asserts",
+     "confidence": "high",
+     "verified": true,
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-30",
+     "crossvendor_checked": "gemini-3.1-pro (pre-merge, b-cw12-5, SUPPORTED, 2026-07-30)",
+     "note": "Jung's own conclusion (“it can easily be seen”) drawn from the “Consilium coniugii” material he has just reported"
     }
    ]
   },
@@ -13319,6 +13403,407 @@
      "verified_date": "2026-07-27",
      "modality_swept": true,
      "crossvendor_checked": "gemini-3.1-pro"
+    }
+   ]
+  },
+  {
+   "subject": "shapeless-life-mass",
+   "relation": "stands-for",
+   "object": "collective-unconscious",
+   "references": [
+    {
+     "volume": "12",
+     "paragraph": 184,
+     "quote": "The animal lump or life-mass stands for the mass of the inherited unconscious which is to be united with consciousness.",
+     "claim_type": "jung-asserts",
+     "confidence": "high",
+     "verified": true,
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-30",
+     "crossvendor_checked": "gemini-3.1-pro (pre-merge, b-cw12-5, SUPPORTED, 2026-07-30)"
+    }
+   ]
+  },
+  {
+   "subject": "serpent",
+   "relation": "is-well-substantiated-archetype-of",
+   "object": "rebirth",
+   "references": [
+    {
+     "volume": "12",
+     "paragraph": 184,
+     "quote": "The idea of transformation and renewal by means of a serpent is a well-substantiated archetype",
+     "claim_type": "jung-asserts",
+     "confidence": "high",
+     "verified": true,
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-30",
+     "crossvendor_checked": "gemini-3.1-pro (pre-merge, b-cw12-5, PARTIAL, 2026-07-30)",
+     "vocabulary_note": "§184 reads 'transformation and renewal'; rebirth is the graph's standing node for this archetype (cross-vendor PARTIAL adjudicated both-defensible, b-cw12-5)"
+    }
+   ]
+  },
+  {
+   "subject": "serpent",
+   "relation": "is-a",
+   "object": "god-image",
+   "references": [
+    {
+     "volume": "12",
+     "paragraph": 184,
+     "quote": "It is the healing serpent, representing the god",
+     "claim_type": "jung-asserts",
+     "confidence": "high",
+     "verified": true,
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-30",
+     "crossvendor_checked": "gemini-3.1-pro (pre-merge, b-cw12-5, SUPPORTED, 2026-07-30)",
+     "correction_note": "stage1: text says the serpent represents the god, i.e. the serpent IS the god-image; relation corrected from represents"
+    }
+   ]
+  },
+  {
+   "subject": "circumambulatio",
+   "relation": "is-exclusive-concentration-on",
+   "object": "the-centre",
+   "references": [
+    {
+     "volume": "12",
+     "paragraph": 186,
+     "quote": "a circumambulatio is necessary, i.e., exclusive concentration on the centre, the place of creative change",
+     "claim_type": "jung-asserts",
+     "confidence": "medium",
+     "verified": true,
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-30",
+     "crossvendor_checked": "gemini-3.1-pro (pre-merge, b-cw12-5, SUPPORTED, 2026-07-30)",
+     "note": "claim stands under the conditional “if the life-mass is to be transformed”"
+    }
+   ]
+  },
+  {
+   "subject": "the-unconscious",
+   "relation": "is-original-form-of",
+   "object": "psyche",
+   "references": [
+    {
+     "volume": "12",
+     "paragraph": 249,
+     "quote": "the autonomous nature of the unconscious as such, which is not only the original form of everything psychic",
+     "claim_type": "jung-asserts",
+     "confidence": "high",
+     "verified": true,
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-30",
+     "crossvendor_checked": "gemini-3.1-pro (pre-merge, b-cw12-5, SUPPORTED, 2026-07-30)"
+    }
+   ]
+  },
+  {
+   "subject": "artifex",
+   "relation": "must-transform-himself-into",
+   "object": "lapis",
+   "references": [
+    {
+     "volume": "12",
+     "paragraph": 187,
+     "quote": "Gerhard Dorn exclaims. “Transmutemini in vivos lapides philosophicos!” (Transform yourselves into living philosophical stones!)",
+     "claim_type": "jung-quotes-source",
+     "confidence": "high",
+     "verified": true,
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-30",
+     "crossvendor_checked": "gemini-3.1-pro (pre-merge, b-cw12-5, SUPPORTED, 2026-07-30)",
+     "source": "Gerhard Dorn"
+    }
+   ]
+  },
+  {
+   "subject": "artifex",
+   "relation": "was-unknowingly-chasing",
+   "object": "projection",
+   "references": [
+    {
+     "volume": "12",
+     "paragraph": 187,
+     "quote": "It did not occur to these philosophers that they were chasing a projection",
+     "claim_type": "jung-asserts",
+     "confidence": "high",
+     "verified": true,
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-30",
+     "crossvendor_checked": "gemini-3.1-pro (pre-merge, b-cw12-5, SUPPORTED, 2026-07-30)"
+    }
+   ]
+  },
+  {
+   "subject": "magic-circle",
+   "relation": "prevents-eruption-of",
+   "object": "the-unconscious",
+   "references": [
+    {
+     "volume": "12",
+     "paragraph": 188,
+     "quote": "The magic circle thus traced will also prevent the unconscious from breaking out again",
+     "claim_type": "jung-asserts",
+     "confidence": "high",
+     "verified": true,
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-30",
+     "crossvendor_checked": "gemini-3.1-pro (pre-merge, b-cw12-5, SUPPORTED, 2026-07-30)"
+    }
+   ]
+  },
+  {
+   "subject": "the-vessel",
+   "relation": "is-the-equivalent-of",
+   "object": "magic-circle",
+   "references": [
+    {
+     "volume": "12",
+     "paragraph": 219,
+     "quote": "The vas bene clausum (well-sealed vessel) ... is the equivalent of the magic circle.",
+     "claim_type": "jung-asserts",
+     "confidence": "high",
+     "verified": true,
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-30",
+     "crossvendor_checked": "gemini-3.1-pro (pre-merge, b-cw12-5, SUPPORTED, 2026-07-30)",
+     "note": "the elided clause reports that the precaution is frequent in alchemy; the equation with the magic circle is Jung's own"
+    }
+   ]
+  },
+  {
+   "subject": "quaternity",
+   "relation": "is-indicative-of-an-order-in",
+   "object": "the-unconscious",
+   "references": [
+    {
+     "volume": "12",
+     "paragraph": 189,
+     "quote": "The arrangement of the snakes in the four corners is indicative of an order in the unconscious.",
+     "claim_type": "jung-asserts",
+     "confidence": "high",
+     "verified": true,
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-30",
+     "crossvendor_checked": "gemini-3.1-pro (pre-merge, b-cw12-5, SUPPORTED, 2026-07-30)"
+    }
+   ]
+  },
+  {
+   "subject": "the-unconscious",
+   "relation": "is-personified-in-a-man-by",
+   "object": "anima",
+   "references": [
+    {
+     "volume": "12",
+     "paragraph": 192,
+     "quote": "A man’s unconscious is likewise feminine and is personified by the anima.",
+     "claim_type": "jung-asserts",
+     "confidence": "high",
+     "verified": true,
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-30",
+     "crossvendor_checked": "gemini-3.1-pro (pre-merge, b-cw12-5, SUPPORTED, 2026-07-30)"
+    }
+   ]
+  },
+  {
+   "subject": "anima",
+   "relation": "stands-for",
+   "object": "inferior-function",
+   "references": [
+    {
+     "volume": "12",
+     "paragraph": 192,
+     "quote": "The anima also stands for the “inferior” function ... for that reason frequently has a shady character",
+     "claim_type": "jung-asserts",
+     "confidence": "high",
+     "verified": true,
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-30",
+     "crossvendor_checked": "gemini-3.1-pro (pre-merge, b-cw12-5, SUPPORTED, 2026-07-30)",
+     "vocabulary_note": "§201 says 'tabooed function'; identification with the inferior function is explicit at §220 (cross-vendor PARTIAL adjudicated both-defensible, b-cw12-5)"
+    },
+    {
+     "volume": "12",
+     "paragraph": 201,
+     "quote": "the dark woman, i.e., the anima who stands for the tabooed function",
+     "claim_type": "jung-asserts",
+     "confidence": "high",
+     "verified": true,
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-30",
+     "crossvendor_checked": "gemini-3.1-pro (pre-merge, b-cw12-5, PARTIAL, 2026-07-30)"
+    }
+   ]
+  },
+  {
+   "subject": "inferior-function",
+   "relation": "is-contaminated-with",
+   "object": "the-unconscious",
+   "references": [
+    {
+     "volume": "12",
+     "paragraph": 193,
+     "quote": "The fourth function is contaminated with the unconscious and, on being made conscious, drags the whole of the unconscious with it.",
+     "claim_type": "jung-asserts",
+     "confidence": "high",
+     "verified": true,
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-30",
+     "crossvendor_checked": "gemini-3.1-pro (pre-merge, b-cw12-5, PARTIAL, 2026-07-30)",
+     "vocabulary_note": "§193 says 'the fourth function'; identification with the inferior function is explicit at §220 (cross-vendor PARTIAL adjudicated both-defensible, b-cw12-5)"
+    }
+   ]
+  },
+  {
+   "subject": "the-devil",
+   "relation": "is-the-fourth-person-in-the-heavenly-drama-of",
+   "object": "the-trinity",
+   "references": [
+    {
+     "volume": "12",
+     "paragraph": 192,
+     "quote": "The fourth person in the heavenly drama is undoubtedly the devil.",
+     "claim_type": "jung-asserts",
+     "confidence": "high",
+     "verified": true,
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-30",
+     "crossvendor_checked": "gemini-3.1-pro (pre-merge, b-cw12-5, SUPPORTED, 2026-07-30)"
+    }
+   ]
+  },
+  {
+   "subject": "mandala",
+   "relation": "is-characterized-by",
+   "object": "quaternity",
+   "references": [
+    {
+     "volume": "12",
+     "paragraph": 201,
+     "quote": "What is coming up is the unconscious content, namely the mandala characterized by the number four",
+     "claim_type": "jung-asserts",
+     "confidence": "high",
+     "verified": true,
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-30",
+     "crossvendor_checked": "gemini-3.1-pro (pre-merge, b-cw12-5, SUPPORTED, 2026-07-30)"
+    }
+   ]
+  },
+  {
+   "subject": "anthropos",
+   "relation": "stands-for",
+   "object": "wholeness",
+   "references": [
+    {
+     "volume": "12",
+     "paragraph": 210,
+     "quote": "the Anthropos idea that stands for man’s wholeness, that is, the conception of a unitary being who existed before man",
+     "claim_type": "jung-asserts",
+     "confidence": "high",
+     "verified": true,
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-30",
+     "crossvendor_checked": "gemini-3.1-pro (pre-merge, b-cw12-5, SUPPORTED, 2026-07-30)"
+    }
+   ]
+  },
+  {
+   "subject": "the-wheel",
+   "relation": "is-favourite-alchemical-symbol-for",
+   "object": "circulatio",
+   "references": [
+    {
+     "volume": "12",
+     "paragraph": 214,
+     "quote": "the wheel is a favourite symbol in alchemy for the circulating process, the circulatio",
+     "claim_type": "jung-reports-parallel",
+     "confidence": "high",
+     "verified": true,
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-30",
+     "crossvendor_checked": "gemini-3.1-pro (pre-merge, b-cw12-5, SUPPORTED, 2026-07-30)",
+     "note": "Jung describing alchemical usage, not asserting in his own interpretive voice"
+    }
+   ]
+  },
+  {
+   "subject": "the-wheel",
+   "relation": "is-in-boehme-a-concept-for",
+   "object": "wholeness",
+   "references": [
+    {
+     "volume": "12",
+     "paragraph": 216,
+     "quote": "the wheel appears here as a concept for wholeness which represents the essence of mandala symbolism",
+     "claim_type": "jung-asserts",
+     "confidence": "high",
+     "verified": true,
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-30",
+     "crossvendor_checked": "gemini-3.1-pro (pre-merge, b-cw12-5, SUPPORTED, 2026-07-30)",
+     "correction_note": "stage1: §216 scopes the wheel-as-wholeness to Böhme (\"appears here\"); restriction restored in relation"
+    }
+   ]
+  },
+  {
+   "subject": "squaring-of-the-circle",
+   "relation": "comes-nearest-to",
+   "object": "lapis",
+   "references": [
+    {
+     "volume": "12",
+     "paragraph": 220,
+     "quote": "according to the alchemists, comes nearest to the lapis on account of its roundness or perfect simplicity",
+     "claim_type": "jung-reports-parallel",
+     "confidence": "high",
+     "verified": true,
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-30",
+     "crossvendor_checked": "gemini-3.1-pro (pre-merge, b-cw12-5, SUPPORTED, 2026-07-30)",
+     "note": "explicit reporting cue “according to the alchemists”"
+    }
+   ]
+  },
+  {
+   "subject": "the-vessel",
+   "relation": "contains-the-mixture-from-which-emerges",
+   "object": "lapis",
+   "references": [
+    {
+     "volume": "12",
+     "paragraph": 243,
+     "quote": "its contents to the living, semi-organic mixture from which the body of the lapis , endowed with spirit and life, will emerge",
+     "claim_type": "jung-reports-parallel",
+     "confidence": "high",
+     "verified": true,
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-30",
+     "crossvendor_checked": "gemini-3.1-pro (pre-merge, b-cw12-5, SUPPORTED, 2026-07-30)",
+     "note": "the emergence of the lapis from the contents of the unum vas is alchemical doctrine, applied by Jung to the dream glass"
+    }
+   ]
+  },
+  {
+   "subject": "the-unconscious",
+   "relation": "has-as-its-principle-the-autonomy-of",
+   "object": "psyche",
+   "references": [
+    {
+     "volume": "12",
+     "paragraph": 186,
+     "quote": "the principle of the unconscious is the autonomy of the psyche itself",
+     "claim_type": "jung-asserts",
+     "confidence": "high",
+     "verified": true,
+     "verified_by": "claude-fable-5",
+     "verified_date": "2026-07-30",
+     "crossvendor_checked": "gemini-3.1-pro (pre-merge, b-cw12-5, SPLIT-ADJUDICATED, 2026-07-30)",
+     "correction_note": "cross-vendor WRONG under merged relation; edge split — §186 supports the autonomy relation (the auditor’s own reading affirms it), §249 the original-form relation"
     }
    ]
   }

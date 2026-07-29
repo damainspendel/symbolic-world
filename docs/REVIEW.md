@@ -1,16 +1,16 @@
 # The Symbolic World — Standing Review
 
-**Date:** 2026-07-29 · **State:** v1.3.0 — human gold set (E10) landed; paper v1.3
+**Date:** 2026-07-30 · **State:** v1.3 + batch b-cw12-5 merged (first fully pre-merge cross-vendor-checked batch after the E10 gold set)
 **Live:** [symbolicworld.observer](https://symbolicworld.observer) · Paper: `docs/PAPER.md` · Ledger: `pipeline/state.json`
 
 ## 0. Snapshot
 
 | | |
 |---|---|
-| Graph | **241 nodes · 648 edges · 673 references**, 479 distinct CW paragraphs, 9 volumes |
-| Verification | **673/673 (100%)** gate-verified with model+date provenance; 464 (69%) also cross-vendor checked (412 of CW 14's 413) |
-| Claim provenance | 450 jung-asserts · 163 jung-reports-parallel · 60 jung-quotes-source (42 named-source strings) · 85 hedged |
-| Coverage | CW 14 end-to-end (413 refs); CW 12 at 109; seven further volumes sampled |
+| Graph | **248 nodes · 669 edges · 699 references**, 495 distinct CW paragraphs, 9 volumes |
+| Verification | **699/699 (100%)** gate-verified with model+date provenance; 490 (70%) also cross-vendor checked (412 of CW 14's 413, all of batch b-cw12-5) |
+| Claim provenance | 470 jung-asserts · 166 jung-reports-parallel · 63 jung-quotes-source (43 named-source strings) · 87 hedged |
+| Coverage | CW 14 end-to-end (413 refs); CW 12 at 135; seven further volumes sampled |
 | Human validation | **E10 gold set complete**: support 44/50 · voice agreement 40/50 (single-annotator, anchored — see caveats) |
 | Replication | James's *Varieties* pilot: 38 edges, full public package (`james/`) |
 | Cost to date | ≈ $85–115 total model spend; ≈ **$0.09–0.14 per fully verified citation** |

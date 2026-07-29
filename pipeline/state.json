@@ -1,10 +1,10 @@
 {
- "updated": "2026-07-27T10:50",
+ "updated": "2026-07-30T01:30",
  "note": "all listed candidate batches are merged into seed.json (see git log); retro_gate*/audit verdicts likewise applied",
  "graph": {
-  "nodes": 227,
-  "edges": 610,
-  "refs": 634,
+  "nodes": 248,
+  "edges": 669,
+  "refs": 699,
   "verified": "100%"
  },
  "batches": [
@@ -91,7 +91,7 @@
   {
    "id": "b-cw12-1",
    "status": "merged",
-   "window": "CW12 \u00a71-66",
+   "window": "CW12 §1-66",
    "input": "pipeline/work/b-cw12-1_input.json",
    "candidates": "pipeline/batches/b-cw12-1_candidates.json",
    "edges": 20,
@@ -102,7 +102,7 @@
   {
    "id": "b-cw12-2",
    "status": "merged",
-   "window": "CW12 \u00a7332-420",
+   "window": "CW12 §332-420",
    "input": "pipeline/work/b-cw12-2_input.json",
    "candidates": "pipeline/batches/b-cw12-2_candidates.json",
    "edges": 20,
@@ -113,7 +113,7 @@
   {
    "id": "b-cw12-3",
    "status": "merged",
-   "window": "CW12 \u00a7447-515",
+   "window": "CW12 §447-515",
    "input": "pipeline/work/b-cw12-3_input.json",
    "candidates": "pipeline/batches/b-cw12-3_candidates.json",
    "edges": 20,
@@ -146,7 +146,7 @@
   {
    "id": "b-union-2",
    "status": "merged",
-   "result": "mined 20; 13 dup-pair (coverage re-confirmation); 7 novel: stage1 6/1/0, stage2 0 flags; merged 7 edges, 2 new nodes (en-soph, tifereth); cross-vendor check (run post-merge \u2014 process slip, now standing): 4 SUPPORTED / 3 PARTIAL, all three the documented Adam-Kadmon/anthropos vocabulary convention, adjudicated both-defensible"
+   "result": "mined 20; 13 dup-pair (coverage re-confirmation); 7 novel: stage1 6/1/0, stage2 0 flags; merged 7 edges, 2 new nodes (en-soph, tifereth); cross-vendor check (run post-merge — process slip, now standing): 4 SUPPORTED / 3 PARTIAL, all three the documented Adam-Kadmon/anthropos vocabulary convention, adjudicated both-defensible"
   },
   {
    "id": "exp7-rubricfree",
@@ -156,16 +156,22 @@
   {
    "id": "exp1b-calibration",
    "status": "complete",
-   "note": "n=200 expanded calibration: 86%/93% with CIs; per-class 23-24/25 structural, 18/25 voice; 1 production claim-type fix (rex/hierosgamos \u00a7356); E5 doubling claim downgraded to directional"
+   "note": "n=200 expanded calibration: 86%/93% with CIs; per-class 23-24/25 structural, 18/25 voice; 1 production claim-type fix (rex/hierosgamos §356); E5 doubling claim downgraded to directional"
   },
   {
    "id": "b-cw12-4",
    "status": "merged",
-   "window": "CW12 \u00a744-110",
-   "result": "mined 20; 5 dup-pair; stage1 11/4/0 (1 dropped, 3 corrected \u2014 n9 referent forced by BOTH gates agreeing); stage2 clean; cross-vendor pre-merge 13/1 -> 14 merged, 7 new nodes"
+   "window": "CW12 §44-110",
+   "result": "mined 20; 5 dup-pair; stage1 11/4/0 (1 dropped, 3 corrected — n9 referent forced by BOTH gates agreeing); stage2 clean; cross-vendor pre-merge 13/1 -> 14 merged, 7 new nodes"
+  },
+  {
+   "id": "b-cw12-5",
+   "status": "merged",
+   "window": "CW12 §181-250",
+   "result": "mined 27 (30 refs); pre-check 30/30; stage1 23/7/0 (3 dropped, 4 corrected); stage2 0/26; cross-vendor pre-merge 21/4/1 -> 1 edge split on upheld WRONG, 4 both-defensible with vocabulary_note; merged 21 new edges + 5 attached refs, 7 new nodes"
   }
  ],
- "next": "12:03 wake: finish b-union-1 (stage2+merge), then b-union-2, then CW12 \u00a744-110 first dream-series batch",
+ "next": "CW12 dream-series continuation (§251-331) when scheduled",
  "nodes": 241,
  "edges": 648,
  "refs": 673,
