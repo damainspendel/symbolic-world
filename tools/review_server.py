@@ -169,6 +169,14 @@ class H(BaseHTTPRequestHandler):
             self.end_headers()
 
 
+class ReusableServer(HTTPServer):
+    allow_reuse_address = True
+
+
 if __name__ == '__main__':
+    try:
+        srv = ReusableServer(('127.0.0.1', PORT), H)
+    except OSError:
+        raise SystemExit(f"Port {PORT} is busy. Free it with:  lsof -ti :{PORT} | xargs kill")
     print(f"Gold-set review → http://127.0.0.1:{PORT}  (local only; corpus never leaves this machine)")
-    HTTPServer(('127.0.0.1', PORT), H).serve_forever()
+    srv.serve_forever()
