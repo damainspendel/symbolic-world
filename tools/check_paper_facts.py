@@ -146,6 +146,18 @@ for doc in ['README.md', 'docs/ABSTRACT.md', 'docs/REVIEW.md']:
     if str(refs) not in dt:
         failures.append(f"STALE DOC: {doc} lacks current reference count {refs}")
 
+# docs/REVIEW.md is a standing snapshot: pin its headline numbers like the paper's
+rv = (ROOT / 'docs' / 'REVIEW.md').read_text()
+for sub, why in [
+    (f"{nodes} nodes · {edges} edges · {refs} references", "REVIEW graph line"),
+    (f"{ct['jung-asserts']} jung-asserts · {ct['jung-reports-parallel']} jung-reports-parallel · "
+     f"{ct['jung-quotes-source']} jung-quotes-source", "REVIEW claim mix"),
+    (f"{canary_count} corruption canaries", "REVIEW canary count"),
+    (f"{len(paras)} distinct CW paragraphs", "REVIEW distinct paragraphs"),
+]:
+    if sub not in rv:
+        failures.append(f"STALE DOC: docs/REVIEW.md lacks '{sub[:60]}' ({why})")
+
 # ---- banned phrases (claims retired by review) ----
 for pat, why in [
     (r'25-fold', "retired headline"),
