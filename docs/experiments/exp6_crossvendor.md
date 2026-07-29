@@ -1,3 +1,5 @@
+# NOTE (2026-07-29): E6's 'both-defensible' rulings were later re-reviewed UNANCHORED (outcomes only): 3 of 7 were rejected by the auditor. The '0 unsupported' headline holds only under the project's vocabulary conventions; under the auditor's strict reading E6's residual is 4-7/100. The graph counts below are as of E6's date. See exp7_addendum_crossreview.md and docs/experiments/data/gemini_e6_unanchored_review.json.
+
 # E6 — Cross-vendor verification audit (Gemini 3.1 Pro)
 
 **Date:** 2026-07-27 · **Vendor:** Google, `gemini-3.1-pro-preview`, temperature 0, JSON mode

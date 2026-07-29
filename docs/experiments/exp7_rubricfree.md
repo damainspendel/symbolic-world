@@ -50,7 +50,7 @@ cross-paragraph context); none alleges an unsupported or reversed claim.
 from a full-volume, own-terms, second-vendor sweep: **4/407 ≈ 1.0%** upheld errors, none
 of them fabrications or reversals (all referent/relation nuance).
 
-## The headline: the rubric was not doing the work
+## The headline (WITHDRAWN 2026-07-29 — see note at top: the 'reduced' prompt retained enums, so this section's conclusion overstates)
 
 **Rubric-free calibration replay (E1 corruption set, n=40):**
 
@@ -70,8 +70,7 @@ audited under both modes, verdict consistency is **55/58 (95%)**, with the 3 div
 all rubric-SUPPORTED → rubric-free-partly (the free mode is marginally *stricter*, not
 more lenient).
 
-**Conclusion:** shared-rubric convergence was a legitimate methodological concern with a
-measured impact of ≈ zero on these error classes. Detection is driven by the paragraph
+**Conclusion (superseded):** the identical profiles are parsimoniously explained by the two prompts being operationally similar instruments; rubric-independence is narrowed, not demonstrated. Detection is driven by the paragraph
 evidence, not the grading scale; the rubric's real function is output *comparability*.
 The E6 headline can accordingly be strengthened: zero unsupported edges under the shared
 rubric, and a 1.0% nuance-level upheld-error rate under the second vendor's own terms.

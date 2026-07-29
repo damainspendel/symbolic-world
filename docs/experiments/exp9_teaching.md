@@ -1,6 +1,6 @@
 # E9 — Controlled teaching test (taught vs untaught miner)
 
-**Date:** 2026-07-28 · **Design:** the confound-free test a hostile review demanded for
+**Date:** 2026-07-28 · **Design:** the controlled test a hostile review demanded (temporal confound removed; the shared-instrument confound was later identified and remains) for
 Imperative 4. Two miners, same model (Opus 4.8), same held-out window (CW 12 §111–180,
 never previously mined), same node vocabulary. One received minimal instructions; the
 other the correction-derived instructions the pipeline has accumulated (claim-typing

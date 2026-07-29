@@ -13,7 +13,7 @@ cross-vendor check (Gemini, pre-merge) → publish. Voice vocabulary instantiate
 | Stage | Result |
 |---|---|
 | Mining | 40 candidates, 55 nodes proposed; claim mix 25 asserts / 4 reports / 9 quotes-source (+4 hedged medium) |
-| Mechanical pre-check | **40/40 quotes pass verbatim** (0 dropped) |
+| Mechanical pre-check | **40/40 quotes passed the then-current checker** (0 dropped) — a later review found that checker lacked the elision bound; 2 published refs violated the full rules and were repaired + re-gated 2026-07-28 |
 | Structure gate | 37 SUPPORTED / 3 PARTIAL / 0 WRONG; 1 corrected, 2 dropped under the conservative no-one-off-nodes rule |
 | Voice specialist | 5 hedge fixes (James's "it seems to me a true account" endorsements correctly demoted to medium) |
 | Cross-vendor check (pre-merge) | **38/38 SUPPORTED** |
