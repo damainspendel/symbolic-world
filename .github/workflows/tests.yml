@@ -28,6 +28,8 @@ jobs:
           assert bad == 0, f"{bad} James references violate quote rules"
           print("james: all references pass")
           PY
+      - name: Paper facts vs artifact (the paper's own thesis, applied to itself)
+        run: python3 tools/check_paper_facts.py
       - name: Jung graph structural checks (corpus is local-only; quote checks run locally via manage.sh)
         run: |
           python3 - << 'PY'

@@ -24,7 +24,8 @@ one scope restriction, one source-attribution nuance.
 
 ## Honest statement
 
-A 2.3× flag-rate reduction in the direction the observational series suggested — but
-n=20 per arm is small (Fisher's exact p ≈ 0.27, not significant), so this is
-**controlled, confound-free support at pilot scale**, not statistical proof. It removes
-the batch-composition confound the hostile review identified; scale remains. Cost: ~$4.
+A 2.3× flag-rate reduction in the predicted direction — but n=20 per arm is small
+(Fisher's exact p ≈ 0.27, not significant), and a later review identified a remaining
+confound: the outcome judge is the same gate whose corrections defined the teaching,
+so accuracy gains cannot be distinguished from stylistic accommodation to the gate.
+This removes the temporal confound only; a different-vendor re-grade is the next control. Cost: ~$4.

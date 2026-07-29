@@ -3,6 +3,7 @@
 Usage: python3 tools/build_pdf.py   (requires: pip install markdown; brew install weasyprint)"""
 import markdown, re, subprocess, pathlib
 ROOT = pathlib.Path(__file__).resolve().parent.parent
+subprocess.run(["python3", str(ROOT / "tools/check_paper_facts.py")], check=True)
 md = (ROOT / "docs/PAPER.md").read_text()
 md = re.sub(r"!\[([^\]]*)\]\((figures/[^)]+)\)",
             lambda m: (ROOT / "docs" / m.group(2)).read_text(), md)
