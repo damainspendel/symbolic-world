@@ -101,7 +101,9 @@ high human agreement on labels 1 and 3, and we treat disagreement concentrated o
 sympathetic-reportage items as a *finding about the text*, to be reported, not
 resolved by fiat. Inter-annotator agreement (Cohen's κ) will be reported when a
 second annotator joins; the author-only gold set is the anchor until then, and is
-labeled as single-annotator throughout.
+labeled as single-annotator throughout. Annotator profile: the author is an
+experienced reader of Jung with sustained prior engagement with the Collected
+Works, not a professional Jungian scholar — between novice and specialist.
 
 ## 6. Relation to the tooling
 
