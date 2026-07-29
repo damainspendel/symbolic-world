@@ -478,5 +478,37 @@
   "notes": "very difficult to decide, needs further adjudication.",
   "validated_by": "author",
   "date": "2026-07-29"
+ },
+ {
+  "gold_id": 31,
+  "edge_index": 249,
+  "ref_index": 0,
+  "subject": "bitch",
+  "relation": "symbolizes",
+  "object": "the-vessel",
+  "volume": "14",
+  "paragraph": 181,
+  "pipeline_claim_type": "jung-asserts",
+  "support": "partly",
+  "voice": "should-be-asserts",
+  "notes": "It's more the moon-bitch, not just bitch (ibid)",
+  "validated_by": "author",
+  "date": "2026-07-29"
+ },
+ {
+  "gold_id": 32,
+  "edge_index": 323,
+  "ref_index": 0,
+  "subject": "nigredo",
+  "relation": "corresponds-to",
+  "object": "the-unconscious",
+  "volume": "14",
+  "paragraph": 646,
+  "pipeline_claim_type": "jung-asserts",
+  "support": "supported",
+  "voice": "should-be-asserts",
+  "notes": "",
+  "validated_by": "author",
+  "date": "2026-07-29"
  }
 ]
