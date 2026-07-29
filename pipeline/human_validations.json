@@ -382,5 +382,21 @@
   "notes": "",
   "validated_by": "author",
   "date": "2026-07-29"
+ },
+ {
+  "gold_id": 25,
+  "edge_index": 468,
+  "ref_index": 0,
+  "subject": "rex",
+  "relation": "renewed-by",
+  "object": "holy-ghost",
+  "volume": "14",
+  "paragraph": 432,
+  "pipeline_claim_type": "jung-asserts",
+  "support": "supported",
+  "voice": "should-be-reports",
+  "notes": "\"In alchemy...\" at the beginning of the sentence.",
+  "validated_by": "author",
+  "date": "2026-07-29"
  }
 ]

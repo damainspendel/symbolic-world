@@ -109,7 +109,7 @@ Figure 3 pins each design to the pipeline step it measures (chips and legend). R
 
 ### 6.1 Jung's *Collected Works*
 
-**Why this corpus is a stress test.** The Collected Works were chosen partly for their difficulty. Walter Kaufmann, in *Discovering the Mind*, judged that although Jung "wrote copiously, his bent was really strikingly unsystematic"; and Edward Edinger — whose book-length, section-by-section commentary on *Mysterium Coniunctionis* exists precisely because readers needed one — called that volume, our end-to-end case, ["a real challenge even to those most psychologically sophisticated"](https://archive.org/details/mysteriumlecture0000edin). A corpus this resistant to systematic reading is a demanding first target for claim extraction. To the extent the risk profile measured here holds on such a text, corpora with plainer argumentative structure should present the same risks in milder form; the James pilot (§6.2) is consistent with that expectation, though it does not yet establish it.
+**Why this corpus is a stress test.** The Collected Works were chosen partly for their difficulty. Edward Edinger, whose book-length, section-by-section commentary on *Mysterium Coniunctionis* exists precisely because readers needed one, called that volume — our end-to-end case — ["a real challenge even to those most psychologically sophisticated"](https://archive.org/details/mysteriumlecture0000edin) (Edinger 1995). A corpus this resistant to systematic reading is a demanding first target for claim extraction. To the extent the risk profile measured here holds on such a text, corpora with plainer argumentative structure should present the same risks in milder form; the James pilot (§6.2) is consistent with that expectation, though it does not yet establish it.
 
 **Corpus.** Paragraph records `{volume, §, text, page}` extracted mechanically from epub markup (§ numbers read from bracketed markers, strictly ascending; never inferred), with a §→Bollingen-page concordance. The corpus stays local; only ≤25-word verified quotes are published (legal basis: `docs/LEGAL.md`).
 
@@ -216,6 +216,7 @@ Conception, direction, corpus provision, publication decisions, and final respon
 - [Structured Inline Citation Generation](https://arxiv.org/html/2606.07130) · [Schema-Aware Triple Verification](https://arxiv.org/pdf/2604.04190) · [Prover–Skeptic KB Generation](https://arxiv.org/pdf/2603.06974)
 - [Nanopublications](https://arxiv.org/pdf/1809.06532) · [Provenance-Enhanced Statements](https://arxiv.org/html/2606.15246)
 - [KGs in Libraries & Digital Humanities](https://arxiv.org/abs/1803.03198) · [ARAS Concordance](https://aras.org/concordance)
+- Edinger, E. F. (1995). *The Mysterium Lectures: A Journey Through C.G. Jung's Mysterium Coniunctionis*. Inner City Books. ([archive](https://archive.org/details/mysteriumlecture0000edin))
 
 ## Appendix A — Experiment details
 
