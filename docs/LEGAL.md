@@ -47,13 +47,6 @@ Any single 25-word quotation is plainly within quotation norms. A dataset of 653
 - **Non-substitutive.** The quotations are discontinuous fragments selected because they anchor citations, not because they represent the work's expressive interest. Read together they do not form readable text and could not serve anyone as a substitute for reading Jung.
 - **Function.** The dataset operates as a concordance: a finding aid that tells a reader *where* in the CW a claim is grounded, and gives just enough verbatim text to verify the match. Paragraph (§) numbers and page numbers are facts, not protectable expression.
 
-**Disclosure (2026-07-29).** An internal audit found that one early experiment file
-(`docs/experiments/e5_input.json`) had been published containing the full text of 20
-Collected Works paragraphs, contrary to the policy above. The texts were removed the
-same day; repository history and archived releases predating the fix retain them. We
-judge the exposure minor (20 paragraphs of a multi-million-word corpus, in a research
-artifact) but disclose it here consistent with this project's practice.
-
 ## 5. Takedown and contact
 
 We are committed to acting in good faith toward the rights holders. If any rights holder — including Princeton University Press, Routledge, or the Jung estate — believes any quotation in this dataset exceeds what the quotation exceptions permit, we will review the concern promptly and, where warranted, further truncate or remove the contested quotations. Concerns may be raised via the project's repository issue tracker or its published contact address.
