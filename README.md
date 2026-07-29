@@ -16,23 +16,24 @@ more of 673 references. Every reference names its exact CW paragraph and Bolling
 page, carries a verbatim quote of ≤25 words, and is typed by **whose claim it is**:
 Jung's own assertion, doctrine he reports, or a named source he quotes. 100% of
 references passed an independent verification gate; the whole of CW 14 was
-additionally re-audited by a second vendor's model in its own terms.
+additionally re-audited by a second vendor's model, and the author hand-validated
+a 50-item gold sample against the source paragraphs (E10).
 
 ## Why it's different
 
 Nothing enters this graph without passing, in order:
 
 1. **Mechanical verbatim check** — the quote must exist, letter-for-letter, in the
-   cited paragraph (eliminates fabricated citations entirely);
+   cited paragraph (excludes fabricated citations, within stated and canary-guarded bounds);
 2. **Independent structure gate** — a model from a different family than the
    proposer reviews the full paragraph (support, direction, referent, conflation);
 3. **Voice specialist** — a narrow second review of attribution and hedging;
 4. **Standing cross-vendor audit** — a different vendor's model re-audits published
-   samples, blind, including rubric-free in its own terms.
+   samples, blind, including a reduced-rubric mode closer to its own terms.
 
 Error rates are measured and published, not hidden: see the experiments in
 [docs/experiments/](docs/experiments/) (seeded-corruption calibration, adversarial
-audits, stability probes, cross-vendor audits E6–E7) and the standing review in
+audits, stability probes, cross-vendor audits E6–E7, the human gold set E10) and the standing review in
 [docs/REVIEW.md](docs/REVIEW.md).
 
 ## Dispute an edge
@@ -49,12 +50,12 @@ its edge, that finding falsifies the edge, publicly.
 | Path | Contents |
 |---|---|
 | `seed.json` | The graph: nodes, edges, references with full verification provenance |
-| `docs/PAPER.md` | Research paper (methods, experiments E0–E7, results) |
+| `docs/PAPER.md` | Research paper (methods, experiments E0–E10, results) |
 | `docs/experiments/` | Every experiment: designs, keys, verdicts, adjudications |
 | `docs/ASSUMPTIONS.md` | 16-item assumptions register + community-verification protocol |
 | `docs/LEGAL.md` | Legal statement (quotation basis, licensing, takedown) |
 | `pipeline/` | Construction pipeline: runners, transaction ledger (`state.json`), batches |
-| `tests/test_graph.py` | Integrity validators + 5 self-testing corruption canaries |
+| `tests/test_graph.py` | Integrity validators + 7 self-testing corruption canaries |
 | `web/` | The atlas web app (Vite + Cytoscape) |
 | `james/` | Second-corpus replication (James, *Varieties*): full reproduction package + [visual graph](https://symbolicworld.observer/james.html) |
 | `manage.sh` | Build / deploy / service management |

@@ -25,3 +25,7 @@ web/serve.log
 __pycache__/
 pipeline/work/
 app/
+
+# private working docs — not part of the published artifact
+docs/PUBLISHING.md
+docs/STATS_GUIDE.md

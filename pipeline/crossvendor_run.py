@@ -87,7 +87,8 @@ if __name__ == "__main__":
         run_chunked(json.load(open('pipeline/work/audit100_input.json')), GATE_PROMPT,
                     'pipeline/work/gemini_audit100')
     elif which == "e7":
-        # Rubric-free audit (mitigation for shared-rubric convergence, see exp6 doc):
+        # Reduced-rubric audit (originally called rubric-free; relabeled after a
+        # code-level review found retained enums — see exp7 doc):
         # no verdict enum, no claim-type definitions, no strictness persona — the
         # auditor judges support and describes problems in its own terms.
         E7_PROMPT = """You are reviewing statements that a project extracted from C.G. Jung's Collected Works. Each item claims a relationship (subject -relation-> object), gives an attribution type the project assigned (claim_type), a confidence level, a short quotation, and the full source paragraph (paragraph_text). The in_e6_sample field is bookkeeping; ignore it.
@@ -98,6 +99,6 @@ Respond with ONLY a JSON array covering every n:
 [{"n": <int>, "supported": "yes" | "partly" | "no", "problem": "<your own words; empty string if none>", "seriousness": "none" | "minor" | "moderate" | "serious"}]"""
         items = json.load(open('pipeline/work/e7_cw14_input.json'))
         run_chunked(items, E7_PROMPT, 'pipeline/work/gemini_e7', chunk=20)
-        # rubric-free replay of the E1 seeded-corruption set for a sensitivity measure
+        # reduced-rubric replay of the E1 seeded-corruption set for a sensitivity measure
         calib = json.load(open('pipeline/work/calib_input.json'))
         run_chunked(calib, E7_PROMPT, 'pipeline/work/gemini_e7_calib', chunk=20)

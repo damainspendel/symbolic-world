@@ -91,7 +91,7 @@ which citations are preprints/non-peer-reviewed ("nonpublications") vs published
 Deliverable: one short annotated-bibliography doc, per-paper: what it measured,
 how, headline number, and how much weight it can bear.
 
-## E7: rubric-free cross-vendor replication (added 2026-07-27)
+## E7: reduced-rubric cross-vendor replication (added 2026-07-27 as 'rubric-free'; relabeled)
 Re-run a cross-vendor audit sample WITHOUT the first-party rubric: the second vendor
 states support + severity in its own terms; map post hoc. Motivated by Gemini's
 prompt-bias critique (shared-rubric convergence). See docs/experiments/exp6_crossvendor.md.
