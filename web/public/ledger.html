@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Construction log — The Symbolic World</title>
+<style>
+  :root { --ground:#0e1116; --gold:#d9b25f; --gold-dim:#a9863f; --ink:#c9d0d6; --ink-faint:#7a828b;
+          --surface:rgba(18,23,30,.92); --hairline:#2a323c;
+          --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+          --mono:ui-monospace,"SF Mono",Menlo,monospace; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { background:radial-gradient(120% 90% at 50% 0%, #141b24 0%, var(--ground) 60%, #0a0d12 100%);
+         font-family:var(--serif); color:var(--ink); min-height:100vh; padding:2.5rem 1.2rem 4rem; }
+  main { max-width: 860px; margin: 0 auto; }
+  .eyebrow { font:.6rem/1 var(--mono); letter-spacing:.26em; text-transform:uppercase; color:var(--gold-dim); }
+  h1 { color:#e8e2d0; font-size:1.6rem; font-weight:600; margin:.3rem 0 .8rem; }
+  .intro { font-size:.92rem; line-height:1.6; color:var(--ink); max-width:64ch; margin-bottom:.5rem; }
+  .meta { font:.62rem var(--mono); color:var(--ink-faint); margin-bottom:1.6rem; }
+  a { color:var(--gold); }
+  .card { background:var(--surface); border:1px solid var(--hairline); border-radius:10px;
+          padding:.85rem 1rem; margin:.6rem 0; }
+  .edge { font-size:1rem; color:#f0ead8; font-family:var(--mono); }
+  .cite { font:.62rem var(--mono); color:var(--gold-dim); margin-left:.5rem; white-space:nowrap; }
+  .row2 { display:flex; gap:.6rem; align-items:baseline; flex-wrap:wrap; margin:.1rem 0 .35rem; }
+  .badge { font:.58rem var(--mono); letter-spacing:.06em; padding:.12rem .45rem; border-radius:99px;
+           border:1px solid var(--hairline); white-space:nowrap; }
+  .b-merged { color:#7fc9a0; border-color:#2f5c46; }
+  .b-complete { color:#9ec9c3; border-color:#39575c; }
+  .res { font-size:.84rem; line-height:1.5; color:var(--ink); }
+  .commits { font:.62rem var(--mono); color:var(--ink-faint); margin-top:.4rem; line-height:1.8; }
+  .commits b { color:var(--ink-faint); font-weight:600; font-size:.58rem; letter-spacing:.08em;
+               text-transform:uppercase; margin-right:.3rem; }
+  .cdate { color:var(--ink-faint); }
+  .back { display:inline-block; margin-bottom:1.4rem; font-size:.85rem; text-decoration:none; }
+</style>
+</head>
+<body>
+<main>
+  <a class="back" href="/">← back to the atlas</a>
+  <div class="eyebrow">The Symbolic World</div>
+  <h1>Construction log</h1>
+  <p class="intro">How this graph was built, batch by batch. Each entry below is one batch's
+  passage through the pipeline — proposed by the mining model, mechanically quote-checked,
+  reviewed by an independent model family, cross-checked by a second vendor, and merged —
+  with links to the underlying commits, so the construction can be replayed and audited in
+  the <a href="https://github.com/damianspendel/symbolic-world">public repository</a>. Experiment entries record the audits and
+  calibrations run against the published graph; their designs and results are in the
+  <a href="https://github.com/damianspendel/symbolic-world/blob/master/docs/PAPER.md">paper</a>.</p>
+  <p class="intro">Disclosure, mirrored from the paper: verification timestamps for batches
+  gated before 2026-07-26 were batch-backfilled rather than recorded per-operation (the
+  verification is real; those timestamps are reconstructions). Since then, stamps are written
+  by the operations they describe, and any post-verification edit triggers re-gating.</p>
+  <div class="meta">graph today: 241 nodes · 648 edges · 673 references ·
+    ledger updated 2026-07-27T10:50 ·
+    <a href="https://github.com/damianspendel/symbolic-world/commits/master">full commit history</a></div>
+  <div class="card">
+    <div class="row2"><span class="edge">b-cw12-4</span><span class="cite">CW12 §44-110</span>
+      <span class="badge b-merged">merged</span></div>
+    <p class="res">mined 20; 5 dup-pair; stage1 11/4/0 (1 dropped, 3 corrected — n9 referent forced by BOTH gates agreeing); stage2 clean; cross-vendor pre-merge 13/1 -&gt; 14 merged, 7 new nodes</p>
+    <div class="commits"><b>commits</b> <a href="https://github.com/damianspendel/symbolic-world/commit/12c764f" title="Resume CW12 mining (b-cw12-4 §44-110); add docs/PUBLISHING.md backlog">12c764f</a><span class="cdate"> 2026-07-27</span> · <a href="https://github.com/damianspendel/symbolic-world/commit/07d7d95" title="b-cw12-4 merged: 14 edges, 7 new nodes (temenos, unknown-woman, blue-flower, helios, aqua-nostra, the-mother...); first batch with in-pipeline cross-vendor stamp">07d7d95</a><span class="cdate"> 2026-07-27</span></div>
+  </div>
+  <div class="card">
+    <div class="row2"><span class="edge">exp1b-calibration</span>
+      <span class="badge b-complete">complete</span></div>
+    <p class="res">n=200 expanded calibration: 86%/93% with CIs; per-class 23-24/25 structural, 18/25 voice; 1 production claim-type fix (rex/hierosgamos §356); E5 doubling claim downgraded to directional</p>
+    
+  </div>
+  <div class="card">
+    <div class="row2"><span class="edge">exp7-rubricfree</span>
+      <span class="badge b-complete">complete</span></div>
+    <p class="res">407 CW14 refs: 356/47/4; 10 adjudicated, 4 upheld+corrected (1 edge deleted); rubric-free calib identical to rubric (70/95, same misses); cross-mode consistency 55/58; graph 231/627/652</p>
+    
+  </div>
+  <div class="card">
+    <div class="row2"><span class="edge">b-union-2</span>
+      <span class="badge b-merged">merged</span></div>
+    <p class="res">mined 20; 13 dup-pair (coverage re-confirmation); 7 novel: stage1 6/1/0, stage2 0 flags; merged 7 edges, 2 new nodes (en-soph, tifereth); cross-vendor check (run post-merge — process slip, now standing): 4 SUPPORTED / 3 PARTIAL, all three the documented Adam-Kadmon/anthropos vocabulary convention, adjudicated both-defensible</p>
+    <div class="commits"><b>commits</b> <a href="https://github.com/damianspendel/symbolic-world/commit/8660b25" title="E1b: expanded calibration n=200 — 86% sens (CI 78-91) / 93% spec; voice baseline revised up, specialist claim honestly downgraded; b-union-2 mined+prechecked (7 novel at gate)">8660b25</a><span class="cdate"> 2026-07-27</span> · <a href="https://github.com/damianspendel/symbolic-world/commit/0fb8304" title="b-union-2 merged: 7 novel Adam-chapter edges (Kabbalistic hinge), 2 new nodes; 13 candidates were coverage re-confirmations">0fb8304</a><span class="cdate"> 2026-07-27</span> · <a href="https://github.com/damianspendel/symbolic-world/commit/c5e8ce0" title="Sync counts to 233/634/659 after b-union-2 merge">c5e8ce0</a><span class="cdate"> 2026-07-27</span> · <a href="https://github.com/damianspendel/symbolic-world/commit/127d846" title="Honesty fix: cross-vendor cadence is release-gated (not periodic); run missed b-union-2 check (4S/3P both-defensible, logged); Mitigates column in pipeline table">127d846</a><span class="cdate"> 2026-07-27</span> · <a href="https://github.com/damianspendel/symbolic-world/commit/01b94ab" title="Facts-checker CI: every countable paper claim asserted against the artifact on every push and before every PDF build; all current drift fixed (mix 450/163/60, frags 783/791, vocab-notes 8, canaries 7, sources 42, E7 coverage reconciled 407/412/413, b-union-2 stamps); E9 shared-instrument confound stated; banned-phrase guard (25-fold, rubric≈0, hard yards, first-ever, confound-free)">01b94ab</a><span class="cdate"> 2026-07-29</span></div>
+  </div>
+  <div class="card">
+    <div class="row2"><span class="edge">exp6-crossvendor</span>
+      <span class="badge b-complete">complete</span></div>
+    <p class="res">Gemini 3.1 Pro: 100-edge audit 89/11/0; 4 corrections; adjudication cross-review 9/2/0; prompt-bias audit -&gt; E7 backlog</p>
+    
+  </div>
+  <div class="card">
+    <div class="row2"><span class="edge">b-union-1</span>
+      <span class="badge b-merged">merged</span></div>
+    <p class="res">16/5/0 stage1; 4 corrected, 1 dropped (n16 one-off node); stage2: 2 hedge demotions; merged 20 edges, 3 new nodes</p>
+    <div class="commits"><b>commits</b> <a href="https://github.com/damianspendel/symbolic-world/commit/4ea8678" title="pipeline: b-union-1 stage-1 gated (16/5/0), stage 2 held for credit window">4ea8678</a><span class="cdate"> 2026-07-27</span> · <a href="https://github.com/damianspendel/symbolic-world/commit/bb5d4d2" title="b-union-1 merged (20 edges, 3 nodes, v2 two-stage gate); About panel claim-coverage framing + dispute note; ledger sync">bb5d4d2</a><span class="cdate"> 2026-07-27</span></div>
+  </div>
+  <div class="card">
+    <div class="row2"><span class="edge">exp3-probe</span>
+      <span class="badge b-complete">complete</span></div>
+    <p class="res">probeA/probeB inputs + probe_reference.json committed; run when budget returns</p>
+    
+  </div>
+  <div class="card">
+    <div class="row2"><span class="edge">exp2-modality</span>
+      <span class="badge b-complete">complete</span></div>
+    <p class="res">batches 1-3 applied (45 fixes/381 refs); batches 4-5 HELD on spend limit (inputs in pipeline/work/modality[45]_input.json)</p>
+    
+  </div>
+  <div class="card">
+    <div class="row2"><span class="edge">b-cw12-3</span><span class="cite">CW12 §447-515</span>
+      <span class="badge b-merged">merged</span></div>
+    <p class="res">20/0/0</p>
+    <div class="commits"><b>commits</b> <a href="https://github.com/damianspendel/symbolic-world/commit/6c61825" title="pipeline: b-cw12-3 (CW12 §447-515 lapis-Christ) input-built">6c61825</a><span class="cdate"> 2026-07-26</span> · <a href="https://github.com/damianspendel/symbolic-world/commit/202088d" title="pipeline: b-cw12-3 mined + pre-checked (20 edges, 0 fails) — gate held for next usage window">202088d</a><span class="cdate"> 2026-07-26</span> · <a href="https://github.com/damianspendel/symbolic-world/commit/e09808e" title="Mine CW12 §447-515 (Lapis-Christ Parallel) — 20/20, third perfect batch">e09808e</a><span class="cdate"> 2026-07-26</span></div>
+  </div>
+  <div class="card">
+    <div class="row2"><span class="edge">b-cw12-2</span><span class="cite">CW12 §332-420</span>
+      <span class="badge b-merged">merged</span></div>
+    <p class="res">20/0/0</p>
+    <div class="commits"><b>commits</b> <a href="https://github.com/damianspendel/symbolic-world/commit/97d3a6e" title="pipeline: b-cw12-2 (CW12 §332-420) input-built">97d3a6e</a><span class="cdate"> 2026-07-26</span> · <a href="https://github.com/damianspendel/symbolic-world/commit/20a91ae" title="pipeline: b-cw12-2 mined + pre-checked (20 edges, 6 nodes, 0 fails)">20a91ae</a><span class="cdate"> 2026-07-26</span> · <a href="https://github.com/damianspendel/symbolic-world/commit/cecae6a" title="Mine CW12 §332-420 (Basic Concepts of Alchemy) — 20/20 Fable-verified">cecae6a</a><span class="cdate"> 2026-07-26</span></div>
+  </div>
+  <div class="card">
+    <div class="row2"><span class="edge">b-cw12-1</span><span class="cite">CW12 §1-66</span>
+      <span class="badge b-merged">merged</span></div>
+    <p class="res">20/0/0</p>
+    <div class="commits"><b>commits</b> <a href="https://github.com/damianspendel/symbolic-world/commit/5be9d46" title="pipeline: b-cw12-1 (CW12 §1-66) input-built">5be9d46</a><span class="cdate"> 2026-07-26</span> · <a href="https://github.com/damianspendel/symbolic-world/commit/fa46986" title="pipeline: b-cw12-1 mined + pre-checked (20 edges, 8 nodes, 0 fails)">fa46986</a><span class="cdate"> 2026-07-26</span> · <a href="https://github.com/damianspendel/symbolic-world/commit/68000b6" title="Mine CW12 §1-66 (Introduction) — 20/20 Fable-verified, first perfect batch">68000b6</a><span class="cdate"> 2026-07-26</span></div>
+  </div>
+  <div class="card">
+    <div class="row2"><span class="edge">cw8_candidates1</span>
+      <span class="badge b-merged">merged</span></div>
+    
+    <div class="commits"><b>commits</b> <a href="https://github.com/damianspendel/symbolic-world/commit/c6409d4" title="Add pipeline transaction log (session-durable mining/verification state)">c6409d4</a><span class="cdate"> 2026-07-26</span></div>
+  </div>
+  <div class="card">
+    <div class="row2"><span class="edge">cw14_candidates9</span>
+      <span class="badge b-merged">merged</span></div>
+    
+    <div class="commits"><b>commits</b> <a href="https://github.com/damianspendel/symbolic-world/commit/c6409d4" title="Add pipeline transaction log (session-durable mining/verification state)">c6409d4</a><span class="cdate"> 2026-07-26</span></div>
+  </div>
+  <div class="card">
+    <div class="row2"><span class="edge">cw14_candidates7</span>
+      <span class="badge b-merged">merged</span></div>
+    
+    <div class="commits"><b>commits</b> <a href="https://github.com/damianspendel/symbolic-world/commit/c6409d4" title="Add pipeline transaction log (session-durable mining/verification state)">c6409d4</a><span class="cdate"> 2026-07-26</span></div>
+  </div>
+  <div class="card">
+    <div class="row2"><span class="edge">cw14_candidates6</span>
+      <span class="badge b-merged">merged</span></div>
+    
+    <div class="commits"><b>commits</b> <a href="https://github.com/damianspendel/symbolic-world/commit/c6409d4" title="Add pipeline transaction log (session-durable mining/verification state)">c6409d4</a><span class="cdate"> 2026-07-26</span></div>
+  </div>
+  <div class="card">
+    <div class="row2"><span class="edge">cw14_candidates21</span>
+      <span class="badge b-merged">merged</span></div>
+    
+    <div class="commits"><b>commits</b> <a href="https://github.com/damianspendel/symbolic-world/commit/c6409d4" title="Add pipeline transaction log (session-durable mining/verification state)">c6409d4</a><span class="cdate"> 2026-07-26</span></div>
+  </div>
+  <div class="card">
+    <div class="row2"><span class="edge">cw14_candidates20</span>
+      <span class="badge b-merged">merged</span></div>
+    
+    <div class="commits"><b>commits</b> <a href="https://github.com/damianspendel/symbolic-world/commit/c6409d4" title="Add pipeline transaction log (session-durable mining/verification state)">c6409d4</a><span class="cdate"> 2026-07-26</span></div>
+  </div>
+  <div class="card">
+    <div class="row2"><span class="edge">cw14_candidates19</span>
+      <span class="badge b-merged">merged</span></div>
+    
+    <div class="commits"><b>commits</b> <a href="https://github.com/damianspendel/symbolic-world/commit/c6409d4" title="Add pipeline transaction log (session-durable mining/verification state)">c6409d4</a><span class="cdate"> 2026-07-26</span></div>
+  </div>
+  <div class="card">
+    <div class="row2"><span class="edge">cw14_candidates18</span>
+      <span class="badge b-merged">merged</span></div>
+    
+    <div class="commits"><b>commits</b> <a href="https://github.com/damianspendel/symbolic-world/commit/c6409d4" title="Add pipeline transaction log (session-durable mining/verification state)">c6409d4</a><span class="cdate"> 2026-07-26</span></div>
+  </div>
+  <div class="card">
+    <div class="row2"><span class="edge">cw14_candidates17</span>
+      <span class="badge b-merged">merged</span></div>
+    
+    <div class="commits"><b>commits</b> <a href="https://github.com/damianspendel/symbolic-world/commit/c6409d4" title="Add pipeline transaction log (session-durable mining/verification state)">c6409d4</a><span class="cdate"> 2026-07-26</span></div>
+  </div>
+  <div class="card">
+    <div class="row2"><span class="edge">cw14_candidates16</span>
+      <span class="badge b-merged">merged</span></div>
+    
+    <div class="commits"><b>commits</b> <a href="https://github.com/damianspendel/symbolic-world/commit/c6409d4" title="Add pipeline transaction log (session-durable mining/verification state)">c6409d4</a><span class="cdate"> 2026-07-26</span></div>
+  </div>
+  <div class="card">
+    <div class="row2"><span class="edge">cw14_candidates15</span>
+      <span class="badge b-merged">merged</span></div>
+    
+    <div class="commits"><b>commits</b> <a href="https://github.com/damianspendel/symbolic-world/commit/c6409d4" title="Add pipeline transaction log (session-durable mining/verification state)">c6409d4</a><span class="cdate"> 2026-07-26</span></div>
+  </div>
+  <div class="card">
+    <div class="row2"><span class="edge">cw14_candidates14</span>
+      <span class="badge b-merged">merged</span></div>
+    
+    <div class="commits"><b>commits</b> <a href="https://github.com/damianspendel/symbolic-world/commit/c6409d4" title="Add pipeline transaction log (session-durable mining/verification state)">c6409d4</a><span class="cdate"> 2026-07-26</span></div>
+  </div>
+  <div class="card">
+    <div class="row2"><span class="edge">cw14_candidates13</span>
+      <span class="badge b-merged">merged</span></div>
+    
+    <div class="commits"><b>commits</b> <a href="https://github.com/damianspendel/symbolic-world/commit/c6409d4" title="Add pipeline transaction log (session-durable mining/verification state)">c6409d4</a><span class="cdate"> 2026-07-26</span></div>
+  </div>
+  <div class="card">
+    <div class="row2"><span class="edge">cw14_candidates12</span>
+      <span class="badge b-merged">merged</span></div>
+    
+    <div class="commits"><b>commits</b> <a href="https://github.com/damianspendel/symbolic-world/commit/c6409d4" title="Add pipeline transaction log (session-durable mining/verification state)">c6409d4</a><span class="cdate"> 2026-07-26</span></div>
+  </div>
+  <div class="card">
+    <div class="row2"><span class="edge">cw14_candidates11</span>
+      <span class="badge b-merged">merged</span></div>
+    
+    <div class="commits"><b>commits</b> <a href="https://github.com/damianspendel/symbolic-world/commit/c6409d4" title="Add pipeline transaction log (session-durable mining/verification state)">c6409d4</a><span class="cdate"> 2026-07-26</span></div>
+  </div>
+  <div class="card">
+    <div class="row2"><span class="edge">cw14_candidates10</span>
+      <span class="badge b-merged">merged</span></div>
+    
+    <div class="commits"><b>commits</b> <a href="https://github.com/damianspendel/symbolic-world/commit/c6409d4" title="Add pipeline transaction log (session-durable mining/verification state)">c6409d4</a><span class="cdate"> 2026-07-26</span></div>
+  </div>
+</main>
+</body>
+</html>

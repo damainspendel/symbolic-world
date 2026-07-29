@@ -4,6 +4,14 @@ Ideas parked for later, not yet scheduled. The canonical graph and its § discip
 always come first; nothing here may compromise the trust model (every canonical edge
 §-anchored + independently verified).
 
+## Paper
+
+- **Mention the public construction log in §6.1.** The atlas now exposes the
+  transaction ledger as a browsable page (`/ledger.html`, batch-by-batch with commit
+  links). One clause in the §6.1 artifact paragraph — "the construction log is
+  browsable from the atlas" — strengthens the inspectability claim. Post-v1.3-freeze
+  edit; run the facts checker after. *(Added 2026-07-29.)*
+
 ## App
 
 - **Explore node card collides with the bottom control bar.** The selected-node card
