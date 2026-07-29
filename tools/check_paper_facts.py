@@ -112,6 +112,27 @@ require(f"{j_edges} published", f"james edge count {j_edges}")
 require(f"{len(james['nodes'])} nodes · {j_edges} edges" if
         f"{len(james['nodes'])} nodes" in paper else f"{j_edges} edges", "james node/edge")
 
+# ---- gold set (E10): recompute from the committed validation record ----
+gold_path = ROOT / 'pipeline' / 'human_validations.json'
+if gold_path.exists():
+    gold = json.load(open(gold_path))
+    MAP = {'should-be-asserts': 'jung-asserts', 'should-be-reports': 'jung-reports-parallel',
+           'should-be-quotes': 'jung-quotes-source'}
+    sup = Counter(r['support'] for r in gold)
+    agree = per = tot = None
+    per, tot = Counter(), Counter()
+    for r in gold:
+        pc = r['pipeline_claim_type']
+        tot[pc] += 1
+        if r['voice'] == 'voice-correct' or MAP.get(r['voice']) == pc:
+            per[pc] += 1
+    agree = sum(per.values())
+    require(f"{sup['supported']}/{len(gold)} supported", "gold-set support count")
+    require(f"{agree}/{len(gold)}", "gold-set voice agreement")
+    require(f"asserts {per['jung-asserts']}/{tot['jung-asserts']}", "gold per-class asserts")
+    require(f"reports {per['jung-reports-parallel']}/{tot['jung-reports-parallel']}", "gold per-class reports")
+    require(f"quotes {per['jung-quotes-source']}/{tot['jung-quotes-source']}", "gold per-class quotes")
+
 # ---- release tag ----
 tags = subprocess.run(['git', 'tag', '--list'], capture_output=True, text=True,
                       cwd=ROOT).stdout.split()
