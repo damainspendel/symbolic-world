@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Varieties — a second corpus, same method</title>
+<style>
+:root { --ground:#0e1116; --gold:#d9b25f; --gold-dim:#a9863f; --ink:#c9d0d6; --ink-faint:#7a828b;
+        --surface:rgba(18,23,30,.94); --hairline:#2a323c;
+        --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif; --mono:ui-monospace,"SF Mono",Menlo,monospace; }
+*{box-sizing:border-box;margin:0;padding:0} html,body{width:100%;height:100%}
+body{background:radial-gradient(120% 90% at 50% 0%, #141b24 0%, var(--ground) 60%, #0a0d12 100%);font-family:var(--serif);overflow:hidden;color:var(--ink)}
+#top{position:fixed;top:0;left:0;right:0;z-index:10;display:flex;align-items:baseline;gap:1rem;padding:.7rem 1.2rem}
+#top .eyebrow{font:.6rem/1 var(--mono);letter-spacing:.26em;text-transform:uppercase;color:var(--gold-dim)}
+#top h1{color:#e8e2d0;font-size:1.15rem;font-weight:600}
+#top a{margin-left:auto;color:var(--gold);font-size:.85rem;text-decoration:none}
+#note{position:fixed;left:1rem;bottom:1rem;z-index:10;max-width:330px;background:var(--surface);border:1px solid var(--hairline);border-radius:10px;padding:.7rem .9rem;font-size:.78rem;line-height:1.5;color:var(--ink-faint)}
+#note b{color:var(--ink)}
+svg{position:fixed;inset:0;width:100%;height:100%}
+.edge{stroke:#5a636e;stroke-width:1.1;opacity:.55;marker-end:url(#arr)}
+.edge.hl{stroke:var(--gold);opacity:1;stroke-width:1.8}
+.node circle{stroke-width:1.6;cursor:pointer}
+.node text{fill:#c9d0d6;font-size:10.5px;font-family:var(--serif);paint-order:stroke;stroke:#0e1116;stroke-width:2.5px}
+.tlabel{font-family:var(--serif);font-style:italic;font-size:20px;opacity:.5}
+#panel{position:fixed;right:1rem;top:3.6rem;bottom:1rem;width:330px;z-index:10;overflow-y:auto;background:var(--surface);border:1px solid var(--hairline);border-radius:12px;padding:1rem 1.1rem;display:none}
+#panel.show{display:block}
+#panel h2{color:#f0ead8;font-size:1.2rem;margin:.2rem 0 .6rem}
+.p-type{font:.58rem var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--gold-dim)}
+.conn{border-top:1px solid var(--hairline);padding:.5rem 0}
+.rel{color:var(--gold);font-style:italic}
+.cite{font:.6rem var(--mono);color:var(--gold-dim)}
+blockquote{font-size:.8rem;font-style:italic;color:var(--ink-faint);margin:.3rem 0;line-height:1.45}
+blockquote::before{content:"\201C"} blockquote::after{content:"\201D"}
+.prov{font:.55rem var(--mono);color:#9ec9c3}
+</style></head><body>
+<header id="top"><div><span class="eyebrow">A second corpus · same method</span>
+<h1>William James — The Varieties of Religious Experience</h1></div>
+<a href="/">← Jung atlas</a></header>
+<div id="note"><b>The replication graph.</b> 52 concepts, 38 relations from Lectures IX (Conversion) and XVI–XVII (Mysticism), built by the identical pipeline: verbatim quotes, two-stage gate, cross-vendor check (38/38 supported). Corpus public domain — the full reproduction package ships with the repository. Click a node.</div>
+<svg id="g" viewBox="0 0 1200 860"><defs><marker id="arr" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0,0L7,3.5L0,7z" fill="#5a636e"/></marker></defs></svg>
+<aside id="panel"></aside>
+<script>
+const D = __DATA__;
+const svg = document.getElementById('g');
+const P = {}; D.nodes.forEach(n => P[n.id] = n);
+let el = '';
+D.types.forEach(t => { el += `<text class="tlabel" x="${t.cx}" y="${t.cy-90}" text-anchor="middle" fill="${t.color}">${t.t}</text>`; });
+D.edges.forEach((e,i) => { const a=P[e.s], b=P[e.o];
+  el += `<line class="edge" id="e${i}" x1="${a.x}" y1="${a.y}" x2="${b.x}" y2="${b.y}"/>`; });
+D.nodes.forEach(n => {
+  el += `<g class="node" data-id="${n.id}"><circle cx="${n.x}" cy="${n.y}" r="8" fill="${n.color}" stroke="${n.color}"/>` +
+        `<text x="${n.x}" y="${n.y+20}" text-anchor="middle">${n.label}</text></g>`; });
+svg.innerHTML += el;
+const panel = document.getElementById('panel');
+svg.addEventListener('click', ev => {
+  const g = ev.target.closest('.node');
+  document.querySelectorAll('.edge').forEach(x=>x.classList.remove('hl'));
+  if (!g) { panel.classList.remove('show'); return; }
+  const id = g.dataset.id, n = P[id];
+  const conns = D.edges.map((e,i)=>({...e,i})).filter(e => e.s===id || e.o===id);
+  conns.forEach(e => document.getElementById('e'+e.i).classList.add('hl'));
+  panel.innerHTML = `<div class="p-type">${n.type}</div><h2>${n.label}</h2>` + conns.map(e => {
+    const other = e.s===id ? P[e.o].label : P[e.s].label;
+    const dir = e.s===id ? `<span class="rel">${e.rel} →</span> ${other}` : `${other} <span class="rel">→ ${e.rel}</span>`;
+    const r = e.ref;
+    return `<div class="conn"><div>${dir} <span class="cite">Lect. ${r.lecture} ¶${r.paragraph} ✓</span></div>` +
+      `<blockquote>${r.quote}</blockquote>` +
+      `<div class="prov">${r.claim_type}${r.source? ' · '+r.source : ''} · verified ${r.verified_by} · cross-checked ${r.crossvendor_checked}</div></div>`;
+  }).join('');
+  panel.classList.add('show');
+});
+</script></body></html>

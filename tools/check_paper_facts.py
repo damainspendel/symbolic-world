@@ -119,6 +119,12 @@ for m in re.finditer(r'release `(v[^`]+)`', paper):
     if m.group(1) not in tags:
         failures.append(f"RELEASE TAG: paper cites '{m.group(1)}' not in git tags {tags}")
 
+# ---- companion docs must carry current counts ----
+for doc in ['README.md', 'docs/ABSTRACT.md', 'docs/REVIEW.md']:
+    dt = (ROOT / doc).read_text()
+    if str(refs) not in dt:
+        failures.append(f"STALE DOC: {doc} lacks current reference count {refs}")
+
 # ---- banned phrases (claims retired by review) ----
 for pat, why in [
     (r'25-fold', "retired headline"),
