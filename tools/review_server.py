@@ -17,12 +17,17 @@ PORT = 8791
 
 def load():
     sample = json.load(open(ROOT / 'pipeline' / 'gold_sample_50.json'))
-    paras = {}
+    paras, pages = {}, {}
     for line in open(ROOT / 'data' / 'paragraphs.jsonl'):
         p = json.loads(line)
-        paras[(str(p['volume']), str(p['paragraph']))] = p['text']
+        key = (str(p['volume']), str(p['paragraph']))
+        paras[key] = p['text']
+        if p.get('page') is not None:
+            pages[key] = p['page']
     for s in sample:
-        s['paragraph_text'] = paras.get((s['volume'], str(s['paragraph'])), '(paragraph not found)')
+        key = (s['volume'], str(s['paragraph']))
+        s['paragraph_text'] = paras.get(key, '(paragraph not found)')
+        s['page'] = pages.get(key)
     done = json.load(open(OUT)) if OUT.exists() else []
     return sample, done
 
@@ -75,7 +80,7 @@ function render(){
   const it = items[idx]; verdict = {};
   document.getElementById('app').innerHTML = `
     <div class="edge">${esc(it.subject)} <span class="rel">${esc(it.relation)}</span> ${esc(it.object)}</div>
-    <div class="meta">#${it.gold_id} · CW ${it.volume} §${it.paragraph} · pipeline says: ${it.claim_type} · confidence ${it.confidence}</div>
+    <div class="meta">#${it.gold_id} · CW ${it.volume} §${it.paragraph}${it.page ? ` · Bollingen p.${it.page}` : ''} · pipeline says: ${it.claim_type} · confidence ${it.confidence}</div>
     <blockquote>${esc(it.quote)}</blockquote>
     <div class="para">${hl(it.paragraph_text, it.quote)}</div>
     <div class="q">1. Does the paragraph support this claim, as stated? <span class="key">(keys 1–3)</span></div>
