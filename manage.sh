@@ -50,6 +50,7 @@ build() {
     [ -d "$WEB_DIR" ] || error "web dir not found: $WEB_DIR"
     log "Running integrity tests (quotes, anchors, canaries) before build..."
     python3 "$SCRIPT_DIR/tests/test_graph.py" > /dev/null || error "integrity tests failed — build refused"
+    python3 "$SCRIPT_DIR/tools/export_validations.py" > /dev/null 2>&1 || true
     log "Building the Atlas (npm run build regenerates atlas.json from seed.json)..."
     ( cd "$WEB_DIR" && npm run build ) || error "build failed"
     log "Deploying to $ATLAS_HOME (outside ~/Documents so launchd isn't blocked by TCC)..."

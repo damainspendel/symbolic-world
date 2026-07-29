@@ -13,6 +13,11 @@ const labelOf = id => (atlas.nodes.find(n => n.id === id) || {}).label || id
 // dispute history per current edge (key: "subject|relation|object") — loaded async
 const DISPUTES = {}
 const CONFIRMS = {}
+const HUMANVAL = {}
+fetch('./validations.json').then(r => r.json()).then(d => {
+  (d.validations || []).forEach(x => { HUMANVAL[x.key + '|' + x.volume + '|' + x.paragraph] = x })
+  const sel = cy.$('node:selected'); if (sel.nonempty()) renderPanel(sel[0])
+}).catch(() => {})
 fetch('./disputes.json').then(r => r.json()).then(d => {
   d.disputes.forEach(x => (x.current_edges || []).forEach(k => { (DISPUTES[k] = DISPUTES[k] || []).push(x) }))
   const sel = cy.$('node:selected'); if (sel.nonempty()) renderPanel(sel[0])
@@ -98,7 +103,11 @@ function renderPanel(node) {
     const eKey = `${e.data('source')}|${e.data('relation')}|${e.data('target')}`
     const dHist = DISPUTES[eKey] || []
     const cHist = CONFIRMS[eKey] || []
-    const cite = r ? `<span class="cite-toggle" title="Show verification record">CW ${r.volume} §${r.paragraph}${r.verified ? ' <span class="vcheck">✓</span>' : ''}${dHist.length ? ' <span class="dmark" title="This edge has public dispute history">⚖</span>' : ''}</span>` : ''
+    const r0 = (e.data('refs') || [])[0]
+    const hv = r0 ? HUMANVAL[eKey + '|' + r0.volume + '|' + r0.paragraph] : null
+    const ragClass = (dHist.length || (hv && hv.support !== 'supported')) ? 'rag-red' : (hv ? 'rag-green' : 'rag-amber')
+    const ragTitle = ragClass === 'rag-green' ? 'Human-validated' : ragClass === 'rag-red' ? 'Disputed / contested' : 'AI-verified (awaiting human validation)'
+    const cite = r ? `<span class="cite-toggle" title="Show verification record">CW ${r.volume} §${r.paragraph}${r.verified ? ' <span class="vcheck">✓</span>' : ''}${dHist.length ? ' <span class="dmark" title="This edge has public dispute history">⚖</span>' : ''} <span class="rag ${ragClass}" title="${ragTitle}">●</span></span>` : ''
     const pg = r ? page(r.volume, r.paragraph) : null
     const q = r ? `<blockquote>${esc(r.quote)}</blockquote>` : ''
     const prov = r && r.claim_type ? `<span class="prov">${esc(r.claim_type)}${r.source ? ' · ' + esc(r.source) : ''}</span>` : ''
@@ -109,6 +118,7 @@ function renderPanel(node) {
         ${r.source ? `<div><b>Source:</b> ${esc(r.source)}</div>` : ''}
         <div><b>Confidence:</b> ${esc(r.confidence || '—')}</div>
         <div><b>Verification:</b> ${r.verified ? `passed independent review (${esc(r.verified_by || 'gate')}, ${esc(r.verified_date || '')}) — the full paragraph was checked for support, direction, quote fidelity, and attribution` : 'not yet independently reviewed'}</div>
+        <div><b>Status:</b> <span class="${ragClass}">●</span> ${ragTitle}${hv ? ` (${esc(hv.date)}${hv.voice !== 'voice-correct' ? '; human corrected the voice label' : ''})` : ''}</div>
         <div><b>Check it yourself:</b> CW ${r.volume} §${r.paragraph}${pg ? `, Bollingen p.${pg}` : ''}</div>
         ${dHist.map(x => `<div class="dhist"><b>Disputed</b> (${esc(x.date)}, ${esc(x.outcome)}): ${esc(x.objection)} <span class="dhist-res">→ ${esc(x.resolution)}</span> <a href="/disputes.html" class="dhist-link">full log</a></div>`).join('')}
         ${cHist.length ? `<div class="chist"><b>Reader-confirmed ×${cHist.length}</b> — a human checked the cited paragraph${cHist.length>1?'s':''} (${cHist.map(x=>esc(x.date)).join(', ')}) <a href="/disputes.html" class="dhist-link">log</a></div>` : ''}

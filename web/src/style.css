@@ -133,3 +133,7 @@ body {
 }
 .confirm-btn:hover { border-color: #7fc9a0; color: #7fc9a0; }
 .chist { margin-top: 0.35rem; padding-top: 0.35rem; border-top: 1px dashed var(--hairline); color: #7fc9a0; }
+.rag { font-size: 0.6rem; }
+.rag-green { color: #7fc9a0; }
+.rag-amber { color: #d9a84f; }
+.rag-red { color: #d0685a; }
