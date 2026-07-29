@@ -81,7 +81,7 @@ function render(){
   document.getElementById('app').innerHTML = `
     <div class="edge">${esc(it.subject)} <span class="rel">${esc(it.relation)}</span> ${esc(it.object)}</div>
     <div class="meta">#${it.gold_id} · CW ${it.volume} §${it.paragraph}${it.page ? ` · Bollingen p.${it.page}` : ''} · pipeline says: ${it.claim_type} · confidence ${it.confidence}</div>
-    <blockquote>${esc(it.quote)}</blockquote>
+    <blockquote>${esc(it.quote)} <button id="cpq" style="font-size:.7rem;padding:.15rem .5rem;margin-left:.4rem">copy for epub search (c)</button></blockquote>
     <div class="para">${hl(it.paragraph_text, it.quote)}</div>
     <div class="q">1. Does the paragraph support this claim, as stated? <span class="key">(keys 1–3)</span></div>
     <div class="btns" id="q1">
@@ -105,6 +105,12 @@ function render(){
       document.querySelectorAll('#'+qid+' button').forEach(x=>x.classList.remove('sel'));
       b.classList.add('sel'); verdict[qid] = b.dataset.v;
     });
+  document.getElementById('cpq').onclick = () => {
+    const q = it.quote.split('...')[0].trim().split(/\s+/).slice(0, 8).join(' ');
+    navigator.clipboard.writeText(q);
+    document.getElementById('cpq').textContent = 'copied ✓';
+    setTimeout(()=>{ const b=document.getElementById('cpq'); if(b) b.textContent='copy for epub search (c)'; }, 1500);
+  };
   document.getElementById('save').onclick = save;
   document.getElementById('skip').onclick = () => { advance(); render(); };
 }
@@ -132,6 +138,7 @@ document.addEventListener('keydown', e => {
   if (map[e.key]){ document.querySelectorAll('#'+map[e.key][0]+' button')[map[e.key][1]].click(); }
   if (e.key === 'Enter'){ e.preventDefault(); save(); }
   if (e.key === 's'){ advance(); render(); }
+  if (e.key === 'c'){ const b=document.getElementById('cpq'); if(b) b.click(); }
 });
 init();
 </script></body></html>"""
