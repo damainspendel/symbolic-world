@@ -133,6 +133,35 @@ if gold_path.exists():
     require(f"reports {per['jung-reports-parallel']}/{tot['jung-reports-parallel']}", "gold per-class reports")
     require(f"quotes {per['jung-quotes-source']}/{tot['jung-quotes-source']}", "gold per-class quotes")
 
+# ---- cross-review convention fractions (Fable r3 M1 / Gemini r5 M1) ----
+xr_dir = ROOT / 'docs' / 'experiments' / 'data'
+if (xr_dir / 'gemini_e6_unanchored_review.json').exists():
+    e6r = json.load(open(xr_dir / 'gemini_e6_unanchored_review.json'))
+    e7r = json.load(open(xr_dir / 'gemini_e7_adjudication_review.json'))
+    e6_rej = sum(1 for x in e6r if x['assessment'] == 'DISAGREE')
+    e7_conv = [x for x in e7r if x['assessment'] == 'DISAGREE']
+    conv_total = len(e6r) + len(e7_conv)
+    conv_rej = e6_rej + len(e7_conv)
+    require(f"{conv_rej} of the {conv_total} convention-based rulings",
+            f"convention rejections {conv_rej}/{conv_total} from review files")
+    require(f"{conv_rej}/{conv_total} convention rulings", "Table 4 convention fraction")
+
+# ---- volume coverage bands (Fable r3 M5) ----
+if paras_text:
+    from collections import defaultdict
+    vt = Counter(); vc = defaultdict(set)
+    for (vol, para) in paras_text:
+        vt[vol] += 1
+    for e in seed['edges']:
+        for r in e['references']:
+            vc[str(r['volume'])].add(str(r['paragraph']))
+    thin = [v for v in vt if v not in ('14', '12') and 1.5 <= round(100*len(vc[v])/vt[v], 1) <= 3.9]
+    if len(thin) == 7:
+        require("seven thinly-sampled volumes", "conclusion volume band")
+        require("the seven other sampled volumes", "limitations volume band")
+    else:
+        failures.append(f"VOLUME BAND: {len(thin)} volumes in 1.5-3.9% band, prose says seven")
+
 # ---- release tag ----
 tags = subprocess.run(['git', 'tag', '--list'], capture_output=True, text=True,
                       cwd=ROOT).stdout.split()
@@ -170,6 +199,11 @@ for pat, why in [
     (r'blind-check', "E10 was anchored, not blind (Fable r2 M1)"),
     (r'\bfive planted corruption', "canary count is asserted above"),
     (r'confirmed by a human', "n=10 directionality is not significant (Fable r2 minor 4)"),
+    (r'9/17', "wrong denominator: mixes review-set sizes with convention rulings (Gemini r5 / Fable r3)"),
+    (r'1\.0% upheld residual', "friendly endpoint of the 1.0-2.2% range (Fable r3 M4)"),
+    (r'eight thinly-sampled', "seven volumes are in the band; CW12 is at 14% (Fable r3 M5)"),
+    (r'[Rr]ubric-free replication', "relabeled reduced-rubric (Fable r3 M3)"),
+    (r'entirely in its own terms', "retired framing (Fable r3 M3)"),
 ]:
     forbid(pat, why)
 
