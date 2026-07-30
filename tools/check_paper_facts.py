@@ -187,6 +187,17 @@ for sub, why in [
     if sub not in rv:
         failures.append(f"STALE DOC: docs/REVIEW.md lacks '{sub[:60]}' ({why})")
 
+# ---- references integrity: every [n] cited has an entry; every entry is cited ----
+cited = {int(x) for x in re.findall(r'(?<!\d)\[(\d{1,2})\](?!\()', paper)}
+entries = {int(m.group(1)) for m in re.finditer(r'^(\d{1,2})\. .+<https?://', paper, re.M)}
+if entries:
+    if cited - entries:
+        failures.append(f"REFERENCES: cited without entry: {sorted(cited - entries)}")
+    if entries - cited:
+        failures.append(f"REFERENCES: entry never cited: {sorted(entries - cited)}")
+    if entries != set(range(1, max(entries) + 1)):
+        failures.append("REFERENCES: entry numbering not contiguous from 1")
+
 # ---- banned phrases (claims retired by review) ----
 for pat, why in [
     (r'25-fold', "retired headline"),
@@ -203,6 +214,7 @@ for pat, why in [
     (r'1\.0% upheld residual', "friendly endpoint of the 1.0-2.2% range (Fable r3 M4)"),
     (r'eight thinly-sampled', "seven volumes are in the band; CW12 is at 14% (Fable r3 M5)"),
     (r'[Rr]ubric-free replication', "relabeled reduced-rubric (Fable r3 M3)"),
+    (r'−38% to \+90%|-38% to \+90%', "not in the self-preference source; real range −0.07..+0.75 (bib challenge)"),
     (r'entirely in its own terms', "retired framing (Fable r3 M3)"),
 ]:
     forbid(pat, why)
