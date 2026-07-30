@@ -113,7 +113,7 @@ Figure 3 (§4) pins each design to the pipeline step it measures (chips and lege
 
 ### 6.1 Jung's *Collected Works*
 
-**Why this corpus is a stress test.** The Collected Works were chosen partly for their difficulty. Edward Edinger, whose book-length, section-by-section commentary on *Mysterium Coniunctionis* exists precisely because readers needed one, called that volume — our end-to-end case — "a real challenge even to those most psychologically sophisticated" [33] (Edinger 1995). A corpus this resistant to systematic reading is a demanding first target for claim extraction. To the extent the risk profile measured here holds on such a text, corpora with plainer argumentative structure should present the same risks in milder form; the James pilot (§6.2) is consistent with that expectation, though it does not yet establish it.
+**Why this corpus is a stress test.** The Collected Works were chosen partly for their difficulty. Edward Edinger — whose book-length, section-by-section commentary on *Mysterium Coniunctionis* exists precisely because readers needed one [33] — predicted in his *Journal of Analytical Psychology* review that the volume, our end-to-end case, "will be a real challenge even to those most psychologically sophisticated" [38]. A corpus this resistant to systematic reading is a demanding first target for claim extraction. To the extent the risk profile measured here holds on such a text, corpora with plainer argumentative structure should present the same risks in milder form; the James pilot (§6.2) is consistent with that expectation, though it does not yet establish it.
 
 **Corpus.** Paragraph records `{volume, §, text, page}` extracted mechanically from epub markup (§ numbers read from bracketed markers, strictly ascending; never inferred), with a §→Bollingen-page concordance. The corpus stays local; only ≤25-word verified quotes are published (legal basis: `docs/LEGAL.md`).
 
@@ -254,6 +254,7 @@ Conception, direction, corpus provision, publication decisions, and final respon
 35. Zhou, D., Schärli, N., Hou, L., Wei, J., Scales, N., Wang, X., et al. (2022). Least-to-Most Prompting Enables Complex Reasoning in Large Language Models. *ICLR 2023.* arXiv:2205.10625. <https://arxiv.org/abs/2205.10625>
 36. Wei, J., Wang, X., Schuurmans, D., Bosma, M., Ichter, B., Xia, F., et al. (2022). Chain-of-Thought Prompting Elicits Reasoning in Large Language Models. arXiv:2201.11903. <https://arxiv.org/abs/2201.11903>
 37. Wang, L., Xu, W., Lan, Y., Hu, Z., Lan, Y., Lee, R. K.-W., & Lim, E.-P. (2023). Plan-and-Solve Prompting: Improving Zero-Shot Chain-of-Thought Reasoning by Large Language Models. *ACL 2023.* arXiv:2305.04091. <https://arxiv.org/abs/2305.04091>
+38. Edinger, E. F. Review of C. G. Jung, *Mysterium Coniunctionis*. *Journal of Analytical Psychology*; as quoted in the publisher's description of CW 14. <https://www.abebooks.com/9780691097664/Collected-Works-Jung-Vol-Mysterium-0691097666/plp> (accessed July 2026).
 
 ## Appendix A — Experiment details
 
