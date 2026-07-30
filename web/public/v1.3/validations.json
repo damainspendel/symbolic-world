@@ -1,0 +1,455 @@
+{
+ "updated": "2026-07-29",
+ "validations": [
+  {
+   "key": "sol|father-of|mercurius",
+   "volume": "14",
+   "paragraph": 121,
+   "support": "supported",
+   "voice": "voice-correct",
+   "date": "2026-07-29",
+   "by": "author"
+  },
+  {
+   "key": "lapis|amplified-by|orphan",
+   "volume": "14",
+   "paragraph": 13,
+   "support": "supported",
+   "voice": "should-be-quotes",
+   "date": "2026-07-29",
+   "by": "author"
+  },
+  {
+   "key": "salt|correlated-with|luna",
+   "volume": "14",
+   "paragraph": 240,
+   "support": "supported",
+   "voice": "should-be-reports",
+   "date": "2026-07-29",
+   "by": "author"
+  },
+  {
+   "key": "the-unconscious|compensates|consciousness",
+   "volume": "14",
+   "paragraph": 184,
+   "support": "supported",
+   "voice": "should-be-asserts",
+   "date": "2026-07-29",
+   "by": "author"
+  },
+  {
+   "key": "winged-youth|unites-with|luna",
+   "volume": "14",
+   "paragraph": 200,
+   "support": "supported",
+   "voice": "should-be-asserts",
+   "date": "2026-07-29",
+   "by": "author"
+  },
+  {
+   "key": "homo-philosophicus|identical-or-connected-with|anthropos",
+   "volume": "12",
+   "paragraph": 476,
+   "support": "supported",
+   "voice": "should-be-asserts",
+   "date": "2026-07-29",
+   "by": "author"
+  },
+  {
+   "key": "prima-materia|identical-to|the-vessel",
+   "volume": "14",
+   "paragraph": 402,
+   "support": "supported",
+   "voice": "should-be-reports",
+   "date": "2026-07-29",
+   "by": "author"
+  },
+  {
+   "key": "mercurius|symbolized-by|ouroboros",
+   "volume": "14",
+   "paragraph": 480,
+   "support": "supported",
+   "voice": "should-be-asserts",
+   "date": "2026-07-29",
+   "by": "author"
+  },
+  {
+   "key": "luna|identified-with|mercurius",
+   "volume": "14",
+   "paragraph": 19,
+   "support": "supported",
+   "voice": "should-be-reports",
+   "date": "2026-07-29",
+   "by": "author"
+  },
+  {
+   "key": "winged-youth|personifies|true-sulphur",
+   "volume": "14",
+   "paragraph": 196,
+   "support": "supported",
+   "voice": "should-be-reports",
+   "date": "2026-07-29",
+   "by": "author"
+  },
+  {
+   "key": "anima-mundi|is-feminine-half-of|mercurius",
+   "volume": "14",
+   "paragraph": 450,
+   "support": "supported",
+   "voice": "should-be-asserts",
+   "date": "2026-07-29",
+   "by": "author"
+  },
+  {
+   "key": "coniunctio|amplified-by|regina",
+   "volume": "14",
+   "paragraph": 2,
+   "support": "not-supported",
+   "voice": "should-be-reports",
+   "date": "2026-07-29",
+   "by": "author"
+  },
+  {
+   "key": "green-lion|synonym-of|dragon",
+   "volume": "14",
+   "paragraph": 408,
+   "support": "supported",
+   "voice": "should-be-quotes",
+   "date": "2026-07-29",
+   "by": "author"
+  },
+  {
+   "key": "aelia-laelia-inscription|symbolizes|lapis",
+   "volume": "14",
+   "paragraph": 59,
+   "support": "partly",
+   "voice": "should-be-quotes",
+   "date": "2026-07-29",
+   "by": "author"
+  },
+  {
+   "key": "mercurius|corresponds-to|holy-ghost",
+   "volume": "14",
+   "paragraph": 12,
+   "support": "supported",
+   "voice": "should-be-asserts",
+   "date": "2026-07-29",
+   "by": "author"
+  },
+  {
+   "key": "dragon|transforms-into|lion",
+   "volume": "14",
+   "paragraph": 493,
+   "support": "supported",
+   "voice": "should-be-asserts",
+   "date": "2026-07-29",
+   "by": "author"
+  },
+  {
+   "key": "blood|synonym-of|aqua-permanens",
+   "volume": "14",
+   "paragraph": 401,
+   "support": "supported",
+   "voice": "should-be-asserts",
+   "date": "2026-07-29",
+   "by": "author"
+  },
+  {
+   "key": "salt|corresponds-to|lapis",
+   "volume": "14",
+   "paragraph": 235,
+   "support": "partly",
+   "voice": "should-be-asserts",
+   "date": "2026-07-29",
+   "by": "author"
+  },
+  {
+   "key": "mercurius|manifests-as|lumen-naturae",
+   "volume": "13",
+   "paragraph": 256,
+   "support": "supported",
+   "voice": "should-be-quotes",
+   "date": "2026-07-29",
+   "by": "author"
+  },
+  {
+   "key": "the-opus|concretizes|spirit",
+   "volume": "14",
+   "paragraph": 764,
+   "support": "supported",
+   "voice": "should-be-asserts",
+   "date": "2026-07-29",
+   "by": "author"
+  },
+  {
+   "key": "the-opus|parallels|the-mass",
+   "volume": "12",
+   "paragraph": 480,
+   "support": "supported",
+   "voice": "should-be-quotes",
+   "date": "2026-07-29",
+   "by": "author"
+  },
+  {
+   "key": "mercurius|manifests-as|regina",
+   "volume": "14",
+   "paragraph": 534,
+   "support": "supported",
+   "voice": "should-be-asserts",
+   "date": "2026-07-29",
+   "by": "author"
+  },
+  {
+   "key": "hierosgamos|amplified-by|sol",
+   "volume": "16",
+   "paragraph": 458,
+   "support": "supported",
+   "voice": "should-be-reports",
+   "date": "2026-07-29",
+   "by": "author"
+  },
+  {
+   "key": "rex|renewed-as|lapis",
+   "volume": "14",
+   "paragraph": 355,
+   "support": "supported",
+   "voice": "should-be-quotes",
+   "date": "2026-07-29",
+   "by": "author"
+  },
+  {
+   "key": "rex|renewed-by|holy-ghost",
+   "volume": "14",
+   "paragraph": 432,
+   "support": "supported",
+   "voice": "should-be-reports",
+   "date": "2026-07-29",
+   "by": "author"
+  },
+  {
+   "key": "transference|is-projection-of|the-unconscious",
+   "volume": "16",
+   "paragraph": 357,
+   "support": "supported",
+   "voice": "should-be-asserts",
+   "date": "2026-07-29",
+   "by": "author"
+  },
+  {
+   "key": "unus-mundus|symbolized-by|mandala",
+   "volume": "14",
+   "paragraph": 662,
+   "support": "partly",
+   "voice": "should-be-asserts",
+   "date": "2026-07-29",
+   "by": "author"
+  },
+  {
+   "key": "mercurius|made-equal-to|mary",
+   "volume": "12",
+   "paragraph": 505,
+   "support": "supported",
+   "voice": "should-be-reports",
+   "date": "2026-07-29",
+   "by": "author"
+  },
+  {
+   "key": "luna|is-eye-of|basilisk",
+   "volume": "14",
+   "paragraph": 215,
+   "support": "supported",
+   "voice": "should-be-quotes",
+   "date": "2026-07-29",
+   "by": "author"
+  },
+  {
+   "key": "alchemy|identified-with|sapientia",
+   "volume": "12",
+   "paragraph": 465,
+   "support": "supported",
+   "voice": "should-be-reports",
+   "date": "2026-07-29",
+   "by": "author"
+  },
+  {
+   "key": "bitch|symbolizes|the-vessel",
+   "volume": "14",
+   "paragraph": 181,
+   "support": "partly",
+   "voice": "should-be-asserts",
+   "date": "2026-07-29",
+   "by": "author"
+  },
+  {
+   "key": "nigredo|corresponds-to|the-unconscious",
+   "volume": "14",
+   "paragraph": 646,
+   "support": "supported",
+   "voice": "should-be-asserts",
+   "date": "2026-07-29",
+   "by": "author"
+  },
+  {
+   "key": "coniunctio|amplified-by|luna",
+   "volume": "16",
+   "paragraph": 451,
+   "support": "supported",
+   "voice": "should-be-quotes",
+   "date": "2026-07-29",
+   "by": "author"
+  },
+  {
+   "key": "salt|begets|mercurius",
+   "volume": "14",
+   "paragraph": 135,
+   "support": "supported",
+   "voice": "should-be-quotes",
+   "date": "2026-07-29",
+   "by": "author"
+  },
+  {
+   "key": "active-imagination|represents|individuation",
+   "volume": "14",
+   "paragraph": 705,
+   "support": "supported",
+   "voice": "should-be-asserts",
+   "date": "2026-07-29",
+   "by": "author"
+  },
+  {
+   "key": "salt|synonym-of|arcane-substance",
+   "volume": "14",
+   "paragraph": 318,
+   "support": "supported",
+   "voice": "should-be-asserts",
+   "date": "2026-07-29",
+   "by": "author"
+  },
+  {
+   "key": "mysterium-magnum|rooted-in|psyche",
+   "volume": "12",
+   "paragraph": 13,
+   "support": "supported",
+   "voice": "should-be-asserts",
+   "date": "2026-07-29",
+   "by": "author"
+  },
+  {
+   "key": "jakob-boehme|uses-stone-as-metaphor-for|christ",
+   "volume": "12",
+   "paragraph": 453,
+   "support": "partly",
+   "voice": "should-be-quotes",
+   "date": "2026-07-29",
+   "by": "author"
+  },
+  {
+   "key": "scintilla|is-psychic-analogue-of|splinter-psyche",
+   "volume": "14",
+   "paragraph": 47,
+   "support": "supported",
+   "voice": "should-be-asserts",
+   "date": "2026-07-29",
+   "by": "author"
+  },
+  {
+   "key": "squaring-of-the-circle|leads-to|the-unconscious",
+   "volume": "12",
+   "paragraph": 167,
+   "support": "supported",
+   "voice": "should-be-asserts",
+   "date": "2026-07-29",
+   "by": "author"
+  },
+  {
+   "key": "the-opus|felt-as-equivalent-of|transubstantiation",
+   "volume": "12",
+   "paragraph": 489,
+   "support": "supported",
+   "voice": "should-be-quotes",
+   "date": "2026-07-29",
+   "by": "author"
+  },
+  {
+   "key": "transference|corresponds-to|coniunctio",
+   "volume": "16",
+   "paragraph": 538,
+   "support": "supported",
+   "voice": "should-be-asserts",
+   "date": "2026-07-29",
+   "by": "author"
+  },
+  {
+   "key": "mercurius|stands-at-beginning-and-end-of|the-opus",
+   "volume": "12",
+   "paragraph": 404,
+   "support": "supported",
+   "voice": "should-be-asserts",
+   "date": "2026-07-29",
+   "by": "author"
+  },
+  {
+   "key": "albedo|emerges-from|the-unconscious",
+   "volume": "14",
+   "paragraph": 220,
+   "support": "supported",
+   "voice": "should-be-asserts",
+   "date": "2026-07-29",
+   "by": "author"
+  },
+  {
+   "key": "coniunctio|produces|rebis",
+   "volume": "16",
+   "paragraph": 468,
+   "support": "supported",
+   "voice": "should-be-asserts",
+   "date": "2026-07-29",
+   "by": "author"
+  },
+  {
+   "key": "scintilla|designated-as|fishes-eyes",
+   "volume": "14",
+   "paragraph": 45,
+   "support": "supported",
+   "voice": "should-be-quotes",
+   "date": "2026-07-29",
+   "by": "author"
+  },
+  {
+   "key": "rex|transforms-into|dragon",
+   "volume": "14",
+   "paragraph": 472,
+   "support": "supported",
+   "voice": "should-be-reports",
+   "date": "2026-07-29",
+   "by": "author"
+  },
+  {
+   "key": "salt|amplified-by|scintilla",
+   "volume": "14",
+   "paragraph": 328,
+   "support": "supported",
+   "voice": "should-be-quotes",
+   "date": "2026-07-29",
+   "by": "author"
+  },
+  {
+   "key": "luna|slays|sol",
+   "volume": "14",
+   "paragraph": 21,
+   "support": "supported",
+   "voice": "should-be-quotes",
+   "date": "2026-07-29",
+   "by": "author"
+  },
+  {
+   "key": "the-mass|transforms|god-image",
+   "volume": "11",
+   "paragraph": 413,
+   "support": "supported",
+   "voice": "should-be-asserts",
+   "date": "2026-07-29",
+   "by": "author"
+  }
+ ]
+}

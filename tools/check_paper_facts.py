@@ -17,7 +17,18 @@ from collections import Counter
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 paper = (ROOT / 'docs' / 'PAPER.md').read_text()
-seed = json.load(open(ROOT / 'seed.json'))
+
+# The paper is checked against the RELEASE it cites, not the working tree: the
+# artifact keeps growing under the same gates, while a published paper stays
+# true of its frozen release. Living docs (README, REVIEW) track the head.
+seed_live = json.load(open(ROOT / 'seed.json'))
+seed = seed_live
+_m = re.search(r'release `(v[^`]+)`', paper)
+if _m:
+    _r = subprocess.run(['git', 'show', f'{_m.group(1)}:seed.json'],
+                        capture_output=True, text=True, cwd=ROOT)
+    if _r.returncode == 0:
+        seed = json.loads(_r.stdout)
 james = json.load(open(ROOT / 'james' / 'james_seed.json'))
 
 failures = []
@@ -174,19 +185,22 @@ for m in re.finditer(r'release `(v[^`]+)`', paper):
         failures.append(f"RELEASE TAG: paper cites '{m.group(1)}' not in git tags {tags}")
 
 # ---- companion docs must carry current counts ----
+refs_live = sum(len(e['references']) for e in seed_live['edges'])
 for doc in ['README.md', 'docs/ABSTRACT.md', 'docs/REVIEW.md']:
     dt = (ROOT / doc).read_text()
-    if str(refs) not in dt:
-        failures.append(f"STALE DOC: {doc} lacks current reference count {refs}")
+    if str(refs_live) not in dt:
+        failures.append(f"STALE DOC: {doc} lacks current reference count {refs_live}")
 
 # docs/REVIEW.md is a standing snapshot: pin its headline numbers like the paper's
 rv = (ROOT / 'docs' / 'REVIEW.md').read_text()
+ct_live = Counter(r['claim_type'] for e in seed_live['edges'] for r in e['references'])
+paras_live = {(str(r['volume']), str(r['paragraph'])) for e in seed_live['edges'] for r in e['references']}
 for sub, why in [
-    (f"{nodes} nodes · {edges} edges · {refs} references", "REVIEW graph line"),
-    (f"{ct['jung-asserts']} jung-asserts · {ct['jung-reports-parallel']} jung-reports-parallel · "
-     f"{ct['jung-quotes-source']} jung-quotes-source", "REVIEW claim mix"),
+    (f"{len(seed_live['nodes'])} nodes · {len(seed_live['edges'])} edges · {refs_live} references", "REVIEW graph line"),
+    (f"{ct_live['jung-asserts']} jung-asserts · {ct_live['jung-reports-parallel']} jung-reports-parallel · "
+     f"{ct_live['jung-quotes-source']} jung-quotes-source", "REVIEW claim mix"),
     (f"{canary_count} corruption canaries", "REVIEW canary count"),
-    (f"{len(paras)} distinct CW paragraphs", "REVIEW distinct paragraphs"),
+    (f"{len(paras_live)} distinct CW paragraphs", "REVIEW distinct paragraphs"),
 ]:
     if sub not in rv:
         failures.append(f"STALE DOC: docs/REVIEW.md lacks '{sub[:60]}' ({why})")
