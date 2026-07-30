@@ -2723,7 +2723,8 @@
      "verified_by": "claude-fable-5",
      "verified_date": "2026-07-28",
      "modality_swept": true,
-     "quote_repaired": "2026-07-28: elision exceeded 30-word bound; trimmed to strongest contiguous fragment; re-gated 2026-07-28 (SUPPORTED)"
+     "quote_repaired": "2026-07-28: elision exceeded 30-word bound; trimmed to strongest contiguous fragment; re-gated 2026-07-28 (SUPPORTED)",
+     "crossvendor_checked": "gemini-3.1-pro (retro-stamp sweep after final-gate review, SUPPORTED, 2026-07-30)"
     }
    ]
   },
@@ -2832,7 +2833,8 @@
      "claim_type": "jung-asserts",
      "verified_by": "claude-fable-5",
      "verified_date": "2026-07-28",
-     "quote_repaired": "2026-07-28: elision exceeded 30-word bound; trimmed to strongest contiguous fragment; re-gated 2026-07-28 (SUPPORTED)"
+     "quote_repaired": "2026-07-28: elision exceeded 30-word bound; trimmed to strongest contiguous fragment; re-gated 2026-07-28 (SUPPORTED)",
+     "crossvendor_checked": "gemini-3.1-pro (retro-stamp sweep after final-gate review, SUPPORTED, 2026-07-30)"
     }
    ]
   },
@@ -4121,7 +4123,8 @@
      "claim_type": "jung-asserts",
      "verified_by": "claude-fable-5",
      "verified_date": "2026-07-28",
-     "quote_repaired": "2026-07-28: elision exceeded 30-word bound; trimmed to strongest contiguous fragment; re-gated 2026-07-28 (SUPPORTED)"
+     "quote_repaired": "2026-07-28: elision exceeded 30-word bound; trimmed to strongest contiguous fragment; re-gated 2026-07-28 (SUPPORTED)",
+     "crossvendor_checked": "gemini-3.1-pro (retro-stamp sweep after final-gate review, SUPPORTED, 2026-07-30)"
     }
    ]
   },
@@ -4217,7 +4220,8 @@
      "claim_type": "jung-asserts",
      "verified_by": "claude-fable-5",
      "verified_date": "2026-07-28",
-     "quote_repaired": "2026-07-28: elision exceeded 30-word bound; trimmed to strongest contiguous fragment; re-gated 2026-07-28 (SUPPORTED)"
+     "quote_repaired": "2026-07-28: elision exceeded 30-word bound; trimmed to strongest contiguous fragment; re-gated 2026-07-28 (SUPPORTED)",
+     "crossvendor_checked": "gemini-3.1-pro (retro-stamp sweep after final-gate review, SUPPORTED, 2026-07-30)"
     }
    ]
   },
@@ -4803,7 +4807,8 @@
      "verified_by": "claude-fable-5",
      "verified_date": "2026-07-28",
      "source": "Christian tradition (John 12:31)",
-     "quote_repaired": "2026-07-28: elision exceeded 30-word bound; trimmed to strongest contiguous fragment; re-gated 2026-07-28 (SUPPORTED)"
+     "quote_repaired": "2026-07-28: elision exceeded 30-word bound; trimmed to strongest contiguous fragment; re-gated 2026-07-28 (SUPPORTED)",
+     "crossvendor_checked": "gemini-3.1-pro (retro-stamp sweep after final-gate review, SUPPORTED, 2026-07-30)"
     }
    ]
   },
@@ -4924,7 +4929,8 @@
      "claim_type": "jung-asserts",
      "verified_by": "claude-fable-5",
      "verified_date": "2026-07-28",
-     "quote_repaired": "2026-07-28: elision exceeded 30-word bound; trimmed to strongest contiguous fragment; re-gated 2026-07-28 (SUPPORTED)"
+     "quote_repaired": "2026-07-28: elision exceeded 30-word bound; trimmed to strongest contiguous fragment; re-gated 2026-07-28 (SUPPORTED)",
+     "crossvendor_checked": "gemini-3.1-pro (retro-stamp sweep after final-gate review, SUPPORTED, 2026-07-30)"
     }
    ]
   },
@@ -12387,7 +12393,8 @@
      "source": "Orthelius",
      "verified_by": "claude-fable-5",
      "verified_date": "2026-07-28",
-     "quote_repaired": "2026-07-28: elision exceeded 30-word bound; trimmed to strongest contiguous fragment; re-gated 2026-07-28 (SUPPORTED)"
+     "quote_repaired": "2026-07-28: elision exceeded 30-word bound; trimmed to strongest contiguous fragment; re-gated 2026-07-28 (SUPPORTED)",
+     "crossvendor_checked": "gemini-3.1-pro (retro-stamp sweep after final-gate review, SUPPORTED, 2026-07-30)"
     }
    ]
   },
@@ -12875,7 +12882,8 @@
      "verified": true,
      "verified_by": "claude-fable-5",
      "verified_date": "2026-07-27",
-     "modality_swept": true
+     "modality_swept": true,
+     "crossvendor_checked": "gemini-3.1-pro (retro-stamp sweep after final-gate review, SUPPORTED, 2026-07-30)"
     }
    ]
   },
@@ -12893,7 +12901,8 @@
      "verified": true,
      "verified_by": "claude-fable-5",
      "verified_date": "2026-07-27",
-     "modality_swept": true
+     "modality_swept": true,
+     "crossvendor_checked": "gemini-3.1-pro (retro-stamp sweep after final-gate review, SUPPORTED, 2026-07-30)"
     }
    ]
   },
@@ -12911,7 +12920,8 @@
      "verified": true,
      "verified_by": "claude-fable-5",
      "verified_date": "2026-07-27",
-     "modality_swept": true
+     "modality_swept": true,
+     "crossvendor_checked": "gemini-3.1-pro (retro-stamp sweep after final-gate review, SUPPORTED, 2026-07-30)"
     }
    ]
   },
@@ -12929,7 +12939,8 @@
      "verified": true,
      "verified_by": "claude-fable-5",
      "verified_date": "2026-07-27",
-     "modality_swept": true
+     "modality_swept": true,
+     "crossvendor_checked": "gemini-3.1-pro (retro-stamp sweep after final-gate review, SUPPORTED, 2026-07-30)"
     }
    ]
   },
@@ -12947,7 +12958,8 @@
      "verified": true,
      "verified_by": "claude-fable-5",
      "verified_date": "2026-07-27",
-     "modality_swept": true
+     "modality_swept": true,
+     "crossvendor_checked": "gemini-3.1-pro (retro-stamp sweep after final-gate review, SUPPORTED, 2026-07-30)"
     }
    ]
   },
@@ -12965,7 +12977,8 @@
      "verified": true,
      "verified_by": "claude-fable-5",
      "verified_date": "2026-07-27",
-     "modality_swept": true
+     "modality_swept": true,
+     "crossvendor_checked": "gemini-3.1-pro (retro-stamp sweep after final-gate review, SUPPORTED, 2026-07-30)"
     }
    ]
   },
@@ -12983,7 +12996,8 @@
      "verified": true,
      "verified_by": "claude-fable-5",
      "verified_date": "2026-07-27",
-     "modality_swept": true
+     "modality_swept": true,
+     "crossvendor_checked": "gemini-3.1-pro (retro-stamp sweep after final-gate review, SUPPORTED, 2026-07-30)"
     }
    ]
   },
@@ -13001,7 +13015,8 @@
      "verified": true,
      "verified_by": "claude-fable-5",
      "verified_date": "2026-07-27",
-     "modality_swept": true
+     "modality_swept": true,
+     "crossvendor_checked": "gemini-3.1-pro (retro-stamp sweep after final-gate review, SUPPORTED, 2026-07-30)"
     }
    ]
   },

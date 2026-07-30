@@ -168,7 +168,24 @@
    "id": "b-cw12-5",
    "status": "merged",
    "window": "CW12 §181-250",
-   "result": "mined 27 (30 refs); pre-check 30/30; stage1 23/7/0 (3 dropped, 4 corrected); stage2 0/26; cross-vendor pre-merge 21/4/1 -> 1 edge split on upheld WRONG, 4 both-defensible with vocabulary_note; merged 21 new edges + 5 attached refs, 7 new nodes"
+   "result": "mined 27 (30 refs); pre-check 30/30; stage1 23/7/0 (3 dropped, 4 corrected); stage2 0/26; cross-vendor pre-merge 21/4/1 -> 1 edge split on upheld WRONG, 4 both-defensible with vocabulary_note; merged 21 new edges + 5 attached refs, 7 new nodes",
+   "telemetry": {
+    "miner_tokens": 98088,
+    "stage1_tokens": 66601,
+    "stage2_tokens": 56043,
+    "crossvendor_tokens_in_out": [
+     14478,
+     1487
+    ],
+    "cost_usd_total": 3.1,
+    "cost_usd_per_citation": 0.119,
+    "note": "80/20 in/out split assumed for subagent totals; Opus $5/$25, Fable $10/$50 per MTok"
+   }
+  },
+  {
+   "id": "retro-stamp-0730",
+   "status": "complete",
+   "result": "final-gate review (Fable r4) found post-sweep references without a cross-vendor stamp (early union batch predating the pre-merge mandate, plus re-gated quote repairs); all 15 checked retroactively by the standing Gemini gate: 15/15 SUPPORTED, stamped"
   }
  ],
  "next": "CW12 dream-series continuation (§251-331) when scheduled",

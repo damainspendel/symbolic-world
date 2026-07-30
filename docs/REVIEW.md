@@ -8,7 +8,7 @@
 | | |
 |---|---|
 | Graph | **248 nodes · 669 edges · 699 references**, 495 distinct CW paragraphs, 9 volumes |
-| Verification | **699/699 (100%)** gate-verified with model+date provenance; 490 (70%) also cross-vendor checked (412 of CW 14's 413, all of batch b-cw12-5) |
+| Verification | **699/699 (100%)** gate-verified with model+date provenance; 505 (72%) also cross-vendor checked (412 of CW 14's 413, everything since the pre-merge mandate) |
 | Claim provenance | 470 jung-asserts · 166 jung-reports-parallel · 63 jung-quotes-source (43 named-source strings) · 87 hedged |
 | Coverage | CW 14 end-to-end (413 refs); CW 12 at 135; seven further volumes sampled |
 | Human validation | **E10 gold set complete**: support 44/50 · voice agreement 40/50 (single-annotator, anchored — see caveats) |
