@@ -185,6 +185,11 @@ for m in re.finditer(r'release `(v[^`]+)`', paper):
         failures.append(f"RELEASE TAG: paper cites '{m.group(1)}' not in git tags {tags}")
 
 # ---- companion docs must carry current counts ----
+# .zenodo.json describes the archived release: pin to the paper's baseline
+zd = (ROOT / '.zenodo.json').read_text()
+if f"{nodes} nodes, {edges} edges, {refs} references" not in zd:
+    failures.append(f"STALE DOC: .zenodo.json lacks baseline counts {nodes}/{edges}/{refs}")
+
 refs_live = sum(len(e['references']) for e in seed_live['edges'])
 for doc in ['README.md', 'docs/ABSTRACT.md', 'docs/REVIEW.md']:
     dt = (ROOT / doc).read_text()
