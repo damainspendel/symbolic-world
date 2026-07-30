@@ -161,6 +161,10 @@ if paras_text:
         require("the seven other sampled volumes", "limitations volume band")
     else:
         failures.append(f"VOLUME BAND: {len(thin)} volumes in 1.5-3.9% band, prose says seven")
+    cw12_pct = round(100 * len(vc['12']) / vt['12'])
+    require(f"CW 12, at {cw12_pct}%", "conclusion CW12 coverage")
+    cw14_pct = round(100 * len(vc['14']) / vt['14'])
+    require(f"{cw14_pct}% of CW 14's paragraphs ({len(vc['14'])} of {vt['14']})", "Imperative 6 CW14 coverage")
 
 # ---- release tag ----
 tags = subprocess.run(['git', 'tag', '--list'], capture_output=True, text=True,
